@@ -18,3 +18,17 @@ function print_table($ar)
 	}
 	echo '</table>'."\r\n";
 }
+function name_compare($name1, $name2)
+{
+	static $ar1=array('_','-', ':', ',', '  ');
+	static $ar2=array('\'', '&#39;', '?', '!', '(', ')', 'Retranslated Version');
+	$name1=str_replace($ar1, ' ', $name1);
+	$name1=str_replace($ar2, '', $name1);
+	$name2=str_replace($ar1, ' ', $name2);
+	$name2=str_replace($ar2, '', $name2);
+	$name1=trim($name1);
+	$name2=trim($name2);
+	$name1=strtolower($name1);
+	$name2=strtolower($name2);
+	return (strcasecmp($name1, $name2)==0);
+}
