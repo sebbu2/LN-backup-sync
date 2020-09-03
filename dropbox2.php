@@ -89,30 +89,63 @@ foreach($fns as $name=>$fn)
 			$fns[$name]['watches']=$watches[$key][$id];
 		}
 		else {
-			// DO NOTHING ! the other file does the add for missing novels
+			// DO NOTHING
 		}
 	}
-	
-	$chp=(int)$fn[1]; // chapter is already -1 because it starts at 0
-	if((int)$fn[3]>0) ++$chp; // if the position isn't at the top of the chapter, assume the chapter is fully read
-	if($fn['min']<0) $chp+=$fn['min'];
-	else if($fn['min']>1) $chp+=$fn['min']-1;
-	//var_dump($name,$chp);
-	if($fn[4]=='100') {
-		assert($chp == $fn['max']);
-	}
-	
 	if($found) {
-		if($chp>(int)$watches[$key][$id]['chp']) {
-			var_dump($name, $chp, $watches[$key][$id]);
-			$data=$wln->read_update($watches[$key][$id], $chp);
-			var_dump($data);
-			$updatedCount['wln']++;
-		}
+		// DO NOTHING
 	}
 	else {
-		// DO NOTHING
+		// THIS FILES search the missing novels to add them
 		var_dump($name);
+		//continue;
+		$res=$wln->search($name);
+		var_dump($res);
+		$res=json_decode($res);
+		//var_dump($res);
+		$found=false;
+		$sid=-1;
+		$accuracy=0;
+		foreach($res->data->results as $m1) {
+			if(count($m1->match)>1) {
+				foreach($m1->match as $m2) {
+					if($m2[0]>=0.9) {
+						$found=true;
+						var_dump($m2[1]);
+						$aid=$m1->sid;
+						$accuracy=$m2[0];
+					}
+				}
+			}
+			else {
+				if($m1->match[0][0]>=0.9) {
+					$found=true;
+					var_dump($m1->match[0][1]);
+					$sid=$m1->sid;
+					$accuracy=$m1->match[0][0];
+				}
+			}
+			if($found) break;
+		}
+		if($found) {
+			var_dump($sid, $accuracy);
+		}
+		else {
+			var_dump($res->data->results[0]->match[0]);
+			var_dump('not found');
+			$res=$wn->checkLogin();
+			var_dump($res);
+			if($res->code!=0) {
+				var_dump($res->code, $res->msg);
+				//$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+				//var_dump($res);
+			}
+			//$res=$wn->search($name);
+			//var_dump($res);
+			$res=$wn->search2($name);
+			var_dump($res);
+		}
+		die();
 	}
 	
 	// webnovel
@@ -141,26 +174,7 @@ foreach($fns as $name=>$fn)
 		}
 	}
 	if($found) {
-		$res=NULL;
-		if(!file_exists($wn::FOLDER.'GetChapterList_'.$id.'.json')) {
-			$res=$wn->get_chapter_list($id);
-		}
-		else {
-			$res=json_decode(file_get_contents($wn::FOLDER.'GetChapterList_'.$id.'.json'));
-		}
-		//if($res->data->volumeItems[0]->index==0) $chp2=$chp-$res->data->volumeItems[0]->chapterItems[0]->index; // fix for negative chapters
-		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
-		//else $chp2=$chp;
-		$chp2=$chp;
-		if($chp2>(int)$books[$key]->readToChapterNum || ($chp==(int)$books[$key]->readToChapterNum && $books[$key]->updateStatus=='1') ) {
-			var_dump($name, $chp, $chp2, $books[$key]);//die();
-			$data=$wn->read_update($books[$key], $chp2);
-			var_dump($data);//die();
-			$updatedCount['wn']++;
-		}
-		else if ($chp2<(int)$books[$key]->readToChapterNum) {
-			var_dump($name, $chp, $chp2, $books[$key]);//die();
-		}
+		// DO NOTHINGs
 	}
 }
 if($updatedCount>0) {

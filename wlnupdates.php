@@ -1,69 +1,19 @@
 <?php
 require_once('config.php');
-class WLNUpdates
+class WLNUpdates extends SitePlugin
 {
+	public const FOLDER = 'wlnupdates/';
+	
 	public function __construct()
 	{
 		
 	}
 	
-	private function get($url)
-	{
-		$arr=array(
-			'http'=>array(
-				'verify_peer'=>true,
-				'allow_self_signed'=>true,
-				'ignore_errors'=>true,
-				//'user_agent'=>'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)',
-				'header'=>'X-Requested-With: JSONHttpRequest',
-			),
-			'https'=>array(
-				'verify_peer'=>true,
-				'allow_self_signed'=>true,
-				'ignore_errors'=>true,
-				//'user_agent'=>'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)',
-				'header'=>'X-Requested-With: JSONHttpRequest',
-			),
-		);
-		$ctx=stream_context_create($arr);
-		$data=@file_get_contents($url,false,$ctx);
-		if($data===false) return false;
-		var_dump($data);
-		return $data;
-	}
-	
-	private function send($url, $postdata=array(), $headers=array())
-	{
-		$ch = curl_init();
-		$cookies = COOKIEFILE;
-		if (substr(PHP_OS, 0, 3) == 'WIN') {
-			$cookies = str_replace('\\','/', getcwd().'/'.$cookies);
-		}
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_HEADER, 0);
-		curl_setopt($ch, CURLOPT_COOKIEFILE, $cookies);
-		curl_setopt($ch, CURLOPT_COOKIEJAR, $cookies);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		if(!is_null($postdata)&&!empty($postdata)) {
-			curl_setopt($ch, CURLOPT_POST, 1);
-			if(is_array($postdata)) $postdata=http_build_query($postdata, '', '&');
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-		}
-		if(!is_null($headers)&&!empty($headers))
-		{
-			if(!is_array($headers)) $headers=array($headers);
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-		}
-		$res = curl_exec($ch);
-		return $res;
-	}
-	
 	public function login(string $user, string $pass)
 	{
 		$res = $this->send( 'https://www.wlnupdates.com/login' );
-		file_put_contents('login1.htm', $res);
+		file_put_contents($this::FOLDER.'login1.htm', $res);
+		
 		preg_match_all('#<form(?:\s+(?:id=["\'](?P<id>[^"\'<>]*)["\']|action=["\'](?P<action>[^"\'<>]*)["\']|\w+=["\'][^"\'<>]*["\']|))+>(?P<content>.*)</form>#isU', $res, $matches);
 		if(count($matches['action'])==1) {
 			preg_match('#<div class="alert alert-info">(.*)</div>#isU', $res, $matches2);
@@ -74,6 +24,7 @@ class WLNUpdates
 		$id=array_search('/login', $matches['action']);
 		if($id===false) $id=array_search('', $matches['action']);
 		assert($id!==false) or die(var_export($matches['action']));
+		
 		preg_match_all('#<input(?:\s+(?:name=["\'](?P<name>[^"\'<>]*)["\']|type=["\'](?P<type>[^"\'<>]*)["\']|value=["\'](?P<value>[^"\'<>]*)["\']|\w+=["\'][^"\'<>]*["\']|\w+))+>#is', $matches['content'][$id], $matches2);
 		$postdata=array();
 		foreach($matches2['name'] as $id2=>$name) {
@@ -81,28 +32,33 @@ class WLNUpdates
 			else if(in_array($name, array('pass','password'))) $postdata[$name]=$pass;
 			else if(!empty($name)) $postdata[$name]=$matches2['value'][$id2];
 		}
+		
 		$res = $this->send( 'https://www.wlnupdates.com/login', $postdata );
-		file_put_contents('login2.htm', $res);
+		file_put_contents($this::FOLDER.'login2.htm', $res);
+		
 		preg_match('#<div class="alert alert-info">(.*)</div>#isU', $res, $matches2);
-		if(count($matches2)==0) return false;
+		if(count($matches2)==0) {
+			return false;
+		}
 		$res2=trim(preg_replace("(<([a-z]+)([^>]*)>.*?</\\1>)is","",$matches2[1]));
 		if($res2=='You have logged in successfully.') return true;
-		var_dump($matches);
+		
 		return false;
 	}
 	
 	public function watches()
 	{
-		$data = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type:Application/json') );
-		file_put_contents('watches.json', $data);
-		return $data;
+		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: Application/json') );
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'watches.json', $res);
+		return $res;
 	}
 	
 	public function watches2()
 	{
-		$data = $this->send( 'https://www.wlnupdates.com/watches' );
-		file_put_contents('watches.htm', $data);
-		return $data;
+		$res = $this->send( 'https://www.wlnupdates.com/watches' );
+		file_put_contents($this::FOLDER.'watches.htm', $res);
+		return $res;
 	}
 	
 	public function watches2_lists($data)
@@ -149,10 +105,33 @@ class WLNUpdates
 			'chp'=>(int)$chp,
 			'frag'=>(int)$watch['frg'],
 		);
-		$data = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type:Application/json') );
-		file_put_contents('read-update.json', $data);
-		$data=trim($data);
-		return $data;
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type:Application/json') );
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'read-update.json', $res);
+		return $res;
+	}
+	
+	public function search($name)
+	{
+		$ar=array(
+			'mode'=>'search-title',
+			'title'=>$name,
+		);
+		$res = $this->send( 'https://www.wlnupdates.com/api',json_encode($ar), array('Content-Type:Application/json') );
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'search-title.json', $res);
+		return $res;
+	}
+	
+	public function add($extract)
+	{
+		$ar=array(
+			'name'=>$extract['title'],
+			'type'=>'translated or eol',
+		);
+		//csrf_token
+		$res = $this->send( 'https://www.wlnupdates.com/add/series', $ar);
+		file_put_contents($this::FOLDER.'add-series.json', $res);
 	}
 };
 ?>
