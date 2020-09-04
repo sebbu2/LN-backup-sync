@@ -5,6 +5,7 @@ require_once('wlnupdates.php');
 require_once('webnovel.php');
 define('DROPBOX', 'C:/Users/sebbu/Dropbox/Apps/Books/.Moon+/Cache/');
 define('CWD', getcwd());
+
 chdir(DROPBOX);
 $ar=glob('*.po');
 chdir(CWD);
@@ -34,7 +35,7 @@ foreach($ar as $fn)
 	}
 	if(empty($matches))
 	{
-		//var_dump($fn);
+		var_dump($fn);
 		continue;
 	}
 	$fn2=str_replace(array('_'), ' ', $fn2);
@@ -134,6 +135,7 @@ foreach($fns as $name=>$fn)
 		}
 		if($found) {
 			// DO NOTHING
+			var_dump($name);
 		}
 		else {
 			// TODO
@@ -152,14 +154,14 @@ foreach($fns as $name=>$fn)
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
 		//else $chp2=$chp;
 		$chp2=$chp;
-		if($chp2>(int)$books[$key]->readToChapterNum || ($chp==(int)$books[$key]->readToChapterNum && $books[$key]->updateStatus=='1') ) {
-			var_dump($name, $chp, $chp2, $books[$key]);//die();
+		if($chp2>(int)$books[$key]->readToChapterIndex || ($chp==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') ) {
+			var_dump($name, $chp);
 			$data=$wn->read_update($books[$key], $chp2);
-			var_dump($data);//die();
+			var_dump($data);
 			$updatedCount['wn']++;
 		}
-		else if ($chp2<(int)$books[$key]->readToChapterNum) {
-			var_dump($name, $chp, $chp2, $books[$key]);//die();
+		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
+			var_dump($name.' found but at higher chapter.', $chp2, $books[$key]->readToChapterIndex);
 		}
 	}
 }

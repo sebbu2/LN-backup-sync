@@ -1,5 +1,7 @@
-login1.htm
-login2.htm
-watches.json
-watches.htm
 watches.inc.php
+webnovel/*.htm*
+webnovel/*.json
+webnovel/*.txt
+wlnupdates/*.htm*
+wlnupdates/*.json
+wlnupdates/*.txt

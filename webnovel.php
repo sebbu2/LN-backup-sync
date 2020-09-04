@@ -227,23 +227,23 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://ptlogin.webnovel.com/login/checkcode', $ar, $headers);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'checkcode.json', $res);
-			$data2=json_decode($res);
+			$data=json_decode($res);
 		}
 		
-		$userid=$data2->data->userid;
-		$ticket=$data2->data->ticket;
-		$ukey=$data2->data->ukey;
-		$autoLoginSessionKey=$data2->data->autoLoginSessionKey;
+		$userid=$data->data->userid;
+		$ticket=$data->data->ticket;
+		$ukey=$data->data->ukey;
+		$autoLoginSessionKey=$data->data->autoLoginSessionKey;
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		var_dump($cookies);
 		
 		{ // 9 loginSuccess
-			//$ar=array();//data2?
+			//$ar=array();//data?
 			$headers=array(
 				'Referer: '.$referer,
 			);
-			$res = $this->get($data2->data->returnurl);
+			$res = $this->get($data->data->returnurl);
 			file_put_contents($this::FOLDER.'loginSuccess.htm', $res);
 		}
 		
@@ -303,6 +303,7 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'notification-status.json', $res);
 		}
+		return $data;
 	}
 	
 	public function watches()
@@ -368,11 +369,11 @@ class WebNovel extends SitePlugin
 		{
 			foreach($res->data->volumeItems as $volume) {
 				foreach($volume->chapterItems as $chapter) {
-					if($chapter->index == $chp) {
+					if($chapter->index == $chp && $chapter->chapterLevel==0) {
 						$cid = $chapter->id;
 						$found=true;
 					}
-					if($chapter->index>$cid_max_num && $chapter->index<=$chp) {
+					if($chapter->index>$cid_max_num && $chapter->index<=$chp && $chapter->chapterLevel==0) {
 						$cid_max_num=$chapter->index;
 						$cid_max=$chapter->id;
 					}
@@ -387,8 +388,9 @@ class WebNovel extends SitePlugin
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'bookId'=>strval($watch->bookId),
-				'chapterId'=>($cid>0?$cid:$cid_max_num),
+				'chapterId'=>($cid>0?$cid:$cid_max),
 			);
+			var_dump($ar);
 			$res = $this->send( 'www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'SetReadingProgressAjax'.strval($watch->bookId).'.json', $res);
