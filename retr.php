@@ -7,9 +7,19 @@ require_once('WebNovel.php');
 $loggued=false;
 
 {
+	$wln_errors=array(
+		'{"error":true,"message":"Not yet implemented","reload":true}'."\n",
+		'{"error":true,"message":"Not yet implemented","reload":true}',
+		'{'."\n    ".'"error": true,'."\n    ".'"message": "Not yet implemented",'."\n    ".'"reload": true'."\n".'}'."\n",
+		'{'."\n    ".'"error": true,'."\n    ".'"message": "Not yet implemented",'."\n    ".'"reload": true'."\n".'}',
+		'{'."\n  ".'"error": true,'."\n  ".'"message": "Not yet implemented",'."\n  ".'"reload": true'."\n".'}'."\n",
+		'{'."\n  ".'"error": true,'."\n  ".'"message": "Not yet implemented",'."\n  ".'"reload": true'."\n".'}',
+		'{'."\n\t".'"error": true,'."\n\t".'"message": "Not yet implemented",'."\n\t".'"reload": true'."\n".'}'."\n",
+		'{'."\n\t".'"error": true,'."\n\t".'"message": "Not yet implemented",'."\n\t".'"reload": true'."\n".'}',
+	);
 	$wln=new WLNUpdates();
 	$res=$wln->watches();
-	if($res==='{"error":true,"message":"Not yet implemented","reload":true}') $loggued = true;
+	if(in_array($res, $wln_errors)) $loggued = true;
 
 	if(!$loggued) {
 		$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
@@ -17,7 +27,7 @@ $loggued=false;
 	}
 
 	$res = $wln->watches();
-	if($res==='{"error":true,"message":"Not yet implemented","reload":true}') $res = false;
+	if(in_array($res, $wln_errors)) $res = false;
 	if($res===false) {
 		$res = $wln->watches2();
 		$watches = $wln->watches2_lists($res);

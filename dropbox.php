@@ -18,7 +18,7 @@ $updatedCount=array(
 $fns=array();
 foreach($ar as $fn)
 {
-	preg_match('#^(.*)_(-?\d+)-(\d+)\.epub\.po$#i', $fn, $matches);
+	preg_match('#^(.*)_(-?\d+)-(\d+)(_FIN)?\.epub\.po$#i', $fn, $matches);
 	if(!empty($matches)) {
 		$fn2=$matches[1];
 		$min=$matches[2];
@@ -154,7 +154,8 @@ foreach($fns as $name=>$fn)
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
 		//else $chp2=$chp;
 		$chp2=$chp;
-		if($chp2>(int)$books[$key]->readToChapterIndex || ($chp==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') ) {
+		if($chp2>(int)$books[$key]->readToChapterIndex)// || ($chp==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') )
+		{
 			var_dump($name, $chp);
 			$data=$wn->read_update($books[$key], $chp2);
 			var_dump($data);

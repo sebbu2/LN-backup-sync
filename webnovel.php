@@ -339,15 +339,37 @@ class WebNovel extends SitePlugin
 			++$i;
 		}
 		while($res->data->isLast==0);
-		file_put_contents($this::FOLDER.'_books.json', json_encode($books));
+		//file_put_contents($this::FOLDER.'_books.json', str_replace('    ',"\t", json_encode($books, JSON_PRETTY_PRINT)) );
+		file_put_contents($this::FOLDER.'_books.json', $this->jsonp_to_json(json_encode($books)) );
 		return json_encode($books);
 	}
 	
 	public function read_update($watch, $chp)
 	{
+		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
+		{
+			$res=json_decode($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json', false, 512 );
+		}
+		else {
+			$res=$this->get_chapter_list($watch->bookId);
+		}
+		if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
+			unlink($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
+			$res=$this->get_chapter_list($watch->bookId);
+			if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )
+			{
+				var_dump($res);die();
+			}
+		}
+		$add=0;
+		if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+		//updating list of chapters
+		if( $watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
+			$res=$this->get_chapter_list($watch->bookId);
+		}
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
-		{
+		/*{
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'bookId'=>strval($watch->bookId),
@@ -360,18 +382,20 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json', $res);
 			$res=json_decode($res);
-		}
+		}//*/
 		
 		$cid=0;
 		$cid_max=0;
 		$cid_max_num=0;
 		$found=false;
+		$update=false;
 		{
 			foreach($res->data->volumeItems as $volume) {
 				foreach($volume->chapterItems as $chapter) {
 					if($chapter->index == $chp && $chapter->chapterLevel==0) {
 						$cid = $chapter->id;
 						$found=true;
+						$update=true;
 					}
 					if($chapter->index>$cid_max_num && $chapter->index<=$chp && $chapter->chapterLevel==0) {
 						$cid_max_num=$chapter->index;
@@ -381,10 +405,16 @@ class WebNovel extends SitePlugin
 			}
 		}
 		if(!$found) {
-			var_dump('Updating to '.$cid_max_num.' instead of '.$chp.'.');
+			if($cid_max_num>$watch->readToChapterIndex) {
+				var_dump('Updating to '.$cid_max_num.' instead of '.$chp.'.');
+				$update=true;
+			}
+			else {
+				//TODO
+			}
 		}
 		
-		{
+		if ($update) {
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'bookId'=>strval($watch->bookId),
@@ -395,6 +425,9 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'SetReadingProgressAjax'.strval($watch->bookId).'.json', $res);
 			$res=json_decode($res);
+		}
+		else {
+			$res=false;
 		}
 		return $res;
 	}

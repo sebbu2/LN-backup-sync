@@ -5,6 +5,7 @@ require_once('wlnupdates.php');
 require_once('webnovel.php');
 define('DROPBOX', 'C:/Users/sebbu/Dropbox/Apps/Books/.Moon+/Cache/');
 define('CWD', getcwd());
+
 chdir(DROPBOX);
 $ar=glob('*.po');
 chdir(CWD);
@@ -17,7 +18,7 @@ $updatedCount=array(
 $fns=array();
 foreach($ar as $fn)
 {
-	preg_match('#^(.*)_(-?\d+)-(\d+)\.epub\.po$#i', $fn, $matches);
+	preg_match('#^(.*)_(-?\d+)-(\d+)(_FIN)?\.epub\.po$#i', $fn, $matches);
 	if(!empty($matches)) {
 		$fn2=$matches[1];
 		$min=$matches[2];
@@ -34,7 +35,7 @@ foreach($ar as $fn)
 	}
 	if(empty($matches))
 	{
-		//var_dump($fn);
+		var_dump($fn);
 		continue;
 	}
 	$fn2=str_replace(array('_'), ' ', $fn2);
@@ -167,6 +168,7 @@ foreach($fns as $name=>$fn)
 		}
 		if($found) {
 			// DO NOTHING
+			var_dump($name);
 		}
 		else {
 			// TODO

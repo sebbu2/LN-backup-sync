@@ -267,7 +267,7 @@ class SitePlugin
 		return $res;
 	}
 	
-	protected function jsonp_to_json($jsonp)
+	public function jsonp_to_json($jsonp)
 	{
 		$jsonp=trim($jsonp);
 		//$res=preg_replace('#\w+\((.*)\)#iU','\1', $jsonp);
@@ -278,7 +278,11 @@ class SitePlugin
 			$jsonp=substr($jsonp, 0, strrpos($jsonp, ')'));
 		} //*/
 		$jsonp=trim($jsonp);
-		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON.');
+		static $end_match=array('['=>']','{'=>'}');
+		assert(in_array($jsonp[0], array('[','{')) && substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON.');
+		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT);
+		//$jsonp=str_replace('    ',"\t",$jsonp); // TAB are invalid in json
+		$jsonp=str_replace('    ', '  ', $jsonp);
 		return $jsonp;
 	}
 }
