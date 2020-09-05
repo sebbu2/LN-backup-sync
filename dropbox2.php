@@ -52,8 +52,10 @@ foreach($ar as $fn)
 		$ar2=array_merge($ar2, $content);
 		$fns[$fn2]=$ar2;
 	}
-	else if( $fns[$fn2]['max']<=($fns[$fn2]['min']-1+$content[1]+1) )
-	{
+	else if(
+		$max>$fns[$fn2]['max'] && //new last chapter is >
+		(($content[1]+1+($content[3]>0?1:0)) >= ($fns[$fn2][1]+1+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+	) {
 		var_dump($fns[$fn2]['fn']);//die();
 		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);

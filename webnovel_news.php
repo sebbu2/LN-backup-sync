@@ -12,6 +12,7 @@ $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')
 $wln=new WLNUpdates;
 $wn=new WebNovel;
 
+$diff_old=json_decode(file_get_contents('wn_diff.json'), TRUE, 512, JSON_THROW_ON_ERROR); // important : true as 2nd parameter
 $diff=array();
 
 foreach($watches as $id=>$list) { // WLN list
@@ -45,7 +46,9 @@ foreach($watches as $id=>$list) { // WLN list
 				}
 				//fixing chapter number
 				$add=0;
+				$add2=0;
 				if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+				if(array_key_exists($entry['title'], $diff_old)) $add2+=$diff_old[$entry['title']];
 				//updating list of chapters
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
 					var_dump('updating',$entry['title']);
@@ -53,11 +56,12 @@ foreach($watches as $id=>$list) { // WLN list
 				}
 				//checking new chapters
 				if( $res->data->bookInfo->totalChapterNum+$add > (int)$entry['chp'] ) {
-					var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
+					var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
 					
 				}
 				else {
 					//up-to-date
+					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
 					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
 				}
 			}

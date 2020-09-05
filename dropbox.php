@@ -52,8 +52,10 @@ foreach($ar as $fn)
 		$ar2=array_merge($ar2, $content);
 		$fns[$fn2]=$ar2;
 	}
-	else if( $fns[$fn2]['max']<=($fns[$fn2]['min']-1+$content[1]+1) )
-	{
+	else if(
+		$max>$fns[$fn2]['max'] && //new last chapter is >
+		(($content[1]+1+($content[3]>0?1:0)) >= ($fns[$fn2][1]+1+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+	) {
 		var_dump($fns[$fn2]['fn']);//die();
 		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
@@ -154,10 +156,21 @@ foreach($fns as $name=>$fn)
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
 		//else $chp2=$chp;
 		$chp2=$chp;
-		if($chp2>(int)$books[$key]->readToChapterIndex)// || ($chp==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') )
-		{
+		$priv_only=0;
+		$max_pub=0;
+		foreach($res->data->volumeItems as $vol) {
+			foreach($vol->chapterItems as $chap) {
+				if($chap->chapterLevel!=0) $priv_only++;
+				else if($chap->index>$max_pub) $max_pub=$chap->index;
+			}
+		}
+		if(
+			($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
+			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
+			//|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
+		) {
 			var_dump($name, $chp);
-			$data=$wn->read_update($books[$key], $chp2);
+			//$data=$wn->read_update($books[$key], $chp2);
 			var_dump($data);
 			$updatedCount['wn']++;
 		}
