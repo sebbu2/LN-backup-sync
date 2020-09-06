@@ -489,7 +489,7 @@ $watches = array (
       'availchp' => '48.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '519.0',
+      'chp' => '521.0',
       'frg' => '-1',
     ),
     1 => 
@@ -500,7 +500,7 @@ $watches = array (
       'availchp' => '-1',
       'availfrag' => '-1',
       'vol' => '2.0',
-      'chp' => '500.0',
+      'chp' => '501.0',
       'frg' => '-1',
     ),
     2 => 
@@ -511,7 +511,7 @@ $watches = array (
       'availchp' => '94.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '729.0',
+      'chp' => '730.0',
       'frg' => '-1',
     ),
     3 => 
@@ -544,7 +544,7 @@ $watches = array (
       'availchp' => '112.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '1180.0',
+      'chp' => '1181.0',
       'frg' => '-1',
     ),
     6 => 
@@ -555,7 +555,7 @@ $watches = array (
       'availchp' => '1.0',
       'availfrag' => '0.0',
       'vol' => '1.0',
-      'chp' => '1911.0',
+      'chp' => '1913.0',
       'frg' => '-1',
     ),
     7 => 
@@ -577,7 +577,7 @@ $watches = array (
       'availchp' => '100.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '1191.0',
+      'chp' => '1192.0',
       'frg' => '-1',
     ),
     9 => 
@@ -588,7 +588,7 @@ $watches = array (
       'availchp' => '39.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '448.0',
+      'chp' => '450.0',
       'frg' => '-1',
     ),
     10 => 
@@ -599,7 +599,7 @@ $watches = array (
       'availchp' => '100.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '422.0',
+      'chp' => '423.0',
       'frg' => '-1',
     ),
     11 => 
@@ -610,7 +610,7 @@ $watches = array (
       'availchp' => '103.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '448.0',
+      'chp' => '450.0',
       'frg' => '-1',
     ),
     12 => 
@@ -632,7 +632,7 @@ $watches = array (
       'availchp' => '1.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '310.0',
+      'chp' => '312.0',
       'frg' => '-1',
     ),
     14 => 
@@ -643,7 +643,7 @@ $watches = array (
       'availchp' => '42.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '458.0',
+      'chp' => '460.0',
       'frg' => '-1',
     ),
     15 => 
@@ -654,7 +654,7 @@ $watches = array (
       'availchp' => '131.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '1401.0',
+      'chp' => '1402.0',
       'frg' => '-1',
     ),
     16 => 
@@ -665,7 +665,7 @@ $watches = array (
       'availchp' => '39.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '292.0',
+      'chp' => '294.0',
       'frg' => '-1',
     ),
     17 => 
@@ -676,7 +676,7 @@ $watches = array (
       'availchp' => '38.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '308.0',
+      'chp' => '310.0',
       'frg' => '-1',
     ),
     18 => 
@@ -720,7 +720,7 @@ $watches = array (
       'availchp' => '88.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '1315.0',
+      'chp' => '1316.0',
       'frg' => '-1',
     ),
     22 => 
@@ -731,7 +731,7 @@ $watches = array (
       'availchp' => '87.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '1081.0',
+      'chp' => '1083.0',
       'frg' => '-1',
     ),
     23 => 
@@ -742,7 +742,7 @@ $watches = array (
       'availchp' => '74.0',
       'availfrag' => '0.0',
       'vol' => '1.0',
-      'chp' => '832.0',
+      'chp' => '834.0',
       'frg' => '-1',
     ),
     24 => 
@@ -764,7 +764,7 @@ $watches = array (
       'availchp' => '110.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '518.0',
+      'chp' => '520.0',
       'frg' => '-1',
     ),
     26 => 
@@ -775,7 +775,7 @@ $watches = array (
       'availchp' => '151.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '966.0',
+      'chp' => '967.0',
       'frg' => '-1',
     ),
     27 => 
@@ -1191,7 +1191,7 @@ $watches = array (
       'availchp' => '21.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '918.0',
+      'chp' => '920.0',
       'frg' => '-1',
     ),
     1 => 
@@ -1199,10 +1199,10 @@ $watches = array (
       'id' => '2768',
       'title' => 'Chrysalis',
       'availvol' => '-1',
-      'availchp' => '587.0',
-      'availfrag' => '2.0',
+      'availchp' => '588.0',
+      'availfrag' => '3.0',
       'vol' => '-1',
-      'chp' => '588.0',
+      'chp' => '589.0',
       'frg' => '-1',
     ),
     2 => 
@@ -1213,7 +1213,7 @@ $watches = array (
       'availchp' => '-1',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '307.0',
+      'chp' => '308.0',
       'frg' => '-1',
     ),
     3 => 
@@ -1246,7 +1246,7 @@ $watches = array (
       'availchp' => '98.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '535.0',
+      'chp' => '541.0',
       'frg' => '-1',
     ),
     6 => 
@@ -1279,7 +1279,7 @@ $watches = array (
       'availchp' => '44.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '650.0',
+      'chp' => '652.0',
       'frg' => '-1',
     ),
     9 => 
@@ -1290,7 +1290,7 @@ $watches = array (
       'availchp' => '248.0',
       'availfrag' => '0.0',
       'vol' => '32.0',
-      'chp' => '691.0',
+      'chp' => '692.0',
       'frg' => '-1',
     ),
     10 => 
@@ -1323,7 +1323,7 @@ $watches = array (
       'availchp' => '-1',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '262.0',
+      'chp' => '263.0',
       'frg' => '-1',
     ),
     13 => 
@@ -1367,7 +1367,7 @@ $watches = array (
       'availchp' => '74.0',
       'availfrag' => '0.0',
       'vol' => '-1',
-      'chp' => '256.0',
+      'chp' => '257.0',
       'frg' => '-1',
     ),
     17 => 
@@ -1378,7 +1378,7 @@ $watches = array (
       'availchp' => '79.0',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '816.0',
+      'chp' => '818.0',
       'frg' => '-1',
     ),
     18 => 
@@ -1411,7 +1411,7 @@ $watches = array (
       'availchp' => '-1',
       'availfrag' => '-1',
       'vol' => '-1',
-      'chp' => '283.0',
+      'chp' => '284.0',
       'frg' => '-1',
     ),
   ),
@@ -1480,7 +1480,7 @@ $watches = array (
       'id' => '57359',
       'title' => 'Age of Adepts',
       'availvol' => '-1',
-      'availchp' => '1258.0',
+      'availchp' => '1259.0',
       'availfrag' => '0.0',
       'vol' => '-1',
       'chp' => '1050.0',

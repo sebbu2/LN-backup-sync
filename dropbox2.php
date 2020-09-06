@@ -3,8 +3,6 @@ require_once('config.php');
 require_once('functions.inc.php');
 require_once('wlnupdates.php');
 require_once('webnovel.php');
-define('DROPBOX', 'C:/Users/sebbu/Dropbox/Apps/Books/.Moon+/Cache/');
-define('CWD', getcwd());
 
 chdir(DROPBOX);
 $ar=glob('*.po');
@@ -181,7 +179,7 @@ foreach($fns as $name=>$fn)
 		// DO NOTHINGs
 	}
 }
-if($updatedCount>0) {
+if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);
 	include_once('retr.php');
 }

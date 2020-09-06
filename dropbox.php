@@ -3,8 +3,6 @@ require_once('config.php');
 require_once('functions.inc.php');
 require_once('wlnupdates.php');
 require_once('webnovel.php');
-define('DROPBOX', 'C:/Users/sebbu/Dropbox/Apps/Books/.Moon+/Cache/');
-define('CWD', getcwd());
 
 chdir(DROPBOX);
 $ar=glob('*.po');
@@ -97,9 +95,10 @@ foreach($fns as $name=>$fn)
 	}
 	
 	$chp=(int)$fn[1]; // chapter is already -1 because it starts at 0
-	if((int)$fn[3]>0) ++$chp; // if the position isn't at the top of the chapter, assume the chapter is fully read
 	if($fn['min']<0) $chp+=$fn['min'];
 	else if($fn['min']>1) $chp+=$fn['min']-1;
+	if($chp===0) $chp=1;
+	if((int)$fn[3]>0) ++$chp; // if the position isn't at the top of the chapter, assume the chapter is fully read
 	//var_dump($name,$chp);
 	if($fn[4]=='100') {
 		assert($chp == $fn['max']);
@@ -167,10 +166,10 @@ foreach($fns as $name=>$fn)
 		if(
 			($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
 			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
-			//|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
+			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
 			var_dump($name, $chp);
-			//$data=$wn->read_update($books[$key], $chp2);
+			$data=$wn->read_update($books[$key], $chp2);
 			var_dump($data);
 			$updatedCount['wn']++;
 		}
@@ -179,7 +178,7 @@ foreach($fns as $name=>$fn)
 		}
 	}
 }
-if($updatedCount>0) {
+if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);
 	include_once('retr.php');
 }
