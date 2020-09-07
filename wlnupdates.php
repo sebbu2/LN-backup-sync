@@ -11,6 +11,20 @@ class WLNUpdates extends SitePlugin
 	
 	public function login(string $user, string $pass)
 	{
+		$ar=array(
+			'mode'=>'do-login',
+			'username'=>$user,
+			'password'=>$pass,
+			'remember_me'=>true,
+		);
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: Application/json') );
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'login.json', $res);
+		return $res;
+	}
+	
+	public function login2(string $user, string $pass)
+	{
 		$res = $this->send( 'https://www.wlnupdates.com/login' );
 		file_put_contents($this::FOLDER.'login1.htm', $res);
 		
@@ -95,16 +109,32 @@ class WLNUpdates extends SitePlugin
 	
 	public function read_update($watch, $chp)
 	{
-		if((int)$watch['vol']<0) $watch['vol']=0;
-		if((int)$watch['chp']<0) $watch['chp']=0;
-		if((int)$watch['frg']<0) $watch['frg']=0;
-		$ar=array(
-			'mode'=>'read-update',
-			'item-id'=>(int)$watch['id'],
-			'vol'=>(int)$watch['vol'],
-			'chp'=>(int)$chp,
-			'frag'=>(int)$watch['frg'],
-		);
+		$ar=array();
+		if(array_key_exists('chp', $watch)) {
+			if((int)$watch['vol']<0) $watch['vol']=0;
+			if((int)$watch['chp']<0) $watch['chp']=0;
+			if((int)$watch['frg']<0) $watch['frg']=0;
+			$ar=array(
+				'mode'=>'read-update',
+				'item-id'=>(int)$watch['id'],
+				'vol'=>(int)$watch['vol'],
+				'chp'=>(int)$chp,
+				'frag'=>(int)$watch['frg'],
+			);
+		}
+		//else if(array_key_exists(0, $watch) && array_key_exists('id', $watch[0])) {
+		else if(array_key_exists(0, $watch) && property_exists($watch[0], 'id')) {
+			if((int)$watch[1]->vol <0) $watch[1]->vol =0;
+			if((int)$watch[1]->chp <0) $watch[1]->chp =0;
+			if((int)$watch[1]->frag<0) $watch[1]->frag=0;
+			$ar=array(
+				'mode'=>'read-update',
+				'item-id'=>(int)$watch[0]->id,
+				'vol' =>(int)$watch[1]->vol,
+				'chp' =>(int)$chp,
+				'frag'=>(int)$watch[1]->frag,
+			);
+		}
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type:Application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'read-update.json', $res);

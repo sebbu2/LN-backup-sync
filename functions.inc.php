@@ -1,19 +1,73 @@
 <?php
 require_once('config.php');
+function print_thead_key($key,$value,$prefix='') {
+	if(is_string($value)||is_numeric($value)||is_bool($value)||is_null($value)) {
+		if($prefix==0&&$key=='extra_metadata') {
+			echo "\t\t".'<th>0->extra_metadata->is_yaoi</th>'."\r\n";
+			echo "\t\t".'<th>0->extra_metadata->is_yuri</th>'."\r\n";
+		}
+		else echo "\t\t".'<th>'.(strlen($prefix)>0?$prefix.'->':'').$key.'</th>'."\r\n";
+	}
+	else if(is_array($value)) {
+		foreach($value as $k2=>$v2)
+		{
+			print_thead_key($k2,$v2,(strlen($prefix>0)?$prefix.'->':'').$key);
+		}
+	}
+	else if(is_object($value)) {
+		foreach(get_object_vars($value) as $k2=>$v2)
+		{
+			print_thead_key($k2,$v2,(strlen($prefix)>0?$prefix.'->':'').$key);
+		}
+	}
+	else {
+		var_dump($key,$value,$prefix);die();
+	}
+}
+function print_tbody_value($key,$value,$prefix='') {
+	//var_dump($value, is_string($value), is_numeric($value), is_bool($value), is_null($value), is_array($value), is_object($value));
+	if(is_string($value)||is_numeric($value)||is_bool($value)||is_null($value)) {
+		if($prefix==0&&$key=='extra_metadata') {
+			echo "\t\t".'<td></td>'."\r\n";
+			echo "\t\t".'<td></td>'."\r\n";
+		}
+		else echo "\t\t".'<td>'.strval($value).'</td>'."\r\n";
+	}
+	else if(is_array($value)) {
+		foreach($value as $k2=>$v2)
+		{
+			print_tbody_value($k2,$v2,(strlen($prefix>0)?$prefix.'->':'').$key);
+		}
+	}
+	else if(is_object($value)) {
+		foreach(get_object_vars($value) as $k2=>$v2)
+		{
+			print_tbody_value($k2,$v2,(strlen($prefix>0)?$prefix.'->':'').$key);
+		}
+	}
+	else {
+		var_dump($value);die();
+	}
+}
 function print_table($ar)
 {
 	if(!is_array($ar)) return;
+	if(count($ar)==0) return;
 	
 	$keys=NULL;
-	if(is_array($ar[0])) $keys=array_keys($ar[0]);
-	else if( is_object($ar[0]) && (get_class($ar[0])=='stdClass') ) $keys=array_keys(get_object_vars($ar[0]));
+	//if(is_array($ar[0])) $keys=array_keys($ar[0]);
+	//else if( is_object($ar[0]) && (get_class($ar[0])=='stdClass') ) $keys=array_keys(get_object_vars($ar[0]));
+	if(is_array($ar[0])) $keys=$ar[0];
+	else if( is_object($ar[0]) && (get_class($ar[0])=='stdClass') ) $keys=get_object_vars($ar[0]);
 	
 	echo '<table border="1">'."\r\n";
+	//keys
 	echo "\t".'<tr>'."\r\n";
 	foreach($keys as $k2=>$v2) {
-		echo "\t\t".'<th>'.$v2.'</th>'."\r\n";
+		print_thead_key($k2,$v2);
 	}
 	echo "\t".'</tr>'."\r\n";
+	//values
 	foreach($ar as $k=>$v)
 	{
 		$values=NULL;
@@ -23,7 +77,7 @@ function print_table($ar)
 		echo "\t".'<tr>'."\r\n";
 		foreach($values as $k2=>$v2)
 		{
-			echo "\t\t".'<td>'.$v2.'</td>'."\r\n";
+			print_tbody_value($k2,$v2);
 		}
 		echo "\t".'</tr>'."\r\n";
 	}

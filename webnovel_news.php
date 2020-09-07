@@ -85,6 +85,10 @@ foreach($watches as $id=>$list) { // WLN list
 				}
 				else {
 					//up-to-date
+					if( !( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) ) )
+					{
+						var_dump($book,$add,$add2,$res);
+					}
 					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
 					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
 				}

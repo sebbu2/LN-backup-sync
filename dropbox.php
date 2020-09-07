@@ -61,9 +61,12 @@ foreach($ar as $fn)
 		$fns[$fn2]=$ar2;
 	}
 }
-require_once('watches.inc.php');
+var_dump(count($fns));
+//require_once('watches.inc.php');
 $wln=new WLNUpdates();
 $wn=new WebNovel;
+$watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
+var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 var_dump(count($books));//die();
 foreach($fns as $name=>$fn)
@@ -73,7 +76,7 @@ foreach($fns as $name=>$fn)
 	$id=-1;
 	$found=false;
 	{
-		foreach($watches as $_key=>$ar1)
+		/*foreach($watches as $_key=>$ar1)
 		{
 			foreach($ar1 as $_id=>$ar2)
 			{
@@ -85,12 +88,23 @@ foreach($fns as $name=>$fn)
 					break(2);
 				}
 			}
+		}//*/
+		foreach($watches as $_key=>$book)
+		{
+			if(name_compare($name, $book[0]->name) || name_compare($name, $book[3]))
+			{
+				$key=$_key;
+				$id=$book[0]->id;
+				$found=true;
+				break;
+			}
 		}
 		if($found) {
-			$fns[$name]['watches']=$watches[$key][$id];
+			$fns[$name]['watches']=$watches[$key];
 		}
 		else {
 			// DO NOTHING ! the other file does the add for missing novels
+			var_dump($name.' not found in WLNUpdates.');
 		}
 	}
 	
@@ -105,16 +119,16 @@ foreach($fns as $name=>$fn)
 	}
 	
 	if($found) {
-		if($chp>(int)$watches[$key][$id]['chp']) {
-			var_dump($name, $chp, $watches[$key][$id]);
-			$data=$wln->read_update($watches[$key][$id], $chp);
+		//if($chp>(int)$watches[$key]['chp']) {
+		if($chp>(int)$watches[$key][1]->chp) {
+			var_dump($name, $chp, $watches[$key][1]->chp);
+			$data=$wln->read_update($watches[$key], $chp);
 			var_dump($data);
 			$updatedCount['wln']++;
 		}
 	}
 	else {
-		// DO NOTHING
-		var_dump($name);
+		// TODO
 	}
 	
 	// webnovel
@@ -136,7 +150,6 @@ foreach($fns as $name=>$fn)
 		}
 		if($found) {
 			// DO NOTHING
-			var_dump($name);
 		}
 		else {
 			// TODO
@@ -174,7 +187,7 @@ foreach($fns as $name=>$fn)
 			$updatedCount['wn']++;
 		}
 		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
-			var_dump($name.' found but at higher chapter.', $chp2, $books[$key]->readToChapterIndex);
+			var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex);
 		}
 	}
 }

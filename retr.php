@@ -20,13 +20,16 @@ $loggued=false;
 	$wln=new WLNUpdates();
 	$res=$wln->watches();
 	if(in_array($res, $wln_errors)) $loggued = true;
+	$watches=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 
-	if(!$loggued) {
+	if(!$loggued && $watches->error==true) {
 		$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
-		assert($res==true) or die('you need to log in.');
+		if($res===false) die('you need to log in.');
+		$res=json_decode($res);
+		if(is_object($res) && $res->error==true) die($res->message);
+		$res = $wln->watches();
 	}
 
-	$res = $wln->watches();
 	if(in_array($res, $wln_errors)) $res = false;
 	if($res===false) {
 		$res = $wln->watches2();
@@ -34,23 +37,28 @@ $loggued=false;
 		file_put_contents('watches.inc.php', '<?php'."\r\n".'$watches = '.var_export($watches, true).';' );
 	}
 	else {
-		var_dump('NEW WATCHES !', $res);
-		die();
+		//$res=json_decode($res);
+		//var_dump($res);
+		$watches=$watches->data[0];
+		$watches2=array();
+		foreach($watches as $w) { $watches2=array_merge($watches2, $w); };
+		file_put_contents($wln::FOLDER.'_books.json',$wln->jsonp_to_json(json_encode($watches2)));
+		//var_dump('NEW WATCHES !', $res);
+		//die();
 	}
 	$count=0;foreach($watches as $list) $count+=count($list);
 	echo 'wlnupdates=';var_dump($count);
-
-	if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
 
 	ob_start();
 	foreach($watches as $id=>$list)
 	{
 		echo '<h4>'.$id.'</h4>'."\r\n";
-		print_table($list);
+		print_table($list);//die();
 	}
 	$data=ob_get_clean();
 	file_put_contents('watches2.htm', $data);
-	if(!defined('DROPBOX_DONE')) echo $data;
+	//if(!defined('DROPBOX_DONE')) echo $data;
+	echo '<a href="watches2.htm">wlnupdates</a><br/>'."\r\n";
 }
 
 $loggued=false;
@@ -71,5 +79,7 @@ $loggued=false;
 	print_table($res);
 	$data=ob_get_clean();
 	file_put_contents('library.htm', $data);
-	if(!defined('DROPBOX_DONE')) echo $data;
+	//if(!defined('DROPBOX_DONE')) echo $data;
+	echo '<a href="library.htm">webnovel</a><br/>'."\r\n";
 }
+if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
