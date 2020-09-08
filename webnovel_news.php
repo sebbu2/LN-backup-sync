@@ -6,10 +6,9 @@ require_once('WebNovel.php');
 
 $skip_existing=true;
 
-include_once('watches.inc.php');
-//$books=json_decode('webnovel/_books.json',false,512,JSON_THROW_ON_ERROR);
+//include_once('watches.inc.php');
+$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
 $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),false,512,JSON_THROW_ON_ERROR);
-//var_dump($books);die();
 
 $wln=new WLNUpdates;
 $wn=new WebNovel;
@@ -19,10 +18,14 @@ if(!array_key_exists('cur',$diff_old)) $diff_old['cur']=array();
 if(!array_key_exists('old',$diff_old)) $diff_old['old']=array();
 $diff=array();
 
-foreach($watches as $id=>$list) { // WLN list
-	if( strpos($id, 'On-Hold')!==false || strpos($id, 'Plan To Read')!==false || strpos($id, 'Completed')!==false ) continue;
+//foreach($watches as $id=>$list) { // WLN list
+foreach($watches['data'][0] as $id=>$list) { // WLN list
+	if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
 	echo '<h1>'.$id.'</h1>';
 	foreach($list as $entry) { // WLN book
+		//TODO : fix the next 2 lines
+		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
+		$entry['chp']=$entry[1]['chp'];
 		foreach($books as $book) { // WN book
 			if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 				//retrieving list of chapters
