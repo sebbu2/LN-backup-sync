@@ -74,7 +74,7 @@ foreach($fns as $name=>$fn)
 	//wlnupdates
 	$key='';
 	$id=-1;
-	$found=false;
+	$found1=false;
 	{
 		/*foreach($watches as $_key=>$ar1)
 		{
@@ -84,7 +84,7 @@ foreach($fns as $name=>$fn)
 				{
 					$key=$_key;
 					$id=$_id;
-					$found=true;
+					$found1=true;
 					break(2);
 				}
 			}
@@ -95,26 +95,26 @@ foreach($fns as $name=>$fn)
 			{
 				$key=$_key;
 				$id=$book[0]->id;
-				$found=true;
+				$found1=true;
 				break;
 			}
 		}
-		if($found) {
+		if($found1) {
 			$fns[$name]['watches']=$watches[$key];
 		}
 		else {
 			var_dump($name.' not found in WLNUpdates.');
 		}
 	}
-	if($found) {
+	if($found1) {
 		// DO NOTHING
 	}
 	else {
 		// THIS FILES search the missing novels to add them
-		var_dump($name);
+		//var_dump($name);
 		//continue;
 		$res=$wln->search($name);
-		var_dump($res);
+		//var_dump($res);
 		$res=json_decode($res);
 		//var_dump($res);
 		$found=false;
@@ -126,7 +126,7 @@ foreach($fns as $name=>$fn)
 					if($m2[0]>=0.9) {
 						$found=true;
 						var_dump($m2[1]);
-						$aid=$m1->sid;
+						$sid=$m1->sid;
 						$accuracy=$m2[0];
 					}
 				}
@@ -143,29 +143,52 @@ foreach($fns as $name=>$fn)
 		}
 		if($found) {
 			var_dump($sid, $accuracy);
+			if($accuracy===1) {
+				$res=$wln->add_novel($sid, 'QIDIAN');
+				$res=json_decode($res);
+				var_dump($res);
+				if($res->error) die('error');
+				var_dump($name. ' added to WLNUpdates.');
+				$updatedCount['wln']++;
+				continue; // TODO : fix following code (get_info)
+				$res=$wln->get_info($sid);
+				var_dump($res);
+				$res=json_decode($res);
+				$fns[$name]['watches']=$res;
+				$found1=true;
+			}
+			die();
 		}
 		else {
-			var_dump($res->data->results[0]->match[0]);
-			var_dump('not found');
-			$res=$wn->checkLogin();
-			var_dump($res);
+			var_dump($name.' not found in WLNUpdates search');
+			//var_dump($res->data->results[0]->match[0]);
+			/*$res=$wn->checkLogin();
+			//var_dump($res);
 			if($res->code!=0) {
 				var_dump($res->code, $res->msg);
-				//$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
-				//var_dump($res);
+				$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+				var_dump($res);
 			}
 			//$res=$wn->search($name);
 			//var_dump($res);
 			$res=$wn->search2($name);
+			assert($res->code==0);
 			var_dump($res);
+			if(count($res->data->books)==1) {
+				assert(name_compare($name, $res->data->books[0]->name));
+				$res=$wn->get_info($res->data->books[0]->id);
+				//var_dump($res);
+				var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);
+			}
+			//*/
 		}
-		die();
+		//die();
 	}
 	
 	// webnovel
 	$key='';
 	$id=-1;
-	$found=false;
+	$found2=false;
 	{
 		foreach($books as $key=>$book) {
 			if(!is_object($book)) {
@@ -175,11 +198,11 @@ foreach($fns as $name=>$fn)
 			if(name_compare($name, @$book->bookName))
 			{
 				$id=$book->bookId;
-				$found=true;
+				$found2=true;
 				break;
 			}
 		}
-		if($found) {
+		if($found2) {
 			// DO NOTHING
 		}
 		else {
@@ -187,8 +210,79 @@ foreach($fns as $name=>$fn)
 			var_dump($name.' not found in WebNovel.');
 		}
 	}
-	if($found) {
+	if($found2) {
 		// DO NOTHINGs
+	}
+	else {
+		// THIS FILES search the missing novels to add them
+		$res=$wn->checkLogin();
+		//var_dump($res);
+		if($res->code!=0) {
+			var_dump($res->code, $res->msg);
+			$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+			var_dump($res);
+		}
+		/*$res=$wn->search($name);
+		var_dump($res);//*/
+		$res=$wn->search2($name);
+		assert($res->code==0);
+		var_dump($res);
+		if(!property_exists($res->data, 'books')) {
+			if(!$found1) die('novel is in neither wlnupdate nor webnovel');
+			$name1='';
+			$name2='';
+			if($found1) {
+				if(is_array($fns[$name]['watches'])) {
+					$name1=$fns[$name]['watches'][3];
+					$name2=$fns[$name]['watches'][0]->name;
+				}
+				else if(is_object($fns[$name]['watches'])) {
+					$name1=$fns[$name]['watches']->data->title;
+					$name2=$fns[$name]['watches']->data->alternatenames[0];
+				}
+			}
+			if( !is_null($name1) && strlen($name1)>0 ) {
+				$res=$wn->search2($name1);
+				assert($res->code==0);
+				var_dump($res);
+			}
+			if(!property_exists($res->data, 'books')) {
+				$res=$wn->search2($name2);
+				assert($res->code==0);
+				var_dump($res);
+			}
+		}
+		if(!property_exists($res->data, 'books')) die('error');
+		if(count($res->data->books)==1) {
+			assert(name_compare($name, $res->data->books[0]->name));
+			$id=$res->data->books[0]->id;
+			$res=$wn->add_watch($id, 0);
+			var_dump($res);
+			/*$res=$wn->get_info($res->data->books[0]->id);
+			//var_dump($res);
+			var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);//*/
+		}
+		else {
+			$id=-1;
+			$ids=array();
+			$found=0;
+			foreach($res->data->books as $book) {
+				if(name_compare($name, $book->name)) {
+					$found++;
+					$ids[]=$book->id;
+					$id=$book->id;
+				}
+			}
+			var_dump($found);
+			assert($found==1) or die('Multiple novel found with that name');
+			$res=$wn->add_watch($id, 0);
+			var_dump($res);
+		}
+		$res=json_decode($res);
+		assert($res->code==0);
+		assert($res->msg=='Success');
+		$updatedCount['wn']++;
+		//die();
 	}
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {

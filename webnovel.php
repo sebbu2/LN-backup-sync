@@ -519,7 +519,7 @@ class WebNovel extends SitePlugin
 			$extracts[]=$extract;
 		}
 		
-		file_put_contents($this::FOLDER.'search.json', json_encode($extracts));
+		file_put_contents($this::FOLDER.'_search.json', json_encode($extracts));
 		return $extracts;
 	}
 	
@@ -544,7 +544,7 @@ class WebNovel extends SitePlugin
 			var_dump($data->msg);
 			die('autocomplete error');
 		}
-		if(count($data->data->books)>0) {
+		if(property_exists($data->data, 'books') && count($data->data->books)>0) {
 			if(name_compare($name, $data->data->books[0]->name)) {
 				$id=$data->data->books[0]->id;
 				$ar=array(
@@ -644,9 +644,58 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info($name)
+	public function get_info($id)
 	{
-		//name or id
+		// id
+		$data=array();
+		
+		$referer='https://www.webnovel.com/';
+		$ar=array(
+			'bookId'=>$id,
+		);
+		$headers=array(
+			'X-Requested-With: XMLHttpRequest',
+			//'Referer: '.$referer,
+		);
+		
+		$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'get-book'.$id.'.json', $res);
+		
+		$data[]=json_decode($res);
+		
+		$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'get-book-extended'.$id.'.json', $res);
+		
+		$data[]=json_decode($res);
+		
+		return $data;
+	}
+	
+	public function add_watch($id, $novelType=0) {
+		// id
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$referer='https://www.webnovel.com/library';
+
+		$data=array();
+		
+		$referer='https://www.webnovel.com/';
+		$ar=array(
+			'_csrfToken'=>$cookies['_csrfToken'],
+			'bookIds'=>strval($id),
+			'novelType'=>$novelType,
+		);
+		$headers=array(
+			'X-Requested-With: XMLHttpRequest',
+			'Referer: '.$referer,
+		);
+		
+		$res = $this->send( 'https://www.webnovel.com/apiajax/Library/AddLibraryItemsAjax', $ar, $headers);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'AddLibraryItemsAjax'.$id.'.json', $res);
+		
+		return $res;
 	}
 };
 ?>

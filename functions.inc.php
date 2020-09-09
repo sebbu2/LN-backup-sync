@@ -343,7 +343,8 @@ class SitePlugin
 		} //*/
 		$jsonp=trim($jsonp);
 		static $end_match=array('['=>']','{'=>'}');
-		assert(in_array($jsonp[0], array('[','{')) && substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON.');
+		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON 1.<br/>'.$jsonp);
+		assert(substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON 2.<br/>'.$jsonp);
 		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT);
 		//$jsonp=str_replace('    ',"\t",$jsonp); // TAB are invalid in json
 		$jsonp=str_replace('    ', '  ', $jsonp);

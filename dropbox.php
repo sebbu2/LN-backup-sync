@@ -74,7 +74,7 @@ foreach($fns as $name=>$fn)
 	//wlnupdates
 	$key='';
 	$id=-1;
-	$found=false;
+	$found1=false;
 	{
 		/*foreach($watches as $_key=>$ar1)
 		{
@@ -84,7 +84,7 @@ foreach($fns as $name=>$fn)
 				{
 					$key=$_key;
 					$id=$_id;
-					$found=true;
+					$found1=true;
 					break(2);
 				}
 			}
@@ -95,11 +95,11 @@ foreach($fns as $name=>$fn)
 			{
 				$key=$_key;
 				$id=$book[0]->id;
-				$found=true;
+				$found1=true;
 				break;
 			}
 		}
-		if($found) {
+		if($found1) {
 			$fns[$name]['watches']=$watches[$key];
 		}
 		else {
@@ -118,7 +118,7 @@ foreach($fns as $name=>$fn)
 		assert($chp == $fn['max']);
 	}
 	
-	if($found) {
+	if($found1) {
 		//if($chp>(int)$watches[$key]['chp']) {
 		if($chp>(int)$watches[$key][1]->chp) {
 			var_dump($name, $chp, $watches[$key][1]->chp);
@@ -134,7 +134,7 @@ foreach($fns as $name=>$fn)
 	// webnovel
 	$key='';
 	$id=-1;
-	$found=false;
+	$found2=false;
 	{
 		foreach($books as $key=>$book) {
 			if(!is_object($book)) {
@@ -144,11 +144,11 @@ foreach($fns as $name=>$fn)
 			if(name_compare($name, @$book->bookName))
 			{
 				$id=$book->bookId;
-				$found=true;
+				$found2=true;
 				break;
 			}
 		}
-		if($found) {
+		if($found2) {
 			// DO NOTHING
 		}
 		else {
@@ -156,7 +156,7 @@ foreach($fns as $name=>$fn)
 			var_dump($name.' not found in WebNovel.');
 		}
 	}
-	if($found) {
+	if($found2) {
 		$res=NULL;
 		if(!file_exists($wn::FOLDER.'GetChapterList_'.$id.'.json')) {
 			$res=$wn->get_chapter_list($id);

@@ -919,6 +919,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 117515,
+      "name": "Astral Pet Store",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1593143884,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -1000,6 +1024,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 116761,
+      "name": "Custom Made Demon King",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1591345650,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -1058,6 +1106,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 67182,
+      "name": "Divine Emperor of Death",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 160,
+      "chp": 160,
+      "date": 1547875094.130673,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 69837,
       "name": "End of the Magic Era",
       "rating": null,
@@ -1078,6 +1153,33 @@
       "vol": -1
     },
     "End of the Magic Era"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 111199,
+      "name": "Epic of Caterpillar",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 57,
+      "chp": 57,
+      "date": 1583456700,
+      "frag": -1,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -1139,6 +1241,60 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 109811,
+      "name": "Geomancy Couple",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10,
+      "chp": 10,
+      "date": 1593359157,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 46295,
+      "name": "Grasping Evil",
+      "rating": 7.61538461538461,
+      "rating_count": 13,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 395.0002,
+      "chp": 395,
+      "date": 1596216322,
+      "frag": 2,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 109601,
       "name": "I Don't Want To Go Against The Sky",
       "rating": null,
@@ -1173,8 +1329,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1153,
-      "chp": 1153,
+      "agg": 1155,
+      "chp": 1155,
       "frag": -1,
       "vol": -1
     },
@@ -1206,6 +1362,33 @@
       "agg": 1,
       "chp": 1,
       "date": 1588036013,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 115991,
+      "name": "It's Lonely to Be Invincible",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 35,
+      "chp": 35,
+      "date": 1589529795,
       "frag": 0,
       "vol": -1
     },
@@ -1314,6 +1497,54 @@
       "agg": 38,
       "chp": 38,
       "date": 1587714520,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 118062,
+      "name": "MMORPG: Divine Monster Transmuter",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1594351436,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 118079,
+      "name": "My Senior Brother is Too Steady",
+      "rating": 9,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1594375300,
       "frag": 0,
       "vol": -1
     },
@@ -1433,6 +1664,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 64197,
+      "name": "Spare Me, Great Lord!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 137,
+      "chp": 137,
+      "date": 1529488800,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 62448,
       "name": "Summoning the Holy Sword",
       "rating": null,
@@ -1514,6 +1772,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 85471,
+      "name": "The Alchemists",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 156,
+      "chp": 156,
+      "date": 1585759320,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 109194,
       "name": "The First Order",
       "rating": 9,
@@ -1557,6 +1842,33 @@
       "agg": 151,
       "chp": 151,
       "date": 1578110701,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 107199,
+      "name": "Worlds' Apocalypse Online",
+      "rating": 7,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 708,
+      "chp": 708,
+      "date": 1592456400,
       "frag": 0,
       "vol": -1
     },
@@ -2700,8 +3012,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 552,
-      "chp": 552,
+      "agg": 553,
+      "chp": 553,
       "frag": -1,
       "vol": -1
     },
@@ -2894,7 +3206,7 @@
     {
       "agg": 11,
       "chp": 11,
-      "date": 1547321964,
+      "date": 1560453846.336022,
       "frag": -1,
       "vol": -1
     },
@@ -2994,8 +3306,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 822,
-      "chp": 822,
+      "agg": 824,
+      "chp": 824,
       "frag": -1,
       "vol": -1
     },
@@ -3206,7 +3518,7 @@
     {
       "agg": 273,
       "chp": 273,
-      "date": 1547718316,
+      "date": 1547888561,
       "frag": 0,
       "vol": -1
     },
@@ -3422,7 +3734,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1464754140,
+      "date": 1466827589,
       "frag": 0,
       "vol": -1
     },

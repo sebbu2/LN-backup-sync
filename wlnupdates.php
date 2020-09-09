@@ -135,7 +135,7 @@ class WLNUpdates extends SitePlugin
 				'frag'=>(int)$watch[1]->frag,
 			);
 		}
-		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type:Application/json') );
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'read-update.json', $res);
 		return $res;
@@ -147,7 +147,7 @@ class WLNUpdates extends SitePlugin
 			'mode'=>'search-title',
 			'title'=>$name,
 		);
-		$res = $this->send( 'https://www.wlnupdates.com/api',json_encode($ar), array('Content-Type:Application/json') );
+		$res = $this->send( 'https://www.wlnupdates.com/api',json_encode($ar), array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'search-title.json', $res);
 		return $res;
@@ -162,6 +162,32 @@ class WLNUpdates extends SitePlugin
 		//csrf_token
 		$res = $this->send( 'https://www.wlnupdates.com/add/series', $ar);
 		file_put_contents($this::FOLDER.'add-series.json', $res);
+	}
+	
+	public function get_info($id) {
+		$ar=array(
+			'id'=>$id,
+			'mode'=>'get-series-id',
+		);
+		var_dump($ar,json_encode($ar));
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'));
+		var_dump($res);die();
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
+		return $res;
+	}
+	
+	public function add_novel($id, $list='QIDIAN') {
+		$ar=array(
+			'mode'=>'set-watch',
+			'item-id'=>strval($id),
+			'list'=>$list,
+			'watch'=>true,
+		);
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'));
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'set-watch.json', $res);
+		return $res;
 	}
 };
 ?>
