@@ -52,7 +52,7 @@ foreach($ar as $fn)
 	}
 	else if(
 		$max>$fns[$fn2]['max'] && //new last chapter is >
-		(($content[1]+1+($content[3]>0?1:0)) >= ($fns[$fn2][1]+1+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+		(($min+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn2]['min']+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
 		var_dump($fns[$fn2]['fn']);//die();
 		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
