@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 527,
-      "chp": 527,
+      "agg": 531,
+      "chp": 531,
       "frag": -1,
       "vol": -1
     },
@@ -39,8 +39,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 20504,
-      "chp": 504,
+      "agg": 20506,
+      "chp": 506,
       "frag": -1,
       "vol": 2
     },
@@ -50,30 +50,6 @@
       "date": 1541614200,
       "frag": -1,
       "vol": 2
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": null,
-      "id": 127434,
-      "name": "Agatha The Legendary Guild Master",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 33,
-      "chp": 33,
-      "date": 1599648360,
-      "frag": 0,
-      "vol": -1
     },
     null
   ],
@@ -90,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 735,
-      "chp": 735,
+      "agg": 738,
+      "chp": 738,
       "frag": -1,
       "vol": -1
     },
@@ -164,33 +140,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 63420,
-      "name": "Carefree Path of Dreams",
-      "rating": 6.5,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1183,
-      "chp": 1183,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 112,
-      "chp": 112,
-      "date": 1547725138.812052,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 56289,
       "name": "Daoist Gu",
       "rating": 6.33333333333333,
@@ -198,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 11919,
-      "chp": 1919,
+      "agg": 11923,
+      "chp": 1923,
       "frag": -1,
       "vol": 1
     },
@@ -252,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1197,
-      "chp": 1197,
+      "agg": 1199,
+      "chp": 1199,
       "frag": -1,
       "vol": -1
     },
@@ -279,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 456,
-      "chp": 456,
+      "agg": 460,
+      "chp": 460,
       "frag": -1,
       "vol": -1
     },
@@ -306,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 426,
-      "chp": 426,
+      "agg": 428,
+      "chp": 428,
       "frag": -1,
       "vol": -1
     },
@@ -326,33 +275,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 46295,
-      "name": "Grasping Evil",
-      "rating": 7.61538461538461,
-      "rating_count": 13,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 395.0002,
-      "chp": 395,
-      "date": 1596216322,
-      "frag": 2,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 109601,
       "name": "I Don't Want To Go Against The Sky",
       "rating": null,
@@ -360,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 456,
-      "chp": 456,
+      "agg": 460,
+      "chp": 460,
       "frag": -1,
       "vol": -1
     },
@@ -387,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1155,
-      "chp": 1155,
+      "agg": 1161,
+      "chp": 1161,
       "frag": -1,
       "vol": -1
     },
@@ -411,8 +333,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 318,
-      "chp": 318,
+      "agg": 322,
+      "chp": 322,
       "frag": -1,
       "vol": -1
     },
@@ -431,33 +353,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 115991,
-      "name": "It's Lonely to Be Invincible",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 35,
-      "chp": 35,
-      "date": 1589529795,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 111089,
       "name": "Let Me Game in Peace",
       "rating": null,
@@ -465,8 +360,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 466,
-      "chp": 466,
+      "agg": 470,
+      "chp": 470,
       "frag": -1,
       "vol": -1
     },
@@ -519,8 +414,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 300,
-      "chp": 300,
+      "agg": 304,
+      "chp": 304,
       "frag": -1,
       "vol": -1
     },
@@ -546,8 +441,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 316,
-      "chp": 316,
+      "agg": 320,
+      "chp": 320,
       "frag": -1,
       "vol": -1
     },
@@ -555,30 +450,6 @@
       "agg": 38,
       "chp": 38,
       "date": 1587714520,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": null,
-      "id": 118079,
-      "name": "My Senior Brother is Too Steady",
-      "rating": 9,
-      "rating_count": 1,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 38,
-      "chp": 38,
-      "date": 1594375300,
       "frag": 0,
       "vol": -1
     },
@@ -617,33 +488,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 45087,
-      "name": "Rebirth of the Godly Prodigal",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1316,
-      "chp": 1316,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 88,
-      "chp": 88,
-      "date": 1562357233,
-      "frag": -1,
-      "vol": -1
-    },
-    "Rebirth of the Godly Prodigal"
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 62448,
       "name": "Summoning the Holy Sword",
       "rating": null,
@@ -651,8 +495,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1086,
-      "chp": 1086,
+      "agg": 1089,
+      "chp": 1089,
       "frag": -1,
       "vol": -1
     },
@@ -678,8 +522,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10840,
-      "chp": 840,
+      "agg": 10844,
+      "chp": 844,
       "frag": -1,
       "vol": 1
     },
@@ -732,8 +576,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 523,
-      "chp": 523,
+      "agg": 525,
+      "chp": 525,
       "frag": -1,
       "vol": -1
     },
@@ -759,8 +603,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 972,
-      "chp": 972,
+      "agg": 976,
+      "chp": 976,
       "frag": -1,
       "vol": -1
     },
@@ -887,6 +731,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 63420,
+      "name": "Carefree Path of Dreams",
+      "rating": 6.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1183,
+      "chp": 1183,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 112,
+      "chp": 112,
+      "date": 1547725138.812052,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 53461,
       "name": "Castle of Black Iron",
       "rating": 7,
@@ -970,8 +841,8 @@
       },
       "id": 35069,
       "name": "God Of Slaughter",
-      "rating": 7.52631578947368,
-      "rating_count": 38,
+      "rating": 7.38461538461539,
+      "rating_count": 39,
       "tl_type": "translated"
     },
     {
@@ -1157,6 +1028,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 45087,
+      "name": "Rebirth of the Godly Prodigal",
+      "rating": 5.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1316,
+      "chp": 1316,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 88,
+      "chp": 88,
+      "date": 1562357233,
+      "frag": -1,
+      "vol": -1
+    },
+    "Rebirth of the Godly Prodigal"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 43524,
       "name": "Release that Witch",
       "rating": 7.55555555555556,
@@ -1294,8 +1192,8 @@
       },
       "id": 33500,
       "name": "Warlock of the Magus World",
-      "rating": 8.06060606060606,
-      "rating_count": 33,
+      "rating": 8.11764705882353,
+      "rating_count": 34,
       "tl_type": "translated"
     },
     {
@@ -1755,8 +1653,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 926,
-      "chp": 926,
+      "agg": 930,
+      "chp": 930,
       "frag": -1,
       "vol": -1
     },
@@ -1777,20 +1675,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98412698412698,
-      "rating_count": 63,
+      "rating": 9.984375,
+      "rating_count": 64,
       "tl_type": "oel"
     },
     {
-      "agg": 590,
-      "chp": 590,
+      "agg": 592,
+      "chp": 592,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 590,
-      "chp": 590,
-      "date": 1599636480,
+      "agg": 592,
+      "chp": 592,
+      "date": 1599876960,
       "frag": 0,
       "vol": -1
     },
@@ -1806,8 +1704,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 311,
-      "chp": 311,
+      "agg": 313,
+      "chp": 313,
       "frag": -1,
       "vol": -1
     },
@@ -1884,15 +1782,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 544,
-      "chp": 544,
+      "agg": 546,
+      "chp": 546,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 101,
-      "chp": 101,
-      "date": 1599501600,
+      "agg": 104,
+      "chp": 104,
+      "date": 1599760800,
       "frag": 0,
       "vol": -1
     },
@@ -1911,8 +1809,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 554,
-      "chp": 554,
+      "agg": 556,
+      "chp": 556,
       "frag": -1,
       "vol": -1
     },
@@ -2019,8 +1917,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 658,
-      "chp": 658,
+      "agg": 662,
+      "chp": 662,
       "frag": -1,
       "vol": -1
     },
@@ -2046,8 +1944,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 320692,
-      "chp": 692,
+      "agg": 320693,
+      "chp": 693,
       "frag": -1,
       "vol": 32
     },
@@ -2070,8 +1968,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 264,
-      "chp": 264,
+      "agg": 265,
+      "chp": 265,
       "frag": -1,
       "vol": -1
     },
@@ -2097,15 +1995,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 177,
-      "chp": 177,
+      "agg": 178,
+      "chp": 178,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 11,
       "chp": 11,
-      "date": 1547321964,
+      "date": 1560453846.336022,
       "frag": -1,
       "vol": -1
     },
@@ -2178,8 +2076,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 259,
-      "chp": 259,
+      "agg": 260,
+      "chp": 260,
       "frag": -1,
       "vol": -1
     },
@@ -2205,8 +2103,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 826,
-      "chp": 826,
+      "agg": 830,
+      "chp": 830,
       "frag": -1,
       "vol": -1
     },
@@ -2232,8 +2130,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 287,
-      "chp": 287,
+      "agg": 289,
+      "chp": 289,
       "frag": -1,
       "vol": -1
     },
@@ -2266,6 +2164,30 @@
       "chp": -1,
       "date": null,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 127434,
+      "name": "Agatha The Legendary Guild Master",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38.0002,
+      "chp": 38,
+      "date": 1599709560,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -2405,6 +2327,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 46295,
+      "name": "Grasping Evil",
+      "rating": 7.61538461538461,
+      "rating_count": 13,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 395.0002,
+      "chp": 395,
+      "date": 1596216322,
+      "frag": 2,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 117514,
       "name": "I'll Add Points To All Things",
       "rating": null,
@@ -2421,6 +2370,33 @@
       "agg": 39,
       "chp": 39,
       "date": 1593143530,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 115991,
+      "name": "It's Lonely to Be Invincible",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 35,
+      "chp": 35,
+      "date": 1589529795,
       "frag": 0,
       "vol": -1
     },
@@ -2500,6 +2476,30 @@
       "chp": 22,
       "date": 1560818087.488112,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 118079,
+      "name": "My Senior Brother is Too Steady",
+      "rating": 9,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1594375300,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -3545,7 +3545,7 @@
     {
       "agg": 273,
       "chp": 273,
-      "date": 1547888561,
+      "date": 1547718316,
       "frag": 0,
       "vol": -1
     },
@@ -3894,9 +3894,9 @@
       "vol": -1
     },
     {
-      "agg": 1262,
-      "chp": 1262,
-      "date": 1599622813,
+      "agg": 1266,
+      "chp": 1266,
+      "date": 1599928813,
       "frag": 0,
       "vol": -1
     },
@@ -4191,10 +4191,10 @@
       "vol": -1
     },
     {
-      "agg": 415.0001,
+      "agg": 415.0002,
       "chp": 415,
-      "date": 1599606622,
-      "frag": 1,
+      "date": 1599774012,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -4434,9 +4434,9 @@
       "vol": 3
     },
     {
-      "agg": 30367,
-      "chp": 367,
-      "date": 1599495944,
+      "agg": 30368,
+      "chp": 368,
+      "date": 1599671419,
       "frag": 0,
       "vol": 3
     },

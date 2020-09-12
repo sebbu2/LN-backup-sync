@@ -123,6 +123,7 @@ foreach($fns as $name=>$fn)
 		if($chp>(int)$watches[$key][1]->chp) {
 			var_dump($name, $chp, $watches[$key][1]->chp);
 			$data=$wln->read_update($watches[$key], $chp);
+			$data=json_decode($data);
 			var_dump($data);
 			$updatedCount['wln']++;
 		}

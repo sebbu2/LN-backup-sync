@@ -205,6 +205,7 @@ class SitePlugin
 				continue;
 			}
 			//var_dump($line, $line2);//die();
+			if(DEBUG_COOKIE) var_dump($line2);
 			$line=$line2;
 		}
 		if(!$found) {
@@ -257,7 +258,7 @@ class SitePlugin
 			else $url.='&'.$parameters;
 		}
 		$this->lastUrl=$url;
-		if(DEBUG_HTTP) var_dump($url);
+		if(DEBUG_URL || DEBUG_HTTP) var_dump($url);
 		$data=@file_get_contents($url,false,$ctx);
 		if($data===false) return false;
 		if(DEBUG_HTTP) var_dump($http_response_header);
@@ -273,7 +274,7 @@ class SitePlugin
 	{
 		//if(strlen(trim($header))==0) return strlen($header);
 		$this->headersRecv[]=trim($header);
-		return strlen($header);
+		return strlen($header); // mandatory (from API documentation)
 	}
 	
 	protected function send($url, $postdata=array(), $headers=array(), $cookies=array())
@@ -308,10 +309,11 @@ class SitePlugin
 			if(!is_array($headers)) $headers=array($headers);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		}
-		if(DEBUG_HTTP) var_dump($url);
+		if(DEBUG_URL || DEBUG_HTTP) var_dump($url);
+		if(DEBUG_POSTDATA) var_dump('postdata', $postdata);
 		
-		curl_setopt($ch, CURLINFO_HEADER_OUT, 1 );
-		curl_setopt($ch, CURLOPT_HEADERFUNCTION, array(&$this, 'print_headers'));
+		curl_setopt($ch, CURLINFO_HEADER_OUT, 1 ); // headersSent
+		curl_setopt($ch, CURLOPT_HEADERFUNCTION, array(&$this, 'print_headers')); // headersRecv
 		
 		$res = curl_exec($ch);
 		
@@ -322,9 +324,14 @@ class SitePlugin
 			{
 				var_dump('>> '.trim($h));
 			}
-			foreach($this->headersRecv as $h)
-			{
+		}
+		foreach($this->headersRecv as $h)
+		{
+			if(DEBUG_HTTP) {
 				var_dump('<< '.trim($h));
+			}
+			else if(startswith($h, 'Location:')) {
+				var_dump('Redirecting from \"'.$url.'\" to \"'.substr($h, 10).'\"<br/>'."\r\n");
 			}
 		}
 		

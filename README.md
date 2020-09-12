@@ -4,9 +4,11 @@ Backup LN reading states, sync to/from e-reader
 Setup
 =====
 
-edit config.php and add the user/pass of wlnupdates.com and webnovel.com
+edit config.php
 
-edit dropbox.php and modify the local folder of Dropbox, including Apps\Books\\.Moon+\Cache subfolder for position sync from Moon+Reader
+add the user/pass of wlnupdates.com and webnovel.com
+
+modify the local folder of Dropbox, including Apps\\Books\\.Moon+\\Cache subfolder for position sync from Moon+Reader
 
 Description
 ===========
@@ -31,11 +33,13 @@ webnovel.php class to support webnovel.com
 
 **webnovel_news.php** List novels from webnovel with new chapters (depends on retr)
 
-watches.inc.php php data from wlnupdates
+wlnupdates/\_books.json json data from wlnupdates
 
 watches2.htm raw table of wlnupdates data
 
 webnovel/\_books.json json data from webnovel (merged)
 
 library.htm raw table of webnovel data
+
+wn\_diff.json json data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdate reading position)
 

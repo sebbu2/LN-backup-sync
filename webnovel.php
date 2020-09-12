@@ -348,13 +348,14 @@ class WebNovel extends SitePlugin
 	{
 		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
 		{
-			$res=json_decode($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json', false, 512 );
+			$res=json_decode(file_get_contents($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'), false, 512, JSON_THROW_ON_ERROR );
 		}
 		else {
 			$res=$this->get_chapter_list($watch->bookId);
 		}
 		if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
 			unlink($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
+			var_dump('deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
 			$res=$this->get_chapter_list($watch->bookId);
 			if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )
 			{
@@ -365,6 +366,7 @@ class WebNovel extends SitePlugin
 		if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 		//updating list of chapters
 		if( $watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
+			var_dump('Updating',$res->data->bookInfo->bookName);
 			$res=$this->get_chapter_list($watch->bookId);
 		}
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
@@ -420,8 +422,8 @@ class WebNovel extends SitePlugin
 				'bookId'=>strval($watch->bookId),
 				'chapterId'=>($cid>0?$cid:$cid_max),
 			);
-			var_dump($ar);
-			$res = $this->send( 'www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
+			//var_dump($ar);
+			$res = $this->send( 'https://www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'SetReadingProgressAjax.json', $res);
 			$res=json_decode($res);
@@ -746,6 +748,115 @@ class WebNovel extends SitePlugin
 		file_put_contents($this::FOLDER.'AddLibraryItemsAjax.json', $res);
 		
 		return $res;
+	}
+	
+	public function get_history() {
+		// id
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$referer='https://www.webnovel.com/library';
+
+		$data=array();
+		
+		$referer='https://www.webnovel.com/';
+		$ar=array(
+			'_csrfToken'=>$cookies['_csrfToken'],
+		);
+		$headers=array(
+			'X-Requested-With: XMLHttpRequest',
+			'Referer: '.$referer,
+		);
+		
+		$data2=array();
+		$pageIndex=0; // starts as 1 for this endpoint, but will be incremented at the top of the loop, so it will starts at 1 and must be init to 0
+		$pageSize=20; // default?
+		
+		do {
+			++$pageIndex;
+			if($pageIndex>1) $ar['pageIndex']=$pageIndex;
+			if($pageIndex==2) $ar['pageSize']=$pageSize=$res->data->total; // only need to be done once, so at index=2
+			$res = $this->get( 'https://www.webnovel.com/apiajax/ReadingHistory/ReadingHistoryAjax', $ar, $headers );
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'ReadingHistoryAjax'.$pageIndex.'.json', $res);
+			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+			$data2[]=$res;
+			if($pageIndex==1) if($res->data->isLast==0) $pageSize=$res->data->total;
+		}
+		while($res->data->isLast==0);
+		
+		$data[]=$data2;
+		
+		$data2=array();
+		
+		for($i=1;$i<=$pageIndex;$i++) {
+			$ar=array(
+				'pageIndex'=>$i,
+				'pageSize'=>$pageSize,
+			);
+			
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/reading/get-history', $ar, $headers);
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'get-history'.$i.'.json', $res);
+			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+			
+			if($i==1 && $pageIndex>1) assert($pageSize==count($res->Data)) or die('error in ReadingHistoryAjax vs get-history.');
+			$data2[]=$res;
+		}
+		
+		$data[]=$data2;
+		return $data;
+	}
+	
+	public function get_collections() {
+		// id
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$referer='https://www.webnovel.com/library';
+
+		$data=array();
+		
+		$referer='https://www.webnovel.com/';
+		$ar=array(
+		);
+		$headers=array(
+			'X-Requested-With: XMLHttpRequest',
+			'Referer: '.$referer,
+		);
+		
+		$res = $this->get( 'https://idruid.webnovel.com/app/api/book-collection/list', $ar, $headers);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'book-collection.json', $res);
+		$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+		
+		$data[]=$res;
+		
+		$data2[]=array();
+		
+		$ar=array(
+			'collectionId'=>'',
+			'pageIndex'=>0, // starts as 1 for this endpoint, but will be incremented at the top of the loop, so it will starts at 1 and must be init to 0
+			'pageSize'=>20, // fixed, always 20 even if changed
+		);
+		foreach($res->Data->Items as $col) {
+			$cid=$col->CollectionId;
+			$ar['collectionId']=$cid;
+			$name=$col->Name;
+			$num=$col->BookItems;
+			$pageIndex=0;
+			$data3=array();
+			do {
+				++$pageIndex;
+				$ar['pageIndex']=$pageIndex;
+				$res = $this->get( 'https://idruid.webnovel.com/app/api/book-collection/detail', $ar, $headers);
+				$res=$this->jsonp_to_json($res);
+				file_put_contents($this::FOLDER.'book-collection'.$cid.'-'.$pageIndex.'.json', $res);
+				$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+				$data3[]=$res;
+			}
+			while($res->Data->IsLast==0);
+			$data2[]=$data3;
+		}
+		$data[]=$data2;
+		
+		return $data;
 	}
 };
 ?>

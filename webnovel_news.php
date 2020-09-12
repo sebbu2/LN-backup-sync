@@ -54,13 +54,13 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				//fixing chapter number
 				$add=0;
 				$add2=0;
+				$priv_only=0;
+				$max_pub=0;
 				if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2+=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2+=$diff_old['cur'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['old'])) $add2+=$diff_old['old'][$entry['title']];
 				else {
-					$priv_only=0;
-					$max_pub=0;
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							if($chap->chapterLevel!=0) $priv_only++;
@@ -90,7 +90,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					//up-to-date
 					if( !( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) ) )
 					{
-						var_dump($book,$add,$add2,$res);
+						var_dump($book,$add,$add2,$priv_only,$max_pub,$res->data->bookInfo);
 					}
 					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
 					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
