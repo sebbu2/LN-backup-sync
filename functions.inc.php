@@ -85,7 +85,7 @@ function print_table($ar)
 }
 function name_simplify($name) {
 	static $ar1=array('_','-', ':', ',', '  ');
-	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
+	static $ar2=array('\'', '+', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar1, ' ', $name);
 	$name=str_replace($ar2, '', $name);
@@ -96,7 +96,7 @@ function name_simplify($name) {
 function name_compare($name1, $name2)
 {
 	static $ar1=array('_','-', ':', ',', '  ');
-	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
+	static $ar2=array('\'', '+', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
 	$name1=mb_convert_encoding($name1, 'HTML-ENTITIES',  'UTF-8');
 	$name2=mb_convert_encoding($name2, 'HTML-ENTITIES',  'UTF-8');
 	$name1=str_replace($ar1, ' ', $name1);

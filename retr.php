@@ -19,38 +19,38 @@ $loggued=false;
 	);
 	$wln=new WLNUpdates();
 	$res=$wln->watches();
-	if(in_array($res, $wln_errors)) $loggued = true;
-	$watches=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+	//if(in_array($res, $wln_errors)) $loggued = true;
+	//$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 
-	if(!$loggued && $watches->error==true) {
+	if( $res->error==true ) {
 		$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
 		if($res===false) die('you need to log in.');
-		$res=json_decode($res);
+		//$res=json_decode($res);
 		if(is_object($res) && $res->error==true) die($res->message);
 		$res = $wln->watches();
 	}
 
-	if(in_array($res, $wln_errors)) $res = false;
-	if($res===false) {
+	//if(in_array($res, $wln_errors)) $res = false;
+	if($res===false || $res->error==true) {
 		$res = $wln->watches2();
-		$watches = $wln->watches2_lists($res);
-		file_put_contents('watches.inc.php', '<?php'."\r\n".'$watches = '.var_export($watches, true).';' );
+		$res = $wln->watches2_lists($res);
+		file_put_contents('watches.inc.php', '<?php'."\r\n".'$watches = '.var_export($res, true).';' );
 	}
 	else {
 		//$res=json_decode($res);
 		//var_dump($res);
-		$watches=$watches->data[0];
-		$watches2=array();
-		foreach($watches as $w) { $watches2=array_merge($watches2, $w); };
-		file_put_contents($wln::FOLDER.'_books.json',$wln->jsonp_to_json(json_encode($watches2)));
+		$res=$res->data[0];
+		$res2=array();
+		foreach($res as $w) { $res2=array_merge($res2, $w); };
+		file_put_contents($wln::FOLDER.'_books.json',$wln->jsonp_to_json(json_encode($res2)));
 		//var_dump('NEW WATCHES !', $res);
 		//die();
 	}
-	$count=0;foreach($watches as $list) $count+=count($list);
+	$count=0;foreach($res as $list) $count+=count($list);
 	echo 'wlnupdates=';var_dump($count);
 
 	ob_start();
-	foreach($watches as $id=>$list)
+	foreach($res as $id=>$list)
 	{
 		echo '<h4>'.$id.'</h4>'."\r\n";
 		print_table($list);//die();
@@ -72,7 +72,7 @@ $loggued=false;
 		var_dump($res);
 	}
 	$res=$wn->watches();
-	$res=json_decode($res);
+	//$res=json_decode($res);
 	echo 'webnovel= ';var_dump(count($res));
 	
 	ob_start();

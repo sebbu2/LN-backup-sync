@@ -20,6 +20,7 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: Application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'login.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
@@ -65,6 +66,7 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: Application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'watches.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
@@ -138,6 +140,7 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'read-update.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
@@ -150,6 +153,7 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api',json_encode($ar), array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'search-title.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
@@ -162,6 +166,8 @@ class WLNUpdates extends SitePlugin
 		//csrf_token
 		$res = $this->send( 'https://www.wlnupdates.com/add/series', $ar);
 		file_put_contents($this::FOLDER.'add-series.json', $res);
+		$res=json_decode($res);
+		return $res;
 	}
 	
 	public function get_info($id) {
@@ -174,6 +180,7 @@ class WLNUpdates extends SitePlugin
 		var_dump($res);die();
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
@@ -187,6 +194,7 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'));
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'set-watch.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 };

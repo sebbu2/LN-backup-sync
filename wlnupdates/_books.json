@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 541,
-      "chp": 541,
+      "agg": 547,
+      "chp": 547,
       "frag": -1,
       "vol": -1
     },
@@ -39,8 +39,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 20511,
-      "chp": 511,
+      "agg": 20514,
+      "chp": 514,
       "frag": -1,
       "vol": 2
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 745,
-      "chp": 745,
+      "agg": 749,
+      "chp": 749,
       "frag": -1,
       "vol": -1
     },
@@ -147,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 11933,
-      "chp": 1933,
+      "agg": 11939,
+      "chp": 1939,
       "frag": -1,
       "vol": 1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1205,
-      "chp": 1205,
+      "agg": 1209,
+      "chp": 1209,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 470,
-      "chp": 470,
+      "agg": 476,
+      "chp": 476,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 433,
-      "chp": 433,
+      "agg": 436,
+      "chp": 436,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 470,
-      "chp": 470,
+      "agg": 476,
+      "chp": 476,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1169,
-      "chp": 1169,
+      "agg": 1174,
+      "chp": 1174,
       "frag": -1,
       "vol": -1
     },
@@ -333,8 +333,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 332,
-      "chp": 332,
+      "agg": 338,
+      "chp": 338,
       "frag": -1,
       "vol": -1
     },
@@ -353,6 +353,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 115991,
+      "name": "It's Lonely to Be Invincible",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 81,
+      "chp": 81,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 35,
+      "chp": 35,
+      "date": 1589529795,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 111089,
       "name": "Let Me Game in Peace",
       "rating": null,
@@ -360,8 +387,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 480,
-      "chp": 480,
+      "agg": 486,
+      "chp": 486,
       "frag": -1,
       "vol": -1
     },
@@ -414,8 +441,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 314,
-      "chp": 314,
+      "agg": 320,
+      "chp": 320,
       "frag": -1,
       "vol": -1
     },
@@ -441,8 +468,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 330,
-      "chp": 330,
+      "agg": 336,
+      "chp": 336,
       "frag": -1,
       "vol": -1
     },
@@ -450,6 +477,33 @@
       "agg": 38,
       "chp": 38,
       "date": 1587714520,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 3728,
+      "name": "New Game+",
+      "rating": 4.75,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 118,
+      "chp": 118,
+      "date": 1565263246,
       "frag": 0,
       "vol": -1
     },
@@ -495,8 +549,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1096,
-      "chp": 1096,
+      "agg": 1101,
+      "chp": 1101,
       "frag": -1,
       "vol": -1
     },
@@ -522,8 +576,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10854,
-      "chp": 854,
+      "agg": 10860,
+      "chp": 860,
       "frag": -1,
       "vol": 1
     },
@@ -576,8 +630,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 532,
-      "chp": 532,
+      "agg": 536,
+      "chp": 536,
       "frag": -1,
       "vol": -1
     },
@@ -603,8 +657,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 983,
-      "chp": 983,
+      "agg": 988,
+      "chp": 988,
       "frag": -1,
       "vol": -1
     },
@@ -1653,8 +1707,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 940,
-      "chp": 940,
+      "agg": 946,
+      "chp": 946,
       "frag": -1,
       "vol": -1
     },
@@ -1675,20 +1729,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98484848484848,
-      "rating_count": 66,
+      "rating": 9.98529411764706,
+      "rating_count": 68,
       "tl_type": "oel"
     },
     {
-      "agg": 595,
-      "chp": 595,
+      "agg": 598,
+      "chp": 598,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 594,
-      "chp": 594,
-      "date": 1600151580,
+      "agg": 598,
+      "chp": 598,
+      "date": 1600588380,
       "frag": 0,
       "vol": -1
     },
@@ -1704,8 +1758,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 318,
-      "chp": 318,
+      "agg": 320,
+      "chp": 320,
       "frag": -1,
       "vol": -1
     },
@@ -1782,15 +1836,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 556,
-      "chp": 556,
+      "agg": 559,
+      "chp": 559,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 104,
-      "chp": 104,
-      "date": 1599760800,
+      "agg": 111,
+      "chp": 111,
+      "date": 1600376460,
       "frag": 0,
       "vol": -1
     },
@@ -1809,8 +1863,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 560,
-      "chp": 560,
+      "agg": 563,
+      "chp": 563,
       "frag": -1,
       "vol": -1
     },
@@ -1917,8 +1971,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 672,
-      "chp": 672,
+      "agg": 678,
+      "chp": 678,
       "frag": -1,
       "vol": -1
     },
@@ -1944,8 +1998,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 320695,
-      "chp": 695,
+      "agg": 320696,
+      "chp": 696,
       "frag": -1,
       "vol": 32
     },
@@ -1995,15 +2049,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 183,
-      "chp": 183,
+      "agg": 184,
+      "chp": 184,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 11,
       "chp": 11,
-      "date": 1560453846.336022,
+      "date": 1547321964,
       "frag": -1,
       "vol": -1
     },
@@ -2022,8 +2076,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20493,
-      "chp": 493,
+      "agg": 20495,
+      "chp": 495,
       "frag": -1,
       "vol": 2
     },
@@ -2076,8 +2130,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 260,
-      "chp": 260,
+      "agg": 261,
+      "chp": 261,
       "frag": -1,
       "vol": -1
     },
@@ -2130,8 +2184,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 293,
-      "chp": 293,
+      "agg": 295,
+      "chp": 295,
       "frag": -1,
       "vol": -1
     },
@@ -2370,33 +2424,6 @@
       "agg": 39,
       "chp": 39,
       "date": 1593143530,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 115991,
-      "name": "It's Lonely to Be Invincible",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 35,
-      "chp": 35,
-      "date": 1589529795,
       "frag": 0,
       "vol": -1
     },
@@ -3260,6 +3287,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 32444,
+      "name": "Silver Death",
+      "rating": 6.5,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 64,
+      "chp": 64,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 67,
+      "chp": 67,
+      "date": 1478355802,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 71456,
       "name": "Soul of Searing Steel",
       "rating": 3,
@@ -3304,6 +3358,33 @@
       "chp": 84,
       "date": 1558144502.013319,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 2801,
+      "name": "Summoned Hero",
+      "rating": 2,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 62,
+      "chp": 62,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 61,
+      "chp": 61,
+      "date": 1438392900,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -3422,6 +3503,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 35771,
+      "name": "The Empyrean Overlord",
+      "rating": 7.4,
+      "rating_count": 25,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 52,
+      "chp": 52,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 52,
+      "chp": 52,
+      "date": 1472753940,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 34481,
       "name": "The Magus Era",
       "rating": 8.77777777777778,
@@ -3438,6 +3546,33 @@
       "agg": 741,
       "chp": 741,
       "date": 1509974814,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 2506,
+      "name": "The Rude Time Stopper",
+      "rating": 7.58823529411765,
+      "rating_count": 17,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 153,
+      "chp": 153,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 153,
+      "chp": 153,
+      "date": 1462095840,
       "frag": 0,
       "vol": -1
     },
@@ -3894,10 +4029,10 @@
       "vol": -1
     },
     {
-      "agg": 1269,
-      "chp": 1269,
-      "date": 1600209613,
-      "frag": 0,
+      "agg": 1272.1273,
+      "chp": 1272,
+      "date": 1600519213,
+      "frag": 1273,
       "vol": -1
     },
     null
@@ -4077,15 +4212,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 30,
-      "chp": 30,
+      "agg": 162,
+      "chp": 162,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 3633,
-      "chp": 3633,
-      "date": 1586697938,
+      "agg": 162,
+      "chp": 162,
+      "date": 1600497613,
       "frag": 0,
       "vol": -1
     },
@@ -4191,10 +4326,10 @@
       "vol": -1
     },
     {
-      "agg": 416.0001,
+      "agg": 416.0002,
       "chp": 416,
-      "date": 1600134013,
-      "frag": 1,
+      "date": 1600314014,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -4313,60 +4448,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 32444,
-      "name": "Silver Death",
-      "rating": 6.5,
-      "rating_count": 4,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 64,
-      "chp": 64,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 67,
-      "chp": 67,
-      "date": 1478355802,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 2801,
-      "name": "Summoned Hero",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 62,
-      "chp": 62,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 61,
-      "chp": 61,
-      "date": 1438392900,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 32713,
       "name": "Survival World RPG",
       "rating": 7.45161290322581,
@@ -4434,9 +4515,9 @@
       "vol": 3
     },
     {
-      "agg": 30371,
-      "chp": 371,
-      "date": 1600184412,
+      "agg": 30374,
+      "chp": 374,
+      "date": 1600532735,
       "frag": 0,
       "vol": 3
     },
@@ -4466,33 +4547,6 @@
       "date": 1545159540,
       "frag": 3,
       "vol": 2
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 35771,
-      "name": "The Empyrean Overlord",
-      "rating": 7.4,
-      "rating_count": 25,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 52,
-      "chp": 52,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 52,
-      "chp": 52,
-      "date": 1472753940,
-      "frag": 0,
-      "vol": -1
     },
     null
   ],
@@ -4626,33 +4680,6 @@
       "agg": 37,
       "chp": 37,
       "date": 1463474823,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 2506,
-      "name": "The Rude Time Stopper",
-      "rating": 7.9375,
-      "rating_count": 16,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 153,
-      "chp": 153,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 153,
-      "chp": 153,
-      "date": 1462095840,
       "frag": 0,
       "vol": -1
     },

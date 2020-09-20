@@ -115,7 +115,7 @@ foreach($fns as $name=>$fn)
 		//continue;
 		$res=$wln->search($name);
 		//var_dump($res);
-		$res=json_decode($res);
+		//$res=json_decode($res);
 		//var_dump($res);
 		$found=false;
 		$sid=-1;
@@ -145,15 +145,15 @@ foreach($fns as $name=>$fn)
 			var_dump($sid, $accuracy);
 			if($accuracy===1) {
 				$res=$wln->add_novel($sid, 'QIDIAN');
-				$res=json_decode($res);
+				//$res=json_decode($res);
 				var_dump($res);
 				if($res->error) die('error');
 				var_dump($name. ' added to WLNUpdates.');
 				$updatedCount['wln']++;
 				continue; // TODO : fix following code (get_info)
 				$res=$wln->get_info($sid);
+				//$res=json_decode($res);
 				var_dump($res);
-				$res=json_decode($res);
 				$fns[$name]['watches']=$res;
 				$found1=true;
 			}
@@ -278,7 +278,7 @@ foreach($fns as $name=>$fn)
 			$res=$wn->add_watch($id, 0);
 			var_dump($res);
 		}
-		$res=json_decode($res);
+		//$res=json_decode($res);
 		assert($res->code==0);
 		assert($res->msg=='Success');
 		$updatedCount['wn']++;

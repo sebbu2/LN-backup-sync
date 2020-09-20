@@ -48,7 +48,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						die();
 					}
 				}
-				if( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
+				if( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) || count($res->data->volumeItems)==0 ) {
 					var_dump($book->bookId, $entry['title'], $entry['title'], $res);die();
 				}
 				//fixing chapter number

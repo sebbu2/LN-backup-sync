@@ -62,6 +62,7 @@ class WebNovel extends SitePlugin
 			$res=$this->get( 'https://ptlogin.webnovel.com/login/checkstatus', $ar, $headers);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'checkstatus0.json', $res);
+			//$res=json_decode($res);
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
@@ -132,6 +133,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://ptlogin.webnovel.com/login/checkStatus', $ar, $headers);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'checkStatus1.json', $res);
+			//$res=json_decode($res);
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
@@ -194,6 +196,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://ptlogin.webnovel.com/login/checkStatus', $ar, $headers);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'checkStatus2.json', $res);
+			//$res=json_decode($res);
 		}
 		
 		{ // 8 checkcode
@@ -245,6 +248,7 @@ class WebNovel extends SitePlugin
 			);
 			$res = $this->get($data->data->returnurl);
 			file_put_contents($this::FOLDER.'loginSuccess.htm', $res);
+			//$res=json_decode($res);
 		}
 		
 		$referer=$this->lastUrl;
@@ -273,6 +277,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://www.webnovel.com/apiajax/login/login', $ar);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'login.json', $res);
+			//$res=json_decode($res);
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
@@ -287,6 +292,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://www.webnovel.com/apiajax/login/getUserInfo', $ar);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'getUserInfo.json', $res);
+			//$res=json_decode($res);
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
@@ -302,6 +308,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://www.webnovel.com/apiajax/notification/status', $ar);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'notification-status.json', $res);
+			//$res=json_decode($res);
 		}
 		return $data;
 	}
@@ -321,7 +328,7 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://www.webnovel.com/apiajax/ad/bookShelf', $ar, $headers );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'bookShelf.json', $res);
-			$res=json_decode($res);
+			//$res=json_decode($res);
 		}
 		$i=1;
 		$books=array();
@@ -339,9 +346,10 @@ class WebNovel extends SitePlugin
 			++$i;
 		}
 		while($res->data->isLast==0);
-		//file_put_contents($this::FOLDER.'_books.json', str_replace('    ',"\t", json_encode($books, JSON_PRETTY_PRINT)) );
-		file_put_contents($this::FOLDER.'_books.json', $this->jsonp_to_json(json_encode($books)) );
-		return json_encode($books);
+		$books2=json_encode($books); unset($books); //
+		$books2=$this->jsonp_to_json($books2);
+		file_put_contents($this::FOLDER.'_books.json', $books2 );
+		return json_decode($books2);
 	}
 	
 	public function read_update($watch, $chp)
@@ -458,7 +466,7 @@ class WebNovel extends SitePlugin
 	public function search($name)
 	{
 		$ar=array(
-			'keywords'=>$name,
+			'keywords'=>urlencode($name),
 		);
 		$data = $this->get( 'https://www.webnovel.com/search', $ar);
 		$data=trim($data);
@@ -614,7 +622,7 @@ class WebNovel extends SitePlugin
 				$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar );
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'get-reviews'.$id.'.json', $res);
-				$res=json_decode($res);
+				//$res=json_decode($res);
 				
 				$ar=array(
 					'_csrfToken'=>$cookies['_csrfToken'],
@@ -625,7 +633,7 @@ class WebNovel extends SitePlugin
 				$res = $this->get( 'https://www.webnovel.com/apiajax/powerStone/getRankInfoAjax', $ar );
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'getRankInfoAjax.json', $res);
-				$res=json_decode($res);
+				//$res=json_decode($res);
 				
 				$ar=array(
 					'bookId'=>$id,
@@ -634,7 +642,7 @@ class WebNovel extends SitePlugin
 				$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar );
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'getRecommendList'.$id.'.json', $res);
-				$res=json_decode($res);
+				//$res=json_decode($res);
 				
 				$ar=array(
 					'bookId'=>$id,
@@ -643,7 +651,7 @@ class WebNovel extends SitePlugin
 				$res = $this->get( 'https://www.webnovel.com/apiajax/chapter/GetChapterList', $ar );
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'GetChapterList_'.$id.'.json', $res);
-				$res=json_decode($res);
+				//$res=json_decode($res);
 				
 				//https://www.webnovel.com/profile/4302108715
 			}
@@ -746,6 +754,7 @@ class WebNovel extends SitePlugin
 		$res = $this->send( 'https://www.webnovel.com/apiajax/Library/AddLibraryItemsAjax', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'AddLibraryItemsAjax.json', $res);
+		$res=json_decode($res);
 		
 		return $res;
 	}
