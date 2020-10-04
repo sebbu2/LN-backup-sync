@@ -6,6 +6,8 @@ require_once('webnovel.php');
 
 chdir(DROPBOX);
 $ar=glob('*.po');
+natcasesort($ar);
+
 chdir(CWD);
 
 $updatedCount=array(
@@ -44,6 +46,7 @@ foreach($ar as $fn)
 	unset($data);
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
+	//if( array_key_exists($fn2, $fns) ) var_dump($fn2, $max, $fns[$fn2]['max'], $min+($min<0?1:0), $content[1], ($content[3]>0?1:0), $fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0), $fns[$fn2][1], ($fns[$fn2][3]>0?1:0) );
 	if( !array_key_exists($fn2, $fns) )
 	{
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
@@ -52,13 +55,20 @@ foreach($ar as $fn)
 	}
 	else if(
 		$max>$fns[$fn2]['max'] && //new last chapter is >
-		(($min+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn2]['min']+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
 		var_dump($fns[$fn2]['fn']);//die();
 		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
 		$ar2=array_merge($ar2, $content);
 		$fns[$fn2]=$ar2;
+	}
+	else if(
+		$max < $fns[$fn2]['max'] && //new last chapter is >
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+	) {
+		var_dump($fn);//die();
+		unlink(DROPBOX.$fn);//die();
 	}
 }
 var_dump(count($fns));
@@ -69,6 +79,7 @@ $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 var_dump(count($books));//die();
+ob_flush();flush();
 foreach($fns as $name=>$fn)
 {
 	//wlnupdates
@@ -123,7 +134,7 @@ foreach($fns as $name=>$fn)
 		if($chp>(int)$watches[$key][1]->chp) {
 			var_dump($name, $chp, $watches[$key][1]->chp);
 			$data=$wln->read_update($watches[$key], $chp);
-			$data=json_decode($data);
+			//$data=json_decode($data);
 			var_dump($data);
 			$updatedCount['wln']++;
 		}
@@ -163,7 +174,7 @@ foreach($fns as $name=>$fn)
 			$res=$wn->get_chapter_list($id);
 		}
 		else {
-			$res=json_decode(file_get_contents($wn::FOLDER.'GetChapterList_'.$id.'.json'));
+			$res=json_decode(file_get_contents($wn::FOLDER.'GetChapterList_'.$id.'.json'), false, 512, JSON_THROW_ON_ERROR);
 		}
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp-$res->data->volumeItems[0]->chapterItems[0]->index; // fix for negative chapters
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
@@ -191,6 +202,7 @@ foreach($fns as $name=>$fn)
 			var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex);
 		}
 	}
+	ob_flush();flush();
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);

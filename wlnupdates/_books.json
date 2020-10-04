@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 547,
-      "chp": 547,
+      "agg": 575,
+      "chp": 575,
       "frag": -1,
       "vol": -1
     },
@@ -39,8 +39,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 20514,
-      "chp": 514,
+      "agg": 20529,
+      "chp": 529,
       "frag": -1,
       "vol": 2
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 749,
-      "chp": 749,
+      "agg": 770,
+      "chp": 770,
       "frag": -1,
       "vol": -1
     },
@@ -113,33 +113,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 115752,
-      "name": "Building The Ultimate Fantasy",
-      "rating": 9,
-      "rating_count": 1,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 264,
-      "chp": 264,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 106,
-      "chp": 106,
-      "date": 1593093899,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 56289,
       "name": "Daoist Gu",
       "rating": 6.33333333333333,
@@ -147,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 11939,
-      "chp": 1939,
+      "agg": 11969,
+      "chp": 1969,
       "frag": -1,
       "vol": 1
     },
@@ -167,33 +140,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 109803,
-      "name": "Demons Beside You",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 687,
-      "chp": 687,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 74,
-      "chp": 74,
-      "date": 1579147744,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 69837,
       "name": "End of the Magic Era",
       "rating": null,
@@ -201,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1209,
-      "chp": 1209,
+      "agg": 1226,
+      "chp": 1226,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 476,
-      "chp": 476,
+      "agg": 506,
+      "chp": 506,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 436,
-      "chp": 436,
+      "agg": 451,
+      "chp": 451,
       "frag": -1,
       "vol": -1
     },
@@ -264,6 +210,54 @@
       "agg": 100,
       "chp": 100,
       "date": 1572581123,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 116765,
+      "name": "Five Frozen Centuries",
+      "rating": 8,
+      "rating_count": 3,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 121,
+      "chp": 121,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 35,
+      "chp": 35,
+      "date": 1599134972,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 120152,
+      "name": "Grandson of the Holy Emperor is a Necromancer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 101,
+      "chp": 101,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40,
+      "chp": 40,
+      "date": 1598522186,
       "frag": 0,
       "vol": -1
     },
@@ -282,8 +276,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 476,
-      "chp": 476,
+      "agg": 501,
+      "chp": 501,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +303,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1174,
-      "chp": 1174,
+      "agg": 1195,
+      "chp": 1195,
       "frag": -1,
       "vol": -1
     },
@@ -333,8 +327,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 338,
-      "chp": 338,
+      "agg": 368,
+      "chp": 368,
       "frag": -1,
       "vol": -1
     },
@@ -360,8 +354,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 81,
-      "chp": 81,
+      "agg": 109,
+      "chp": 109,
       "frag": -1,
       "vol": -1
     },
@@ -387,8 +381,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 486,
-      "chp": 486,
+      "agg": 516,
+      "chp": 516,
       "frag": -1,
       "vol": -1
     },
@@ -414,8 +408,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1405,
-      "chp": 1405,
+      "agg": 1410,
+      "chp": 1410,
       "frag": -1,
       "vol": -1
     },
@@ -441,8 +435,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 320,
-      "chp": 320,
+      "agg": 350,
+      "chp": 350,
       "frag": -1,
       "vol": -1
     },
@@ -468,8 +462,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 336,
-      "chp": 336,
+      "agg": 366,
+      "chp": 366,
       "frag": -1,
       "vol": -1
     },
@@ -488,60 +482,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 3728,
-      "name": "New Game+",
-      "rating": 4.75,
-      "rating_count": 4,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 118,
-      "chp": 118,
-      "date": 1565263246,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 110396,
-      "name": "Nightmare's Call",
-      "rating": 10,
-      "rating_count": 1,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 586,
-      "chp": 586,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 80,
-      "chp": 80,
-      "date": 1580014551,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 62448,
       "name": "Summoning the Holy Sword",
       "rating": null,
@@ -549,8 +489,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1101,
-      "chp": 1101,
+      "agg": 1123,
+      "chp": 1123,
       "frag": -1,
       "vol": -1
     },
@@ -576,8 +516,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10860,
-      "chp": 860,
+      "agg": 10890,
+      "chp": 890,
       "frag": -1,
       "vol": 1
     },
@@ -630,8 +570,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 536,
-      "chp": 536,
+      "agg": 556,
+      "chp": 556,
       "frag": -1,
       "vol": -1
     },
@@ -657,8 +597,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 988,
-      "chp": 988,
+      "agg": 1011,
+      "chp": 1011,
       "frag": -1,
       "vol": -1
     },
@@ -667,6 +607,33 @@
       "chp": 151,
       "date": 1578110701,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 119126,
+      "name": "The Oracle Paths",
+      "rating": 4,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 28,
+      "chp": 28,
+      "date": 1597063320,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -1298,6 +1265,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 115752,
+      "name": "Building The Ultimate Fantasy",
+      "rating": 9,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 264,
+      "chp": 264,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 106,
+      "chp": 106,
+      "date": 1593093899,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 109593,
       "name": "Dark Moon Era",
       "rating": null,
@@ -1315,6 +1309,57 @@
       "chp": 102,
       "date": 1579147707,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 109803,
+      "name": "Demons Beside You",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 687,
+      "chp": 687,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 74,
+      "chp": 74,
+      "date": 1579147744,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 116709,
+      "name": "END Initiated...",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 77,
+      "chp": 77,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -1419,9 +1464,36 @@
       "vol": -1
     },
     {
-      "agg": 29,
-      "chp": 29,
-      "date": 1581221305,
+      "agg": 34,
+      "chp": 34,
+      "date": 1601433100,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110396,
+      "name": "Nightmare's Call",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 586,
+      "chp": 586,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 80,
+      "chp": 80,
+      "date": 1580014551,
       "frag": 0,
       "vol": -1
     },
@@ -1707,8 +1779,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 946,
-      "chp": 946,
+      "agg": 976,
+      "chp": 976,
       "frag": -1,
       "vol": -1
     },
@@ -1729,20 +1801,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98529411764706,
-      "rating_count": 68,
+      "rating": 9.98648648648649,
+      "rating_count": 74,
       "tl_type": "oel"
     },
     {
-      "agg": 598,
-      "chp": 598,
+      "agg": 607,
+      "chp": 607,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 598,
-      "chp": 598,
-      "date": 1600588380,
+      "agg": 606,
+      "chp": 606,
+      "date": 1601709240,
       "frag": 0,
       "vol": -1
     },
@@ -1758,8 +1830,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 320,
-      "chp": 320,
+      "agg": 327,
+      "chp": 327,
       "frag": -1,
       "vol": -1
     },
@@ -1775,15 +1847,15 @@
   [
     {
       "extra_metadata": null,
-      "id": 116709,
-      "name": "END Initiated...",
+      "id": 128343,
+      "name": "I got summoned to another world then married a yandere",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
     },
     {
-      "agg": 77,
-      "chp": 77,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -1825,6 +1897,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 128277,
+      "name": "Infinite Mana in the Apocalypse",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 273,
+      "chp": 273,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -1836,15 +1932,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 559,
-      "chp": 559,
+      "agg": 591,
+      "chp": 591,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 111,
-      "chp": 111,
-      "date": 1600376460,
+      "agg": 126,
+      "chp": 126,
+      "date": 1601733600,
       "frag": 0,
       "vol": -1
     },
@@ -1863,8 +1959,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 563,
-      "chp": 563,
+      "agg": 575,
+      "chp": 575,
       "frag": -1,
       "vol": -1
     },
@@ -1906,26 +2002,23 @@
   ],
   [
     {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 70305,
-      "name": "Nano Machine",
+      "extra_metadata": null,
+      "id": 128231,
+      "name": "My Vampire System",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
     },
     {
-      "agg": 332,
-      "chp": 332,
+      "agg": 304,
+      "chp": 304,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 34,
-      "chp": 34,
-      "date": 1547450372.988427,
+      "agg": 0,
+      "chp": -1,
+      "date": null,
       "frag": -1,
       "vol": -1
     },
@@ -1939,13 +2032,13 @@
       },
       "id": 70346,
       "name": "Nano Mashin",
-      "rating": null,
-      "rating_count": null,
+      "rating": 3,
+      "rating_count": 1,
       "tl_type": "oel"
     },
     {
-      "agg": 331,
-      "chp": 331,
+      "agg": 336,
+      "chp": 336,
       "frag": -1,
       "vol": -1
     },
@@ -1971,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 678,
-      "chp": 678,
+      "agg": 707,
+      "chp": 707,
       "frag": -1,
       "vol": -1
     },
@@ -1998,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 320696,
-      "chp": 696,
+      "agg": 320699,
+      "chp": 699,
       "frag": -1,
       "vol": 32
     },
@@ -2015,6 +2108,54 @@
   [
     {
       "extra_metadata": null,
+      "id": 128353,
+      "name": "Overpowered Soul Transmigrate In Apocalypse",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128346,
+      "name": "Physics The Greatest Magic",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
       "id": 116660,
       "name": "Project: Mage - The Frugal Mage",
       "rating": null,
@@ -2022,8 +2163,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 266,
-      "chp": 266,
+      "agg": 267,
+      "chp": 267,
       "frag": -1,
       "vol": -1
     },
@@ -2049,8 +2190,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 184,
-      "chp": 184,
+      "agg": 188,
+      "chp": 188,
       "frag": -1,
       "vol": -1
     },
@@ -2076,8 +2217,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20495,
-      "chp": 495,
+      "agg": 20500,
+      "chp": 500,
       "frag": -1,
       "vol": 2
     },
@@ -2119,6 +2260,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 128347,
+      "name": "Stuck as a Dungeon Mob",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -2130,8 +2295,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 261,
-      "chp": 261,
+      "agg": 264,
+      "chp": 264,
       "frag": -1,
       "vol": -1
     },
@@ -2173,6 +2338,78 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 128348,
+      "name": "The Evolution of a Goblin to the Peak",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128350,
+      "name": "The Magician of Sound",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128351,
+      "name": "The Mind God",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -2184,8 +2421,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 295,
-      "chp": 295,
+      "agg": 308,
+      "chp": 308,
       "frag": -1,
       "vol": -1
     },
@@ -2245,6 +2482,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 107242,
+      "name": "Almighty Game Designer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 80,
+      "chp": 80,
+      "date": 1593879978,
+      "frag": 0,
+      "vol": -1
+    },
+    "Almighty Video Game Designer"
   ],
   [
     {
@@ -2510,6 +2774,30 @@
   [
     {
       "extra_metadata": null,
+      "id": 128352,
+      "name": "My Knowledge Of Cultivation Is Completely Shattered",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
       "id": 118079,
       "name": "My Senior Brother is Too Steady",
       "rating": 9,
@@ -2526,6 +2814,81 @@
       "agg": 38,
       "chp": 38,
       "date": 1594375300,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128344,
+      "name": "New Age Of Summoners",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 3728,
+      "name": "New Game+",
+      "rating": 4.75,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 118,
+      "chp": 118,
+      "date": 1565263246,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 117681,
+      "name": "Only I Am a Necromancer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1598521987,
       "frag": 0,
       "vol": -1
     },
@@ -2587,6 +2950,57 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 128345,
+      "name": "Phone App Portable Armory",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 104091,
+      "name": "Scholar's Advanced Technological System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 122,
+      "chp": 122,
+      "date": 1566853216,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -2618,6 +3032,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 54999,
+      "name": "Strongest Abandoned Son",
+      "rating": 7.33333333333333,
+      "rating_count": 9,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 592,
+      "chp": 592,
+      "date": 1524450600,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 85471,
       "name": "The Alchemists",
       "rating": null,
@@ -2635,6 +3076,105 @@
       "chp": 156,
       "date": 1585759320,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 111024,
+      "name": "The Ancient Genes",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 7.0005,
+      "chp": 7,
+      "date": 1582881939,
+      "frag": 5,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128349,
+      "name": "The Gene Gamer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 128319,
+      "name": "The Truth of Magic",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1601605820,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 116521,
+      "name": "This Earth Is A Bit Fearsome",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1590741955,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -4002,10 +4542,10 @@
       "vol": -1
     },
     {
-      "agg": 120.0003,
-      "chp": 120,
-      "date": 1597175973,
-      "frag": 3,
+      "agg": 122.0002,
+      "chp": 122,
+      "date": 1601323162,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -4029,10 +4569,10 @@
       "vol": -1
     },
     {
-      "agg": 1272.1273,
-      "chp": 1272,
-      "date": 1600519213,
-      "frag": 1273,
+      "agg": 1283,
+      "chp": 1283,
+      "date": 1601401212,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -4212,15 +4752,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 162,
-      "chp": 162,
+      "agg": 165,
+      "chp": 165,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 162,
-      "chp": 162,
-      "date": 1600497613,
+      "agg": 172,
+      "chp": 172,
+      "date": 1601819147,
       "frag": 0,
       "vol": -1
     },
@@ -4326,9 +4866,9 @@
       "vol": -1
     },
     {
-      "agg": 416.0002,
-      "chp": 416,
-      "date": 1600314014,
+      "agg": 422.0002,
+      "chp": 422,
+      "date": 1601087953,
       "frag": 2,
       "vol": -1
     },
@@ -4515,11 +5055,11 @@
       "vol": 3
     },
     {
-      "agg": 30374,
-      "chp": 374,
-      "date": 1600532735,
-      "frag": 0,
-      "vol": 3
+      "agg": 40002.0002,
+      "chp": 2,
+      "date": 1601743358,
+      "frag": 2,
+      "vol": 4
     },
     null
   ],

@@ -175,13 +175,18 @@ class WLNUpdates extends SitePlugin
 			'id'=>$id,
 			'mode'=>'get-series-id',
 		);
-		var_dump($ar,json_encode($ar));
-		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'));
-		var_dump($res);die();
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'), false); // no cookies
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
 		return $res;
+	}
+	
+	public function get_info_cached($id) {
+		if(!file_exists($this::FOLDER.'get-series-id'.$id.'.json')) {
+			return $this->get_info($id);
+		}
+		return json_decode(file_get_contents($this::FOLDER.'get-series-id'.$id.'.json'),false, 512, JSON_THROW_ON_ERROR);
 	}
 	
 	public function add_novel($id, $list='QIDIAN') {

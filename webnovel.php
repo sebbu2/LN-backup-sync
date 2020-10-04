@@ -466,7 +466,7 @@ class WebNovel extends SitePlugin
 	public function search($name)
 	{
 		$ar=array(
-			'keywords'=>urlencode($name),
+			'keywords'=>rawurlencode($name),
 		);
 		$data = $this->get( 'https://www.webnovel.com/search', $ar);
 		$data=trim($data);
@@ -476,7 +476,7 @@ class WebNovel extends SitePlugin
 		$xml=simplexml_load_html($data);
 		
 		$res=$xml->xpath('//div[@class="tab-content-container j_tab-content"]');
-		var_dump(count($res));
+		//var_dump(count($res));
 		
 		//$xml2=$res[0]->div[0]->div->ul->li[0]->asXML();
 		//$xml2=wordwrap($xml2,150);

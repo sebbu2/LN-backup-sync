@@ -224,11 +224,12 @@ foreach($fns as $name=>$fn)
 		}
 		/*$res=$wn->search($name);
 		var_dump($res);//*/
+		//var_dump($name);
 		$res=$wn->search2($name);
 		assert($res->code==0);
 		var_dump($res);
 		if(!property_exists($res->data, 'books')) {
-			if(!$found1) die('novel is in neither wlnupdate nor webnovel');
+			//if(!$found1) die('novel is in neither wlnupdate nor webnovel');
 			$name1='';
 			$name2='';
 			if($found1) {
@@ -244,16 +245,21 @@ foreach($fns as $name=>$fn)
 			if( !is_null($name1) && strlen($name1)>0 ) {
 				$res=$wn->search2($name1);
 				assert($res->code==0);
-				var_dump($res);
+				var_dump($res);die();
 			}
-			if(!property_exists($res->data, 'books')) {
+			if( !is_null($name2) && strlen($name2)>0 ) {
 				$res=$wn->search2($name2);
 				assert($res->code==0);
-				var_dump($res);
+				var_dump($res);die();
+			}
+			if(!property_exists($res->data, 'books')) {
+				$res=$wn->search($name);
+				assert(is_array($res) && count($res)>0);
+				var_dump($res);//die();
 			}
 		}
-		if(!property_exists($res->data, 'books')) die('error');
-		if(count($res->data->books)==1) {
+		if(!is_array($res) && (is_object($res) && !property_exists($res->data, 'books')) ) die('error');
+		if( (is_array($res)&&count($res)==1) || (is_object($res)&&count($res->data->books)==1) ) {
 			assert(name_compare($name, $res->data->books[0]->name));
 			$id=$res->data->books[0]->id;
 			$res=$wn->add_watch($id, 0);
@@ -266,11 +272,22 @@ foreach($fns as $name=>$fn)
 			$id=-1;
 			$ids=array();
 			$found=0;
-			foreach($res->data->books as $book) {
-				if(name_compare($name, $book->name)) {
-					$found++;
-					$ids[]=$book->id;
-					$id=$book->id;
+			if(is_object($res)) {
+				foreach($res->data->books as $book) {
+					if(name_compare($name, $book->name)) {
+						$found++;
+						$ids[]=$book->id;
+						$id=$book->id;
+					}
+				}
+			}
+			elseif(is_array($res)) {
+				foreach($res as $book) {
+					if(name_compare($name, $book['data-bookname'])) {
+						$found++;
+						$ids[]=$book['data-bookid'];
+						$id=$book['data-bookid'];
+					}
 				}
 			}
 			var_dump($found);
