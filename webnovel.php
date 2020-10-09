@@ -373,7 +373,7 @@ class WebNovel extends SitePlugin
 		$add=0;
 		if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 		//updating list of chapters
-		if( $watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
+		if( ($watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) && $watch->readToChapterIndex<$chp) {
 			var_dump('Updating',$res->data->bookInfo->bookName);
 			$res=$this->get_chapter_list($watch->bookId);
 		}
@@ -459,6 +459,30 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
 			$res=json_decode($res);
+		}
+		return $res;
+	}
+	
+	public function get_chapter_list_cached($bookId)
+	{
+		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
+			return $this->get_chapter_list($bookId);
+		}
+		$res='';
+		//var_dump($bookId);
+		try {
+			$res=file_get_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
+			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+		}
+		catch(JsonException $e) {
+			//var_dump($e);
+			echo '<table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">';echo $e->xdebug_message;echo '</table>';
+			//die();
+		}
+		if(!is_object($res)) {
+			var_dump($res);
+			unlink($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
+			return $this->get_chapter_list($bookId);
 		}
 		return $res;
 	}
@@ -866,6 +890,22 @@ class WebNovel extends SitePlugin
 		$data[]=$data2;
 		
 		return $data;
+	}
+
+	public function get_filter_for($type) {
+/*
+var_dump($res[0]->Data->Type);//1 translated 2 original
+var_dump($res[2]->data->bookStatisticsInfo->bookType); // 1 translated 2 original
+var_dump($res[3]->data->bookInfo->bookType); // 1 translated 2 original
+var_dump($res[3]->data->bookInfo->type); // 1 translated 2 original
+var_dump($res[3]->data->bookInfo->translateMode);//-1 translated 1 original ???
+//*/
+		if($type=='oel') return function($watch) { return ($this->get_info_cached($watch->bookId))[0]->Data->Type==2; };
+		if($type=='translated') return function($watch) { return ($this->get_info_cached($watch->bookId))[0]->Data->Type==1; };
+		if($type=='novel') return function($watch) { return ($watch->novelType==0);};
+		if($type=='manga'||$type=='comic') return function($watch) { return ($watch->novelType==100);};
+		return function($watch) { return false; };
+		return parent::get_filter_for($type);
 	}
 };
 ?>

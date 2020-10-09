@@ -170,6 +170,23 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
+	public function edit($json)
+	{
+		$ar=$json;
+		if(count($ar)==0||count($ar['entries'])==0) return false;
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar, JSON_UNESCAPED_SLASHES), array('Content-Type: application/json')); // no cookies
+		$res2=explode(' ',$this->headersRecv[0]);
+		if($res2[1]!=200) {
+			var_dump($this->headersRecv[0]);
+			//die();
+			return false;
+		}
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'edit.json', $res);
+		$res=json_decode($res);
+		return $res;
+	}
+	
 	public function get_info($id) {
 		$ar=array(
 			'id'=>$id,
@@ -179,6 +196,7 @@ class WLNUpdates extends SitePlugin
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
+		var_dump('get_info: '.$id);
 		return $res;
 	}
 	

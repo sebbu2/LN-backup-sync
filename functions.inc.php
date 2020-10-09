@@ -135,8 +135,8 @@ class SitePlugin
 	public $lastCookies='';
 	public $lastHeaders='';
 	
-	private $headersSent=array();
-	private $headersRecv=array();
+	public $headersSent=array();
+	public $headersRecv=array();
 	
 	public function __construct()
 	{
@@ -217,7 +217,7 @@ class SitePlugin
 		file_put_contents(COOKIEFILE, implode('', $ar));
 	}
 	
-	protected function get($url, $parameters=array(), $headers=array(), $cookies=array())
+	public function get($url, $parameters=array(), $headers=array(), $cookies=array())
 	{
 		$arr=array(
 			'http'=>array(
@@ -262,6 +262,7 @@ class SitePlugin
 		$data=@file_get_contents($url,false,$ctx);
 		if($data===false) return false;
 		if(DEBUG_HTTP) var_dump($http_response_header);
+		$this->headersRecv=$http_response_header;
 		foreach ($http_response_header as $hdr) {
 			if (preg_match('/^Set-Cookie:\s*(?:(?P<name>[^=]+)=(?P<value>[^;]*))(?:; expires=(?P<expires>\w+, \d+-\w+-\d+ \d+:\d+:\d+ [^;]+)|; path=(?P<path>[^;]+)|; domain=(?P<domain>[^;]+)|; (?P<secure>Secure)|; (?P<httponly>HttpOnly)|; SameSite=(?P<samesite>[^;]+))*$/', $hdr, $matches)) {
 				$this->set_cookies_for($url, $matches);
@@ -277,7 +278,7 @@ class SitePlugin
 		return strlen($header); // mandatory (from API documentation)
 	}
 	
-	protected function send($url, $postdata=array(), $headers=array(), $cookies=array())
+	public function send($url, $postdata=array(), $headers=array(), $cookies=array())
 	{
 		$this->headersRecv=array();
 		$this->headersSent=array();
@@ -352,9 +353,36 @@ class SitePlugin
 		static $end_match=array('['=>']','{'=>'}');
 		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON 1.<br/>'.$jsonp);
 		assert(substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON 2.<br/>'.$jsonp);
-		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT);
+		//$jsonp=json_encode(json_decode($jsonp, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
+		$jsonp=str_replace('\/','/',$jsonp);
+		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_BIGINT_AS_STRING );
 		//$jsonp=str_replace('    ',"\t",$jsonp); // TAB are invalid in json
 		$jsonp=str_replace('    ', '  ', $jsonp);
 		return $jsonp;
+	}
+	
+	public function get_types() {
+		$ar=array(
+			'anime',
+			'manga',
+			'novel',
+				'oel',
+				'translated',
+			'movie',
+			'tvserie',
+			'drama',
+			'book',
+			'bd',
+			'comic',
+			'videogame',
+			'vn',
+			'game',
+			'music',
+		);
+		return $ar;
+	}
+	
+	public function get_filter_for($type) {
+		return function($watch) { return true; };
 	}
 }
