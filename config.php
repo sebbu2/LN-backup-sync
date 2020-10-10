@@ -15,6 +15,11 @@ $accounts=array(
 		'user'=>'',
 		'pass'=>'',
 	),
+	'NovelUpdates'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
 );
-$a='b';
+define('MOONREADER_DID', '1454083831785');
+define('MOONREADER_DID2', '9999999999999');
 ?>
