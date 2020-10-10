@@ -4,6 +4,9 @@ require_once('functions.inc.php');
 require_once('wlnupdates.php');
 require_once('webnovel.php');
 
+if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
+if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
+
 chdir(DROPBOX);
 $ar=glob('*.po');
 natcasesort($ar);
@@ -58,7 +61,7 @@ foreach($ar as $fn)
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
 		var_dump($fns[$fn2]['fn']);//die();
-		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
+		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn2]['fn']);//die();
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
 		$ar2=array_merge($ar2, $content);
 		$fns[$fn2]=$ar2;
@@ -68,7 +71,7 @@ foreach($ar as $fn)
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
 		var_dump($fn);//die();
-		unlink(DROPBOX.$fn);//die();
+		if($fns[$fn2][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
 	}
 }
 var_dump(count($fns));

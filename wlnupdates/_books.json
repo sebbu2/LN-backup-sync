@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 585,
-      "chp": 585,
+      "agg": 587,
+      "chp": 587,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 778,
-      "chp": 778,
+      "agg": 779,
+      "chp": 779,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 11979,
-      "chp": 1979,
+      "agg": 11981,
+      "chp": 1981,
       "frag": -1,
       "vol": 1
     },
@@ -147,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1230,
-      "chp": 1230,
+      "agg": 1231,
+      "chp": 1231,
       "frag": -1,
       "vol": -1
     },
@@ -174,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 516,
-      "chp": 516,
+      "agg": 518,
+      "chp": 518,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 456,
-      "chp": 456,
+      "agg": 457,
+      "chp": 457,
       "frag": -1,
       "vol": -1
     },
@@ -228,15 +228,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 131,
-      "chp": 131,
+      "agg": 133,
+      "chp": 133,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599134972,
+      "date": 1591349270,
       "frag": 0,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 106,
-      "chp": 106,
+      "agg": 107,
+      "chp": 107,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 511,
-      "chp": 511,
+      "agg": 513,
+      "chp": 513,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 378,
-      "chp": 378,
+      "agg": 380,
+      "chp": 380,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 114,
-      "chp": 114,
+      "agg": 115,
+      "chp": 115,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 526,
-      "chp": 526,
+      "agg": 528,
+      "chp": 528,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 360,
-      "chp": 360,
+      "agg": 362,
+      "chp": 362,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 376,
-      "chp": 376,
+      "agg": 378,
+      "chp": 378,
       "frag": -1,
       "vol": -1
     },
@@ -518,6 +518,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 3728,
+      "name": "New Game+",
+      "rating": 4.75,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 118,
+      "chp": 118,
+      "date": 1565263246,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 62448,
       "name": "Summoning the Holy Sword",
       "rating": null,
@@ -525,8 +552,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1129,
-      "chp": 1129,
+      "agg": 1131,
+      "chp": 1131,
       "frag": -1,
       "vol": -1
     },
@@ -552,8 +579,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10900,
-      "chp": 900,
+      "agg": 10902,
+      "chp": 902,
       "frag": -1,
       "vol": 1
     },
@@ -606,8 +633,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 561,
-      "chp": 561,
+      "agg": 563,
+      "chp": 563,
       "frag": -1,
       "vol": -1
     },
@@ -633,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1020,
-      "chp": 1020,
+      "agg": 1021,
+      "chp": 1021,
       "frag": -1,
       "vol": -1
     },
@@ -1821,8 +1848,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 986,
-      "chp": 986,
+      "agg": 988,
+      "chp": 988,
       "frag": -1,
       "vol": -1
     },
@@ -1848,15 +1875,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 610,
-      "chp": 610,
+      "agg": 611,
+      "chp": 611,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 609,
-      "chp": 609,
-      "date": 1602138780,
+      "agg": 610,
+      "chp": 610,
+      "date": 1602308520,
       "frag": 0,
       "vol": -1
     },
@@ -1983,8 +2010,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 281,
-      "chp": 281,
+      "agg": 283,
+      "chp": 283,
       "frag": -1,
       "vol": -1
     },
@@ -2010,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 596,
-      "chp": 596,
+      "agg": 597,
+      "chp": 597,
       "frag": -1,
       "vol": -1
     },
@@ -2037,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 580,
-      "chp": 580,
+      "agg": 581,
+      "chp": 581,
       "frag": -1,
       "vol": -1
     },
@@ -2091,8 +2118,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 319,
-      "chp": 319,
+      "agg": 322,
+      "chp": 322,
       "frag": -1,
       "vol": -1
     },
@@ -2118,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 717,
-      "chp": 717,
+      "agg": 719,
+      "chp": 719,
       "frag": -1,
       "vol": -1
     },
@@ -2234,7 +2261,7 @@
     {
       "agg": 11,
       "chp": 11,
-      "date": 1560453846.336022,
+      "date": 1547321964,
       "frag": -1,
       "vol": -1
     },
@@ -2307,8 +2334,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 165,
-      "chp": 165,
+      "agg": 166,
+      "chp": 166,
       "frag": -1,
       "vol": -1
     },
@@ -2388,8 +2415,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 144,
-      "chp": 144,
+      "agg": 145,
+      "chp": 145,
       "frag": -1,
       "vol": -1
     },
@@ -2830,33 +2857,6 @@
       "chp": -1,
       "date": null,
       "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 3728,
-      "name": "New Game+",
-      "rating": 4.75,
-      "rating_count": 4,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 118,
-      "chp": 118,
-      "date": 1565263246,
-      "frag": 0,
       "vol": -1
     },
     null
@@ -4313,7 +4313,7 @@
     {
       "agg": 273,
       "chp": 273,
-      "date": 1547718316,
+      "date": 1547888561,
       "frag": 0,
       "vol": -1
     },
@@ -4851,9 +4851,9 @@
       "vol": -1
     },
     {
-      "agg": 173,
-      "chp": 173,
-      "date": 1602078143,
+      "agg": 174,
+      "chp": 174,
+      "date": 1602330414,
       "frag": 0,
       "vol": -1
     },
@@ -5148,9 +5148,9 @@
       "vol": 3
     },
     {
-      "agg": 40004,
-      "chp": 4,
-      "date": 1602161053,
+      "agg": 40005,
+      "chp": 5,
+      "date": 1602261853,
       "frag": 0,
       "vol": 4
     },
