@@ -160,7 +160,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					chdir(CWD);
 					if( !$skip_existing
 						|| count($exists)==0
-						//|| (count($exists)==1&&array_key_exists(4,$content)&&$content[0]==MOONREADER_DID&&$content[4]!='100')
+						|| (count($exists)==1&&array_key_exists(0,$content)&&$content[0]==MOONREADER_DID2) // exists, but is from this script
+						//|| (count($exists)==1&&array_key_exists(4,$content)&&$content[4]!='100') // i'm not at the end
 					) {
 						var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
 						$chp=$res->data->bookInfo->totalChapterNum+$add;
@@ -168,9 +169,11 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						//unlink(DROPBOX.$fn);
 						$fn=str_replace(' ', '_', $fn);
 						if(!file_exists(DROPBOX.$fn)) {
-							$numerator=(int)$entry['chp'];
+							$chp_=(int)$entry['chp'];
+							$numerator=$chp_;
 							if($ar2['min']<0) $numerator-=$ar2['min']; // - - => +
 							if($ar2['min']>0) $numerator-=($ar2['min']-1); // starts at 1
+							if($chp_==1) $numerator=0; // chapter 1 is the first, so it's generally unread
 							$denominator=$chp;
 							if($ar2['min']<0) $denominator-=$ar2['min'];
 							if($ar2['min']>0) $denominator-=($ar2['min']-1);
@@ -181,8 +184,12 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							assert($did!=MOONREADER_DID2) or die('this shouldn\'t happen, or you\'re unlucky to have the same DeviceID.');
 							//$did=str_repeat('9',strlen($did)); //new d[evice] id
 							$did=MOONREADER_DID2;
-							$data=$did.'*'.($entry['chp']).'@'.$ar2[2].'#0:'.$num.'%';
+							if($chp_==1) $chp_=0;
+							if($ar2['min']<0) $chp_-=$ar2['min'];
+							if($ar2['min']>0) $chp_-=($ar2['min']-1);
+							$data=$did.'*'.$chp_.'@'.$ar2[2].'#0:'.$num.'%';
 							file_put_contents(DROPBOX.$fn, $data);
+							//var_dump($data);
 							var_dump($fn.' written');
 						}//*/
 					}
