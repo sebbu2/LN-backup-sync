@@ -10,25 +10,6 @@ $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')
 $wln=new WLNUpdates;
 $wn=new WebNovel;
 
-//$wln_id=110418; $wn_id=14469985405456205; //atw
-//$wln_id=103958; $wn_id=14187175405584205; //botds
-//$wln_id=69742; $wn_id=11529754806409805; //a.s
-//$wln_id=116709; $wn_id=13916070905254305;//ei
-//$wln_id=112910; $wn_id=15785204806058105;//succ
-//$wln_id=111555; $wn_id=15238973305579305;//dv
-//$wln_id=128343; $wn_id=17195723606962805;//yandere
-//$wln_id=128277; $wn_id=16709186806051905;//imita
-//$wln_id=119304; $wn_id=15487704406726605;//mcydss
-//$wln_id=128231; $wn_id=16709365405930105;//mvs
-//$wln_id=128346; $wn_id=16761866606275205;//pgm
-//$wln_id=116660; $wn_id=15183592905317905;//ptfm
-//$wln_id=75505; $wn_id=12212268105090805;//rmme
-//$wln_id=128347; $wn_id=16892747206786605;//sdm
-//$wln_id=81839; $wn_id=12820870105509205;//sp
-//$wln_id=128348; $wn_id=16923111105764205; //egp
-//$wln_id=128350; $wn_id=16316565005543005; //tms
-//$wln_id=119303; $wn_id=15238154905576905; // wdymmcday
-
 //$filter=$wn->get_filter_for('translated');
 //$filter=(new ReflectionMethod('SitePlugin', 'get_filter_for'))->invoke($wln, 'comic');// cheat!
 /*foreach($books as $book) {
@@ -61,21 +42,9 @@ foreach($books as $book) // qidian
 usort($correspondances, function($e1, $e2) { return strcasecmp($e1[2], $e2[2]);});
 file_put_contents('correspondances.json', json_encode($correspondances, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 //var_dump($correspondances);die();
+
 foreach($correspondances as $ar) {
 	list($wn_id, $wln_id, $name, $id)=$ar;
-	
-	if($wln_id==47429) continue; //bug
-	if($wln_id==109811) continue; //bug
-	if($wln_id==54285) continue; //bug
-	if($wln_id==119304) continue; //bug
-	if($wln_id==45087) continue; //bug
-	if($wln_id==43524) continue; //bug
-	if($wln_id==104091) continue; //bug
-	if($wln_id==105713) continue; //bug
-	if($wln_id==50246) continue; //bug
-	if($wln_id==57067) continue; //bug
-	if($wln_id==119303) continue; //bug
-	if($wln_id==112910) continue; //bug
 	
 	$res=$wn->get_info_cached($wn_id);
 	$resb=$wn->get_chapter_list_cached($wn_id);
@@ -103,11 +72,10 @@ foreach($correspondances as $ar) {
 	$res[2]->data->bookReviewInfos=NULL;
 	$res[3]->data->recommendListItems=NULL;
 	$res[1]->Data->AlsoLikes=NULL;
-	//foreach($res[1]->Data->AlsoLikes as &$v) { $v->StatParams=json_decode($v->StatParams); }
 	$res[3]->data->recommendListItems=NULL;
 	$res[1]->Data->GenreBookItems=NULL;
+	//foreach($res[1]->Data->AlsoLikes as &$v) { $v->StatParams=json_decode($v->StatParams); }
 	//foreach($res[3]->data->recommendListItems as &$v) { $v->alg=json_decode($v->alg); }
-	//*/
 
 	//var_dump($res);
 	//$res2=$wln->get_info($wln_id);
@@ -141,9 +109,26 @@ foreach($correspondances as $ar) {
 			array($res[0]->Data->BookName, $res[1]->Data->OriginalName, $resb->data->bookInfo->bookSubName),
 			$res2->data->alternatenames
 		)));
+		$ar=array_map('trim', $ar);
 		natcasesort($ar);
-		if(count(array_diff(array_unique(array_merge($res2->data->alternatenames, $ar)), $res2->data->alternatenames))>0) {
-			$json2[]=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar),);
+		$ar2=array();
+		foreach($ar as $k=>$v) {
+			$_res=case_count($v);
+			$_res=min($_res['low'], $_res['up']) + $_res['dig'] + $_res['symb'];
+			$_res2=0;
+			if(!array_key_exists(strtolower($v), $ar2)) $ar2[strtolower($v)]=$k;
+			else {
+				$_res2=case_count($ar[$ar2[strtolower($v)]]);
+				$_res2=min($_res2['low'], $_res2['up']) + $_res2['dig'] + $_res2['symb'];
+				if($_res>$_res2) $ar2[strtolower($v)]=$k;
+			}
+		}
+		$ar2=array_map(function($v) use($ar) { return $ar[$v]; }, $ar2);
+		$ar2=array_values($ar2);
+		natcasesort($ar2);
+		if(count(array_diff(array_unique(array_merge($res2->data->alternatenames, $ar2)), $res2->data->alternatenames))>0) {
+			//var_dump($res2->data->alternatenames, $ar2);die();
+			$json2[]=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar2),);
 		}
 	}
 	if(strlen($res2->data->website)==0) {
@@ -156,7 +141,8 @@ foreach($correspondances as $ar) {
 			}
 		}
 		//var_dump($url);
-		if(strlen($res2->data->website)==0 || $res2->data->website!=$url) {
+		if(strlen($res2->data->website)==0 || ($res2->data->website!=$url && strpos($res2->data->website, "\n")===false) ) {
+			var_dump($res2->data->website, $url);die();
 			$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>$url);
 		}
 	}
@@ -191,5 +177,5 @@ foreach($correspondances as $ar) {
 	*/
 	//die('job is already done, edit file to do something else.');
 	ob_flush();flush();
-	if($res!==false) die();
+	//if($res!==false) die();
 }
