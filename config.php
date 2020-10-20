@@ -19,6 +19,22 @@ $accounts=array(
 		'user'=>'',
 		'pass'=>'',
 	),
+	'GoodReads'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
+	'LibraryThing'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
+	'dropbox'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
+	'gdrive'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
 );
 define('MOONREADER_DID', '1454083831785');
 define('MOONREADER_DID2', '9999999999999');
