@@ -64,7 +64,18 @@ file_put_contents('correspondances.json', json_encode($correspondances, JSON_PRE
 foreach($correspondances as $ar) {
 	list($wn_id, $wln_id, $name, $id)=$ar;
 	
-	//if($wln_id==47429) continue; //bug
+	if($wln_id==47429) continue; //bug
+	if($wln_id==109811) continue; //bug
+	if($wln_id==54285) continue; //bug
+	if($wln_id==119304) continue; //bug
+	if($wln_id==45087) continue; //bug
+	if($wln_id==43524) continue; //bug
+	if($wln_id==104091) continue; //bug
+	if($wln_id==105713) continue; //bug
+	if($wln_id==50246) continue; //bug
+	if($wln_id==57067) continue; //bug
+	if($wln_id==119303) continue; //bug
+	if($wln_id==112910) continue; //bug
 	
 	$res=$wn->get_info_cached($wn_id);
 	$resb=$wn->get_chapter_list_cached($wn_id);

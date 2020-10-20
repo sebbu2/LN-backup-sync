@@ -83,34 +83,39 @@ function print_table($ar)
 	}
 	echo '</table>'."\r\n";
 }
-function name_simplify($name) {
-	//static $ar1=array('_', '-', ':', ',', '  ');
+/*
+0 to name (simplify)
+1 from fn
+2 to fn (glob)
+3 to fn
+*/
+function name_simplify($name, $type=0) {
+	//'-'
 	static $ar1=array('_', ':', ',', '  ');
-	//static $ar2=array('\'', '+', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
+	//'+'
 	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar1, ' ', $name);
 	$name=str_replace($ar2, '', $name);
 	$name=trim($name);
-	$name=strtolower($name);
+	if($type==1) {
+		$name=str_replace(array('+'), '', $name);
+	}
+	else if($type==2) {
+		$name=str_replace(array('+'), '', $name);
+		$name=str_replace(array(' ', '_'), '.*', $name);
+	}
+	else if($type==3) {
+		$name=str_replace(array('+'), '', $name);
+		$name=str_replace(array(' ', '_'), '_', $name);
+	}
+	//$name=strtolower($name);
 	return $name;
 }
-function name_compare($name1, $name2)
+function name_compare($name1, $name2, $type=0)
 {
-	//static $ar1=array('_', '-', ':', ',', '  ');
-	static $ar1=array('_', ':', ',', '  ');
-	//static $ar2=array('\'', '+', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
-	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
-	$name1=mb_convert_encoding($name1, 'HTML-ENTITIES',  'UTF-8');
-	$name2=mb_convert_encoding($name2, 'HTML-ENTITIES',  'UTF-8');
-	$name1=str_replace($ar1, ' ', $name1);
-	$name1=str_replace($ar2, '', $name1);
-	$name2=str_replace($ar1, ' ', $name2);
-	$name2=str_replace($ar2, '', $name2);
-	$name1=trim($name1);
-	$name2=trim($name2);
-	$name1=strtolower($name1);
-	$name2=strtolower($name2);
+	$name1=name_simplify($name1, $type);
+	$name2=name_simplify($name2, $type);
 	//var_dump($name1,$name2);
 	return (strcasecmp($name1, $name2)==0);
 }

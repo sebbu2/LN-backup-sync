@@ -44,7 +44,10 @@ foreach($ar as $fn)
 	{
 		continue;
 	}
-	$fn2=str_replace(array('_'), ' ', $fn2);
+	/*$fn2=str_replace(array('_'), ' ', $fn2);
+	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
+	$fn2=trim($fn2);//*/
+	$fn2=name_simplify($fn2, 1);
 	$fn3=strtolower($fn2);
 	$data=file_get_contents(DROPBOX.$fn);
 	$content=array();
@@ -142,10 +145,13 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				//checking new chapters
 				if( $res->data->bookInfo->totalChapterNum+$add > (int)$entry['chp'] ) {
 					chdir(DROPBOX);
-					$title=name_simplify($entry['title']);
-					$title=str_replace('+', '', $title);
-					$name=str_replace(' ','.*', $title);
+					$title=name_simplify($entry['title'], 1);
+					$title=strtolower($title);
+					//$title=str_replace('+', '', $title);
+					//$name=str_replace(' ','.*', $title);
+					$name=name_simplify($title, 2);
 					$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
+					//var_dump($fns);die();
 					$ar2=$fns[$title];
 					$exists=array_values(preg_grep('#^'.$name.'#i',glob($filename)));
 					$content=array();
@@ -181,7 +187,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							$num=number_format($chp2,1);
 							if($num=='100.0') $num='100';
 							$did=$ar2[0]; //old d[evice] id
-							assert($did!=MOONREADER_DID2) or die('this shouldn\'t happen, or you\'re unlucky to have the same DeviceID.');
+							//assert($did!=MOONREADER_DID2) or die('this shouldn\'t happen, or you\'re unlucky to have the same DeviceID.');
 							//$did=str_repeat('9',strlen($did)); //new d[evice] id
 							$did=MOONREADER_DID2;
 							if($chp_==1) $chp_=0;

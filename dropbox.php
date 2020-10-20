@@ -41,7 +41,11 @@ foreach($ar as $fn)
 		var_dump($fn);
 		continue;
 	}
-	$fn2=str_replace(array('_'), ' ', $fn2);
+	/*$fn2=str_replace(array('_'), ' ', $fn2);
+	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
+	$fn2=trim($fn2);//*/
+	$fn2=name_simplify($fn2, 1);
+	$fn3=strtolower($fn2);
 	$data=file_get_contents(DROPBOX.$fn);
 	$content=array();
 	$content[]=strtok($data, '*@#:%');
@@ -49,29 +53,29 @@ foreach($ar as $fn)
 	unset($data);
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
-	//if( array_key_exists($fn2, $fns) ) var_dump($fn2, $max, $fns[$fn2]['max'], $min+($min<0?1:0), $content[1], ($content[3]>0?1:0), $fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0), $fns[$fn2][1], ($fns[$fn2][3]>0?1:0) );
-	if( !array_key_exists($fn2, $fns) )
+	//if( array_key_exists($fn3, $fns) ) var_dump($fn3, $max, $fns[$fn3]['max'], $min+($min<0?1:0), $content[1], ($content[3]>0?1:0), $fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0), $fns[$fn3][1], ($fns[$fn3][3]>0?1:0) );
+	if( !array_key_exists($fn3, $fns) )
 	{
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
+		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
-		$fns[$fn2]=$ar2;
+		$fns[$fn3]=$ar2;
 	}
 	else if(
-		$max>$fns[$fn2]['max'] && //new last chapter is >
-		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+		$max>$fns[$fn3]['max'] && //new last chapter is >
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fns[$fn2]['fn']);//die();
-		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn2]['fn']);//die();
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
+		var_dump($fns[$fn3]['fn']);//die();
+		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn3]['fn']);//die();
+		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
-		$fns[$fn2]=$ar2;
+		$fns[$fn3]=$ar2;
 	}
 	else if(
-		$max < $fns[$fn2]['max'] && //new last chapter is >
-		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn2]['min']+($fns[$fn2]['min']<0?1:0)+$fns[$fn2][1]+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+		$max < $fns[$fn3]['max'] && //new last chapter is >
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
 		var_dump($fn);//die();
-		if($fns[$fn2][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
+		if($fns[$fn3][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
 	}
 }
 var_dump(count($fns));
@@ -105,7 +109,7 @@ foreach($fns as $name=>$fn)
 		}//*/
 		foreach($watches as $_key=>$book)
 		{
-			if(name_compare($name, $book[0]->name) || name_compare($name, $book[3]))
+			if(name_compare($name, $book[0]->name, 1) || name_compare($name, $book[3], 1))
 			{
 				$key=$_key;
 				$id=$book[0]->id;
@@ -156,7 +160,7 @@ foreach($fns as $name=>$fn)
 				var_dump($key,$book);die();
 			}
 			
-			if(name_compare($name, @$book->bookName))
+			if(name_compare($name, @$book->bookName, 1))
 			{
 				$id=$book->bookId;
 				$found2=true;

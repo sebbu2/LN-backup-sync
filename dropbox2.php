@@ -4,8 +4,13 @@ require_once('functions.inc.php');
 require_once('wlnupdates.php');
 require_once('webnovel.php');
 
+if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
+if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
+
 chdir(DROPBOX);
 $ar=glob('*.po');
+natcasesort($ar);
+
 chdir(CWD);
 
 $updatedCount=array(
@@ -36,7 +41,11 @@ foreach($ar as $fn)
 		var_dump($fn);
 		continue;
 	}
-	$fn2=str_replace(array('_'), ' ', $fn2);
+	/*$fn2=str_replace(array('_'), ' ', $fn2);
+	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
+	$fn2=trim($fn2);//*/
+	$fn2=name_simplify($fn2, 1);
+	$fn3=strtolower($fn2);
 	$data=file_get_contents(DROPBOX.$fn);
 	$content=array();
 	$content[]=strtok($data, '*@#:%');
@@ -44,21 +53,28 @@ foreach($ar as $fn)
 	unset($data);
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
-	if( !array_key_exists($fn2, $fns) )
+	if( !array_key_exists($fn3, $fns) )
 	{
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
+		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
-		$fns[$fn2]=$ar2;
+		$fns[$fn3]=$ar2;
 	}
 	else if(
-		$max>$fns[$fn2]['max'] && //new last chapter is >
-		(($content[1]+1+($content[3]>0?1:0)) >= ($fns[$fn2][1]+1+($fns[$fn2][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+		$max>$fns[$fn3]['max'] && //new last chapter is >
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fns[$fn2]['fn']);//die();
-		unlink(DROPBOX.$fns[$fn2]['fn']);//die();
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn);
+		var_dump($fns[$fn3]['fn']);//die();
+		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn3]['fn']);//die();
+		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
-		$fns[$fn2]=$ar2;
+		$fns[$fn3]=$ar2;
+	}
+	else if(
+		$max < $fns[$fn3]['max'] && //new last chapter is >
+		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
+	) {
+		var_dump($fn);//die();
+		if($fns[$fn3][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
 	}
 }
 var_dump(count($fns));
@@ -69,6 +85,7 @@ $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 var_dump(count($books));//die();
+ob_flush();flush();
 foreach($fns as $name=>$fn)
 {
 	//wlnupdates
@@ -91,7 +108,7 @@ foreach($fns as $name=>$fn)
 		}//*/
 		foreach($watches as $_key=>$book)
 		{
-			if(name_compare($name, $book[0]->name) || name_compare($name, $book[3]))
+			if(name_compare($name, $book[0]->name, 1) || name_compare($name, $book[3], 1))
 			{
 				$key=$_key;
 				$id=$book[0]->id;
@@ -195,7 +212,7 @@ foreach($fns as $name=>$fn)
 				var_dump($key,$book);die();
 			}
 			
-			if(name_compare($name, @$book->bookName))
+			if(name_compare($name, @$book->bookName, 1))
 			{
 				$id=$book->bookId;
 				$found2=true;
@@ -301,6 +318,7 @@ foreach($fns as $name=>$fn)
 		$updatedCount['wn']++;
 		//die();
 	}
+	ob_flush();flush();
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);

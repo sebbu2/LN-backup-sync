@@ -66,7 +66,7 @@ class WebNovel extends SitePlugin
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
-		var_dump($cookies);
+		//var_dump($cookies);
 		
 		{ // 3 login
 			$ar=array(
@@ -91,7 +91,7 @@ class WebNovel extends SitePlugin
 			$xml=simplexml_load_html($res);
 			$found=false;
 			$data=array();
-			foreach($xml->xpath('//div[@class="m-bts m-login-bts"]/a') as $node) {
+			foreach($xml->xpath('//div[@class="m-bts m-login-bts"]//a') as $node) {
 				if($node->i['class']=='i-mail') {
 					$found=true;
 					$data['title']=strval($node['title']);
