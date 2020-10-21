@@ -119,6 +119,21 @@ function name_compare($name1, $name2, $type=0)
 	//var_dump($name1,$name2);
 	return (strcasecmp($name1, $name2)==0);
 }
+function case_count($name)
+{
+	$name=trim($name);
+	$len=strlen($name);
+	$res=array( 'low'=>0, 'up'=>0, 'dig'=>0, 'symb'=>0, 'esp'=>0 );
+	for($i=0;$i<$len;++$i)
+	{
+		if($name[$i]>='a' && $name[$i]<='z') $res['low']++;
+		else if($name[$i]>='A' && $name[$i]<='Z') $res['up' ]++;
+		else if($name[$i]>='0' && $name[$i]<='9') $res['dig']++;
+		else if($name[$i]==' ' || $name[$i]=='_') $res['esp']++;
+		else $res['symb']++;
+	}
+	return $res;
+}
 function startswith($haystack, $needle) {
 	return (strncasecmp($haystack, $needle, strlen($needle))==0);
 }

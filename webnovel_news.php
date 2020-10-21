@@ -166,23 +166,26 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					chdir(CWD);
 					if( !$skip_existing
 						|| count($exists)==0
-						|| (count($exists)==1&&array_key_exists(0,$content)&&$content[0]==MOONREADER_DID2) // exists, but is from this script
-						//|| (count($exists)==1&&array_key_exists(4,$content)&&$content[4]!='100') // i'm not at the end
+						|| ( count($exists)==1 && array_key_exists(0,$content) && $content[0]==MOONREADER_DID2 ) // exists, but is from this script
+						|| ( count($exists)==1 && $ar2['min']<=1 && $ar2['min']!=($add==0?1:$add) ) // exists, but wrong negative chapter number
+						//|| ( count($exists)==1 && array_key_exists(4,$content) && $content[4]!='100' ) // i'm not at the end
 					) {
 						var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
 						$chp=$res->data->bookInfo->totalChapterNum+$add;
-						$fn=$ar2['fn2'].'_'.$ar2['min'].'-'.$chp.'.epub.po';
+						$min=($ar2['min']>=1?$ar2['min']:($add<0?$add:1));
+						$fn=$ar2['fn2'].'_'.$min.'-'.$chp.'.epub.po';
+						if($res->data->bookInfo->bookSubName=='MVS') var_dump($ar2, $add, $fn, $exists);
 						//unlink(DROPBOX.$fn);
 						$fn=str_replace(' ', '_', $fn);
 						if(!file_exists(DROPBOX.$fn)) {
 							$chp_=(int)$entry['chp'];
 							$numerator=$chp_;
-							if($ar2['min']<0) $numerator-=$ar2['min']; // - - => +
-							if($ar2['min']>0) $numerator-=($ar2['min']-1); // starts at 1
+							if($min<0) $numerator-=$min; // - - => +
+							if($min>0) $numerator-=($min-1); // starts at 1
 							if($chp_==1) $numerator=0; // chapter 1 is the first, so it's generally unread
 							$denominator=$chp;
-							if($ar2['min']<0) $denominator-=$ar2['min'];
-							if($ar2['min']>0) $denominator-=($ar2['min']-1);
+							if($min<0) $denominator-=$min;
+							if($min>0) $denominator-=($min-1);
 							$chp2=(100*$numerator)/$denominator;
 							$num=number_format($chp2,1);
 							if($num=='100.0') $num='100';
@@ -191,8 +194,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							//$did=str_repeat('9',strlen($did)); //new d[evice] id
 							$did=MOONREADER_DID2;
 							if($chp_==1) $chp_=0;
-							if($ar2['min']<0) $chp_-=$ar2['min'];
-							if($ar2['min']>0) $chp_-=($ar2['min']-1);
+							if($min<0) $chp_-=$min;
+							if($min>0) $chp_-=($min-1);
 							$data=$did.'*'.$chp_.'@'.$ar2[2].'#0:'.$num.'%';
 							file_put_contents(DROPBOX.$fn, $data);
 							//var_dump($data);
