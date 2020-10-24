@@ -93,10 +93,10 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '  ');
 	//'+'
-	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version');
+	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version', 'retranslated version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
-	$name=str_replace($ar1, ' ', $name);
 	$name=str_replace($ar2, '', $name);
+	$name=str_replace($ar1, ' ', $name);
 	$name=trim($name);
 	if($type==1) {
 		$name=str_replace(array('+'), '', $name);
@@ -329,6 +329,7 @@ class SitePlugin
 			if(is_array($postdata)) $postdata=http_build_query($postdata, '', '&');
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
 		}
+		$this->lastUrl=$url;
 		if(!is_null($headers)&&!empty($headers))
 		{
 			if(!is_array($headers)) $headers=array($headers);

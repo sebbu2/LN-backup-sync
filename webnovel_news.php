@@ -47,8 +47,8 @@ foreach($ar as $fn)
 	/*$fn2=str_replace(array('_'), ' ', $fn2);
 	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
 	$fn2=trim($fn2);//*/
-	$fn2=name_simplify($fn2, 1);
-	$fn3=strtolower($fn2);
+	$fn3=name_simplify($fn2, 1);
+	$fn3=strtolower($fn3);
 	$data=file_get_contents(DROPBOX.$fn);
 	$content=array();
 	$content[]=strtok($data, '*@#:%');
@@ -77,6 +77,7 @@ foreach($ar as $fn)
 		//
 	}
 }
+//var_dump($fns);die();
 
 $diff_old=json_decode(file_get_contents('wn_diff.json'), TRUE, 512, JSON_THROW_ON_ERROR); // important : true as 2nd parameter
 if(!array_key_exists('cur',$diff_old)) $diff_old['cur']=array();
@@ -152,6 +153,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$name=name_simplify($title, 2);
 					$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
 					//var_dump($fns);die();
+					if(!array_key_exists($title, $fns)) { var_dump($title); die(); }
 					$ar2=$fns[$title];
 					$exists=array_values(preg_grep('#^'.$name.'#i',glob($filename)));
 					$content=array();
@@ -174,7 +176,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$chp=$res->data->bookInfo->totalChapterNum+$add;
 						$min=($ar2['min']>=1?$ar2['min']:($add<0?$add:1));
 						$fn=$ar2['fn2'].'_'.$min.'-'.$chp.'.epub.po';
-						if($res->data->bookInfo->bookSubName=='MVS') var_dump($ar2, $add, $fn, $exists);
+						//if($res->data->bookInfo->bookSubName=='MVS') var_dump($ar2, $add, $fn, $exists);
 						//unlink(DROPBOX.$fn);
 						$fn=str_replace(' ', '_', $fn);
 						if(!file_exists(DROPBOX.$fn)) {

@@ -562,13 +562,15 @@ class WebNovel extends SitePlugin
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/';
 		$ar=array(
+			'_crsfToken'=>$cookies['_csrfToken'],
 			'keywords'=>$name,
 		);
 		$headers=array(
 			'X-Requested-With: XMLHttpRequest',
-			//'Referer: '.$referer,
+			'Referer: '.$referer,
 		);
 		$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers, false); // no cookies (un-authentified)
+		//$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'search2.json', $res);
 		
@@ -578,6 +580,9 @@ class WebNovel extends SitePlugin
 			var_dump($data->code);
 			var_dump($data->msg);
 			die('autocomplete error');
+		}
+		if(!property_exists($data, 'data')) {
+			return false;
 		}
 		if(property_exists($data->data, 'books') && count($data->data->books)>0) {
 			if(name_compare($name, $data->data->books[0]->name)) {

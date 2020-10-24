@@ -179,23 +179,43 @@ foreach($fns as $name=>$fn)
 		else {
 			var_dump($name.' not found in WLNUpdates search');
 			//var_dump($res->data->results[0]->match[0]);
-			/*$res=$wn->checkLogin();
+			$res=$wn->checkLogin();
 			//var_dump($res);
 			if($res->code!=0) {
 				var_dump($res->code, $res->msg);
 				$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
 				var_dump($res);
 			}
-			//$res=$wn->search($name);
-			//var_dump($res);
 			$res=$wn->search2($name);
-			assert($res->code==0);
-			var_dump($res);
-			if(count($res->data->books)==1) {
-				assert(name_compare($name, $res->data->books[0]->name));
-				$res=$wn->get_info($res->data->books[0]->id);
+			assert($res==false || $res->code==0);
+			if($res==false || count($res->data->books)!=1) {
+				var_dump($res);
+				$res=$wn->search($name);
 				//var_dump($res);
-				var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);
+				foreach($res as $k=>$v) {
+					if(name_compare($v['title'], $name, 1)) {
+						$res=$wln->add($v['title'], 'translated'); // TODO : fix translated/eol type
+						var_dump($res);
+						if(is_numeric($res)) {
+							$res=$wln->add_novel($res);
+							var_dump($res);
+						}
+						die();
+					}
+				}
+				//die();
+			}
+			else { // good
+				assert(name_compare($name, $res->data->books[0]->name)) or die('name "'.$name.'" doesn\'t match.');
+				$res2=$wn->get_info_cached($res->data->books[0]->id);
+				$tl='';
+				if($res2[0]->Data->Type==1) $tl='translated';
+				if($res2[0]->Data->Type==2) $tl='eol';
+				assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
+				//var_dump($res2);
+				var_dump('wn get_info',$res2[0]->Result, $res2[0]->Message, $res2[1]->Result, $res2[1]->Message);
+				$res=$wln->add($res->data->books[0]->name, $tl);
+				var_dump($res);die();
 			}
 			//*/
 		}

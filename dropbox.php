@@ -206,7 +206,7 @@ foreach($fns as $name=>$fn)
 			$updatedCount['wn']++;
 		}
 		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
-			var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex);
+			var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex, $fns[$name]);
 		}
 	}
 	ob_flush();flush();

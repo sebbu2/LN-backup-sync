@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 609,
-      "chp": 609,
+      "agg": 615,
+      "chp": 615,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 795,
-      "chp": 795,
+      "agg": 799,
+      "chp": 799,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12003,
-      "chp": 2003,
+      "agg": 12009,
+      "chp": 2009,
       "frag": -1,
       "vol": 1
     },
@@ -147,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1240,
-      "chp": 1240,
+      "agg": 1242,
+      "chp": 1242,
       "frag": -1,
       "vol": -1
     },
@@ -174,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 540,
-      "chp": 540,
+      "agg": 546,
+      "chp": 546,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 468,
-      "chp": 468,
+      "agg": 471,
+      "chp": 471,
       "frag": -1,
       "vol": -1
     },
@@ -228,15 +228,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 155,
-      "chp": 155,
+      "agg": 161,
+      "chp": 161,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599134972,
+      "date": 1591349270,
       "frag": 0,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 118,
-      "chp": 118,
+      "agg": 121,
+      "chp": 121,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 535,
-      "chp": 535,
+      "agg": 541,
+      "chp": 541,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1222,
-      "chp": 1222,
+      "agg": 1228,
+      "chp": 1228,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 402,
-      "chp": 402,
+      "agg": 408,
+      "chp": 408,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 126,
-      "chp": 126,
+      "agg": 129,
+      "chp": 129,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 550,
-      "chp": 550,
+      "agg": 556,
+      "chp": 556,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 384,
-      "chp": 384,
+      "agg": 390,
+      "chp": 390,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 400,
-      "chp": 400,
+      "agg": 406,
+      "chp": 406,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 341,
-      "chp": 341,
+      "agg": 342,
+      "chp": 342,
       "frag": -1,
       "vol": -1
     },
@@ -510,7 +510,7 @@
       "frag": 0,
       "vol": -1
     },
-    "Nano Machine"
+    "Nano Machine (Retranslated Version)"
   ],
   [
     {
@@ -552,8 +552,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1146,
-      "chp": 1146,
+      "agg": 1151,
+      "chp": 1151,
       "frag": -1,
       "vol": -1
     },
@@ -579,8 +579,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10924,
-      "chp": 924,
+      "agg": 10930,
+      "chp": 930,
       "frag": -1,
       "vol": 1
     },
@@ -660,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 577,
-      "chp": 577,
+      "agg": 581,
+      "chp": 581,
       "frag": -1,
       "vol": -1
     },
@@ -687,8 +687,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1038,
-      "chp": 1038,
+      "agg": 1043,
+      "chp": 1043,
       "frag": -1,
       "vol": -1
     },
@@ -696,33 +696,6 @@
       "agg": 151,
       "chp": 151,
       "date": 1578110701,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 75703,
-      "name": "Zombie Sister Strategy",
-      "rating": 6.5,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1269,
-      "chp": 1269,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 76,
-      "chp": 76,
-      "date": 1544756035,
       "frag": 0,
       "vol": -1
     },
@@ -1355,6 +1328,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 44136,
+      "name": "King of Gods",
+      "rating": 7.71428571428571,
+      "rating_count": 7,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 531,
+      "chp": 531,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 852,
+      "chp": 852,
+      "date": 1539261300,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 128906,
       "name": "Re: Level 100 Farmer",
       "rating": null,
@@ -1382,6 +1382,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 75703,
+      "name": "Zombie Sister Strategy",
+      "rating": 6.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1269,
+      "chp": 1269,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 76,
+      "chp": 76,
+      "date": 1544756035,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 120307,
       "name": "A Bored Lich",
       "rating": null,
@@ -1389,8 +1416,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 208,
-      "chp": 208,
+      "agg": 209,
+      "chp": 209,
       "frag": -1,
       "vol": -1
     },
@@ -1416,8 +1443,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1010,
-      "chp": 1010,
+      "agg": 1016,
+      "chp": 1016,
       "frag": -1,
       "vol": -1
     },
@@ -1438,20 +1465,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98765432098766,
-      "rating_count": 81,
+      "rating": 9.98780487804878,
+      "rating_count": 82,
       "tl_type": "oel"
     },
     {
-      "agg": 618,
-      "chp": 618,
+      "agg": 619,
+      "chp": 619,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 617,
-      "chp": 617,
-      "date": 1603261560,
+      "agg": 618,
+      "chp": 618,
+      "date": 1603432680,
       "frag": 0,
       "vol": -1
     },
@@ -1470,8 +1497,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 336,
-      "chp": 336,
+      "agg": 337,
+      "chp": 337,
       "frag": -1,
       "vol": -1
     },
@@ -1506,6 +1533,33 @@
       "agg": 57,
       "chp": 57,
       "date": 1583456700,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 129098,
+      "name": "Essential NPC with a Chicken",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 56,
+      "chp": 56,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
       "frag": -1,
       "vol": -1
     },
@@ -1578,8 +1632,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 307,
-      "chp": 307,
+      "agg": 313,
+      "chp": 313,
       "frag": -1,
       "vol": -1
     },
@@ -1605,8 +1659,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 618,
-      "chp": 618,
+      "agg": 621,
+      "chp": 621,
       "frag": -1,
       "vol": -1
     },
@@ -1659,8 +1713,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 589,
-      "chp": 589,
+      "agg": 591,
+      "chp": 591,
       "frag": -1,
       "vol": -1
     },
@@ -1686,8 +1740,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 9,
-      "chp": 9,
+      "agg": 10,
+      "chp": 10,
       "frag": -1,
       "vol": -1
     },
@@ -1713,8 +1767,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 354,
-      "chp": 354,
+      "agg": 362,
+      "chp": 362,
       "frag": -1,
       "vol": -1
     },
@@ -1733,6 +1787,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 129102,
+      "name": "My%20%28idiot%29%20Girlfriend%20Recommended%20Me%20a%20VR%20Game%20So%20I%20Tried%20Playing%20It.",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    "My (idiot) Girlfriend Recommended Me a VR Game So I Tried Playing It."
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 100769,
       "name": "Nanomancer Reborn - I've Become A Snow Girl?",
       "rating": 6.7741935483871,
@@ -1740,8 +1821,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 741,
-      "chp": 741,
+      "agg": 747,
+      "chp": 747,
       "frag": -1,
       "vol": -1
     },
@@ -1841,6 +1922,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 117074,
+      "name": "Races: Online ( VR Smartphone App)",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 66,
+      "chp": 66,
+      "date": 1602386220,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 75505,
       "name": "Rise of Myraid Magic Emperor",
       "rating": null,
@@ -1848,15 +1956,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 193,
-      "chp": 193,
+      "agg": 195,
+      "chp": 195,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 11,
       "chp": 11,
-      "date": 1547321964,
+      "date": 1560453846.336022,
       "frag": -1,
       "vol": -1
     },
@@ -1875,8 +1983,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20505,
-      "chp": 505,
+      "agg": 20506,
+      "chp": 506,
       "frag": -1,
       "vol": 2
     },
@@ -1929,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 177,
-      "chp": 177,
+      "agg": 180,
+      "chp": 180,
       "frag": -1,
       "vol": -1
     },
@@ -1983,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 848,
-      "chp": 848,
+      "agg": 854,
+      "chp": 854,
       "frag": -1,
       "vol": -1
     },
@@ -2010,8 +2118,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 155,
-      "chp": 155,
+      "agg": 158,
+      "chp": 158,
       "frag": -1,
       "vol": -1
     },
@@ -2037,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 210,
-      "chp": 210,
+      "agg": 213,
+      "chp": 213,
       "frag": -1,
       "vol": -1
     },
@@ -2064,8 +2172,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 128,
+      "chp": 128,
       "frag": -1,
       "vol": -1
     },
@@ -2118,8 +2226,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 316,
-      "chp": 316,
+      "agg": 317,
+      "chp": 317,
       "frag": -1,
       "vol": -1
     },
@@ -4905,9 +5013,9 @@
       "vol": -1
     },
     {
-      "agg": 177,
-      "chp": 177,
-      "date": 1603104223,
+      "agg": 178,
+      "chp": 178,
+      "date": 1603385306,
       "frag": 0,
       "vol": -1
     },
@@ -5121,9 +5229,9 @@
       "vol": 3
     },
     {
-      "agg": 40011,
-      "chp": 11,
-      "date": 1603125934,
+      "agg": 40013,
+      "chp": 13,
+      "date": 1603471289,
       "frag": 0,
       "vol": 4
     },

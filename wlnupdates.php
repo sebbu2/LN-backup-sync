@@ -157,16 +157,49 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function add($extract)
+	public function add($name, $tl)
 	{
+		if(!in_array($tl, array('translated', 'eol'))) return false;
+		
+		$referer = 'https://www.wlnupdates.com/add/series/';
+		$res = $this->send( 'https://www.wlnupdates.com/add/series/' );
+		preg_match_all('#<form(?:\s+(?:id=["\'](?P<id>[^"\'<>]*)["\']|action=["\'](?P<action>[^"\'<>]*)["\']|\w+=["\'][^"\'<>]*["\']|))+>(?P<content>.*)</form>#isU', $res, $matches);
+		
+		$id=array_search('/add/series/', $matches['action']);
+		if($id===false) $id=array_search('', $matches['action']);
+		assert($id!==false) or die(var_export($matches['action']));
+		
+		preg_match_all('#<input(?:\s+(?:name=["\'](?P<name>[^"\'<>]*)["\']|type=["\'](?P<type>[^"\'<>]*)["\']|value=["\'](?P<value>[^"\'<>]*)["\']|\w+=["\'][^"\'<>]*["\']|\w+))+>#is', $matches['content'][$id], $matches2);
+		$postdata=array();
+		foreach($matches2['name'] as $id2=>$name2) {
+			if($name2=='name') $postdata[$name2]=$name;
+			else if($name2=='type') $postdata[$name2]=$tl;
+			else if(!empty($name2)) $postdata[$name2]=$matches2['value'][$id2];
+		}
+		var_dump($postdata);
+		/*$cookies=$this->get_cookies_for('https://www.wlnupdates.com/');
 		$ar=array(
-			'name'=>$extract['title'],
-			'type'=>'translated or eol',
-		);
+			'name'=>$name,
+			'type'=>$tl,
+			'csrf_token'=>$cookies['_csrfToken'],
+		);//*/
 		//csrf_token
-		$res = $this->send( 'https://www.wlnupdates.com/add/series', $ar);
+		$headers=array(
+			'Referer: '.$referer,
+		);
+		$res = $this->send( 'https://www.wlnupdates.com/add/series/', $postdata, $headers);
 		file_put_contents($this::FOLDER.'add-series.json', $res);
-		$res=json_decode($res);
+		//$res=json_decode($res);
+		
+		preg_match_all('#<meta name="manga-id" content="(\d+)"/?>#i', $res, $matches);
+		if(count($matches[1])==1) {
+			//success
+			return $matches[1][0];
+		}
+		else {
+			var_dump($res);
+			die('error');
+		}
 		return $res;
 	}
 	

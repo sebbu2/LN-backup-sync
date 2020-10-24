@@ -49,7 +49,7 @@ foreach($correspondances as $ar) {
 	$res=$wn->get_info_cached($wn_id);
 	$resb=$wn->get_chapter_list_cached($wn_id);
 	if(!is_object($resb) || !property_exists($resb, 'data')) {
-		var_dump($resb);die();
+		var_dump($wn_id, $resb);die();
 	}
 	//var_dump($resb->data->bookInfo->bookSubName);
 
@@ -142,8 +142,25 @@ foreach($correspondances as $ar) {
 		}
 		//var_dump($url);
 		if(strlen($res2->data->website)==0 || ($res2->data->website!=$url && strpos($res2->data->website, "\n")===false) ) {
-			var_dump($res2->data->website, $url);die();
+			//var_dump($res2->data->website, $url);die();
 			$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>$url);
+		}
+		if(strpos($res2->data->website, "\n")!==false) {
+			$found=false;
+			$urls=array();
+			$ar=explode("\n", $res2->data->website);
+			foreach($ar as $v) {
+				if($v==$url) {
+					$found=true;
+				}
+				else if(strpos($v, 'www.webnovel.com')===false) {
+					$urls[]=$v;
+				}
+			}
+			if(!$found) {
+				$urls=array_merge(array($url), $urls);
+				$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>implode("\n",$urls));
+			}
 		}
 	}
 	
