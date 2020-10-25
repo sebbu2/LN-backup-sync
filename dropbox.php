@@ -7,6 +7,8 @@ require_once('webnovel.php');
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
+include('header.php');
+
 chdir(DROPBOX);
 $ar=glob('*.po');
 natcasesort($ar);
@@ -38,7 +40,8 @@ foreach($ar as $fn)
 	}
 	if(empty($matches))
 	{
-		var_dump($fn);
+		//var_dump($fn);
+		echo '<div class="block b b-red">',$fn,'</div>',"\n";
 		continue;
 	}
 	/*$fn2=str_replace(array('_'), ' ', $fn2);
@@ -64,7 +67,8 @@ foreach($ar as $fn)
 		$max>$fns[$fn3]['max'] && //new last chapter is >
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fns[$fn3]['fn']);//die();
+		//var_dump($fns[$fn3]['fn']);//die();
+		echo '<div class="block b b-green">',$fns[$fn3]['fn'],'</div>',"\n";
 		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn3]['fn']);//die();
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
@@ -74,21 +78,25 @@ foreach($ar as $fn)
 		$max < $fns[$fn3]['max'] && //new last chapter is >
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fn);//die();
+		//var_dump($fn);//die();
+		echo '<div class="block b b-green">',$fn,'</div>',"\n";
 		if($fns[$fn3][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
 	}
 }
-var_dump(count($fns));
+//var_dump(count($fns));
 //require_once('watches.inc.php');
 $wln=new WLNUpdates();
 $wn=new WebNovel;
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
-var_dump(count($watches));//die();
+//var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
-var_dump(count($books));//die();
+//var_dump(count($books));//die();
+echo '<h2>Counts</h2>',"\n";
+print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
 ob_flush();flush();
 foreach($fns as $name=>$fn)
 {
+	$row=array();
 	//wlnupdates
 	$key='';
 	$id=-1;
@@ -122,7 +130,8 @@ foreach($fns as $name=>$fn)
 		}
 		else {
 			// DO NOTHING ! the other file does the add for missing novels
-			var_dump($name.' not found in WLNUpdates.');
+			//var_dump($name.' not found in WLNUpdates.');
+			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('msg'=>'not found in WLNUpdates'));
 		}
 	}
 	
@@ -139,10 +148,14 @@ foreach($fns as $name=>$fn)
 	if($found1) {
 		//if($chp>(int)$watches[$key]['chp']) {
 		if($chp>(int)$watches[$key][1]->chp) {
-			var_dump($name, $chp, $watches[$key][1]->chp);
+			//var_dump($name, $chp, $watches[$key][1]->chp);
+			$row['WLNUpdates old chp']=$watches[$key][1]->chp;
+			$row['WLNUpdates new chp']=$chp;
 			$data=$wln->read_update($watches[$key], $chp);
 			//$data=json_decode($data);
-			var_dump($data);
+			//var_dump($data);
+			if($data->error===false && $data->message==='Succeeded') $row['WLNUpdates sync']='true';
+			else $row['WLNUpdates sync']='false';
 			$updatedCount['wln']++;
 		}
 	}
@@ -172,7 +185,8 @@ foreach($fns as $name=>$fn)
 		}
 		else {
 			// TODO
-			var_dump($name.' not found in WebNovel.');
+			//var_dump($name.' not found in WebNovel.');
+			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('msg'=>'not found in WebNovel'));
 		}
 	}
 	if($found2) {
@@ -200,15 +214,24 @@ foreach($fns as $name=>$fn)
 			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
 			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
-			var_dump($name, $chp);
+			//var_dump($name, $chp);
+			$row['WebNovel old chp']=(int)$books[$key]->readToChapterIndex;
+			$row['WebNovel new chp']=($chp2<=$max_pub)?$chp2:$max_pub;
 			$data=$wn->read_update($books[$key], $chp2);
-			var_dump($data);
+			//var_dump($data);
+			if($data->code===0 && $data->msg==='Success') $row['WebNovel sync']='true';
+			else $row['WebNovel sync']='false';
 			$updatedCount['wn']++;
 		}
 		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
-			var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex, $fns[$name]);
+			//var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex, $fns[$name]);
+			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('msg'=>'found in WebNovel at '.$books[$key]->readToChapterIndex.' instead of '.$chp2));
 		}
 	}
+	if(count($row)>1) $row=array_merge(array('name'=>$name),$row);
+	$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
+	if(array_key_exists('msg',$row)) $row['msg']=implode(' + '.$row['msg']);
+	if(count($row)>0) print_table(array($row));
 	ob_flush();flush();
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
@@ -216,3 +239,5 @@ if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	include_once('retr.php');
 }
 echo '<br/><a href="retr.php">retr</a><br/>'."\r\n";
+
+include('footer.php');

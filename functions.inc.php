@@ -2,7 +2,7 @@
 require_once('config.php');
 function print_thead_key($key,$value,$prefix='') {
 	if(is_string($value)||is_numeric($value)||is_bool($value)||is_null($value)) {
-		if($prefix==0&&$key=='extra_metadata') {
+		if($prefix===0 && $key==='extra_metadata') {
 			echo "\t\t".'<th>0->extra_metadata->is_yaoi</th>'."\r\n";
 			echo "\t\t".'<th>0->extra_metadata->is_yuri</th>'."\r\n";
 		}
@@ -24,10 +24,30 @@ function print_thead_key($key,$value,$prefix='') {
 		var_dump($key,$value,$prefix);die();
 	}
 }
+function print_thead_value($key,$value,$prefix='') {
+	if(is_string($value)||is_numeric($value)||is_bool($value)||is_null($value)) {
+		echo "\t\t".'<th>'.$value.'</th>'."\r\n";
+	}
+	else if(is_array($value)) {
+		foreach($value as $k2=>$v2)
+		{
+			print_thead_key($k2,$v2,(strlen($prefix>0)?$prefix.'->':'').$key);
+		}
+	}
+	else if(is_object($value)) {
+		foreach(get_object_vars($value) as $k2=>$v2)
+		{
+			print_thead_key($k2,$v2,(strlen($prefix)>0?$prefix.'->':'').$key);
+		}
+	}
+	else {
+		var_dump($key,$value,$prefix);die();
+	}
+}
 function print_tbody_value($key,$value,$prefix='') {
 	//var_dump($value, is_string($value), is_numeric($value), is_bool($value), is_null($value), is_array($value), is_object($value));
 	if(is_string($value)||is_numeric($value)||is_bool($value)||is_null($value)) {
-		if($prefix==0&&$key=='extra_metadata') {
+		if($prefix===0 && $key==='extra_metadata') {
 			echo "\t\t".'<td></td>'."\r\n";
 			echo "\t\t".'<td></td>'."\r\n";
 		}

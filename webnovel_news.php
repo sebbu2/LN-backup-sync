@@ -9,6 +9,8 @@ if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
 $skip_existing=true;
 
+include('header.php');
+
 //include_once('watches.inc.php');
 $watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
 $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),false,512,JSON_THROW_ON_ERROR);
@@ -87,7 +89,7 @@ $diff=array();
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
 	if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
-	echo '<h1>'.$id.'</h1>';
+	echo '<h1>'.$id.'</h1>',"\n";
 	foreach($list as $entry) { // WLN book
 		//TODO : fix the next 2 lines
 		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
@@ -140,7 +142,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				}
 				//updating list of chapters
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
-					var_dump('updating',$entry['title']);
+					//var_dump('updating',$entry['title']);
+					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
 					$res=$wn->get_chapter_list($book->bookId);
 				}
 				//checking new chapters
@@ -172,7 +175,9 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						|| ( count($exists)==1 && $ar2['min']<=1 && $ar2['min']!=($add==0?1:$add) ) // exists, but wrong negative chapter number
 						//|| ( count($exists)==1 && array_key_exists(4,$content) && $content[4]!='100' ) // i'm not at the end
 					) {
-						var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
+						//var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
+						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'subName'=>$res->data->bookInfo->bookSubName, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add));
+						if($ar2['min']>1) $row['start']=$ar2['min'];
 						$chp=$res->data->bookInfo->totalChapterNum+$add;
 						$min=($ar2['min']>=1?$ar2['min']:($add<0?$add:1));
 						$fn=$ar2['fn2'].'_'.$min.'-'.$chp.'.epub.po';
@@ -201,7 +206,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							$data=$did.'*'.$chp_.'@'.$ar2[2].'#0:'.$num.'%';
 							file_put_contents(DROPBOX.$fn, $data);
 							//var_dump($data);
-							var_dump($fn.' written');
+							//var_dump($fn.' written');
+							$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('.po'));
 						}//*/
 					}
 					if(isset($priv_only)) $diff_old['old'][$entry['title']]=$add2;
@@ -215,7 +221,9 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
 					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
 				}
-				print('');
+				$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
+				if(array_key_exists('msg',$row)) $row['msg']=implode(' + ', $row['msg']);
+				if(count($row)>0) print_table(array($row));
 			}
 		}
 	}
@@ -223,3 +231,5 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 $diff=array('cur'=>$diff,'old'=>array_diff_key(array_merge($diff_old['cur'],$diff_old['old']),$diff));
 file_put_contents('wn_diff.json', $wn->jsonp_to_json(json_encode($diff)));
 var_dump($diff);
+
+include('footer.php');
