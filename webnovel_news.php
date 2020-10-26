@@ -85,11 +85,14 @@ $diff_old=json_decode(file_get_contents('wn_diff.json'), TRUE, 512, JSON_THROW_O
 if(!array_key_exists('cur',$diff_old)) $diff_old['cur']=array();
 if(!array_key_exists('old',$diff_old)) $diff_old['old']=array();
 $diff=array();
+$diff2=array();
 
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
-	if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
-	echo '<h1>'.$id.'</h1>',"\n";
+	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
+	if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) ) {
+		echo '<h1>'.$id.'</h1>',"\n";
+	}
 	foreach($list as $entry) { // WLN book
 		//TODO : fix the next 2 lines
 		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
@@ -127,24 +130,38 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				$add2=0;
 				$priv_only=0;
 				$max_pub=0;
+				$chp_id=0;
 				if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2+=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2+=$diff_old['cur'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['old'])) $add2+=$diff_old['old'][$entry['title']];
-				else {
+				//else {
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							if($chap->chapterLevel!=0) $priv_only++;
 							else if($chap->index>$max_pub) $max_pub=$chap->index;
+							if($chap->id==$book->readToChapterId) $chp_id=$chap->index;
 						}
 					}
-					$add2+=$priv_only;
-				}
+					if($add2==0) $add2+=$priv_only;
+				//}
 				//updating list of chapters
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
 					//var_dump('updating',$entry['title']);
 					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
 					$res=$wn->get_chapter_list($book->bookId);
+				}
+				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) {
+					if(!is_numeric($book->readToChapterIndex)) {
+						$data=$wn->read_update($book, $entry['chp']);
+						assert($data->code===0 && $data->msg==='Success') or die('update "'.$entry['title'].' failed.');
+						//var_dump($book, $entry['chp'], $chp_id);die();
+						continue;
+					}
+					if( !( ($book->readToChapterIndex-$add) == ($res->data->bookInfo->totalChapterNum+$add) ) ) {
+						$diff2[$entry['title']]=$priv_only;
+					}
+					continue;
 				}
 				//checking new chapters
 				if( $res->data->bookInfo->totalChapterNum+$add > (int)$entry['chp'] ) {
@@ -210,14 +227,24 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('.po'));
 						}//*/
 					}
-					if(isset($priv_only)) $diff_old['old'][$entry['title']]=$add2;
+					//if(isset($priv_only)) $diff_old['old'][$entry['title']]=$add2;
+					if(isset($priv_only)) $diff2[$entry['title']]=$add2;
 				}
 				else {
 					//up-to-date
 					if( !( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) ) )
 					{
 						var_dump($book,$add,$add2,$priv_only,$max_pub,$res->data->bookInfo);
+						$res=$wn->get_chapter_list($book->bookId);
+						foreach($res->data->volumeItems as $vol) {
+							foreach($vol->chapterItems as $chap) {
+								if($chap->chapterLevel!=0) $priv_only++;
+							}
+						}
+						$add2=$priv_only;
+						var_dump($res->data->bookInfo);
 					}
+					//var_dump( $book->readToChapterIndex, $add2, $res->data->bookInfo->totalChapterNum, $add );
 					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
 					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
 				}
@@ -228,7 +255,9 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 		}
 	}
 }
-$diff=array('cur'=>$diff,'old'=>array_diff_key(array_merge($diff_old['cur'],$diff_old['old']),$diff));
+//var_dump($diff2);die();
+$diff=array('cur'=>$diff,'old'=>array_diff_key(array_merge($diff2,$diff_old['cur'],$diff_old['old']),$diff));
+//$diff=array('cur'=>$diff,'old'=>$diff2);
 file_put_contents('wn_diff.json', $wn->jsonp_to_json(json_encode($diff)));
 var_dump($diff);
 
