@@ -49,8 +49,10 @@ foreach($ar as $fn)
 	/*$fn2=str_replace(array('_'), ' ', $fn2);
 	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
 	$fn2=trim($fn2);//*/
+	//var_dump($fn2);
 	$fn3=name_simplify($fn2, 1);
 	$fn3=strtolower($fn3);
+	//var_dump($fn3);
 	$data=file_get_contents(DROPBOX.$fn);
 	$content=array();
 	$content[]=strtok($data, '*@#:%');
@@ -116,7 +118,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					//$res=json_decode('webnovel/GetChapterList_'.$book->bookId.'.json', false, 512, JSON_THROW_ON_ERROR);
 					$res=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$book->bookId.'.json')),false,512,JSON_THROW_ON_ERROR);
 					//var_dump($res);die();
-					if($res->code!=0 || $res->data===0) {
+					if(!property_exists($res, 'code') || $res->code!=0 || !property_exists($res, 'data') || $res->data===0) {
 						var_dump('request', $book->bookId, $book->bookName, $entry['title'], $res);
 						unlink('webnovel/GetChapterList_'.$book->bookId.'.json');
 						die();
@@ -149,7 +151,13 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
 					//var_dump('updating',$entry['title']);
 					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
-					$res=$wn->get_chapter_list($book->bookId);
+					try {
+						$res=@$wn->get_chapter_list($book->bookId);
+						if(!property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
+					} catch (Exception $e) {
+						$res=$wn->get_chapter_list($book->bookId);
+						if(!property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
+					}
 				}
 				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) {
 					if(!is_numeric($book->readToChapterIndex)) {
@@ -173,7 +181,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$name=name_simplify($title, 2);
 					$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
 					//var_dump($fns);die();
-					if(!array_key_exists($title, $fns)) { var_dump($title); die(); }
+					if(!array_key_exists($title, $fns)) { var_dump($entry['title'], $book->bookName); var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1))); var_dump($title); var_dump(array_keys($fns)); die(); }
 					$ar2=$fns[$title];
 					$exists=array_values(preg_grep('#^'.$name.'#i',glob($filename)));
 					$content=array();

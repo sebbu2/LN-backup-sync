@@ -194,6 +194,12 @@ foreach($fns as $name=>$fn)
 				//var_dump($res);
 				foreach($res as $k=>$v) {
 					if(name_compare($v['title'], $name, 1)) {
+						var_dump($v);die();
+						$res2=$wn->get_info_cached($v['id']);
+						$tl='';
+						if($res2[0]->Data->Type==1) $tl='translated';
+						if($res2[0]->Data->Type==2) $tl='eol';
+						assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
 						$res=$wln->add($v['title'], 'translated'); // TODO : fix translated/eol type
 						var_dump($res);
 						if(is_numeric($res)) {

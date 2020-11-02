@@ -113,7 +113,7 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '  ');
 	//'+'
-	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version', 'retranslated version');
+	static $ar2=array('\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version', 'Retranslated_Version', 'retranslated version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
@@ -396,8 +396,8 @@ class SitePlugin
 		} //*/
 		$jsonp=trim($jsonp);
 		static $end_match=array('['=>']','{'=>'}');
-		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON 1.<br/>'.$jsonp);
-		assert(substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON 2.<br/>'.$jsonp);
+		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON 1.<br/>'.var_export(substr($jsonp,0,1),true));
+		assert(substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON 2.<br/>'.var_export(substr($jsonp,-1),true));
 		//$jsonp=json_encode(json_decode($jsonp, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
 		$jsonp=str_replace('\/','/',$jsonp);
 		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_BIGINT_AS_STRING );

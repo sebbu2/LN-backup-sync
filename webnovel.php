@@ -456,7 +456,9 @@ class WebNovel extends SitePlugin
 				'Referer: '.$referer,
 			);
 			$res = $this->get( 'https://www.webnovel.com/apiajax/chapter/GetChapterList', $ar, $headers);
+			file_put_contents('request.log', $res);
 			$res=$this->jsonp_to_json($res);
+			unlink('request.log');
 			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
 			$res=json_decode($res);
 		}

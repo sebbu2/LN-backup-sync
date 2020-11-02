@@ -20,11 +20,17 @@
 .b-green {
 	border-color: green;
 }
+.b-blue {
+	border-color: blue;
+}
 .red {
 	color: red;
 }
 .green {
 	color: green;
+}
+.blue {
+	color: blue;
 }
 </style>
 </head>
