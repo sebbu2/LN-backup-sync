@@ -7,6 +7,8 @@ require_once('webnovel.php');
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
+include('header.php');
+
 chdir(DROPBOX);
 $ar=glob('*.po');
 natcasesort($ar);
@@ -38,7 +40,8 @@ foreach($ar as $fn)
 	}
 	if(empty($matches))
 	{
-		var_dump($fn);
+		//var_dump($fn);
+		echo '<div class="block b b-red">',$fn,'</div>',"\n";
 		continue;
 	}
 	/*$fn2=str_replace(array('_'), ' ', $fn2);
@@ -63,8 +66,14 @@ foreach($ar as $fn)
 		$max>$fns[$fn3]['max'] && //new last chapter is >
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fns[$fn3]['fn']);//die();
-		if($content[0]!=MOONREADER_DID2) unlink(DROPBOX.$fns[$fn3]['fn']);//die();
+		//var_dump($fns[$fn3]['fn']);//die();
+		if($content[0]!=MOONREADER_DID2) {
+			unlink(DROPBOX.$fns[$fn3]['fn']);//die();
+			echo '<div class="block b b-blue">',$fns[$fn3]['fn'],'</div>',"\n";
+		}
+		else {
+			echo '<div class="block b b-green">',$fns[$fn3]['fn'],'</div>',"\n";
+		}
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
 		$fns[$fn3]=$ar2;
@@ -73,18 +82,28 @@ foreach($ar as $fn)
 		$max < $fns[$fn3]['max'] && //new last chapter is >
 		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
 	) {
-		var_dump($fn);//die();
-		if($fns[$fn3][0]!=MOONREADER_DID2) unlink(DROPBOX.$fn);//die();
+		//var_dump($fn);//die();
+		if($fns[$fn3][0]!=MOONREADER_DID2) {
+			unlink(DROPBOX.$fn);//die();
+			echo '<div class="block b b-blue">',$fn,'</div>',"\n";
+		}
+		else {
+			echo '<div class="block b b-green">',$fn,'</div>',"\n";
+		}
 	}
 }
-var_dump(count($fns));
+//var_dump(count($fns));
 //require_once('watches.inc.php');
 $wln=new WLNUpdates();
 $wn=new WebNovel;
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
-var_dump(count($watches));//die();
+//var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
-var_dump(count($books));//die();
+//var_dump(count($books));//die();
+
+echo '<h2>Counts</h2>',"\n";
+print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
+echo '<br/>'."\r\n";
 ob_flush();flush();
 foreach($fns as $name=>$fn)
 {
@@ -351,3 +370,5 @@ if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	include_once('retr.php');
 }
 echo '<br/><a href="retr.php">retr</a><br/>'."\r\n";
+
+include('footer.php');

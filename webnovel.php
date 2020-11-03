@@ -354,6 +354,7 @@ class WebNovel extends SitePlugin
 	
 	public function read_update($watch, $chp)
 	{
+		$this->msg=array();
 		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
 		{
 			$res=json_decode(file_get_contents($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'), false, 512, JSON_THROW_ON_ERROR );
@@ -363,7 +364,8 @@ class WebNovel extends SitePlugin
 		}
 		if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
 			unlink($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
-			var_dump('deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
+			//var_dump('deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
+			$this->msg[]='deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json';
 			$res=$this->get_chapter_list($watch->bookId);
 			if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )
 			{
@@ -374,7 +376,8 @@ class WebNovel extends SitePlugin
 		if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 		//updating list of chapters
 		if( ($watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) && $watch->readToChapterIndex<$chp) {
-			var_dump('Updating',$res->data->bookInfo->bookName);
+			//var_dump('Updating',$res->data->bookInfo->bookName);
+			$this->msg[]='Updating';
 			$res=$this->get_chapter_list($watch->bookId);
 		}
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
@@ -416,7 +419,8 @@ class WebNovel extends SitePlugin
 		}
 		if(!$found) {
 			if($cid_max_num>$watch->readToChapterIndex) {
-				var_dump('Updating to '.$cid_max_num.' instead of '.$chp.'.');
+				//var_dump('Updating to '.$cid_max_num.' instead of '.$chp.'.');
+				$this->msg[]='Updating to '.$cid_max_num.' instead of '.$chp.'.';
 				$update=true;
 			}
 			else {

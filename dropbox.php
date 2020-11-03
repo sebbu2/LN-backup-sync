@@ -101,9 +101,15 @@ $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 //var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 //var_dump(count($books));//die();
+
 echo '<h2>Counts</h2>',"\n";
 print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
+echo '<br/>'."\r\n";
 ob_flush();flush();
+
+$head=array('name', 'WLNUpdates old chp', 'WLNUpdates new chp', 'WLNUpdates sync', 'WebNovel old chp', 'WebNovel new chp', 'WebNovel sync', 'msg');
+$lines=0;
+
 foreach($fns as $name=>$fn)
 {
 	$row=array();
@@ -246,8 +252,19 @@ foreach($fns as $name=>$fn)
 	if(count($row)>0) $row=array_merge(array('name'=>$name),$row);
 	$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
 	if(array_key_exists('msg',$row)) $row['msg']=implode(' + ',$row['msg']);
-	if(count($row)>0) print_table(array($row));
+	if(count($row)>0) {
+		if($lines==0) {
+			echo '<table border="1">'."\r\n";
+			print_thead_v($head);
+		}
+		//print_table(array($row));
+		print_tbody($row, $head);
+		++$lines;
+	}
 	ob_flush();flush();
+}
+if($lines>0) {
+	echo '</table>'."\r\n";
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);

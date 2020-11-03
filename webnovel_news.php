@@ -89,12 +89,15 @@ if(!array_key_exists('old',$diff_old)) $diff_old['old']=array();
 $diff=array();
 $diff2=array();
 
+$head=array('title', 'WLNUpdate', 'WebNovel', 'new chp', 'subName', 'start', 'msg');
+
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
 	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
 	if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) ) {
 		echo '<h1>'.$id.'</h1>',"\n";
 	}
+	$lines=0;
 	foreach($list as $entry) { // WLN book
 		//TODO : fix the next 2 lines
 		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
@@ -201,15 +204,17 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						//|| ( count($exists)==1 && array_key_exists(4,$content) && $content[4]!='100' ) // i'm not at the end
 					) {
 						//var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
-						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'subName'=>$res->data->bookInfo->bookSubName, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add));
+						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName));
 						if($ar2['min']>1) $row['start']=$ar2['min'];
 						$chp=$res->data->bookInfo->totalChapterNum+$add;
 						$min=($ar2['min']>=1?$ar2['min']:($add<0?$add:1));
+						$min2=($add<0?$add:($ar2['min']>1?$ar2['min']-1:0));
 						$fn=$ar2['fn2'].'_'.$min.'-'.$chp.'.epub.po';
 						//if($res->data->bookInfo->bookSubName=='MVS') var_dump($ar2, $add, $fn, $exists);
 						//unlink(DROPBOX.$fn);
 						$fn=str_replace(' ', '_', $fn);
-						if(!file_exists(DROPBOX.$fn)) {
+						//var_dump($content[1],$entry['chp'],$ar2['min'],$min,$add,$min2);
+						if(!file_exists(DROPBOX.$fn) || (($content[1]+$min2)!=($entry['chp']>1?$entry['chp']:0)) ) {
 							$chp_=(int)$entry['chp'];
 							$numerator=$chp_;
 							if($min<0) $numerator-=$min; // - - => +
@@ -258,9 +263,19 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				}
 				$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
 				if(array_key_exists('msg',$row)) $row['msg']=implode(' + ', $row['msg']);
-				if(count($row)>0) print_table(array($row));
+				if(count($row)>0) {
+					if($lines==0) {
+						echo '<table border="1">'."\r\n";
+						print_thead_v($head);
+					}
+					print_tbody($row, $head);
+					++$lines;
+				}
 			}
 		}
+	}
+	if($lines>0) {
+		echo '</table>'."\r\n";
 	}
 }
 //var_dump($diff2);die();

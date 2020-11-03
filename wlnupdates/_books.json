@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 633,
-      "chp": 633,
+      "agg": 635,
+      "chp": 635,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 812,
-      "chp": 812,
+      "agg": 813,
+      "chp": 813,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12027,
-      "chp": 2027,
+      "agg": 12029,
+      "chp": 2029,
       "frag": -1,
       "vol": 1
     },
@@ -174,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1248,
-      "chp": 1248,
+      "agg": 1249,
+      "chp": 1249,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 564,
-      "chp": 564,
+      "agg": 566,
+      "chp": 566,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 480,
-      "chp": 480,
+      "agg": 481,
+      "chp": 481,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 179,
-      "chp": 179,
+      "agg": 181,
+      "chp": 181,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 130,
-      "chp": 130,
+      "agg": 131,
+      "chp": 131,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 559,
-      "chp": 559,
+      "agg": 561,
+      "chp": 561,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1240,
-      "chp": 1240,
+      "agg": 1243,
+      "chp": 1243,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 424,
-      "chp": 424,
+      "agg": 425,
+      "chp": 425,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 138,
-      "chp": 138,
+      "agg": 139,
+      "chp": 139,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 574,
-      "chp": 574,
+      "agg": 576,
+      "chp": 576,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 408,
-      "chp": 408,
+      "agg": 410,
+      "chp": 410,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 424,
-      "chp": 424,
+      "agg": 426,
+      "chp": 426,
       "frag": -1,
       "vol": -1
     },
@@ -579,8 +579,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 136,
-      "chp": 136,
+      "agg": 138,
+      "chp": 138,
       "frag": -1,
       "vol": -1
     },
@@ -606,8 +606,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1164,
-      "chp": 1164,
+      "agg": 1165,
+      "chp": 1165,
       "frag": -1,
       "vol": -1
     },
@@ -633,8 +633,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10948,
-      "chp": 948,
+      "agg": 10950,
+      "chp": 950,
       "frag": -1,
       "vol": 1
     },
@@ -714,8 +714,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 592,
-      "chp": 592,
+      "agg": 593,
+      "chp": 593,
       "frag": -1,
       "vol": -1
     },
@@ -741,8 +741,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1057,
-      "chp": 1057,
+      "agg": 1058,
+      "chp": 1058,
       "frag": -1,
       "vol": -1
     },
@@ -1048,6 +1048,33 @@
       "chp": 1851,
       "date": 1571664160.027093,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 34065,
+      "name": "My Disciple Died Yet Again",
+      "rating": 8.16666666666667,
+      "rating_count": 6,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 393,
+      "chp": 393,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 393,
+      "chp": 393,
+      "date": 1534644013,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -1497,8 +1524,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 217,
-      "chp": 217,
+      "agg": 218,
+      "chp": 218,
       "frag": -1,
       "vol": -1
     },
@@ -1551,8 +1578,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1034,
-      "chp": 1034,
+      "agg": 1036,
+      "chp": 1036,
       "frag": -1,
       "vol": -1
     },
@@ -1573,13 +1600,13 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98809523809524,
-      "rating_count": 84,
+      "rating": 9.98823529411765,
+      "rating_count": 85,
       "tl_type": "oel"
     },
     {
-      "agg": 625,
-      "chp": 625,
+      "agg": 626,
+      "chp": 626,
       "frag": -1,
       "vol": -1
     },
@@ -1686,8 +1713,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 94,
-      "chp": 94,
+      "agg": 96,
+      "chp": 96,
       "frag": -1,
       "vol": -1
     },
@@ -1740,8 +1767,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 22,
+      "chp": 22,
       "frag": -1,
       "vol": -1
     },
@@ -1794,8 +1821,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 335,
-      "chp": 335,
+      "agg": 337,
+      "chp": 337,
       "frag": -1,
       "vol": -1
     },
@@ -1821,8 +1848,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 640,
-      "chp": 640,
+      "agg": 641,
+      "chp": 641,
       "frag": -1,
       "vol": -1
     },
@@ -1875,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 598,
-      "chp": 598,
+      "agg": 599,
+      "chp": 599,
       "frag": -1,
       "vol": -1
     },
@@ -1929,8 +1956,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 391,
-      "chp": 391,
+      "agg": 395,
+      "chp": 395,
       "frag": -1,
       "vol": -1
     },
@@ -1983,8 +2010,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 764,
-      "chp": 764,
+      "agg": 766,
+      "chp": 766,
       "frag": -1,
       "vol": -1
     },
@@ -2064,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 254,
-      "chp": 254,
+      "agg": 264,
+      "chp": 264,
       "frag": -1,
       "vol": -1
     },
@@ -2253,8 +2280,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20511,
-      "chp": 511,
+      "agg": 20512,
+      "chp": 512,
       "frag": -1,
       "vol": 2
     },
@@ -2307,8 +2334,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 189,
-      "chp": 189,
+      "agg": 190,
+      "chp": 190,
       "frag": -1,
       "vol": -1
     },
@@ -2334,8 +2361,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 273,
-      "chp": 273,
+      "agg": 274,
+      "chp": 274,
       "frag": -1,
       "vol": -1
     },
@@ -2361,8 +2388,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 868,
-      "chp": 868,
+      "agg": 870,
+      "chp": 870,
       "frag": -1,
       "vol": -1
     },
@@ -2388,8 +2415,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 166,
-      "chp": 166,
+      "agg": 167,
+      "chp": 167,
       "frag": -1,
       "vol": -1
     },
@@ -2442,8 +2469,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 222,
-      "chp": 222,
+      "agg": 223,
+      "chp": 223,
       "frag": -1,
       "vol": -1
     },
@@ -2469,8 +2496,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 131,
-      "chp": 131,
+      "agg": 132,
+      "chp": 132,
       "frag": -1,
       "vol": -1
     },
@@ -2550,8 +2577,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 326,
-      "chp": 326,
+      "agg": 327,
+      "chp": 327,
       "frag": -1,
       "vol": -1
     },
@@ -3802,6 +3829,33 @@
       "chp": 395,
       "date": 1540684800,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 70093,
+      "name": "Steampunk Apocalypse!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 193,
+      "chp": 193,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 94,
+      "chp": 94,
+      "date": 1543460642,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -5310,9 +5364,9 @@
       "vol": -1
     },
     {
-      "agg": 181,
-      "chp": 181,
-      "date": 1604159309,
+      "agg": 182,
+      "chp": 182,
+      "date": 1604338872,
       "frag": 0,
       "vol": -1
     },
@@ -5526,9 +5580,9 @@
       "vol": 3
     },
     {
-      "agg": 40017,
-      "chp": 17,
-      "date": 1604079948,
+      "agg": 40018,
+      "chp": 18,
+      "date": 1604353471,
       "frag": 0,
       "vol": 4
     },
