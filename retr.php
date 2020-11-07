@@ -6,6 +6,8 @@ require_once('WebNovel.php');
 
 $loggued=false;
 
+include('header.php');
+
 {
 	$wln_errors=array(
 		'{"error":true,"message":"Not yet implemented","reload":true}'."\n",
@@ -58,7 +60,7 @@ $loggued=false;
 	$data=ob_get_clean();
 	file_put_contents('watches2.htm', $data);
 	//if(!defined('DROPBOX_DONE')) echo $data;
-	echo '<a href="watches2.htm">wlnupdates</a><br/>'."\r\n";
+	//echo '<a href="watches2.htm">wlnupdates</a><br/>'."\r\n";
 }
 
 $loggued=false;
@@ -80,6 +82,8 @@ $loggued=false;
 	$data=ob_get_clean();
 	file_put_contents('library.htm', $data);
 	//if(!defined('DROPBOX_DONE')) echo $data;
-	echo '<a href="library.htm">webnovel</a><br/>'."\r\n";
+	//echo '<a href="library.htm">webnovel</a><br/>'."\r\n";
 }
-if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
+//if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
+
+include('footer.php');

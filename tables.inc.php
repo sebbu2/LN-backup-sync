@@ -112,7 +112,7 @@ function print_tbody($ar,$keys=NULL) {
 	else {
 		$values=$ar;
 	}
-	assert(count(array_diff_key($ar,array_combine($keys,range(1,count($keys)))))==0) or die('wrong keys.');
+	assert(count(array_diff_key($values,array_combine($keys,range(1,count($keys)))))==0) or die('wrong keys.');
 	
 	//values
 	echo "\t".'<tr>'."\r\n";

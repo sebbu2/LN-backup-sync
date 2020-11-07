@@ -226,8 +226,8 @@ class SitePlugin
 		} //*/
 		$jsonp=trim($jsonp);
 		static $end_match=array('['=>']','{'=>'}');
-		assert(in_array($jsonp[0], array('[','{'))) or die('invalid JSON 1.<br/>'.var_export(substr($jsonp,0,1),true));
-		assert(substr($jsonp,-1)==$end_match[$jsonp[0]]) or die('invalid JSON 2.<br/>'.var_export(substr($jsonp,-1),true));
+		if(! in_array($jsonp[0], array('[','{'))) throw new Exception('invalid JSON 1.<br/>'.var_export(substr($jsonp,0,1),true));
+		if(! substr($jsonp,-1)==$end_match[$jsonp[0]]) throw new Exception('invalid JSON 2.<br/>'.var_export(substr($jsonp,-1),true));
 		//$jsonp=json_encode(json_decode($jsonp, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
 		$jsonp=str_replace('\/','/',$jsonp);
 		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_BIGINT_AS_STRING );

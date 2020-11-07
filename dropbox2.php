@@ -207,14 +207,14 @@ foreach($fns as $name=>$fn)
 			}
 			$res=$wn->search2($name);
 			assert($res==false || $res->code==0);
-			if($res==false || count($res->data->books)!=1) {
+			if($res==false || count($res->data->books)!=1 || (count($res->data->books)==1 && !name_compare($name, $res->data->books[0]->name, 1)) ) {
 				var_dump($res);
 				$res=$wn->search($name);
 				//var_dump($res);
 				foreach($res as $k=>$v) {
 					if(name_compare($v['title'], $name, 1)) {
-						var_dump($v);die();
-						$res2=$wn->get_info_cached($v['id']);
+						//var_dump($v);die();
+						$res2=$wn->get_info_cached($v['data-bookid']);
 						$tl='';
 						if($res2[0]->Data->Type==1) $tl='translated';
 						if($res2[0]->Data->Type==2) $tl='eol';
@@ -225,13 +225,14 @@ foreach($fns as $name=>$fn)
 							$res=$wln->add_novel($res);
 							var_dump($res);
 						}
-						die();
+						//die();
+						$updatedCount['wln']++;
 					}
 				}
 				//die();
 			}
 			else { // good
-				assert(name_compare($name, $res->data->books[0]->name)) or die('name "'.$name.'" doesn\'t match.');
+				assert(name_compare($name, $res->data->books[0]->name, 1)) or die('name "'.$name.'" and "'.$res->data->books[0]->name.'" doesn\'t match.');
 				$res2=$wn->get_info_cached($res->data->books[0]->id);
 				$tl='';
 				if($res2[0]->Data->Type==1) $tl='translated';
@@ -240,7 +241,9 @@ foreach($fns as $name=>$fn)
 				//var_dump($res2);
 				var_dump('wn get_info',$res2[0]->Result, $res2[0]->Message, $res2[1]->Result, $res2[1]->Message);
 				$res=$wln->add($res->data->books[0]->name, $tl);
-				var_dump($res);die();
+				var_dump($res);
+				$updatedCount['wln']++;
+				die();
 			}
 			//*/
 		}

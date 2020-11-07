@@ -156,10 +156,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
 					try {
 						$res=@$wn->get_chapter_list($book->bookId);
-						if(!property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
+						if(!is_object($res) || !property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
 					} catch (Exception $e) {
 						$res=$wn->get_chapter_list($book->bookId);
-						if(!property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
+						if(!is_object($res) || !property_exists($res, 'data')) $res=@$wn->get_chapter_list($book->bookId);
 					}
 				}
 				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) {

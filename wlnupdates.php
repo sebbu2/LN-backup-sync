@@ -186,6 +186,8 @@ class WLNUpdates extends SitePlugin
 		//csrf_token
 		$headers=array(
 			'Referer: '.$referer,
+			'Content-Type: application/x-www-form-urlencoded',
+			'Origin: https://www.wlnupdates.com',
 		);
 		$res = $this->send( 'https://www.wlnupdates.com/add/series/', $postdata, $headers);
 		file_put_contents($this::FOLDER.'add-series.json', $res);
