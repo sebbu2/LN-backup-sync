@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 643,
-      "chp": 643,
+      "agg": 651,
+      "chp": 651,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 819,
-      "chp": 819,
+      "agg": 825,
+      "chp": 825,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12037,
-      "chp": 2037,
+      "agg": 12045,
+      "chp": 2045,
       "frag": -1,
       "vol": 1
     },
@@ -174,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1252,
-      "chp": 1252,
+      "agg": 1254,
+      "chp": 1254,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 574,
-      "chp": 574,
+      "agg": 582,
+      "chp": 582,
       "frag": -1,
       "vol": -1
     },
@@ -217,7 +217,10 @@
   ],
   [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 129729,
       "name": "Extraordinary David",
       "rating": null,
@@ -252,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 485,
-      "chp": 485,
+      "agg": 489,
+      "chp": 489,
       "frag": -1,
       "vol": -1
     },
@@ -279,15 +282,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 189,
-      "chp": 189,
+      "agg": 197,
+      "chp": 197,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1591349270,
+      "date": 1599134972,
       "frag": 0,
       "vol": -1
     },
@@ -306,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 135,
-      "chp": 135,
+      "agg": 139,
+      "chp": 139,
       "frag": -1,
       "vol": -1
     },
@@ -333,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 569,
-      "chp": 569,
+      "agg": 577,
+      "chp": 577,
       "frag": -1,
       "vol": -1
     },
@@ -360,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1249,
-      "chp": 1249,
+      "agg": 1256,
+      "chp": 1256,
       "frag": -1,
       "vol": -1
     },
@@ -387,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 431,
-      "chp": 431,
+      "agg": 439,
+      "chp": 439,
       "frag": -1,
       "vol": -1
     },
@@ -414,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 143,
-      "chp": 143,
+      "agg": 147,
+      "chp": 147,
       "frag": -1,
       "vol": -1
     },
@@ -441,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 584,
-      "chp": 584,
+      "agg": 592,
+      "chp": 592,
       "frag": -1,
       "vol": -1
     },
@@ -468,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1419,
-      "chp": 1419,
+      "agg": 1421,
+      "chp": 1421,
       "frag": -1,
       "vol": -1
     },
@@ -495,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 418,
-      "chp": 418,
+      "agg": 426,
+      "chp": 426,
       "frag": -1,
       "vol": -1
     },
@@ -522,8 +525,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 434,
-      "chp": 434,
+      "agg": 442,
+      "chp": 442,
       "frag": -1,
       "vol": -1
     },
@@ -603,8 +606,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 146,
-      "chp": 146,
+      "agg": 155,
+      "chp": 155,
       "frag": -1,
       "vol": -1
     },
@@ -630,8 +633,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1171,
-      "chp": 1171,
+      "agg": 1176,
+      "chp": 1176,
       "frag": -1,
       "vol": -1
     },
@@ -657,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10958,
-      "chp": 958,
+      "agg": 10966,
+      "chp": 966,
       "frag": -1,
       "vol": 1
     },
@@ -738,8 +741,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 598,
-      "chp": 598,
+      "agg": 603,
+      "chp": 603,
       "frag": -1,
       "vol": -1
     },
@@ -765,8 +768,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1065,
-      "chp": 1065,
+      "agg": 1070,
+      "chp": 1070,
       "frag": -1,
       "vol": -1
     },
@@ -1575,8 +1578,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 220,
-      "chp": 220,
+      "agg": 221,
+      "chp": 221,
       "frag": -1,
       "vol": -1
     },
@@ -1629,8 +1632,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1044,
-      "chp": 1044,
+      "agg": 1052,
+      "chp": 1052,
       "frag": -1,
       "vol": -1
     },
@@ -1651,20 +1654,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98850574712644,
-      "rating_count": 87,
+      "rating": 9.98876404494382,
+      "rating_count": 89,
       "tl_type": "oel"
     },
     {
-      "agg": 629,
-      "chp": 629,
+      "agg": 630,
+      "chp": 630,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 628,
-      "chp": 628,
-      "date": 1604724180,
+      "agg": 630,
+      "chp": 630,
+      "date": 1604916600,
       "frag": 0,
       "vol": -1
     },
@@ -1710,8 +1713,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 344,
-      "chp": 344,
+      "agg": 346,
+      "chp": 346,
       "frag": -1,
       "vol": -1
     },
@@ -1764,8 +1767,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 100,
-      "chp": 100,
+      "agg": 104,
+      "chp": 104,
       "frag": -1,
       "vol": -1
     },
@@ -1818,8 +1821,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 52,
-      "chp": 52,
+      "agg": 83,
+      "chp": 83,
       "frag": -1,
       "vol": -1
     },
@@ -1872,8 +1875,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 345,
-      "chp": 345,
+      "agg": 355,
+      "chp": 355,
       "frag": -1,
       "vol": -1
     },
@@ -1899,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 645,
-      "chp": 645,
+      "agg": 654,
+      "chp": 654,
       "frag": -1,
       "vol": -1
     },
@@ -1953,8 +1956,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 603,
-      "chp": 603,
+      "agg": 605,
+      "chp": 605,
       "frag": -1,
       "vol": -1
     },
@@ -2007,8 +2010,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 406,
-      "chp": 406,
+      "agg": 416,
+      "chp": 416,
       "frag": -1,
       "vol": -1
     },
@@ -2061,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 774,
-      "chp": 774,
+      "agg": 780,
+      "chp": 780,
       "frag": -1,
       "vol": -1
     },
@@ -2304,8 +2307,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 202,
-      "chp": 202,
+      "agg": 204,
+      "chp": 204,
       "frag": -1,
       "vol": -1
     },
@@ -2331,8 +2334,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20516,
-      "chp": 516,
+      "agg": 20519,
+      "chp": 519,
       "frag": -1,
       "vol": 2
     },
@@ -2385,8 +2388,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 194,
-      "chp": 194,
+      "agg": 198,
+      "chp": 198,
       "frag": -1,
       "vol": -1
     },
@@ -2412,8 +2415,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 276,
-      "chp": 276,
+      "agg": 278,
+      "chp": 278,
       "frag": -1,
       "vol": -1
     },
@@ -2439,8 +2442,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 878,
-      "chp": 878,
+      "agg": 884,
+      "chp": 884,
       "frag": -1,
       "vol": -1
     },
@@ -2466,8 +2469,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 171,
-      "chp": 171,
+      "agg": 174,
+      "chp": 174,
       "frag": -1,
       "vol": -1
     },
@@ -2520,8 +2523,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 227,
-      "chp": 227,
+      "agg": 231,
+      "chp": 231,
       "frag": -1,
       "vol": -1
     },
@@ -2547,8 +2550,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 133,
-      "chp": 133,
+      "agg": 134,
+      "chp": 134,
       "frag": -1,
       "vol": -1
     },
@@ -2628,8 +2631,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 330,
-      "chp": 330,
+      "agg": 334,
+      "chp": 334,
       "frag": -1,
       "vol": -1
     },
@@ -3822,9 +3825,9 @@
       "vol": -1
     },
     {
-      "agg": 135,
-      "chp": 135,
-      "date": 1603860419,
+      "agg": 145,
+      "chp": 145,
+      "date": 1605012236,
       "frag": 0,
       "vol": -1
     },
@@ -4902,11 +4905,11 @@
       "vol": 2
     },
     {
-      "agg": 10010,
-      "chp": 10,
-      "date": 1437149000,
+      "agg": 20002,
+      "chp": 2,
+      "date": 1604894400,
       "frag": 0,
-      "vol": 1
+      "vol": 2
     },
     null
   ],
@@ -5377,8 +5380,8 @@
       },
       "id": 32381,
       "name": "I was reincarnated as a Magic Academy!",
-      "rating": 6.98412698412698,
-      "rating_count": 63,
+      "rating": 7.03125,
+      "rating_count": 64,
       "tl_type": "oel"
     },
     {
@@ -5415,9 +5418,9 @@
       "vol": -1
     },
     {
-      "agg": 183,
-      "chp": 183,
-      "date": 1604486427,
+      "agg": 185,
+      "chp": 185,
+      "date": 1605040827,
       "frag": 0,
       "vol": -1
     },
@@ -5631,9 +5634,9 @@
       "vol": 3
     },
     {
-      "agg": 40020,
-      "chp": 20,
-      "date": 1604713700,
+      "agg": 40022,
+      "chp": 22,
+      "date": 1604954663,
       "frag": 0,
       "vol": 4
     },

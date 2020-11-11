@@ -6,7 +6,7 @@ require_once('WebNovel.php');
 
 $loggued=false;
 
-include('header.php');
+if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
 
 {
 	$wln_errors=array(
@@ -86,4 +86,4 @@ $loggued=false;
 }
 //if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
 
-include('footer.php');
+if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('footer.php');
