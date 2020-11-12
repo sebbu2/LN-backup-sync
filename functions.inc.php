@@ -6,8 +6,9 @@ require_once('SitePlugin.inc.php');
 /*
 0 to name (simplify)
 1 from fn
-2 to fn (glob)
+2 to fn (regex)
 3 to fn
+4 to fn (glob)
 */
 function name_simplify($name, $type=0) {
 	//'-'
@@ -28,6 +29,10 @@ function name_simplify($name, $type=0) {
 	else if($type==3) {
 		$name=str_replace(array('+'), '', $name);
 		$name=str_replace(array(' ', '_'), '_', $name);
+	}
+	else if($type==4) {
+		$name=str_replace(array('+'), '', $name);
+		$name=str_replace(array(' ', '_'), '*', $name);
 	}
 	//$name=strtolower($name);
 	return $name;
@@ -114,5 +119,21 @@ function timetostr($timestamp, $now = null) {
 				? "in $age $plural"
 				: "$age $plural ago";
 		$age = (int)($age / $factor);
+	}
+}
+function iglob($pattern) {
+	if( ($handle=opendir('.'))!==false) {
+		$ar=array();
+		while( ($entry=readdir($handle))!==false ) {
+			if(fnmatch($pattern, $entry, FNM_CASEFOLD)) {
+				$ar[]=$entry;
+			}
+		}
+		natcasesort($ar);
+		closedir($handle);
+		return $ar;
+	}
+	else {
+		return array();
 	}
 }

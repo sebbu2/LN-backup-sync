@@ -84,10 +84,14 @@ foreach($ar as $fn)
 //var_dump($fns);die();
 
 $diff_old=json_decode(file_get_contents('wn_diff.json'), TRUE, 512, JSON_THROW_ON_ERROR); // important : true as 2nd parameter
-if(!array_key_exists('cur',$diff_old)) $diff_old['cur']=array();
-if(!array_key_exists('old',$diff_old)) $diff_old['old']=array();
-$diff=array();
-$diff2=array();
+if(!array_key_exists('cur',$diff_old)||!is_array($diff_old['cur'])) $diff_old['cur']=array();
+if(!array_key_exists('upd',$diff_old)||!is_array($diff_old['upd'])) $diff_old['upd']=array();
+if(!array_key_exists('chk',$diff_old)||!is_array($diff_old['chk'])) $diff_old['chk']=array();
+if(!array_key_exists('old',$diff_old)||!is_array($diff_old['old'])) $diff_old['old']=array();
+$diff=array(); // cur, up-to-date
+$diff2=array(); // upd, up-to-date but not updated yet
+$diff3=array(); // chk, not up-to-date, but will be soon (tm)
+$diff4=array(); // old, not up-to-date (or updated at old position)
 
 $head=array('title', 'WLNUpdate', 'WebNovel', 'new chp', 'subName', 'start',
  'Last upd', 'Last chk',
@@ -135,7 +139,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				}
 				//fixing chapter number
 				$add=0;
-				$add2=0;
+				$add2=NULL;
 				$priv_only=0;
 				$max_pub=0;
 				$chp_id=0;
@@ -145,6 +149,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2+=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2+=$diff_old['cur'][$entry['title']];
+				else if(array_key_exists($entry['title'], $diff_old['upd'])) $add2+=$diff_old['upd'][$entry['title']];
+				else if(array_key_exists($entry['title'], $diff_old['chk'])) $add2+=$diff_old['chk'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['old'])) $add2+=$diff_old['old'][$entry['title']];
 				//else {
 					foreach($res->data->volumeItems as $vol) {
@@ -158,11 +164,11 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							}
 						}
 					}
-					if($add2==0) $add2+=$priv_only;
+					if($add2===0) $add2+=$priv_only;
+					if($add2===NULL) $add2=0;
 				//}
 				//updating list of chapters
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
-					//var_dump('updating',$entry['title']);
 					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
 					$count=0;
 					do {
@@ -187,23 +193,28 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					}
 					if(!is_object($res)||!property_exists($res, 'data')||!property_exists($res->data,'bookInfo')) var_dump($entry['title'], $book->bookName, $res);
 					if( !( ($book->readToChapterIndex-$add) == ($res->data->bookInfo->totalChapterNum+$add) ) ) {
-						$diff2[$entry['title']]=$priv_only;
+						$diff4[$entry['title']]=$priv_only;
 					}
 					continue;
+				}
+				if($add2!=$priv_only) {
+					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('priv'));
 				}
 				//checking new chapters
 				if( $res->data->bookInfo->totalChapterNum+$add > (int)$entry['chp'] ) {
 					chdir(DROPBOX);
 					$title=name_simplify($entry['title'], 1);
-					$title=strtolower($title);
-					//$title=str_replace('+', '', $title);
-					//$name=str_replace(' ','.*', $title);
-					$name=name_simplify($title, 2);
-					$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
+					$title2=strtolower($title);
+					$name=name_simplify($title, 4); // 2 regex, 4 glob
+					//$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
+					$filename=$name.'_*-*.epub.po';
 					//var_dump($fns);die();
-					if(!array_key_exists($title, $fns)) { var_dump($entry['title'], $book->bookName); var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1))); var_dump($title); var_dump(array_keys($fns)); die(); }
-					$ar2=$fns[$title];
-					$exists=array_values(preg_grep('#^'.$name.'#i',glob($filename)));
+					if(!array_key_exists($title2, $fns)) { var_dump($entry['title'], $book->bookName); var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1))); var_dump($title); var_dump(array_keys($fns)); die(); }
+					$ar2=$fns[$title2];
+					//$regex='#^'.$name.'#i';
+					$regex='#-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po$#i';
+					$exists=array_values(preg_grep($regex,iglob($filename)));
+					//var_dump($filename,$regex,$exists);die();
 					$content=array();
 					if(count($exists)==1) {
 						//var_dump($exists);
@@ -212,7 +223,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						while(($content[]=strtok('*@#:%'))!==FALSE);
 					}//*/
 					//var_dump(!$skip_existing, $exists);
-					//var_dump($content[4]);
+					//if($content[0]==MOONREADER_DID2) var_dump($title);
 					chdir(CWD);
 					if( !$skip_existing
 						|| count($exists)==0
@@ -256,13 +267,18 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							if($min>0) $chp_-=($min-1);
 							$data=$did.'*'.$chp_.'@'.$ar2[2].'#0:'.$num.'%';
 							file_put_contents(DROPBOX.$fn, $data);
-							//var_dump($data);
-							//var_dump($fn.' written');
 							$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('.po'));
 						}//*/
+						$diff3[$entry['title']]=$priv_only;
 					}
-					//if(isset($priv_only)) $diff_old['old'][$entry['title']]=$add2;
-					if(isset($priv_only)) $diff2[$entry['title']]=$add2;
+					if(
+						( count($exists)==1 && array_key_exists(4,$content) && $content[4]=='100' ) // i'm at the end) {
+					) {
+						$diff2[$entry['title']]=$priv_only;
+					}
+					else {
+						$diff4[$entry['title']]=$priv_only;
+					}
 				}
 				else {
 					//up-to-date
@@ -278,9 +294,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$add2=$priv_only;
 						var_dump($res->data->bookInfo);
 					}
-					//var_dump( $book->readToChapterIndex, $add2, $res->data->bookInfo->totalChapterNum, $add );
-					assert( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) );
-					$diff[$entry['title']]=$res->data->bookInfo->totalChapterNum+$add - $book->readToChapterIndex;
+					assert( ($book->readToChapterIndex+$priv_only) == ($res->data->bookInfo->totalChapterNum+$add) );
+					$diff[$entry['title']]=$priv_only;
 				}
 				if(count($row)>0) {
 					if(count($row)==1&&array_keys($row)[0]=='msg') {
@@ -307,10 +322,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 		echo '</table>'."\r\n";
 	}
 }
-//var_dump($diff2);die();
-$diff=array('cur'=>$diff,'old'=>array_diff_key(array_merge($diff2,$diff_old['cur'],$diff_old['old']),$diff));
-//$diff=array('cur'=>$diff,'old'=>$diff2);
+$diff=array('cur'=>$diff,'upd'=>$diff2,'chk'=>$diff3,'old'=>array_diff_key(array_merge($diff4,$diff_old['cur'],$diff_old['upd'],$diff_old['old']),array_merge($diff,$diff2,$diff3)));
 file_put_contents('wn_diff.json', $wn->jsonp_to_json(json_encode($diff)));
+//var_dump(count($diff['cur']),count($diff['upd']),count($diff['chk']),count($diff['old']));
+//var_dump(count($diff['cur'])+count($diff['upd'])+count($diff['chk'])+count($diff['old']));
 var_dump($diff);
 
 include('footer.php');
