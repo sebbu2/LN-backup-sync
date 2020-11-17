@@ -133,12 +133,24 @@ foreach($fns as $name=>$fn)
 		}//*/
 		foreach($watches as $_key=>$book)
 		{
-			if(name_compare($name, $book[0]->name, 1) || name_compare($name, $book[3], 1))
+			if($book[3]!==NULL && name_compare($name, $book[3], 1))
 			{
 				$key=$_key;
 				$id=$book[0]->id;
 				$found1=true;
 				break;
+			}
+		}
+		if(!$found1) {
+			foreach($watches as $_key=>$book)
+			{
+				if(name_compare($name, $book[0]->name, 1))
+				{
+					$key=$_key;
+					$id=$book[0]->id;
+					$found1=true;
+					break;
+				}
 			}
 		}
 		if($found1) {

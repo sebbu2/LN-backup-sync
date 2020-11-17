@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 657,
-      "chp": 657,
+      "agg": 662,
+      "chp": 662,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 829,
-      "chp": 829,
+      "agg": 833,
+      "chp": 833,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12051,
-      "chp": 2051,
+      "agg": 12055,
+      "chp": 2055,
       "frag": -1,
       "vol": 1
     },
@@ -174,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1255,
-      "chp": 1255,
+      "agg": 1257,
+      "chp": 1257,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 588,
-      "chp": 588,
+      "agg": 593,
+      "chp": 593,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 492,
-      "chp": 492,
+      "agg": 495,
+      "chp": 495,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 203,
-      "chp": 203,
+      "agg": 208,
+      "chp": 208,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 142,
-      "chp": 142,
+      "agg": 145,
+      "chp": 145,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 583,
-      "chp": 583,
+      "agg": 588,
+      "chp": 588,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1261,
-      "chp": 1261,
+      "agg": 1264,
+      "chp": 1264,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 445,
-      "chp": 445,
+      "agg": 450,
+      "chp": 450,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 150,
-      "chp": 150,
+      "agg": 153,
+      "chp": 153,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 598,
-      "chp": 598,
+      "agg": 603,
+      "chp": 603,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1421,
-      "chp": 1421,
+      "agg": 1422,
+      "chp": 1422,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 432,
-      "chp": 432,
+      "agg": 437,
+      "chp": 437,
       "frag": -1,
       "vol": -1
     },
@@ -525,8 +525,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 448,
-      "chp": 448,
+      "agg": 453,
+      "chp": 453,
       "frag": -1,
       "vol": -1
     },
@@ -606,8 +606,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 161,
-      "chp": 161,
+      "agg": 167,
+      "chp": 167,
       "frag": -1,
       "vol": -1
     },
@@ -626,6 +626,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 60390,
+      "name": "Reincarnation Of The Strongest Sword God",
+      "rating": 10,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 2696,
+      "chp": 2696,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 781,
+      "chp": 781,
+      "date": 1538328000,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 62448,
       "name": "Summoning the Holy Sword",
       "rating": null,
@@ -633,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1181,
-      "chp": 1181,
+      "agg": 1185,
+      "chp": 1185,
       "frag": -1,
       "vol": -1
     },
@@ -660,8 +687,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10972,
-      "chp": 972,
+      "agg": 10977,
+      "chp": 977,
       "frag": -1,
       "vol": 1
     },
@@ -741,8 +768,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 606,
-      "chp": 606,
+      "agg": 610,
+      "chp": 610,
       "frag": -1,
       "vol": -1
     },
@@ -768,8 +795,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1075,
-      "chp": 1075,
+      "agg": 1078,
+      "chp": 1078,
       "frag": -1,
       "vol": -1
     },
@@ -1578,8 +1605,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 221,
-      "chp": 221,
+      "agg": 223,
+      "chp": 223,
       "frag": -1,
       "vol": -1
     },
@@ -1632,8 +1659,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1058,
-      "chp": 1058,
+      "agg": 1062,
+      "chp": 1062,
       "frag": -1,
       "vol": -1
     },
@@ -1654,20 +1681,20 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98876404494382,
-      "rating_count": 89,
+      "rating": 9.98888888888889,
+      "rating_count": 90,
       "tl_type": "oel"
     },
     {
-      "agg": 633,
-      "chp": 633,
+      "agg": 634,
+      "chp": 634,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 632,
-      "chp": 632,
-      "date": 1605330720,
+      "agg": 633,
+      "chp": 633,
+      "date": 1605503940,
       "frag": 0,
       "vol": -1
     },
@@ -1713,8 +1740,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 348,
-      "chp": 348,
+      "agg": 349,
+      "chp": 349,
       "frag": -1,
       "vol": -1
     },
@@ -1767,8 +1794,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 107,
-      "chp": 107,
+      "agg": 109,
+      "chp": 109,
       "frag": -1,
       "vol": -1
     },
@@ -1875,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 361,
-      "chp": 361,
+      "agg": 367,
+      "chp": 367,
       "frag": -1,
       "vol": -1
     },
@@ -1902,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 657,
-      "chp": 657,
+      "agg": 664,
+      "chp": 664,
       "frag": -1,
       "vol": -1
     },
@@ -1956,8 +1983,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 607,
-      "chp": 607,
+      "agg": 610,
+      "chp": 610,
       "frag": -1,
       "vol": -1
     },
@@ -2010,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 420,
-      "chp": 420,
+      "agg": 424,
+      "chp": 424,
       "frag": -1,
       "vol": -1
     },
@@ -2064,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 784,
-      "chp": 784,
+      "agg": 787,
+      "chp": 787,
       "frag": -1,
       "vol": -1
     },
@@ -2145,8 +2172,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 264,
-      "chp": 264,
+      "agg": 268,
+      "chp": 268,
       "frag": -1,
       "vol": -1
     },
@@ -2307,8 +2334,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 206,
-      "chp": 206,
+      "agg": 207,
+      "chp": 207,
       "frag": -1,
       "vol": -1
     },
@@ -2334,8 +2361,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20520,
-      "chp": 520,
+      "agg": 20521,
+      "chp": 521,
       "frag": -1,
       "vol": 2
     },
@@ -2388,8 +2415,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 201,
-      "chp": 201,
+      "agg": 204,
+      "chp": 204,
       "frag": -1,
       "vol": -1
     },
@@ -2442,8 +2469,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 890,
-      "chp": 890,
+      "agg": 894,
+      "chp": 894,
       "frag": -1,
       "vol": -1
     },
@@ -2469,8 +2496,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 177,
-      "chp": 177,
+      "agg": 179,
+      "chp": 179,
       "frag": -1,
       "vol": -1
     },
@@ -2523,8 +2550,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 234,
-      "chp": 234,
+      "agg": 237,
+      "chp": 237,
       "frag": -1,
       "vol": -1
     },
@@ -2631,8 +2658,35 @@
       "tl_type": "oel"
     },
     {
-      "agg": 336,
-      "chp": 336,
+      "agg": 339,
+      "chp": 339,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 130124,
+      "name": "Who said a mosquito can't cultivate",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 2,
+      "chp": 2,
       "frag": -1,
       "vol": -1
     },
@@ -3839,33 +3893,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 60390,
-      "name": "Reincarnation Of The Strongest Sword God",
-      "rating": 10,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 2694,
-      "chp": 2694,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 781,
-      "chp": 781,
-      "date": 1538328000,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 62143,
       "name": "Shadow Hack",
       "rating": 7,
@@ -4116,8 +4143,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 43,
-      "chp": 43,
+      "agg": 46,
+      "chp": 46,
       "frag": -1,
       "vol": -1
     },
@@ -4128,7 +4155,7 @@
       "frag": -1,
       "vol": -1
     },
-    null
+    "SUCC but dropped"
   ],
   [
     {
@@ -4905,9 +4932,9 @@
       "vol": 2
     },
     {
-      "agg": 20002,
-      "chp": 2,
-      "date": 1605000743,
+      "agg": 20003,
+      "chp": 3,
+      "date": 1605386268,
       "frag": 0,
       "vol": 2
     },
@@ -5634,9 +5661,9 @@
       "vol": 3
     },
     {
-      "agg": 40024,
-      "chp": 24,
-      "date": 1605300237,
+      "agg": 40025,
+      "chp": 25,
+      "date": 1605382955,
       "frag": 0,
       "vol": 4
     },

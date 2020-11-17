@@ -183,6 +183,18 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						}
 					} while (!is_object($res) || !property_exists($res, 'data') || (is_int($res->data)&&$res->data==0) || !property_exists($res->data, 'bookInfo'));
 					$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
+					$priv_only=0;
+					$last_upd=0;
+					$last_chp=0;
+					foreach($res->data->volumeItems as $vol) {
+						foreach($vol->chapterItems as $chap) {
+							if($chap->chapterLevel!=0) $priv_only++;
+							if(strtotime($chap->createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
+								$last_upd=$chap->createTime;
+								$last_chp=$chap->index;
+							}
+						}
+					}
 				}
 				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) {
 					if(!is_numeric($book->readToChapterIndex)) {
@@ -286,9 +298,15 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					{
 						var_dump($book,$add,$add2,$priv_only,$max_pub,$res->data->bookInfo);
 						$res=$wn->get_chapter_list($book->bookId);
+						$last_upd=0;
+						$last_chp=0;
 						foreach($res->data->volumeItems as $vol) {
 							foreach($vol->chapterItems as $chap) {
 								if($chap->chapterLevel!=0) $priv_only++;
+								if(strtotime($chap->createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
+									$last_upd=$chap->createTime;
+									$last_chp=$chap->index;
+								}
 							}
 						}
 						$add2=$priv_only;
@@ -299,8 +317,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				}
 				if(count($row)>0) {
 					if(count($row)==1&&array_keys($row)[0]=='msg') {
-						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName));
-						if($ar2['min']<0) $row['msg'].=' + '.(($res->data->volumeItems[0]->index==0)?'(-'.$res->data->volumeItems[0]->chapterCount.')':'(0)'); // auxiliary volume chapters'';
+						$row=array_merge(array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName), $row);
+					}
+					if( (count($row)==1 && array_keys($row)[0]=='msg'&&$ar2['min']<0) || (array_key_exists('msg',$row) && in_array('priv',$row['msg'])) ) {
+						$row['msg'][]=(($res->data->volumeItems[0]->index==0)?'(-'.$res->data->volumeItems[0]->chapterCount.')':'(0)'); // auxiliary volume chapters'';
 					}
 					$row['Last upd']=timetostr(strtotime($last_upd, $timestamp));
 					$row['Last chk']=timetostr($timestamp);

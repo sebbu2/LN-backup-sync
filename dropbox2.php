@@ -127,12 +127,24 @@ foreach($fns as $name=>$fn)
 		}//*/
 		foreach($watches as $_key=>$book)
 		{
-			if(name_compare($name, $book[0]->name, 1) || name_compare($name, $book[3], 1))
+			if($book[3]!==NULL && name_compare($name, $book[3], 1))
 			{
 				$key=$_key;
 				$id=$book[0]->id;
 				$found1=true;
 				break;
+			}
+		}
+		if(!$found1) {
+			foreach($watches as $_key=>$book)
+			{
+				if(name_compare($name, $book[0]->name, 1))
+				{
+					$key=$_key;
+					$id=$book[0]->id;
+					$found1=true;
+					break;
+				}
 			}
 		}
 		if($found1) {
@@ -325,13 +337,30 @@ foreach($fns as $name=>$fn)
 		}
 		if(!is_array($res) && (is_object($res) && !property_exists($res->data, 'books')) ) die('error');
 		if( (is_array($res)&&count($res)==1) || (is_object($res)&&count($res->data->books)==1) ) {
-			assert(name_compare($name, $res->data->books[0]->name));
-			$id=$res->data->books[0]->id;
-			$res=$wn->add_watch($id, 0);
-			var_dump($res);
-			/*$res=$wn->get_info($res->data->books[0]->id);
-			//var_dump($res);
-			var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);//*/
+			$id=NULL;
+			if(!name_compare($name, $res->data->books[0]->name,1)) {
+				$res=$wn->search($name);
+				var_dump($res);
+				foreach($res as $k=>$v) {
+					if(name_compare($v['title'], $name, 1)) {
+						//var_dump($v);die();
+						$id=$v['data-bookid'];
+					}
+				}
+			}
+			else {
+				$id=$res->data->books[0]->id;
+			}
+			if($id===NULL) {
+				var_dump($name.' not found in WebNovel search');
+			}
+			else {
+				$res=$wn->add_watch($id, 0);
+				var_dump($res);
+				/*$res=$wn->get_info($res->data->books[0]->id);
+				//var_dump($res);
+				var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);//*/
+			}
 		}
 		else {
 			$id=-1;
@@ -361,9 +390,11 @@ foreach($fns as $name=>$fn)
 			var_dump($res);
 		}
 		//$res=json_decode($res);
-		assert($res->code==0);
-		assert($res->msg=='Success');
-		$updatedCount['wn']++;
+		if(is_object($res)) {
+			assert($res->code==0);
+			assert($res->msg=='Success');
+			$updatedCount['wn']++;
+		}
 		//die();
 	}
 	ob_flush();flush();
