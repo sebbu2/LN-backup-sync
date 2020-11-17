@@ -201,7 +201,7 @@ foreach($fns as $name=>$fn)
 				var_dump($key,$book);die();
 			}
 			
-			if(name_compare($name, @$book->bookName, 1))
+			if($book->novelType==0 && name_compare($name, @$book->bookName, 1))
 			{
 				$id=$book->bookId;
 				$found2=true;
@@ -229,7 +229,7 @@ foreach($fns as $name=>$fn)
 				$res=$wn->get_chapter_list($id);
 			}
 		}
-		if(!property_exists($res,'data')) { var_dump($res); die(); }
+		if(!property_exists($res,'data') || !property_exists($res->data, 'volumeItems')) { var_dump($res); die(); }
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp-$res->data->volumeItems[0]->chapterItems[0]->index; // fix for negative chapters
 		//if($res->data->volumeItems[0]->index==0) $chp2=$chp+$res->data->volumeItems[0]->chapterCount; // fix for negative chapters
 		//else $chp2=$chp;

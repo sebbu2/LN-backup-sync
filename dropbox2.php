@@ -231,7 +231,7 @@ foreach($fns as $name=>$fn)
 						if($res2[0]->Data->Type==1) $tl='translated';
 						if($res2[0]->Data->Type==2) $tl='eol';
 						assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
-						$res=$wln->add($v['title'], 'translated'); // TODO : fix translated/eol type
+						$res=$wln->add($v['title'], $tl);
 						var_dump($res);
 						if(is_numeric($res)) {
 							$res=$wln->add_novel($res);
@@ -272,7 +272,7 @@ foreach($fns as $name=>$fn)
 				var_dump($key,$book);die();
 			}
 			
-			if(name_compare($name, @$book->bookName, 1))
+			if($book->novelType==0 && name_compare($name, @$book->bookName, 1))
 			{
 				$id=$book->bookId;
 				$found2=true;

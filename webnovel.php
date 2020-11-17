@@ -346,9 +346,36 @@ class WebNovel extends SitePlugin
 			++$i;
 		}
 		while($res->data->isLast==0);
+		$books2=json_encode($books);
+		$books2=$this->jsonp_to_json($books2);
+		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
+		$books2=$books;
+		$order=array();
+		usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType<$e2->novelType; });
+		foreach($books as $i=>$b) {
+			$ind=-1;
+			foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
+			if($b->novelType==0) {
+				$res=$this->get_chapter_list_cached($b->bookId);
+				if(!property_exists($res, 'data')) {
+					$res=$this->get_chapter_list($b->bookId);
+				}
+				$order[]=[$b->bookId, $b->bookName, $res->data->bookInfo->bookSubName, count($books2)-1-$ind];
+			}
+			elseif($b->novelType==100) {
+				$res=$this->get_chapter_list_comic_cached($b->bookId);
+				if(!property_exists($res, 'data')) {
+					$res=$this->get_chapter_list_comic($b->bookId);
+				}
+				$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
+			}
+		}
 		$books2=json_encode($books); unset($books); //
 		$books2=$this->jsonp_to_json($books2);
 		file_put_contents($this::FOLDER.'_books.json', $books2 );
+		$order2=json_encode($order); unset($order);
+		$order2=$this->jsonp_to_json($order2);
+		file_put_contents($this::FOLDER.'_order.json', $order2 );
 		return json_decode($books2);
 	}
 	
@@ -489,6 +516,53 @@ class WebNovel extends SitePlugin
 			var_dump($res);
 			unlink($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
 			return $this->get_chapter_list($bookId);
+		}
+		return $res;
+	}
+	
+	public function get_chapter_list_comic($bookId)
+	{
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$referer='https://www.webnovel.com/library';
+		{
+			$ar=array(
+				'_csrfToken'=>$cookies['_csrfToken'],
+				'comicId'=>strval($bookId),
+				'_'=>millitime(),
+			);
+			$headers=array(
+				'Referer: '.$referer,
+			);
+			$res = $this->get( 'https://www.webnovel.com/apiajax/comic/GetChapterList', $ar, $headers);
+			file_put_contents('request.log', $res);
+			$res=$this->jsonp_to_json($res);
+			unlink('request.log');
+			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
+			$res=json_decode($res);
+		}
+		return $res;
+	}
+	
+	public function get_chapter_list_comic_cached($bookId)
+	{
+		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
+			return $this->get_chapter_list_comic($bookId);
+		}
+		$res='';
+		//var_dump($bookId);
+		try {
+			$res=file_get_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
+			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
+		}
+		catch(JsonException $e) {
+			//var_dump($e);
+			echo '<table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">';echo $e->xdebug_message;echo '</table>';
+			//die();
+		}
+		if(!is_object($res)) {
+			var_dump($res);
+			unlink($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
+			return $this->get_chapter_list_comic($bookId);
 		}
 		return $res;
 	}
