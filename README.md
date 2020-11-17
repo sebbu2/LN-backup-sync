@@ -39,9 +39,15 @@ wlnupdates/\_books.json json data from wlnupdates
 
 watches2.htm raw table of wlnupdates data
 
-webnovel/\_books.json json data from webnovel (merged)
+webnovel/\_books.json json data from webnovel (merged, reordered)
 
-library.htm raw table of webnovel data
+webnovel/\_order.json json data of the data from webnovel
+
+library.htm raw table of webnovel data (sorted)
+
+library2.htm raw table of webnovel data (identical to website, sorted by last add/update)
 
 wn\_diff.json json data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdate reading position)
+
+correspondance.json data of correspondances between webnovel and wlnupdate (= novel id)
 

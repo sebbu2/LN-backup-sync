@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 662,
-      "chp": 662,
+      "agg": 663,
+      "chp": 663,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 593,
-      "chp": 593,
+      "agg": 594,
+      "chp": 594,
       "frag": -1,
       "vol": -1
     },
@@ -282,15 +282,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 208,
-      "chp": 208,
+      "agg": 209,
+      "chp": 209,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599134972,
+      "date": 1591349270,
       "frag": 0,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 588,
-      "chp": 588,
+      "agg": 589,
+      "chp": 589,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 450,
-      "chp": 450,
+      "agg": 451,
+      "chp": 451,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 603,
-      "chp": 603,
+      "agg": 604,
+      "chp": 604,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 437,
-      "chp": 437,
+      "agg": 438,
+      "chp": 438,
       "frag": -1,
       "vol": -1
     },
@@ -525,8 +525,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 453,
-      "chp": 453,
+      "agg": 454,
+      "chp": 454,
       "frag": -1,
       "vol": -1
     },
@@ -599,6 +599,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 117681,
+      "name": "Only I Am a Necromancer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1598521987,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 115743,
       "name": "Plague Doctor",
       "rating": null,
@@ -633,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 2696,
-      "chp": 2696,
+      "agg": 2697,
+      "chp": 2697,
       "frag": -1,
       "vol": -1
     },
@@ -687,8 +714,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 10977,
-      "chp": 977,
+      "agg": 10978,
+      "chp": 978,
       "frag": -1,
       "vol": 1
     },
@@ -1605,8 +1632,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 223,
-      "chp": 223,
+      "agg": 225,
+      "chp": 225,
       "frag": -1,
       "vol": -1
     },
@@ -1794,8 +1821,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 109,
-      "chp": 109,
+      "agg": 110,
+      "chp": 110,
       "frag": -1,
       "vol": -1
     },
@@ -1902,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 367,
-      "chp": 367,
+      "agg": 369,
+      "chp": 369,
       "frag": -1,
       "vol": -1
     },
@@ -1929,8 +1956,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 664,
-      "chp": 664,
+      "agg": 665,
+      "chp": 665,
       "frag": -1,
       "vol": -1
     },
@@ -2091,8 +2118,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 787,
-      "chp": 787,
+      "agg": 790,
+      "chp": 790,
       "frag": -1,
       "vol": -1
     },
@@ -2172,8 +2199,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 268,
-      "chp": 268,
+      "agg": 269,
+      "chp": 269,
       "frag": -1,
       "vol": -1
     },
@@ -2469,8 +2496,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 894,
-      "chp": 894,
+      "agg": 896,
+      "chp": 896,
       "frag": -1,
       "vol": -1
     },
@@ -2496,8 +2523,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 179,
-      "chp": 179,
+      "agg": 180,
+      "chp": 180,
       "frag": -1,
       "vol": -1
     },
@@ -3072,33 +3099,6 @@
       "agg": 118,
       "chp": 118,
       "date": 1565263246,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 117681,
-      "name": "Only I Am a Necromancer",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 39,
-      "chp": 39,
-      "date": 1598521987,
       "frag": 0,
       "vol": -1
     },

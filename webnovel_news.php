@@ -139,6 +139,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				}
 				//fixing chapter number
 				$add=0;
+				$add_=0;
 				$add2=NULL;
 				$priv_only=0;
 				$max_pub=0;
@@ -146,7 +147,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				$last_chp=0;
 				$last_upd=0;
 				$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
-				if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+				if($res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2+=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2+=$diff_old['cur'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['upd'])) $add2+=$diff_old['upd'][$entry['title']];
@@ -186,6 +187,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$priv_only=0;
 					$last_upd=0;
 					$last_chp=0;
+					$add_=0;
+					if($res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							if($chap->chapterLevel!=0) $priv_only++;
@@ -300,6 +303,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$res=$wn->get_chapter_list($book->bookId);
 						$last_upd=0;
 						$last_chp=0;
+						if($res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 						foreach($res->data->volumeItems as $vol) {
 							foreach($vol->chapterItems as $chap) {
 								if($chap->chapterLevel!=0) $priv_only++;
@@ -316,10 +320,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$diff[$entry['title']]=$priv_only;
 				}
 				if(count($row)>0) {
-					if(count($row)==1&&array_keys($row)[0]=='msg') {
+					if(count($row)==1 && array_keys($row)[0]=='msg') {
 						$row=array_merge(array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName), $row);
 					}
-					if( (count($row)==1 && array_keys($row)[0]=='msg'&&$ar2['min']<0) || (array_key_exists('msg',$row) && in_array('priv',$row['msg'])) ) {
+					if( (count($row)>=1 && array_keys($row)[0]=='msg' && $ar2['min']<0) && $add!=$add_) {
 						$row['msg'][]=(($res->data->volumeItems[0]->index==0)?'(-'.$res->data->volumeItems[0]->chapterCount.')':'(0)'); // auxiliary volume chapters'';
 					}
 					$row['Last upd']=timetostr(strtotime($last_upd, $timestamp));

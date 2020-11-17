@@ -4,6 +4,7 @@ webnovel/*.txt
 wlnupdates/*.htm*
 wlnupdates/*.json
 wlnupdates/*.txt
+*.htm
 *.json
 *.txt
 *.js
