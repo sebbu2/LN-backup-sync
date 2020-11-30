@@ -170,7 +170,11 @@ foreach($fns as $name=>$fn)
 	if((int)$fn[3]>0) ++$chp; // if the position isn't at the top of the chapter, assume the chapter is fully read
 	//var_dump($name,$chp);
 	if($fn[4]=='100') {
-		assert($chp == $fn['max']);
+		if( !($chp == $fn['max'])) {
+			// NOTE : old .po
+			// NOTE : 100 rounded up :(
+			//var_dump($chp,$fn);die();
+		}
 	}
 	
 	if($found1) {
@@ -245,7 +249,7 @@ foreach($fns as $name=>$fn)
 		if(
 			($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
 			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
-			//|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
+			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
 			//var_dump($name, $chp);
 			$row['WebNovel old chp']=(int)$books[$key]->readToChapterIndex;

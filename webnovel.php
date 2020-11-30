@@ -19,7 +19,7 @@ class WebNovel extends SitePlugin
 			'format'=>'jsonp',
 			'auto'=>'1',
 			'method'=>'autoLoginHandler',
-			'_csrfToken'=>$cookies['_csrfToken'],
+			'_csrfToken'=>(array_key_exists('_csrfToken', $cookies)?$cookies['_csrfToken']:''),
 			'_'=>millitime(),
 		);
 		$headers=array(
@@ -342,10 +342,20 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'LibraryAjax'.strval($i).'.json', $res);
 			$res=json_decode($res);
-			$books=array_merge($books, $res->data->books);
-			++$i;
+			/*if(
+				( !is_object($res) || !property_exists($res, 'data') || !is_object($res->data) || !property_exists($res->data, 'isLast') || !property_exists($res->data, 'books') )
+				&&
+				( !is_array($res) || !array_key_exists('data',$res) || !array_key_exists('isLast', $res['data']) || !array_key_exists('books', $res['data']) )
+			) {
+				var_dump($res);
+				die();
+			}//*/
+			if($res->data!==NULL) {
+				$books=array_merge($books, $res->data->books);
+				++$i;
+			}
 		}
-		while($res->data->isLast==0);
+		while( ( (is_object($res->data)&&$res->data->isLast==0) || $res->data!==NULL) && $i<20);//$i should not reach 20*30 books soon (i'm at 14)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
