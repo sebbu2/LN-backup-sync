@@ -222,7 +222,7 @@ foreach($fns as $name=>$fn)
 			if($res==false || count($res->data->books)!=1 || (count($res->data->books)==1 && !name_compare($name, $res->data->books[0]->name, 1)) ) {
 				var_dump($res);
 				$res=$wn->search($name);
-				//var_dump($res);
+				var_dump(count($res));//die();
 				foreach($res as $k=>$v) {
 					if(name_compare($v['title'], $name, 1)) {
 						//var_dump($v);die();
@@ -231,6 +231,7 @@ foreach($fns as $name=>$fn)
 						if($res2[0]->Data->Type==1) $tl='translated';
 						if($res2[0]->Data->Type==2) $tl='eol';
 						assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
+						var_dump('wn get_info',$res2[0]->Result, $res2[0]->Message, $res2[1]->Result, $res2[1]->Message);
 						$res=$wln->add($v['title'], $tl);
 						var_dump($res);
 						if(is_numeric($res)) {

@@ -580,7 +580,7 @@ class WebNovel extends SitePlugin
 	public function search($name)
 	{
 		$ar=array(
-			'keywords'=>rawurlencode($name),
+			'keywords'=>$name,
 		);
 		$data = $this->get( 'https://www.webnovel.com/search', $ar);
 		$data=trim($data);

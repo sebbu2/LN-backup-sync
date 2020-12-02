@@ -10,6 +10,8 @@ $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')
 $wln=new WLNUpdates;
 $wn=new WebNovel;
 
+require('header.php');
+
 //$filter=$wn->get_filter_for('translated');
 //$filter=(new ReflectionMethod('SitePlugin', 'get_filter_for'))->invoke($wln, 'comic');// cheat!
 /*foreach($books as $book) {
@@ -49,7 +51,9 @@ foreach($correspondances as $ar) {
 	$res=$wn->get_info_cached($wn_id);
 	$resb=$wn->get_chapter_list_cached($wn_id);
 	if(!is_object($resb) || !property_exists($resb, 'data')) {
-		var_dump($wn_id, $resb);die();
+		var_dump($wn_id, $resb);
+		//die();
+		break;
 	}
 	//var_dump($resb->data->bookInfo->bookSubName);
 
@@ -196,3 +200,4 @@ foreach($correspondances as $ar) {
 	ob_flush();flush();
 	//if($res!==false) die();
 }
+require('footer.php');
