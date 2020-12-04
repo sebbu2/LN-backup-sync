@@ -110,6 +110,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
 		$entry['chp']=$entry[1]['chp'];
 		foreach($books as $book) { // WN book
+			if(!property_exists($book, 'bookName')) { var_dump($book); die(); }
 			if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 				
 				$row=array();

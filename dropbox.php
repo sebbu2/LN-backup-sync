@@ -105,7 +105,8 @@ $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 echo '<h2>Counts</h2>',"\n";
 print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
 echo '<br/>'."\r\n";
-ob_flush();flush();
+if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+flush();
 
 $head=array('name', 'WLNUpdates old chp', 'WLNUpdates new chp', 'WLNUpdates sync', 'WebNovel old chp', 'WebNovel new chp', 'WebNovel sync', 'msg');
 $lines=0;
@@ -204,8 +205,20 @@ foreach($fns as $name=>$fn)
 			if(!is_object($book)) {
 				var_dump($key,$book);die();
 			}
-			
-			if($book->novelType==0 && name_compare($name, @$book->bookName, 1))
+			$name2='';
+			if(property_exists($book, 'bookName')) $name2=$book->bookName;
+			else {
+				$res=$wn->get_info_cached($book->bookId);
+				$retr=false;
+				if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
+				if(!is_array($res)) { var_dump($book, res); die(); }
+				if(!is_object($res[0])) { var_dump($book, $res); die(); }
+				if(!property_exists($res[0], 'Data')) { var_dump($book, $res); die(); }
+				if(!is_object($res[0]->Data)) { var_dump($book, $res[0]->Result, $res[1]->Result, $res[2]->code, $res[3]->code); die(); }
+				if(!property_exists($res[0]->Data, 'BookName')) { var_dump($book, $res); die(); }
+				$name2=$res[0]->Data->BookName;
+			}
+			if($book->novelType==0 && name_compare($name, $name2, 1))
 			{
 				$id=$book->bookId;
 				$found2=true;
@@ -277,7 +290,8 @@ foreach($fns as $name=>$fn)
 		print_tbody($row, $head);
 		++$lines;
 	}
-	ob_flush();flush();
+	if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+	flush();
 }
 if($lines>0) {
 	echo '</table>'."\r\n";

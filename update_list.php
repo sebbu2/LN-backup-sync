@@ -27,6 +27,11 @@ die();//*/
 //var_dump($res);
 //die();
 
+$updatedCount=array(
+	'wln'=>0,
+	'wn'=>0,
+);
+
 $correspondances=array();
 foreach($books as $book) // qidian
 {
@@ -189,6 +194,7 @@ foreach($correspondances as $ar) {
 	$res=$wln->edit($json);
 	var_dump($res);
 	if($res!==false) $res2=$wln->get_info($wln_id);
+	$updatedCount['wln']++;
 	/*
 	"entries": [{
 		"key": "watch-container",
@@ -197,7 +203,12 @@ foreach($correspondances as $ar) {
 	}]
 	*/
 	//die('job is already done, edit file to do something else.');
-	ob_flush();flush();
+	if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+	flush();
 	//if($res!==false) die();
+}
+if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
+	define('DROPBOX_DONE', true);
+	include_once('retr.php');
 }
 require('footer.php');

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 require_once('config.php');
 require_once('functions.inc.php');
 require_once('wlnupdates.php');
@@ -22,6 +23,7 @@ class Dropbox {
 	private $urls=array();
 	private $token=array();
 	public $errors=NULL;
+	private $files=array();
 	//auth
 	private $key='';
 	private $secret='';
@@ -51,12 +53,15 @@ class Dropbox {
 		$this->domains[]='https://notify.dropboxapi.com';
 		$domain=$this->domains[0];
 		$this->urls=array();
-		$this->urls[]='https://www.dropbox.com'.'/oauth2/authorize';
-		$this->urls[]=$domain.'/oauth2/token';
-		$this->urls[]=$domain.'/2/check/app';
-		$this->urls[]=$domain.'/2/check/user';
-		$this->urls[]=$domain.'/2/files/list_folder';
-		$this->urls[]=$domain.'/2/files/list_folder/continue';
+		$this->urls[]='https://www.dropbox.com'.'/oauth2/authorize';//0 auth1
+		$this->urls[]=$domain.'/oauth2/token';//1 auth2
+		$this->urls[]=$domain.'/2/check/app';//2 app
+		$this->urls[]=$domain.'/2/check/user';//3 user
+		$this->urls[]=$domain.'/2/files/list_folder';//4 list1
+		$this->urls[]=$domain.'/2/files/list_folder/continue';//5 list2
+		$domain=$this->domains[1];
+		$this->urls[]=$domain.'/2/files/download';//6 download
+		$this->urls[]=$domain.'/2/files/download_zip';//7 download_zip
 	}
 
 	public function authcode($client_id='', $client_secret='') {
@@ -191,6 +196,7 @@ class Dropbox {
 
 	public function refresh_code() {
 		//refresh
+		$this->get_token();
 		$url=$this->urls[1];
 		
 		$this->postdata=array();
@@ -247,7 +253,9 @@ class Dropbox {
 		$data=json_decode($data);
 		
 		if(property_exists($data, 'error')) { var_dump($data); die(); }
-		$files=$data->entries;
+		
+		$this->files=array();//reset
+		$this->files=$data->entries;
 		
 		if($data->has_more) {
 			$i=1;
@@ -262,10 +270,45 @@ class Dropbox {
 				file_put_contents('list'.$i.'.json', $data);
 				$data=json_decode($data);
 				if(property_exists($data, 'error')) { var_dump($data); die(); }
-				$files=array_merge($files, $data->entries);
+				$this->files=array_merge($this->files, $data->entries);
 			}
 		}
-		return $files;
+		return $this->files;
+	}
+	
+	public function download(string $str=NULL) {
+		$url=$this->urls[7];
+
+		$this->postdata=array(
+			'path'=>MOONREADER_REMOTE_PATH, // for root, it's not "/", it's ""
+		);
+
+		unset($this->opts['http']['content']);
+		$this->opts['http']['header']=array(
+			$this->opts['http']['header'][0],//auth
+			'Dropbox-API-Arg: '.json_encode($this->postdata),
+		);
+
+		$ctx=stream_context_create($this->opts);
+
+		$data=file_get_contents($url, false, $ctx);
+		file_put_contents('list0.json', $data);
+		$headers_r=$http_response_header;
+		foreach($headers_r as $h) {
+			//var_dump($h);
+			if(substr($h, 0, 20)=='Dropbox-Api-Result: ') {
+				$data2=substr($h, 20);
+				$data2=json_decode($data2);
+			}
+		}
+		file_put_contents('dropbox.zip', $data);
+		//$data=json_decode($data);
+		var_dump($data2);
+		$finfo = new finfo(FILEINFO_MIME);
+		//var_dump($finfo->buffer($data));
+		var_dump($finfo->file('dropbox.zip'));
+		//var_dump(strlen($data));die();
+		var_dump(filesize('dropbox.zip'));die();
 	}
 }
 
@@ -278,7 +321,8 @@ assert($data!==false) or die('ERROR: App not verified.');
 $data=$dpb->verify_user();
 //assert($data!==false) or die('ERROR: User not verified.');
 
-if($data===false && $data=$dpb->errors && property_exists($data, 'error')) {
+if($data===false) $data=$dpb->errors;
+if(property_exists($data, 'error')) {
 	if(property_exists($data->error, '.tag')) {
 		if($data->error->{'.tag'}==='expired_access_token') {
 			$data=$dpb->refresh_code();
@@ -294,7 +338,10 @@ if($data===false && $data=$dpb->errors && property_exists($data, 'error')) {
 }
 //var_dump($data);//die();
 
-$files=$dpb->list_folder();
+/*$files=$dpb->list_folder();
+file_put_contents('list.json', json_encode($files));//*/
+$files=file_get_contents('list.json');
+$files=json_decode($files);
 
 /*var_dump($files);
 $e=$files[0]->server_modified;
@@ -311,6 +358,9 @@ foreach($files as $entry) {
 //usort($ar, fn($e1, $e2) => strcasecmp($e1[0], $e2[0]));//sort by fn
 usort($ar, fn($e1, $e2) => strtotime($e1[2])-strtotime($e2[2]));//sort by date
 var_dump($ar);
+
+$res=$dpb->download();
+var_dump($res);
 
 //download : 
 //Dropbox-API-Arg

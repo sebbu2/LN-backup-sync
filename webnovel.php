@@ -151,7 +151,8 @@ class WebNovel extends SitePlugin
 			
 			$pub_key=$json->pubkey;
 			$res2=openssl_get_publickey($pub_key);
-			if(!is_resource($res2)) {
+			if(!is_resource($res2) && !is_object($res2)) {
+				var_dump($pub_key, $res2);
 				var_dump('invalid webnovel pubkey.');
 				die();
 			}
@@ -313,6 +314,25 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
+	private function novel_cmp($e1, $e2)
+	{
+		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
+		$n1=$n2='';
+		if(property_exists($e1, 'bookName')) $n1=$e1->bookName;
+		else {
+			$res=$this->get_info_cached($e1->bookId);
+			$n1=$res[0]->Data->BookName;
+		}
+		if(property_exists($e2, 'bookName')) $n2=$e2->bookName;
+		else {
+			$res=$this->get_info_cached($e2->bookId);
+			$n2=$res[0]->Data->BookName;
+		}
+		$res=strcasecmp($n1, $n2);
+		if($res!==0) return $res;
+		return $e1->novelType <=> $e2->novelType;
+	}
+	
 	public function watches()
 	{
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
@@ -361,7 +381,8 @@ class WebNovel extends SitePlugin
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
 		$books2=$books;
 		$order=array();
-		usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType<$e2->novelType; });
+		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
+		usort($books, array($this, 'novel_cmp'));
 		foreach($books as $i=>$b) {
 			$ind=-1;
 			foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
@@ -416,6 +437,9 @@ class WebNovel extends SitePlugin
 			//var_dump('Updating',$res->data->bookInfo->bookName);
 			$this->msg[]='Updating';
 			$res=$this->get_chapter_list($watch->bookId);
+		}
+		if(!is_object($res)||!property_exists($res, 'data')||!property_exists($res->data, 'volumeItems')) {
+			var_dump($res);die();
 		}
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
@@ -778,31 +802,42 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info($id)
+	public function get_info($id, $types=NULL)
 	{
 		// id
 		$data=array();
+		
+		//types
+		if($types===NULL) $types=array(0,1,2,3);
+		if(is_string($types)) $types=explode(',', $types);
+		if(is_int($types)) $types=array($types);
+		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
+		if(count($types)==0) { die('ERROR: empty types.'); }
 		
 		$referer='https://www.webnovel.com/';
 		$ar=array(
 			'bookId'=>$id,
 		);
 		$headers=array(
-			'X-Requested-With: XMLHttpRequest',
+			//'X-Requested-With: XMLHttpRequest',
 			//'Referer: '.$referer,
 		);
 		
-		$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers);
-		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'get-book'.$id.'.json', $res);
+		if(in_array(0, $types)) {
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers);
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'get-book'.$id.'.json', $res);
 		
-		$data[]=json_decode($res);
+			$data[]=json_decode($res);
+		}
 		
-		$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers);
-		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'get-book-extended'.$id.'.json', $res);
-		
-		$data[]=json_decode($res);
+		if(in_array(1, $types)) {
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers);
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'get-book-extended'.$id.'.json', $res);
+			
+			$data[]=json_decode($res);
+		}
 		
 		$ar = array(
 			'bookId'=>$id,
@@ -813,23 +848,29 @@ class WebNovel extends SitePlugin
 			'needSummary'=>1,
 			'_'=>millitime(),
 		);
-		$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar );
-		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'get-reviews'.$id.'.json', $res);
-		
-		$data[]=json_decode($res);
+		if(in_array(2, $types)) {
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar );
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'get-reviews'.$id.'.json', $res);
+			
+			$data[]=json_decode($res);
+		}
 		
 		$ar=array(
 			'bookId'=>$id,
 			'type'=>2,
 		);
-		$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar );
-		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'getRecommendList'.$id.'.json', $res);
+		if(in_array(3, $types)) {
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar );
+			$res=$this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'getRecommendList'.$id.'.json', $res);
+			
+			$data[]=json_decode($res);
+		}
 		
-		$data[]=json_decode($res);
+		if(count($types)==1) $data=$data[0];
 		
-		var_dump('get_info: '.$id);
+		var_dump('get_info: '.$id.' types '.implode(',', $types));
 		return $data;
 	}
 	
@@ -840,14 +881,20 @@ class WebNovel extends SitePlugin
 			$this::FOLDER.'get-reviews'.$id.'.json',
 			$this::FOLDER.'getRecommendList'.$id.'.json',
 		);
-		$res=true;
-		foreach($filenames as $fn) {
-			$res&=file_exists($fn);
-		}
-		if(!$res) return $this->get_info($id);
 		$res=array();
-		foreach($filenames as $fn) {
-			$res[]=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
+		foreach($filenames as $i=>$fn) {
+			$j=0;
+			$res2=NULL;
+			if(file_exists($fn)) {
+				$res2=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
+			}
+			else {
+				$res2=$this->get_info($id, $i);
+			}
+			//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
+			while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<5) $res2=$this->get_info($id, $i);
+			while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<5) $res2=$this->get_info($id, $i);
+			$res[]=$res2;
 		}
 		return $res;
 	}

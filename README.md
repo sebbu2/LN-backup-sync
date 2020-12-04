@@ -41,7 +41,7 @@ watches2.htm raw table of wlnupdates data
 
 webnovel/\_books.json json data from webnovel (merged, reordered)
 
-webnovel/\_order.json json data of the data from webnovel
+webnovel/\_order.json json data of the order from webnovel
 
 library.htm raw table of webnovel data (sorted)
 
