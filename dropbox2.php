@@ -104,7 +104,8 @@ $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 echo '<h2>Counts</h2>',"\n";
 print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
 echo '<br/>'."\r\n";
-ob_flush();flush();
+if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+flush();
 foreach($fns as $name=>$fn)
 {
 	//wlnupdates
@@ -398,7 +399,8 @@ foreach($fns as $name=>$fn)
 		}
 		//die();
 	}
-	ob_flush();flush();
+	if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+	flush();
 }
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);

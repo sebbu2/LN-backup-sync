@@ -16,6 +16,7 @@ if(!isset($secret)) $secret='';
 include('header.php');
 
 class Dropbox {
+	public const FOLDER='dropbox/';
 	//req
 	private $opts=array();
 	private $postdata=array();
@@ -87,7 +88,7 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('app.json', $data);
+		file_put_contents($this::FOLDER.'app.json', $data);
 		$data=json_decode($data);
 		
 		if(
@@ -103,19 +104,19 @@ class Dropbox {
 
 	public function get_token() {
 		$data='';
-		if(file_exists('token2.json')) {
-			$data=file_get_contents('token2.json');
+		if(file_exists($this::FOLDER.'token2.json')) {
+			$data=file_get_contents($this::FOLDER.'token2.json');
 			$data=json_decode($data);
 			if(property_exists($data, 'error')) {
-				assert(file_exists('token1.json')) or die('You need to be auth.');
-				unlink('token2.json');
-				$data=file_get_contents('token1.json');
+				assert(file_exists($this::FOLDER.'token1.json')) or die('You need to be auth.');
+				unlink($this::FOLDER.'token2.json');
+				$data=file_get_contents($this::FOLDER.'token1.json');
 				$data=json_decode($data);
 			}
 		}
 		else {
-			assert(file_exists('token1.json')) or die('You need to be auth.');
-			$data=file_get_contents('token1.json');
+			assert(file_exists($this::FOLDER.'token1.json')) or die('You need to be auth.');
+			$data=file_get_contents($this::FOLDER.'token1.json');
 			$data=json_decode($data);
 		}
 		$this->token=$data;
@@ -138,7 +139,7 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('user.json', $data);
+		file_put_contents($this::FOLDER.'user.json', $data);
 		$data=json_decode($data);
 
 		if(
@@ -166,7 +167,7 @@ class Dropbox {
 		echo '</label>'."\r\n";
 		echo '</form>'."\r\n";
 	}
-	
+
 	public function validate_code() {
 		$code=$_POST['code'];
 
@@ -189,7 +190,7 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('token1.json', $data);
+		file_put_contents($this::FOLDER.'token1.json', $data);
 
 		return $data;
 	}
@@ -216,7 +217,7 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('token2.json', $data);
+		file_put_contents($this::FOLDER.'token2.json', $data);
 		
 		$this->token=json_decode($data);
 		if($this->check_errors($this->token)) {
@@ -249,7 +250,7 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('list0.json', $data);
+		file_put_contents($this::FOLDER.'list0.json', $data);
 		$data=json_decode($data);
 		
 		if(property_exists($data, 'error')) { var_dump($data); die(); }
@@ -267,7 +268,7 @@ class Dropbox {
 				$this->opts['http']['content']=json_encode($this->postdata);
 				$ctx=stream_context_create($this->opts);
 				$data=file_get_contents($url, false, $ctx);
-				file_put_contents('list'.$i.'.json', $data);
+				file_put_contents($this::FOLDER.'list'.$i.'.json', $data);
 				$data=json_decode($data);
 				if(property_exists($data, 'error')) { var_dump($data); die(); }
 				$this->files=array_merge($this->files, $data->entries);
@@ -292,7 +293,6 @@ class Dropbox {
 		$ctx=stream_context_create($this->opts);
 
 		$data=file_get_contents($url, false, $ctx);
-		file_put_contents('list0.json', $data);
 		$headers_r=$http_response_header;
 		foreach($headers_r as $h) {
 			//var_dump($h);
@@ -301,14 +301,14 @@ class Dropbox {
 				$data2=json_decode($data2);
 			}
 		}
-		file_put_contents('dropbox.zip', $data);
+		file_put_contents($this::FOLDER.'dropbox.zip', $data);
 		//$data=json_decode($data);
 		var_dump($data2);
 		$finfo = new finfo(FILEINFO_MIME);
 		//var_dump($finfo->buffer($data));
-		var_dump($finfo->file('dropbox.zip'));
+		var_dump($finfo->file($this::FOLDER.'dropbox.zip'));
 		//var_dump(strlen($data));die();
-		var_dump(filesize('dropbox.zip'));die();
+		var_dump(filesize($this::FOLDER.'dropbox.zip'));die();
 	}
 }
 
@@ -338,10 +338,9 @@ if(property_exists($data, 'error')) {
 }
 //var_dump($data);//die();
 
-/*$files=$dpb->list_folder();
-file_put_contents('list.json', json_encode($files));//*/
-$files=file_get_contents('list.json');
-$files=json_decode($files);
+$files=$dpb->list_folder();
+/*$files=file_get_contents($dpb::FOLDER.'list.json');
+$files=json_decode($files);//*/
 
 /*var_dump($files);
 $e=$files[0]->server_modified;
