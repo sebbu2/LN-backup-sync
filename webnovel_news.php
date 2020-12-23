@@ -97,7 +97,8 @@ $head=array('title', 'WLNUpdate', 'WebNovel', 'new chp', 'subName', 'start',
  'Last upd', 'Last chk',
 // 'Last chp',
  'msg');
-
+if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+flush();
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
 	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
@@ -348,12 +349,16 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					++$lines;
 				}
 			}
+			if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+			flush();
 		}
 	}
 	if($lines>0) {
 		echo '</table>'."\r\n";
 	}
 }
+if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
+flush();
 $diff=array('cur'=>$diff,'upd'=>$diff2,'chk'=>$diff3,'old'=>array_diff_key(array_merge($diff4,$diff_old['cur'],$diff_old['upd'],$diff_old['old']),array_merge($diff,$diff2,$diff3)));
 file_put_contents('wn_diff.json', $wn->jsonp_to_json(json_encode($diff)));
 //var_dump(count($diff['cur']),count($diff['upd']),count($diff['chk']),count($diff['old']));

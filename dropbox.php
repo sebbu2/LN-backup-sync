@@ -20,7 +20,8 @@ $updatedCount=array(
 	'wn'=>0,
 );
 
-$fns=array();
+$fns=array();//from reader
+$fns_=array();//from here
 foreach($ar as $fn)
 {
 	preg_match('#^(.*)_(-?\d+)-(\d+)(_FIN)?\.epub\.po$#i', $fn, $matches);
@@ -57,7 +58,76 @@ foreach($ar as $fn)
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
 	//if( array_key_exists($fn3, $fns) ) var_dump($fn3, $max, $fns[$fn3]['max'], $min+($min<0?1:0), $content[1], ($content[3]>0?1:0), $fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0), $fns[$fn3][1], ($fns[$fn3][3]>0?1:0) );
-	if( !array_key_exists($fn3, $fns) )
+/*
+1)a) if content[0] MOONREADER_DID
+	fns
+1)b) if content[0] MOONREADER_DID2
+	fns_
+2) if max > last (both MOONREADER_DID and MOONREADER_DID2) && pos >=
+	replace & delete old
+3) if last (MOONREADER_DID and MOONREADER_DID2) > max && pos <=
+	delete new
+4) if MOONREADER_DID2 < MOONREADER_DID
+	delete
+*/
+	if($content[1]=='0' && $content[3]=='0') continue;
+	$chp=$min + ($min<0?1:0) + $content[1] + ($content[3]>0?1:0);
+	//conds
+	if($content[0]===MOONREADER_DID) {
+		//1a
+		if( !array_key_exists($fn3, $fns) ) {
+			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+			$ar2=array_merge($ar2, $content);
+			$fns[$fn3]=$ar2;
+		}
+		else {
+			$lastchp=$fns[$fn3]['min'] + ($fns[$fn3]['min']<0?1:0) + $fns[$fn3][1] + ($fns[$fn3][3]>0?1:0);
+			$max1=$fns[$fn3]['max'];
+			//2a
+			if($max>$max1 && $chp>=$lastchp) {
+				unlink(DROPBOX.$fns[$fn3]['fn']);//die();
+				echo '<div class="block b b-blue">',$fns[$fn3]['fn'],'</div>',"\n";
+				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+				$ar2=array_merge($ar2, $content);
+				$fns[$fn3]=$ar2;
+			}
+			//3a
+			else if($max1>$max && $lastchp>=$chp) {
+				unlink(DROPBOX.$fn);
+				echo '<div class="block b b-blue">',$fn,'</div>',"\n";
+			}
+		}
+	}
+	else if($content[0]===MOONREADER_DID2) {
+		//1b
+		if( !array_key_exists($fn3, $fns_) ) {
+			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+			$ar2=array_merge($ar2, $content);
+			$fns_[$fn3]=$ar2;
+		}
+		else {
+			$lastchp_=$fns_[$fn3]['min'] + ($fns_[$fn3]['min']<0?1:0) + $fns_[$fn3][1] + ($fns_[$fn3][3]>0?1:0);
+			$max2=$fns_[$fn3]['max'];
+			//2b
+			if($max>$max2 && $chp>=$lastchp_) {
+				unlink(DROPBOX.$fns_[$fn3]['fn']);//die();
+				echo '<div class="block b b-green">',$fns_[$fn3]['fn'],'</div>',"\n";
+				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+				$ar2=array_merge($ar2, $content);
+				$fns_[$fn3]=$ar2;
+			}
+			//3b
+			else if($max2>$max && $lastchp_>$chp) {
+				unlink(DROPBOX.$fn);
+				echo '<div class="block b b-green">',$fn,'</div>',"\n";
+			}
+		}
+	}
+	else {
+		var_dump($fn, $fn2, $content);
+		die();
+	}
+	/*if( !array_key_exists($fn3, $fns) )
 	{
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
 		$ar2=array_merge($ar2, $content);
@@ -91,7 +161,7 @@ foreach($ar as $fn)
 		else {
 			echo '<div class="block b b-green">',$fn,'</div>',"\n";
 		}
-	}
+	}//*/
 }
 //var_dump(count($fns));
 //require_once('watches.inc.php');

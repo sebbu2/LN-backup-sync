@@ -12,7 +12,7 @@ require_once('SitePlugin.inc.php');
 */
 function name_simplify($name, $type=0) {
 	//'-'
-	static $ar1=array('_', ':', ',', '  ');
+	static $ar1=array('_', ':', ',', '/', '  ');
 	//'+'
 	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version', 'Retranslated_Version', 'retranslated version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');

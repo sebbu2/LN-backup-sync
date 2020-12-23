@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 709,
-      "chp": 709,
+      "agg": 717,
+      "chp": 717,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 866,
-      "chp": 866,
+      "agg": 885,
+      "chp": 885,
       "frag": -1,
       "vol": -1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12103,
-      "chp": 2103,
+      "agg": 12129,
+      "chp": 2129,
       "frag": -1,
       "vol": 1
     },
@@ -133,6 +133,33 @@
       "vol": 1
     },
     "Reverend Insanity"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131131,
+      "name": "Embers Ad Infinitum",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -174,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 640,
-      "chp": 640,
+      "agg": 666,
+      "chp": 666,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 518,
-      "chp": 518,
+      "agg": 531,
+      "chp": 531,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 255,
-      "chp": 255,
+      "agg": 281,
+      "chp": 281,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 182,
-      "chp": 182,
+      "agg": 204,
+      "chp": 204,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 632,
-      "chp": 632,
+      "agg": 657,
+      "chp": 657,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1300,
-      "chp": 1300,
+      "agg": 1315,
+      "chp": 1315,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 497,
-      "chp": 497,
+      "agg": 523,
+      "chp": 523,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 174,
-      "chp": 174,
+      "agg": 186,
+      "chp": 186,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 650,
-      "chp": 650,
+      "agg": 676,
+      "chp": 676,
       "frag": -1,
       "vol": -1
     },
@@ -437,33 +464,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 64956,
-      "name": "Lord of the Mysteries",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1428,
-      "chp": 1428,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 131,
-      "chp": 131,
-      "date": 1573179160,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 115777,
       "name": "Mages Are Too OP",
       "rating": 6,
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 484,
-      "chp": 484,
+      "agg": 510,
+      "chp": 510,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 500,
-      "chp": 500,
+      "agg": 526,
+      "chp": 526,
       "frag": -1,
       "vol": -1
     },
@@ -552,8 +552,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 216,
-      "chp": 216,
+      "agg": 242,
+      "chp": 242,
       "frag": -1,
       "vol": -1
     },
@@ -579,8 +579,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 2746,
-      "chp": 2746,
+      "agg": 2763,
+      "chp": 2763,
       "frag": -1,
       "vol": -1
     },
@@ -606,8 +606,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1217,
-      "chp": 1217,
+      "agg": 1236,
+      "chp": 1236,
       "frag": -1,
       "vol": -1
     },
@@ -633,8 +633,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 11024,
-      "chp": 1024,
+      "agg": 11028,
+      "chp": 1028,
       "frag": -1,
       "vol": 1
     },
@@ -653,33 +653,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 61174,
-      "name": "Super Gene",
-      "rating": 5,
-      "rating_count": 7,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 2451,
-      "chp": 2451,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 498,
-      "chp": 498,
-      "date": 1547474287.089825,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 109194,
       "name": "The First Order",
       "rating": 9,
@@ -687,8 +660,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 638,
-      "chp": 638,
+      "agg": 653,
+      "chp": 653,
       "frag": -1,
       "vol": -1
     },
@@ -714,8 +687,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1110,
-      "chp": 1110,
+      "agg": 1130,
+      "chp": 1130,
       "frag": -1,
       "vol": -1
     },
@@ -1031,6 +1004,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 64956,
+      "name": "Lord of the Mysteries",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1430,
+      "chp": 1430,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 131,
+      "chp": 131,
+      "date": 1573179160,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 34065,
       "name": "My Disciple Died Yet Again",
       "rating": 8.16666666666667,
@@ -1328,6 +1328,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 111199,
+      "name": "Epic of Caterpillar",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 13,
+      "chp": 13,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 57,
+      "chp": 57,
+      "date": 1583456700,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 62924,
       "name": "Godly Empress Doctor",
       "rating": 6.44444444444444,
@@ -1463,6 +1490,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 61174,
+      "name": "Super Gene",
+      "rating": 5,
+      "rating_count": 7,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 2451,
+      "chp": 2451,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 498,
+      "chp": 498,
+      "date": 1547474287.089825,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 75703,
       "name": "Zombie Sister Strategy",
       "rating": 6.5,
@@ -1497,8 +1551,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 242,
-      "chp": 242,
+      "agg": 254,
+      "chp": 254,
       "frag": -1,
       "vol": -1
     },
@@ -1524,8 +1578,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1131,
-      "chp": 1131,
+      "agg": 1170,
+      "chp": 1170,
       "frag": -1,
       "vol": -1
     },
@@ -1546,21 +1600,21 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.98969072164948,
-      "rating_count": 97,
+      "rating": 9.99009900990099,
+      "rating_count": 101,
       "tl_type": "oel"
     },
     {
-      "agg": 649,
-      "chp": 649,
+      "agg": 657,
+      "chp": 657,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 648,
-      "chp": 648,
-      "date": 1607490540,
-      "frag": 0,
+      "agg": 655.0001,
+      "chp": 655,
+      "date": 1608614040,
+      "frag": 1,
       "vol": -1
     },
     null
@@ -1578,8 +1632,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 361,
-      "chp": 361,
+      "agg": 367,
+      "chp": 367,
       "frag": -1,
       "vol": -1
     },
@@ -1598,33 +1652,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 111199,
-      "name": "Epic of Caterpillar",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 13,
-      "chp": 13,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 57,
-      "chp": 57,
-      "date": 1583456700,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 129098,
       "name": "Essential NPC with a Chicken",
       "rating": null,
@@ -1632,8 +1659,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 133,
-      "chp": 133,
+      "agg": 146,
+      "chp": 146,
       "frag": -1,
       "vol": -1
     },
@@ -1654,8 +1681,8 @@
       },
       "id": 128343,
       "name": "I got summoned to another world then married a yandere",
-      "rating": 9,
-      "rating_count": 1,
+      "rating": 5.4,
+      "rating_count": 5,
       "tl_type": "oel"
     },
     {
@@ -1708,13 +1735,13 @@
       },
       "id": 128277,
       "name": "Infinite Mana in the Apocalypse",
-      "rating": null,
-      "rating_count": null,
+      "rating": 6,
+      "rating_count": 1,
       "tl_type": "oel"
     },
     {
-      "agg": 418,
-      "chp": 418,
+      "agg": 444,
+      "chp": 444,
       "frag": -1,
       "vol": -1
     },
@@ -1740,8 +1767,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 694,
-      "chp": 694,
+      "agg": 707,
+      "chp": 707,
       "frag": -1,
       "vol": -1
     },
@@ -1767,8 +1794,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 627,
-      "chp": 627,
+      "agg": 636,
+      "chp": 636,
       "frag": -1,
       "vol": -1
     },
@@ -1821,8 +1848,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 471,
-      "chp": 471,
+      "agg": 505,
+      "chp": 505,
       "frag": -1,
       "vol": -1
     },
@@ -1848,8 +1875,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 828,
-      "chp": 828,
+      "agg": 850,
+      "chp": 850,
       "frag": -1,
       "vol": -1
     },
@@ -1902,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 280,
-      "chp": 280,
+      "agg": 287,
+      "chp": 287,
       "frag": -1,
       "vol": -1
     },
@@ -1983,15 +2010,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 217,
-      "chp": 217,
+      "agg": 222,
+      "chp": 222,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 11,
       "chp": 11,
-      "date": 1547321964,
+      "date": 1560453846.336022,
       "frag": -1,
       "vol": -1
     },
@@ -2010,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20531,
-      "chp": 531,
+      "agg": 20537,
+      "chp": 537,
       "frag": -1,
       "vol": 2
     },
@@ -2030,33 +2057,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 105713,
-      "name": "Sorceress 101",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 361,
-      "chp": 361,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 31,
-      "chp": 31,
-      "date": 1563433097,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 128347,
       "name": "Stuck as a Dungeon Mob",
       "rating": null,
@@ -2064,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 227,
-      "chp": 227,
+      "agg": 240,
+      "chp": 240,
       "frag": -1,
       "vol": -1
     },
@@ -2091,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 290,
-      "chp": 290,
+      "agg": 294,
+      "chp": 294,
       "frag": -1,
       "vol": -1
     },
@@ -2118,8 +2118,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 938,
-      "chp": 938,
+      "agg": 962,
+      "chp": 962,
       "frag": -1,
       "vol": -1
     },
@@ -2145,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 200,
-      "chp": 200,
+      "agg": 214,
+      "chp": 214,
       "frag": -1,
       "vol": -1
     },
@@ -2172,8 +2172,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 260,
-      "chp": 260,
+      "agg": 273,
+      "chp": 273,
       "frag": -1,
       "vol": -1
     },
@@ -2199,8 +2199,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 149,
-      "chp": 149,
+      "agg": 158,
+      "chp": 158,
       "frag": -1,
       "vol": -1
     },
@@ -2226,8 +2226,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 360,
-      "chp": 360,
+      "agg": 373,
+      "chp": 373,
       "frag": -1,
       "vol": -1
     },
@@ -2302,8 +2302,8 @@
       },
       "id": 129496,
       "name": "A Cultivation Tale: The Godly Punisher",
-      "rating": 5,
-      "rating_count": 2,
+      "rating": 6.66666666666667,
+      "rating_count": 3,
       "tl_type": "oel"
     },
     {
@@ -2329,8 +2329,8 @@
       },
       "id": 127434,
       "name": "Agatha The Legendary Guild Master",
-      "rating": 4,
-      "rating_count": 1,
+      "rating": 6.5,
+      "rating_count": 2,
       "tl_type": "oel"
     },
     {
@@ -2383,8 +2383,8 @@
       },
       "id": 117515,
       "name": "Astral Pet Store",
-      "rating": null,
-      "rating_count": null,
+      "rating": 4,
+      "rating_count": 1,
       "tl_type": "translated"
     },
     {
@@ -2556,10 +2556,10 @@
       "vol": -1
     },
     {
-      "agg": 557,
-      "chp": 557,
-      "date": 1571004007,
-      "frag": 0,
+      "agg": 857.0002,
+      "chp": 857,
+      "date": 1608742131.575172,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -2587,6 +2587,33 @@
       "chp": 119,
       "date": 1606536060,
       "frag": 1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 130483,
+      "name": "Fey Evolution Merchant",
+      "rating": 5.33333333333333,
+      "rating_count": 3,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1606452728,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -2667,6 +2694,33 @@
       "agg": 0,
       "chp": -1,
       "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 60944,
+      "name": "Martial Arts Master",
+      "rating": 7.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 450,
+      "chp": 450,
+      "date": 1548073097.508181,
       "frag": -1,
       "vol": -1
     },
@@ -3085,8 +3139,8 @@
       },
       "id": 114918,
       "name": "Psychic Parasite",
-      "rating": 10,
-      "rating_count": 1,
+      "rating": 7,
+      "rating_count": 2,
       "tl_type": "oel"
     },
     {
@@ -3112,8 +3166,8 @@
       },
       "id": 117074,
       "name": "Races: Online ( VR Smartphone App)",
-      "rating": 9,
-      "rating_count": 2,
+      "rating": 9.33333333333333,
+      "rating_count": 3,
       "tl_type": "oel"
     },
     {
@@ -3127,6 +3181,33 @@
       "chp": 69,
       "date": 1602497580,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131143,
+      "name": "Re-Birth of a Genius. Creator/Destroyer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -3380,6 +3461,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 64593,
+      "name": "The Mech Touch",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 131,
+      "chp": 131,
+      "date": 1536854700,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 119126,
       "name": "The Oracle Paths",
       "rating": 4,
@@ -3589,6 +3697,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 57171,
+      "name": "Worthy of Respect in One Age",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10001,
+      "chp": 1,
+      "date": 1485840081,
+      "frag": 0,
+      "vol": 1
+    },
+    "The Sage Who Transcended Samsara"
   ],
   [
     {
@@ -3933,9 +4068,9 @@
       "vol": -1
     },
     {
-      "agg": 160,
-      "chp": 160,
-      "date": 1606999499,
+      "agg": 170,
+      "chp": 170,
+      "date": 1608025255,
       "frag": 0,
       "vol": -1
     },
@@ -3963,6 +4098,33 @@
       "agg": 395,
       "chp": 395,
       "date": 1540684800,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 105713,
+      "name": "Sorceress 101",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 361,
+      "chp": 361,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 31,
+      "chp": 31,
+      "date": 1563433097,
       "frag": -1,
       "vol": -1
     },
@@ -5108,33 +5270,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 60944,
-      "name": "Martial Arts Master",
-      "rating": 7.5,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 450,
-      "chp": 450,
-      "date": 1548073097.508181,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 3394,
       "name": "Slavemancer",
       "rating": 6.24,
@@ -5236,33 +5371,6 @@
       "vol": -1
     },
     null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 57171,
-      "name": "Worthy of Respect in One Age",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1,
-      "chp": 1,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 10001,
-      "chp": 1,
-      "date": 1485840081,
-      "frag": 0,
-      "vol": 1
-    },
-    "The Sage Who Transcended Samsara"
   ],
   [
     {
@@ -5488,8 +5596,8 @@
       },
       "id": 111532,
       "name": "Inadvertently Invincible",
-      "rating": 1,
-      "rating_count": 1,
+      "rating": 3.5,
+      "rating_count": 2,
       "tl_type": "translated"
     },
     {
@@ -5499,9 +5607,9 @@
       "vol": -1
     },
     {
-      "agg": 194,
-      "chp": 194,
-      "date": 1607355652,
+      "agg": 199,
+      "chp": 199,
+      "date": 1608666445,
       "frag": 0,
       "vol": -1
     },
@@ -5580,9 +5688,9 @@
       "vol": -1
     },
     {
-      "agg": 427.0001,
-      "chp": 427,
-      "date": 1607467427,
+      "agg": 429.0001,
+      "chp": 429,
+      "date": 1608680546,
       "frag": 1,
       "vol": -1
     },
@@ -5715,9 +5823,9 @@
       "vol": 3
     },
     {
-      "agg": 40037,
-      "chp": 37,
-      "date": 1607359374,
+      "agg": 40045,
+      "chp": 45,
+      "date": 1608569072,
       "frag": 0,
       "vol": 4
     },
