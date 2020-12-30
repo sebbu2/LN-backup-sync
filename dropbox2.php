@@ -230,8 +230,8 @@ foreach($fns as $name=>$fn)
 						$res2=$wn->get_info_cached($v['data-bookid']);
 						$tl='';
 						if($res2[0]->Data->Type==1) $tl='translated';
-						if($res2[0]->Data->Type==2) $tl='eol';
-						assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
+						if($res2[0]->Data->Type==2) $tl='oel';
+						assert(in_array($tl, array('translated', 'oel'))) or die('wrong tl type');
 						var_dump('wn get_info',$res2[0]->Result, $res2[0]->Message, $res2[1]->Result, $res2[1]->Message);
 						$res=$wln->add($v['title'], $tl);
 						var_dump($res);
@@ -250,14 +250,14 @@ foreach($fns as $name=>$fn)
 				$res2=$wn->get_info_cached($res->data->books[0]->id);
 				$tl='';
 				if($res2[0]->Data->Type==1) $tl='translated';
-				if($res2[0]->Data->Type==2) $tl='eol';
-				assert(in_array($tl, array('translated', 'eol'))) or die('wrong tl type');
+				if($res2[0]->Data->Type==2) $tl='oel';
+				assert(in_array($tl, array('translated', 'oel'))) or die('wrong tl type');
 				//var_dump($res2);
 				var_dump('wn get_info',$res2[0]->Result, $res2[0]->Message, $res2[1]->Result, $res2[1]->Message);
 				$res=$wln->add($res->data->books[0]->name, $tl);
 				var_dump($res);
 				$updatedCount['wln']++;
-				die();
+				//die();
 			}
 			//*/
 		}

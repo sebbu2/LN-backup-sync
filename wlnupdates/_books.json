@@ -12,15 +12,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 717,
-      "chp": 717,
+      "agg": 731,
+      "chp": 731,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 48,
       "chp": 48,
-      "date": 1580270942,
+      "date": 1580252942,
       "frag": 0,
       "vol": -1
     },
@@ -47,7 +47,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1541614200,
+      "date": 1541596200,
       "frag": -1,
       "vol": 2
     },
@@ -66,15 +66,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 885,
-      "chp": 885,
+      "agg": 895,
+      "chp": 895,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 94,
       "chp": 94,
-      "date": 1558237506.728661,
+      "date": 1558223106.728661,
       "frag": -1,
       "vol": -1
     },
@@ -101,7 +101,7 @@
     {
       "agg": 501,
       "chp": 501,
-      "date": 1560493553.57118,
+      "date": 1560479153.57118,
       "frag": -1,
       "vol": -1
     },
@@ -115,24 +115,51 @@
       },
       "id": 56289,
       "name": "Daoist Gu",
-      "rating": 6.33333333333333,
+      "rating": 6.333333333333333,
       "rating_count": 9,
       "tl_type": "translated"
     },
     {
-      "agg": 12129,
-      "chp": 2129,
+      "agg": 12143,
+      "chp": 2143,
       "frag": -1,
       "vol": 1
     },
     {
       "agg": 10001,
       "chp": 1,
-      "date": 1540548779,
+      "date": 1540534379,
       "frag": 0,
       "vol": 1
     },
     "Reverend Insanity"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131662,
+      "name": "Elite Mages' Academy",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -174,15 +201,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1266,
-      "chp": 1266,
+      "agg": 1267,
+      "chp": 1267,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 100,
       "chp": 100,
-      "date": 1553699787.735877,
+      "date": 1553685387.735877,
       "frag": -1,
       "vol": -1
     },
@@ -201,15 +228,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 666,
-      "chp": 666,
+      "agg": 680,
+      "chp": 680,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 39,
       "chp": 39,
-      "date": 1578984126,
+      "date": 1578966126,
       "frag": 0,
       "vol": -1
     },
@@ -236,7 +263,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1604637162,
+      "date": 1604619162,
       "frag": 0,
       "vol": -1
     },
@@ -255,15 +282,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 531,
-      "chp": 531,
+      "agg": 538,
+      "chp": 538,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 100,
       "chp": 100,
-      "date": 1572581123,
+      "date": 1572566723,
       "frag": 0,
       "vol": -1
     },
@@ -277,20 +304,20 @@
       },
       "id": 116765,
       "name": "Five Frozen Centuries",
-      "rating": 7,
-      "rating_count": 6,
+      "rating": 6.142857142857143,
+      "rating_count": 7,
       "tl_type": "translated"
     },
     {
-      "agg": 281,
-      "chp": 281,
+      "agg": 295,
+      "chp": 295,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599134972,
+      "date": 1591334870,
       "frag": 0,
       "vol": -1
     },
@@ -309,46 +336,19 @@
       "tl_type": "translated"
     },
     {
-      "agg": 204,
-      "chp": 204,
+      "agg": 218,
+      "chp": 218,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 40,
       "chp": 40,
-      "date": 1598522186,
+      "date": 1598507786,
       "frag": 0,
       "vol": -1
     },
     null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 109601,
-      "name": "I Don't Want To Go Against The Sky",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 657,
-      "chp": 657,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 103,
-      "chp": 103,
-      "date": 1583511941,
-      "frag": 0,
-      "vol": -1
-    },
-    "I Don't Want To Defy The Heavens"
   ],
   [
     {
@@ -363,15 +363,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1315,
-      "chp": 1315,
+      "agg": 1323,
+      "chp": 1323,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 637,
       "chp": 637,
-      "date": 1547283459,
+      "date": 1547265459,
       "frag": -1,
       "vol": -1
     },
@@ -390,15 +390,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 523,
-      "chp": 523,
+      "agg": 537,
+      "chp": 537,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 1,
       "chp": 1,
-      "date": 1588036013,
+      "date": 1588021613,
       "frag": 0,
       "vol": -1
     },
@@ -417,15 +417,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 186,
-      "chp": 186,
+      "agg": 193,
+      "chp": 193,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1589529795,
+      "date": 1589515395,
       "frag": 0,
       "vol": -1
     },
@@ -444,15 +444,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 676,
-      "chp": 676,
+      "agg": 690,
+      "chp": 690,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 42,
       "chp": 42,
-      "date": 1582862959,
+      "date": 1582844959,
       "frag": 0,
       "vol": -1
     },
@@ -471,15 +471,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 510,
-      "chp": 510,
+      "agg": 524,
+      "chp": 524,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 39,
       "chp": 39,
-      "date": 1591243946,
+      "date": 1591229546,
       "frag": 0,
       "vol": -1
     },
@@ -498,15 +498,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 526,
-      "chp": 526,
+      "agg": 550,
+      "chp": 550,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 38,
       "chp": 38,
-      "date": 1587714520,
+      "date": 1587700120,
       "frag": 0,
       "vol": -1
     },
@@ -533,7 +533,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1571218200,
+      "date": 1571203800,
       "frag": 0,
       "vol": -1
     },
@@ -552,15 +552,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 242,
-      "chp": 242,
+      "agg": 260,
+      "chp": 260,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 38,
       "chp": 38,
-      "date": 1588932956,
+      "date": 1588918556,
       "frag": 0,
       "vol": -1
     },
@@ -579,15 +579,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 2763,
-      "chp": 2763,
+      "agg": 2772,
+      "chp": 2772,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 781,
       "chp": 781,
-      "date": 1538328000,
+      "date": 1538313600,
       "frag": 0,
       "vol": -1
     },
@@ -606,15 +606,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1236,
-      "chp": 1236,
+      "agg": 1246,
+      "chp": 1246,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 87,
       "chp": 87,
-      "date": 1552729365.734592,
+      "date": 1552714965.734592,
       "frag": -1,
       "vol": -1
     },
@@ -641,7 +641,7 @@
     {
       "agg": 10074,
       "chp": 74,
-      "date": 1571466815,
+      "date": 1571452415,
       "frag": 0,
       "vol": 1
     },
@@ -660,15 +660,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 653,
-      "chp": 653,
+      "agg": 664,
+      "chp": 664,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 110,
       "chp": 110,
-      "date": 1577894406,
+      "date": 1577876406,
       "frag": 0,
       "vol": -1
     },
@@ -687,15 +687,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1130,
-      "chp": 1130,
+      "agg": 1141,
+      "chp": 1141,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 151,
       "chp": 151,
-      "date": 1578110701,
+      "date": 1578092701,
       "frag": 0,
       "vol": -1
     },
@@ -722,7 +722,7 @@
     {
       "agg": 128,
       "chp": 128,
-      "date": 1552111120,
+      "date": 1552093120,
       "frag": -1,
       "vol": -1
     },
@@ -749,7 +749,7 @@
     {
       "agg": 125,
       "chp": 125,
-      "date": 1543059312,
+      "date": 1543041312,
       "frag": 0,
       "vol": -1
     },
@@ -776,7 +776,7 @@
     {
       "agg": 580,
       "chp": 580,
-      "date": 1535831400,
+      "date": 1535817000,
       "frag": -1,
       "vol": -1
     },
@@ -803,7 +803,7 @@
     {
       "agg": 112,
       "chp": 112,
-      "date": 1547725138.812052,
+      "date": 1547707138.812052,
       "frag": -1,
       "vol": -1
     },
@@ -830,7 +830,7 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488982196,
+      "date": 1488964242,
       "frag": 0,
       "vol": 3
     },
@@ -857,7 +857,7 @@
     {
       "agg": 381,
       "chp": 381,
-      "date": 1534215600,
+      "date": 1534201200,
       "frag": 0,
       "vol": -1
     },
@@ -871,7 +871,7 @@
       },
       "id": 42052,
       "name": "Galactic Dark Net",
-      "rating": 7.33333333333333,
+      "rating": 7.333333333333333,
       "rating_count": 3,
       "tl_type": "translated"
     },
@@ -884,7 +884,7 @@
     {
       "agg": 470,
       "chp": 470,
-      "date": 1511556600,
+      "date": 1511538600,
       "frag": -1,
       "vol": -1
     },
@@ -898,7 +898,7 @@
       },
       "id": 35069,
       "name": "God Of Slaughter",
-      "rating": 7.1219512195122,
+      "rating": 7.121951219512195,
       "rating_count": 41,
       "tl_type": "translated"
     },
@@ -923,6 +923,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 109601,
+      "name": "I Don't Want To Go Against The Sky",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 660,
+      "chp": 660,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 103,
+      "chp": 103,
+      "date": 1583493941,
+      "frag": 0,
+      "vol": -1
+    },
+    "I Don't Want To Defy The Heavens"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 90644,
       "name": "I Found A Planet",
       "rating": null,
@@ -938,7 +965,7 @@
     {
       "agg": 117,
       "chp": 117,
-      "date": 1562597824,
+      "date": 1562583424,
       "frag": -1,
       "vol": -1
     },
@@ -965,7 +992,7 @@
     {
       "agg": 370,
       "chp": 370,
-      "date": 1574069241,
+      "date": 1574051241,
       "frag": 0,
       "vol": -1
     },
@@ -992,7 +1019,7 @@
     {
       "agg": 1851,
       "chp": 1851,
-      "date": 1571664160.027093,
+      "date": 1571649760.027093,
       "frag": -1,
       "vol": -1
     },
@@ -1019,7 +1046,7 @@
     {
       "agg": 131,
       "chp": 131,
-      "date": 1573179160,
+      "date": 1573161160,
       "frag": 0,
       "vol": -1
     },
@@ -1033,7 +1060,7 @@
       },
       "id": 34065,
       "name": "My Disciple Died Yet Again",
-      "rating": 8.16666666666667,
+      "rating": 8.166666666666666,
       "rating_count": 6,
       "tl_type": "translated"
     },
@@ -1046,7 +1073,7 @@
     {
       "agg": 393,
       "chp": 393,
-      "date": 1534644013,
+      "date": 1534629613,
       "frag": 0,
       "vol": -1
     },
@@ -1073,7 +1100,7 @@
     {
       "agg": 31,
       "chp": 31,
-      "date": 1555146651.353232,
+      "date": 1555132251.353232,
       "frag": -1,
       "vol": -1
     },
@@ -1100,7 +1127,7 @@
     {
       "agg": 709,
       "chp": 709,
-      "date": 1556966515,
+      "date": 1556952115,
       "frag": -1,
       "vol": -1
     },
@@ -1114,7 +1141,7 @@
       },
       "id": 34070,
       "name": "Otherworldly Evil Monarch",
-      "rating": 7.23809523809524,
+      "rating": 7.238095238095238,
       "rating_count": 21,
       "tl_type": "translated"
     },
@@ -1127,7 +1154,7 @@
     {
       "agg": 20565,
       "chp": 565,
-      "date": 1537299000,
+      "date": 1537284600,
       "frag": -1,
       "vol": 2
     },
@@ -1154,7 +1181,7 @@
     {
       "agg": 88,
       "chp": 88,
-      "date": 1562357233,
+      "date": 1562342833,
       "frag": -1,
       "vol": -1
     },
@@ -1168,7 +1195,7 @@
       },
       "id": 43524,
       "name": "Release that Witch",
-      "rating": 7.55555555555556,
+      "rating": 7.555555555555555,
       "rating_count": 9,
       "tl_type": "translated"
     },
@@ -1181,7 +1208,7 @@
     {
       "agg": 1357.0001,
       "chp": 1357,
-      "date": 1552559963,
+      "date": 1552545563,
       "frag": 1,
       "vol": -1
     },
@@ -1208,7 +1235,7 @@
     {
       "agg": 724,
       "chp": 724,
-      "date": 1562294921.418731,
+      "date": 1562280521.418731,
       "frag": -1,
       "vol": -1
     },
@@ -1235,7 +1262,7 @@
     {
       "agg": 122,
       "chp": 122,
-      "date": 1514088300,
+      "date": 1514070300,
       "frag": 0,
       "vol": -1
     },
@@ -1249,7 +1276,7 @@
       },
       "id": 57067,
       "name": "The Wizard World",
-      "rating": 8.33333333333333,
+      "rating": 8.333333333333334,
       "rating_count": 3,
       "tl_type": "translated"
     },
@@ -1262,7 +1289,7 @@
     {
       "agg": 595,
       "chp": 595,
-      "date": 1540856728.280401,
+      "date": 1540842328.280401,
       "frag": -1,
       "vol": -1
     },
@@ -1289,7 +1316,7 @@
     {
       "agg": 73,
       "chp": 73,
-      "date": 1570353688,
+      "date": 1570339288,
       "frag": 0,
       "vol": -1
     },
@@ -1303,7 +1330,7 @@
       },
       "id": 33500,
       "name": "Warlock of the Magus World",
-      "rating": 8.11764705882353,
+      "rating": 8.117647058823529,
       "rating_count": 34,
       "tl_type": "translated"
     },
@@ -1316,7 +1343,7 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1512634350,
+      "date": 1513653467,
       "frag": 0,
       "vol": -1
     },
@@ -1343,7 +1370,7 @@
     {
       "agg": 57,
       "chp": 57,
-      "date": 1583456700,
+      "date": 1583438700,
       "frag": -1,
       "vol": -1
     },
@@ -1357,7 +1384,7 @@
       },
       "id": 62924,
       "name": "Godly Empress Doctor",
-      "rating": 6.44444444444444,
+      "rating": 6.444444444444445,
       "rating_count": 9,
       "tl_type": "translated"
     },
@@ -1370,7 +1397,7 @@
     {
       "agg": 278,
       "chp": 278,
-      "date": 1537089174,
+      "date": 1537074774,
       "frag": 0,
       "vol": -1
     },
@@ -1384,7 +1411,7 @@
       },
       "id": 46295,
       "name": "Grasping Evil",
-      "rating": 7.61538461538461,
+      "rating": 7.615384615384615,
       "rating_count": 13,
       "tl_type": "translated"
     },
@@ -1397,7 +1424,7 @@
     {
       "agg": 395.0002,
       "chp": 395,
-      "date": 1596216322,
+      "date": 1596201922,
       "frag": 2,
       "vol": -1
     },
@@ -1411,7 +1438,7 @@
       },
       "id": 44136,
       "name": "King of Gods",
-      "rating": 7.71428571428571,
+      "rating": 7.714285714285714,
       "rating_count": 7,
       "tl_type": "translated"
     },
@@ -1424,7 +1451,7 @@
     {
       "agg": 852,
       "chp": 852,
-      "date": 1539261300,
+      "date": 1539246900,
       "frag": 0,
       "vol": -1
     },
@@ -1451,7 +1478,7 @@
     {
       "agg": 110,
       "chp": 110,
-      "date": 1565663918,
+      "date": 1565649518,
       "frag": 0,
       "vol": -1
     },
@@ -1505,7 +1532,7 @@
     {
       "agg": 498,
       "chp": 498,
-      "date": 1547474287.089825,
+      "date": 1547456287.089825,
       "frag": -1,
       "vol": -1
     },
@@ -1532,7 +1559,7 @@
     {
       "agg": 76,
       "chp": 76,
-      "date": 1544756035,
+      "date": 1544738035,
       "frag": 0,
       "vol": -1
     },
@@ -1551,8 +1578,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 254,
-      "chp": 254,
+      "agg": 257,
+      "chp": 257,
       "frag": -1,
       "vol": -1
     },
@@ -1578,15 +1605,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1170,
-      "chp": 1170,
+      "agg": 1191,
+      "chp": 1191,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 21,
       "chp": 21,
-      "date": 1562423939,
+      "date": 1562409539,
       "frag": -1,
       "vol": -1
     },
@@ -1600,21 +1627,48 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.99009900990099,
+      "rating": 9.990099009900991,
       "rating_count": 101,
       "tl_type": "oel"
     },
     {
-      "agg": 657,
-      "chp": 657,
+      "agg": 660,
+      "chp": 660,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 655.0001,
-      "chp": 655,
-      "date": 1608614040,
-      "frag": 1,
+      "agg": 659.0005,
+      "chp": 659,
+      "date": 1609294680,
+      "frag": 5,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 117750,
+      "name": "Death... and me",
+      "rating": 8.5,
+      "rating_count": 2,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 293,
+      "chp": 293,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 51,
+      "chp": 51,
+      "date": 1594817040,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -1659,8 +1713,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 146,
-      "chp": 146,
+      "agg": 153,
+      "chp": 153,
       "frag": -1,
       "vol": -1
     },
@@ -1681,8 +1735,8 @@
       },
       "id": 128343,
       "name": "I got summoned to another world then married a yandere",
-      "rating": 5.4,
-      "rating_count": 5,
+      "rating": 5,
+      "rating_count": 6,
       "tl_type": "oel"
     },
     {
@@ -1721,7 +1775,7 @@
     {
       "agg": 81,
       "chp": 81,
-      "date": 1562862250,
+      "date": 1562847850,
       "frag": -1,
       "vol": -1
     },
@@ -1740,8 +1794,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 444,
-      "chp": 444,
+      "agg": 459,
+      "chp": 459,
       "frag": -1,
       "vol": -1
     },
@@ -1767,16 +1821,43 @@
       "tl_type": "oel"
     },
     {
-      "agg": 707,
-      "chp": 707,
+      "agg": 714,
+      "chp": 714,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 128,
       "chp": 128,
-      "date": 1601906400,
+      "date": 1601892000,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131608,
+      "name": "Lightning Is the Only Way",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 263,
+      "chp": 263,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -1794,15 +1875,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 636,
-      "chp": 636,
+      "agg": 641,
+      "chp": 641,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 131,
       "chp": 131,
-      "date": 1563299268,
+      "date": 1563284868,
       "frag": -1,
       "vol": -1
     },
@@ -1848,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 505,
-      "chp": 505,
+      "agg": 520,
+      "chp": 520,
       "frag": -1,
       "vol": -1
     },
@@ -1870,20 +1951,20 @@
       },
       "id": 100769,
       "name": "Nanomancer Reborn - I've Become A Snow Girl?",
-      "rating": 6.7741935483871,
+      "rating": 6.774193548387097,
       "rating_count": 31,
       "tl_type": "oel"
     },
     {
-      "agg": 850,
-      "chp": 850,
+      "agg": 868,
+      "chp": 868,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 44,
       "chp": 44,
-      "date": 1563532850,
+      "date": 1563518450,
       "frag": -1,
       "vol": -1
     },
@@ -1910,7 +1991,7 @@
     {
       "agg": 320248,
       "chp": 248,
-      "date": 1545603168,
+      "date": 1545585168,
       "frag": 0,
       "vol": 32
     },
@@ -1991,7 +2072,7 @@
     {
       "agg": 81,
       "chp": 81,
-      "date": 1539058164,
+      "date": 1539043764,
       "frag": 0,
       "vol": -1
     },
@@ -2010,15 +2091,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 222,
-      "chp": 222,
+      "agg": 229,
+      "chp": 229,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 11,
       "chp": 11,
-      "date": 1560453846.336022,
+      "date": 1547303964,
       "frag": -1,
       "vol": -1
     },
@@ -2037,15 +2118,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20537,
-      "chp": 537,
+      "agg": 20540,
+      "chp": 540,
       "frag": -1,
       "vol": 2
     },
     {
       "agg": 20022,
       "chp": 22,
-      "date": 1542890295,
+      "date": 1542872295,
       "frag": 0,
       "vol": 2
     },
@@ -2064,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 240,
-      "chp": 240,
+      "agg": 247,
+      "chp": 247,
       "frag": -1,
       "vol": -1
     },
@@ -2091,15 +2172,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 294,
-      "chp": 294,
+      "agg": 296,
+      "chp": 296,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 74,
       "chp": 74,
-      "date": 1583447690,
+      "date": 1583429690,
       "frag": 0,
       "vol": -1
     },
@@ -2118,15 +2199,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 962,
-      "chp": 962,
+      "agg": 976,
+      "chp": 976,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 79,
       "chp": 79,
-      "date": 1557369219.346099,
+      "date": 1557354819.346099,
       "frag": -1,
       "vol": -1
     },
@@ -2145,8 +2226,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 214,
-      "chp": 214,
+      "agg": 219,
+      "chp": 219,
       "frag": -1,
       "vol": -1
     },
@@ -2172,8 +2253,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 273,
-      "chp": 273,
+      "agg": 280,
+      "chp": 280,
       "frag": -1,
       "vol": -1
     },
@@ -2199,8 +2280,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 158,
-      "chp": 158,
+      "agg": 161,
+      "chp": 161,
       "frag": -1,
       "vol": -1
     },
@@ -2219,6 +2300,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 119126,
+      "name": "The Oracle Paths",
+      "rating": 4,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 348,
+      "chp": 348,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 28,
+      "chp": 28,
+      "date": 1597048920,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 119303,
       "name": "What do you mean my cute disciples are yanderes?",
       "rating": null,
@@ -2226,8 +2334,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 373,
-      "chp": 373,
+      "agg": 380,
+      "chp": 380,
       "frag": -1,
       "vol": -1
     },
@@ -2253,8 +2361,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 6,
-      "chp": 6,
+      "agg": 7,
+      "chp": 7,
       "frag": -1,
       "vol": -1
     },
@@ -2302,7 +2410,7 @@
       },
       "id": 129496,
       "name": "A Cultivation Tale: The Godly Punisher",
-      "rating": 6.66666666666667,
+      "rating": 6.666666666666667,
       "rating_count": 3,
       "tl_type": "oel"
     },
@@ -2342,7 +2450,7 @@
     {
       "agg": 38.0002,
       "chp": 38,
-      "date": 1599709560,
+      "date": 1599695160,
       "frag": 2,
       "vol": -1
     },
@@ -2369,7 +2477,7 @@
     {
       "agg": 80,
       "chp": 80,
-      "date": 1593879978,
+      "date": 1593865578,
       "frag": 0,
       "vol": -1
     },
@@ -2396,7 +2504,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1593143884,
+      "date": 1593129484,
       "frag": 0,
       "vol": -1
     },
@@ -2423,7 +2531,7 @@
     {
       "agg": 297,
       "chp": 297,
-      "date": 1543284358,
+      "date": 1543266358,
       "frag": 0,
       "vol": -1
     },
@@ -2450,7 +2558,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1591345650,
+      "date": 1591331250,
       "frag": 0,
       "vol": -1
     },
@@ -2531,7 +2639,7 @@
     {
       "agg": 160,
       "chp": 160,
-      "date": 1547875094.130673,
+      "date": 1547857094.130673,
       "frag": -1,
       "vol": -1
     },
@@ -2545,8 +2653,8 @@
       },
       "id": 57702,
       "name": "Doomsday Wonderland",
-      "rating": 8.42857142857143,
-      "rating_count": 7,
+      "rating": 8.625,
+      "rating_count": 8,
       "tl_type": "translated"
     },
     {
@@ -2556,10 +2664,10 @@
       "vol": -1
     },
     {
-      "agg": 857.0002,
-      "chp": 857,
-      "date": 1608742131.575172,
-      "frag": 2,
+      "agg": 858.0001,
+      "chp": 858,
+      "date": 1609010911.699979,
+      "frag": 1,
       "vol": -1
     },
     null
@@ -2585,8 +2693,35 @@
     {
       "agg": 119.0001,
       "chp": 119,
-      "date": 1606536060,
+      "date": 1606518060,
       "frag": 1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 35666,
+      "name": "Fantastic Creatures' Travelogue",
+      "rating": 8,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -2599,7 +2734,7 @@
       },
       "id": 130483,
       "name": "Fey Evolution Merchant",
-      "rating": 5.33333333333333,
+      "rating": 5.333333333333333,
       "rating_count": 3,
       "tl_type": "translated"
     },
@@ -2612,7 +2747,7 @@
     {
       "agg": 38,
       "chp": 38,
-      "date": 1606452728,
+      "date": 1606434728,
       "frag": 0,
       "vol": -1
     },
@@ -2639,7 +2774,7 @@
     {
       "agg": 10,
       "chp": 10,
-      "date": 1593359157,
+      "date": 1593344757,
       "frag": 0,
       "vol": -1
     },
@@ -2666,7 +2801,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1593143530,
+      "date": 1593129130,
       "frag": 0,
       "vol": -1
     },
@@ -2720,7 +2855,7 @@
     {
       "agg": 450,
       "chp": 450,
-      "date": 1548073097.508181,
+      "date": 1548055097.508181,
       "frag": -1,
       "vol": -1
     },
@@ -2747,7 +2882,7 @@
     {
       "agg": 38,
       "chp": 38,
-      "date": 1594351436,
+      "date": 1594337036,
       "frag": 0,
       "vol": -1
     },
@@ -2774,7 +2909,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1594967852,
+      "date": 1594953452,
       "frag": 0,
       "vol": -1
     },
@@ -2801,7 +2936,7 @@
     {
       "agg": 22,
       "chp": 22,
-      "date": 1560818087.488112,
+      "date": 1560803687.488112,
       "frag": -1,
       "vol": -1
     },
@@ -2855,7 +2990,7 @@
     {
       "agg": 38,
       "chp": 38,
-      "date": 1594375300,
+      "date": 1594360900,
       "frag": 0,
       "vol": -1
     },
@@ -2936,7 +3071,7 @@
     {
       "agg": 118,
       "chp": 118,
-      "date": 1565263246,
+      "date": 1565248846,
       "frag": 0,
       "vol": -1
     },
@@ -2963,7 +3098,7 @@
     {
       "agg": 38,
       "chp": 38,
-      "date": 1601605465,
+      "date": 1601591065,
       "frag": 0,
       "vol": -1
     },
@@ -3017,7 +3152,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1598521987,
+      "date": 1598507587,
       "frag": 0,
       "vol": -1
     },
@@ -3071,7 +3206,7 @@
     {
       "agg": 218,
       "chp": 218,
-      "date": 1562428778,
+      "date": 1562414378,
       "frag": -1,
       "vol": -1
     },
@@ -3098,7 +3233,7 @@
     {
       "agg": 3,
       "chp": 3,
-      "date": 1577839560,
+      "date": 1577821560,
       "frag": 0,
       "vol": -1
     },
@@ -3139,8 +3274,8 @@
       },
       "id": 114918,
       "name": "Psychic Parasite",
-      "rating": 7,
-      "rating_count": 2,
+      "rating": 8,
+      "rating_count": 3,
       "tl_type": "oel"
     },
     {
@@ -3152,7 +3287,7 @@
     {
       "agg": 5,
       "chp": 5,
-      "date": 1587804141,
+      "date": 1587789741,
       "frag": 0,
       "vol": -1
     },
@@ -3166,7 +3301,7 @@
       },
       "id": 117074,
       "name": "Races: Online ( VR Smartphone App)",
-      "rating": 9.33333333333333,
+      "rating": 9.333333333333334,
       "rating_count": 3,
       "tl_type": "oel"
     },
@@ -3179,7 +3314,7 @@
     {
       "agg": 69,
       "chp": 69,
-      "date": 1602497580,
+      "date": 1602483180,
       "frag": 0,
       "vol": -1
     },
@@ -3260,7 +3395,7 @@
     {
       "agg": 122,
       "chp": 122,
-      "date": 1566853216,
+      "date": 1566838816,
       "frag": 0,
       "vol": -1
     },
@@ -3287,7 +3422,7 @@
     {
       "agg": 137,
       "chp": 137,
-      "date": 1529488800,
+      "date": 1529474400,
       "frag": 0,
       "vol": -1
     },
@@ -3301,7 +3436,7 @@
       },
       "id": 54999,
       "name": "Strongest Abandoned Son",
-      "rating": 7.33333333333333,
+      "rating": 7.333333333333333,
       "rating_count": 9,
       "tl_type": "translated"
     },
@@ -3314,7 +3449,7 @@
     {
       "agg": 592,
       "chp": 592,
-      "date": 1524450600,
+      "date": 1524436200,
       "frag": 0,
       "vol": -1
     },
@@ -3341,7 +3476,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1600402379,
+      "date": 1600387979,
       "frag": 0,
       "vol": -1
     },
@@ -3368,7 +3503,7 @@
     {
       "agg": 156,
       "chp": 156,
-      "date": 1585759320,
+      "date": 1585744920,
       "frag": -1,
       "vol": -1
     },
@@ -3395,7 +3530,7 @@
     {
       "agg": 7.0005,
       "chp": 7,
-      "date": 1582881939,
+      "date": 1582863939,
       "frag": 5,
       "vol": -1
     },
@@ -3449,7 +3584,7 @@
     {
       "agg": 71,
       "chp": 71,
-      "date": 1555245239.101984,
+      "date": 1555230839.101984,
       "frag": -1,
       "vol": -1
     },
@@ -3476,7 +3611,7 @@
     {
       "agg": 131,
       "chp": 131,
-      "date": 1536854700,
+      "date": 1536840300,
       "frag": 0,
       "vol": -1
     },
@@ -3488,22 +3623,22 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 119126,
-      "name": "The Oracle Paths",
-      "rating": 4,
+      "id": 110447,
+      "name": "The Record of Unusual Creatures",
+      "rating": 3,
       "rating_count": 1,
-      "tl_type": "oel"
+      "tl_type": "translated"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 0,
+      "chp": -1,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 28,
-      "chp": 28,
-      "date": 1597063320,
+      "agg": 0,
+      "chp": -1,
+      "date": null,
       "frag": -1,
       "vol": -1
     },
@@ -3557,7 +3692,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1601605820,
+      "date": 1601591420,
       "frag": 0,
       "vol": -1
     },
@@ -3584,7 +3719,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1590741955,
+      "date": 1590727555,
       "frag": 0,
       "vol": -1
     },
@@ -3598,7 +3733,7 @@
       },
       "id": 70536,
       "name": "Ultimate Goddess System",
-      "rating": 6.33333333333333,
+      "rating": 6.333333333333333,
       "rating_count": 6,
       "tl_type": "oel"
     },
@@ -3611,7 +3746,7 @@
     {
       "agg": 92,
       "chp": 92,
-      "date": 1552974646.200902,
+      "date": 1552960246.200902,
       "frag": -1,
       "vol": -1
     },
@@ -3665,7 +3800,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1593142615,
+      "date": 1593128215,
       "frag": 0,
       "vol": -1
     },
@@ -3692,7 +3827,7 @@
     {
       "agg": 708,
       "chp": 708,
-      "date": 1592456400,
+      "date": 1592442000,
       "frag": 0,
       "vol": -1
     },
@@ -3719,11 +3854,38 @@
     {
       "agg": 10001,
       "chp": 1,
-      "date": 1485840081,
+      "date": 1485822081,
       "frag": 0,
       "vol": 1
     },
     "The Sage Who Transcended Samsara"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 55155,
+      "name": "Xyrin Empire",
+      "rating": 8.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 15,
+      "chp": 15,
+      "date": 1496957185,
+      "frag": 0,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -3746,7 +3908,7 @@
     {
       "agg": 513,
       "chp": 513,
-      "date": 1585973196,
+      "date": 1585958796,
       "frag": 0,
       "vol": -1
     },
@@ -3773,7 +3935,7 @@
     {
       "agg": 106,
       "chp": 106,
-      "date": 1593093899,
+      "date": 1593079499,
       "frag": 0,
       "vol": -1
     },
@@ -3800,7 +3962,7 @@
     {
       "agg": 102,
       "chp": 102,
-      "date": 1579147707,
+      "date": 1579129707,
       "frag": 0,
       "vol": -1
     },
@@ -3827,7 +3989,7 @@
     {
       "agg": 74,
       "chp": 74,
-      "date": 1579147744,
+      "date": 1579129744,
       "frag": 0,
       "vol": -1
     },
@@ -3908,7 +4070,7 @@
     {
       "agg": 638,
       "chp": 638,
-      "date": 1575334804,
+      "date": 1575316804,
       "frag": 0,
       "vol": -1
     },
@@ -3935,7 +4097,7 @@
     {
       "agg": 39,
       "chp": 39,
-      "date": 1578987253,
+      "date": 1578969253,
       "frag": 0,
       "vol": -1
     },
@@ -3962,7 +4124,7 @@
     {
       "agg": 30,
       "chp": 30,
-      "date": 1573502400,
+      "date": 1573484400,
       "frag": 0,
       "vol": -1
     },
@@ -3989,7 +4151,7 @@
     {
       "agg": 34,
       "chp": 34,
-      "date": 1601433100,
+      "date": 1601418700,
       "frag": 0,
       "vol": -1
     },
@@ -4016,7 +4178,7 @@
     {
       "agg": 80,
       "chp": 80,
-      "date": 1580014551,
+      "date": 1579996551,
       "frag": 0,
       "vol": -1
     },
@@ -4043,7 +4205,7 @@
     {
       "agg": 44,
       "chp": 44,
-      "date": 1581959234,
+      "date": 1581941234,
       "frag": 0,
       "vol": -1
     },
@@ -4068,9 +4230,9 @@
       "vol": -1
     },
     {
-      "agg": 170,
-      "chp": 170,
-      "date": 1608025255,
+      "agg": 180,
+      "chp": 180,
+      "date": 1608893022,
       "frag": 0,
       "vol": -1
     },
@@ -4097,7 +4259,7 @@
     {
       "agg": 395,
       "chp": 395,
-      "date": 1540684800,
+      "date": 1540670400,
       "frag": -1,
       "vol": -1
     },
@@ -4124,7 +4286,7 @@
     {
       "agg": 31,
       "chp": 31,
-      "date": 1563433097,
+      "date": 1563418697,
       "frag": -1,
       "vol": -1
     },
@@ -4151,7 +4313,7 @@
     {
       "agg": 94,
       "chp": 94,
-      "date": 1543460642,
+      "date": 1543442642,
       "frag": 0,
       "vol": -1
     },
@@ -4178,7 +4340,7 @@
     {
       "agg": 38,
       "chp": 38,
-      "date": 1581938885,
+      "date": 1581920885,
       "frag": 0,
       "vol": -1
     },
@@ -4205,7 +4367,7 @@
     {
       "agg": 301,
       "chp": 301,
-      "date": 1557338400,
+      "date": 1557324000,
       "frag": 0,
       "vol": -1
     },
@@ -4232,7 +4394,7 @@
     {
       "agg": 113,
       "chp": 113,
-      "date": 1547285008.845037,
+      "date": 1547267008.845037,
       "frag": -1,
       "vol": -1
     },
@@ -4259,7 +4421,7 @@
     {
       "agg": 432,
       "chp": 432,
-      "date": 1575943253,
+      "date": 1575925253,
       "frag": 0,
       "vol": -1
     },
@@ -4286,7 +4448,7 @@
     {
       "agg": 92,
       "chp": 92,
-      "date": 1578110866,
+      "date": 1578092866,
       "frag": 0,
       "vol": -1
     },
@@ -4313,7 +4475,7 @@
     {
       "agg": 166,
       "chp": 166,
-      "date": 1585620045,
+      "date": 1585605645,
       "frag": 0,
       "vol": -1
     },
@@ -4340,7 +4502,7 @@
     {
       "agg": 284,
       "chp": 284,
-      "date": 1517072460,
+      "date": 1517054460,
       "frag": -1,
       "vol": -1
     },
@@ -4381,8 +4543,8 @@
       },
       "id": 60014,
       "name": "100% Sweet Love: The Delinquent XXX Wife Is a Bit Sweet",
-      "rating": 7.77777777777778,
-      "rating_count": 18,
+      "rating": 7.7894736842105265,
+      "rating_count": 19,
       "tl_type": "translated"
     },
     {
@@ -4394,7 +4556,7 @@
     {
       "agg": 95,
       "chp": 95,
-      "date": 1514999156,
+      "date": 1514981156,
       "frag": 0,
       "vol": -1
     },
@@ -4421,7 +4583,7 @@
     {
       "agg": 129,
       "chp": 129,
-      "date": 1556616699,
+      "date": 1556602299,
       "frag": -1,
       "vol": -1
     },
@@ -4448,7 +4610,7 @@
     {
       "agg": 1107,
       "chp": 1107,
-      "date": 1577938711,
+      "date": 1577920711,
       "frag": 0,
       "vol": -1
     },
@@ -4462,7 +4624,7 @@
       },
       "id": 48692,
       "name": "Evil Emperor's Wild Consort",
-      "rating": 6.38888888888889,
+      "rating": 6.388888888888889,
       "rating_count": 18,
       "tl_type": "translated"
     },
@@ -4475,7 +4637,7 @@
     {
       "agg": 292,
       "chp": 292,
-      "date": 1510026239,
+      "date": 1510008239,
       "frag": 0,
       "vol": -1
     },
@@ -4502,7 +4664,7 @@
     {
       "agg": 336,
       "chp": 336,
-      "date": 1521292180,
+      "date": 1521277780,
       "frag": 0,
       "vol": -1
     },
@@ -4516,7 +4678,7 @@
       },
       "id": 43213,
       "name": "Genius Doctor: Black Belly Miss",
-      "rating": 6.75862068965517,
+      "rating": 6.758620689655173,
       "rating_count": 29,
       "tl_type": "translated"
     },
@@ -4529,7 +4691,7 @@
     {
       "agg": 1977,
       "chp": 1977,
-      "date": 1537098666,
+      "date": 1537084266,
       "frag": 0,
       "vol": -1
     },
@@ -4556,7 +4718,7 @@
     {
       "agg": 373,
       "chp": 373,
-      "date": 1567000322,
+      "date": 1566985922,
       "frag": 0,
       "vol": -1
     },
@@ -4583,7 +4745,7 @@
     {
       "agg": 609,
       "chp": 609,
-      "date": 1542016800,
+      "date": 1541998800,
       "frag": 0,
       "vol": -1
     },
@@ -4610,7 +4772,7 @@
     {
       "agg": 500,
       "chp": 500,
-      "date": 1566867604,
+      "date": 1566853204,
       "frag": 0,
       "vol": -1
     },
@@ -4637,7 +4799,7 @@
     {
       "agg": 140019,
       "chp": 19,
-      "date": 1523950976,
+      "date": 1523936576,
       "frag": 0,
       "vol": 14
     },
@@ -4664,7 +4826,7 @@
     {
       "agg": 278,
       "chp": 278,
-      "date": 1537048623,
+      "date": 1537034223,
       "frag": 0,
       "vol": -1
     },
@@ -4691,7 +4853,7 @@
     {
       "agg": 760,
       "chp": 760,
-      "date": 1536501600,
+      "date": 1536487200,
       "frag": 0,
       "vol": -1
     },
@@ -4718,7 +4880,7 @@
     {
       "agg": 100,
       "chp": 100,
-      "date": 1510352290,
+      "date": 1510334290,
       "frag": 0,
       "vol": -1
     },
@@ -4745,7 +4907,7 @@
     {
       "agg": 116,
       "chp": 116,
-      "date": 1547318214.65684,
+      "date": 1547300214.65684,
       "frag": -1,
       "vol": -1
     },
@@ -4772,7 +4934,7 @@
     {
       "agg": 455,
       "chp": 455,
-      "date": 1527023400,
+      "date": 1527009000,
       "frag": 0,
       "vol": -1
     },
@@ -4786,7 +4948,7 @@
       },
       "id": 49310,
       "name": "Paradise of Demons and Gods",
-      "rating": 7.33333333333333,
+      "rating": 7.333333333333333,
       "rating_count": 6,
       "tl_type": "translated"
     },
@@ -4799,7 +4961,7 @@
     {
       "agg": 427,
       "chp": 427,
-      "date": 1509966704,
+      "date": 1509948704,
       "frag": 0,
       "vol": -1
     },
@@ -4813,7 +4975,7 @@
       },
       "id": 57270,
       "name": "Prodigiously Amazing Weaponsmith",
-      "rating": 7.72727272727273,
+      "rating": 7.7272727272727275,
       "rating_count": 11,
       "tl_type": "translated"
     },
@@ -4826,7 +4988,7 @@
     {
       "agg": 56,
       "chp": 56,
-      "date": 1578947514,
+      "date": 1578929514,
       "frag": 0,
       "vol": -1
     },
@@ -4853,7 +5015,7 @@
     {
       "agg": 59,
       "chp": 59,
-      "date": 1539662400,
+      "date": 1539648000,
       "frag": 0,
       "vol": -1
     },
@@ -4880,7 +5042,7 @@
     {
       "agg": 84,
       "chp": 84,
-      "date": 1558144502.013319,
+      "date": 1558130102.013319,
       "frag": -1,
       "vol": -1
     },
@@ -4907,7 +5069,7 @@
     {
       "agg": 72,
       "chp": 72,
-      "date": 1601576640,
+      "date": 1601562240,
       "frag": -1,
       "vol": -1
     },
@@ -4934,7 +5096,7 @@
     {
       "agg": 213,
       "chp": 213,
-      "date": 1543662337,
+      "date": 1543644337,
       "frag": 0,
       "vol": -1
     },
@@ -4948,7 +5110,7 @@
       },
       "id": 34998,
       "name": "The Avalon Of Five Elements",
-      "rating": 6.28571428571429,
+      "rating": 6.285714285714286,
       "rating_count": 7,
       "tl_type": "translated"
     },
@@ -4961,7 +5123,7 @@
     {
       "agg": 691,
       "chp": 691,
-      "date": 1545055944,
+      "date": 1545037944,
       "frag": 0,
       "vol": -1
     },
@@ -4988,7 +5150,7 @@
     {
       "agg": 898,
       "chp": 898,
-      "date": 1568191427,
+      "date": 1568177027,
       "frag": 0,
       "vol": -1
     },
@@ -5002,7 +5164,7 @@
       },
       "id": 34481,
       "name": "The Magus Era",
-      "rating": 8.77777777777778,
+      "rating": 8.777777777777779,
       "rating_count": 9,
       "tl_type": "translated"
     },
@@ -5015,7 +5177,7 @@
     {
       "agg": 741,
       "chp": 741,
-      "date": 1509974814,
+      "date": 1509956814,
       "frag": 0,
       "vol": -1
     },
@@ -5042,7 +5204,7 @@
     {
       "agg": 680,
       "chp": 680,
-      "date": 1546553343,
+      "date": 1546535343,
       "frag": 0,
       "vol": -1
     },
@@ -5056,7 +5218,7 @@
       },
       "id": 58288,
       "name": "War Sovereign Soaring The Heavens",
-      "rating": 6.57575757575758,
+      "rating": 6.575757575757576,
       "rating_count": 33,
       "tl_type": "translated"
     },
@@ -5069,7 +5231,7 @@
     {
       "agg": 1130,
       "chp": 1130,
-      "date": 1547320899.630611,
+      "date": 1547302899.630611,
       "frag": -1,
       "vol": -1
     },
@@ -5083,7 +5245,7 @@
       },
       "id": 35887,
       "name": "Wu Dong Qian Kun",
-      "rating": 9.33333333333333,
+      "rating": 9.333333333333334,
       "rating_count": 12,
       "tl_type": "translated"
     },
@@ -5096,7 +5258,7 @@
     {
       "agg": 1311,
       "chp": 1311,
-      "date": 1525746155,
+      "date": 1525731755,
       "frag": 0,
       "vol": -1
     },
@@ -5110,7 +5272,7 @@
       },
       "id": 32652,
       "name": "Dragon's Soul",
-      "rating": 7.2962962962963,
+      "rating": 7.296296296296297,
       "rating_count": 27,
       "tl_type": "oel"
     },
@@ -5123,7 +5285,7 @@
     {
       "agg": 294,
       "chp": 294,
-      "date": 1547888520,
+      "date": 1547870520,
       "frag": 0,
       "vol": -1
     },
@@ -5150,7 +5312,7 @@
     {
       "agg": 20005,
       "chp": 5,
-      "date": 1605766082,
+      "date": 1605748082,
       "frag": 0,
       "vol": 2
     },
@@ -5164,7 +5326,7 @@
       },
       "id": 3209,
       "name": "Harem King",
-      "rating": 5.07692307692308,
+      "rating": 5.076923076923077,
       "rating_count": 13,
       "tl_type": "oel"
     },
@@ -5177,7 +5339,7 @@
     {
       "agg": 5,
       "chp": 5,
-      "date": 1441106220,
+      "date": 1441091820,
       "frag": 0,
       "vol": -1
     },
@@ -5191,7 +5353,7 @@
       },
       "id": 3169,
       "name": "Harem Reaper",
-      "rating": 6.16666666666667,
+      "rating": 6.166666666666667,
       "rating_count": 6,
       "tl_type": "oel"
     },
@@ -5204,7 +5366,7 @@
     {
       "agg": 20006,
       "chp": 6,
-      "date": 1409601900,
+      "date": 1409587500,
       "frag": 0,
       "vol": 2
     },
@@ -5231,7 +5393,7 @@
     {
       "agg": 45,
       "chp": 45,
-      "date": 1594723577,
+      "date": 1594709177,
       "frag": 0,
       "vol": -1
     },
@@ -5299,7 +5461,7 @@
       },
       "id": 2766,
       "name": "The Fragile Monster Lord",
-      "rating": 5.09090909090909,
+      "rating": 5.090909090909091,
       "rating_count": 11,
       "tl_type": "oel"
     },
@@ -5312,7 +5474,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1466827589,
+      "date": 1464739740,
       "frag": 0,
       "vol": -1
     },
@@ -5339,7 +5501,7 @@
     {
       "agg": 32,
       "chp": 32,
-      "date": 1456875600,
+      "date": 1456857600,
       "frag": 0,
       "vol": -1
     },
@@ -5366,7 +5528,7 @@
     {
       "agg": 4.0003,
       "chp": 4,
-      "date": 1454293020,
+      "date": 1454275020,
       "frag": 3,
       "vol": -1
     },
@@ -5380,7 +5542,7 @@
       },
       "id": 32382,
       "name": "100 Luck and the Dragon Tamer Skill!",
-      "rating": 7.50877192982456,
+      "rating": 7.508771929824562,
       "rating_count": 57,
       "tl_type": "oel"
     },
@@ -5393,7 +5555,7 @@
     {
       "agg": 123.0003,
       "chp": 123,
-      "date": 1602530082,
+      "date": 1602515682,
       "frag": 3,
       "vol": -1
     },
@@ -5420,7 +5582,7 @@
     {
       "agg": 1283,
       "chp": 1283,
-      "date": 1601401212,
+      "date": 1601386812,
       "frag": 0,
       "vol": -1
     },
@@ -5434,7 +5596,7 @@
       },
       "id": 32472,
       "name": "Blue Phoenix",
-      "rating": 6.81818181818182,
+      "rating": 6.818181818181818,
       "rating_count": 44,
       "tl_type": "oel"
     },
@@ -5447,7 +5609,7 @@
     {
       "agg": 80000,
       "chp": -1,
-      "date": 1516979427,
+      "date": 1516961427,
       "frag": -1,
       "vol": 8
     },
@@ -5474,7 +5636,7 @@
     {
       "agg": 7,
       "chp": 7,
-      "date": 1472579160,
+      "date": 1472564760,
       "frag": -1,
       "vol": -1
     },
@@ -5501,7 +5663,7 @@
     {
       "agg": 5,
       "chp": 5,
-      "date": 1467475200,
+      "date": 1467460800,
       "frag": -1,
       "vol": -1
     },
@@ -5528,7 +5690,7 @@
     {
       "agg": 20100,
       "chp": 100,
-      "date": 1489742371,
+      "date": 1489727971,
       "frag": 0,
       "vol": 2
     },
@@ -5555,7 +5717,7 @@
     {
       "agg": 1,
       "chp": 1,
-      "date": 1583590215,
+      "date": 1583572215,
       "frag": 0,
       "vol": -1
     },
@@ -5582,7 +5744,7 @@
     {
       "agg": 172.0002,
       "chp": 172,
-      "date": 1570910755,
+      "date": 1570896355,
       "frag": 2,
       "vol": -1
     },
@@ -5607,9 +5769,9 @@
       "vol": -1
     },
     {
-      "agg": 199,
-      "chp": 199,
-      "date": 1608666445,
+      "agg": 201,
+      "chp": 201,
+      "date": 1609137750,
       "frag": 0,
       "vol": -1
     },
@@ -5623,7 +5785,7 @@
       },
       "id": 42756,
       "name": "Lament of the Fallen",
-      "rating": 7.61538461538461,
+      "rating": 7.615384615384615,
       "rating_count": 13,
       "tl_type": "oel"
     },
@@ -5636,7 +5798,7 @@
     {
       "agg": 210,
       "chp": 210,
-      "date": 1544387160,
+      "date": 1544369160,
       "frag": -1,
       "vol": -1
     },
@@ -5650,7 +5812,7 @@
       },
       "id": 668,
       "name": "Mushoku Tensei",
-      "rating": 7.24489795918367,
+      "rating": 7.244897959183674,
       "rating_count": 49,
       "tl_type": "translated"
     },
@@ -5663,7 +5825,7 @@
     {
       "agg": 240261,
       "chp": 261,
-      "date": 1483957136,
+      "date": 1483939136,
       "frag": 0,
       "vol": 24
     },
@@ -5688,10 +5850,10 @@
       "vol": -1
     },
     {
-      "agg": 429.0001,
-      "chp": 429,
-      "date": 1608680546,
-      "frag": 1,
+      "agg": 430,
+      "chp": 430,
+      "date": 1609289037,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -5717,7 +5879,7 @@
     {
       "agg": 4,
       "chp": 4,
-      "date": 1467480840,
+      "date": 1467466440,
       "frag": -1,
       "vol": -1
     },
@@ -5744,7 +5906,7 @@
     {
       "agg": 140004.0011,
       "chp": 4,
-      "date": 1591499416,
+      "date": 1591485016,
       "frag": 11,
       "vol": 14
     },
@@ -5785,7 +5947,7 @@
       },
       "id": 2051,
       "name": "Tate no Yuusha no Nariagari",
-      "rating": 8.42857142857143,
+      "rating": 8.428571428571429,
       "rating_count": 21,
       "tl_type": "translated"
     },
@@ -5798,7 +5960,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567738948,
+      "date": 1567724548,
       "frag": -1,
       "vol": 2
     },
@@ -5812,7 +5974,7 @@
       },
       "id": 34066,
       "name": "The Amber Sword",
-      "rating": 5.88888888888889,
+      "rating": 5.888888888888889,
       "rating_count": 9,
       "tl_type": "translated"
     },
@@ -5823,10 +5985,10 @@
       "vol": 3
     },
     {
-      "agg": 40045,
-      "chp": 45,
-      "date": 1608569072,
-      "frag": 0,
+      "agg": 40048.0001,
+      "chp": 48,
+      "date": 1609177657,
+      "frag": 1,
       "vol": 4
     },
     null
@@ -5852,7 +6014,7 @@
     {
       "agg": 20002.0003,
       "chp": 2,
-      "date": 1545159540,
+      "date": 1545141540,
       "frag": 3,
       "vol": 2
     },
@@ -5866,7 +6028,7 @@
       },
       "id": 34877,
       "name": "The Harem Was A Forced Goal",
-      "rating": 7.13698630136986,
+      "rating": 7.136986301369863,
       "rating_count": 73,
       "tl_type": "oel"
     },
@@ -5879,7 +6041,7 @@
     {
       "agg": 20016,
       "chp": 16,
-      "date": 1522402082,
+      "date": 1522387682,
       "frag": 0,
       "vol": 2
     },
@@ -5906,7 +6068,7 @@
     {
       "agg": 114,
       "chp": 114,
-      "date": 1463944860,
+      "date": 1463930460,
       "frag": -1,
       "vol": -1
     },
@@ -5920,7 +6082,7 @@
       },
       "id": 34067,
       "name": "The Strategy to Become Good at Magic",
-      "rating": 6.85714285714286,
+      "rating": 6.857142857142857,
       "rating_count": 7,
       "tl_type": "translated"
     },
@@ -5933,7 +6095,7 @@
     {
       "agg": 110,
       "chp": 110,
-      "date": 1556355462,
+      "date": 1556341062,
       "frag": 0,
       "vol": -1
     },
@@ -5960,7 +6122,7 @@
     {
       "agg": 23,
       "chp": 23,
-      "date": 1448694360,
+      "date": 1448676360,
       "frag": -1,
       "vol": -1
     },
@@ -5974,7 +6136,7 @@
       },
       "id": 32080,
       "name": "Monster-less",
-      "rating": 7.29411764705882,
+      "rating": 7.294117647058823,
       "rating_count": 17,
       "tl_type": "oel"
     },
@@ -5987,7 +6149,7 @@
     {
       "agg": 60004,
       "chp": 4,
-      "date": 1463540593.577296,
+      "date": 1463526193.577296,
       "frag": 0,
       "vol": 6
     },
@@ -6014,7 +6176,7 @@
     {
       "agg": 53,
       "chp": 53,
-      "date": 1448132892,
+      "date": 1448114892,
       "frag": 0,
       "vol": -1
     },
@@ -6041,7 +6203,7 @@
     {
       "agg": 67,
       "chp": 67,
-      "date": 1478355802,
+      "date": 1478341402,
       "frag": 0,
       "vol": -1
     },
@@ -6068,7 +6230,7 @@
     {
       "agg": 48,
       "chp": 48,
-      "date": 1461775604,
+      "date": 1461736004,
       "frag": 0,
       "vol": -1
     },
@@ -6095,7 +6257,7 @@
     {
       "agg": 52,
       "chp": 52,
-      "date": 1472753940,
+      "date": 1472739540,
       "frag": 0,
       "vol": -1
     },
@@ -6122,7 +6284,7 @@
     {
       "agg": 50,
       "chp": 50,
-      "date": 1449958286,
+      "date": 1449940286,
       "frag": 0,
       "vol": -1
     },
@@ -6136,7 +6298,7 @@
       },
       "id": 35213,
       "name": "The Once Simple Life of a Dungeon Skeleton",
-      "rating": 8.66666666666667,
+      "rating": 8.666666666666666,
       "rating_count": 3,
       "tl_type": "oel"
     },
@@ -6149,7 +6311,7 @@
     {
       "agg": 10020,
       "chp": 20,
-      "date": 1456822560,
+      "date": 1456804560,
       "frag": 0,
       "vol": 1
     },
@@ -6163,7 +6325,7 @@
       },
       "id": 4168,
       "name": "The Overlord's Elite is now a Human?!",
-      "rating": 6.33333333333333,
+      "rating": 6.333333333333333,
       "rating_count": 6,
       "tl_type": "oel"
     },
@@ -6176,7 +6338,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463471223,
+      "date": 1463460423,
       "frag": 0,
       "vol": -1
     },
@@ -6190,7 +6352,7 @@
       },
       "id": 2506,
       "name": "The Rude Time Stopper",
-      "rating": 7.72222222222222,
+      "rating": 7.722222222222222,
       "rating_count": 18,
       "tl_type": "oel"
     },
@@ -6203,7 +6365,7 @@
     {
       "agg": 153,
       "chp": 153,
-      "date": 1462095840,
+      "date": 1462081440,
       "frag": 0,
       "vol": -1
     },
@@ -6230,7 +6392,7 @@
     {
       "agg": 10037,
       "chp": 37,
-      "date": 1456846560,
+      "date": 1456828560,
       "frag": 0,
       "vol": 1
     },
@@ -6257,7 +6419,7 @@
     {
       "agg": 31,
       "chp": 31,
-      "date": 1449806263,
+      "date": 1449788263,
       "frag": 0,
       "vol": -1
     },

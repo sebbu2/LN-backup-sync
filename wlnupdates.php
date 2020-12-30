@@ -159,7 +159,7 @@ class WLNUpdates extends SitePlugin
 	
 	public function add($name, $tl)
 	{
-		if(!in_array($tl, array('translated', 'eol'))) return false;
+		if(!in_array($tl, array('translated', 'oel'))) return false;
 		
 		$referer = 'https://www.wlnupdates.com/add/series/';
 		$res = $this->send( 'https://www.wlnupdates.com/add/series/' );

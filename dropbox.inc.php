@@ -119,6 +119,7 @@ class Dropbox {
 			$data=file_get_contents($this::FOLDER.'token1.json');
 			$data=json_decode($data);
 		}
+		if(property_exists($data, 'error')) { var_dump(file_exists($this::FOLDER.'token1.json'), file_exists($this::FOLDER.'token2.json'), $data, ); die(); }
 		$this->token=$data;
 		return $this->token;
 	}
@@ -198,6 +199,7 @@ class Dropbox {
 	public function refresh_code() {
 		//refresh
 		$this->get_token();
+		if(property_exists($this->token, 'error')) { var_dump(file_exists($this::FOLDER.'token1.json'), file_exists($this::FOLDER.'token2.json'), $this->token, ); die(); }
 		$url=$this->urls[1];
 		
 		$this->postdata=array();
@@ -351,7 +353,9 @@ die();//*/
 $ar=array();
 foreach($files as $entry) {
 	//var_dump($entry->name);die();
-	assert(abs(strtotime($entry->server_modified)-strtotime($entry->client_modified))<10) or die(var_export($entry));
+	if(abs(strtotime($entry->server_modified)-strtotime($entry->client_modified))>=60) {
+		die(var_export($entry));
+	}
 	$ar[]=[$entry->name, $entry->size, $entry->server_modified];
 }
 //usort($ar, fn($e1, $e2) => strcasecmp($e1[0], $e2[0]));//sort by fn
