@@ -177,6 +177,7 @@ class Dropbox {
 		$this->postdata=array();
 		$this->postdata['code']=$code;
 		$this->postdata['grant_type']='authorization_code';
+		$this->postdata['token_access_type']='offline';
 		/*$this->postdata['client_id']=$this->key;
 		$this->postdata['client_secret']=$this->secret;//*/
 
@@ -204,7 +205,9 @@ class Dropbox {
 		
 		$this->postdata=array();
 		$this->postdata['grant_type']='refresh_token';
+		var_dump($this->token);
 		$this->postdata['refresh_token']=$this->token->refresh_token;
+		//$this->postdata['token_access_type']='offline';
 		/*$this->postdata['client_id']=$key;
 		$this->postdata['client_secret']=$secret;//*/
 

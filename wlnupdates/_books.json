@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 731,
-      "chp": 731,
+      "agg": 763,
+      "chp": 763,
       "frag": -1,
       "vol": -1
     },
@@ -32,33 +32,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 47429,
-      "name": "Abyss Domination",
-      "rating": 6,
-      "rating_count": 1,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 20530,
-      "chp": 530,
-      "frag": -1,
-      "vol": 2
-    },
-    {
-      "agg": 20000,
-      "chp": -1,
-      "date": 1541596200,
-      "frag": -1,
-      "vol": 2
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 84068,
       "name": "Another World's Versatile Crafting Master",
       "rating": null,
@@ -66,8 +39,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 895,
-      "chp": 895,
+      "agg": 918,
+      "chp": 918,
       "frag": -1,
       "vol": -1
     },
@@ -86,42 +59,15 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 34567,
-      "name": "Badge in Azure",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1318,
-      "chp": 1318,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 501,
-      "chp": 501,
-      "date": 1560479153.57118,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 56289,
       "name": "Daoist Gu",
-      "rating": 6.333333333333333,
-      "rating_count": 9,
+      "rating": 6.7,
+      "rating_count": 10,
       "tl_type": "translated"
     },
     {
-      "agg": 12143,
-      "chp": 2143,
+      "agg": 12175,
+      "chp": 2175,
       "frag": -1,
       "vol": 1
     },
@@ -147,8 +93,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 130,
+      "chp": 130,
       "frag": -1,
       "vol": -1
     },
@@ -174,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 83,
+      "chp": 83,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1267,
-      "chp": 1267,
+      "agg": 1269,
+      "chp": 1269,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 680,
-      "chp": 680,
+      "agg": 712,
+      "chp": 712,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 538,
-      "chp": 538,
+      "agg": 554,
+      "chp": 554,
       "frag": -1,
       "vol": -1
     },
@@ -309,15 +255,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 295,
-      "chp": 295,
+      "agg": 327,
+      "chp": 327,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 35,
       "chp": 35,
-      "date": 1591334870,
+      "date": 1599120572,
       "frag": 0,
       "vol": -1
     },
@@ -336,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 218,
-      "chp": 218,
+      "agg": 245,
+      "chp": 245,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1323,
-      "chp": 1323,
+      "agg": 1340,
+      "chp": 1340,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 537,
-      "chp": 537,
+      "agg": 569,
+      "chp": 569,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 193,
-      "chp": 193,
+      "agg": 209,
+      "chp": 209,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 690,
-      "chp": 690,
+      "agg": 722,
+      "chp": 722,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 524,
-      "chp": 524,
+      "agg": 556,
+      "chp": 556,
       "frag": -1,
       "vol": -1
     },
@@ -498,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 550,
-      "chp": 550,
+      "agg": 581,
+      "chp": 581,
       "frag": -1,
       "vol": -1
     },
@@ -552,8 +498,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 260,
-      "chp": 260,
+      "agg": 292,
+      "chp": 292,
       "frag": -1,
       "vol": -1
     },
@@ -579,8 +525,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 2772,
-      "chp": 2772,
+      "agg": 2792,
+      "chp": 2792,
       "frag": -1,
       "vol": -1
     },
@@ -606,8 +552,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1246,
-      "chp": 1246,
+      "agg": 1269,
+      "chp": 1269,
       "frag": -1,
       "vol": -1
     },
@@ -626,33 +572,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 98914,
-      "name": "Super Dimensional Wizard",
-      "rating": 4,
-      "rating_count": 1,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 11028,
-      "chp": 1028,
-      "frag": -1,
-      "vol": 1
-    },
-    {
-      "agg": 10074,
-      "chp": 74,
-      "date": 1571452415,
-      "frag": 0,
-      "vol": 1
-    },
-    "Warlock Apprentice"
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 109194,
       "name": "The First Order",
       "rating": 9,
@@ -660,8 +579,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 664,
-      "chp": 664,
+      "agg": 683,
+      "chp": 683,
       "frag": -1,
       "vol": -1
     },
@@ -687,8 +606,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1141,
-      "chp": 1141,
+      "agg": 1165,
+      "chp": 1165,
       "frag": -1,
       "vol": -1
     },
@@ -1343,8 +1262,35 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1513653467,
+      "date": 1512616350,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 34567,
+      "name": "Badge in Azure",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1318,
+      "chp": 1318,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 501,
+      "chp": 501,
+      "date": 1560479153.57118,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -1436,6 +1382,60 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 128343,
+      "name": "I got summoned to another world then married a yandere",
+      "rating": 6.083333333333333,
+      "rating_count": 12,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 83,
+      "chp": 83,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 67860,
+      "name": "I Reincarnated As A Stick",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 193,
+      "chp": 193,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 81,
+      "chp": 81,
+      "date": 1562847850,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 44136,
       "name": "King of Gods",
       "rating": 7.714285714285714,
@@ -1490,23 +1490,23 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 128906,
-      "name": "Re: Level 100 Farmer",
-      "rating": null,
-      "rating_count": null,
+      "id": 68926,
+      "name": "Reborn: Evolving From Nothing",
+      "rating": 5.777777777777778,
+      "rating_count": 9,
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 149,
+      "chp": 149,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 0,
-      "chp": -1,
-      "date": null,
-      "frag": -1,
+      "agg": 81,
+      "chp": 81,
+      "date": 1539043764,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -1578,8 +1578,35 @@
       "tl_type": "oel"
     },
     {
-      "agg": 257,
-      "chp": 257,
+      "agg": 270,
+      "chp": 270,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131749,
+      "name": "Abyssal Lord of the Magi World",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 327,
+      "chp": 327,
       "frag": -1,
       "vol": -1
     },
@@ -1605,8 +1632,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1191,
-      "chp": 1191,
+      "agg": 1239,
+      "chp": 1239,
       "frag": -1,
       "vol": -1
     },
@@ -1627,21 +1654,21 @@
       },
       "id": 2768,
       "name": "Chrysalis",
-      "rating": 9.990099009900991,
-      "rating_count": 101,
+      "rating": 9.990384615384615,
+      "rating_count": 104,
       "tl_type": "oel"
     },
     {
-      "agg": 660,
-      "chp": 660,
+      "agg": 669,
+      "chp": 669,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 659.0005,
-      "chp": 659,
-      "date": 1609294680,
-      "frag": 5,
+      "agg": 668.0014,
+      "chp": 668,
+      "date": 1610684880,
+      "frag": 14,
       "vol": -1
     },
     null
@@ -1654,13 +1681,13 @@
       },
       "id": 117750,
       "name": "Death... and me",
-      "rating": 8.5,
-      "rating_count": 2,
+      "rating": 8.4,
+      "rating_count": 5,
       "tl_type": "oel"
     },
     {
-      "agg": 293,
-      "chp": 293,
+      "agg": 334,
+      "chp": 334,
       "frag": -1,
       "vol": -1
     },
@@ -1686,8 +1713,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 367,
-      "chp": 367,
+      "agg": 380,
+      "chp": 380,
       "frag": -1,
       "vol": -1
     },
@@ -1708,40 +1735,13 @@
       },
       "id": 129098,
       "name": "Essential NPC with a Chicken",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 153,
-      "chp": 153,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 0,
-      "chp": -1,
-      "date": null,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 128343,
-      "name": "I got summoned to another world then married a yandere",
       "rating": 5,
-      "rating_count": 6,
+      "rating_count": 3,
       "tl_type": "oel"
     },
     {
-      "agg": 83,
-      "chp": 83,
+      "agg": 184,
+      "chp": 184,
       "frag": -1,
       "vol": -1
     },
@@ -1749,33 +1749,6 @@
       "agg": 0,
       "chp": -1,
       "date": null,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 67860,
-      "name": "I Reincarnated As A Stick",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 193,
-      "chp": 193,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 81,
-      "chp": 81,
-      "date": 1562847850,
       "frag": -1,
       "vol": -1
     },
@@ -1794,8 +1767,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 459,
-      "chp": 459,
+      "agg": 499,
+      "chp": 499,
       "frag": -1,
       "vol": -1
     },
@@ -1821,8 +1794,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 714,
-      "chp": 714,
+      "agg": 730,
+      "chp": 730,
       "frag": -1,
       "vol": -1
     },
@@ -1848,8 +1821,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 263,
-      "chp": 263,
+      "agg": 390,
+      "chp": 390,
       "frag": -1,
       "vol": -1
     },
@@ -1875,8 +1848,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 641,
-      "chp": 641,
+      "agg": 649,
+      "chp": 649,
       "frag": -1,
       "vol": -1
     },
@@ -1929,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 520,
-      "chp": 520,
+      "agg": 566,
+      "chp": 566,
       "frag": -1,
       "vol": -1
     },
@@ -1956,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 868,
-      "chp": 868,
+      "agg": 900,
+      "chp": 900,
       "frag": -1,
       "vol": -1
     },
@@ -1983,8 +1956,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 320704,
-      "chp": 704,
+      "agg": 320706,
+      "chp": 706,
       "frag": -1,
       "vol": 32
     },
@@ -2010,8 +1983,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 287,
-      "chp": 287,
+      "agg": 306,
+      "chp": 306,
       "frag": -1,
       "vol": -1
     },
@@ -2020,60 +1993,6 @@
       "chp": -1,
       "date": null,
       "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 116660,
-      "name": "Project: Mage - The Frugal Mage",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 267,
-      "chp": 267,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 0,
-      "chp": -1,
-      "date": null,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 68926,
-      "name": "Reborn: Evolving From Nothing",
-      "rating": 5.25,
-      "rating_count": 8,
-      "tl_type": "oel"
-    },
-    {
-      "agg": 149,
-      "chp": 149,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 81,
-      "chp": 81,
-      "date": 1539043764,
-      "frag": 0,
       "vol": -1
     },
     null
@@ -2118,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20540,
-      "chp": 540,
+      "agg": 20545,
+      "chp": 545,
       "frag": -1,
       "vol": 2
     },
@@ -2145,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 247,
-      "chp": 247,
+      "agg": 263,
+      "chp": 263,
       "frag": -1,
       "vol": -1
     },
@@ -2172,8 +2091,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 296,
-      "chp": 296,
+      "agg": 300,
+      "chp": 300,
       "frag": -1,
       "vol": -1
     },
@@ -2194,13 +2113,13 @@
       },
       "id": 81839,
       "name": "Supreme Magus",
-      "rating": 6.25,
-      "rating_count": 4,
+      "rating": 5.2,
+      "rating_count": 5,
       "tl_type": "oel"
     },
     {
-      "agg": 976,
-      "chp": 976,
+      "agg": 1010,
+      "chp": 1010,
       "frag": -1,
       "vol": -1
     },
@@ -2226,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 219,
-      "chp": 219,
+      "agg": 230,
+      "chp": 230,
       "frag": -1,
       "vol": -1
     },
@@ -2248,13 +2167,13 @@
       },
       "id": 128350,
       "name": "The Magician of Sound",
-      "rating": null,
-      "rating_count": null,
+      "rating": 10,
+      "rating_count": 1,
       "tl_type": "oel"
     },
     {
-      "agg": 280,
-      "chp": 280,
+      "agg": 309,
+      "chp": 309,
       "frag": -1,
       "vol": -1
     },
@@ -2280,8 +2199,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 161,
-      "chp": 161,
+      "agg": 165,
+      "chp": 165,
       "frag": -1,
       "vol": -1
     },
@@ -2307,8 +2226,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 348,
-      "chp": 348,
+      "agg": 364,
+      "chp": 364,
       "frag": -1,
       "vol": -1
     },
@@ -2334,8 +2253,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 380,
-      "chp": 380,
+      "agg": 396,
+      "chp": 396,
       "frag": -1,
       "vol": -1
     },
@@ -2361,8 +2280,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 7,
-      "chp": 7,
+      "agg": 8,
+      "chp": 8,
       "frag": -1,
       "vol": -1
     },
@@ -2489,6 +2408,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 131750,
+      "name": "Ascension: Demon Monarch System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 117515,
       "name": "Astral Pet Store",
       "rating": 4,
@@ -2532,6 +2478,33 @@
       "agg": 297,
       "chp": 297,
       "date": 1543266358,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 117680,
+      "name": "Closed Beta That Only I Played",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40,
+      "chp": 40,
+      "date": 1598731427,
       "frag": 0,
       "vol": -1
     },
@@ -2651,6 +2624,60 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 130233,
+      "name": "Doomsday Online: Supreme Blessing",
+      "rating": 8,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1605824828,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 85645,
+      "name": "Doomsday Pillars",
+      "rating": 5,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 119,
+      "chp": 119,
+      "date": 1562782430,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 57702,
       "name": "Doomsday Wonderland",
       "rating": 8.625,
@@ -2664,10 +2691,37 @@
       "vol": -1
     },
     {
-      "agg": 858.0001,
-      "chp": 858,
-      "date": 1609010911.699979,
-      "frag": 1,
+      "agg": 859.0002,
+      "chp": 859,
+      "date": 1609957144.247098,
+      "frag": 2,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 77345,
+      "name": "Elixir Supplier",
+      "rating": 8,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 106,
+      "chp": 106,
+      "date": 1548648311,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -2691,10 +2745,10 @@
       "vol": -1
     },
     {
-      "agg": 119.0001,
-      "chp": 119,
-      "date": 1606518060,
-      "frag": 1,
+      "agg": 120.0002,
+      "chp": 120,
+      "date": 1607850120,
+      "frag": 2,
       "vol": -1
     },
     null
@@ -2712,8 +2766,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -2776,6 +2830,33 @@
       "chp": 10,
       "date": 1593344757,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 131751,
+      "name": "Headed by a Snake",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -2896,8 +2977,8 @@
       },
       "id": 117899,
       "name": "My Disciples Are All Villains",
-      "rating": null,
-      "rating_count": null,
+      "rating": 1,
+      "rating_count": 1,
       "tl_type": "translated"
     },
     {
@@ -3353,6 +3434,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 128906,
+      "name": "Re: Level 100 Farmer",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 129448,
       "name": "Reincarnated As a Fox With System",
       "rating": null,
@@ -3630,8 +3738,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -3873,8 +3981,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -3911,6 +4019,33 @@
       "date": 1585958796,
       "frag": 0,
       "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 47429,
+      "name": "Abyss Domination",
+      "rating": 6,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 20530,
+      "chp": 530,
+      "frag": -1,
+      "vol": 2
+    },
+    {
+      "agg": 20000,
+      "chp": -1,
+      "date": 1541596200,
+      "frag": -1,
+      "vol": 2
     },
     null
   ],
@@ -4230,13 +4365,40 @@
       "vol": -1
     },
     {
-      "agg": 180,
-      "chp": 180,
-      "date": 1608893022,
+      "agg": 200,
+      "chp": 200,
+      "date": 1610167473,
       "frag": 0,
       "vol": -1
     },
     "Village Girl as Family Head : picked up a general for farming"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 116660,
+      "name": "Project: Mage - The Frugal Mage",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 267,
+      "chp": 267,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -4318,6 +4480,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 98914,
+      "name": "Super Dimensional Wizard",
+      "rating": 4,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 11028,
+      "chp": 1028,
+      "frag": -1,
+      "vol": 1
+    },
+    {
+      "agg": 10074,
+      "chp": 74,
+      "date": 1571452415,
+      "frag": 0,
+      "vol": 1
+    },
+    "Warlock Apprentice"
   ],
   [
     {
@@ -5218,8 +5407,8 @@
       },
       "id": 58288,
       "name": "War Sovereign Soaring The Heavens",
-      "rating": 6.575757575757576,
-      "rating_count": 33,
+      "rating": 6.470588235294118,
+      "rating_count": 34,
       "tl_type": "translated"
     },
     {
@@ -5277,8 +5466,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5331,8 +5520,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5358,8 +5547,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5385,8 +5574,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5412,8 +5601,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5432,6 +5621,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 97186,
+      "name": "Peerless Genius System",
+      "rating": 5,
+      "rating_count": 5,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 496,
+      "chp": 496,
+      "date": 1610707349,
+      "frag": 0,
+      "vol": -1
+    },
+    "The Genius System Without Equal"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 3394,
       "name": "Slavemancer",
       "rating": 6.24,
@@ -5439,8 +5655,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5466,15 +5682,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 175,
       "chp": 175,
-      "date": 1464739740,
+      "date": 1466813189,
       "frag": 0,
       "vol": -1
     },
@@ -5493,8 +5709,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5520,8 +5736,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5530,6 +5746,33 @@
       "chp": 4,
       "date": 1454275020,
       "frag": 3,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 132048,
+      "name": "Transdimensional Marketing",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -5628,8 +5871,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5655,8 +5898,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5731,8 +5974,8 @@
       },
       "id": 32381,
       "name": "I was reincarnated as a Magic Academy!",
-      "rating": 7.03125,
-      "rating_count": 64,
+      "rating": 6.984615384615385,
+      "rating_count": 65,
       "tl_type": "oel"
     },
     {
@@ -5769,9 +6012,9 @@
       "vol": -1
     },
     {
-      "agg": 201,
-      "chp": 201,
-      "date": 1609137750,
+      "agg": 207,
+      "chp": 207,
+      "date": 1610721758,
       "frag": 0,
       "vol": -1
     },
@@ -5790,8 +6033,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5850,9 +6093,9 @@
       "vol": -1
     },
     {
-      "agg": 430,
-      "chp": 430,
-      "date": 1609289037,
+      "agg": 439,
+      "chp": 439,
+      "date": 1610570593,
       "frag": 0,
       "vol": -1
     },
@@ -5871,8 +6114,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
@@ -5985,10 +6228,10 @@
       "vol": 3
     },
     {
-      "agg": 40048.0001,
-      "chp": 48,
-      "date": 1609177657,
-      "frag": 1,
+      "agg": 40057,
+      "chp": 57,
+      "date": 1610729064,
+      "frag": 0,
       "vol": 4
     },
     null
@@ -6006,8 +6249,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 0,
-      "chp": -1,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },

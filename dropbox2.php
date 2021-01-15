@@ -220,7 +220,7 @@ foreach($fns as $name=>$fn)
 			}
 			$res=$wn->search2($name);
 			assert($res==false || $res->code==0);
-			if($res==false || count($res->data->books)!=1 || (count($res->data->books)==1 && !name_compare($name, $res->data->books[0]->name, 1)) ) {
+			if($res==false || !property_exists($res->data, 'books') || count($res->data->books)!=1 || (count($res->data->books)==1 && !name_compare($name, $res->data->books[0]->name, 1)) ) {
 				var_dump($res);
 				$res=$wn->search($name);
 				var_dump(count($res));//die();

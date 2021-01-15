@@ -70,7 +70,7 @@ foreach($ar as $fn)
 4) if MOONREADER_DID2 < MOONREADER_DID
 	delete
 */
-	if($content[1]=='0' && $content[3]=='0') continue;
+	if($content[1]=='0' && $content[3]=='0') continue; // drops 42+ novels at chp 1
 	$chp=$min + ($min<0?1:0) + $content[1] + ($content[3]>0?1:0);
 	//conds
 	if($content[0]===MOONREADER_DID) {
@@ -173,7 +173,7 @@ $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 //var_dump(count($books));//die();
 
 echo '<h2>Counts</h2>',"\n";
-print_table(array(array('files'=>count($fns), 'WLNUpdates'=>count($watches),'WebNovel'=>count($books))));
+print_table(array(array( 'files'=>count(array_merge($fns_,$fns)), 'WLNUpdates'=>count($watches), 'WebNovel'=>count($books) )));
 echo '<br/>'."\r\n";
 if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 flush();
@@ -339,6 +339,7 @@ foreach($fns as $name=>$fn)
 			$row['WebNovel new chp']=($chp2<=$max_pub)?$chp2:$max_pub;
 			$data=$wn->read_update($books[$key], $chp2);
 			//var_dump($data);
+			if(!property_exists($data, 'code') || !property_exists($data, 'msg')) { var_dump($data);die(); }
 			if($data->code===0 && $data->msg==='Success') $row['WebNovel sync']='true';
 			else $row['WebNovel sync']='false';
 			$updatedCount['wn']++;
