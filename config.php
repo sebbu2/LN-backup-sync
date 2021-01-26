@@ -36,6 +36,8 @@ $accounts=array(
 		'pass'=>'',
 	),
 );
+if(!isset($key)) $key='';
+if(!isset($secret)) $secret='';
 define('MOONREADER_DID', '1454083831785');
 define('MOONREADER_DID2', '9999999999999');
 ?>
