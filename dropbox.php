@@ -70,7 +70,7 @@ foreach($ar as $fn)
 4) if MOONREADER_DID2 < MOONREADER_DID
 	delete
 */
-	if($content[1]=='0' && $content[3]=='0') continue; // drops 42+ novels at chp 1
+	//if($content[1]=='0' && $content[3]=='0') continue; // drops 42+ novels at chp 1
 	$chp=$min + ($min<0?1:0) + $content[1] + ($content[3]>0?1:0);
 	//conds
 	if($content[0]===MOONREADER_DID) {
@@ -247,6 +247,8 @@ foreach($fns as $name=>$fn)
 			//var_dump($chp,$fn);die();
 		}
 	}
+	
+	if( ($fn[1]=='0' && $fn[3]=='0') || $chp==1) continue;
 	
 	if($found1) {
 		//if($chp>(int)$watches[$key]['chp']) {

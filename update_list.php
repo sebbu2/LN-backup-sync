@@ -54,6 +54,13 @@ foreach($correspondances as $ar) {
 	list($wn_id, $wln_id, $name, $id)=$ar;
 	
 	$res=$wn->get_info_cached($wn_id);
+	for($i=0;$i<4;++$i) {
+		$j=0;
+		while(count(get_object_vars($res[$i]))==0 && $j++<5) {
+			$res[$i]=$wn->get_info($wn_id, $i);
+			//var_dump($res[$i]);
+		}
+	}
 	$resb=$wn->get_chapter_list_cached($wn_id);
 	if(!is_object($resb) || !property_exists($resb, 'data')) {
 		var_dump($wn_id, $resb);
@@ -78,13 +85,16 @@ foreach($correspondances as $ar) {
 	$res[1]->Data->Gift->Users=NULL;
 	$res[1]->Data->BookFans->Users=NULL;
 	$res[1]->Data->TopReviewInfos=NULL;
-	$res[2]->data->bookReviewInfos=NULL;
-	$res[3]->data->recommendListItems=NULL;
 	$res[1]->Data->AlsoLikes=NULL;
-	$res[3]->data->recommendListItems=NULL;
 	$res[1]->Data->GenreBookItems=NULL;
 	//foreach($res[1]->Data->AlsoLikes as &$v) { $v->StatParams=json_decode($v->StatParams); }
-	//foreach($res[3]->data->recommendListItems as &$v) { $v->alg=json_decode($v->alg); }
+	if(property_exists($res[2], 'data') && property_exists($res[2]->data, 'bookReviewInfos')) {
+		$res[2]->data->bookReviewInfos=NULL;
+	}
+	if(property_exists($res[3], 'data') && property_exists($res[3]->data, 'recommendListItems')) {
+		$res[3]->data->recommendListItems=NULL;
+		//foreach($res[3]->data->recommendListItems as &$v) { $v->alg=json_decode($v->alg); }
+	}
 
 	//var_dump($res);
 	//$res2=$wln->get_info($wln_id);

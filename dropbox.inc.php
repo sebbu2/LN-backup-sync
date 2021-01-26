@@ -329,7 +329,7 @@ $data=$dpb->verify_user();
 if($data===false) $data=$dpb->errors;
 if(property_exists($data, 'error')) {
 	if(property_exists($data->error, '.tag')) {
-		if($data->error->{'.tag'}==='expired_access_token') {
+		if($data->error->{'.tag'}==='expired_access_token' || $data->error->{'.tag'}==='invalid_access_token') {
 			$data=$dpb->refresh_code();
 			if($data===false) {
 				$data=$dpb->errors;
