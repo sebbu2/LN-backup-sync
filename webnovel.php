@@ -358,10 +358,19 @@ class WebNovel extends SitePlugin
 				'pageIndex'=>$i,
 				'orderBy'=>'2',
 			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/Library/LibraryAjax', $ar);
-			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'LibraryAjax'.strval($i).'.json', $res);
-			$res=json_decode($res);
+			$j=0;
+			do {
+				$res = $this->get( 'https://www.webnovel.com/apiajax/Library/LibraryAjax', $ar);
+				$res=$this->jsonp_to_json($res);
+				file_put_contents($this::FOLDER.'LibraryAjax'.strval($i).'.json', $res);
+				$res=json_decode($res);
+				//var_dump($i, $res);
+			}
+			while(++$j<5 && (
+				(!property_exists($res, 'code') || $res->code!=0) ||
+				(!property_exists($res, 'msg') || $res->msg!='Success') ||
+				(!property_exists($res, 'data') || $res->data==null)
+			) );
 			/*if(
 				( !is_object($res) || !property_exists($res, 'data') || !is_object($res->data) || !property_exists($res->data, 'isLast') || !property_exists($res->data, 'books') )
 				&&
@@ -375,7 +384,7 @@ class WebNovel extends SitePlugin
 				++$i;
 			}
 		}
-		while( ( (is_object($res->data)&&$res->data->isLast==0) || $res->data!==NULL) && $i<20);//$i should not reach 20*30 books soon (i'm at 14)
+		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<20);//$i should not reach 20*30 books soon (i'm at 16)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP

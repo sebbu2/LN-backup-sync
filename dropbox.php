@@ -372,7 +372,7 @@ if($lines>0) {
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);
 	include_once('retr.php');
-}
+}//*/
 //echo '<br/><a href="retr.php">retr</a><br/>'."\r\n";
 
 include('footer.php');
