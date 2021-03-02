@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 847,
-      "chp": 847,
+      "agg": 853,
+      "chp": 853,
       "frag": -1,
       "vol": -1
     },
@@ -39,8 +39,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 978,
-      "chp": 978,
+      "agg": 982,
+      "chp": 982,
       "frag": -1,
       "vol": -1
     },
@@ -66,15 +66,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 168,
-      "chp": 168,
+      "agg": 173,
+      "chp": 173,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 40,
       "chp": 40,
-      "date": 1598696551,
+      "date": 1598731427,
       "frag": 0,
       "vol": -1
     },
@@ -93,8 +93,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 12253,
-      "chp": 2253,
+      "agg": 12265,
+      "chp": 2265,
       "frag": -1,
       "vol": 1
     },
@@ -120,8 +120,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 214,
-      "chp": 214,
+      "agg": 220,
+      "chp": 220,
       "frag": -1,
       "vol": -1
     },
@@ -147,8 +147,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 170,
-      "chp": 170,
+      "agg": 176,
+      "chp": 176,
       "frag": -1,
       "vol": -1
     },
@@ -201,8 +201,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 796,
-      "chp": 796,
+      "agg": 802,
+      "chp": 802,
       "frag": -1,
       "vol": -1
     },
@@ -228,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 596,
-      "chp": 596,
+      "agg": 599,
+      "chp": 599,
       "frag": -1,
       "vol": -1
     },
@@ -255,8 +255,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 411,
-      "chp": 411,
+      "agg": 417,
+      "chp": 417,
       "frag": -1,
       "vol": -1
     },
@@ -282,8 +282,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 316,
-      "chp": 316,
+      "agg": 320,
+      "chp": 320,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1378,
-      "chp": 1378,
+      "agg": 1383,
+      "chp": 1383,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 652,
-      "chp": 652,
+      "agg": 658,
+      "chp": 658,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 248,
-      "chp": 248,
+      "agg": 251,
+      "chp": 251,
       "frag": -1,
       "vol": -1
     },
@@ -390,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 806,
-      "chp": 806,
+      "agg": 812,
+      "chp": 812,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 640,
-      "chp": 640,
+      "agg": 646,
+      "chp": 646,
       "frag": -1,
       "vol": -1
     },
@@ -444,8 +444,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 666,
-      "chp": 666,
+      "agg": 672,
+      "chp": 672,
       "frag": -1,
       "vol": -1
     },
@@ -471,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 365,
-      "chp": 365,
+      "agg": 369,
+      "chp": 369,
       "frag": -1,
       "vol": -1
     },
@@ -481,6 +481,30 @@
       "chp": 38,
       "date": 1588918556,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 134291,
+      "name": "Poison God's Heritage",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -498,8 +522,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 2846,
-      "chp": 2846,
+      "agg": 2852,
+      "chp": 2852,
       "frag": -1,
       "vol": -1
     },
@@ -525,8 +549,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1329,
-      "chp": 1329,
+      "agg": 1334,
+      "chp": 1334,
       "frag": -1,
       "vol": -1
     },
@@ -552,8 +576,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 733,
-      "chp": 733,
+      "agg": 737,
+      "chp": 737,
       "frag": -1,
       "vol": -1
     },
@@ -579,8 +603,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1231,
-      "chp": 1231,
+      "agg": 1235,
+      "chp": 1235,
       "frag": -1,
       "vol": -1
     },
@@ -1632,8 +1656,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 368,
-      "chp": 368,
+      "agg": 371,
+      "chp": 371,
       "frag": -1,
       "vol": -1
     },
@@ -1659,8 +1683,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1361,
-      "chp": 1361,
+      "agg": 1370,
+      "chp": 1370,
       "frag": -1,
       "vol": -1
     },
@@ -1686,15 +1710,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 696,
-      "chp": 696,
+      "agg": 698,
+      "chp": 698,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 696,
-      "chp": 696,
-      "date": 1614335100,
+      "agg": 698,
+      "chp": 698,
+      "date": 1614481080,
       "frag": 0,
       "vol": -1
     },
@@ -1713,8 +1737,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10153,
-      "chp": 153,
+      "agg": 10163,
+      "chp": 163,
       "frag": -1,
       "vol": 1
     },
@@ -1740,8 +1764,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 446,
-      "chp": 446,
+      "agg": 468,
+      "chp": 468,
       "frag": -1,
       "vol": -1
     },
@@ -1767,8 +1791,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 412,
-      "chp": 412,
+      "agg": 413,
+      "chp": 413,
       "frag": -1,
       "vol": -1
     },
@@ -1794,8 +1818,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 162,
-      "chp": 162,
+      "agg": 164,
+      "chp": 164,
       "frag": -1,
       "vol": -1
     },
@@ -1821,8 +1845,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 228,
-      "chp": 228,
+      "agg": 230,
+      "chp": 230,
       "frag": -1,
       "vol": -1
     },
@@ -1875,8 +1899,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 584,
-      "chp": 584,
+      "agg": 590,
+      "chp": 590,
       "frag": -1,
       "vol": -1
     },
@@ -1902,8 +1926,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 772,
-      "chp": 772,
+      "agg": 775,
+      "chp": 775,
       "frag": -1,
       "vol": -1
     },
@@ -1929,8 +1953,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 476,
-      "chp": 476,
+      "agg": 482,
+      "chp": 482,
       "frag": -1,
       "vol": -1
     },
@@ -1983,8 +2007,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 678,
-      "chp": 678,
+      "agg": 680,
+      "chp": 680,
       "frag": -1,
       "vol": -1
     },
@@ -2010,8 +2034,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 681,
-      "chp": 681,
+      "agg": 690,
+      "chp": 690,
       "frag": -1,
       "vol": -1
     },
@@ -2037,8 +2061,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 964,
-      "chp": 964,
+      "agg": 967,
+      "chp": 967,
       "frag": -1,
       "vol": -1
     },
@@ -2091,8 +2115,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 313,
-      "chp": 313,
+      "agg": 314,
+      "chp": 314,
       "frag": -1,
       "vol": -1
     },
@@ -2118,8 +2142,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 576,
-      "chp": 576,
+      "agg": 582,
+      "chp": 582,
       "frag": -1,
       "vol": -1
     },
@@ -2172,8 +2196,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 229,
-      "chp": 229,
+      "agg": 230,
+      "chp": 230,
       "frag": -1,
       "vol": -1
     },
@@ -2199,8 +2223,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20558,
-      "chp": 558,
+      "agg": 20559,
+      "chp": 559,
       "frag": -1,
       "vol": 2
     },
@@ -2226,8 +2250,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 305,
-      "chp": 305,
+      "agg": 308,
+      "chp": 308,
       "frag": -1,
       "vol": -1
     },
@@ -2280,8 +2304,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1094,
-      "chp": 1094,
+      "agg": 1100,
+      "chp": 1100,
       "frag": -1,
       "vol": -1
     },
@@ -2307,8 +2331,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 189,
-      "chp": 189,
+      "agg": 192,
+      "chp": 192,
       "frag": -1,
       "vol": -1
     },
@@ -2334,8 +2358,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 409,
-      "chp": 409,
+      "agg": 419,
+      "chp": 419,
       "frag": -1,
       "vol": -1
     },
@@ -2361,8 +2385,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 263,
-      "chp": 263,
+      "agg": 266,
+      "chp": 266,
       "frag": -1,
       "vol": -1
     },
@@ -2388,8 +2412,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 196,
-      "chp": 196,
+      "agg": 198,
+      "chp": 198,
       "frag": -1,
       "vol": -1
     },
@@ -2415,8 +2439,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 350,
-      "chp": 350,
+      "agg": 353,
+      "chp": 353,
       "frag": -1,
       "vol": -1
     },
@@ -2469,8 +2493,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 393,
-      "chp": 393,
+      "agg": 394,
+      "chp": 394,
       "frag": -1,
       "vol": -1
     },
@@ -2523,8 +2547,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 438,
-      "chp": 438,
+      "agg": 441,
+      "chp": 441,
       "frag": -1,
       "vol": -1
     },
@@ -2626,8 +2650,8 @@
       },
       "id": 131750,
       "name": "Ascension: Demon Monarch System",
-      "rating": 6.238095238095238,
-      "rating_count": 21,
+      "rating": 6.458333333333333,
+      "rating_count": 24,
       "tl_type": "oel"
     },
     {
@@ -3733,8 +3757,8 @@
       },
       "id": 117074,
       "name": "Races: Online ( VR Smartphone App)",
-      "rating": 7.2,
-      "rating_count": 5,
+      "rating": 7.5,
+      "rating_count": 6,
       "tl_type": "oel"
     },
     {
@@ -3787,8 +3811,8 @@
       },
       "id": 129448,
       "name": "Reincarnated As a Fox With System",
-      "rating": 1,
-      "rating_count": 1,
+      "rating": 5.5,
+      "rating_count": 2,
       "tl_type": "oel"
     },
     {
@@ -6174,9 +6198,9 @@
       "vol": -1
     },
     {
-      "agg": 538,
-      "chp": 538,
-      "date": 1614343337,
+      "agg": 541,
+      "chp": 541,
+      "date": 1614598921,
       "frag": 0,
       "vol": -1
     },
@@ -6552,9 +6576,9 @@
       "vol": -1
     },
     {
-      "agg": 225,
-      "chp": 225,
-      "date": 1614188573,
+      "agg": 227,
+      "chp": 227,
+      "date": 1614530748,
       "frag": 0,
       "vol": -1
     },
@@ -6633,9 +6657,9 @@
       "vol": -1
     },
     {
-      "agg": 449,
-      "chp": 449,
-      "date": 1614030257,
+      "agg": 451,
+      "chp": 451,
+      "date": 1614627749,
       "frag": 0,
       "vol": -1
     },
@@ -6768,9 +6792,9 @@
       "vol": 3
     },
     {
-      "agg": 40074,
-      "chp": 74,
-      "date": 1614210893,
+      "agg": 40076,
+      "chp": 76,
+      "date": 1614617022,
       "frag": 0,
       "vol": 4
     },
@@ -7013,7 +7037,7 @@
     {
       "agg": 48,
       "chp": 48,
-      "date": 1461761204,
+      "date": 1461736004,
       "frag": 0,
       "vol": -1
     },
@@ -7121,7 +7145,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463460423,
+      "date": 1463456823,
       "frag": 0,
       "vol": -1
     },

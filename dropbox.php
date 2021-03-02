@@ -181,6 +181,11 @@ flush();
 $head=array('name', 'WLNUpdates old chp', 'WLNUpdates new chp', 'WLNUpdates sync', 'WebNovel old chp', 'WebNovel new chp', 'WebNovel sync', 'msg');
 $lines=0;
 
+$res=$wn->checkLogin();
+if($res->code!=0) {
+	$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+}
+
 foreach($fns as $name=>$fn)
 {
 	$row=array();

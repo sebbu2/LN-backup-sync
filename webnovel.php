@@ -147,7 +147,7 @@ class WebNovel extends SitePlugin
 			//var_dump(strval($xml->script[4])); // number not definitive
 			preg_match('#(?<=LoginV1\.init\()\{(.*?)\}(?=\);)#s', $res, $matches);
 			$json=json_decode($matches[0]);
-			var_dump($json);
+			//var_dump($json);
 			
 			$pub_key=$json->pubkey;
 			$res2=openssl_get_publickey($pub_key);
@@ -240,7 +240,7 @@ class WebNovel extends SitePlugin
 		$autoLoginSessionKey=$data->data->autoLoginSessionKey;
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
-		var_dump($cookies);
+		//var_dump($cookies);
 		
 		{ // 9 loginSuccess
 			//$ar=array();//data?
