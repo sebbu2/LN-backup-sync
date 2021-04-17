@@ -629,10 +629,14 @@ class WebNovel extends SitePlugin
 		//$xml2=wordwrap($xml2,150);
 		//var_dump($xml2);
 		
-		$results=$res[0]->div[0]->div->ul->li;
+		//var_dump($res);die();
+		$results=$res[0]->div[0];
+		if(!empty($results->div)) $results=$results->div->ul->li;
+		else $results=$results->ul->li;
 		$extracts=array();
 		foreach($results as $result)
 		{
+			if((string)$result=='No more results') continue;
 			$extract=array();
 			$extract['title']=strval($result->a['title']);
 			$extract['data-bookname']=strval($result->a['data-bookname']);
@@ -642,6 +646,10 @@ class WebNovel extends SitePlugin
 			$extract['type']=strval($result->a['data-search-type']);
 			$extract['cover']=array();
 			$res2=$result->a->img;
+			if(is_null($res2)) {
+				$res2=$result->a[0]->img;
+			}
+			if(is_null($res2)) { var_dump($res, $results); die(); }
 			foreach($res2 as $link) {
 				foreach($res2->attributes() as $attr) {
 					foreach(array('http://','https://','//') as $start) {
@@ -692,8 +700,9 @@ class WebNovel extends SitePlugin
 			'X-Requested-With: XMLHttpRequest',
 			'Referer: '.$referer,
 		);
-		$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers, false); // no cookies (un-authentified)
+		//$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers, false); // no cookies (un-authentified)
 		//$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers);
+		$res = $this->send( 'https://www.webnovel.com/go/pcm/search/autoComplete', $ar, $headers, false); // no cookies (un-authentified)
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'search2.json', $res);
 		

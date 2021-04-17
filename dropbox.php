@@ -291,7 +291,7 @@ foreach($fns as $name=>$fn)
 				if(!is_array($res)) { var_dump($book, res); die(); }
 				if(!is_object($res[0])) { var_dump($book, $res); die(); }
 				if(!property_exists($res[0], 'Data')) { var_dump($book, $res); die(); }
-				if(!is_object($res[0]->Data)) { var_dump($book, $res[0]->Result, $res[1]->Result, $res[2]->code, $res[3]->code); die(); }
+				if(!is_object($res[0]->Data)) { var_dump($book, $res, $res[0]->Result, $res[1]->Result, $res[2]->code, $res[3]->code); die(); }
 				if(!property_exists($res[0]->Data, 'BookName')) { var_dump($book, $res); die(); }
 				$name2=$res[0]->Data->BookName;
 			}

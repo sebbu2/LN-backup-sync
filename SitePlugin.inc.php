@@ -219,10 +219,12 @@ class SitePlugin
 		$jsonp=trim($jsonp);
 		//$res=preg_replace('#\w+\((.*)\)#iU','\1', $jsonp);
 		if(!in_array($jsonp[0], array('[','{'))) {
+			//var_dump($jsonp);
 			//$jsonp=explode('(', $jsonp); array_shift($jsonp); $jsonp=implode('(',$jsonp); // remove before first (
 			$jsonp=substr($jsonp, strpos($jsonp, '(')+1);
 			//$jsonp=explode(')',$jsonp); array_pop($jsonp); $jsonp=implode(')',$jsonp); // remove after last )
 			$jsonp=substr($jsonp, 0, strrpos($jsonp, ')'));
+			//var_dump($jsonp);
 		} //*/
 		$jsonp=trim($jsonp);
 		static $end_match=array('['=>']','{'=>'}');

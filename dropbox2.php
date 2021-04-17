@@ -324,23 +324,27 @@ foreach($fns as $name=>$fn)
 			if( !is_null($name1) && strlen($name1)>0 ) {
 				$res=$wn->search2($name1);
 				assert($res->code==0);
-				var_dump($res);die();
+				var_dump($res);//die();
 			}
-			if( !is_null($name2) && strlen($name2)>0 ) {
+			if( !is_null($name2) && strlen($name2)>0 && strcasecmp($name,$name2)!=0) {
 				$res=$wn->search2($name2);
 				assert($res->code==0);
-				var_dump($res);die();
+				var_dump($res);//die();
 			}
 			if(!property_exists($res->data, 'books')) {
 				$res=$wn->search($name);
 				assert(is_array($res) && count($res)>0);
-				var_dump($res);//die();
+				//var_dump($res);//die();
+				$res2=array_map(function($e) { return $e['title']; }, $res);
+				var_dump($res2);
 			}
 		}
 		if(!is_array($res) && (is_object($res) && !property_exists($res->data, 'books')) ) die('error');
 		if( (is_array($res)&&count($res)==1) || (is_object($res)&&count($res->data->books)==1) ) {
 			$id=NULL;
-			if(!name_compare($name, $res->data->books[0]->name,1)) {
+			if(is_object($res)) $name2=$res->data->books[0]->name;
+			elseif(is_array($res)) $name2=$res[0]['title'];
+			if(!name_compare($name, $name2, 1)) {
 				$res=$wn->search($name);
 				var_dump($res);
 				foreach($res as $k=>$v) {
@@ -351,7 +355,8 @@ foreach($fns as $name=>$fn)
 				}
 			}
 			else {
-				$id=$res->data->books[0]->id;
+				if(is_object($res)) $id=$res->data->books[0]->id;
+				elseif(is_array($res)) $id=$res[0]['data-bookid'];
 			}
 			if($id===NULL) {
 				var_dump($name.' not found in WebNovel search');
@@ -387,9 +392,14 @@ foreach($fns as $name=>$fn)
 				}
 			}
 			var_dump($found);
-			assert($found==1) or die('Multiple novel found with that name');
-			$res=$wn->add_watch($id, 0);
-			var_dump($res);
+			if($found>=1) {
+				assert($found==1) or die('Multiple novel found with that name');
+				$res=$wn->add_watch($id, 0);
+				var_dump($res);
+			}
+			else {
+				var_dump('not found');
+			}
 		}
 		//$res=json_decode($res);
 		if(is_object($res)) {
