@@ -85,8 +85,9 @@ class WebNovel extends SitePlugin
 			$res = $this->get( 'https://passport.webnovel.com/login.html', $ar, $headers);
 			file_put_contents($this::FOLDER.'login1.htm', $res);
 			
-			preg_match('#(?<=LoginV1\.init\()\{(.*?)\}(?=\);)#s', $res, $matches);
-			$json=json_decode($matches[0]);
+			/*preg_match('#(?<=LoginV1\.init\()\{(.*?)\}(?=\);)#s', $res, $matches);
+			var_dump($matches);die();
+			$json=json_decode($matches[0]);//*/
 			
 			$xml=simplexml_load_html($res);
 			$found=false;
@@ -102,6 +103,8 @@ class WebNovel extends SitePlugin
 				var_dump('login.html page changed.');
 				die();
 			}
+			if($data['href'][0]!='/' && substr($data['href'],0,5)!='http:' && substr($data['href'],0,6)!='https:')
+				$data['href']='https://passport.webnovel.com/'.$data['href'];
 		}
 		
 		$referer=$this->lastUrl;
@@ -143,13 +146,14 @@ class WebNovel extends SitePlugin
 			//$headers=array();
 			$res = $this->get( $data['href'] ); // email page
 			file_put_contents($this::FOLDER.'login2.htm', $res);
-			$xml=simplexml_load_html($res);
+			/*$xml=simplexml_load_html($res);
 			//var_dump(strval($xml->script[4])); // number not definitive
 			preg_match('#(?<=LoginV1\.init\()\{(.*?)\}(?=\);)#s', $res, $matches);
 			$json=json_decode($matches[0]);
 			//var_dump($json);
 			
-			$pub_key=$json->pubkey;
+			//$pub_key=$json->pubkey;//*/
+			$pub_key=file_get_contents($this::FOLDER.'webnovel.pub');
 			$res2=openssl_get_publickey($pub_key);
 			if(!is_resource($res2) && !is_object($res2)) {
 				var_dump($pub_key, $res2);
@@ -232,22 +236,28 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'checkcode.json', $res);
 			$data=json_decode($res);
+			
 		}
 		
 		$userid=$data->data->userid;
 		$ticket=$data->data->ticket;
 		$ukey=$data->data->ukey;
-		$autoLoginSessionKey=$data->data->autoLoginSessionKey;
+		//$autoLoginSessionKey=$data->data->autoLoginSessionKey;
+		$sessionKey = $data->data->sessionKey;
+		//$this->set_cookies_for('https://www.webnovel.com/', {});
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
+		//$cookies['_csrfToken']=$sessionKey;
 		//var_dump($cookies);
 		
 		{ // 9 loginSuccess
-			//$ar=array();//data?
+			$ar=array(
+				'sessionkey'=>$sessionKey,
+			);
 			$headers=array(
 				'Referer: '.$referer,
 			);
-			$res = $this->get($data->data->returnurl);
+			$res = $this->get($data->data->returnurl, $ar);
 			file_put_contents($this::FOLDER.'loginSuccess.htm', $res);
 			//$res=json_decode($res);
 		}
@@ -258,7 +268,7 @@ class WebNovel extends SitePlugin
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		
 		{ // 9b webnovel
-			$res=$this->get( 'https://www.webnovel.com/'); // initialize cookies
+			$res=$this->get( 'https://www.webnovel.com/', $ar); // initialize cookies
 			file_put_contents($this::FOLDER.'wn.htm', $res);
 		}
 		$referer=$this->lastUrl;
@@ -269,6 +279,7 @@ class WebNovel extends SitePlugin
 				'code'=>'',
 				'ticket'=>$ticket,
 				'guid'=>$userid,
+				'sessionkey'=>$sessionKey,
 				'forceRedirect'=>'',
 			);
 			$headers=array(
@@ -286,6 +297,7 @@ class WebNovel extends SitePlugin
 		{ // 11 getUserInfo
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
+				'sessionkey'=>$sessionKey,
 			);
 			$headers=array(
 				'Referer: '.$referer,
@@ -302,6 +314,7 @@ class WebNovel extends SitePlugin
 			
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
+				'sessionkey'=>$sessionKey,
 			);
 			$headers=array(
 				'Referer: '.$referer,
@@ -384,7 +397,7 @@ class WebNovel extends SitePlugin
 				++$i;
 			}
 		}
-		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<20);//$i should not reach 20*30 books soon (i'm at 16)
+		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<=40);//$i should not reach 40*30 books soon (i'm at 21)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
@@ -475,6 +488,10 @@ class WebNovel extends SitePlugin
 		{
 			foreach($res->data->volumeItems as $volume) {
 				foreach($volume->chapterItems as $chapter) {
+					if($chapter->index <= $chp && $chapter->chapterLevel==0) {
+						$cid = $chapter->id;
+						//$update=true;
+					}
 					if($chapter->index == $chp && $chapter->chapterLevel==0) {
 						$cid = $chapter->id;
 						$found=true;
@@ -487,6 +504,7 @@ class WebNovel extends SitePlugin
 				}
 			}
 		}
+		//var_dump($found,$update);
 		if(!$found) {
 			if($cid_max_num>$watch->readToChapterIndex) {
 				//var_dump('Updating to '.$cid_max_num.' instead of '.$chp.'.');
@@ -499,6 +517,7 @@ class WebNovel extends SitePlugin
 		}
 		
 		if ($update) {
+			if($watch->readToChapterIndex==$chp) return false;
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'bookId'=>strval($watch->bookId),

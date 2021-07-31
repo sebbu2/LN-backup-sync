@@ -45,9 +45,6 @@ foreach($ar as $fn)
 		echo '<div class="block b b-red">',$fn,'</div>',"\n";
 		continue;
 	}
-	/*$fn2=str_replace(array('_'), ' ', $fn2);
-	$fn2=str_replace(array('Retranslated Version'), '', $fn2);
-	$fn2=trim($fn2);//*/
 	$fn2=name_simplify($fn2, 1);
 	$fn3=strtolower($fn2);
 	$data=file_get_contents(DROPBOX.$fn);
@@ -127,44 +124,8 @@ foreach($ar as $fn)
 		var_dump($fn, $fn2, $content);
 		die();
 	}
-	/*if( !array_key_exists($fn3, $fns) )
-	{
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
-		$ar2=array_merge($ar2, $content);
-		$fns[$fn3]=$ar2;
-	}
-	else if(
-		$max>$fns[$fn3]['max'] && //new last chapter is >
-		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) >= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
-	) {
-		//var_dump($fns[$fn3]['fn']);//die();
-		if($content[0]!=MOONREADER_DID2) {
-			unlink(DROPBOX.$fns[$fn3]['fn']);//die();
-			echo '<div class="block b b-blue">',$fns[$fn3]['fn'],'</div>',"\n";
-		}
-		else {
-			echo '<div class="block b b-green">',$fns[$fn3]['fn'],'</div>',"\n";
-		}
-		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
-		$ar2=array_merge($ar2, $content);
-		$fns[$fn3]=$ar2;
-	}
-	else if(
-		$max < $fns[$fn3]['max'] && //new last chapter is >
-		(($min+($min<0?1:0)+$content[1]+($content[3]>0?1:0)) <= ($fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0)+$fns[$fn3][1]+($fns[$fn3][3]>0?1:0))) // position is same or later (no diff between end of chapter and start of new one)
-	) {
-		//var_dump($fn);//die();
-		if($fns[$fn3][0]!=MOONREADER_DID2) {
-			unlink(DROPBOX.$fn);//die();
-			echo '<div class="block b b-blue">',$fn,'</div>',"\n";
-		}
-		else {
-			echo '<div class="block b b-green">',$fn,'</div>',"\n";
-		}
-	}//*/
 }
 //var_dump(count($fns));
-//require_once('watches.inc.php');
 $wln=new WLNUpdates();
 $wn=new WebNovel;
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
@@ -194,19 +155,6 @@ foreach($fns as $name=>$fn)
 	$id=-1;
 	$found1=false;
 	{
-		/*foreach($watches as $_key=>$ar1)
-		{
-			foreach($ar1 as $_id=>$ar2)
-			{
-				if(name_compare($name, $ar2['title']))
-				{
-					$key=$_key;
-					$id=$_id;
-					$found1=true;
-					break(2);
-				}
-			}
-		}//*/
 		foreach($watches as $_key=>$book)
 		{
 			if($book[3]!==NULL && name_compare($name, $book[3], 1))
@@ -229,12 +177,14 @@ foreach($fns as $name=>$fn)
 				}
 			}
 		}
+		if(!$found1) {
+			// TODO : check alternatenames
+		}
 		if($found1) {
 			$fns[$name]['watches']=$watches[$key];
 		}
 		else {
 			// DO NOTHING ! the other file does the add for missing novels
-			//var_dump($name.' not found in WLNUpdates.');
 			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('not found in WLNUpdates'));
 		}
 	}
@@ -256,13 +206,11 @@ foreach($fns as $name=>$fn)
 	if( ($fn[1]=='0' && $fn[3]=='0') || $chp==1) continue;
 	
 	if($found1) {
-		//if($chp>(int)$watches[$key]['chp']) {
 		if($chp>(int)$watches[$key][1]->chp) {
 			//var_dump($name, $chp, $watches[$key][1]->chp);
 			$row['WLNUpdates old chp']=$watches[$key][1]->chp;
 			$row['WLNUpdates new chp']=$chp;
 			$data=$wln->read_update($watches[$key], $chp);
-			//$data=json_decode($data);
 			//var_dump($data);
 			if($data->error===false && $data->message==='Succeeded') $row['WLNUpdates sync']='true';
 			else $row['WLNUpdates sync']='false';
@@ -301,6 +249,9 @@ foreach($fns as $name=>$fn)
 				$found2=true;
 				break;
 			}
+		}
+		if(!$found2) {
+			// TODO : check wlnupdates alternatenames
 		}
 		if($found2) {
 			// DO NOTHING
@@ -342,14 +293,17 @@ foreach($fns as $name=>$fn)
 			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
 			//var_dump($name, $chp);
-			$row['WebNovel old chp']=(int)$books[$key]->readToChapterIndex;
-			$row['WebNovel new chp']=($chp2<=$max_pub)?$chp2:$max_pub;
 			$data=$wn->read_update($books[$key], $chp2);
-			//var_dump($data);
-			if(!property_exists($data, 'code') || !property_exists($data, 'msg')) { var_dump($data);die(); }
-			if($data->code===0 && $data->msg==='Success') $row['WebNovel sync']='true';
-			else $row['WebNovel sync']='false';
-			$updatedCount['wn']++;
+			if(!is_bool($data)) {
+				$row['WebNovel old chp']=(int)$books[$key]->readToChapterIndex;
+				$row['WebNovel new chp']=($chp2<=$max_pub)?$chp2:$max_pub;
+				//var_dump($data);
+				//var_dump($wn->msg);
+				if(!property_exists($data, 'code') || !property_exists($data, 'msg')) { var_dump($data);die(); }
+				if($data->code===0 && $data->msg==='Success') $row['WebNovel sync']='true';
+				else $row['WebNovel sync']='false';
+				$updatedCount['wn']++;
+			}
 		}
 		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
 			//var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex, $fns[$name]);

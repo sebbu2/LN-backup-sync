@@ -14,7 +14,7 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '/', '  ');
 	//'+'
-	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', 'Retranslated Version', 'Retranslated_Version', 'retranslated version');
+	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
@@ -42,6 +42,7 @@ function name_compare($name1, $name2, $type=0)
 	$name1=name_simplify($name1, $type);
 	$name2=name_simplify($name2, $type);
 	//var_dump($name1,$name2);
+	//if($name1=='lord of the mysteries') var_dump($name1, $name2, strcasecmp($name1, $name2));
 	return (strcasecmp($name1, $name2)==0);
 }
 function case_count($name)

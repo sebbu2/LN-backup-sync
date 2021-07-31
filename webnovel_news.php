@@ -25,6 +25,7 @@ natcasesort($ar);
 chdir(CWD);
 
 $fns=array();
+$fns2=array();
 foreach($ar as $fn)
 {
 	preg_match('#^(.*)_(-?\d+)-(\d+)(_FIN)?\.epub\.po$#i', $fn, $matches);
@@ -60,6 +61,7 @@ foreach($ar as $fn)
 	unset($data);
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
+	$fns2[$fn]=array_merge(array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2, 'fn3'=>$fn3), $content);
 	if( !array_key_exists($fn3, $fns) )
 	{
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
@@ -81,6 +83,7 @@ foreach($ar as $fn)
 		//
 	}
 }
+uksort($fns2, 'version_compare');
 //var_dump($fns);die();
 
 $diff_old=json_decode(file_get_contents('wn_diff.json'), TRUE, 512, JSON_THROW_ON_ERROR); // important : true as 2nd parameter
@@ -225,14 +228,15 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$title=name_simplify($entry['title'], 1);
 					$title2=strtolower($title);
 					$name=name_simplify($title, 4); // 2 regex, 4 glob
-					//$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
-					$filename=$name.'_*-*.epub.po';
 					//var_dump($fns);die();
 					if(!array_key_exists($title2, $fns)) { var_dump($entry['title'], $book->bookName); var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1))); var_dump($title); var_dump(array_keys($fns)); die(); }
 					$ar2=$fns[$title2];
+					
+					//$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
+					$filename=$name.'_*-*.epub.po';
 					//$regex='#^'.$name.'#i';
 					$regex='#-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po$#i';
-					$exists=array_values(preg_grep($regex,iglob($filename)));
+					/*$exists=array_values(preg_grep($regex,iglob($filename)));
 					//var_dump($filename,$regex,$exists);die();
 					$content=array();
 					if(count($exists)==1) {
@@ -241,6 +245,21 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$content[]=strtok($data, '*@#:%');
 						while(($content[]=strtok('*@#:%'))!==FALSE);
 					}//*/
+					
+					$exists=array(); $content=array();
+					foreach($fns2 as $fn=>$ar) {
+						if(fnmatch(strtolower($filename), strtolower($fn)) && preg_match($regex, $fn)==1) {
+							$exists[]=$ar;
+							$content=$ar;
+						}
+					}
+					/*if(count($exists)==0) {
+						var_dump($filename, $regex, $fn, $title2, $ar2);
+						var_dump( fnmatch(strtolower($filename), strtolower($ar2['fn'])) );
+						var_dump( preg_match($regex, strtolower($ar2['fn'])) );
+						die();
+					}//*/
+					
 					//var_dump(!$skip_existing, $exists);
 					//if($content[0]==MOONREADER_DID2) var_dump($title);
 					chdir(CWD);
