@@ -6,6 +6,7 @@ wlnupdates/*.json
 wlnupdates/*.txt
 *.htm*
 *.json
+*.conf
 *.txt
 *.js
 *.bak
