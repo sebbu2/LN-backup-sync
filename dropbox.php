@@ -127,7 +127,15 @@ foreach($ar as $fn)
 }
 //var_dump(count($fns));
 $wln=new WLNUpdates();
+$wln_error_count=0;
 $wn=new WebNovel;
+$res=$wn->checkLogin();
+if($res->code!=0) {
+	var_dump($res->code, $res->msg);
+	$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+	var_dump($res);
+	die();
+}
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 //var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
@@ -145,6 +153,9 @@ $lines=0;
 $res=$wn->checkLogin();
 if($res->code!=0) {
 	$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+	if($res->code!=0) {
+		die();
+	}
 }
 
 foreach($fns as $name=>$fn)
@@ -211,6 +222,16 @@ foreach($fns as $name=>$fn)
 			$row['WLNUpdates old chp']=$watches[$key][1]->chp;
 			$row['WLNUpdates new chp']=$chp;
 			$data=$wln->read_update($watches[$key], $chp);
+			if( $data->error==true && $wln_error_count<1 ) {
+				$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
+				if($res===false) die('you need to log in.');
+				//$res=json_decode($res);
+				if(is_object($res) && $res->error==true) die($res->message);
+				$wln_error_count++;
+			}
+			elseif( $data->error==true ) {
+				die();
+			}
 			//var_dump($data);
 			if($data->error===false && $data->message==='Succeeded') $row['WLNUpdates sync']='true';
 			else $row['WLNUpdates sync']='false';

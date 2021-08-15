@@ -990,14 +990,16 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'ReadingHistoryAjax'.$pageIndex.'.json', $res);
 			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
-			$data2[]=$res;
+			$data2=array_merge($data2, $res->data->historyItems);
 			if($pageIndex==1) if($res->data->isLast==0) $pageSize=$res->data->total;
 		}
-		while($res->data->isLast==0);
+		while(!is_null($res->data) && ((property_exists($res->data,'isLast')&&$res->data->isLast==0) || ($res->data->total>0)) && $pageIndex<=50);
+		// i'm at 32 pages
 		
 		$data[]=$data2;
 		
 		$data2=array();
+		$pageSize=30;
 		
 		for($i=1;$i<=$pageIndex;$i++) {
 			$ar=array(
@@ -1011,10 +1013,18 @@ class WebNovel extends SitePlugin
 			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 			
 			if($i==1 && $pageIndex>1) assert($pageSize==count($res->Data)) or die('error in ReadingHistoryAjax vs get-history.');
-			$data2[]=$res;
+			if(is_null($res->Data)||$res->Result!=0||strlen($res->Message)==0||$res->Message!='Success') {
+				break; // history complete
+			}
+			$data2=array_merge($data2, $res->Data);
 		}
 		
 		$data[]=$data2;
+		
+		$history=json_encode($data); unset($data2); //
+		$history=$this->jsonp_to_json($history);
+		file_put_contents($this::FOLDER.'_history.json', $history );
+		
 		return $data;
 	}
 	
@@ -1035,12 +1045,11 @@ class WebNovel extends SitePlugin
 		
 		$res = $this->get( 'https://idruid.webnovel.com/app/api/book-collection/list', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'book-collection.json', $res);
+		file_put_contents($this::FOLDER.'book-collection-list.json', $res);
 		$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 		
 		$data[]=$res;
-		
-		$data2[]=array();
+		$data2=array();
 		
 		$ar=array(
 			'collectionId'=>'',
@@ -1061,12 +1070,20 @@ class WebNovel extends SitePlugin
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'book-collection'.$cid.'-'.$pageIndex.'.json', $res);
 				$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
-				$data3[]=$res;
+				//$data3[]=$res;
+				$data3=array_merge($data3, $res->Data->BookItems);
 			}
 			while($res->Data->IsLast==0);
-			$data2[]=$data3;
+			$collection=json_encode($data3);
+			$collection=$this->jsonp_to_json($collection);
+			file_put_contents($this::FOLDER.'book-collection'.$cid.'.json', $collection);
+			$data2[$name]=$data3;
 		}
 		$data[]=$data2;
+		
+		$collection=json_encode($data2);
+		$collection=$this->jsonp_to_json($collection);
+		file_put_contents($this::FOLDER.'_collection.json', $collection);
 		
 		return $data;
 	}

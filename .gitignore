@@ -4,11 +4,11 @@ webnovel/*.txt
 wlnupdates/*.htm*
 wlnupdates/*.json
 wlnupdates/*.txt
-*.htm
+*.htm*
 *.json
 *.txt
 *.js
 *.bak
 *.py
 *.sh
-
+*.lnk
