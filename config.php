@@ -15,6 +15,10 @@ $accounts=array(
 		'user'=>'',
 		'pass'=>'',
 	),
+	'RoyalRoad'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
 	'NovelUpdates'=>array(
 		'user'=>'',
 		'pass'=>'',
