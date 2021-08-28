@@ -334,12 +334,14 @@ class WebNovel extends SitePlugin
 		if(property_exists($e1, 'bookName')) $n1=$e1->bookName;
 		else {
 			$res=$this->get_info_cached($e1->bookId);
-			$n1=$res[0]->Data->BookName;
+			if(is_object($res[0]->Data) && property_exists($res[0]->Data, 'BookName')) $n1=$res[0]->Data->BookName;
+			else $n1='';
 		}
 		if(property_exists($e2, 'bookName')) $n2=$e2->bookName;
 		else {
 			$res=$this->get_info_cached($e2->bookId);
-			$n2=$res[0]->Data->BookName;
+			if(is_object($res[0]->Data) && property_exists($res[0]->Data, 'BookName')) $n2=$res[0]->Data->BookName;
+			else $n2='';
 		}
 		$res=strcasecmp($n1, $n2);
 		if($res!==0) return $res;
@@ -851,6 +853,7 @@ class WebNovel extends SitePlugin
 		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
 		if(count($types)==0) { die('ERROR: empty types.'); }
 		
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/';
 		$ar=array(
 			'bookId'=>$id,
@@ -877,6 +880,7 @@ class WebNovel extends SitePlugin
 		}
 		
 		$ar = array(
+			'_csrfToken'=>$cookies['_csrfToken'],
 			'bookId'=>$id,
 			'pageIndex'=>1,
 			'pageSize'=>30,
@@ -894,6 +898,7 @@ class WebNovel extends SitePlugin
 		}
 		
 		$ar=array(
+			'_csrfToken'=>$cookies['_csrfToken'],
 			'bookId'=>$id,
 			'type'=>2,
 		);
@@ -911,7 +916,7 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info_cached($id) {
+	public function get_info_cached($id, $duration=604800) {
 		$filenames=array(
 			$this::FOLDER.'get-book'.$id.'.json',
 			$this::FOLDER.'get-book-extended'.$id.'.json',
@@ -922,7 +927,7 @@ class WebNovel extends SitePlugin
 		foreach($filenames as $i=>$fn) {
 			$j=0;
 			$res2=NULL;
-			if(file_exists($fn)) {
+			if(file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
 				$res2=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
 			}
 			else {

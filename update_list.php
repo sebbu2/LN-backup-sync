@@ -199,7 +199,7 @@ foreach($correspondances as $ar) {
 	}//*/
 	//var_dump($json2);//die();
 	$json=array('mode'=>'series-update', 'item-id'=>$wln_id, 'entries'=>$json2);
-	var_dump($json);
+	var_dump($json);//continue;
 	//var_dump(json_encode($json2, JSON_UNESCAPED_SLASHES));
 	$res=$wln->edit($json);
 	var_dump($res);

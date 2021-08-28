@@ -105,7 +105,7 @@ flush();
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
 	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
-	if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) ) {
+	if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) ) {
 		echo '<h1>'.$id.'</h1>',"\n";
 	}
 	$lines=0;
@@ -139,8 +139,17 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						die();
 					}
 				}
-				if( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) || count($res->data->volumeItems)==0 ) {
+				if( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
+					//no info
 					var_dump($book->bookId, $entry['title'], $entry['title'], $res);die();
+				}
+				if( count($res->data->volumeItems)==0 ) {
+					//empty book
+					try {
+						$res=@$wn->get_chapter_list($book->bookId);
+					} catch (Exception $e) {
+					}
+					continue;
 				}
 				//fixing chapter number
 				$add=0;
@@ -204,7 +213,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						}
 					}
 				}
-				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) {
+				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) {
 					if(!is_numeric($book->readToChapterIndex)) {
 						$data=$wn->read_update($book, $entry['chp']);
 						assert($data->code===0 && $data->msg==='Success') or die('update "'.$entry['title'].' failed.');

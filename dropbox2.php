@@ -393,9 +393,14 @@ foreach($fns as $name=>$fn)
 			}
 			var_dump($found);
 			if($found>=1) {
-				assert($found==1) or die('Multiple novel found with that name');
-				$res=$wn->add_watch($id, 0);
-				var_dump($res);
+				if($found!==1) {
+					print('Multiple novel found with that name');
+					continue;
+				}
+				else {
+					$res=$wn->add_watch($id, 0);
+					var_dump($res);
+				}
 			}
 			else {
 				var_dump('not found');

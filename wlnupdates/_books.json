@@ -12,8 +12,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1187,
-      "chp": 1187,
+      "agg": 1213,
+      "chp": 1213,
       "frag": -1,
       "vol": -1
     },
@@ -66,8 +66,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 354,
-      "chp": 354,
+      "agg": 367,
+      "chp": 367,
       "frag": -1,
       "vol": -1
     },
@@ -79,33 +79,6 @@
       "vol": -1
     },
     null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
-      "id": 56289,
-      "name": "Daoist Gu",
-      "rating": 6.7,
-      "rating_count": 10,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 12277,
-      "chp": 2277,
-      "frag": -1,
-      "vol": 1
-    },
-    {
-      "agg": 10001,
-      "chp": 1,
-      "date": 1540534379,
-      "frag": 0,
-      "vol": 1
-    },
-    "Reverend Insanity"
   ],
   [
     {
@@ -201,8 +174,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1133,
-      "chp": 1133,
+      "agg": 1159,
+      "chp": 1159,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +309,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1146,
-      "chp": 1146,
+      "agg": 1172,
+      "chp": 1172,
       "frag": -1,
       "vol": -1
     },
@@ -363,8 +336,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1021,
-      "chp": 1021,
+      "agg": 1047,
+      "chp": 1047,
       "frag": -1,
       "vol": -1
     },
@@ -437,30 +410,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 60390,
-      "name": "Reincarnation Of The Strongest Sword God",
-      "rating": 10,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 2918,
-      "chp": 2918,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 781,
-      "chp": 781,
-      "date": 1538313600,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": null,
       "id": 136052,
       "name": "Shock! The Spell Is In English!",
       "rating": null,
@@ -468,8 +417,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 446,
-      "chp": 446,
+      "agg": 485,
+      "chp": 485,
       "frag": -1,
       "vol": -1
     },
@@ -481,6 +430,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 136375,
+      "name": "Tales of Unlikely Wizard (Isekai LitRPG)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 44,
+      "chp": 44,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 43,
+      "chp": 43,
+      "date": 1629612720,
+      "frag": 0,
+      "vol": -1
+    },
+    "Tales of Unlikely Wizard (Isekai LitRPG)"
   ],
   [
     {
@@ -531,6 +507,33 @@
       "agg": 151,
       "chp": 151,
       "date": 1578092701,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 60981,
+      "name": "Venerated Venomous Consort",
+      "rating": 4,
+      "rating_count": 4,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 899,
+      "chp": 899,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 680,
+      "chp": 680,
+      "date": 1546535343,
       "frag": 0,
       "vol": -1
     },
@@ -1109,6 +1112,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 60390,
+      "name": "Reincarnation Of The Strongest Sword God",
+      "rating": 10,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 2918,
+      "chp": 2918,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 781,
+      "chp": 781,
+      "date": 1538313600,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 43524,
       "name": "Release that Witch",
       "rating": 7.555555555555555,
@@ -1313,7 +1343,7 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1513653467,
+      "date": 1512616350,
       "frag": 0,
       "vol": -1
     },
@@ -1672,7 +1702,10 @@
   ],
   [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 135501,
       "name": "The Goblin's Leveling System!",
       "rating": null,
@@ -1761,8 +1794,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 344,
-      "chp": 344,
+      "agg": 346,
+      "chp": 346,
       "frag": -1,
       "vol": -1
     },
@@ -1842,15 +1875,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 811,
-      "chp": 811,
+      "agg": 820,
+      "chp": 820,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 812,
-      "chp": 812,
-      "date": 1628940660,
+      "agg": 819,
+      "chp": 819,
+      "date": 1629946920,
       "frag": 0,
       "vol": -1
     },
@@ -1869,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10483,
-      "chp": 483,
+      "agg": 10504,
+      "chp": 504,
       "frag": -1,
       "vol": 1
     },
@@ -1896,8 +1929,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 560,
-      "chp": 560,
+      "agg": 567,
+      "chp": 567,
       "frag": -1,
       "vol": -1
     },
@@ -1993,7 +2026,10 @@
   ],
   [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 139278,
       "name": "Inhuman Warlock",
       "rating": null,
@@ -2001,8 +2037,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 290,
-      "chp": 290,
+      "agg": 330,
+      "chp": 330,
       "frag": -1,
       "vol": -1
     },
@@ -2082,8 +2118,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 411,
-      "chp": 411,
+      "agg": 422,
+      "chp": 422,
       "frag": -1,
       "vol": -1
     },
@@ -2109,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 764,
-      "chp": 764,
+      "agg": 770,
+      "chp": 770,
       "frag": -1,
       "vol": -1
     },
@@ -2163,8 +2199,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1129,
-      "chp": 1129,
+      "agg": 1136,
+      "chp": 1136,
       "frag": -1,
       "vol": -1
     },
@@ -2433,8 +2469,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1420,
-      "chp": 1420,
+      "agg": 1448,
+      "chp": 1448,
       "frag": -1,
       "vol": -1
     },
@@ -2514,8 +2550,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 412,
-      "chp": 412,
+      "agg": 423,
+      "chp": 423,
       "frag": -1,
       "vol": -1
     },
@@ -2622,8 +2658,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 483,
-      "chp": 483,
+      "agg": 494,
+      "chp": 494,
       "frag": -1,
       "vol": -1
     },
@@ -2723,6 +2759,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 81724,
+      "name": "Ace of the Dragon Division",
+      "rating": 7,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 787,
+      "chp": 787,
+      "date": 1614285628,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 127434,
       "name": "Agatha The Legendary Guild Master",
       "rating": 6.5,
@@ -2770,6 +2833,33 @@
       "vol": -1
     },
     "Almighty Video Game Designer"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 116769,
+      "name": "Archean Eon Art",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1591333225,
+      "frag": 0,
+      "vol": -1
+    },
+    null
   ],
   [
     {
@@ -2831,6 +2921,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 116766,
+      "name": "Bank of The Universe",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 36,
+      "chp": 36,
+      "date": 1591333918,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 46279,
       "name": "Battle Frenzy",
       "rating": 7,
@@ -2848,6 +2965,60 @@
       "chp": 297,
       "date": 1543266358,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 85655,
+      "name": "Charm of Soul Pets",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 14,
+      "chp": 14,
+      "date": 1552620261.149557,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140061,
+      "name": "Cultivation Pet Shop",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -3020,6 +3191,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 36040,
+      "name": "Dominating Sword Immortal",
+      "rating": 7,
+      "rating_count": 11,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 511,
+      "chp": 511,
+      "date": 1543735800,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 130233,
       "name": "Doomsday Online: Supreme Blessing",
       "rating": 9,
@@ -3145,6 +3343,33 @@
       "chp": 106,
       "date": 1548648311,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 117654,
+      "name": "Emperor of Soul Pets",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 64,
+      "chp": 64,
+      "date": 1611261720,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -3290,6 +3515,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 140065,
+      "name": "I Am Loaded with Passive Skills",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 129157,
       "name": "I Am Really Not The Son of Providence",
       "rating": null,
@@ -3334,6 +3586,60 @@
       "chp": 39,
       "date": 1593129130,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140064,
+      "name": "I'm a Stingray?",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140063,
+      "name": "I'm Actually a Cultivation Bigshot",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -3479,6 +3785,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 63255,
+      "name": "MMORPG: Martial Gamer",
+      "rating": 7,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 341,
+      "chp": 341,
+      "date": 1544200060,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 127769,
       "name": "Monarch of Time",
       "rating": null,
@@ -3496,6 +3829,33 @@
       "chp": 54,
       "date": 1622530260,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140066,
+      "name": "Museum of Deadly Beasts",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -3604,6 +3964,33 @@
       "chp": 38,
       "date": 1594360900,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140067,
+      "name": "My Young Lord Is Really Righteous",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -4073,6 +4460,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 140068,
+      "name": "Starting With Contract Pets",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 54999,
       "name": "Strongest Abandoned Son",
       "rating": 7.333333333333333,
@@ -4208,6 +4622,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 34444,
+      "name": "The Experimental Log of the Crazy Lich",
+      "rating": 7.6,
+      "rating_count": 5,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 455,
+      "chp": 455,
+      "date": 1542318866,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 128349,
       "name": "The Gene Gamer",
       "rating": null,
@@ -4252,6 +4693,33 @@
       "chp": 71,
       "date": 1555230839.101984,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 117732,
+      "name": "The Hero Returns",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 6,
+      "chp": 6,
+      "date": 1593669335,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -4339,6 +4807,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 118612,
+      "name": "The Schoolgirl Secret Agent",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 29,
+      "chp": 29,
+      "date": 1595548961,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -4397,6 +4889,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 103204,
+      "name": "The Ultimate Host",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1562781048,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 90542,
       "name": "There is no Epic Loot, Only Puns",
       "rating": null,
@@ -4440,6 +4959,33 @@
       "agg": 39,
       "chp": 39,
       "date": 1590727555,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 112008,
+      "name": "Transcendent Dawn",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 33,
+      "chp": 33,
+      "date": 1585277330,
       "frag": 0,
       "vol": -1
     },
@@ -4505,6 +5051,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 111047,
+      "name": "Unrivaled Medicine God",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 117511,
       "name": "Venomancer Of Gaming",
       "rating": null,
@@ -4521,6 +5094,33 @@
       "agg": 39,
       "chp": 39,
       "date": 1593128215,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 63826,
+      "name": "Why Did You Summon Me?",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 198,
+      "chp": 198,
+      "date": 1543665004,
       "frag": 0,
       "vol": -1
     },
@@ -4714,6 +5314,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 56289,
+      "name": "Daoist Gu",
+      "rating": 6.7,
+      "rating_count": 10,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 12277,
+      "chp": 2277,
+      "frag": -1,
+      "vol": 1
+    },
+    {
+      "agg": 10001,
+      "chp": 1,
+      "date": 1540534379,
+      "frag": 0,
+      "vol": 1
+    },
+    "Reverend Insanity"
   ],
   [
     {
@@ -5477,8 +6104,8 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 107801,
-      "name": "A Journey of Black and Red",
+      "id": 136336,
+      "name": "A Dream of Wings and Flame",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
@@ -5490,9 +6117,36 @@
       "vol": -1
     },
     {
-      "agg": 121,
-      "chp": 121,
-      "date": 1628252520,
+      "agg": 16,
+      "chp": 16,
+      "date": 1629385440,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 107801,
+      "name": "A Journey of Black and Red",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 129,
+      "chp": 129,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 123,
+      "chp": 123,
+      "date": 1629465600,
       "frag": 0,
       "vol": -1
     },
@@ -5520,6 +6174,33 @@
       "agg": 19,
       "chp": 19,
       "date": 1606699980,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 128782,
+      "name": "A Path to Magic",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 48,
+      "chp": 48,
+      "date": 1623282900,
       "frag": 0,
       "vol": -1
     },
@@ -5565,15 +6246,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 726,
-      "chp": 726,
+      "agg": 733,
+      "chp": 733,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 724,
-      "chp": 724,
-      "date": 1628942400,
+      "agg": 730,
+      "chp": 730,
+      "date": 1630083600,
       "frag": 0,
       "vol": -1
     },
@@ -5592,15 +6273,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 229,
+      "chp": 229,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 192,
-      "chp": 192,
-      "date": 1628688420,
+      "agg": 197,
+      "chp": 197,
+      "date": 1629904320,
       "frag": 0,
       "vol": -1
     },
@@ -5619,17 +6300,71 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20128,
-      "chp": 128,
+      "agg": 20131,
+      "chp": 131,
       "frag": -1,
       "vol": 2
     },
     {
-      "agg": 20054,
-      "chp": 54,
-      "date": 1628883300,
+      "agg": 20057,
+      "chp": 57,
+      "date": 1629490680,
       "frag": 0,
       "vol": 2
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 112336,
+      "name": "Cinnamon Bun",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 248,
+      "chp": 248,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 239,
+      "chp": 239,
+      "date": 1629840240,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 118181,
+      "name": "Cinnamon Bun: A Wholesome LitRPG",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 240,
+      "chp": 240,
+      "date": 1630016191,
+      "frag": 0,
+      "vol": -1
     },
     null
   ],
@@ -5652,9 +6387,9 @@
       "vol": -1
     },
     {
-      "agg": 30100,
-      "chp": 100,
-      "date": 1628952240,
+      "agg": 30105,
+      "chp": 105,
+      "date": 1629587269,
       "frag": 0,
       "vol": 3
     },
@@ -5708,7 +6443,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1627911240,
+      "date": 1629115860,
       "frag": 0,
       "vol": -1
     },
@@ -5722,8 +6457,8 @@
       },
       "id": 94313,
       "name": "Defiance of the Fall",
-      "rating": 9.679245283018869,
-      "rating_count": 106,
+      "rating": 9.654205607476635,
+      "rating_count": 107,
       "tl_type": "oel"
     },
     {
@@ -5760,9 +6495,9 @@
       "vol": -1
     },
     {
-      "agg": 158,
-      "chp": 158,
-      "date": 1629003660,
+      "agg": 159,
+      "chp": 159,
+      "date": 1629608460,
       "frag": 0,
       "vol": -1
     },
@@ -5843,7 +6578,34 @@
     {
       "agg": 83,
       "chp": 83,
-      "date": 1626606269,
+      "date": 1626606120,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 127831,
+      "name": "Fluff",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 64,
+      "chp": 64,
+      "date": 1612452960,
       "frag": 0,
       "vol": -1
     },
@@ -5992,21 +6754,72 @@
       },
       "id": 107213,
       "name": "He Who Fights With Monsters",
-      "rating": 9.514563106796116,
-      "rating_count": 103,
+      "rating": 9.392523364485982,
+      "rating_count": 107,
       "tl_type": "oel"
     },
     {
-      "agg": 321,
-      "chp": 321,
+      "agg": 254,
+      "chp": 254,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 495,
-      "chp": 495,
-      "date": 1628895600,
+      "agg": 505,
+      "chp": 505,
+      "date": 1630105200,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 111209,
+      "name": "Headpats",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 63,
+      "chp": 63,
+      "date": 1621548000,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 138160,
+      "name": "Heart of Dorkness",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 52,
+      "chp": 52,
+      "date": 1629917340,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -6084,9 +6897,9 @@
       "vol": -1
     },
     {
-      "agg": 17,
-      "chp": 17,
-      "date": 1629010800,
+      "agg": 20,
+      "chp": 20,
+      "date": 1629919440,
       "frag": -1,
       "vol": -1
     },
@@ -6206,6 +7019,60 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 135126,
+      "name": "Lever Action",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 64,
+      "chp": 64,
+      "date": 1629934374,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110649,
+      "name": "Love Crafted",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 100,
+      "chp": 100,
+      "date": 1624405320,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 112321,
       "name": "Magic-Smithing",
       "rating": 7.333333333333333,
@@ -6289,8 +7156,8 @@
       },
       "id": 111530,
       "name": "Melas",
-      "rating": 4.25,
-      "rating_count": 4,
+      "rating": 4.2,
+      "rating_count": 5,
       "tl_type": "oel"
     },
     {
@@ -6337,6 +7204,30 @@
   ],
   [
     {
+      "extra_metadata": null,
+      "id": 137802,
+      "name": "My Best Friend is an Eldritch Horror",
+      "rating": 4,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 83,
+      "chp": 83,
+      "date": 1630085504,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": {
         "is_yaoi": false,
         "is_yuri": false
@@ -6370,13 +7261,13 @@
       },
       "id": 97804,
       "name": "My Dungeon Life: Rise of the Slave Harem",
-      "rating": 6.925925925925926,
-      "rating_count": 27,
+      "rating": 6.785714285714286,
+      "rating_count": 28,
       "tl_type": "oel"
     },
     {
-      "agg": 70529,
-      "chp": 529,
+      "agg": 70542,
+      "chp": 542,
       "frag": -1,
       "vol": 7
     },
@@ -6408,9 +7299,9 @@
       "vol": -1
     },
     {
-      "agg": 70,
-      "chp": 70,
-      "date": 1628717280,
+      "agg": 71,
+      "chp": 71,
+      "date": 1628959200,
       "frag": 0,
       "vol": -1
     },
@@ -6499,6 +7390,60 @@
   ],
   [
     {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 119192,
+      "name": "Oak: A Tree's Quest",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 8,
+      "chp": 8,
+      "date": 1596531900,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 135083,
+      "name": "Of Monstergirls and Men",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 92,
+      "chp": 92,
+      "date": 1629488280,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": null,
       "id": 139025,
       "name": "Path of the Dragon Mage",
@@ -6513,9 +7458,9 @@
       "vol": -1
     },
     {
-      "agg": 20008,
-      "chp": 8,
-      "date": 1628967000,
+      "agg": 20011,
+      "chp": 11,
+      "date": 1629908580,
       "frag": 0,
       "vol": 2
     },
@@ -6591,9 +7536,9 @@
       "vol": -1
     },
     {
-      "agg": 71,
-      "chp": 71,
-      "date": 1627863360,
+      "agg": 75,
+      "chp": 75,
+      "date": 1629819360,
       "frag": 0,
       "vol": -1
     },
@@ -6612,23 +7557,53 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70,
-      "chp": 70,
+      "agg": 73,
+      "chp": 73,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 69.0002,
-      "chp": 69,
-      "date": 1628785620,
-      "frag": 2,
+      "agg": 72.0001,
+      "chp": 72,
+      "date": 1629772020,
+      "frag": 1,
       "vol": -1
     },
     null
   ],
   [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 58106,
+      "name": "Red Mantis and Avenger Doll",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10.0006,
+      "chp": 10,
+      "date": 1499143920,
+      "frag": 6,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 136511,
       "name": "Reincarnated as a Nightwalker",
       "rating": 10,
@@ -6636,15 +7611,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 50,
-      "chp": 50,
+      "agg": 53,
+      "chp": 53,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 20048,
-      "chp": 48,
-      "date": 1628962080,
+      "agg": 20051,
+      "chp": 51,
+      "date": 1630002891,
       "frag": 0,
       "vol": 2
     },
@@ -6696,11 +7671,11 @@
       "vol": -1
     },
     {
-      "agg": 30101,
-      "chp": 101,
-      "date": 1618855200,
+      "agg": 40169,
+      "chp": 169,
+      "date": 1629396989,
       "frag": 0,
-      "vol": 3
+      "vol": 4
     },
     null
   ],
@@ -6717,17 +7692,17 @@
       "tl_type": "oel"
     },
     {
-      "agg": 30207,
-      "chp": 207,
+      "agg": 30219,
+      "chp": 219,
       "frag": -1,
       "vol": 3
     },
     {
-      "agg": 30101,
-      "chp": 101,
-      "date": 1618855200,
+      "agg": 40169,
+      "chp": 169,
+      "date": 1629378060,
       "frag": 0,
-      "vol": 3
+      "vol": 4
     },
     "Salvos [A Monster Evolution LitRPG]"
   ],
@@ -6752,7 +7727,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615172880,
+      "date": 1615191300,
       "frag": 0,
       "vol": -1
     },
@@ -6806,7 +7781,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567657258,
+      "date": 1567440673,
       "frag": -1,
       "vol": 2
     },
@@ -6866,6 +7841,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 119007,
+      "name": "Stray Cat Strut ⁠— A Young Lady's Journey to Becoming a Pop-Up Samurai",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 191,
+      "chp": 191,
+      "date": 1629841080,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 130167,
       "name": "Summoned as a Ghost in another world",
       "rating": null,
@@ -6873,15 +7875,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 32,
-      "chp": 32,
+      "agg": 33,
+      "chp": 33,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 31,
-      "chp": 31,
-      "date": 1628247719,
+      "agg": 33,
+      "chp": 33,
+      "date": 1629494601,
       "frag": 0,
       "vol": -1
     },
@@ -6900,15 +7902,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 2,
-      "chp": 2,
+      "agg": 63,
+      "chp": 63,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 94,
-      "chp": 94,
-      "date": 1628982540,
+      "agg": 100,
+      "chp": 100,
+      "date": 1630030932,
       "frag": 0,
       "vol": -1
     },
@@ -6920,26 +7922,26 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 136375,
-      "name": "Tales of Unlikely Wizard (Isekai LitRPG)",
+      "id": 133372,
+      "name": "The Agartha Loop",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
     },
     {
-      "agg": 39,
-      "chp": 39,
+      "agg": 1,
+      "chp": 1,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 39,
-      "chp": 39,
-      "date": 1628626320,
+      "agg": 35,
+      "chp": 35,
+      "date": 1623256607,
       "frag": 0,
       "vol": -1
     },
-    "Tales of Unlikely Wizard (Isekai LitRPG)"
+    null
   ],
   [
     {
@@ -6987,9 +7989,9 @@
       "vol": -1
     },
     {
-      "agg": 20101,
-      "chp": 101,
-      "date": 1628597760,
+      "agg": 20105,
+      "chp": 105,
+      "date": 1629807360,
       "frag": 0,
       "vol": 2
     },
@@ -7014,9 +8016,9 @@
       "vol": -1
     },
     {
-      "agg": 197,
-      "chp": 197,
-      "date": 1628690445,
+      "agg": 199,
+      "chp": 199,
+      "date": 1629904140,
       "frag": 0,
       "vol": -1
     },
@@ -7038,9 +8040,9 @@
       "vol": -1
     },
     {
-      "agg": 90,
-      "chp": 90,
-      "date": 1628567700,
+      "agg": 98,
+      "chp": 98,
+      "date": 1629957420,
       "frag": 0,
       "vol": -1
     },
@@ -7048,7 +8050,10 @@
   ],
   [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 131420,
       "name": "The Harvester",
       "rating": null,
@@ -7056,15 +8061,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 176,
-      "chp": 176,
+      "agg": 184,
+      "chp": 184,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 174,
-      "chp": 174,
-      "date": 1628802060,
+      "agg": 183,
+      "chp": 183,
+      "date": 1630098000,
       "frag": 0,
       "vol": -1
     },
@@ -7083,15 +8088,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 39,
-      "chp": 39,
+      "agg": 43,
+      "chp": 43,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 39,
-      "chp": 39,
-      "date": 1628964180,
+      "agg": 42,
+      "chp": 42,
+      "date": 1629836520,
       "frag": 0,
       "vol": -1
     },
@@ -7170,9 +8175,9 @@
       "vol": -1
     },
     {
-      "agg": 1665,
-      "chp": 1665,
-      "date": 1628559420,
+      "agg": 1677,
+      "chp": 1677,
+      "date": 1629777420,
       "frag": 0,
       "vol": -1
     },
@@ -7197,9 +8202,9 @@
       "vol": -1
     },
     {
-      "agg": 187,
-      "chp": 187,
-      "date": 1628523000,
+      "agg": 191,
+      "chp": 191,
+      "date": 1629732600,
       "frag": 0,
       "vol": -1
     },
@@ -7278,9 +8283,9 @@
       "vol": -1
     },
     {
-      "agg": 111,
-      "chp": 111,
-      "date": 1628604060,
+      "agg": 115,
+      "chp": 115,
+      "date": 1629813720,
       "frag": 0,
       "vol": -1
     },
@@ -7332,9 +8337,9 @@
       "vol": -1
     },
     {
-      "agg": 62,
-      "chp": 62,
-      "date": 1628892000,
+      "agg": 67,
+      "chp": 67,
+      "date": 1629712800,
       "frag": 0,
       "vol": -1
     },
@@ -7359,9 +8364,9 @@
       "vol": -1
     },
     {
-      "agg": 134,
-      "chp": 134,
-      "date": 1628835317,
+      "agg": 139,
+      "chp": 139,
+      "date": 1630131653,
       "frag": 0,
       "vol": -1
     },
@@ -7380,8 +8385,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 75,
-      "chp": 75,
+      "agg": 83,
+      "chp": 83,
       "frag": -1,
       "vol": -1
     },
@@ -7392,7 +8397,7 @@
       "frag": -1,
       "vol": 1
     },
-    null
+    "The Trickster's Tale 2: Gnomes Don't Rule!"
   ],
   [
     {
@@ -7477,6 +8482,33 @@
   ],
   [
     {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 118863,
+      "name": "This Quest is Bullshit",
+      "rating": 4.333333333333333,
+      "rating_count": 3,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 41,
+      "chp": 41,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 126,
+      "chp": 126,
+      "date": 1629842100,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
       "extra_metadata": null,
       "id": 135989,
       "name": "Tian",
@@ -7515,9 +8547,9 @@
       "vol": -1
     },
     {
-      "agg": 32,
-      "chp": 32,
-      "date": 1629017880,
+      "agg": 33,
+      "chp": 33,
+      "date": 1629700200,
       "frag": 0,
       "vol": -1
     },
@@ -7542,9 +8574,36 @@
       "vol": -1
     },
     {
-      "agg": 26,
-      "chp": 26,
-      "date": 1628798460,
+      "agg": 30,
+      "chp": 30,
+      "date": 1630008060,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110712,
+      "name": "Twilight Kingdom",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 52,
+      "chp": 52,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 112,
+      "chp": 112,
+      "date": 1629800700,
       "frag": 0,
       "vol": -1
     },
@@ -7596,9 +8655,9 @@
       "vol": -1
     },
     {
-      "agg": 80,
-      "chp": 80,
-      "date": 1628705100,
+      "agg": 84,
+      "chp": 84,
+      "date": 1629917040,
       "frag": 0,
       "vol": -1
     },
@@ -7623,9 +8682,9 @@
       "vol": 2
     },
     {
-      "agg": 20038,
-      "chp": 38,
-      "date": 1628872200,
+      "agg": 20043,
+      "chp": 43,
+      "date": 1629909000,
       "frag": 0,
       "vol": 2
     },
@@ -7728,9 +8787,9 @@
       "vol": -1
     },
     {
-      "agg": 79,
-      "chp": 79,
-      "date": 1628833140,
+      "agg": 81,
+      "chp": 81,
+      "date": 1629178410,
       "frag": 0,
       "vol": -1
     },
@@ -7769,6 +8828,381 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 119103,
+      "name": "Artificial Jelly",
+      "rating": 7,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20000,
+      "chp": -1,
+      "date": 1608167940,
+      "frag": -1,
+      "vol": 2
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 117803,
+      "name": "Bounty Cats",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20026,
+      "chp": 26,
+      "date": 1625004000,
+      "frag": 0,
+      "vol": 2
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 137392,
+      "name": "Call of Tardigrade [Revised \u0026amp; Continued]",
+      "rating": 6,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 30,
+      "chp": 30,
+      "date": 1622979060,
+      "frag": 0,
+      "vol": -1
+    },
+    "Call of Tardigrade [Revised \u0026amp; Continued]"
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 129558,
+      "name": "Dead Tired",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40,
+      "chp": 40,
+      "date": 1609276140,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 129517,
+      "name": "Earth's Alpha Prime",
+      "rating": 7.666666666666667,
+      "rating_count": 3,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 95,
+      "chp": 95,
+      "date": 1629732600,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 136182,
+      "name": "Elder Cultivator",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 121,
+      "chp": 121,
+      "date": 1629918000,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 115382,
+      "name": "Infinite Realm: Monsters \u0026amp; Legends",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 414,
+      "chp": 414,
+      "date": 1613853780,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 119333,
+      "name": "Letters From a Lost Bird",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 3,
+      "chp": 3,
+      "date": 1596531900,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 135600,
+      "name": "Mark of the Fool: A Progression Fantasy",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 116,
+      "chp": 116,
+      "date": 1629926460,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 2410,
+      "name": "Master of All, Jack of None",
+      "rating": 7.28125,
+      "rating_count": 32,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 16,
+      "chp": 16,
+      "date": 1425222300,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 78250,
+      "name": "Mythran's Master Of All - Continued (Completed!)",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 788,
+      "chp": 788,
+      "date": 1544146289,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110760,
+      "name": "Princess",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 54,
+      "chp": 54,
+      "date": 1586160000,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 129191,
+      "name": "Realm of Monsters",
+      "rating": 9.272727272727273,
+      "rating_count": 22,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10000,
+      "chp": -1,
+      "date": 1611877740,
+      "frag": -1,
+      "vol": 1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 137446,
+      "name": "Reincarnation Station: Death, Cake and Friendship",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20017,
+      "chp": 17,
+      "date": 1616951940,
+      "frag": 0,
+      "vol": 2
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 136543,
       "name": "The Bewitching Chaos Ghost System",
       "rating": null,
@@ -7782,10 +9216,64 @@
       "vol": -1
     },
     {
-      "agg": 94,
-      "chp": 94,
-      "date": 1627342200,
+      "agg": 96,
+      "chp": 96,
+      "date": 1629556260,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 137834,
+      "name": "The Calamitous Bob",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 36,
+      "chp": 36,
+      "date": 1629464520,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 127577,
+      "name": "The Girl With The Crimson Eyes",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 62,
+      "chp": 62,
+      "date": 1628985600,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -7823,6 +9311,84 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 138165,
+      "name": "The Hallowed War",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 56,
+      "chp": 56,
+      "date": 1629900300,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": null,
+      "id": 139062,
+      "name": "The King's Soul: A LitRPG Wuxia Novel",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10000,
+      "chp": -1,
+      "date": 1629479160,
+      "frag": -1,
+      "vol": 1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 109207,
+      "name": "The Nothing Mage",
+      "rating": 8,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 105,
+      "chp": 105,
+      "date": 1593720429,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 60905,
       "name": "The Snake Report",
       "rating": 8.285714285714286,
@@ -7839,6 +9405,60 @@
       "agg": 227,
       "chp": 227,
       "date": 1628817540,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 128990,
+      "name": "The Stained Tower",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20020,
+      "chp": 20,
+      "date": 1629855180,
+      "frag": 0,
+      "vol": 2
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 109107,
+      "name": "The Towers of Teralia",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 8,
+      "chp": 8,
+      "date": 1572808604,
       "frag": 0,
       "vol": -1
     },
@@ -8498,33 +10118,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 60981,
-      "name": "Venerated Venomous Consort",
-      "rating": 4,
-      "rating_count": 4,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 899,
-      "chp": 899,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 680,
-      "chp": 680,
-      "date": 1546535343,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 58288,
       "name": "War Sovereign Soaring The Heavens",
       "rating": 6.470588235294118,
@@ -8837,7 +10430,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1464739740,
+      "date": 1466813189,
       "frag": 0,
       "vol": -1
     },
@@ -8932,8 +10525,8 @@
       },
       "id": 32382,
       "name": "100 Luck and the Dragon Tamer Skill!",
-      "rating": 7.253968253968254,
-      "rating_count": 63,
+      "rating": 7.296875,
+      "rating_count": 64,
       "tl_type": "oel"
     },
     {
@@ -9229,8 +10822,8 @@
       },
       "id": 43314,
       "name": "My Girlfriend is a Zombie",
-      "rating": 5.8,
-      "rating_count": 5,
+      "rating": 5.166666666666667,
+      "rating_count": 6,
       "tl_type": "translated"
     },
     {
