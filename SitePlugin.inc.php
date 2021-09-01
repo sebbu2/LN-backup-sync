@@ -29,14 +29,14 @@ class SitePlugin
 			$ar2=array_combine($keys, $ar2);
 			$domain=$ar2['domain'];
 			if(substr($domain,0,10)=='#HttpOnly_') {
-				if($url_ar['scheme']=='https') continue; // http-only cookie on https url
+				// TODO : http-only cookie is not for XHR
 				$domain=substr($domain,10);
 			}
 			if($ar2['secureOnly']=='TRUE' && $url_ar['scheme']=='http') continue; // secureOnly cookie on http url
 			if(!endswith($url_ar['host'], $domain)) continue; // other domain
 			if($url_ar['host'] != $domain && $ar2['includeSubdomains']=='FALSE') continue; // cookie only for a specific domain, without subdomains
 			if(!startswith($url_ar['path'], $ar2['path'])) continue; // cookie for another path
-			if($ar2['expires']<time()) continue; // expired cookie
+			if($ar2['expires']!='0' && $ar2['expires']<time()) continue; // expired cookie
 			$res[$ar2['name']]=trim($ar2['value']);
 		}
 		return $res;

@@ -235,8 +235,9 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function get_info_cached($id) {
-		if(!file_exists($this::FOLDER.'get-series-id'.$id.'.json')) {
+	public function get_info_cached($id, $duration=604800) {
+		$fn=$this::FOLDER.'get-series-id'.$id.'.json';
+		if(!file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
 			return $this->get_info($id);
 		}
 		return json_decode(file_get_contents($this::FOLDER.'get-series-id'.$id.'.json'),false, 512, JSON_THROW_ON_ERROR);

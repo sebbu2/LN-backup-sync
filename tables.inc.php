@@ -130,8 +130,11 @@ function print_table($ar)
 	
 	echo '<table border="1">'."\r\n";
 	
+	reset($ar);
+	$k1=key($ar);
+	
 	//keys
-	print_thead_k($ar[0]);
+	print_thead_k($ar[$k1]);
 	
 	//values
 	foreach($ar as $k=>$v)

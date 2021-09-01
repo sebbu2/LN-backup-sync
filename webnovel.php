@@ -793,6 +793,7 @@ class WebNovel extends SitePlugin
 				//$res=json_decode($res);
 				
 				$ar = array(
+					'_csrfToken'=>$cookies['_csrfToken'],
 					'bookId'=>$id,
 					'pageIndex'=>1,
 					'pageSize'=>30,
@@ -818,6 +819,7 @@ class WebNovel extends SitePlugin
 				//$res=json_decode($res);
 				
 				$ar=array(
+					'_csrfToken'=>$cookies['_csrfToken'],
 					'bookId'=>$id,
 					'type'=>2,
 				);

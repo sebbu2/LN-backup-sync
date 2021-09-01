@@ -1,8 +1,9 @@
 <?php
 require_once('config.php');
 require_once('functions.inc.php');
-require_once('WLNUpdates.php');
-require_once('WebNovel.php');
+require_once('wlnupdates.php');
+require_once('webnovel.php');
+require_once('royalroad.php');
 
 $loggued=false;
 
@@ -70,7 +71,7 @@ $loggued=false;
 	$res=$wn->checkLogin();
 	if($res->code!=0) {
 		var_dump($res->code, $res->msg);
-		$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass']);
+		$res=$wn->login( $accounts['WebNovel']['user'], $accounts['WebNovel']['pass'] );
 		var_dump($res);
 	}
 	$res=$wn->watches();
@@ -96,6 +97,23 @@ $loggued=false;
 	print_table($res2);
 	$data=ob_get_clean();
 	file_put_contents('library2.htm', $data);
+	unset($data);
+}
+
+{
+	$rr = new RoyalRoad;
+	$res=$rr->checkLogin();
+	if($res!==1) {
+		$res=$rr->login( $accounts['RoyalRoad']['user'], $accounts['RoyalRoad']['pass'] );
+	}
+	$res = $rr->watches();
+	
+	echo 'royalroad= ';var_dump(count($res));
+	
+	ob_start();
+	print_table($res);
+	$data=ob_get_clean();
+	file_put_contents('royalroad.htm', $data);
 	unset($data);
 }
 //if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";

@@ -3,6 +3,7 @@ require_once('config.php');
 require_once('functions.inc.php');
 require_once('wlnupdates.php');
 require_once('webnovel.php');
+require_once('royalroad.php');
 
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
@@ -18,6 +19,7 @@ chdir(CWD);
 $updatedCount=array(
 	'wln'=>0,
 	'wn'=>0,
+	'rr'=>0,
 );
 
 $fns=array();//from reader
@@ -136,13 +138,22 @@ if($res->code!=0) {
 	var_dump($res);
 	die();
 }
+$rr=new RoyalRoad;
+$res=$rr->checkLogin();
+if($res!==1) {
+	var_dump($res);
+	$res=$rr->login( $accounts['RoyalRoad']['user'], $accounts['RoyalRoad']['pass'] );
+	var_dump($res);
+	die();
+}
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 //var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 //var_dump(count($books));//die();
+$royalroad=json_decode(file_get_contents($rr::FOLDER.'_books.json'), true, 512, JSON_THROW_ON_ERROR);
 
 echo '<h2>Counts</h2>',"\n";
-print_table(array(array( 'files'=>count(array_merge($fns_,$fns)), 'WLNUpdates'=>count($watches), 'WebNovel'=>count($books) )));
+print_table(array(array( 'files'=>count(array_merge($fns_,$fns)), 'WLNUpdates'=>count($watches), 'WebNovel'=>count($books), 'RoyalRoad'=>count($royalroad) )));
 echo '<br/>'."\r\n";
 if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 flush();
@@ -242,6 +253,21 @@ foreach($fns as $name=>$fn)
 		// TODO
 	}
 	
+	// royalroad
+	$key='';
+	$id=-1;
+	$found3=false;
+	foreach($royalroad as $key=>$book) {
+		if(name_compare($name, $book['title'], 1)) {
+			$id=$key;
+			$found3=true;
+			break;
+		}
+	}
+	if(!$found3) {
+		$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('not found in RoyalRoad'));
+	}
+	
 	// webnovel
 	$key='';
 	$id=-1;
@@ -331,6 +357,14 @@ foreach($fns as $name=>$fn)
 			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('found in WebNovel at '.$books[$key]->readToChapterIndex.' instead of '.$chp2));
 		}
 	}
+	if(array_key_exists('msg',$row)) {
+		$wln2='not found in WLNUpdates';
+		$wn2='not found in WebNovel';
+		$rr2='not found in RoyalRoad';
+		if(in_array($wn2, $row['msg']) && !in_array($rr2, $row['msg'])) $row['msg']=array_diff($row['msg'], array($wn2));
+		if(in_array($rr2, $row['msg']) && !in_array($wn2, $row['msg'])) $row['msg']=array_diff($row['msg'], array($rr2));
+		if(count($row['msg'])==0) unset($row['msg']);
+	}
 	if(count($row)>0) $row=array_merge(array('name'=>$name),$row);
 	$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
 	if(array_key_exists('msg',$row)) $row['msg']=implode(' + ',$row['msg']);
@@ -349,7 +383,7 @@ foreach($fns as $name=>$fn)
 if($lines>0) {
 	echo '</table>'."\r\n";
 }
-if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
+if($updatedCount['wln']>0 || $updatedCount['wn']>0 || $updatedCount['rr']>0) {
 	define('DROPBOX_DONE', true);
 	include_once('retr.php');
 }//*/

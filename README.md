@@ -25,6 +25,8 @@ wlnupdates.php class to support wlnupdates.com
 
 webnovel.php class to support webnovel.com
 
+royalroad.php class to support royalroad.com
+
 **retr.php** retrieve wlnupdates data (& possibly others in the future)
 
 **dropbox.php** List new position sync and update wlnupdates and webnovel
@@ -56,6 +58,8 @@ webnovel/\_books2.json) library json data from webnovel (merged, order kept)
 [library2.htm](library2.htm) raw table of webnovel data (identical to website, sorted by last add/update)
 
 [webnovel_data.htm](webnovel_data.htm) table of webnovel data counts (include lists, history*2, collection list, all collections)
+
+[royalroad/\_books.json](royalroad/_books.json) library json data from royalroad
 
 [wn\_diff.json](wn_diff.json) json data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdate reading position)
 

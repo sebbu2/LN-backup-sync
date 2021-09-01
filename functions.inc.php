@@ -66,6 +66,13 @@ function startswith($haystack, $needle) {
 function endswith($haystack, $needle) {
 	return (strncasecmp(substr($haystack, -strlen($needle)), $needle, strlen($needle))==0);
 }
+if ( !function_exists( 'is_iterable' ) )
+{
+	function is_iterable( $obj )
+	{
+		return is_array( $obj ) || ( is_object( $obj ) && ( $obj instanceof \Traversable ) );
+	}
+}
 function millitime() {
 	list($usec, $sec) = explode(' ', microtime());
 	return $sec.substr($usec, 2, 3);
