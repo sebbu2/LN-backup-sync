@@ -86,6 +86,34 @@ function simplexml_load_html($html) {
 	$xml = simplexml_import_dom($doc);
 	return $xml;
 }
+function parse_publishTimeFormat($str) {
+	$str=str_replace('yr', ' year', $str);
+	$str=str_replace('mth', ' month', $str);
+	$str=str_replace('d', ' day', $str);
+	$str=str_replace('h', ' hour', $str);
+	$str.=' ago';
+	return $str;
+}
+function &get($obj, $attr) {
+	if(is_array($obj)) {
+		if(array_key_exists($attr, $obj)) {
+			return ($obj[$attr]);
+		}
+		else throw new OutOfBoundsException();
+	}
+	else if(is_object($obj)) {
+		if(property_exists($obj, $attr)) {
+			return ($obj->{$attr});
+		}
+		else throw new OutOfBoundsException();
+	}
+	else throw new UnexpectedValueException();
+}
+function &set($obj, $attr, $value) {
+	$var=&get($obj, $attr);
+	$var=$value;
+	return $var;
+}
 /**
  * Format a timestamp to display its age (5 days ago, in 3 days, etc.).
  *

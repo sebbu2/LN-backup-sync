@@ -1,6 +1,9 @@
 <?php
 require_once('config.php');
 require_once('functions.inc.php');
+
+require_once('CJSON.php');
+
 class SitePlugin
 {
 	public $lastUrl='';
@@ -227,15 +230,61 @@ class SitePlugin
 			//var_dump($jsonp);
 		} //*/
 		$jsonp=trim($jsonp);
+		if(! in_array($jsonp[0], array('[','{'))) throw new Exception('invalid JSONP 1.<br/>'.var_export(substr($jsonp,0,1),true));
+		return $this->json_to_json($jsonp);
+	}
+	
+	function json_to_json($json) {
 		static $end_match=array('['=>']','{'=>'}');
-		if(! in_array($jsonp[0], array('[','{'))) throw new Exception('invalid JSON 1.<br/>'.var_export(substr($jsonp,0,1),true));
-		if(! substr($jsonp,-1)==$end_match[$jsonp[0]]) throw new Exception('invalid JSON 2.<br/>'.var_export(substr($jsonp,-1),true));
-		//$jsonp=json_encode(json_decode($jsonp, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
-		$jsonp=str_replace('\/','/',$jsonp);
-		$jsonp=json_encode(json_decode($jsonp), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_BIGINT_AS_STRING );
-		//$jsonp=str_replace('    ',"\t",$jsonp); // TAB are invalid in json
-		$jsonp=str_replace('    ', '  ', $jsonp);
-		return $jsonp;
+		if(! substr($json,-1)==$end_match[$json[0]]) throw new Exception('invalid JSON 1.<br/>'.var_export(substr($json,-1),true));
+		//$json=json_encode(json_decode($json, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
+		$json=str_replace('\/','/',$json);
+		$json=str_replace('\\\\','\\',$json);
+		$json=str_replace('\ ', ' ', $json);
+		$json=str_replace('\\\'', '\'', $json);
+		$json=str_replace('\<', '<', $json);
+		$json=str_replace('\>', '>', $json);
+		$json=str_replace('\_', '_', $json);
+		$json=str_replace('\n', "\n", $json);
+		$json=str_replace('\r', '', $json);
+		$json=str_replace('\&', '&', $json);
+		$json=str_replace('[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F]', '', $json);
+		$json=str_replace('\\\'', '\'', $json);
+		$json=str_replace('\:', '\\:', $json);
+		$json=str_replace('\0', '\\0', $json);
+		
+		//setlocale(LC_ALL, 'en_US.UTF-8');
+		//$json = preg_replace('/\\\\u([0-9a-f]+)/i', '&#x$1;', $json);
+		//$json = html_entity_decode($json, ENT_QUOTES, 'UTF-8');
+		
+		//$json=transliterator_create('Hex-Any')->transliterate($json);
+		$json=transliterator_create('Accents-Any')->transliterate($json);
+		
+		//var_dump($json);//die();
+		$json1=$json;
+		//$json1=iconv('UTF-8', 'UTF-8//TRANSLIT', $json1);
+		//ini_set('mbstring.substitute_character', "none");
+		//$json1= mb_convert_encoding($json1, 'UTF-8', 'UTF-8');
+		$json1=mb_convert_encoding($json1, 'HTML-ENTITIES', 'UTF-8');
+		//$json1=mb_convert_encoding($json1, 'HTML-ENTITIES', 'ISO-8859-1');
+		$json1=str_replace('&larr;"&rarr;','&larr;\"&rarr;',$json1);
+		try {
+			$json2=json_decode($json1, false, 512, JSON_INVALID_UTF8_IGNORE | JSON_THROW_ON_ERROR);
+		}
+		catch(JsonException $e) {
+			$json1 = preg_replace('/[[:cntrl:]]/', '', $json1);
+			$json1=str_replace('\:', '\\:', $json1);
+			$json1=str_replace('\0', '\\0', $json1);
+			file_put_contents('test2.json', $json1);
+			//$json2=json_decode($json1, false, 512, JSON_INVALID_UTF8_IGNORE | JSON_THROW_ON_ERROR);
+			$json2=(new CJSON())->decode($json1);
+		}
+		//var_dump($json2);die();
+		$json=json_encode($json2, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES|JSON_BIGINT_AS_STRING );
+		//var_dump($json);die();
+		//$json=str_replace('    ',"\t",$json); // TAB are invalid in json
+		$json=str_replace('    ', '  ', $json);
+		return $json;
 	}
 	
 	public function get_types() {

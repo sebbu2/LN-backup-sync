@@ -1,9 +1,15 @@
 webnovel/*.htm*
 webnovel/*.json
 webnovel/*.txt
+!webnovel/_*.json
 wlnupdates/*.htm*
 wlnupdates/*.json
 wlnupdates/*.txt
+!wlnupdates/_*.json
+royalroad/*.htm*
+royalroad/*.json
+royalroad/*.txt
+!royalroad/_*.json
 *.htm*
 *.json
 *.conf

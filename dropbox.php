@@ -328,12 +328,21 @@ foreach($fns as $name=>$fn)
 		$chp2=$chp;
 		$priv_only=0;
 		$max_pub=0;
+		$count=0;
 		foreach($res->data->volumeItems as $vol) {
 			foreach($vol->chapterItems as $chap) {
+				//var_dump($chap);die();
+				$index=-1;
+				if(property_exists($chap, 'index')) $index=$chap->index;
+				else if(property_exists($chap, 'chapterIndex')) $index=$chap->chapterIndex;
+				
 				if($chap->chapterLevel!=0) $priv_only++;
-				else if($chap->index>$max_pub) $max_pub=$chap->index;
+				//else if($chap->index>$max_pub) $max_pub=$chap->index;
+				else if($index>$max_pub) $max_pub=$index;
+				$count++;
 			}
 		}
+		//var_dump($priv_only, $max_pub, $count);die();
 		if(
 			($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
 			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public

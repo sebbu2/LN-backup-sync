@@ -7,7 +7,8 @@ require_once('WebNovel.php');
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
-$skip_existing=true;
+$skip_existing=false;
+$timeref=time();
 
 include('header.php');
 
@@ -159,9 +160,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				$max_pub=0;
 				$chp_id=0;
 				$last_chp=0;
-				$last_upd=0;
+				$last_upd='1970-01-01';
 				$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
-				if($res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+				if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+				else if(property_exists($res->data->volumeItems[0], 'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=$add=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2=$diff_old['cur'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['upd'])) $add2=$diff_old['upd'][$entry['title']];
@@ -170,18 +172,44 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				//else {
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
+							$index=-1;
+							if(property_exists($chap, 'index')) $index=$chap->index;
+							else if(property_exists($chap, 'chapterIndex')) $index=$chap->chapterIndex;
+							$chid=0;
+							if(property_exists($chap, 'id')) $chid=$chap->id;
+							else if(property_exists($chap, 'chapterIndex')) $chid=$chap->chapterId;
 							if($chap->chapterLevel!=0) $priv_only++;
-							else if($chap->index>$max_pub) $max_pub=$chap->index;
-							if($chap->id==$book->readToChapterId) $chp_id=$chap->index;
-							if(strtotime($chap->createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
-								$last_upd=$chap->createTime;
-								$last_chp=$chap->index;
+							else if($index>$max_pub) $max_pub=$index;
+							if($chid==$book->readToChapterId) $chp_id=$chid;
+							$createTime='';
+							if(property_exists($chap, 'createTime')) $createTime=$chap->createTime;
+							else if(property_exists($chap, 'publishTimeFormat')) $createTime=parse_publishTimeFormat($chap->publishTimeFormat);
+							//var_dump(date('Y-m-d H:i:s',strtotime($createTime, $timestamp)));die();
+							//var_dump(date('Y-m-d H:i:s',strtotime($last_upd, $timestamp)));die();
+							if(strtotime($createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
+								$last_upd=$createTime;
+								//var_dump($last_upd, strtotime($last_upd, $timestamp));//die();
+								$last_chp=$index;
 							}
 						}
 					}
+					//var_dump($last_upd, strtotime($last_upd, $timestamp));die();
 					if($add2===NULL) $add2=0;
 					if($add2===0) $add2=$priv_only;
 				//}
+				//var_dump($last_upd, strtotime($last_upd, $timestamp),__LINE__);//die();
+				if($last_upd=='1970-01-01') {
+					//var_dump($res->data->volumeItems);
+					var_dump($timestamp,date('Y-m-d H:i:s', $timestamp));
+					foreach($res->data->volumeItems as $vol) {
+						foreach($vol->chapterItems as $chap) {
+							var_dump($chap->publishTimeFormat);
+							var_dump(strtotime(parse_publishTimeFormat($chap->publishTimeFormat),$timestamp));
+							var_dump(date('Y-m-d H:i:s', strtotime(parse_publishTimeFormat($chap->publishTimeFormat),$timestamp)));
+						}
+					}
+					die();
+				}
 				//updating list of chapters
 				if( $book->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) {
 					$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('updating'));
@@ -189,7 +217,9 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					do {
 						try {
 							$res=@$wn->get_chapter_list($book->bookId);
+							//var_dump($res);die();
 						} catch (Exception $e) {
+							var_dump($e,  $res);die();
 						}
 						++$count;
 						if( $count>5 && (!is_object($res) || !property_exists($res, 'data') || (is_int($res->data)&&$res->data==0) || !property_exists($res->data, 'bookInfo')) ) {
@@ -202,16 +232,25 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$last_upd=0;
 					$last_chp=0;
 					$add_=0;
-					if($res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+					if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+					if(property_exists($res->data->volumeItems[0], 'chapterIndex') && $res->data->volumeItems[0]->chapterIndex==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							if($chap->chapterLevel!=0) $priv_only++;
-							if(strtotime($chap->createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
-								$last_upd=$chap->createTime;
-								$last_chp=$chap->index;
+							$index=-1;
+							if(property_exists($chap, 'index')) $index=$chap->index;
+							else if(property_exists($chap, 'chapterIndex')) $index=$chap->chapterIndex;
+							$createTime='';
+							if(property_exists($chap, 'createTime')) $createTime=$chap->createTime;
+							else if(property_exists($chap, 'publishTimeFormat')) $createTime=parse_publishTimeFormat($chap->publishTimeFormat);
+							if(strtotime($createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
+								$last_upd=$createTime;
+								//var_dump($last_upd);die();
+								$last_chp=$index;
 							}
 						}
 					}
+					//var_dump($last_upd, strtotime($last_upd, $timestamp));die();
 				}
 				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) {
 					if(!is_numeric($book->readToChapterIndex)) {
@@ -279,9 +318,23 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						//|| ( count($exists)==1 && array_key_exists(4,$content) && $content[4]!='100' ) // i'm not at the end
 					) {
 						//var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
-						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName));
-						if(strlen($row['subName'])==0) {
-							$row['subName']=implode('', array_map(function($s) { return $s[0]; }, explode(' ',$book->bookName)));
+						$subName='';
+						if(property_exists($res->data->bookInfo, 'bookSubName')) $subName=$res->data->bookInfo->bookSubName;
+						$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$subName));
+						if(strlen($subName)==0) {
+							$res2=$wn->get_info_html_cached($book->bookId);
+							//var_dump($res2);die();
+							$subName='';
+							if(is_object($res2)) $subName=$res2->bookInfo->bookSubName;
+							else if(is_array($res2)) $subName=$res2['bookInfo']['bookSubName'];
+							if(strlen($subName)==0) {
+								$row['subName']=implode('', array_map(function($s) { return $s[0]; }, explode(' ',$book->bookName)));
+								$row['subName']='<span style="color:#0000FF">'.$row['subName'].'</span>';
+							}
+							else {
+								$row['subName']=$subName;
+								$row['subName']='<span style="color:#00FF00">'.$row['subName'].'</span>';
+							}
 						}
 						if($row['subName']=='PD'&&$book->bookName=='Plague Doctor') $row['subName']='Plague'; // epub source bug in subnames duplicates
 						if($ar2['min']>1) $row['start']=$ar2['min'];
@@ -340,16 +393,25 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$priv_only=0;
 						$last_upd=0;
 						$last_chp=0;
-						if($res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+						if(property_exists($res->data->volumeItems[0],'index') && $res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+						if(property_exists($res->data->volumeItems[0],'chapterIndex') && $res->data->volumeItems[0]->chaperIndex==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 						foreach($res->data->volumeItems as $vol) {
 							foreach($vol->chapterItems as $chap) {
 								if($chap->chapterLevel!=0) $priv_only++;
-								if(strtotime($chap->createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
-									$last_upd=$chap->createTime;
-									$last_chp=$chap->index;
+								$index=-1;
+								if(property_exists($chap, 'index')) $index=$chap->index;
+								else if(property_exists($chap, 'chapterIndex')) $index=$chap->chapterIndex;
+								$createTime='';
+								if(property_exists($chap, 'createTime')) $createTime=$chap->createTime;
+								else if(property_exists($chap, 'publishTimeFormat')) $createTime=parse_publishTimeFormat($chap->publishTimeFormat);
+								if(strtotime($createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
+									$last_upd=$createTime;
+									var_dump($last_upd);die();
+									$last_chp=$chid;
 								}
 							}
 						}
+						var_dump($last_upd, strtotime($last_upd, $timestamp));die();
 						$add2=$priv_only;
 //						var_dump($res->data->bookInfo);
 					}
@@ -361,11 +423,24 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$row=array_merge(array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName), $row);
 					}
 					if( (count($row)>=1 && array_keys($row)[0]=='msg' && $ar2['min']<0) && $add!=$add_) {
-						$row['msg'][]=(($res->data->volumeItems[0]->index==0)?'(-'.$res->data->volumeItems[0]->chapterCount.')':'(0)'); // auxiliary volume chapters'';
+						$index=0;
+						if(property_exists($res->data->volumeItems[0], 'index')) $index=$res->data->volumeItems[0]->index;
+						if(property_exists($res->data->volumeItems[0], 'chapterIndex')) $index=$res->data->volumeItems[0]->chapterIndex;
+						$count=0;
+						if(property_exists($res->data->volumeItems[0], 'chapterCount')) $count=$res->data->volumeItems[0]->chapterCount;
+						else $count=count($res->data->volumeItems[0]->chapterItems);
+						
+						$row['msg'][]=(($index==0)?'(-'.$count.')':'(0)'); // auxiliary volume chapters'';
 					}
 					$row['Last upd']=timetostr(strtotime($last_upd, $timestamp));
 					$row['Last chk']=timetostr($timestamp);
 					//$row['Last chp']=$last_chp;
+					
+					if(
+						$row['WLNUpdate']==$row['new chp'] ||
+						( count($exists)==1 && array_key_exists(0,$content) && $content[0]==MOONREADER_DID )
+					) $row['title']='<span style="color:#0000FF">'.$row['title'].'</span>';
+					
 					$row=array_merge(array_diff_key($row,array('msg'=>'')),(array_key_exists('msg',$row)?array('msg'=>$row['msg']):array()));
 					if(array_key_exists('msg',$row)) $row['msg']=implode(' + ', $row['msg']);
 					if($lines==0) {

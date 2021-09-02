@@ -1,5 +1,8 @@
 <?php
 require_once('config.php');
+
+require_once('CJSON.php');
+
 class WebNovel extends SitePlugin
 {
 	public const FOLDER='webnovel/';
@@ -350,9 +353,9 @@ class WebNovel extends SitePlugin
 	
 	public function watches()
 	{
-		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		$referer='https://www.webnovel.com/library';
-		{
+		/*{
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 			);
@@ -364,7 +367,7 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'bookShelf.json', $res);
 			//$res=json_decode($res);
-		}
+		}//*/
 		$i=1;
 		$books=array();
 		do {
@@ -375,7 +378,8 @@ class WebNovel extends SitePlugin
 			);
 			$j=0;
 			do {
-				$res = $this->get( 'https://www.webnovel.com/apiajax/Library/LibraryAjax', $ar);
+				//$res = $this->get( 'https://www.webnovel.com/apiajax/Library/LibraryAjax', $ar);
+				$res = $this->get( 'https://www.webnovel.com/go/pcm/library/library', $ar);
 				$res=$this->jsonp_to_json($res);
 				file_put_contents($this::FOLDER.'LibraryAjax'.strval($i).'.json', $res);
 				$res=json_decode($res);
@@ -395,13 +399,15 @@ class WebNovel extends SitePlugin
 				die();
 			}//*/
 			if($res->data!==NULL) {
-				$books=array_merge($books, $res->data->books);
+				//$books=array_merge($books, $res->data->books);
+				$books=array_merge($books, $res->data->items);
 				++$i;
 			}
 		}
 		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<=40);//$i should not reach 40*30 books soon (i'm at 21)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
+		if(is_null($books2)) { die('error'); }
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
 		$books2=$books;
 		$order=array();
@@ -415,7 +421,18 @@ class WebNovel extends SitePlugin
 				if(!property_exists($res, 'data')) {
 					$res=$this->get_chapter_list($b->bookId);
 				}
-				$order[]=[$b->bookId, $b->bookName, $res->data->bookInfo->bookSubName, count($books2)-1-$ind];
+				$subName='';
+				if(!property_exists($res->data->bookInfo, 'bookSubName') || strlen($res->data->bookInfo->bookSubName)==0) {
+					$res2=$this->get_info_html_cached($b->bookId);
+					if(is_object($res2)) {
+						$subName=$res2->bookInfo->bookSubName;
+					}
+					else if(is_array($res2)) {
+						$subName=$res2['bookInfo']['bookSubName'];
+					}
+				}
+				else $subName=$res->data->bookInfo->bookSubName;
+				$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
 			}
 			elseif($b->novelType==100) {
 				$res=$this->get_chapter_list_comic_cached($b->bookId);
@@ -455,7 +472,9 @@ class WebNovel extends SitePlugin
 			}
 		}
 		$add=0;
-		if($res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+		
+		if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+		if(property_exists($res->data->volumeItems[0], 'volumeIndex') && $res->data->volumeItems[0]->volumeIndex==0) $add=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 		//updating list of chapters
 		if( ($watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) && $watch->readToChapterIndex<$chp) {
 			//var_dump('Updating',$res->data->bookInfo->bookName);
@@ -490,18 +509,24 @@ class WebNovel extends SitePlugin
 		{
 			foreach($res->data->volumeItems as $volume) {
 				foreach($volume->chapterItems as $chapter) {
-					if($chapter->index <= $chp && $chapter->chapterLevel==0) {
-						$cid = $chapter->id;
+					$id=-1;
+					if(property_exists($chapter, 'id')) $id=$chapter->id;
+					else if(property_exists($chapter, 'chapterIndex')) $id=$chapter->chapterId;
+					$index=-1;
+					if(property_exists($chapter, 'index')) $index=$chapter->index;
+					else if(property_exists($chapter, 'chapterIndex')) $index=$chapter->chapterIndex;
+					if($index <= $chp && $chapter->chapterLevel==0) {
+						$cid = $id;
 						//$update=true;
 					}
-					if($chapter->index == $chp && $chapter->chapterLevel==0) {
-						$cid = $chapter->id;
+					if($index == $chp && $chapter->chapterLevel==0) {
+						$cid = $id;
 						$found=true;
 						$update=true;
 					}
-					if($chapter->index>$cid_max_num && $chapter->index<=$chp && $chapter->chapterLevel==0) {
-						$cid_max_num=$chapter->index;
-						$cid_max=$chapter->id;
+					if($index>$cid_max_num && $index<=$chp && $chapter->chapterLevel==0) {
+						$cid_max_num=$index;
+						$cid_max=$id;
 					}
 				}
 			}
@@ -526,7 +551,9 @@ class WebNovel extends SitePlugin
 				'chapterId'=>($cid>0?$cid:$cid_max),
 			);
 			//var_dump($ar);
-			$res = $this->send( 'https://www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
+			//$res = $this->send( 'https://www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
+			$res = $this->send( 'https://www.webnovel.com/go/pcm/library/setReadingProgressAjax', $ar );
+			
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'SetReadingProgressAjax.json', $res);
 			$res=json_decode($res);
@@ -545,15 +572,18 @@ class WebNovel extends SitePlugin
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'bookId'=>strval($bookId),
+				'pageIndex'=>0,
 				'_'=>millitime(),
 			);
 			$headers=array(
 				'Referer: '.$referer,
 			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/chapter/GetChapterList', $ar, $headers);
-			file_put_contents('request.log', $res);
+			//https://www.webnovel.com/go/pcm/chapter/get-chapter-list?_csrfToken=caa48fb1-b69d-4447-ae90-e30edc332950&bookId=16923111105764205&pageIndex=0&_=1630584775104
+			//$res = $this->get( 'https://www.webnovel.com/apiajax/chapter/GetChapterList', $ar, $headers);
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/chapter/get-chapter-list', $ar, $headers);
+			//file_put_contents('request.log', $res);
 			$res=$this->jsonp_to_json($res);
-			unlink('request.log');
+			//unlink('request.log');
 			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
 			$res=json_decode($res);
 		}
@@ -841,6 +871,60 @@ class WebNovel extends SitePlugin
 			}
 		}
 		return $data;
+	}
+	
+	public function get_info_html($id) {
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
+		$res = $this->get( 'https://www.webnovel.com/book/'.$id );
+		preg_match_all('#<script(?: (?:nonce|data-nonce|type|id|async|src)="[^"]+")*>(.*?)</script>#is', $res, $matches);
+		array_shift($matches);$matches=$matches[0];
+		//$matches=array_filter($matches, function($e) {return startswith($e, 'g_data');});
+		//var_dump($matches);//die();
+		$str='g_data.pageId="qi_p_bookdetail",g_data.book= ';
+		assert(startswith($matches[8], $str)) or die('error1');
+		$res1=substr($matches[8],strlen($str));
+		
+		/*$json=$res1;
+		$json=str_replace('\/','/',$json);
+		$json=str_replace('\\\\','\\',$json);
+		$json=str_replace('\ ', ' ', $json);
+		$json=str_replace('\\\'', '\'', $json);
+		$json=str_replace('\_', '_', $json);
+		$json=str_replace('\<', '<', $json);
+		$json=str_replace('\>', '>', $json);
+		$json=str_replace('\n', "\n", $json);
+		$json=str_replace('\r', '', $json);
+		$json=str_replace("\r", '', $json);
+		$res2=$json;//*/
+		
+		//var_dump($res2);
+		//file_put_contents('test.json', $res2);
+		$res2=$res1;
+		$res2=$this->json_to_json($res2);
+		//var_dump($res2);die();
+		//$res2=json_decode($res2, false, 512, JSON_THROW_ON_ERROR|JSON_INVALID_UTF8_IGNORE);
+		$res3=(new CJSON())->decode($res2);
+		if(is_array($res3)&&count($res3)==0) {
+			var_dump($id,$res3);
+			var_dump(strlen($res1));
+			//var_dump(strlen($json));
+			var_dump(strlen($res2));
+			die();
+		}
+		file_put_contents($this::FOLDER.'book_'.$id.'.json', $res1);
+		return $res2;
+	}
+	
+	public function get_info_html_cached($id, $duration=604800) {
+		$fn=$this::FOLDER.'book_'.$id.'.json';
+		if(file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
+			//$res=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR|JSON_INVALID_UTF8_IGNORE);
+			$res=(new CJSON())->decode(file_get_contents($fn));
+		}
+		else {
+			$res=$this->get_info_html($id);
+		}
+		return $res;
 	}
 	
 	public function get_info($id, $types=NULL)

@@ -136,10 +136,15 @@ class RoyalRoad extends SitePlugin
 		$count=0;
 		foreach($res as $node) {
 			$ar3=array();
+			// <i class="fa fa-caret-right popovers" data-trigger="hover" data-container="body" data-placement="top" data-original-title="Reading Progress" data-content="This is the last chapter you've opened"></i>
 			$ar3['href']=(string)$node->td[0]->a['href'];
 			$ar3['title']=trim((string)$node->td[0]->a);
 			$ar3['date']=(string)$node->td[1]->a->time['title'];
 			$ar3['ago']=trim((string)$node->td[1]->a->time);
+			if(is_object($node->td[0]->i)) {
+				$ar3['pos-title']=(string)$node->td[0]->i['data-original-title'];
+				$ar3['pos-content']=(string)$node->td[0]->i['data-content'];
+			}
 			$ar2[$count]=$ar3;
 			$count++;
 		}

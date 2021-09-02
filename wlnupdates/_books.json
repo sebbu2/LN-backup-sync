@@ -59,6 +59,33 @@
         "is_yaoi": false,
         "is_yuri": false
       },
+      "id": 34567,
+      "name": "Badge in Azure",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1318,
+      "chp": 1318,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 501,
+      "chp": 501,
+      "date": 1560479153.57118,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 117680,
       "name": "Closed Beta That Only I Played",
       "rating": 4,
@@ -66,8 +93,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 370,
-      "chp": 370,
+      "agg": 371,
+      "chp": 371,
       "frag": -1,
       "vol": -1
     },
@@ -79,6 +106,33 @@
       "vol": -1
     },
     null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 56289,
+      "name": "Daoist Gu",
+      "rating": 6.7,
+      "rating_count": 10,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 12277,
+      "chp": 2277,
+      "frag": -1,
+      "vol": 1
+    },
+    {
+      "agg": 10001,
+      "chp": 1,
+      "date": 1540534379,
+      "frag": 0,
+      "vol": 1
+    },
+    "Reverend Insanity"
   ],
   [
     {
@@ -174,8 +228,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1165,
-      "chp": 1165,
+      "agg": 1168,
+      "chp": 1168,
       "frag": -1,
       "vol": -1
     },
@@ -309,8 +363,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1178,
-      "chp": 1178,
+      "agg": 1181,
+      "chp": 1181,
       "frag": -1,
       "vol": -1
     },
@@ -336,8 +390,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1053,
-      "chp": 1053,
+      "agg": 1056,
+      "chp": 1056,
       "frag": -1,
       "vol": -1
     },
@@ -417,8 +471,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 494,
-      "chp": 494,
+      "agg": 500,
+      "chp": 500,
       "frag": -1,
       "vol": -1
     },
@@ -534,6 +588,33 @@
       "agg": 680,
       "chp": 680,
       "date": 1546535343,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 75703,
+      "name": "Zombie Sister Strategy",
+      "rating": 6.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1269,
+      "chp": 1269,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 76,
+      "chp": 76,
+      "date": 1544738035,
       "frag": 0,
       "vol": -1
     },
@@ -668,7 +749,7 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488964196,
+      "date": 1488964242,
       "frag": 0,
       "vol": 3
     },
@@ -1382,33 +1463,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 34567,
-      "name": "Badge in Azure",
-      "rating": null,
-      "rating_count": null,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1318,
-      "chp": 1318,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 501,
-      "chp": 501,
-      "date": 1560479153.57118,
-      "frag": -1,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 42461,
       "name": "Cultivation Chat Group",
       "rating": 7,
@@ -1760,33 +1814,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 75703,
-      "name": "Zombie Sister Strategy",
-      "rating": 6.5,
-      "rating_count": 2,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 1269,
-      "chp": 1269,
-      "frag": -1,
-      "vol": -1
-    },
-    {
-      "agg": 76,
-      "chp": 76,
-      "date": 1544738035,
-      "frag": 0,
-      "vol": -1
-    },
-    null
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 120307,
       "name": "A Bored Lich",
       "rating": null,
@@ -1875,8 +1902,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 822,
-      "chp": 822,
+      "agg": 823,
+      "chp": 823,
       "frag": -1,
       "vol": -1
     },
@@ -2037,8 +2064,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 339,
-      "chp": 339,
+      "agg": 342,
+      "chp": 342,
       "frag": -1,
       "vol": -1
     },
@@ -2118,8 +2145,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 424,
-      "chp": 424,
+      "agg": 425,
+      "chp": 425,
       "frag": -1,
       "vol": -1
     },
@@ -2145,8 +2172,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 770,
-      "chp": 770,
+      "agg": 771,
+      "chp": 771,
       "frag": -1,
       "vol": -1
     },
@@ -2199,8 +2226,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1138,
-      "chp": 1138,
+      "agg": 1139,
+      "chp": 1139,
       "frag": -1,
       "vol": -1
     },
@@ -2396,7 +2423,7 @@
     {
       "agg": 11,
       "chp": 11,
-      "date": 1547303964,
+      "date": 1560439446.336022,
       "frag": -1,
       "vol": -1
     },
@@ -2469,8 +2496,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1462,
-      "chp": 1462,
+      "agg": 1464,
+      "chp": 1464,
       "frag": -1,
       "vol": -1
     },
@@ -2550,8 +2577,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 426,
-      "chp": 426,
+      "agg": 427,
+      "chp": 427,
       "frag": -1,
       "vol": -1
     },
@@ -2658,8 +2685,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 500,
-      "chp": 500,
+      "agg": 501,
+      "chp": 501,
       "frag": -1,
       "vol": -1
     },
@@ -5321,33 +5348,6 @@
         "is_yaoi": false,
         "is_yuri": false
       },
-      "id": 56289,
-      "name": "Daoist Gu",
-      "rating": 6.7,
-      "rating_count": 10,
-      "tl_type": "translated"
-    },
-    {
-      "agg": 12277,
-      "chp": 2277,
-      "frag": -1,
-      "vol": 1
-    },
-    {
-      "agg": 10001,
-      "chp": 1,
-      "date": 1540534379,
-      "frag": 0,
-      "vol": 1
-    },
-    "Reverend Insanity"
-  ],
-  [
-    {
-      "extra_metadata": {
-        "is_yaoi": false,
-        "is_yuri": false
-      },
       "id": 109593,
       "name": "Dark Moon Era",
       "rating": null,
@@ -5552,7 +5552,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599120572,
+      "date": 1591334870,
       "frag": 0,
       "vol": -1
     },
@@ -5814,8 +5814,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 361,
-      "chp": 361,
+      "agg": 370,
+      "chp": 370,
       "frag": -1,
       "vol": -1
     },
@@ -6015,7 +6015,7 @@
       "frag": 0,
       "vol": -1
     },
-    "来自地狱的男人"
+    "\u6765\u81ea\u5730\u72f1\u7684\u7537\u4eba"
   ],
   [
     {
@@ -6246,15 +6246,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 735,
-      "chp": 735,
+      "agg": 736,
+      "chp": 736,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 732,
-      "chp": 732,
-      "date": 1630242060,
+      "agg": 734,
+      "chp": 734,
+      "date": 1630497600,
       "frag": 0,
       "vol": -1
     },
@@ -6273,8 +6273,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 230,
-      "chp": 230,
+      "agg": 231,
+      "chp": 231,
       "frag": -1,
       "vol": -1
     },
@@ -6300,8 +6300,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20132,
-      "chp": 132,
+      "agg": 20133,
+      "chp": 133,
       "frag": -1,
       "vol": 2
     },
@@ -6327,8 +6327,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 249,
-      "chp": 249,
+      "agg": 250,
+      "chp": 250,
       "frag": -1,
       "vol": -1
     },
@@ -6389,7 +6389,7 @@
     {
       "agg": 30105,
       "chp": 105,
-      "date": 1629587269,
+      "date": 1629587160,
       "frag": 0,
       "vol": 3
     },
@@ -6443,7 +6443,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1628512380,
+      "date": 1627311720,
       "frag": 0,
       "vol": -1
     },
@@ -6510,7 +6510,7 @@
         "is_yuri": false
       },
       "id": 133726,
-      "name": "Dungeon I/O (⚒ Crafting ⚒)",
+      "name": "Dungeon I/O (\u2692 Crafting \u2692)",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
@@ -6543,8 +6543,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 75,
-      "chp": 75,
+      "agg": 76,
+      "chp": 76,
       "frag": -1,
       "vol": -1
     },
@@ -6578,7 +6578,7 @@
     {
       "agg": 83,
       "chp": 83,
-      "date": 1626606120,
+      "date": 1626606269,
       "frag": 0,
       "vol": -1
     },
@@ -6759,8 +6759,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 256,
-      "chp": 256,
+      "agg": 257,
+      "chp": 257,
       "frag": -1,
       "vol": -1
     },
@@ -7034,7 +7034,7 @@
     {
       "agg": 64,
       "chp": 64,
-      "date": 1629934374,
+      "date": 1629934320,
       "frag": 0,
       "vol": -1
     },
@@ -7266,8 +7266,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70545,
-      "chp": 545,
+      "agg": 70547,
+      "chp": 547,
       "frag": -1,
       "vol": 7
     },
@@ -7611,8 +7611,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 54,
-      "chp": 54,
+      "agg": 55,
+      "chp": 55,
       "frag": -1,
       "vol": -1
     },
@@ -7646,7 +7646,7 @@
     {
       "agg": 300,
       "chp": 300,
-      "date": 1627320416,
+      "date": 1627319700,
       "frag": 0,
       "vol": -1
     },
@@ -7692,8 +7692,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 30221,
-      "chp": 221,
+      "agg": 30223,
+      "chp": 223,
       "frag": -1,
       "vol": 3
     },
@@ -7727,7 +7727,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615172880,
+      "date": 1615191300,
       "frag": 0,
       "vol": -1
     },
@@ -7754,7 +7754,7 @@
     {
       "agg": 21,
       "chp": 21,
-      "date": 1615480140,
+      "date": 1615480195,
       "frag": 0,
       "vol": -1
     },
@@ -7842,7 +7842,7 @@
         "is_yuri": false
       },
       "id": 119007,
-      "name": "Stray Cat Strut ⁠— A Young Lady's Journey to Becoming a Pop-Up Samurai",
+      "name": "Stray Cat Strut \u2060\u2014 A Young Lady's Journey to Becoming a Pop-Up Samurai",
       "rating": 10,
       "rating_count": 1,
       "tl_type": "oel"
@@ -7908,9 +7908,9 @@
       "vol": -1
     },
     {
-      "agg": 102,
-      "chp": 102,
-      "date": 1630371993,
+      "agg": 103,
+      "chp": 103,
+      "date": 1630544781,
       "frag": 0,
       "vol": -1
     },
@@ -7937,7 +7937,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1623256560,
+      "date": 1623256607,
       "frag": 0,
       "vol": -1
     },
@@ -8061,8 +8061,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 186,
-      "chp": 186,
+      "agg": 188,
+      "chp": 188,
       "frag": -1,
       "vol": -1
     },
@@ -8123,7 +8123,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534416743,
+      "date": 1534927563,
       "frag": -1,
       "vol": 3
     },
@@ -8326,8 +8326,8 @@
       },
       "id": 137358,
       "name": "The Reincarnation of Alysara [Progression LitRPG]",
-      "rating": null,
-      "rating_count": null,
+      "rating": 10,
+      "rating_count": 1,
       "tl_type": "oel"
     },
     {
@@ -8385,8 +8385,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 85,
-      "chp": 85,
+      "agg": 86,
+      "chp": 86,
       "frag": -1,
       "vol": -1
     },
@@ -8439,8 +8439,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 48,
-      "chp": 48,
+      "agg": 49,
+      "chp": 49,
       "frag": -1,
       "vol": -1
     },
@@ -8649,8 +8649,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 62,
-      "chp": 62,
+      "agg": 65,
+      "chp": 65,
       "frag": -1,
       "vol": -1
     },
@@ -8658,6 +8658,33 @@
       "agg": 85,
       "chp": 85,
       "date": 1630092660,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 138838,
+      "name": "Warlock's Gate",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 24,
+      "chp": 24,
+      "date": 1630411320,
       "frag": 0,
       "vol": -1
     },
@@ -8924,7 +8951,7 @@
     {
       "agg": 40,
       "chp": 40,
-      "date": 1609276140,
+      "date": 1609276184,
       "frag": 0,
       "vol": -1
     },
@@ -10430,7 +10457,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1464739740,
+      "date": 1466813189,
       "frag": 0,
       "vol": -1
     },
@@ -11294,7 +11321,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463456823,
+      "date": 1463460423,
       "frag": 0,
       "vol": -1
     },
