@@ -15,3 +15,7 @@ webnovel/*
 wlnupdates/*
 !wlnupdates/_*.json
 
+_site
+.sass-cache
+.jekyll-metadata
+

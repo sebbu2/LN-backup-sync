@@ -1,0 +1,14 @@
+title: "LN-backup-sync"
+description: "Backup LN reading states, sync to/from e-reader"
+author: "sebbu"
+email: "zsbe17fr@yahoo.fr"
+username: sebbu2
+repository: "sebbu2/LN-backup-sync"
+include:
+  - "_*.json"
+encoding: "utf-8"
+safe: true
+
+plugins:
+  - github-pages
+  - jekyll-readme-index
