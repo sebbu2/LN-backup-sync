@@ -25,7 +25,7 @@ if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
 	//if(in_array($res, $wln_errors)) $loggued = true;
 	//$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 
-	if( $res->error==true ) {
+	/*if( $res->error==true ) {
 		$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
 		if($res===false) die('you need to log in.');
 		//$res=json_decode($res);
@@ -48,15 +48,28 @@ if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
 		file_put_contents($wln::FOLDER.'_books.json',$wln->jsonp_to_json(json_encode($res2)));
 		//var_dump('NEW WATCHES !', $res);
 		//die();
-	}
-	$count=0;foreach($res as $list) $count+=count($list);
-	echo 'wlnupdates=';var_dump($count);
+	}//*/
+	
+	//$count=0;foreach($res as $list) $count+=count($list);
+	echo 'wlnupdates=';var_dump(count($res));
+	$lists=json_decode(file_get_contents($wln::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
 
 	ob_start();
-	foreach($res as $id=>$list)
+	//foreach($res as $list=>$ar)
+	foreach($lists as $list=>$ar)
 	{
-		echo '<h4>'.$id.'</h4>'."\r\n";
-		print_table($list);//die();
+		echo '<h4>'.$list.'</h4>'."\r\n";
+		//print_table($ar);//die();
+		echo '<table border="1">'."\r\n";
+		//keys
+		print_thead_k($res[$ar[0]]);
+		
+		//values
+		foreach($ar as $k=>$v)
+		{
+			print_tbody($res[$v]);
+		}
+		echo '</table>'."\r\n";
 	}
 	$data=ob_get_clean();
 	file_put_contents('watches2.htm', $data);

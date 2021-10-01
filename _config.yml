@@ -12,3 +12,7 @@ safe: true
 plugins:
   - github-pages
   - jekyll-readme-index
+  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache

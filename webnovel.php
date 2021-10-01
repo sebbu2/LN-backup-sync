@@ -7,6 +7,9 @@ class WebNovel extends SitePlugin
 {
 	public const FOLDER='webnovel/';
 	
+	public const RETRY_LIMIT = 5; // we try each query up to 5 times in cases of errors (the API randomly fails)
+	public const LIBRARY_LIMIT = 40; // to prevent infinite loop in case of error when retrieving the library (i'm at ~ half of it)
+	
 	public function __construct()
 	{
 		
@@ -289,7 +292,8 @@ class WebNovel extends SitePlugin
 				'X-Requested-With: XMLHttpRequest',
 				'Referer: '.$referer,
 			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/login/login', $ar);
+			//$res = $this->get( 'https://www.webnovel.com/apiajax/login/login', $ar);
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/login/login', $ar);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'login.json', $res);
 			//$res=json_decode($res);
@@ -297,7 +301,7 @@ class WebNovel extends SitePlugin
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		
-		{ // 11 getUserInfo
+		/*{ // 11 getUserInfo
 			$ar=array(
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'sessionkey'=>$sessionKey,
@@ -309,6 +313,20 @@ class WebNovel extends SitePlugin
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'getUserInfo.json', $res);
 			//$res=json_decode($res);
+		}//*/
+		
+		{ // 11 bis page
+			$ar=array(
+				'_csrfToken'=>$cookies['_csrfToken'],
+				'bookCityType'=>2,
+				'sex'=>1,
+			);
+			$headers=array(
+				'Referer: '.$referer,
+			);
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/pcbookcity/page', $ar);
+			$res = $this->jsonp_to_json($res);
+			file_put_contents($this::FOLDER.'page.json', $res);
 		}
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
@@ -322,7 +340,8 @@ class WebNovel extends SitePlugin
 			$headers=array(
 				'Referer: '.$referer,
 			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/notification/status', $ar);
+			//$res = $this->get( 'https://www.webnovel.com/apiajax/notification/status', $ar);
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/notification/status', $ar);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'notification-status.json', $res);
 			//$res=json_decode($res);
@@ -330,7 +349,7 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	private function novel_cmp($e1, $e2)
+	private function novel_cmp_by_name($e1, $e2)
 	{
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
 		$n1=$n2='';
@@ -347,6 +366,13 @@ class WebNovel extends SitePlugin
 			else $n2='';
 		}
 		$res=strcasecmp($n1, $n2);
+		if($res!==0) return $res;
+		return $e1->novelType <=> $e2->novelType;
+	}
+	
+	private function novel_cmp_by_id($e1, $e2)
+	{
+		$res = $e1->bookId <=> $e2->bookId;
 		if($res!==0) return $res;
 		return $e1->novelType <=> $e2->novelType;
 	}
@@ -385,7 +411,7 @@ class WebNovel extends SitePlugin
 				$res=json_decode($res);
 				//var_dump($i, $res);
 			}
-			while(++$j<5 && (
+			while(++$j<$this::RETRY_LIMIT && (
 				(!property_exists($res, 'code') || $res->code!=0) ||
 				(!property_exists($res, 'msg') || $res->msg!='Success') ||
 				(!property_exists($res, 'data') || $res->data==null)
@@ -404,7 +430,7 @@ class WebNovel extends SitePlugin
 				++$i;
 			}
 		}
-		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<=40);//$i should not reach 40*30 books soon (i'm at 21)
+		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach 40*30 books soon (i'm at 21)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		if(is_null($books2)) { die('error'); }
@@ -412,7 +438,8 @@ class WebNovel extends SitePlugin
 		$books2=$books;
 		$order=array();
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
-		usort($books, array($this, 'novel_cmp'));
+		//usort($books, array($this, 'novel_cmp'));
+		usort($books, array($this, 'novel_cmp_by_id'));
 		foreach($books as $i=>$b) {
 			$ind=-1;
 			foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
@@ -584,7 +611,9 @@ class WebNovel extends SitePlugin
 			//file_put_contents('request.log', $res);
 			$res=$this->jsonp_to_json($res);
 			//unlink('request.log');
-			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
+			$fn = $this::FOLDER.'GetChapterList_'.strval($bookId).'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(true, $fn);
 			$res=json_decode($res);
 		}
 		return $res;
@@ -659,6 +688,11 @@ class WebNovel extends SitePlugin
 			return $this->get_chapter_list_comic($bookId);
 		}
 		return $res;
+	}
+	
+	public function get_chapter_stats($bookId)
+	{
+		throw new Exception("Not Yet Implemented.");
 	}
 	
 	public function search($name)
@@ -911,8 +945,8 @@ class WebNovel extends SitePlugin
 			var_dump(strlen($res2));
 			die();
 		}
-		file_put_contents($this::FOLDER.'book_'.$id.'.json', $res1);
-		return $res2;
+		file_put_contents($this::FOLDER.'book_'.$id.'.json', $res2);
+		return $res3;
 	}
 	
 	public function get_info_html_cached($id, $duration=604800) {
@@ -927,8 +961,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_info($id, $types=NULL)
-	{
+	public function get_info($id, $types=NULL) {
 		// id
 		$data=array();
 		
@@ -1002,27 +1035,37 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info_cached($id, $duration=604800) {
+	public function get_info_cached($id, $types=NULL, $duration=604800) {
 		$filenames=array(
 			$this::FOLDER.'get-book'.$id.'.json',
 			$this::FOLDER.'get-book-extended'.$id.'.json',
 			$this::FOLDER.'get-reviews'.$id.'.json',
 			$this::FOLDER.'getRecommendList'.$id.'.json',
 		);
+		
+		//types
+		if($types===NULL) $types=array(0,1,2,3);
+		if(is_string($types)) $types=explode(',', $types);
+		if(is_int($types)) $types=array($types);
+		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
+		if(count($types)==0) { die('ERROR: empty types.'); }
+		
 		$res=array();
 		foreach($filenames as $i=>$fn) {
-			$j=0;
-			$res2=NULL;
-			if(file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
-				$res2=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
+			if($types==NULL || in_array($i, $types)) {
+				$j=0;
+				$res2=NULL;
+				if(file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
+					$res2=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
+				}
+				else {
+					$res2=$this->get_info($id, $i);
+				}
+				//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
+				while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<5) $res2=$this->get_info($id, $i);
+				while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<5) $res2=$this->get_info($id, $i);
+				$res[$i]=$res2;
 			}
-			else {
-				$res2=$this->get_info($id, $i);
-			}
-			//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
-			while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<5) $res2=$this->get_info($id, $i);
-			while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<5) $res2=$this->get_info($id, $i);
-			$res[]=$res2;
 		}
 		return $res;
 	}
@@ -1077,7 +1120,8 @@ class WebNovel extends SitePlugin
 			++$pageIndex;
 			if($pageIndex>1) $ar['pageIndex']=$pageIndex;
 			if($pageIndex==2) $ar['pageSize']=$pageSize=$res->data->total; // only need to be done once, so at index=2
-			$res = $this->get( 'https://www.webnovel.com/apiajax/ReadingHistory/ReadingHistoryAjax', $ar, $headers );
+			//$res = $this->get( 'https://www.webnovel.com/apiajax/ReadingHistory/ReadingHistoryAjax', $ar, $headers );
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/readingHistory/readingHistoryAjax', $ar, $headers );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'ReadingHistoryAjax'.$pageIndex.'.json', $res);
 			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
@@ -1194,5 +1238,6 @@ var_dump($res[3]->data->bookInfo->translateMode);//-1 translated 1 original ???
 		return function($watch) { return false; };
 		return parent::get_filter_for($type);
 	}
+	//https://www.webnovel.com/go/pcm/pcbookcity/page?_csrfToken=&bookCityType=2&sex=1
 };
 ?>

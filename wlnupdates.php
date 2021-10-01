@@ -3,6 +3,7 @@ require_once('config.php');
 class WLNUpdates extends SitePlugin
 {
 	public const FOLDER = 'wlnupdates/';
+	public $LOGIN_TRIED = false;
 	
 	public function __construct()
 	{
@@ -15,9 +16,9 @@ class WLNUpdates extends SitePlugin
 			'mode'=>'do-login',
 			'username'=>$user,
 			'password'=>$pass,
-			'remember_me'=>true,
+			//'remember_me'=>true,
 		);
-		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: Application/json') );
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'login.json', $res);
 		$res=json_decode($res);
@@ -63,10 +64,41 @@ class WLNUpdates extends SitePlugin
 	
 	public function watches()
 	{
-		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: Application/json') );
+		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'watches.json', $res);
 		$res=json_decode($res);
+		
+		if( !$this->LOGIN_TRIED && $res->error==true ) {
+			$res=$this->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
+			$this->LOGIN_TRIED=true;
+			if($res===false) die('you need to log in.');
+			$res=json_decode($res);
+			if(is_object($res) && $res->error==true) die($res->message);
+			$res = $this->watches();
+		}
+		$res2=$res->data[0];
+		
+		$res=array(); // id => details
+		$list=array(); // id => list
+		$order=array(); // list => [id]
+		
+		foreach($res2 as $l => $ar) {
+			$lists[$l]=array();
+			foreach($ar as $it) {
+				$id = $it[0]->id;
+				$res[$id]=$it;
+				$order[$l][]=$id;
+				$list[$id]=$l;
+			}
+		}
+		ksort($res);
+		ksort($list);
+		
+		file_put_contents($this::FOLDER.'_books.json', $this->jsonp_to_json(json_encode($res)) );
+		file_put_contents($this::FOLDER.'_order.json', $this->jsonp_to_json(json_encode($order)) );
+		file_put_contents($this::FOLDER.'_list.json', $this->jsonp_to_json(json_encode($list)) );
+		
 		return $res;
 	}
 	
@@ -227,7 +259,16 @@ class WLNUpdates extends SitePlugin
 			'id'=>$id,
 			'mode'=>'get-series-id',
 		);
-		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), array('Content-Type: application/json'), false); // no cookies
+		$time=$_SERVER['REQUEST_TIME'];
+		$headers=array(
+			'Content-Type: application/json',
+			'X-Forwarded-For: sebbu2/LN-backup-sync',
+			//'X-Forwarded-For: sebbu2/LN-backup-sync'.' '.$time,
+			//'X-CSRFToken: IjdmYWQ3NzhjMjU2NmYwYWRlNWE5ODNkNzFkZjdlNGFiYjk1ZmE1MWQi.YT0lQg.VYZvn9ZATduUJBlY98AGHW_dSL0',
+		);
+		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), $headers, false); // no cookies
+		//$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), $headers );
+		sleep(1);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
@@ -237,7 +278,7 @@ class WLNUpdates extends SitePlugin
 	
 	public function get_info_cached($id, $duration=604800) {
 		$fn=$this::FOLDER.'get-series-id'.$id.'.json';
-		if(!file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
+		if(!file_exists($fn) || (time()-filemtime($fn))>$duration ) {
 			return $this->get_info($id);
 		}
 		return json_decode(file_get_contents($this::FOLDER.'get-series-id'.$id.'.json'),false, 512, JSON_THROW_ON_ERROR);

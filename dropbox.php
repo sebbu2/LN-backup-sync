@@ -75,7 +75,7 @@ foreach($ar as $fn)
 	if($content[0]===MOONREADER_DID) {
 		//1a
 		if( !array_key_exists($fn3, $fns) ) {
-			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2, 'chp'=>$chp);
 			$ar2=array_merge($ar2, $content);
 			$fns[$fn3]=$ar2;
 		}
@@ -86,7 +86,7 @@ foreach($ar as $fn)
 			if($max>$max1 && $chp>=$lastchp) {
 				unlink(DROPBOX.$fns[$fn3]['fn']);//die();
 				echo '<div class="block b b-blue">',$fns[$fn3]['fn'],'</div>',"\n";
-				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2, 'chp'=>$chp);
 				$ar2=array_merge($ar2, $content);
 				$fns[$fn3]=$ar2;
 			}
@@ -96,11 +96,16 @@ foreach($ar as $fn)
 				echo '<div class="block b b-blue">',$fn,'</div>',"\n";
 			}
 		}
+		if(array_key_exists($fn3, $fns_) && $fns_[$fn3]['chp']<$fns[$fn3]['chp']) {
+			unlink(DROPBOX.$fns[$fn3]['fn']);
+			unset($fns_[$fn3]);
+			echo '<div class="block b b-blue">',$fn,'</div>',"\n";
+		}
 	}
 	else if($content[0]===MOONREADER_DID2) {
 		//1b
 		if( !array_key_exists($fn3, $fns_) ) {
-			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+			$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2, 'chp'=>$chp);
 			$ar2=array_merge($ar2, $content);
 			$fns_[$fn3]=$ar2;
 		}
@@ -111,7 +116,7 @@ foreach($ar as $fn)
 			if($max>$max2 && $chp>=$lastchp_) {
 				unlink(DROPBOX.$fns_[$fn3]['fn']);//die();
 				echo '<div class="block b b-green">',$fns_[$fn3]['fn'],'</div>',"\n";
-				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
+				$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2, 'chp'=>$chp);
 				$ar2=array_merge($ar2, $content);
 				$fns_[$fn3]=$ar2;
 			}
@@ -147,13 +152,19 @@ if($res!==1) {
 	die();
 }
 $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
+$watches=get_object_vars($watches);
 //var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
 //var_dump(count($books));//die();
 $royalroad=json_decode(file_get_contents($rr::FOLDER.'_books.json'), true, 512, JSON_THROW_ON_ERROR);
 
 echo '<h2>Counts</h2>',"\n";
-print_table(array(array( 'files'=>count(array_merge($fns_,$fns)), 'WLNUpdates'=>count($watches), 'WebNovel'=>count($books), 'RoyalRoad'=>count($royalroad) )));
+print_table(array(array(
+	'files'=>count(array_merge($fns_,$fns)),
+	'WLNUpdates'=>count($watches),
+	'WebNovel'=>count($books),
+	'RoyalRoad'=>count($royalroad)
+)));
 echo '<br/>'."\r\n";
 if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 flush();
@@ -348,6 +359,13 @@ foreach($fns as $name=>$fn)
 			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
 			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
+			if( (
+				($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
+				|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
+				) && $books[$key]->updateStatus==1
+			) {
+				$res=$wn->get_chapter_list($id);
+			}
 			//var_dump($name, $chp);
 			$data=$wn->read_update($books[$key], $chp2);
 			if(!is_bool($data)) {

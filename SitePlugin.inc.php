@@ -24,6 +24,7 @@ class SitePlugin
 	{
 		static $keys=array('domain','includeSubdomains','path','secureOnly','expires','name','value');
 		$url_ar=parse_url($url);//scheme, host, path
+		if(!array_key_exists('scheme', $url_ar)) { var_dump($url, $url_ar);var_dump(debug_backtrace());die(); }
 		$ar=file(COOKIEFILE);
 		$res=array();
 		foreach($ar as $line) {

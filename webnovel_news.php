@@ -12,12 +12,12 @@ $timeref=time();
 
 include('header.php');
 
-//include_once('watches.inc.php');
-$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
-$books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),false,512,JSON_THROW_ON_ERROR);
-
 $wln=new WLNUpdates;
 $wn=new WebNovel;
+
+//include_once('watches.inc.php');
+$watches=json_decode(str_replace("\t",'',file_get_contents($wln::FOLDER.'watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
+$books=json_decode(str_replace("\t",'',file_get_contents($wn::FOLDER.'_books.json')),false,512,JSON_THROW_ON_ERROR);
 
 chdir(DROPBOX);
 $ar=glob('*.po');
@@ -120,10 +120,12 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				
 				$row=array();
 				
+				$timestamp=0;
 				//retrieving list of chapters
 				if(!file_exists('webnovel/GetChapterList_'.$book->bookId.'.json'))
 				{
 					$res=$wn->get_chapter_list($book->bookId);
+					$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 					if($res->code!=0 || $res->data===0) {
 						var_dump('file', $book->bookId, $book->bookName, $entry['title'], $res);
 						unlink('webnovel/GetChapterList_'.$book->bookId.'.json');
@@ -133,6 +135,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				else {
 					//$res=json_decode('webnovel/GetChapterList_'.$book->bookId.'.json', false, 512, JSON_THROW_ON_ERROR);
 					$res=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$book->bookId.'.json')),false,512,JSON_THROW_ON_ERROR);
+					$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 					//var_dump($res);die();
 					if(!is_object($res) || !property_exists($res, 'code') || $res->code!=0 || !property_exists($res, 'data') || $res->data===0 || !property_exists($res->data, 'bookInfo')) {
 						var_dump('request', $book->bookId, $book->bookName, $entry['title'], $res);
@@ -148,6 +151,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					//empty book
 					try {
 						$res=@$wn->get_chapter_list($book->bookId);
+						$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 					} catch (Exception $e) {
 					}
 					continue;
@@ -161,7 +165,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				$chp_id=0;
 				$last_chp=0;
 				$last_upd='1970-01-01';
-				$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
+				//$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
+				assert($timestamp!=0) or die('filemtime timestamp error');
 				if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
 				else if(property_exists($res->data->volumeItems[0], 'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=$add=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2=$diff_old[$entry['title']];
@@ -217,6 +222,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					do {
 						try {
 							$res=@$wn->get_chapter_list($book->bookId);
+							$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 							//var_dump($res);die();
 						} catch (Exception $e) {
 							var_dump($e,  $res);die();
@@ -233,7 +239,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$last_chp=0;
 					$add_=0;
 					if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
-					if(property_exists($res->data->volumeItems[0], 'chapterIndex') && $res->data->volumeItems[0]->chapterIndex==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
+					if(property_exists($res->data->volumeItems[0], 'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							if($chap->chapterLevel!=0) $priv_only++;
@@ -311,12 +317,15 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					//var_dump(!$skip_existing, $exists);
 					//if($content[0]==MOONREADER_DID2) var_dump($title);
 					chdir(CWD);
-					if( !$skip_existing
-						|| count($exists)==0
+					$cond = count($exists)==0
 						|| ( count($exists)==1 && array_key_exists(0,$content) && $content[0]==MOONREADER_DID2 ) // exists, but is from this script
 						|| ( count($exists)==1 && $ar2['min']<=1 && $ar2['min']!=($add==0?1:$add) ) // exists, but wrong negative chapter number
 						//|| ( count($exists)==1 && array_key_exists(4,$content) && $content[4]!='100' ) // i'm not at the end
+					;
+					if( !$skip_existing
+						|| $cond
 					) {
+						
 						//var_dump($entry['title'], (int)$entry['chp'], $book->readToChapterIndex+$add2, $res->data->bookInfo->bookSubName, $res->data->bookInfo->totalChapterNum+$add);
 						$subName='';
 						if(property_exists($res->data->bookInfo, 'bookSubName')) $subName=$res->data->bookInfo->bookSubName;
@@ -327,6 +336,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							$subName='';
 							if(is_object($res2)) $subName=$res2->bookInfo->bookSubName;
 							else if(is_array($res2)) $subName=$res2['bookInfo']['bookSubName'];
+							else {
+								var_dump($book->bookId,$res2);die();
+							}
+							$subName=str_replace('\ ', ' ', $subName);
 							if(strlen($subName)==0) {
 								$row['subName']=implode('', array_map(function($s) { return $s[0]; }, explode(' ',$book->bookName)));
 								$row['subName']='<span style="color:#0000FF">'.$row['subName'].'</span>';
@@ -335,6 +348,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 								$row['subName']=$subName;
 								$row['subName']='<span style="color:#00FF00">'.$row['subName'].'</span>';
 							}
+							//var_dump($subName);die();
 						}
 						if($row['subName']=='PD'&&$book->bookName=='Plague Doctor') $row['subName']='Plague'; // epub source bug in subnames duplicates
 						if($ar2['min']>1) $row['start']=$ar2['min'];
@@ -346,7 +360,8 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						//unlink(DROPBOX.$fn);
 						$fn=str_replace(' ', '_', $fn);
 						//var_dump($content[1],$entry['chp'],$ar2['min'],$min,$add,$min2);
-						if(!file_exists(DROPBOX.$fn) || (($content[1]+$min2)!=($entry['chp']>1?$entry['chp']:0)) ) {
+						//if(strpos($row['subName'],'CBTOIP')!==false) { var_dump($fn, $entry, $content, $ar2, $min2); die(); }
+						if( $cond && (!file_exists(DROPBOX.$fn) || (($content[1]+$min2)!=($entry['chp']>1?$entry['chp']:0)) ) ) {
 							$chp_=(int)$entry['chp'];
 							$numerator=$chp_;
 							if($min<0) $numerator-=$min; // - - => +
@@ -367,6 +382,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 							if($min<0) $chp_-=$min;
 							if($min>0) $chp_-=($min-1);
 							$data=$did.'*'.$chp_.'@'.$ar2[2].'#0:'.$num.'%';
+							//var_dump($fn, $data);die();
 							file_put_contents(DROPBOX.$fn, $data);
 							$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()), array('.po'));
 						}//*/
@@ -387,14 +403,16 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					{
 //						var_dump($book,$book->readToChapterIndex,$add,$add2,$priv_only,$max_pub,$res->data->bookInfo);
 						$res=$wn->get_chapter_list($book->bookId);
+						$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 						if( (!is_object($res) || !property_exists($res, 'data') || (is_int($res->data)&&$res->data==0) || !property_exists($res->data, 'bookInfo')) ) {
 							$res=$wn->get_chapter_list($book->bookId);
+							$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 						}
 						$priv_only=0;
 						$last_upd=0;
 						$last_chp=0;
 						if(property_exists($res->data->volumeItems[0],'index') && $res->data->volumeItems[0]->index==0) $add_=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
-						if(property_exists($res->data->volumeItems[0],'chapterIndex') && $res->data->volumeItems[0]->chaperIndex==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
+						if(property_exists($res->data->volumeItems[0],'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 						foreach($res->data->volumeItems as $vol) {
 							foreach($vol->chapterItems as $chap) {
 								if($chap->chapterLevel!=0) $priv_only++;
@@ -406,12 +424,14 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 								else if(property_exists($chap, 'publishTimeFormat')) $createTime=parse_publishTimeFormat($chap->publishTimeFormat);
 								if(strtotime($createTime, $timestamp)>strtotime($last_upd, $timestamp)) {
 									$last_upd=$createTime;
-									var_dump($last_upd);die();
+									/*var_dump($createTime, $last_upd);
+									var_dump(strtotime($createTime, $timestamp),strtotime($last_upd, $timestamp));
+									die();//*/
 									$last_chp=$chid;
 								}
 							}
 						}
-						var_dump($last_upd, strtotime($last_upd, $timestamp));die();
+						//var_dump($last_upd, strtotime($last_upd, $timestamp));die();
 						$add2=$priv_only;
 //						var_dump($res->data->bookInfo);
 					}
@@ -419,8 +439,31 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$diff[$entry['title']]=$priv_only;
 				}
 				if(count($row)>0) {
+					$subName='';
+					if(property_exists($res->data->bookInfo, 'bookSubName')) $subName=$res->data->bookInfo->bookSubName;
+					if(strlen($subName)==0) {
+						$res2=$wn->get_info_html_cached($book->bookId);
+						//var_dump($res2);die();
+						$subName='';
+						if(is_object($res2)) $subName=$res2->bookInfo->bookSubName;
+						else if(is_array($res2)) $subName=$res2['bookInfo']['bookSubName'];
+						else {
+							var_dump($book->bookId,$res2);die();
+						}
+						$subName=str_replace('\ ', ' ', $subName);
+						if(strlen($subName)==0) {
+							$subName=implode('', array_map(function($s) { return $s[0]; }, explode(' ',$book->bookName)));
+							$subName='<span style="color:#0000FF">'.$subName.'</span>';
+						}
+						else {
+							$subName='<span style="color:#00FF00">'.$subName.'</span>';
+						}
+						//var_dump($subName);die();
+					}
+					if($subName=='PD'&&$book->bookName=='Plague Doctor') $subName='Plague'; // epub source bug in subnames duplicates
+					$row=array_merge($row,array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$subName));
 					if(count($row)==1 && array_keys($row)[0]=='msg') {
-						$row=array_merge(array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$res->data->bookInfo->bookSubName), $row);
+						$row=array_merge(array('title'=>$entry['title'], 'WLNUpdate'=>(int)$entry['chp'], 'WebNovel'=>$book->readToChapterIndex, 'new chp'=>$res->data->bookInfo->totalChapterNum+$add, 'subName'=>$bookSubName), $row);
 					}
 					if( (count($row)>=1 && array_keys($row)[0]=='msg' && $ar2['min']<0) && $add!=$add_) {
 						$index=0;

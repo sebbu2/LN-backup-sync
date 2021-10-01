@@ -1,5 +1,26 @@
+# lists
 library.htm	linguist-generated=true
+library2.htm	linguist-generated=true
+royalroad.htm	linguist-generated=true
 watches2.htm	linguist-generated=true
-webnovvel/_books.json	linguist-generated=true
+# json data
+royalroad/_books.json linguist-generated=true
+royalroad/_order.json	linguist-generated=true
+webnovel/_books.json	linguist-generated=true
+webnovel/_order.json	linguist-generated=true
 wlnupdates/_books.json	linguist-generated=true
+wlnupdates/_list.json	linguist-generated=true
+wlnupdates/_order.json	linguist-generated=true
+# correspondances & names & positions
+correspondances.json	linguist-generated=true
+correspondances_rr.json	linguist-generated=true
+correspondances_wln.json	linguist-generated=true
+correspondances_wn.json	linguist-generated=true
+names.json.json  linguist-generated=true
+pos.json  linguist-generated=true
+pos_dev1.json  linguist-generated=true
+pos_dev9.json  linguist-generated=true
+pos_old.json  linguist-generated=true
+pos_others.json  linguist-generated=true
+wn_diff.json	linguist-generated=true
 

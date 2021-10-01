@@ -51,6 +51,7 @@ class RoyalRoad extends SitePlugin
 		$ar = array();
 		$cookies = $this->get_cookies_for( 'https://www.royalroad.com/' );
 		$data=array();
+		$order=array();
 		//var_dump($cookies);die();
 		do
 		{
@@ -105,6 +106,7 @@ class RoyalRoad extends SitePlugin
 				}
 				$id=explode('/', $ar2['href'])[2];
 				$data[$id]=$ar2;
+				$order[]=$id;
 				//var_dump($ar2);die();
 			}
 			$res2=$xml->xpath("//a[@data-page]");
@@ -122,6 +124,10 @@ class RoyalRoad extends SitePlugin
 		$res=json_encode($data);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'_books.json', $res);
+		
+		$res=json_encode($order);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'_order.json', $res);
 		
 		return $data;
 	}

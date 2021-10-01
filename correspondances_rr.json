@@ -1,0 +1,656 @@
+{
+    "25": {
+        "wln": 3166,
+        "wn": null,
+        "name": "Necromancer by Halosty",
+        "list": "RoyalRoad"
+    },
+    "98": {
+        "wln": 3168,
+        "wn": null,
+        "name": "Fantasia",
+        "list": "RoyalRoad"
+    },
+    "544": {
+        "wln": 2410,
+        "wn": null,
+        "name": "Master of All, Jack of None",
+        "list": "RoyalRoad plan to read"
+    },
+    "717": {
+        "wln": 2506,
+        "wn": null,
+        "name": "The Rude Time Stopper",
+        "list": "stalled"
+    },
+    "1439": {
+        "wln": 2405,
+        "wn": null,
+        "name": "Forgotten Conqueror",
+        "list": "RoyalRoad"
+    },
+    "1618": {
+        "wln": 2801,
+        "wn": null,
+        "name": "Summoned Hero",
+        "list": "on-hold"
+    },
+    "1992": {
+        "wln": 2487,
+        "wn": null,
+        "name": "The New Journey of an Old Soul",
+        "list": "RoyalRoad on-hold"
+    },
+    "3619": {
+        "wln": 32444,
+        "wn": null,
+        "name": "Silver Death",
+        "list": "stalled"
+    },
+    "3666": {
+        "wln": 32381,
+        "wn": null,
+        "name": "I was reincarnated as a Magic Academy!",
+        "list": "reading"
+    },
+    "3667": {
+        "wln": 32382,
+        "wn": null,
+        "name": "100 Luck and the Dragon Tamer Skill!",
+        "list": "reading"
+    },
+    "5029": {
+        "wln": 35113,
+        "wn": null,
+        "name": "The Blue Mage Raised by Dragons",
+        "list": "RoyalRoad"
+    },
+    "6752": {
+        "wln": 42756,
+        "wn": null,
+        "name": "Lament of the Fallen",
+        "list": "RoyalRoad"
+    },
+    "8220": {
+        "wln": 78250,
+        "wn": null,
+        "name": "Mythran's Master Of All - Continued (Completed!)",
+        "list": "RoyalRoad plan to read"
+    },
+    "9500": {
+        "wln": 53949,
+        "wn": null,
+        "name": "The Eagle's Flight",
+        "list": "RoyalRoad"
+    },
+    "10381": {
+        "wln": 56545,
+        "wn": null,
+        "name": "Maou Shoujo Magical Chaos",
+        "list": "RoyalRoad"
+    },
+    "11209": {
+        "wln": 57391,
+        "wn": null,
+        "name": "The Legend of Randidly Ghosthound",
+        "list": "RoyalRoad"
+    },
+    "11620": {
+        "wln": 58106,
+        "wn": null,
+        "name": "Red Mantis and Avenger Doll",
+        "list": "RoyalRoad"
+    },
+    "14396": {
+        "wln": 60905,
+        "wn": null,
+        "name": "The Snake Report",
+        "list": "RoyalRoad plan to read"
+    },
+    "15935": {
+        "wln": 62277,
+        "wn": null,
+        "name": "There is no Epic Loot here, Only Puns.",
+        "list": "RoyalRoad"
+    },
+    "16946": {
+        "wln": 63197,
+        "wn": null,
+        "name": "Azarinth Healer",
+        "list": "RoyalRoad"
+    },
+    "21188": {
+        "wln": 74196,
+        "wn": null,
+        "name": "Forge of Destiny",
+        "list": "RoyalRoad"
+    },
+    "21220": {
+        "wln": 34875,
+        "wn": "13583879505346305",
+        "name": "Mother of Learning",
+        "list": "RoyalRoad completed"
+    },
+    "21323": {
+        "wln": 110712,
+        "wn": null,
+        "name": "Twilight Kingdom",
+        "list": "RoyalRoad"
+    },
+    "21361": {
+        "wln": 74909,
+        "wn": null,
+        "name": "Skyclad",
+        "list": "RoyalRoad"
+    },
+    "21581": {
+        "wln": 75971,
+        "wn": null,
+        "name": "The Reborn Runesmith",
+        "list": "RoyalRoad"
+    },
+    "22518": {
+        "wln": 2768,
+        "wn": "11236791006300205",
+        "name": "Chrysalis",
+        "list": "QIDIAN original"
+    },
+    "23055": {
+        "wln": 87289,
+        "wn": "20859306605606805",
+        "name": "It's the Healer's Life for Me",
+        "list": "RoyalRoad"
+    },
+    "24709": {
+        "wln": 94313,
+        "wn": null,
+        "name": "Defiance of the Fall",
+        "list": "RoyalRoad"
+    },
+    "25082": {
+        "wln": 97112,
+        "wn": null,
+        "name": "Blue Core",
+        "list": "RoyalRoad"
+    },
+    "25225": {
+        "wln": 98528,
+        "wn": null,
+        "name": "Delve",
+        "list": "RoyalRoad"
+    },
+    "25299": {
+        "wln": 98792,
+        "wn": null,
+        "name": "Misadventures of a Rampaging Demon",
+        "list": "RoyalRoad stalled"
+    },
+    "25568": {
+        "wln": 97804,
+        "wn": null,
+        "name": "My Dungeon Life: Rise of the Slave Harem",
+        "list": "RoyalRoad"
+    },
+    "26149": {
+        "wln": 107979,
+        "wn": null,
+        "name": "Skybound",
+        "list": "RoyalRoad"
+    },
+    "26294": {
+        "wln": 107213,
+        "wn": null,
+        "name": "He Who Fights With Monsters",
+        "list": "RoyalRoad"
+    },
+    "26675": {
+        "wln": 107801,
+        "wn": "17522028806394405",
+        "name": "A Journey of Black and Red",
+        "list": "RoyalRoad"
+    },
+    "26727": {
+        "wln": 107713,
+        "wn": null,
+        "name": "Ar'Kendrithyst",
+        "list": "RoyalRoad"
+    },
+    "27325": {
+        "wln": 115382,
+        "wn": null,
+        "name": "Infinite Realm: Monsters \u0026 Legends",
+        "list": "RoyalRoad plan to read"
+    },
+    "27872": {
+        "wln": 108931,
+        "wn": null,
+        "name": "Confessions of the Magpie Wizard",
+        "list": "RoyalRoad"
+    },
+    "28385": {
+        "wln": 59514,
+        "wn": "18923811406743005",
+        "name": "Kairos",
+        "list": "RoyalRoad"
+    },
+    "29669": {
+        "wln": 110649,
+        "wn": null,
+        "name": "Love Crafted",
+        "list": "RoyalRoad completed"
+    },
+    "30605": {
+        "wln": 81989,
+        "wn": null,
+        "name": "Magnus",
+        "list": "RoyalRoad"
+    },
+    "30650": {
+        "wln": 111540,
+        "wn": "16044382105736405",
+        "name": "Evil Goddess System",
+        "list": "QIDIAN plan to read"
+    },
+    "31429": {
+        "wln": 112336,
+        "wn": null,
+        "name": "Cinnamon Bun",
+        "list": "RoyalRoad"
+    },
+    "31474": {
+        "wln": 112321,
+        "wn": null,
+        "name": "Magic-Smithing",
+        "list": "RoyalRoad"
+    },
+    "31514": {
+        "wln": 112555,
+        "wn": null,
+        "name": "The Menocht Loop",
+        "list": "RoyalRoad"
+    },
+    "32067": {
+        "wln": 115553,
+        "wn": null,
+        "name": "Never Die Twice",
+        "list": "RoyalRoad"
+    },
+    "32576": {
+        "wln": 119029,
+        "wn": null,
+        "name": "Villager Three",
+        "list": "RoyalRoad"
+    },
+    "32908": {
+        "wln": 120338,
+        "wn": null,
+        "name": "The Calamity of a Reborn Witch",
+        "list": "RoyalRoad"
+    },
+    "33003": {
+        "wln": 116777,
+        "wn": null,
+        "name": "My Cerberus Girlfriend",
+        "list": "RoyalRoad"
+    },
+    "33363": {
+        "wln": 117803,
+        "wn": null,
+        "name": "Bounty Cats",
+        "list": "RoyalRoad plan to read"
+    },
+    "33378": {
+        "wln": 118806,
+        "wn": null,
+        "name": "I Became a [Biologist] in a Fantasy World!",
+        "list": "RoyalRoad"
+    },
+    "33801": {
+        "wln": 118863,
+        "wn": null,
+        "name": "This Quest is Bullshit",
+        "list": "RoyalRoad"
+    },
+    "33844": {
+        "wln": 57046,
+        "wn": "18230148206939905",
+        "name": "The Runesmith",
+        "list": "RoyalRoad"
+    },
+    "34030": {
+        "wln": 119103,
+        "wn": null,
+        "name": "Artificial Jelly",
+        "list": "RoyalRoad"
+    },
+    "34473": {
+        "wln": 118775,
+        "wn": null,
+        "name": "Shade Touched",
+        "list": "RoyalRoad"
+    },
+    "34777": {
+        "wln": 120139,
+        "wn": null,
+        "name": "Hilda Finds a Home",
+        "list": "RoyalRoad"
+    },
+    "34798": {
+        "wln": 111530,
+        "wn": null,
+        "name": "Melas",
+        "list": "RoyalRoad"
+    },
+    "35549": {
+        "wln": 120505,
+        "wn": "19429965505299405",
+        "name": "Prophecy Approved Companion",
+        "list": "RoyalRoad"
+    },
+    "35774": {
+        "wln": 127577,
+        "wn": null,
+        "name": "The Girl With The Crimson Eyes",
+        "list": "RoyalRoad plan to read"
+    },
+    "36065": {
+        "wln": 128026,
+        "wn": null,
+        "name": "Sylver Seeker",
+        "list": "RoyalRoad"
+    },
+    "36299": {
+        "wln": 128229,
+        "wn": null,
+        "name": "Beneath the Dragoneye Moons",
+        "list": "RoyalRoad"
+    },
+    "36308": {
+        "wln": 128792,
+        "wn": null,
+        "name": "New Life of a Summoned Demoness",
+        "list": "RoyalRoad"
+    },
+    "36371": {
+        "wln": 128403,
+        "wn": null,
+        "name": "Respawn Condition: Trash Mob",
+        "list": "RoyalRoad"
+    },
+    "36726": {
+        "wln": 128782,
+        "wn": null,
+        "name": "A Path to Magic",
+        "list": "RoyalRoad"
+    },
+    "36735": {
+        "wln": 129103,
+        "wn": null,
+        "name": "The Perfect Run",
+        "list": "RoyalRoad"
+    },
+    "37016": {
+        "wln": 129517,
+        "wn": "18499797106079005",
+        "name": "Earth's Alpha Prime",
+        "list": "RoyalRoad plan to read"
+    },
+    "37438": {
+        "wln": 130259,
+        "wn": null,
+        "name": "Salvos",
+        "list": "RoyalRoad"
+    },
+    "37626": {
+        "wln": 130167,
+        "wn": "18495993905903905",
+        "name": "Summoned as a Ghost in another world",
+        "list": "RoyalRoad"
+    },
+    "38240": {
+        "wln": 129191,
+        "wn": null,
+        "name": "Realm of Monsters",
+        "list": "RoyalRoad plan to read"
+    },
+    "38292": {
+        "wln": 130768,
+        "wn": null,
+        "name": "An Unbound Soul",
+        "list": "RoyalRoad plan to read"
+    },
+    "39090": {
+        "wln": 131842,
+        "wn": "17560808306611405",
+        "name": "Reborn! A Thief's Greed in a Fantasy World",
+        "list": "RoyalRoad"
+    },
+    "39408": {
+        "wln": 132273,
+        "wn": null,
+        "name": "Beware Of Chicken",
+        "list": "RoyalRoad"
+    },
+    "40062": {
+        "wln": 134120,
+        "wn": null,
+        "name": "Path of the Dragon Mage: Exiled",
+        "list": "RoyalRoad"
+    },
+    "40163": {
+        "wln": 133976,
+        "wn": null,
+        "name": "The Lazy Hungry Giantess LitRPG",
+        "list": "RoyalRoad"
+    },
+    "40193": {
+        "wln": 134291,
+        "wn": "17996954306015705",
+        "name": "Poison God's Heritage",
+        "list": "QIDIAN original"
+    },
+    "40295": {
+        "wln": 131420,
+        "wn": "12720227005808305",
+        "name": "The Harvester",
+        "list": "RoyalRoad"
+    },
+    "40373": {
+        "wln": 133809,
+        "wn": null,
+        "name": "Vigor Mortis",
+        "list": "RoyalRoad"
+    },
+    "40503": {
+        "wln": 134080,
+        "wn": null,
+        "name": "The Obsidian Core",
+        "list": "RoyalRoad"
+    },
+    "40601": {
+        "wln": 133901,
+        "wn": null,
+        "name": "Dear Spellbook",
+        "list": "RoyalRoad"
+    },
+    "40888": {
+        "wln": 135424,
+        "wn": null,
+        "name": "The Great Core's Paradox",
+        "list": "RoyalRoad"
+    },
+    "40929": {
+        "wln": 137261,
+        "wn": null,
+        "name": "Gemstone Goblins (LitRPG)",
+        "list": "RoyalRoad"
+    },
+    "41033": {
+        "wln": 134559,
+        "wn": null,
+        "name": "Kairos: A Greek Myth LitRPG",
+        "list": "RoyalRoad"
+    },
+    "41112": {
+        "wln": 134638,
+        "wn": null,
+        "name": "Cosmic Bulldozing Team",
+        "list": "RoyalRoad"
+    },
+    "41147": {
+        "wln": 135083,
+        "wn": null,
+        "name": "Of Monstergirls and Men",
+        "list": "RoyalRoad"
+    },
+    "41450": {
+        "wln": 135227,
+        "wn": null,
+        "name": "Myrr: Reincarnated Timemage Assassin-Learning To Smile In Another World",
+        "list": "RoyalRoad"
+    },
+    "41477": {
+        "wln": 136609,
+        "wn": null,
+        "name": "Truth Seeker: A LitRPG Timeloop",
+        "list": "RoyalRoad"
+    },
+    "41599": {
+        "wln": 136294,
+        "wn": null,
+        "name": "Tian (A LitRPG Cultivation Isekai)",
+        "list": "RoyalRoad"
+    },
+    "41618": {
+        "wln": 135600,
+        "wn": null,
+        "name": "Mark of the Fool: A Progression Fantasy",
+        "list": "RoyalRoad plan to read"
+    },
+    "41805": {
+        "wln": 135653,
+        "wn": null,
+        "name": "Somebody Stop Her",
+        "list": "RoyalRoad"
+    },
+    "41836": {
+        "wln": 136498,
+        "wn": null,
+        "name": "Evil Eye: Hexcaller",
+        "list": "RoyalRoad"
+    },
+    "41862": {
+        "wln": 135704,
+        "wn": null,
+        "name": "Slime Cafe",
+        "list": "RoyalRoad"
+    },
+    "41881": {
+        "wln": 135813,
+        "wn": null,
+        "name": "Wizard's Tower",
+        "list": "RoyalRoad"
+    },
+    "42124": {
+        "wln": 135895,
+        "wn": null,
+        "name": "An Unwilling Monster",
+        "list": "RoyalRoad plan to read"
+    },
+    "42441": {
+        "wln": 136182,
+        "wn": null,
+        "name": "Elder Cultivator",
+        "list": "RoyalRoad plan to read"
+    },
+    "42521": {
+        "wln": 137358,
+        "wn": null,
+        "name": "The Reincarnation of Alysara [Progression LitRPG]",
+        "list": "RoyalRoad"
+    },
+    "42630": {
+        "wln": 136336,
+        "wn": null,
+        "name": "A Dream of Wings and Flame",
+        "list": "RoyalRoad"
+    },
+    "42673": {
+        "wln": 136543,
+        "wn": "19855680406636005",
+        "name": "The Bewitching Chaos Ghost System",
+        "list": "RoyalRoad plan to read"
+    },
+    "42728": {
+        "wln": 136375,
+        "wn": null,
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
+        "list": "RoyalRoad"
+    },
+    "42788": {
+        "wln": 136511,
+        "wn": "20401299806123905",
+        "name": "Reincarnated as a Nightwalker",
+        "list": "RoyalRoad"
+    },
+    "43180": {
+        "wln": 137101,
+        "wn": null,
+        "name": "I'm Not a Competitive Necromancer",
+        "list": "RoyalRoad"
+    },
+    "43181": {
+        "wln": 137029,
+        "wn": null,
+        "name": "The Hedge Wizard",
+        "list": "RoyalRoad"
+    },
+    "43288": {
+        "wln": 137349,
+        "wn": null,
+        "name": "The Trickster's Tale 2: Gnomes Don't Rule!",
+        "list": "RoyalRoad"
+    },
+    "43377": {
+        "wln": 137112,
+        "wn": null,
+        "name": "The Way of Wrought Earth, or: My Tale of Rebirth as a Mostly Inanimate Rock",
+        "list": "RoyalRoad"
+    },
+    "43934": {
+        "wln": 138802,
+        "wn": null,
+        "name": "Realmshaker: Giant Progression LitRPG",
+        "list": "RoyalRoad"
+    },
+    "44132": {
+        "wln": 137834,
+        "wn": null,
+        "name": "The Calamitous Bob",
+        "list": "RoyalRoad plan to read"
+    },
+    "44229": {
+        "wln": 137802,
+        "wn": null,
+        "name": "My Best Friend is an Eldritch Horror",
+        "list": "RoyalRoad"
+    },
+    "44272": {
+        "wln": 139878,
+        "wn": null,
+        "name": "The Great, Unstoppable, Irreplaceable Alexander",
+        "list": "RoyalRoad"
+    },
+    "44463": {
+        "wln": 138165,
+        "wn": null,
+        "name": "The Hallowed War",
+        "list": "RoyalRoad plan to read"
+    },
+    "45136": {
+        "wln": 139062,
+        "wn": null,
+        "name": "The King's Soul: A LitRPG Wuxia Novel",
+        "list": "RoyalRoad plan to read"
+    }
+}

@@ -14,7 +14,7 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '/', '  ');
 	//'+'
-	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version');
+	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
@@ -65,6 +65,14 @@ function startswith($haystack, $needle) {
 }
 function endswith($haystack, $needle) {
 	return (strncasecmp(substr($haystack, -strlen($needle)), $needle, strlen($needle))==0);
+}
+function normalize($str) {
+	$str=transliterator_transliterate("Hex-Any", $str);
+	$str=str_replace('\\u0026', '&', $str);
+	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
+	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
+	$str=transliterator_transliterate("[:^ASCII:] Any-Hex", $str);
+	return $str;
 }
 if ( !function_exists( 'is_iterable' ) )
 {

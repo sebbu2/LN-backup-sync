@@ -37,33 +37,60 @@ royalroad.php class to support royalroad.com
 
 **webnovel_data.php** List data (counts) from webnovel
 
-**update_list.php** move qidian's novels into QIDIAN or QIDIAN original list on wlnupdates, update details on wln from data of wn
+**update_list.php** move qidian's novels into QIDIAN or QIDIAN original list on wlnupdates, update details on wlnupdates from data of webnovel
+
+**correspondances.php** List correspondances between royalroad, webnovel and wlnupdates
+
+**position.php** List positions from the novels in the ebook reader
 
 [wlnupdates/\_books.json](wlnupdates/_books.json) library json data from wlnupdates
 
+[wlnupdates/\_order.json](wlnupdates/_order.json) library json data of the order from wlnupdates
+
+[wlnupdates/\_list.json](wlnupdates/\_list.json) library json data of the list the novel is from on wlnupdates
+
 [watches2.htm](watches2.htm) raw table of wlnupdates data
 
-[webnovel/\_books.json](webnovel/_books.json) library json data from webnovel (merged, reordered)
+[webnovel/\_books.json](webnovel/_books.json) library data from webnovel (merged, reordered)
 
-webnovel/\_books2.json) library json data from webnovel (merged, order kept)
+[webnovel/\_books2.json](webnovel/_books2.json) library data from webnovel (merged, order kept)
 
-[webnovel/\_order.json](webnovel/_order.json) library json data of the order from webnovel
+[webnovel/\_order.json](webnovel/_order.json) library data of the order from webnovel
 
-[webnovel/\_history.json](webnovel/_history.json) history json data of the order from webnovel
+[webnovel/\_history.json](webnovel/_history.json) history data from webnovel
 
-[webnovel/\_collection.json](webnovel/_collection.json) collection (reading lists) json data of the order from webnovel
+[webnovel/\_collection.json](webnovel/_collection.json) collection (reading lists) data from webnovel
 
 [library.htm](library.htm) raw table of webnovel data (sorted)
 
 [library2.htm](library2.htm) raw table of webnovel data (identical to website, sorted by last add/update)
 
-[webnovel_data.htm](webnovel_data.htm) table of webnovel data counts (include lists, history\*2, collection list, all collections)
+[webnovel\_data.htm](webnovel_data.htm) table of webnovel data counts (include lists, history\*2, collection list, all collections)
 
-[royalroad/\_books.json](royalroad/_books.json) library json data from royalroad
+[royalroad/\_books.json](royalroad/_books.json) library data of the order from royalroad
+
+[royalroad/\_order.json](royalroad/_order.json) library data from royalroad
 
 [royalroad.htm](royalroad.htm) raw table of royalroad data
 
-[wn\_diff.json](wn_diff.json) json data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdate reading position)
+[wn\_diff.json](wn_diff.json) data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdates reading position)
 
-[correspondances.json](correspondances.json) data of correspondances between webnovel and wlnupdate (= novel id)
+[correspondances.json](correspondances.json) data of correspondances between royalroad, webnovel and wlnupdates (= novel id)
 
+[correspondances_rr.json](correspondances_rr.json) data of the correspondance from royalroad to webnovel and wlnupdates
+
+[correspondances_wln.json](correspondances_wln.json) data of the correspondance from wlnupdates to royalroad and webnovel
+
+[correspondances_wn.json](correspondances_wn.json) data of the correspondance from webnovel to royalroad and wlnupdates
+
+[names.json](names.json) data of the correspondance from the name to royalroad, wlnupdates and webnovel
+
+[pos.json](pos.json) data of the \(last\) position of each novel
+
+[pos\_dev1.json](pos_dev1.json) data of the \(last\) position of each novel that I was the last to update
+
+[pos\_dev9.json](pos_dev9.json) data of the \(last\) position of each novel that the software was the last to update
+
+[pos\_old.json](pos_old.json) data of the \(previous\) position of each novel, to be deleted/remplaced on next update
+
+[pos\_others.json](pos_others.json) data of the position from unrecognized novels
