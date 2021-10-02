@@ -155,6 +155,7 @@ $watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
 $watches=get_object_vars($watches);
 //var_dump(count($watches));//die();
 $books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
+$books=get_object_vars($books);
 //var_dump(count($books));//die();
 $royalroad=json_decode(file_get_contents($rr::FOLDER.'_books.json'), true, 512, JSON_THROW_ON_ERROR);
 
@@ -365,6 +366,22 @@ foreach($fns as $name=>$fn)
 				) && $books[$key]->updateStatus==1
 			) {
 				$res=$wn->get_chapter_list($id);
+				$priv_only=0;
+				$max_pub=0;
+				$count=0;
+				foreach($res->data->volumeItems as $vol) {
+					foreach($vol->chapterItems as $chap) {
+						//var_dump($chap);die();
+						$index=-1;
+						if(property_exists($chap, 'index')) $index=$chap->index;
+						else if(property_exists($chap, 'chapterIndex')) $index=$chap->chapterIndex;
+						
+						if($chap->chapterLevel!=0) $priv_only++;
+						//else if($chap->index>$max_pub) $max_pub=$chap->index;
+						else if($index>$max_pub) $max_pub=$index;
+						$count++;
+					}
+				}
 			}
 			//var_dump($name, $chp);
 			$data=$wn->read_update($books[$key], $chp2);

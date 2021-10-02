@@ -23,4 +23,8 @@ pos_dev9.json  linguist-generated=true
 pos_old.json  linguist-generated=true
 pos_others.json  linguist-generated=true
 wn_diff.json	linguist-generated=true
+# dropbox data
+dropbox/dropbox.zip	linguist-generated=true -diff -merge -text
+# others
+Gemfile.lock	linguist-generated=true
 

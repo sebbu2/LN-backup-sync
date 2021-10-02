@@ -435,14 +435,21 @@ class WebNovel extends SitePlugin
 		$books2=$this->jsonp_to_json($books2);
 		if(is_null($books2)) { die('error'); }
 		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
-		$books2=$books;
+		
+		$books2=array();
 		$order=array();
+		$sub=array();
+		$subs=array();
+		
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
 		//usort($books, array($this, 'novel_cmp'));
 		usort($books, array($this, 'novel_cmp_by_id'));
+		
 		foreach($books as $i=>$b) {
-			$ind=-1;
-			foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
+			//$ind=-1;
+			//foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
+			if(array_key_exists($b->bookId, $books2)) die('duplicate ID.');
+			$books2[$b->bookId]=$b;
 			if($b->novelType==0) {
 				$res=$this->get_chapter_list_cached($b->bookId);
 				if(!property_exists($res, 'data')) {
@@ -459,23 +466,53 @@ class WebNovel extends SitePlugin
 					}
 				}
 				else $subName=$res->data->bookInfo->bookSubName;
-				$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
+				//$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
+				$order[]=$b->bookId;
+				$sub[$b->bookId]=$subName;
+				if(!array_key_exists($subName, $subs)) {
+					$subs[$subName]=$b->bookId;
+				}
+				else {
+					if(is_string($subs[$subName])) {
+						$subs[$subName]=array_merge( array($subs[$subName]), array($b->bookId));
+					}
+					else if(is_array($subs[$subName])) {
+						$subs[$subName]=array_merge($subs[$subName], array($b->bookId));
+					}
+					else die('error');
+				}
+				//$b->bookName, $subName
 			}
 			elseif($b->novelType==100) {
 				$res=$this->get_chapter_list_comic_cached($b->bookId);
 				if(!property_exists($res, 'data')) {
 					$res=$this->get_chapter_list_comic($b->bookId);
 				}
-				$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
+				//var_dump($res->data->comicInfo);die();
+				//$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
+				$order[]=$b->bookId;
+				//$b->comicName, $res->data->comicInfo->comicName
 			}
 		}
-		$books2=json_encode($books); unset($books); //
-		$books2=$this->jsonp_to_json($books2);
-		file_put_contents($this::FOLDER.'_books.json', $books2 );
+		unset($books); //
+		ksort($books2);
+		$books=json_encode($books2); 
+		$books=$this->jsonp_to_json($books);
+		file_put_contents($this::FOLDER.'_books.json', $books );
+		
 		$order2=json_encode($order); unset($order);
 		$order2=$this->jsonp_to_json($order2);
 		file_put_contents($this::FOLDER.'_order.json', $order2 );
-		return json_decode($books2);
+		
+		$sub2=json_encode($sub);
+		$sub2=$this->jsonp_to_json($sub2);
+		file_put_contents($this::FOLDER.'_subname.json', $sub2);
+		
+		$subs2=json_encode($subs);
+		$subs2=$this->jsonp_to_json($subs2);
+		file_put_contents($this::FOLDER.'_subnames.json', $subs2);
+		
+		return $books2;
 	}
 	
 	public function read_update($watch, $chp)

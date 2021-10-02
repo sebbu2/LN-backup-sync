@@ -103,9 +103,10 @@ $loggued=false;
 	$order=json_decode(file_get_contents($wn::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
 	$res3=array();
 	foreach($order as $i=>$e) {
-		$res2[count($res)-1-$e[3]]=$res[$i];
+		//$res2[count($res)-1-$e[3]]=$res[$i];
+		$res2[]=$res[$e];
 	}
-	ksort($res2);
+	//ksort($res2);
 	ob_start();
 	print_table($res2);
 	$data=ob_get_clean();
