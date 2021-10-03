@@ -72,9 +72,9 @@ if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
 		echo '</table>'."\r\n";
 	}
 	$data=ob_get_clean();
-	file_put_contents('watches2.htm', $data);
+	file_put_contents('wlnupdates.htm', $data);
 	//if(!defined('DROPBOX_DONE')) echo $data;
-	//echo '<a href="watches2.htm">wlnupdates</a><br/>'."\r\n";
+	//echo '<a href="wlnupdates.htm">wlnupdates</a><br/>'."\r\n";
 }
 
 $loggued=false;
@@ -94,10 +94,10 @@ $loggued=false;
 	ob_start();
 	print_table($res);
 	$data=ob_get_clean();
-	file_put_contents('library.htm', $data);
+	file_put_contents('webnovel.htm', $data);
 	unset($data);
 	//if(!defined('DROPBOX_DONE')) echo $data;
-	//echo '<a href="library.htm">webnovel</a><br/>'."\r\n";
+	//echo '<a href="webnovel.htm">webnovel</a><br/>'."\r\n";
 
 	//$res=json_decode(file_get_contents($wn::FOLDER.'_books.json'), false, 512, JSON_THROW_ON_ERROR);
 	$order=json_decode(file_get_contents($wn::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
@@ -110,7 +110,7 @@ $loggued=false;
 	ob_start();
 	print_table($res2);
 	$data=ob_get_clean();
-	file_put_contents('library2.htm', $data);
+	file_put_contents('webnovel2.htm', $data);
 	unset($data);
 }
 

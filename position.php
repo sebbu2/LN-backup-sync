@@ -353,6 +353,12 @@ if($direct) {
 	var_dump($fn, $data);
 	//*/
 
+	ksort($pos->old, SORT_FLAG_CASE | SORT_NATURAL);
+	ksort($pos->others, SORT_FLAG_CASE | SORT_NATURAL);
+	ksort($pos->dev_1, SORT_FLAG_CASE | SORT_NATURAL);
+	ksort($pos->dev_9, SORT_FLAG_CASE | SORT_NATURAL);
+	ksort($ar3, SORT_FLAG_CASE | SORT_NATURAL);
+
 	//var_dump($pos->old);die();
 	file_put_contents('pos_old.json',json_encode($pos->old, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 	//var_dump($pos->others);die();
