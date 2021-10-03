@@ -443,7 +443,7 @@ class WebNovel extends SitePlugin
 		
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
 		//usort($books, array($this, 'novel_cmp'));
-		usort($books, array($this, 'novel_cmp_by_id'));
+		//usort($books, array($this, 'novel_cmp_by_id'));
 		
 		foreach($books as $i=>$b) {
 			//$ind=-1;
@@ -475,9 +475,11 @@ class WebNovel extends SitePlugin
 				else {
 					if(is_string($subs[$subName])) {
 						$subs[$subName]=array_merge( array($subs[$subName]), array($b->bookId));
+						sort($subs[$subName]);
 					}
 					else if(is_array($subs[$subName])) {
 						$subs[$subName]=array_merge($subs[$subName], array($b->bookId));
+						sort($subs[$subName]);
 					}
 					else die('error');
 				}
@@ -504,10 +506,12 @@ class WebNovel extends SitePlugin
 		$order2=$this->jsonp_to_json($order2);
 		file_put_contents($this::FOLDER.'_order.json', $order2 );
 		
+		ksort($sub);
 		$sub2=json_encode($sub);
 		$sub2=$this->jsonp_to_json($sub2);
 		file_put_contents($this::FOLDER.'_subname.json', $sub2);
 		
+		ksort($subs);
 		$subs2=json_encode($subs);
 		$subs2=$this->jsonp_to_json($subs2);
 		file_put_contents($this::FOLDER.'_subnames.json', $subs2);

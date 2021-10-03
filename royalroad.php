@@ -92,16 +92,28 @@ class RoyalRoad extends SitePlugin
 					$ar2['last-read-ago']=(string)$node->div->ul->li[1]->a->span[1]->time;
 				}
 				else {
-					if(property_exists($node->div->ul->li, 'strong') && (string)$node->div->ul->li->strong!='The last update has been deleted') {
-						$ar2['last-upd-text']=trim((string)$node->div->ul->li);
-						$ar2['last-upd-href']=(string)$node->div->ul->li->a['href'];
-						if(!is_iterable($node->div->ul->li->a->span)) {
-							var_dump($node->div->ul->li);
-							die();
+					if(property_exists($node->div->ul->li, 'strong')) {
+						if((string)$node->div->ul->li->strong!='The last update has been deleted') {
+							$ar2['last-upd-text']=trim((string)$node->div->ul->li);
+							if(!is_iterable($node->div->ul->li->a->span)) {
+								var_dump($node->div->ul->li);
+								die();
+							}
+							$ar2['last-upd-href']=(string)$node->div->ul->li->a['href'];
+							$ar2['last-upd-title']=(string)$node->div->ul->li->a->span[0];
+							$ar2['last-upd-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
+							$ar2['last-upd-ago']=(string)$node->div->ul->li->a->span[1]->time;
 						}
-						$ar2['last-upd-title']=(string)$node->div->ul->li->a->span[0];
-						$ar2['last-upd-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
-						$ar2['last-upd-ago']=(string)$node->div->ul->li->a->span[1]->time;
+						else {
+							//var_dump($node->div->ul->li);die();
+						}
+					}
+					else {
+						$ar2['last-read-text']=trim((string)$node->div->ul->li);
+						if(!property_exists($node->div->ul->li->a, 'span')) { var_dump($node->div->ul->li); die(); }
+						$ar2['last-read-title']=(string)$node->div->ul->li->a->span[0];
+						$ar2['last-read-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
+						$ar2['last-read-ago']=(string)$node->div->ul->li->a->span[1]->time;
 					}
 				}
 				$id=explode('/', $ar2['href'])[2];

@@ -61,6 +61,10 @@ royalroad.php class to support royalroad.com
 
 [webnovel/\_collection.json](webnovel/_collection.json) collection (reading lists) data from webnovel
 
+[webnovel/\_subname.json](webnovel/_subname.json) map data of novel to subname
+
+[webnovel/\_subnames.json](webnovel/_subnames.json) map data of subname to novel(s)
+
 [library.htm](library.htm) raw table of webnovel data (sorted)
 
 [library2.htm](library2.htm) raw table of webnovel data (identical to website, sorted by last add/update)
@@ -77,11 +81,11 @@ royalroad.php class to support royalroad.com
 
 [correspondances.json](correspondances.json) data of correspondances between royalroad, webnovel and wlnupdates (= novel id)
 
-[correspondances_rr.json](correspondances_rr.json) data of the correspondance from royalroad to webnovel and wlnupdates
+[correspondances\_rr.json](correspondances_rr.json) data of the correspondance from royalroad to webnovel and wlnupdates
 
-[correspondances_wln.json](correspondances_wln.json) data of the correspondance from wlnupdates to royalroad and webnovel
+[correspondances\_wln.json](correspondances_wln.json) data of the correspondance from wlnupdates to royalroad and webnovel
 
-[correspondances_wn.json](correspondances_wn.json) data of the correspondance from webnovel to royalroad and wlnupdates
+[correspondances\_wn.json](correspondances_wn.json) data of the correspondance from webnovel to royalroad and wlnupdates
 
 [names.json](names.json) data of the correspondance from the name to royalroad, wlnupdates and webnovel
 
@@ -94,3 +98,4 @@ royalroad.php class to support royalroad.com
 [pos\_old.json](pos_old.json) data of the \(previous\) position of each novel, to be deleted/remplaced on next update
 
 [pos\_others.json](pos_others.json) data of the position from unrecognized novels
+
