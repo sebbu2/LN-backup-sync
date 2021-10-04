@@ -99,7 +99,15 @@ foreach($books as $k3=>$v3) {
 //var_dump($info);
 //die();
 var_dump($wn_);var_dump($tr_);var_dump($tr_3);
-/*foreach($tr_2 as $k=>$v) var_dump($k, $v[0]);
+foreach($tr_2 as $k=>$v) {
+	foreach($v as $k1=>$v1) {
+		$v1=array_map(fn($e) => $e['bookName'], $v1);
+		sort($v1);
+		$tr_2[$k][$k1]=$v1;
+	}
+	//var_dump($k, $v[0]);
+}
+/*var_dump($tr_2);
 die();//*/
 
 $cor=array();
@@ -158,20 +166,32 @@ foreach($watches['data'][0] as $k1=>$v1) {
 			xdebug_print_function_stack('WLNUpdates : '.$wln_id."<br/>\r\n".$wln_info->message);
 			die();
 		}
+		if($n2!=false && !in_array($n2, $n3)) {
+			$wln_info=$wln->get_info($wln_id);
+			$n3=get(get($wln_info, 'data'), 'alternatenames');
+			if(is_string($n3)) $n3=trim($n3);
+			else if(is_array($n3)) $n3=array_filter($n3);
+			//var_dump($n3);die();
+			if(is_array($n3)) $n3=array_map('normalize', $n3);
+		}
 		$n3=array_map('name_simplify', $n3);
 		$n3=array_values(array_unique($n3));
 		//var_dump($wln_id, $n1, $n2, $n3);//die();
 		
 		// 1 WLN 2 WN
 		$wn_id=NULL;
+		$k3=$v3=NULL;
+		$n=NULL;
 		foreach($books as $k3=>$v3) {
 			//var_dump($v3);//die();
 			if($v3['novelType']==100) continue;
 			//$res=$wn->get_info_cached($v3['bookId'],3);
 			//var_dump($res);die();
-			$n=name_simplify($v3['bookName']);
+			//$n=name_simplify($v3['bookName']);
+			$n=name_simplify(normalize($v3['bookName']));
 			foreach($n3 as $n_) {
-				if($n===$n_) {
+				//if($n===$n_) {
+				if(strtolower($n)===strtolower($n_)) {
 					$wn_id=$v3['bookId'];
 					break(2);
 				}
@@ -181,16 +201,22 @@ foreach($watches['data'][0] as $k1=>$v1) {
 		
 		// 1 WLN 2 RR
 		$rr_id=NULL;
+		$k4=$v4=NULL;
+		$n=NULL;
 		foreach($follows as $k4=>$v4) {
 			//var_dump($k4, $v4);die();
-			$n=name_simplify($v4['title']);
+			//$n=name_simplify($v4['title']);
+			$n=name_simplify(normalize($v4['title']));
+			//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
 			foreach($n3 as $n_) {
-				if($n===$n_) {
+				//if($n===$n_) {
+				if(strtolower($n)===strtolower($n_)) {
 					$rr_id=$k4;
 					break(2);
 				}
 			}
 		}
+		//die();
 		//var_dump($rr_id);//die();
 		//var_dump($wln_id, $wn_id, $rr_id);die();
 		
@@ -236,10 +262,13 @@ foreach($books as $k3=>$v3) {
 	$n2=NULL;
 	// 1 WN 2 RR
 	$rr_id=NULL;
+	$k4=$v4=NULL;
+	$n2=NULL;
 	foreach($follows as $k4=>$v4) {
 		$n2=name_simplify($v4['title']);
 		$n2=normalize($n2);
-		if($n===$n2) {
+		//if($n===$n2) {
+		if(strtolower($n)===strtolower($n2)) {
 			$rr_id=$k4;
 		}
 	}

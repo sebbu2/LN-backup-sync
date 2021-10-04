@@ -227,6 +227,12 @@
         "name": "Confessions of the Magpie Wizard",
         "list": "RoyalRoad"
     },
+    "28004": {
+        "wln": 112909,
+        "wn": "15049533806698105",
+        "name": "Kalar's continent",
+        "list": "QIDIAN stalled"
+    },
     "28385": {
         "wln": 59514,
         "wn": "18923811406743005",
@@ -395,6 +401,12 @@
         "name": "Earth's Alpha Prime",
         "list": "RoyalRoad plan to read"
     },
+    "37231": {
+        "wln": 128991,
+        "wn": null,
+        "name": "A Lonely Dungeon",
+        "list": "RoyalRoad"
+    },
     "37438": {
         "wln": 130259,
         "wn": null,
@@ -427,7 +439,7 @@
     },
     "39408": {
         "wln": 132273,
-        "wn": null,
+        "wn": "19175158406680105",
         "name": "Beware Of Chicken",
         "list": "RoyalRoad"
     },
@@ -448,6 +460,12 @@
         "wn": "17996954306015705",
         "name": "Poison God's Heritage",
         "list": "QIDIAN original"
+    },
+    "40265": {
+        "wln": 133726,
+        "wn": null,
+        "name": "Dungeon I\/O (Crafting)",
+        "list": "RoyalRoad"
     },
     "40295": {
         "wln": 131420,
@@ -584,7 +602,7 @@
     "42728": {
         "wln": 136375,
         "wn": null,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
+        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     "42788": {

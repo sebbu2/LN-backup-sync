@@ -353,6 +353,12 @@
         "name": "A Sorcerer's Journey",
         "list": "QIDIAN stalled"
     },
+    "57679": {
+        "wn": "7143532406000605",
+        "rr": null,
+        "name": "I Have a Mansion in the Post-apocalyptic World",
+        "list": "QIDIAN"
+    },
     "57702": {
         "wn": "7141995206000505",
         "rr": null,
@@ -425,6 +431,12 @@
         "name": "Perfect Secret Love: The Bad New Wife is a Little Sweet",
         "list": "on-hold"
     },
+    "60272": {
+        "wn": "8022472105002805",
+        "rr": null,
+        "name": "Super Gene",
+        "list": "QIDIAN on-hold"
+    },
     "60390": {
         "wn": "8527113906000305",
         "rr": null,
@@ -489,6 +501,12 @@
         "wn": "8034555905002905",
         "rr": null,
         "name": "Summoning the Holy Sword",
+        "list": "QIDIAN completed"
+    },
+    "62773": {
+        "wn": "10993431205232305",
+        "rr": null,
+        "name": "Rise of The Undead Legion",
         "list": "QIDIAN completed"
     },
     "62924": {
@@ -857,6 +875,12 @@
         "name": "Master of Time",
         "list": "QIDIAN on-hold"
     },
+    "105713": {
+        "wn": "14226747605694805",
+        "rr": null,
+        "name": "Sorceress 101",
+        "list": "QIDIAN stalled"
+    },
     "107199": {
         "wn": "15247584006719305",
         "rr": null,
@@ -923,6 +947,12 @@
         "name": "The First Order",
         "list": "QIDIAN"
     },
+    "109439": {
+        "wn": "14107231705361905",
+        "rr": null,
+        "name": "The Man from Hell",
+        "list": "QIDIAN stalled"
+    },
     "109593": {
         "wn": "14451962806476405",
         "rr": null,
@@ -940,6 +970,12 @@
         "rr": null,
         "name": "Demons Beside You",
         "list": "QIDIAN stalled"
+    },
+    "109811": {
+        "wn": "15125244205886905",
+        "rr": null,
+        "name": "Geomancy Couple",
+        "list": "QIDIAN plan to read"
     },
     "110110": {
         "wn": "15247678605613105",
@@ -976,6 +1012,12 @@
         "rr": 29669,
         "name": "Love Crafted",
         "list": "RoyalRoad completed"
+    },
+    "110698": {
+        "wn": "11807502906531905",
+        "rr": null,
+        "name": "Nine Astra Skies",
+        "list": "QIDIAN stalled"
     },
     "110712": {
         "wn": null,
@@ -1049,11 +1091,23 @@
         "name": "Cinnamon Bun",
         "list": "RoyalRoad"
     },
+    "112523": {
+        "wn": "15298758705788905",
+        "rr": null,
+        "name": "Is That A Wisp?",
+        "list": "QIDIAN original"
+    },
     "112555": {
         "wn": null,
         "rr": 31514,
         "name": "The Menocht Loop",
         "list": "RoyalRoad"
+    },
+    "112909": {
+        "wn": "15049533806698105",
+        "rr": 28004,
+        "name": "Kalar's continent",
+        "list": "QIDIAN stalled"
     },
     "112910": {
         "wn": "15785204806058105",
@@ -1114,6 +1168,12 @@
         "rr": null,
         "name": "Mages Are Too OP",
         "list": "QIDIAN completed"
+    },
+    "115991": {
+        "wn": "16005456605644405",
+        "rr": null,
+        "name": "It's Lonely To Be Invincible",
+        "list": "QIDIAN"
     },
     "116521": {
         "wn": "16335833105600605",
@@ -1493,11 +1553,23 @@
         "name": "THE SUMMONED MONSTER THAT IS SUMMONING ANOTHER MONSTER",
         "list": "QIDIAN plan to read"
     },
+    "128991": {
+        "wn": null,
+        "rr": 37231,
+        "name": "A Lonely Dungeon",
+        "list": "RoyalRoad"
+    },
     "129098": {
         "wn": "17461141705996505",
         "rr": null,
         "name": "Essential NPC with a Chicken",
         "list": "QIDIAN stalled"
+    },
+    "129102": {
+        "wn": "16796782606407405",
+        "rr": null,
+        "name": "The King's Mandate: Anomalous System",
+        "list": "QIDIAN plan to read"
     },
     "129103": {
         "wn": null,
@@ -1674,7 +1746,7 @@
         "list": "plan to read"
     },
     "132273": {
-        "wn": null,
+        "wn": "19175158406680105",
         "rr": 39408,
         "name": "Beware Of Chicken",
         "list": "RoyalRoad"
@@ -1714,6 +1786,12 @@
         "rr": null,
         "name": "The Wielder of Death Magic",
         "list": "QIDIAN on-hold"
+    },
+    "133726": {
+        "wn": null,
+        "rr": 40265,
+        "name": "Dungeon I\/O (Crafting)",
+        "list": "RoyalRoad"
     },
     "133809": {
         "wn": null,
@@ -1844,7 +1922,7 @@
     "136375": {
         "wn": null,
         "rr": 42728,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
+        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     "136498": {

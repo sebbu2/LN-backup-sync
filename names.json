@@ -4,6 +4,11 @@
         "wn": null,
         "rr": 45173
     },
+    "9AS": {
+        "wln": 110698,
+        "wn": "11807502906531905",
+        "rr": null
+    },
     "9YOL": {
         "wln": 129682,
         "wn": "17753223406844105",
@@ -57,6 +62,11 @@
     "Abe the Wizard": {
         "wln": 110418,
         "wn": "14469985405456205",
+        "rr": null
+    },
+    "ABL": {
+        "wln": 120307,
+        "wn": "16676440105786705",
         "rr": null
     },
     "Abnormal Creature Memoirs": {
@@ -292,12 +302,12 @@
     "A Lonely Dungeon": {
         "wln": 128991,
         "wn": null,
-        "rr": null
+        "rr": 37231
     },
     "A lonely dungeon": {
         "wln": 128991,
         "wn": null,
-        "rr": null
+        "rr": 37231
     },
     "Ancestor Above": {
         "wln": null,
@@ -571,13 +581,8 @@
     },
     "Beware Of Chicken": {
         "wln": 132273,
-        "wn": null,
-        "rr": 39408
-    },
-    "Beware of Chicken": {
-        "wln": null,
         "wn": "19175158406680105",
-        "rr": null
+        "rr": 39408
     },
     "Beyond": {
         "wln": null,
@@ -659,6 +664,11 @@
         "wn": "8600631606000605",
         "rr": null
     },
+    "BoC": {
+        "wln": 132273,
+        "wn": "19175158406680105",
+        "rr": 39408
+    },
     "Book of Answers": {
         "wln": null,
         "wn": "8057964805003305",
@@ -674,6 +684,11 @@
         "wn": "18270790706135405",
         "rr": null
     },
+    "BotDS": {
+        "wln": 103958,
+        "wn": "14187175405584205",
+        "rr": null
+    },
     "BOTU": {
         "wln": 116766,
         "wn": "16733228706159005",
@@ -683,6 +698,11 @@
         "wln": 117803,
         "wn": null,
         "rr": 33363
+    },
+    "BP": {
+        "wln": 32472,
+        "wn": "17672760706369405",
+        "rr": null
     },
     "Breeding Dragons From Today": {
         "wln": null,
@@ -747,6 +767,11 @@
     "Castle of Black Iron": {
         "wln": 53461,
         "wn": "6838665602002505",
+        "rr": null
+    },
+    "CBTOIP": {
+        "wln": 117680,
+        "wn": "17119807905536705",
         "rr": null
     },
     "CCG": {
@@ -1357,25 +1382,20 @@
     "Dungeon I\/O (Crafting)": {
         "wln": 133726,
         "wn": null,
-        "rr": null
+        "rr": 40265
     },
     "Dungeon I\/O (\\u2692 Crafting \\u2692)": {
         "wln": 133726,
         "wn": null,
-        "rr": null
+        "rr": 40265
     },
     "Dungeon I O Crafting": {
         "wln": 133726,
         "wn": null,
-        "rr": null
+        "rr": 40265
     },
     "Dungeon I O \\u2692 Crafting \\u2692": {
         "wln": 133726,
-        "wn": null,
-        "rr": null
-    },
-    "Dungeon I O \u2692 Crafting \u2692": {
-        "wln": null,
         "wn": null,
         "rr": 40265
     },
@@ -1724,6 +1744,11 @@
         "wn": "18909638806685305",
         "rr": null
     },
+    "FARMER": {
+        "wln": 128906,
+        "wn": "16193916906257005",
+        "rr": null
+    },
     "Farmer Girl Heads the Family Picking Up a General to Plow the Fields": {
         "wln": 48694,
         "wn": "8179195105005805",
@@ -1738,6 +1763,11 @@
         "wln": null,
         "wn": "14124600905415105",
         "rr": null
+    },
+    "Fates Parallel A Xianxia Wuxia Inspired Cultivation Story": {
+        "wln": null,
+        "wn": null,
+        "rr": 39751
     },
     "Fearsome Farmer": {
         "wln": null,
@@ -1929,6 +1959,11 @@
         "wn": "16948356006021805",
         "rr": null
     },
+    "Gc": {
+        "wln": 109811,
+        "wn": "15125244205886905",
+        "rr": null
+    },
     "GDBBM": {
         "wln": 43213,
         "wn": "11022818606234705",
@@ -1986,11 +2021,6 @@
     },
     "Geomancy Couple": {
         "wln": 109811,
-        "wn": null,
-        "rr": null
-    },
-    "Geomancy couple": {
-        "wln": null,
         "wn": "15125244205886905",
         "rr": null
     },
@@ -2092,6 +2122,11 @@
     "GOS": {
         "wln": 35069,
         "wn": "6838665602002305",
+        "rr": null
+    },
+    "GotHEiaN": {
+        "wln": 120152,
+        "wn": "17327258805392105",
         "rr": null
     },
     "Gourmet of Another World": {
@@ -2359,6 +2394,11 @@
         "wn": "15247678605613105",
         "rr": null
     },
+    "IaS": {
+        "wln": 140064,
+        "wn": "18253916006055005",
+        "rr": null
+    },
     "I Became a Biologist in a Fantasy World": {
         "wln": 118806,
         "wn": null,
@@ -2486,16 +2526,11 @@
     },
     "I Have a Manor in the Post-Apocalyptic Era": {
         "wln": 57679,
-        "wn": null,
+        "wn": "7143532406000605",
         "rr": null
     },
     "I Have a Mansion in the Post-apocalyptic World": {
         "wln": 57679,
-        "wn": null,
-        "rr": null
-    },
-    "I have a Mansion in the Post-apocalyptic World": {
-        "wln": null,
         "wn": "7143532406000605",
         "rr": null
     },
@@ -2547,6 +2582,11 @@
     "illicit relationship": {
         "wln": null,
         "wn": "14608457405930205",
+        "rr": null
+    },
+    "ILTBI": {
+        "wln": 115991,
+        "wn": "16005456605644405",
         "rr": null
     },
     "Im A Baller": {
@@ -2726,22 +2766,22 @@
     },
     "Is That A Wisp": {
         "wln": 112523,
-        "wn": null,
-        "rr": null
-    },
-    "Is that a Wisp": {
-        "wln": null,
         "wn": "15298758705788905",
         "rr": null
     },
     "Is That A Wisp?": {
         "wln": 112523,
-        "wn": null,
+        "wn": "15298758705788905",
         "rr": null
     },
     "It's Lonely to Be Invincible": {
         "wln": 115991,
-        "wn": null,
+        "wn": "16005456605644405",
+        "rr": null
+    },
+    "It's Lonely To Be Invincible": {
+        "wln": 115991,
+        "wn": "16005456605644405",
         "rr": null
     },
     "It's the Healer's Life for Me": {
@@ -2754,13 +2794,8 @@
         "wn": "18565385305151205",
         "rr": null
     },
-    "Its Lonely to Be Invincible": {
-        "wln": 115991,
-        "wn": null,
-        "rr": null
-    },
     "Its Lonely To Be Invincible": {
-        "wln": null,
+        "wln": 115991,
         "wn": "16005456605644405",
         "rr": null
     },
@@ -2776,7 +2811,7 @@
     },
     "ITW": {
         "wln": 112523,
-        "wn": null,
+        "wn": "15298758705788905",
         "rr": null
     },
     "Ive Became Able to Do Anything with My Growth": {
@@ -2894,6 +2929,11 @@
         "wn": "7624928106001005",
         "rr": null
     },
+    "K": {
+        "wln": 59514,
+        "wn": "18923811406743005",
+        "rr": 28385
+    },
     "Kairos": {
         "wln": 59514,
         "wn": "18923811406743005",
@@ -2911,28 +2951,23 @@
     },
     "Kalar's continent": {
         "wln": 112909,
-        "wn": null,
-        "rr": null
+        "wn": "15049533806698105",
+        "rr": 28004
     },
     "Kalars continent": {
         "wln": 112909,
-        "wn": null,
-        "rr": null
-    },
-    "Kalars Continent": {
-        "wln": null,
-        "wn": null,
+        "wn": "15049533806698105",
         "rr": 28004
     },
     "Kalar\\u00B4s Continent": {
         "wln": 112909,
-        "wn": null,
-        "rr": null
+        "wn": "15049533806698105",
+        "rr": 28004
     },
     "KC": {
         "wln": 112909,
-        "wn": null,
-        "rr": null
+        "wn": "15049533806698105",
+        "rr": 28004
     },
     "King of Gods": {
         "wln": 44136,
@@ -3031,7 +3066,7 @@
     },
     "Level-Jumping God Gene": {
         "wln": 60272,
-        "wn": null,
+        "wn": "8022472105002805",
         "rr": null
     },
     "Level Infinity Weakest King": {
@@ -3411,7 +3446,7 @@
     },
     "MGRVRG": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "Mini World Of Endless Fun Awaits": {
@@ -3556,7 +3591,7 @@
     },
     "MPAW": {
         "wln": 57679,
-        "wn": null,
+        "wn": "7143532406000605",
         "rr": null
     },
     "Mr. CEO, Spoil me 100 Percent!": {
@@ -3631,7 +3666,7 @@
     },
     "My%20%28idiot%29%20Girlfriend%20Recommended%20Me%20a%20VR%20Game%20So%20I%20Tried%20Playing%20It.": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "My Animal Evolution System": {
@@ -3736,12 +3771,12 @@
     },
     "My idiot Girl": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "My idiot Girlfriend Recommended Me a VR Game So I Tried Playing It": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "My Knowledge Of Cultivation Is Completely Shattered": {
@@ -4011,12 +4046,17 @@
     },
     "Nine Astra Skies": {
         "wln": 110698,
-        "wn": null,
+        "wn": "11807502906531905",
         "rr": null
     },
     "Nine Venoms Sect Founder": {
         "wln": null,
         "wn": "17332306905416305",
+        "rr": null
+    },
+    "NMV": {
+        "wln": 70346,
+        "wn": "11660247905469805",
         "rr": null
     },
     "No Way People Find Cultivation Difficult Right": {
@@ -4092,6 +4132,11 @@
     "OHNaP": {
         "wln": 49528,
         "wn": "10696209406138605",
+        "rr": null
+    },
+    "OIAaN": {
+        "wln": 117681,
+        "wn": "17120104606669305",
         "rr": null
     },
     "Omega Summoner": {
@@ -4217,6 +4262,11 @@
     "Pan Long": {
         "wln": 1274,
         "wn": "8094085105004705",
+        "rr": null
+    },
+    "PAPA": {
+        "wln": 128345,
+        "wn": "16924304306918605",
         "rr": null
     },
     "Paradise of Demonic Gods": {
@@ -4488,6 +4538,11 @@
         "wln": 50416,
         "wn": "8179206705005905",
         "rr": null
+    },
+    "RaaN": {
+        "wln": 136511,
+        "wn": "20401299806123905",
+        "rr": 42788
     },
     "Races: Online ( VR Smartphone App)": {
         "wln": 117074,
@@ -4771,11 +4826,11 @@
     },
     "Rise of the Undead Legion": {
         "wln": 62773,
-        "wn": null,
+        "wn": "10993431205232305",
         "rr": null
     },
     "Rise of The Undead Legion": {
-        "wln": null,
+        "wln": 62773,
         "wn": "10993431205232305",
         "rr": null
     },
@@ -4821,7 +4876,7 @@
     },
     "ROTUL": {
         "wln": 62773,
-        "wn": null,
+        "wn": "10993431205232305",
         "rr": null
     },
     "ROYAL DRAGON AND PHOENIX TRANSMIGRATE TO EARTH": {
@@ -4856,7 +4911,7 @@
     },
     "s101": {
         "wln": 105713,
-        "wn": null,
+        "wn": "14226747605694805",
         "rr": null
     },
     "Saga of the Cosmic Heroes": {
@@ -5021,12 +5076,12 @@
     },
     "SG": {
         "wln": 60272,
-        "wn": null,
+        "wn": "8022472105002805",
         "rr": null
     },
     "SGG": {
         "wln": 60272,
-        "wn": null,
+        "wn": "8022472105002805",
         "rr": null
     },
     "SGOF": {
@@ -5216,11 +5271,6 @@
     },
     "Sorceress 101": {
         "wln": 105713,
-        "wn": null,
-        "rr": null
-    },
-    "SORCERESS 101": {
-        "wln": null,
         "wn": "14226747605694805",
         "rr": null
     },
@@ -5384,6 +5434,11 @@
         "wn": "11033650806238505",
         "rr": null
     },
+    "STSIIE": {
+        "wln": 136052,
+        "wn": "19523559406682705",
+        "rr": null
+    },
     "Stuck as a Dungeon Mob": {
         "wln": 128347,
         "wn": "16892747206786605",
@@ -5434,13 +5489,8 @@
         "wn": "12214197006102105",
         "rr": null
     },
-    "Super gene": {
-        "wln": 60272,
-        "wn": null,
-        "rr": null
-    },
     "Super Gene": {
-        "wln": null,
+        "wln": 60272,
         "wn": "8022472105002805",
         "rr": null
     },
@@ -5451,7 +5501,7 @@
     },
     "Super God Gene": {
         "wln": 60272,
-        "wn": null,
+        "wn": "8022472105002805",
         "rr": null
     },
     "Super Pet Nursery": {
@@ -5564,11 +5614,6 @@
         "wn": null,
         "rr": 42728
     },
-    "Tales of an Unlikely Wizard (Isekai LitRPG)": {
-        "wln": 136375,
-        "wn": null,
-        "rr": 42728
-    },
     "Tales of an Unlikely Wizard Isekai LitRPG": {
         "wln": 136375,
         "wn": null,
@@ -5639,6 +5684,11 @@
         "wn": null,
         "rr": null
     },
+    "TBCGS": {
+        "wln": 136543,
+        "wn": "19855680406636005",
+        "rr": 42673
+    },
     "TCOT": {
         "wln": 50246,
         "wn": "11927742205619905",
@@ -5692,6 +5742,11 @@
     "TGG": {
         "wln": 128349,
         "wn": "16940717406989505",
+        "rr": null
+    },
+    "TGLS": {
+        "wln": 135501,
+        "wn": "19066714505131105",
         "rr": null
     },
     "TGSWE": {
@@ -6156,7 +6211,7 @@
     },
     "The King's Mandate: Anomalous System": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "The King's Soul: A LitRPG Wuxia Novel": {
@@ -6170,7 +6225,7 @@
         "rr": null
     },
     "The Kings Mandate Anomalous System": {
-        "wln": null,
+        "wln": 129102,
         "wn": "16796782606407405",
         "rr": null
     },
@@ -6286,12 +6341,7 @@
     },
     "The Man from Hell": {
         "wln": 109439,
-        "wn": null,
-        "rr": null
-    },
-    "The Man From Hell": {
-        "wln": null,
-        "wn": "15666872205580405",
+        "wn": "14107231705361905",
         "rr": null
     },
     "The Master Necromancer": {
@@ -6398,6 +6448,11 @@
         "wln": null,
         "wn": null,
         "rr": 2300
+    },
+    "The Path of Ascension": {
+        "wln": null,
+        "wn": null,
+        "rr": 40920
     },
     "The Path Toward Heaven": {
         "wln": null,
@@ -6826,7 +6881,7 @@
     },
     "TKM AS": {
         "wln": 129102,
-        "wn": null,
+        "wn": "16796782606407405",
         "rr": null
     },
     "TLM": {
@@ -6856,7 +6911,7 @@
     },
     "TMFH": {
         "wln": 109439,
-        "wn": null,
+        "wn": "14107231705361905",
         "rr": null
     },
     "TMG": {
@@ -6897,6 +6952,11 @@
     "Top Tier Providence Secretly Cultivate for a Thousand Years": {
         "wln": null,
         "wn": "19852661006620705",
+        "rr": null
+    },
+    "ToTMD": {
+        "wln": 133326,
+        "wn": "18074095506305205",
         "rr": null
     },
     "Traffords Trading Club": {
@@ -6942,6 +7002,11 @@
     "TSG": {
         "wln": 58134,
         "wn": "8052087705003205",
+        "rr": null
+    },
+    "TSMTISAM": {
+        "wln": 128975,
+        "wn": "15785218706058305",
         "rr": null
     },
     "TSoD": {
@@ -7028,6 +7093,11 @@
         "wln": 71502,
         "wn": "11492897005406105",
         "rr": null
+    },
+    "Unbound LitRPG Portal Fantasy": {
+        "wln": null,
+        "wn": null,
+        "rr": 30321
     },
     "Unfortunate Hero's Retirement Life": {
         "wln": 116659,
@@ -7921,7 +7991,7 @@
     },
     "\\u8D85\\u7EA7\\u795E\\u57FA\\u56E0": {
         "wln": 60272,
-        "wn": null,
+        "wn": "8022472105002805",
         "rr": null
     },
     "\\u8D85\\u7EF4\\u672F\\u58EB": {
@@ -8046,7 +8116,7 @@
     },
     "\\u65E0\\u654C\\u771F\\u5BC2\\u5BDE": {
         "wln": 115991,
-        "wn": null,
+        "wn": "16005456605644405",
         "rr": null
     },
     "\\u65F6\\u505C\\u4E94\\u767E\\u5E74": {
@@ -8286,7 +8356,7 @@
     },
     "\\u5730\\u72F1\\u7537\\u4EBA": {
         "wln": 109439,
-        "wn": null,
+        "wn": "14107231705361905",
         "rr": null
     },
     "\\u5730\\u7403\\u4EBA\\u5B9E\\u5728\\u592A\\u51F6\\u731B\\u4E86": {
@@ -8391,12 +8461,12 @@
     },
     "\\u6211\\u5728\\u672B\\u4E16\\u6709\\u4E2A\\u5E84\\u56ED": {
         "wln": 57679,
-        "wn": null,
+        "wn": "7143532406000605",
         "rr": null
     },
     "\\u6211\\u5728\\u672B\\u4E16\\u6709\\u5957\\u623F": {
         "wln": 57679,
-        "wn": null,
+        "wn": "7143532406000605",
         "rr": null
     },
     "\\u6211\\u6709\\u4E00\\u5EA7\\u5929\\u5730\\u94B1\\u5E84": {
@@ -8471,7 +8541,7 @@
     },
     "\\u6765\\u81EA\\u5730\\u72F1\\u7684\\u7537\\u4EBA": {
         "wln": 109439,
-        "wn": null,
+        "wn": "14107231705361905",
         "rr": null
     },
     "\\u6781\\u9053\\u5929\\u9B54": {
@@ -8548,5 +8618,15 @@
         "wln": 142,
         "wn": null,
         "rr": null
+    },
+    "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F": {
+        "wln": 136375,
+        "wn": null,
+        "rr": 42728
+    },
+    "\\uD83C\\uDF1FTales of an Unlikely Wizard Isekai LitRPG\\uD83C\\uDF1F": {
+        "wln": 136375,
+        "wn": null,
+        "rr": 42728
     }
 }

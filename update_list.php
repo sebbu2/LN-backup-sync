@@ -47,7 +47,7 @@ foreach($books as $book) // qidian
 	}
 }
 usort($correspondances, function($e1, $e2) { return strcasecmp($e1[2], $e2[2]);});
-file_put_contents('correspondances.json', json_encode($correspondances, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
+//file_put_contents('correspondances.json', json_encode($correspondances, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 //var_dump($correspondances);die();
 
 foreach($correspondances as $ar) {
@@ -108,8 +108,11 @@ foreach($correspondances as $ar) {
 	if(strlen($res2->data->description)==0) {
 		$json2[]=array('key'=>'description-container','type'=>'singleitem','value'=>trim($res[0]->Data->Description));
 	}
-	if( ($res2->data->tl_type=='oel'&&$res[0]->Data->Type==1) || ($res2->data->tl_type=='translated'&&$res[0]->Data->Type==2) ) { // wrong tl type
-		$json2[]=array('key'=>'tl_type-container','type'=>'combobox','value'=>($res[0]->Data->Type==1?'translated':($res[0]->Data->Type==2?'oel':'error')));
+	//$tr=$res[3]->data->bookInfo->translateMode;
+	//if( ($res2->data->tl_type=='oel'&&$res[0]->Data->Type>=0) || ($res2->data->tl_type=='translated'&&$res[0]->Data->Type<0) ) { // wrong tl type
+	if( ($res2->data->tl_type=='oel'&&$res[3]->data->bookInfo->translateMode>=0) || ($res2->data->tl_type=='translated'&&$res[3]->data->bookInfo->translateMode<0) ) { // wrong tl type
+		$json2[]=array('key'=>'tl_type-container','type'=>'combobox','value'=>($res[3]->data->bookInfo->translateMode>=0?'translated':($res[3]->data->bookInfo->translateMode<0?'oel':'error')));
+		//if($wln_id==120307) { var_dump($wln_id, $wn_id, $json2, $res[3]->data->bookInfo->translateMode); die(); } // wln: ABL
 	}
 	if(count($res2->data->authors)==0) {
 		$json2[]=array('key'=>'author-container','type'=>'multiitem','value'=>$res[0]->Data->AuthorInfo->AuthorName);
@@ -123,13 +126,42 @@ foreach($correspondances as $ar) {
 	if(count($res2->data->genres)==0) {
 		$json2[]=array('key'=>'genre-container','type'=>'multiitem','value'=>$res[0]->Data->CategoryName);
 	}
-	if(count($res2->data->alternatenames)<=1 || (strlen($resb->data->bookInfo->bookSubName)>0&&array_search($resb->data->bookInfo->bookSubName, $res2->data->alternatenames)==false) ) {
-		$ar=array_filter(array_unique(array_merge(
-			array($res[0]->Data->BookName, $res[1]->Data->OriginalName, $resb->data->bookInfo->bookSubName),
-			$res2->data->alternatenames
-		)));
-		$ar=array_map('trim', $ar);
-		natcasesort($ar);
+	
+	//$res_=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$wn_id.'.json')),false,512,JSON_THROW_ON_ERROR);
+	$subName='';
+	if(property_exists($resb->data->bookInfo, 'bookSubName')) $subName=$resb->data->bookInfo->bookSubName;
+	if(strlen($subName)==0) {
+		$resc=$wn->get_info_html_cached($wn_id);
+		//var_dump($resc);die();
+		$subName='';
+		if(is_object($resc)) $subName=$resc->bookInfo->bookSubName;
+		else if(is_array($resc)) $subName=$resc['bookInfo']['bookSubName'];
+		else {
+			var_dump($wn_id,$resc);die();
+		}
+		$subName=str_replace('\ ', ' ', $subName);
+		if(strlen($subName)==0) {
+			$subName=implode('', array_map(function($s) { return $s[0]; }, explode(' ',$res[0]->Data->BookName)));
+		}
+		else {
+			//$row['subName']=$subName;
+		}
+		//var_dump($subName);die();
+	}
+	
+	//if(count($res2->data->alternatenames)<=1 || (strlen($resb->data->bookInfo->bookSubName)>0&&array_search($resb->data->bookInfo->bookSubName, $res2->data->alternatenames)==false) ) {
+	$names=array_filter(array_unique(array_merge(
+		array($res[0]->Data->BookName, $res[1]->Data->OriginalName, $subName),
+		$res2->data->alternatenames
+	)));
+	$names=array_map('trim', $names);
+	natcasesort($names);
+	if(count(array_diff($names, $res2->data->alternatenames))>0) {
+		//var_dump($wln_id, $wn_id, $names,$res2->data->alternatenames);die();
+	}
+	//if(count($res2->data->alternatenames)<=1 || (strlen($subName)>0&&array_search($subName, $res2->data->alternatenames)==false) ) {
+	if(count(array_diff($names, $res2->data->alternatenames))>0) {
+		$ar=$names;
 		$ar2=array();
 		foreach($ar as $k=>$v) {
 			$_res=case_count($v);

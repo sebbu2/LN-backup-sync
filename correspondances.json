@@ -70,10 +70,24 @@
         "list": "QIDIAN"
     },
     {
+        "wln": 57679,
+        "wn": "7143532406000605",
+        "rr": null,
+        "name": "I Have a Mansion in the Post-apocalyptic World",
+        "list": "QIDIAN"
+    },
+    {
         "wln": 115268,
         "wn": "15298464306893805",
         "rr": null,
         "name": "I Have Countless Legendary Swords!",
+        "list": "QIDIAN"
+    },
+    {
+        "wln": 115991,
+        "wn": "16005456605644405",
+        "rr": null,
+        "name": "It's Lonely To Be Invincible",
         "list": "QIDIAN"
     },
     {
@@ -287,6 +301,13 @@
         "list": "QIDIAN completed"
     },
     {
+        "wln": 62773,
+        "wn": "10993431205232305",
+        "rr": null,
+        "name": "Rise of The Undead Legion",
+        "list": "QIDIAN completed"
+    },
+    {
         "wln": 63150,
         "wn": "8334291405006505",
         "rr": null,
@@ -406,6 +427,13 @@
         "list": "QIDIAN on-hold"
     },
     {
+        "wln": 60272,
+        "wn": "8022472105002805",
+        "rr": null,
+        "name": "Super Gene",
+        "list": "QIDIAN on-hold"
+    },
+    {
         "wln": 135501,
         "wn": "19066714505131105",
         "rr": null,
@@ -487,6 +515,13 @@
         "wn": "19760896906311405",
         "rr": null,
         "name": "Inhuman Warlock",
+        "list": "QIDIAN original"
+    },
+    {
+        "wln": 112523,
+        "wn": "15298758705788905",
+        "rr": null,
+        "name": "Is That A Wisp?",
         "list": "QIDIAN original"
     },
     {
@@ -833,6 +868,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 109811,
+        "wn": "15125244205886905",
+        "rr": null,
+        "name": "Geomancy Couple",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 131751,
         "wn": "15841414105106005",
         "rr": null,
@@ -949,6 +991,13 @@
         "wn": "18270874105989005",
         "rr": null,
         "name": "My Young Lord Is Really Righteous",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 129102,
+        "wn": "16796782606407405",
+        "rr": null,
+        "name": "The King's Mandate: Anomalous System",
         "list": "QIDIAN plan to read"
     },
     {
@@ -1274,6 +1323,13 @@
         "list": "QIDIAN stalled"
     },
     {
+        "wln": 112909,
+        "wn": "15049533806698105",
+        "rr": 28004,
+        "name": "Kalar's continent",
+        "list": "QIDIAN stalled"
+    },
+    {
         "wln": 110835,
         "wn": "14107655206436205",
         "rr": null,
@@ -1302,6 +1358,13 @@
         "list": "QIDIAN stalled"
     },
     {
+        "wln": 110698,
+        "wn": "11807502906531905",
+        "rr": null,
+        "name": "Nine Astra Skies",
+        "list": "QIDIAN stalled"
+    },
+    {
         "wln": 48694,
         "wn": "8179195105005805",
         "rr": null,
@@ -1313,6 +1376,13 @@
         "wn": "8092314906003205",
         "rr": null,
         "name": "Shadow Hack",
+        "list": "QIDIAN stalled"
+    },
+    {
+        "wln": 105713,
+        "wn": "14226747605694805",
+        "rr": null,
+        "name": "Sorceress 101",
         "list": "QIDIAN stalled"
     },
     {
@@ -1358,6 +1428,13 @@
         "list": "QIDIAN stalled"
     },
     {
+        "wln": 109439,
+        "wn": "14107231705361905",
+        "rr": null,
+        "name": "The Man from Hell",
+        "list": "QIDIAN stalled"
+    },
+    {
         "wln": 108991,
         "wn": "8041181106002905",
         "rr": null,
@@ -1390,6 +1467,13 @@
         "wn": "17522028806394405",
         "rr": 26675,
         "name": "A Journey of Black and Red",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 128991,
+        "wn": null,
+        "rr": 37231,
+        "name": "A Lonely Dungeon",
         "list": "RoyalRoad"
     },
     {
@@ -1429,7 +1513,7 @@
     },
     {
         "wln": 132273,
-        "wn": null,
+        "wn": "19175158406680105",
         "rr": 39408,
         "name": "Beware Of Chicken",
         "list": "RoyalRoad"
@@ -1481,6 +1565,13 @@
         "wn": null,
         "rr": 25225,
         "name": "Delve",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 133726,
+        "wn": null,
+        "rr": 40265,
+        "name": "Dungeon I\/O (Crafting)",
         "list": "RoyalRoad"
     },
     {
@@ -1781,7 +1872,7 @@
         "wln": 136375,
         "wn": null,
         "rr": 42728,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
+        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     {
