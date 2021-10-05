@@ -400,20 +400,20 @@
         "pos": 1064
     },
     "azarinth healer": {
-        "content": "1454083831785*751@0#14528:100%",
-        "time": 1633180932,
+        "content": "1454083831785*752@0#14879:100%",
+        "time": 1633472003,
         "min": "1",
-        "max": "752",
-        "fn": "Azarinth_Healer_1-752.epub.po",
+        "max": "753",
+        "fn": "Azarinth_Healer_1-753.epub.po",
         "fn2": "Azarinth_Healer",
         "fn3": "azarinth healer",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "751",
+        "1": "752",
         "2": "0",
-        "3": "14528",
+        "3": "14879",
         "4": "100",
-        "pos": 753
+        "pos": 754
     },
     "badge in azure": {
         "content": "1454083831785*1318@0#0:84.6%",
@@ -624,52 +624,52 @@
         "pos": 0
     },
     "chrysalis": {
-        "content": "1454083831785*842@0#4049:100%",
-        "time": 1633344986,
+        "content": "1454083831785*843@0#4350:100%",
+        "time": 1633472171,
         "min": "1",
-        "max": "843",
-        "fn": "Chrysalis_1-843.epub.po",
+        "max": "844",
+        "fn": "Chrysalis_1-844.epub.po",
         "fn2": "Chrysalis",
         "fn3": "chrysalis",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "842",
+        "1": "843",
         "2": "0",
-        "3": "4049",
+        "3": "4350",
         "4": "100",
-        "pos": 844
+        "pos": 845
     },
     "cinnamon bun": {
-        "content": "1454083831785*45@0#8868:100%",
-        "time": 1633045530,
+        "content": "1454083831785*46@0#8811:100%",
+        "time": 1633472448,
         "min": "214",
-        "max": "259",
-        "fn": "Cinnamon_Bun_214-259.epub.po",
+        "max": "260",
+        "fn": "Cinnamon_Bun_214-260.epub.po",
         "fn2": "Cinnamon_Bun",
         "fn3": "cinnamon bun",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "45",
+        "1": "46",
         "2": "0",
-        "3": "8868",
+        "3": "8811",
         "4": "100",
-        "pos": 260
+        "pos": 261
     },
     "closed beta that only i played": {
-        "content": "1454083831785*416@0#4387:100%",
-        "time": 1633383034,
+        "content": "1454083831785*418@0#5096:100%",
+        "time": 1633472704,
         "min": "1",
-        "max": "417",
-        "fn": "Closed_Beta_That_Only_I_Played_1-417.epub.po",
+        "max": "419",
+        "fn": "Closed_Beta_That_Only_I_Played_1-419.epub.po",
         "fn2": "Closed_Beta_That_Only_I_Played",
         "fn3": "closed beta that only i played",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "416",
+        "1": "418",
         "2": "0",
-        "3": "4387",
+        "3": "5096",
         "4": "100",
-        "pos": 418
+        "pos": 420
     },
     "complete martial arts attributes": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -736,20 +736,20 @@
         "pos": 482
     },
     "cultivation online": {
-        "content": "1454083831785*559@0#3432:100%",
-        "time": 1633345329,
+        "content": "1454083831785*560@0#3465:100%",
+        "time": 1633472823,
         "min": "1",
-        "max": "560",
-        "fn": "Cultivation_Online_1-560.epub.po",
+        "max": "561",
+        "fn": "Cultivation_Online_1-561.epub.po",
         "fn2": "Cultivation_Online",
         "fn3": "cultivation online",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "559",
+        "1": "560",
         "2": "0",
-        "3": "3432",
+        "3": "3465",
         "4": "100",
-        "pos": 561
+        "pos": 562
     },
     "cultivation pet shop": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -1296,20 +1296,20 @@
         "pos": 254
     },
     "eternal sacred king": {
-        "content": "1454083831785*1231@0#7172:100%",
-        "time": 1633383997,
+        "content": "1454083831785*1233@0#6207:100%",
+        "time": 1633473092,
         "min": "1",
-        "max": "1232",
-        "fn": "Eternal_Sacred_King_1-1232.epub.po",
+        "max": "1234",
+        "fn": "Eternal_Sacred_King_1-1234.epub.po",
         "fn2": "Eternal_Sacred_King",
         "fn3": "eternal sacred king",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1231",
+        "1": "1233",
         "2": "0",
-        "3": "7172",
+        "3": "6207",
         "4": "100",
-        "pos": 1233
+        "pos": 1235
     },
     "everyones a catgirl": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -1952,11 +1952,11 @@
         "pos": 2
     },
     "inhuman warlock": {
-        "content": "1454083831785*342@0#0:76.8%",
-        "time": 1633386012,
+        "content": "1454083831785*342@0#0:76.6%",
+        "time": 1633473135,
         "min": "1",
-        "max": "445",
-        "fn": "Inhuman_Warlock_1-445.epub.po",
+        "max": "446",
+        "fn": "Inhuman_Warlock_1-446.epub.po",
         "fn2": "Inhuman_Warlock",
         "fn3": "inhuman warlock",
         "ext": "epub",
@@ -1964,7 +1964,7 @@
         "1": "342",
         "2": "0",
         "3": "0",
-        "4": "76.8",
+        "4": "76.6",
         "pos": 343
     },
     "i reincarnated as a stick": {
@@ -2158,20 +2158,20 @@
         "pos": 0
     },
     "let me game in peace": {
-        "content": "1454083831785*1245@0#5417:100%",
-        "time": 1633384137,
+        "content": "1454083831785*1247@0#4913:100%",
+        "time": 1633473440,
         "min": "1",
-        "max": "1246",
-        "fn": "Let_Me_Game_in_Peace_1-1246.epub.po",
+        "max": "1248",
+        "fn": "Let_Me_Game_in_Peace_1-1248.epub.po",
         "fn2": "Let_Me_Game_in_Peace",
         "fn3": "let me game in peace",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1245",
+        "1": "1247",
         "2": "0",
-        "3": "5417",
+        "3": "4913",
         "4": "100",
-        "pos": 1247
+        "pos": 1249
     },
     "lightning is the only way": {
         "content": "1454083831785*566@0#0:63.1%",
@@ -2606,36 +2606,36 @@
         "pos": 0
     },
     "mutagen": {
-        "content": "1454083831785*785@0#9664:100%",
-        "time": 1633275974,
+        "content": "1454083831785*786@0#9108:100%",
+        "time": 1633473755,
         "min": "-3",
-        "max": "783",
-        "fn": "Mutagen_-3-783.epub.po",
+        "max": "784",
+        "fn": "Mutagen_-3-784.epub.po",
         "fn2": "Mutagen",
         "fn3": "mutagen",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "785",
+        "1": "786",
         "2": "0",
-        "3": "9664",
+        "3": "9108",
         "4": "100",
-        "pos": 784
+        "pos": 785
     },
     "my best friend is an eldritch horror": {
-        "content": "1454083831785*111@0#11757:100%",
-        "time": 1633279158,
+        "content": "1454083831785*112@0#11448:100%",
+        "time": 1633474133,
         "min": "1",
-        "max": "112",
-        "fn": "My_Best_Friend_is_an_Eldritch_Horror_1-112.epub.po",
+        "max": "113",
+        "fn": "My_Best_Friend_is_an_Eldritch_Horror_1-113.epub.po",
         "fn2": "My_Best_Friend_is_an_Eldritch_Horror",
         "fn3": "my best friend is an eldritch horror",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "111",
+        "1": "112",
         "2": "0",
-        "3": "11757",
+        "3": "11448",
         "4": "100",
-        "pos": 113
+        "pos": 114
     },
     "my cerberus girlfriend": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -2686,20 +2686,20 @@
         "pos": 0
     },
     "my dungeon life rise of the slave harem": {
-        "content": "1454083831785*41@0#395:100%",
-        "time": 1633384372,
+        "content": "1454083831785*42@0#741:100%",
+        "time": 1633474223,
         "min": "531",
-        "max": "572",
-        "fn": "My_Dungeon_Life_Rise_of_the_Slave_Harem_531-572.epub.po",
+        "max": "573",
+        "fn": "My_Dungeon_Life_Rise_of_the_Slave_Harem_531-573.epub.po",
         "fn2": "My_Dungeon_Life_Rise_of_the_Slave_Harem",
         "fn3": "my dungeon life rise of the slave harem",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "41",
+        "1": "42",
         "2": "0",
-        "3": "395",
+        "3": "741",
         "4": "100",
-        "pos": 573
+        "pos": 574
     },
     "my girlfriend is a zombie": {
         "content": "1454083831785*591@0#0:82.7%",
@@ -2862,20 +2862,20 @@
         "pos": 350
     },
     "nanomancer reborn - ive become a snow girl": {
-        "content": "9999999999999*1158@0#0:99.9%",
-        "time": 1633140887,
+        "content": "1454083831785*1160@0#6499:100%",
+        "time": 1633477229,
         "min": "1",
-        "max": "1159",
-        "fn": "Nanomancer_Reborn_-_Ive_Become_A_Snow_Girl_1-1159.epub.po",
+        "max": "1161",
+        "fn": "Nanomancer_Reborn_-_Ive_Become_A_Snow_Girl_1-1161.epub.po",
         "fn2": "Nanomancer_Reborn_-_Ive_Become_A_Snow_Girl",
         "fn3": "nanomancer reborn - ive become a snow girl",
         "ext": "epub",
-        "0": "9999999999999",
-        "1": "1158",
+        "0": "1454083831785",
+        "1": "1160",
         "2": "0",
-        "3": "0",
-        "4": "99.9",
-        "pos": 1159
+        "3": "6499",
+        "4": "100",
+        "pos": 1162
     },
     "necromancer by halosty": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -3614,20 +3614,20 @@
         "pos": 0
     },
     "salvos": {
-        "content": "1454083831785*38@0#13293:100%",
-        "time": 1633360518,
+        "content": "1454083831785*39@0#12473:100%",
+        "time": 1633474486,
         "min": "213",
-        "max": "251",
-        "fn": "Salvos_213-251.epub.po",
+        "max": "252",
+        "fn": "Salvos_213-252.epub.po",
         "fn2": "Salvos",
         "fn3": "salvos",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "38",
+        "1": "39",
         "2": "0",
-        "3": "13293",
+        "3": "12473",
         "4": "100",
-        "pos": 252
+        "pos": 253
     },
     "salvos a monster evolution litrpg": {
         "content": "1454083831785*26@0#4643:100%",
@@ -3710,20 +3710,20 @@
         "pos": 990
     },
     "shock the spell is in english": {
-        "content": "1454083831785*595@0#4269:100%",
-        "time": 1633360821,
+        "content": "1454083831785*598@0#4370:100%",
+        "time": 1633474807,
         "min": "1",
-        "max": "596",
-        "fn": "Shock_The_Spell_Is_In_English_1-596.epub.po",
+        "max": "599",
+        "fn": "Shock_The_Spell_Is_In_English_1-599.epub.po",
         "fn2": "Shock_The_Spell_Is_In_English",
         "fn3": "shock the spell is in english",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "595",
+        "1": "598",
         "2": "0",
-        "3": "4269",
+        "3": "4370",
         "4": "100",
-        "pos": 597
+        "pos": 600
     },
     "sin-eater": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -4078,20 +4078,20 @@
         "pos": 319
     },
     "supreme magus": {
-        "content": "1454083831785*1540@0#4591:100%",
-        "time": 1633385057,
+        "content": "1454083831785*1542@0#4482:100%",
+        "time": 1633469847,
         "min": "-7",
-        "max": "1534",
-        "fn": "Supreme_Magus_-7-1534.epub.po",
+        "max": "1536",
+        "fn": "Supreme_Magus_-7-1536.epub.po",
         "fn2": "Supreme_Magus",
         "fn3": "supreme magus",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1540",
+        "1": "1542",
         "2": "0",
-        "3": "4591",
+        "3": "4482",
         "4": "100",
-        "pos": 1535
+        "pos": 1537
     },
     "swallowed star": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -4126,20 +4126,20 @@
         "pos": 227
     },
     "sylver seeker": {
-        "content": "1454083831785*141@0#18381:100%",
-        "time": 1633277986,
+        "content": "1454083831785*142@0#20458:100%",
+        "time": 1633475349,
         "min": "1",
-        "max": "142",
-        "fn": "Sylver_Seeker_1-142.epub.po",
+        "max": "143",
+        "fn": "Sylver_Seeker_1-143.epub.po",
         "fn2": "Sylver_Seeker",
         "fn3": "sylver seeker",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "141",
+        "1": "142",
         "2": "0",
-        "3": "18381",
+        "3": "20458",
         "4": "100",
-        "pos": 143
+        "pos": 144
     },
     "tales of an unlikely wizard isekai litrpg": {
         "content": "1454083831785*55@0#17170:100%",
@@ -4478,20 +4478,20 @@
         "pos": 0
     },
     "the evolution of a goblin to the peak": {
-        "content": "1454083831785*455@0#5993:100%",
-        "time": 1633032573,
+        "content": "1454083831785*456@0#5987:100%",
+        "time": 1633475554,
         "min": "-1",
-        "max": "455",
-        "fn": "The_Evolution_of_a_Goblin_to_the_Peak_-1-455.epub.po",
+        "max": "456",
+        "fn": "The_Evolution_of_a_Goblin_to_the_Peak_-1-456.epub.po",
         "fn2": "The_Evolution_of_a_Goblin_to_the_Peak",
         "fn3": "the evolution of a goblin to the peak",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "455",
+        "1": "456",
         "2": "0",
-        "3": "5993",
+        "3": "5987",
         "4": "100",
-        "pos": 455
+        "pos": 456
     },
     "the first order": {
         "content": "1454083831785*812@0#0:86.4%",
@@ -4654,36 +4654,36 @@
         "pos": 0
     },
     "the harvester": {
-        "content": "1454083831785*198@0#9907:100%",
-        "time": 1633385388,
+        "content": "1454083831785*199@0#7604:100%",
+        "time": 1633475803,
         "min": "1",
-        "max": "199",
-        "fn": "The_Harvester_1-199.epub.po",
+        "max": "200",
+        "fn": "The_Harvester_1-200.epub.po",
         "fn2": "The_Harvester",
         "fn3": "the harvester",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "198",
+        "1": "199",
         "2": "0",
-        "3": "9907",
+        "3": "7604",
         "4": "100",
-        "pos": 200
+        "pos": 201
     },
     "the hedge wizard": {
-        "content": "1454083831785*5@0#13395:100%",
-        "time": 1633188609,
+        "content": "1454083831785*6@0#12802:100%",
+        "time": 1633476169,
         "min": "49",
-        "max": "54",
-        "fn": "The_Hedge_Wizard_49-54.epub.po",
+        "max": "55",
+        "fn": "The_Hedge_Wizard_49-55.epub.po",
         "fn2": "The_Hedge_Wizard",
         "fn3": "the hedge wizard",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "5",
+        "1": "6",
         "2": "0",
-        "3": "13395",
+        "3": "12802",
         "4": "100",
-        "pos": 55
+        "pos": 56
     },
     "the hero returns": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -4958,20 +4958,20 @@
         "pos": 0
     },
     "the oracle paths": {
-        "content": "1454083831785*515@0#7009:100%",
-        "time": 1633385987,
+        "content": "1454083831785*516@0#7095:100%",
+        "time": 1633476419,
         "min": "-2",
-        "max": "514",
-        "fn": "The_Oracle_Paths_-2-514.epub.po",
+        "max": "515",
+        "fn": "The_Oracle_Paths_-2-515.epub.po",
         "fn2": "The_Oracle_Paths",
         "fn3": "the oracle paths",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "515",
+        "1": "516",
         "2": "0",
-        "3": "7009",
+        "3": "7095",
         "4": "100",
-        "pos": 515
+        "pos": 516
     },
     "the perfect run": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -5310,20 +5310,20 @@
         "pos": 0
     },
     "this quest is bullshit": {
-        "content": "1454083831785*7@0#9946:100%",
-        "time": 1633186891,
+        "content": "1454083831785*8@0#9292:100%",
+        "time": 1633476804,
         "min": "1",
-        "max": "8",
-        "fn": "This_Quest_is_Bullshit_1-8.epub.po",
+        "max": "9",
+        "fn": "This_Quest_is_Bullshit_1-9.epub.po",
         "fn2": "This_Quest_is_Bullshit",
         "fn3": "this quest is bullshit",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "7",
+        "1": "8",
         "2": "0",
-        "3": "9946",
+        "3": "9292",
         "4": "100",
-        "pos": 9
+        "pos": 10
     },
     "tian a litrpg cultivation isekai": {
         "content": "1454083831785*0@0#0:0.0%",
