@@ -1079,6 +1079,12 @@
         "name": "Demon's Virtue",
         "list": "QIDIAN original"
     },
+    "112288": {
+        "wn": null,
+        "rr": 31062,
+        "name": "Saga of the Cosmic Heroes",
+        "list": "RoyalRoad plan to read"
+    },
     "112321": {
         "wn": null,
         "rr": 31474,
@@ -1821,7 +1827,7 @@
         "wn": null,
         "rr": 40062,
         "name": "Path of the Dragon Mage: Exiled",
-        "list": "RoyalRoad"
+        "list": "duplicates"
     },
     "134291": {
         "wn": "17996954306015705",
@@ -1864,6 +1870,12 @@
         "rr": null,
         "name": "The Goblins leveling system",
         "list": "QIDIAN on-hold"
+    },
+    "135509": {
+        "wn": null,
+        "rr": 41478,
+        "name": "The Programmer's Dungeon",
+        "list": "RoyalRoad plan to read"
     },
     "135600": {
         "wn": null,
@@ -1922,7 +1934,7 @@
     "136375": {
         "wn": null,
         "rr": 42728,
-        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     "136498": {
@@ -1947,6 +1959,12 @@
         "wn": null,
         "rr": 41477,
         "name": "Truth Seeker: A LitRPG Timeloop",
+        "list": "RoyalRoad"
+    },
+    "136729": {
+        "wn": null,
+        "rr": 43036,
+        "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
     },
     "137029": {
@@ -2003,6 +2021,12 @@
         "name": "The Hallowed War",
         "list": "RoyalRoad plan to read"
     },
+    "138523": {
+        "wn": null,
+        "rr": 44599,
+        "name": "Exiled Aristocrat",
+        "list": "RoyalRoad"
+    },
     "138802": {
         "wn": null,
         "rr": 43934,
@@ -2027,10 +2051,22 @@
         "name": "Inhuman Warlock",
         "list": "QIDIAN original"
     },
+    "139703": {
+        "wn": null,
+        "rr": 45173,
+        "name": "**Mana Harvest** The Sword to Ploughshares Saga (LiTRPG)",
+        "list": "RoyalRoad"
+    },
     "139878": {
         "wn": null,
         "rr": 44272,
         "name": "The Great, Unstoppable, Irreplaceable Alexander",
+        "list": "RoyalRoad"
+    },
+    "139970": {
+        "wn": null,
+        "rr": 45898,
+        "name": "Blood Demon's Retirement",
         "list": "RoyalRoad"
     },
     "140061": {
@@ -2075,10 +2111,40 @@
         "name": "Starting With Contract Pets",
         "list": "QIDIAN plan to read"
     },
+    "140488": {
+        "wn": null,
+        "rr": 46394,
+        "name": "The Demon's Rapture",
+        "list": "RoyalRoad"
+    },
+    "140724": {
+        "wn": null,
+        "rr": 46638,
+        "name": "Steamforged Sorcery [A Steampunk LitRPG]",
+        "list": "RoyalRoad"
+    },
+    "141013": {
+        "wn": null,
+        "rr": 46378,
+        "name": "Frameshift - Magic, Math, and Not Enough Context",
+        "list": "RoyalRoad"
+    },
     "141289": {
         "wn": null,
         "rr": 47017,
         "name": "Infrasound Berserker",
         "list": "RoyalRoad"
+    },
+    "141461": {
+        "wn": "19697500805965905",
+        "rr": null,
+        "name": "As A Cardinal, I Don't Do Overtime",
+        "list": "QIDIAN"
+    },
+    "141538": {
+        "wn": null,
+        "rr": 47018,
+        "name": "Saga of Cosmic Journey",
+        "list": "RoyalRoad plan to read"
     }
 }

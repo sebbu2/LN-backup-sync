@@ -257,6 +257,12 @@
         "name": "Evil Goddess System",
         "list": "QIDIAN plan to read"
     },
+    "31062": {
+        "wln": 112288,
+        "wn": null,
+        "name": "Saga of the Cosmic Heroes",
+        "list": "RoyalRoad plan to read"
+    },
     "31429": {
         "wln": 112336,
         "wn": null,
@@ -447,7 +453,7 @@
         "wln": 134120,
         "wn": null,
         "name": "Path of the Dragon Mage: Exiled",
-        "list": "RoyalRoad"
+        "list": "duplicates"
     },
     "40163": {
         "wln": 133976,
@@ -533,6 +539,12 @@
         "name": "Truth Seeker: A LitRPG Timeloop",
         "list": "RoyalRoad"
     },
+    "41478": {
+        "wln": 135509,
+        "wn": null,
+        "name": "The Programmer's Dungeon",
+        "list": "RoyalRoad plan to read"
+    },
     "41599": {
         "wln": 136294,
         "wn": null,
@@ -602,13 +614,19 @@
     "42728": {
         "wln": 136375,
         "wn": null,
-        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     "42788": {
         "wln": 136511,
         "wn": "20401299806123905",
         "name": "Reincarnated as a Nightwalker",
+        "list": "RoyalRoad"
+    },
+    "43036": {
+        "wln": 136729,
+        "wn": null,
+        "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
     },
     "43180": {
@@ -665,16 +683,58 @@
         "name": "The Hallowed War",
         "list": "RoyalRoad plan to read"
     },
+    "44599": {
+        "wln": 138523,
+        "wn": null,
+        "name": "Exiled Aristocrat",
+        "list": "RoyalRoad"
+    },
     "45136": {
         "wln": 139062,
         "wn": null,
         "name": "The King's Soul: A LitRPG Wuxia Novel",
         "list": "RoyalRoad plan to read"
     },
+    "45173": {
+        "wln": 139703,
+        "wn": null,
+        "name": "**Mana Harvest** The Sword to Ploughshares Saga (LiTRPG)",
+        "list": "RoyalRoad"
+    },
+    "45898": {
+        "wln": 139970,
+        "wn": null,
+        "name": "Blood Demon's Retirement",
+        "list": "RoyalRoad"
+    },
+    "46378": {
+        "wln": 141013,
+        "wn": null,
+        "name": "Frameshift - Magic, Math, and Not Enough Context",
+        "list": "RoyalRoad"
+    },
+    "46394": {
+        "wln": 140488,
+        "wn": null,
+        "name": "The Demon's Rapture",
+        "list": "RoyalRoad"
+    },
+    "46638": {
+        "wln": 140724,
+        "wn": null,
+        "name": "Steamforged Sorcery [A Steampunk LitRPG]",
+        "list": "RoyalRoad"
+    },
     "47017": {
         "wln": 141289,
         "wn": null,
         "name": "Infrasound Berserker",
         "list": "RoyalRoad"
+    },
+    "47018": {
+        "wln": 141538,
+        "wn": null,
+        "name": "Saga of Cosmic Journey",
+        "list": "RoyalRoad plan to read"
     }
 }

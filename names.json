@@ -1,6 +1,11 @@
 {
+    "**Mana Harvest** The Sword to Ploughshares Saga (LiTRPG)": {
+        "wln": 139703,
+        "wn": null,
+        "rr": 45173
+    },
     "**Mana Harvest** The Sword to Ploughshares Saga LiTRPG": {
-        "wln": null,
+        "wln": 139703,
         "wn": null,
         "rr": 45173
     },
@@ -52,6 +57,11 @@
     "90000 Years of Longevity": {
         "wln": 129682,
         "wn": "17753223406844105",
+        "rr": null
+    },
+    "AACIDDO": {
+        "wln": 141461,
+        "wn": "19697500805965905",
         "rr": null
     },
     "A Beginners Guide to Napping Sunbathing and Slaughtering Your Prey": {
@@ -429,8 +439,13 @@
         "wn": "11529754806409805",
         "rr": null
     },
+    "As A Cardinal, I Don't Do Overtime": {
+        "wln": 141461,
+        "wn": "19697500805965905",
+        "rr": null
+    },
     "As A Cardinal I Dont Do Overtime": {
-        "wln": null,
+        "wln": 141461,
         "wn": "19697500805965905",
         "rr": null
     },
@@ -619,8 +634,13 @@
         "wn": null,
         "rr": 33020
     },
+    "Blood Demon's Retirement": {
+        "wln": 139970,
+        "wn": null,
+        "rr": 45898
+    },
     "Blood Demons Retirement": {
-        "wln": null,
+        "wln": 139970,
         "wn": null,
         "rr": 45898
     },
@@ -757,6 +777,11 @@
     "B\\u1EA1o s\\u1EE7ng cu\\u1ED3ng th\\u00EA Th\\u1EA7n y ng\\u0169 ti\\u1EC3u th\\u01B0": {
         "wln": 56109,
         "wn": "11046198105246705",
+        "rr": null
+    },
+    "Cardinal Red of Ashes": {
+        "wln": 465,
+        "wn": null,
         "rr": null
     },
     "Carefree Path of Dreams": {
@@ -1369,6 +1394,11 @@
         "wn": "17527808905320505",
         "rr": null
     },
+    "Drinker of the Yew A Necromancers Tale": {
+        "wln": null,
+        "wn": null,
+        "rr": 44716
+    },
     "DSI": {
         "wln": 36040,
         "wn": "6831841802000505",
@@ -1700,7 +1730,7 @@
         "rr": null
     },
     "Exiled Aristocrat": {
-        "wln": null,
+        "wln": 138523,
         "wn": null,
         "rr": 44599
     },
@@ -1884,8 +1914,13 @@
         "wn": "6838665402001705",
         "rr": null
     },
+    "Frameshift - Magic, Math, and Not Enough Context": {
+        "wln": 141013,
+        "wn": null,
+        "rr": 46378
+    },
     "Frameshift - Magic Math and Not Enough Context": {
-        "wln": null,
+        "wln": 141013,
         "wn": null,
         "rr": 46378
     },
@@ -2934,6 +2969,11 @@
         "wn": "18923811406743005",
         "rr": 28385
     },
+    "Kaijin no Cardinal Red": {
+        "wln": 465,
+        "wn": null,
+        "rr": null
+    },
     "Kairos": {
         "wln": 59514,
         "wn": "18923811406743005",
@@ -3239,8 +3279,13 @@
         "wn": "14679199606345905",
         "rr": null
     },
+    "Magical Girl Kari: Apocalypse System": {
+        "wln": 136729,
+        "wn": null,
+        "rr": 43036
+    },
     "Magical Girl Kari Apocalypse System": {
-        "wln": null,
+        "wln": 136729,
         "wn": null,
         "rr": 43036
     },
@@ -3337,6 +3382,16 @@
     "Master of Gu": {
         "wln": 56289,
         "wn": "7996858406002505",
+        "rr": null
+    },
+    "Master of Monster": {
+        "wln": 504,
+        "wn": null,
+        "rr": null
+    },
+    "Master of Monsters": {
+        "wln": 504,
+        "wn": null,
         "rr": null
     },
     "Master of none": {
@@ -3529,6 +3584,11 @@
         "wn": "13583879505346305",
         "rr": 21220
     },
+    "MoM": {
+        "wln": 504,
+        "wn": null,
+        "rr": null
+    },
     "Monarch of Time": {
         "wln": 127769,
         "wn": "17766698905784705",
@@ -3544,6 +3604,16 @@
         "wn": "12749523606078605",
         "rr": null
     },
+    "Monster no Goshujin-sama": {
+        "wln": 504,
+        "wn": null,
+        "rr": null
+    },
+    "Monster no Goshuujin-sama": {
+        "wln": 504,
+        "wn": null,
+        "rr": null
+    },
     "Monster Paradise": {
         "wln": 59571,
         "wn": "8335460805000105",
@@ -3552,6 +3622,11 @@
     "Monster Pet Evolution": {
         "wln": null,
         "wn": "10700626806140405",
+        "rr": null
+    },
+    "Monster Tamer": {
+        "wln": 504,
+        "wn": null,
         "rr": null
     },
     "Morcster Chef": {
@@ -4118,6 +4193,26 @@
         "wln": 135083,
         "wn": null,
         "rr": 41147
+    },
+    "Of Monstergirls and Men (R-18)": {
+        "wln": 135211,
+        "wn": null,
+        "rr": null
+    },
+    "Of Monstergirls and Men R-18": {
+        "wln": 135211,
+        "wn": null,
+        "rr": null
+    },
+    "Of Monstergirls and Tamers": {
+        "wln": 134803,
+        "wn": null,
+        "rr": null
+    },
+    "Of Monsters \u0026 Men": {
+        "wln": 32702,
+        "wn": null,
+        "rr": null
     },
     "Oh My God! Earthlings are Insane!": {
         "wln": 128316,
@@ -4915,12 +5010,12 @@
         "rr": null
     },
     "Saga of Cosmic Journey": {
-        "wln": null,
+        "wln": 141538,
         "wn": null,
         "rr": 47018
     },
     "Saga of the Cosmic Heroes": {
-        "wln": null,
+        "wln": 112288,
         "wn": null,
         "rr": 31062
     },
@@ -5279,6 +5374,11 @@
         "wn": null,
         "rr": 33386
     },
+    "Soul Forged": {
+        "wln": 135731,
+        "wn": null,
+        "rr": null
+    },
     "Soul Fusion Online": {
         "wln": null,
         "wn": "20262964105614805",
@@ -5374,8 +5474,18 @@
         "wn": "8142774106003505",
         "rr": null
     },
+    "Steamforged Sorcery": {
+        "wln": 141380,
+        "wn": null,
+        "rr": null
+    },
     "Steamforged Sorcery A Steampunk LitRPG": {
-        "wln": null,
+        "wln": 140724,
+        "wn": null,
+        "rr": 46638
+    },
+    "Steamforged Sorcery [A Steampunk LitRPG]": {
+        "wln": 140724,
         "wn": null,
         "rr": 46638
     },
@@ -5614,7 +5724,17 @@
         "wn": null,
         "rr": 42728
     },
+    "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F": {
+        "wln": 136375,
+        "wn": null,
+        "rr": 42728
+    },
     "Tales of an Unlikely Wizard Isekai LitRPG": {
+        "wln": 136375,
+        "wn": null,
+        "rr": 42728
+    },
+    "Tales of an Unlikely Wizard Isekai LitRPG\\uD83C\\uDF1F": {
         "wln": 136375,
         "wn": null,
         "rr": 42728
@@ -5829,6 +5949,11 @@
         "wn": null,
         "rr": null
     },
+    "The Blood Demon is Retired": {
+        "wln": 139768,
+        "wn": null,
+        "rr": null
+    },
     "The Bloodline System": {
         "wln": null,
         "wn": "18957014405722605",
@@ -5914,6 +6039,11 @@
         "wn": "17958180305720005",
         "rr": null
     },
+    "The Demon's Rapture": {
+        "wln": 140488,
+        "wn": null,
+        "rr": 46394
+    },
     "The Demon Kings Cowardly Vessel": {
         "wln": null,
         "wn": "16827682505401205",
@@ -5925,7 +6055,7 @@
         "rr": null
     },
     "The Demons Rapture": {
-        "wln": null,
+        "wln": 140488,
         "wn": null,
         "rr": 46394
     },
@@ -5982,6 +6112,16 @@
     "THE END OF LIFE": {
         "wln": null,
         "wn": "17263238506235505",
+        "rr": null
+    },
+    "The Entire Mankind Is Acting As Me, I Shall Secretly Build A Battleship And Shock The World": {
+        "wln": 141462,
+        "wn": null,
+        "rr": null
+    },
+    "The Entire Mankind Is Acting As Me I Shall Secretly Build A Battleship And Shock The World": {
+        "wln": 141462,
+        "wn": null,
         "rr": null
     },
     "The Era of Supreme Whuu": {
@@ -6484,8 +6624,13 @@
         "wn": null,
         "rr": 21817
     },
+    "The Programmer's Dungeon": {
+        "wln": 135509,
+        "wn": null,
+        "rr": 41478
+    },
     "The Programmers Dungeon": {
-        "wln": null,
+        "wln": 135509,
         "wn": null,
         "rr": 41478
     },
@@ -8084,6 +8229,11 @@
         "wn": null,
         "rr": null
     },
+    "\\u30E2\\u30F3\\u30B9\\u30BF\\u30FC\\u306E\\u3054\\u4E3B\\u4EBA\\u69D8": {
+        "wln": 504,
+        "wn": null,
+        "rr": null
+    },
     "\\u30E4\\u30F3\\u30C7\\u30EC\\u5C11\\u5973\\u306E\\u5F1F\\u5B50\\u306B\\u3055\\u308C\\u305F\\u3093\\u3060\\u304C\\u3002": {
         "wln": 59317,
         "wn": null,
@@ -8549,6 +8699,11 @@
         "wn": "7940017306001805",
         "rr": null
     },
+    "\\u7070\\u71FC\\u306E\\u30AB\\u30FC\\u30C7\\u30A3\\u30CA\\u30EB\\u30FB\\u30EC\\u30C3\\u30C9": {
+        "wln": 465,
+        "wn": null,
+        "rr": null
+    },
     "\\u7121\\u8077\\u8EE2\\u751F": {
         "wln": 668,
         "wn": null,
@@ -8618,11 +8773,6 @@
         "wln": 142,
         "wn": null,
         "rr": null
-    },
-    "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F": {
-        "wln": 136375,
-        "wn": null,
-        "rr": 42728
     },
     "\\uD83C\\uDF1FTales of an Unlikely Wizard Isekai LitRPG\\uD83C\\uDF1F": {
         "wln": 136375,

@@ -14,6 +14,13 @@
         "list": "QIDIAN"
     },
     {
+        "wln": 141461,
+        "wn": "19697500805965905",
+        "rr": null,
+        "name": "As A Cardinal, I Don't Do Overtime",
+        "list": "QIDIAN"
+    },
+    {
         "wln": 34567,
         "wn": "8628176105001205",
         "rr": null,
@@ -1456,6 +1463,13 @@
         "list": "QIDIAN stalled"
     },
     {
+        "wln": 139703,
+        "wn": null,
+        "rr": 45173,
+        "name": "**Mana Harvest** The Sword to Ploughshares Saga (LiTRPG)",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 136336,
         "wn": null,
         "rr": 42630,
@@ -1516,6 +1530,13 @@
         "wn": "19175158406680105",
         "rr": 39408,
         "name": "Beware Of Chicken",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 139970,
+        "wn": null,
+        "rr": 45898,
+        "name": "Blood Demon's Retirement",
         "list": "RoyalRoad"
     },
     {
@@ -1582,6 +1603,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 138523,
+        "wn": null,
+        "rr": 44599,
+        "name": "Exiled Aristocrat",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 3168,
         "wn": null,
         "rr": 98,
@@ -1600,6 +1628,13 @@
         "wn": null,
         "rr": 1439,
         "name": "Forgotten Conqueror",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 141013,
+        "wn": null,
+        "rr": 46378,
+        "name": "Frameshift - Magic, Math, and Not Enough Context",
         "list": "RoyalRoad"
     },
     {
@@ -1677,6 +1712,13 @@
         "wn": null,
         "rr": 31474,
         "name": "Magic-Smithing",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 136729,
+        "wn": null,
+        "rr": 43036,
+        "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
     },
     {
@@ -1764,13 +1806,6 @@
         "list": "RoyalRoad"
     },
     {
-        "wln": 134120,
-        "wn": null,
-        "rr": 40062,
-        "name": "Path of the Dragon Mage: Exiled",
-        "list": "RoyalRoad"
-    },
-    {
         "wln": 120505,
         "wn": "19429965505299405",
         "rr": 35549,
@@ -1855,6 +1890,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 140724,
+        "wn": null,
+        "rr": 46638,
+        "name": "Steamforged Sorcery [A Steampunk LitRPG]",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 130167,
         "wn": "18495993905903905",
         "rr": 37626,
@@ -1872,7 +1914,7 @@
         "wln": 136375,
         "wn": null,
         "rr": 42728,
-        "name": "\\uD83C\\uDF1FTales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     {
@@ -1887,6 +1929,13 @@
         "wn": null,
         "rr": 32908,
         "name": "The Calamity of a Reborn Witch",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 140488,
+        "wn": null,
+        "rr": 46394,
+        "name": "The Demon's Rapture",
         "list": "RoyalRoad"
     },
     {
@@ -2149,6 +2198,20 @@
         "list": "RoyalRoad plan to read"
     },
     {
+        "wln": 141538,
+        "wn": null,
+        "rr": 47018,
+        "name": "Saga of Cosmic Journey",
+        "list": "RoyalRoad plan to read"
+    },
+    {
+        "wln": 112288,
+        "wn": null,
+        "rr": 31062,
+        "name": "Saga of the Cosmic Heroes",
+        "list": "RoyalRoad plan to read"
+    },
+    {
         "wln": 136543,
         "wn": "19855680406636005",
         "rr": 42673,
@@ -2184,6 +2247,13 @@
         "list": "RoyalRoad plan to read"
     },
     {
+        "wln": 135509,
+        "wn": null,
+        "rr": 41478,
+        "name": "The Programmer's Dungeon",
+        "list": "RoyalRoad plan to read"
+    },
+    {
         "wln": 60905,
         "wn": null,
         "rr": 14396,
@@ -2196,6 +2266,13 @@
         "rr": 25299,
         "name": "Misadventures of a Rampaging Demon",
         "list": "RoyalRoad stalled"
+    },
+    {
+        "wln": 134120,
+        "wn": null,
+        "rr": 40062,
+        "name": "Path of the Dragon Mage: Exiled",
+        "list": "duplicates"
     },
     {
         "wln": 60014,

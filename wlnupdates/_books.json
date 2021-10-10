@@ -26,6 +26,60 @@
     },
     null
   ],
+  "465": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 465,
+      "name": "Cardinal Red of Ashes",
+      "rating": 1,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "504": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 504,
+      "name": "Monster no Goshujin-sama",
+      "rating": 7,
+      "rating_count": 12,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 30018.0001,
+      "chp": 18,
+      "date": 1599936013,
+      "frag": 1,
+      "vol": 3
+    },
+    null
+  ],
   "668": [
     {
       "extra_metadata": {
@@ -471,15 +525,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 844,
-      "chp": 844,
+      "agg": 846,
+      "chp": 846,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 842,
-      "chp": 842,
-      "date": 1633136113,
+      "agg": 847,
+      "chp": 847,
+      "date": 1633690020,
       "frag": 0,
       "vol": -1
     },
@@ -917,6 +971,33 @@
     },
     null
   ],
+  "32702": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 32702,
+      "name": "Of Monsters \u0026amp; Men",
+      "rating": 6.666666666666667,
+      "rating_count": 3,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 8,
+      "chp": 8,
+      "date": 1452188460,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "32713": [
     {
       "extra_metadata": {
@@ -938,7 +1019,7 @@
     {
       "agg": 48,
       "chp": 48,
-      "date": 1461736004,
+      "date": 1461761204,
       "frag": 0,
       "vol": -1
     },
@@ -1046,7 +1127,7 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1513653467,
+      "date": 1512616350,
       "frag": 0,
       "vol": -1
     },
@@ -1748,7 +1829,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534416743,
+      "date": 1534927563,
       "frag": -1,
       "vol": 3
     },
@@ -2450,7 +2531,7 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488964196,
+      "date": 1488964242,
       "frag": 0,
       "vol": 3
     },
@@ -2475,9 +2556,9 @@
       "vol": -1
     },
     {
-      "agg": 204,
-      "chp": 204,
-      "date": 1632908337,
+      "agg": 205,
+      "chp": 205,
+      "date": 1633522800,
       "frag": 0,
       "vol": -1
     },
@@ -2691,9 +2772,9 @@
       "vol": -1
     },
     {
-      "agg": 151,
-      "chp": 151,
-      "date": 1633244274,
+      "agg": 153,
+      "chp": 153,
+      "date": 1633763400,
       "frag": 0,
       "vol": -1
     },
@@ -2826,9 +2907,9 @@
       "vol": -1
     },
     {
-      "agg": 1707,
-      "chp": 1707,
-      "date": 1632952140,
+      "agg": 1713,
+      "chp": 1713,
+      "date": 1633623840,
       "frag": 0,
       "vol": -1
     },
@@ -3069,9 +3150,9 @@
       "vol": -1
     },
     {
-      "agg": 320,
-      "chp": 320,
-      "date": 1633117620,
+      "agg": 322,
+      "chp": 322,
+      "date": 1633645140,
       "frag": 0,
       "vol": -1
     },
@@ -3274,8 +3355,8 @@
       },
       "id": 60272,
       "name": "Super God Gene",
-      "rating": 7.6,
-      "rating_count": 5,
+      "rating": 5.769230769230769,
+      "rating_count": 13,
       "tl_type": "translated"
     },
     {
@@ -3555,9 +3636,9 @@
       "vol": -1
     },
     {
-      "agg": 144,
-      "chp": 144,
-      "date": 1632771120,
+      "agg": 145,
+      "chp": 145,
+      "date": 1633558920,
       "frag": 0,
       "vol": -1
     },
@@ -3711,15 +3792,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 753,
-      "chp": 753,
+      "agg": 756,
+      "chp": 756,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 750,
-      "chp": 750,
-      "date": 1633176060,
+      "agg": 753,
+      "chp": 753,
+      "date": 1633694460,
       "frag": 0,
       "vol": -1
     },
@@ -4197,8 +4278,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10561,
-      "chp": 561,
+      "agg": 10568,
+      "chp": 568,
       "frag": -1,
       "vol": 1
     },
@@ -4300,8 +4381,8 @@
       },
       "id": 71793,
       "name": "Dual Cultivation",
-      "rating": 6.904761904761905,
-      "rating_count": 21,
+      "rating": 6.818181818181818,
+      "rating_count": 22,
       "tl_type": "oel"
     },
     {
@@ -4602,8 +4683,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1536,
-      "chp": 1536,
+      "agg": 1548,
+      "chp": 1548,
       "frag": -1,
       "vol": -1
     },
@@ -4926,8 +5007,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 784,
-      "chp": 784,
+      "agg": 785,
+      "chp": 785,
       "frag": -1,
       "vol": -1
     },
@@ -5142,8 +5223,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70573,
-      "chp": 573,
+      "agg": 70578,
+      "chp": 578,
       "frag": -1,
       "vol": 7
     },
@@ -5250,8 +5331,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1161,
-      "chp": 1161,
+      "agg": 1163,
+      "chp": 1163,
       "frag": -1,
       "vol": -1
     },
@@ -5434,8 +5515,8 @@
       },
       "id": 107213,
       "name": "He Who Fights With Monsters",
-      "rating": 9.209090909090909,
-      "rating_count": 110,
+      "rating": 9.135135135135135,
+      "rating_count": 111,
       "tl_type": "oel"
     },
     {
@@ -5553,9 +5634,9 @@
       "vol": -1
     },
     {
-      "agg": 50122,
-      "chp": 122,
-      "date": 1613346240,
+      "agg": 50155,
+      "chp": 155,
+      "date": 1633557540,
       "frag": 0,
       "vol": 5
     },
@@ -5574,15 +5655,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 133,
-      "chp": 133,
+      "agg": 134,
+      "chp": 134,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 128,
-      "chp": 128,
-      "date": 1632486600,
+      "agg": 129,
+      "chp": 129,
+      "date": 1633698480,
       "frag": 0,
       "vol": -1
     },
@@ -5952,8 +6033,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1222,
-      "chp": 1222,
+      "agg": 1232,
+      "chp": 1232,
       "frag": -1,
       "vol": -1
     },
@@ -5979,8 +6060,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1234,
-      "chp": 1234,
+      "agg": 1244,
+      "chp": 1244,
       "frag": -1,
       "vol": -1
     },
@@ -6222,8 +6303,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1248,
-      "chp": 1248,
+      "agg": 1258,
+      "chp": 1258,
       "frag": -1,
       "vol": -1
     },
@@ -6452,6 +6533,33 @@
     },
     null
   ],
+  "112288": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 112288,
+      "name": "Saga of the Cosmic Heroes",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 30093,
+      "chp": 93,
+      "date": 1632461100,
+      "frag": 0,
+      "vol": 3
+    },
+    null
+  ],
   "112321": [
     {
       "extra_metadata": {
@@ -6492,15 +6600,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 260,
-      "chp": 260,
+      "agg": 261,
+      "chp": 261,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 251,
-      "chp": 251,
-      "date": 1633036740,
+      "agg": 253,
+      "chp": 253,
+      "date": 1633646220,
       "frag": 0,
       "vol": -1
     },
@@ -6552,9 +6660,9 @@
       "vol": -1
     },
     {
-      "agg": 202,
-      "chp": 202,
-      "date": 1633102200,
+      "agg": 204,
+      "chp": 204,
+      "date": 1633707000,
       "frag": 0,
       "vol": -1
     },
@@ -7040,7 +7148,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1591334870,
+      "date": 1599120572,
       "frag": 0,
       "vol": -1
     },
@@ -7275,8 +7383,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 419,
-      "chp": 419,
+      "agg": 425,
+      "chp": 425,
       "frag": -1,
       "vol": -1
     },
@@ -7524,9 +7632,9 @@
       "vol": -1
     },
     {
-      "agg": 252,
-      "chp": 252,
-      "date": 1633457948,
+      "agg": 253,
+      "chp": 253,
+      "date": 1633646286,
       "frag": 0,
       "vol": -1
     },
@@ -7650,15 +7758,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 9,
-      "chp": 9,
+      "agg": 10,
+      "chp": 10,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 136,
-      "chp": 136,
-      "date": 1632869100,
+      "agg": 139,
+      "chp": 139,
+      "date": 1633729380,
       "frag": 0,
       "vol": -1
     },
@@ -7683,9 +7791,9 @@
       "vol": -1
     },
     {
-      "agg": 203,
-      "chp": 203,
-      "date": 1633038360,
+      "agg": 204,
+      "chp": 204,
+      "date": 1633456260,
       "frag": 0,
       "vol": -1
     },
@@ -7758,8 +7866,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 515,
-      "chp": 515,
+      "agg": 519,
+      "chp": 519,
       "frag": -1,
       "vol": -1
     },
@@ -8190,15 +8298,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 143,
-      "chp": 143,
+      "agg": 145,
+      "chp": 145,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 119,
-      "chp": 119,
-      "date": 1633406830,
+      "agg": 121,
+      "chp": 121,
+      "date": 1633755789,
       "frag": 0,
       "vol": -1
     },
@@ -8217,15 +8325,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 247,
-      "chp": 247,
+      "agg": 249,
+      "chp": 249,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 213,
-      "chp": 213,
-      "date": 1633103700,
+      "agg": 217,
+      "chp": 217,
+      "date": 1633708560,
       "frag": 0,
       "vol": -1
     },
@@ -8487,8 +8595,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 456,
-      "chp": 456,
+      "agg": 461,
+      "chp": 461,
       "frag": -1,
       "vol": -1
     },
@@ -8846,7 +8954,7 @@
     {
       "agg": 19,
       "chp": 19,
-      "date": 1606700259,
+      "date": 1606699980,
       "frag": 0,
       "vol": -1
     },
@@ -8925,9 +9033,9 @@
       "vol": -1
     },
     {
-      "agg": 125,
-      "chp": 125,
-      "date": 1632837660,
+      "agg": 127,
+      "chp": 127,
+      "date": 1633442460,
       "frag": 0,
       "vol": -1
     },
@@ -9141,9 +9249,9 @@
       "vol": -1
     },
     {
-      "agg": 106,
-      "chp": 106,
-      "date": 1633015800,
+      "agg": 108,
+      "chp": 108,
+      "date": 1633620600,
       "frag": 0,
       "vol": -1
     },
@@ -9270,15 +9378,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 39,
-      "chp": 39,
+      "agg": 40,
+      "chp": 40,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 38,
-      "chp": 38,
-      "date": 1632520620,
+      "agg": 40,
+      "chp": 40,
+      "date": 1633723602,
       "frag": 0,
       "vol": -1
     },
@@ -9324,8 +9432,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 252,
-      "chp": 252,
+      "agg": 255,
+      "chp": 255,
       "frag": -1,
       "vol": -1
     },
@@ -9408,9 +9516,9 @@
       "vol": -1
     },
     {
-      "agg": 92,
-      "chp": 92,
-      "date": 1633412673,
+      "agg": 93,
+      "chp": 93,
+      "date": 1633670338,
       "frag": 0,
       "vol": -1
     },
@@ -9510,15 +9618,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 200,
-      "chp": 200,
+      "agg": 203,
+      "chp": 203,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 199,
-      "chp": 199,
-      "date": 1633456800,
+      "agg": 202,
+      "chp": 202,
+      "date": 1633716001,
       "frag": 0,
       "vol": -1
     },
@@ -9753,16 +9861,16 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20147,
-      "chp": 147,
+      "agg": 20149,
+      "chp": 149,
       "frag": -1,
       "vol": 2
     },
     {
-      "agg": 20065.3003,
-      "chp": 65.3,
-      "date": 1632954360,
-      "frag": 3,
+      "agg": 20069,
+      "chp": 69,
+      "date": 1633734720,
+      "frag": 0,
       "vol": 2
     },
     null
@@ -9807,8 +9915,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 446,
-      "chp": 446,
+      "agg": 449,
+      "chp": 449,
       "frag": -1,
       "vol": -1
     },
@@ -9869,7 +9977,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1623256607,
+      "date": 1623256560,
       "frag": 0,
       "vol": -1
     },
@@ -10023,15 +10131,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 98,
-      "chp": 98,
+      "agg": 100,
+      "chp": 100,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 96,
-      "chp": 96,
-      "date": 1632335820,
+      "agg": 98,
+      "chp": 98,
+      "date": 1633715760,
       "frag": 0,
       "vol": -1
     },
@@ -10058,7 +10166,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1627311720,
+      "date": 1628512380,
       "frag": 0,
       "vol": -1
     },
@@ -10304,6 +10412,33 @@
     },
     null
   ],
+  "134803": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 134803,
+      "name": "Of Monstergirls and Tamers",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 7,
+      "chp": 7,
+      "date": 1615845600,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "135083": [
     {
       "extra_metadata": {
@@ -10358,6 +10493,30 @@
     },
     null
   ],
+  "135211": [
+    {
+      "extra_metadata": null,
+      "id": 135211,
+      "name": "Of Monstergirls and Men (R-18)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 21,
+      "chp": 21,
+      "date": 1617109400,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "135227": [
     {
       "extra_metadata": {
@@ -10371,8 +10530,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 72,
-      "chp": 72,
+      "agg": 73,
+      "chp": 73,
       "frag": -1,
       "vol": -1
     },
@@ -10436,6 +10595,33 @@
     },
     "The Goblins leveling system"
   ],
+  "135509": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 135509,
+      "name": "The Programmer's Dungeon",
+      "rating": 10,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 32,
+      "chp": 32,
+      "date": 1633020420,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "135600": [
     {
       "extra_metadata": {
@@ -10455,9 +10641,9 @@
       "vol": -1
     },
     {
-      "agg": 144,
-      "chp": 144,
-      "date": 1633216140,
+      "agg": 148,
+      "chp": 148,
+      "date": 1633734180,
       "frag": 0,
       "vol": -1
     },
@@ -10508,6 +10694,33 @@
       "date": 1625281080,
       "frag": 0,
       "vol": -1
+    },
+    null
+  ],
+  "135731": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 135731,
+      "name": "Soul Forged",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40003,
+      "chp": 3,
+      "date": 1633643640,
+      "frag": 0,
+      "vol": 4
     },
     null
   ],
@@ -10602,8 +10815,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 599,
-      "chp": 599,
+      "agg": 614,
+      "chp": 614,
       "frag": -1,
       "vol": -1
     },
@@ -10632,9 +10845,9 @@
       "vol": -1
     },
     {
-      "agg": 154,
-      "chp": 154,
-      "date": 1633201200,
+      "agg": 159,
+      "chp": 159,
+      "date": 1633719600,
       "frag": 0,
       "vol": -1
     },
@@ -10716,7 +10929,7 @@
       "frag": 0,
       "vol": -1
     },
-    "\ud83c\udf1fTales of an Unlikely Wizard (Isekai LitRPG)\ud83c\udf1f"
+    "Tales of an Unlikely Wizard (Isekai LitRPG)\ud83c\udf1f"
   ],
   "136498": [
     {
@@ -10826,6 +11039,33 @@
     },
     null
   ],
+  "136729": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 136729,
+      "name": "Magical Girl Kari: Apocalypse System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 28,
+      "chp": 28,
+      "date": 1633559340,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "137029": [
     {
       "extra_metadata": {
@@ -10839,8 +11079,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 55,
-      "chp": 55,
+      "agg": 56,
+      "chp": 56,
       "frag": -1,
       "vol": -1
     },
@@ -10893,8 +11133,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 54,
-      "chp": 54,
+      "agg": 55,
+      "chp": 55,
       "frag": -1,
       "vol": -1
     },
@@ -10904,6 +11144,33 @@
       "date": 1633066080,
       "frag": 0,
       "vol": -1
+    },
+    null
+  ],
+  "137125": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 137125,
+      "name": "Salvos [A Monster Evolution LitRPG]",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 30101,
+      "chp": 101,
+      "date": 1618855200,
+      "frag": 0,
+      "vol": 3
     },
     null
   ],
@@ -10974,15 +11241,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 86,
-      "chp": 86,
+      "agg": 88,
+      "chp": 88,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 84,
-      "chp": 84,
-      "date": 1633359600,
+      "agg": 86,
+      "chp": 86,
+      "date": 1633705200,
       "frag": 0,
       "vol": -1
     },
@@ -11025,15 +11292,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 113,
-      "chp": 113,
+      "agg": 115,
+      "chp": 115,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 112,
-      "chp": 112,
-      "date": 1633322188,
+      "agg": 114,
+      "chp": 114,
+      "date": 1633620720,
       "frag": 0,
       "vol": -1
     },
@@ -11058,9 +11325,9 @@
       "vol": -1
     },
     {
-      "agg": 42,
-      "chp": 42,
-      "date": 1632484620,
+      "agg": 43,
+      "chp": 43,
+      "date": 1633697100,
       "frag": 0,
       "vol": -1
     },
@@ -11082,9 +11349,9 @@
       "vol": -1
     },
     {
-      "agg": 66,
-      "chp": 66,
-      "date": 1632760620,
+      "agg": 72,
+      "chp": 72,
+      "date": 1633701300,
       "frag": -1,
       "vol": -1
     },
@@ -11109,9 +11376,36 @@
       "vol": -1
     },
     {
-      "agg": 83,
-      "chp": 83,
-      "date": 1633356300,
+      "agg": 87,
+      "chp": 87,
+      "date": 1633701900,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "138523": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 138523,
+      "name": "Exiled Aristocrat",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 4009,
+      "chp": 4009,
+      "date": 1632027660,
       "frag": 0,
       "vol": -1
     },
@@ -11246,6 +11540,57 @@
     },
     null
   ],
+  "139703": [
+    {
+      "extra_metadata": null,
+      "id": 139703,
+      "name": "**Mana Harvest** The Sword to Ploughshares Saga (LiTRPG)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 41,
+      "chp": 41,
+      "date": 1633749960,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "139768": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 139768,
+      "name": "The Blood Demon is Retired",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 15,
+      "chp": 15,
+      "date": 1629980275,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "139878": [
     {
       "extra_metadata": {
@@ -11269,6 +11614,33 @@
       "chp": 22,
       "date": 1631045153,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "139970": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 139970,
+      "name": "Blood Demon's Retirement",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 50,
+      "chp": 50,
+      "date": 1633795140,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -11462,6 +11834,87 @@
     },
     null
   ],
+  "140488": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140488,
+      "name": "The Demon's Rapture",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 27,
+      "chp": 27,
+      "date": 1633658520,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "140724": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140724,
+      "name": "Steamforged Sorcery [A Steampunk LitRPG]",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 22,
+      "chp": 22,
+      "date": 1633707060,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "141013": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 141013,
+      "name": "Frameshift - Magic, Math, and Not Enough Context",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 46,
+      "chp": 46,
+      "date": 1633698060,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "141289": [
     {
       "extra_metadata": null,
@@ -11482,6 +11935,108 @@
       "chp": -1,
       "date": null,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "141380": [
+    {
+      "extra_metadata": null,
+      "id": 141380,
+      "name": "Steamforged Sorcery",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 6,
+      "chp": 6,
+      "date": 1633791771,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "141461": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 141461,
+      "name": "As A Cardinal, I Don't Do Overtime",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 264,
+      "chp": 264,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "141462": [
+    {
+      "extra_metadata": null,
+      "id": 141462,
+      "name": "The Entire Mankind Is Acting As Me, I Shall Secretly Build A Battleship And Shock The World",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "141538": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 141538,
+      "name": "Saga of Cosmic Journey",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 4,
+      "chp": 4,
+      "date": 1633743000,
+      "frag": 0,
       "vol": -1
     },
     null
