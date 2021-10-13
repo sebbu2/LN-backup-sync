@@ -5,7 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 <head>
 <meta charset="utf-8"/>
-<title>LN-backup-sync/<?php $bt=debug_backtrace(); $btf=$bt[count($bt)-1]; echo basename($btf['file']); ?></title>
+<title>LN-backup-sync/<?php
+$bt=debug_backtrace();
+if(count($bt)>0) {
+	$idx=count($bt)-1;
+	$btf=$bt[$idx];
+} else {
+	$btf=array('file'=>__FILE__);
+}
+echo basename($btf['file']);
+?></title>
 <style type="text/css">
 .block {
 	display: inline-block;

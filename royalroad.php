@@ -1,16 +1,16 @@
 <?php
 require_once('config.php');
+require_once('SitePlugin.inc.php');
+
 class RoyalRoad extends SitePlugin
 {
 	public const FOLDER = 'royalroad/';
 	
-	public function __construct()
-	{
+	public function __construct() {
 		
 	}
 	
-	public function checkLogin()
-	{
+	public function checkLogin() {
 		$loggued = -1;
 		$res = $this->send( 'https://www.royalroad.com/home' );
 		file_put_contents($this::FOLDER.'rr.htm', $res);//*/
@@ -27,8 +27,7 @@ class RoyalRoad extends SitePlugin
 		return $loggued;
 	}
 	
-	public function login(string $user, string $pass)
-	{
+	public function login(string $user, string $pass) {
 		$ar = array(
 			'ReturnUrl'=>'/welcome',
 			'email'=>$user,
@@ -42,8 +41,7 @@ class RoyalRoad extends SitePlugin
 		return false;
 	}
 	
-	public function watches()
-	{
+	public function watches() {
 		$i=1;
 		$count=0;
 		$pages=array();
@@ -144,8 +142,23 @@ class RoyalRoad extends SitePlugin
 		return $data;
 	}
 	
-	public function get_chapter_list($fictionId)
-	{
+	public function get_watches() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_books.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function get_list() {
+		throw new Exception('Not available on RoyalRoad.');
+	}
+	
+	public function get_order() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function get_chapter_list($fictionId) {
 		$res = $this->get( 'https://www.royalroad.com/fiction/'.$fictionId );
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.htm', $res);
 		$xml=simplexml_load_html($res);
@@ -159,7 +172,7 @@ class RoyalRoad extends SitePlugin
 			$ar3['title']=trim((string)$node->td[0]->a);
 			$ar3['date']=(string)$node->td[1]->a->time['title'];
 			$ar3['ago']=trim((string)$node->td[1]->a->time);
-			if(is_object($node->td[0]->i)) {
+			if(isset($node->td[0]->i)) {
 				$ar3['pos-title']=(string)$node->td[0]->i['data-original-title'];
 				$ar3['pos-content']=(string)$node->td[0]->i['data-content'];
 			}
@@ -172,14 +185,13 @@ class RoyalRoad extends SitePlugin
 		return $ar2;
 	}
 	
-	public function get_chapter_list_cached($fictionId, $duration=604800)
-	{
+	public function get_chapter_list_cached($fictionId, $duration=604800) {
 		$fn=$this::FOLDER.'fiction_'.$fictionId.'.json';
 		if(file_exists($fn) && time()-filemtime($fn)<$duration) {
-			return file_get_contents($fn);
+			return json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
 		}
 		else {
-			return get_chapter_list($fictionId);
+			return $this->get_chapter_list($fictionId);
 		}
 	}
 };

@@ -43,13 +43,15 @@ royalroad.php class to support royalroad.com
 
 **position.php** List positions from the novels in the ebook reader
 
+**news.php** kust biveks with new chapters (depends on retr, position and correspondances)
+
 [wlnupdates/\_books.json](wlnupdates/_books.json) library json data from wlnupdates
 
 [wlnupdates/\_order.json](wlnupdates/_order.json) library json data of the order from wlnupdates
 
 [wlnupdates/\_list.json](wlnupdates/\_list.json) library json data of the list the novel is from on wlnupdates
 
-[watches2.htm](watches2.htm) raw table of wlnupdates data
+[wlnupdates.htm](wlnupdates.htm) raw table of wlnupdates data
 
 [webnovel/\_books.json](webnovel/_books.json) library data from webnovel (merged, reordered)
 
@@ -65,11 +67,13 @@ royalroad.php class to support royalroad.com
 
 [webnovel/\_subnames.json](webnovel/_subnames.json) map data of subname to novel(s)
 
-[library.htm](library.htm) raw table of webnovel data (sorted)
+[webnovel.htm](webnovel.htm) raw table of webnovel data (sorted)
 
-[library2.htm](library2.htm) raw table of webnovel data (identical to website, sorted by last add/update)
+[webnovel2.htm](webnovel2.htm) raw table of webnovel data (identical to website, sorted by last add/update)
 
 [webnovel\_data.htm](webnovel_data.htm) table of webnovel data counts (include lists, history\*2, collection list, all collections)
+
+[news.htm](news.htm) table of novels with positions and new updates
 
 [royalroad/\_books.json](royalroad/_books.json) library data of the order from royalroad
 

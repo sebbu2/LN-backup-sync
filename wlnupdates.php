@@ -1,17 +1,17 @@
 <?php
 require_once('config.php');
+require_once('SitePlugin.inc.php');
+
 class WLNUpdates extends SitePlugin
 {
 	public const FOLDER = 'wlnupdates/';
 	public $LOGIN_TRIED = false;
 	
-	public function __construct()
-	{
+	public function __construct() {
 		
 	}
 	
-	public function login(string $user, string $pass)
-	{
+	public function login(string $user, string $pass) {
 		$ar=array(
 			'mode'=>'do-login',
 			'username'=>$user,
@@ -25,8 +25,7 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function login2(string $user, string $pass)
-	{
+	public function login2(string $user, string $pass) {
 		$res = $this->send( 'https://www.wlnupdates.com/login' );
 		file_put_contents($this::FOLDER.'login1.htm', $res);
 		
@@ -62,8 +61,7 @@ class WLNUpdates extends SitePlugin
 		return false;
 	}
 	
-	public function watches()
-	{
+	public function watches() {
 		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'watches.json', $res);
@@ -102,15 +100,13 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function watches2()
-	{
+	public function watches2() {
 		$res = $this->send( 'https://www.wlnupdates.com/watches' );
 		file_put_contents($this::FOLDER.'watches.htm', $res);
 		return $res;
 	}
 	
-	public function watches2_lists($data)
-	{
+	public function watches2_lists($data) {
 		$lists=array();
 		preg_match_all('#<h4>List: ([^<]+)</h4>\s*<table(.*)</table>#isU', $data, $matches);
 		array_shift($matches);//remove original full match
@@ -141,8 +137,25 @@ class WLNUpdates extends SitePlugin
 		return $lists;
 	}
 	
-	public function read_update($watch, $chp)
-	{
+	public function get_watches() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_books.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function get_list() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_list.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function get_order() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function read_update($watch, $chp) {
 		$ar=array();
 		if(array_key_exists('chp', $watch)) {
 			if((int)$watch['vol']<0) $watch['vol']=0;
@@ -176,8 +189,7 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function search($name)
-	{
+	public function search($name) {
 		$ar=array(
 			'mode'=>'search-title',
 			'title'=>$name,
@@ -189,8 +201,7 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function add($name, $tl)
-	{
+	public function add($name, $tl) {
 		if(!in_array($tl, array('translated', 'oel'))) return false;
 		
 		$referer = 'https://www.wlnupdates.com/add/series/';
@@ -237,8 +248,7 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function edit($json)
-	{
+	public function edit($json) {
 		$ar=$json;
 		if(count($ar)==0||count($ar['entries'])==0) return false;
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar, JSON_UNESCAPED_SLASHES), array('Content-Type: application/json')); // no cookies

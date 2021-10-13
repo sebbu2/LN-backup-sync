@@ -1,5 +1,6 @@
 <?php
 require_once('config.php');
+require_once('SitePlugin.inc.php');
 
 require_once('CJSON.php');
 
@@ -10,13 +11,11 @@ class WebNovel extends SitePlugin
 	public const RETRY_LIMIT = 5; // we try each query up to 5 times in cases of errors (the API randomly fails)
 	public const LIBRARY_LIMIT = 40; // to prevent infinite loop in case of error when retrieving the library (i'm at ~ half of it)
 	
-	public function __construct()
-	{
+	public function __construct() {
 		
 	}
 	
-	public function checkLogin()
-	{
+	public function checkLogin() {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		$ar=array(
 			'appid'=>'900',
@@ -38,8 +37,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function login(string $user, string $pass)
-	{
+	public function login(string $user, string $pass) {
 		$cookies=array();$ar=array();$headers=array();$res=NULL;$data=NULL;$referer=NULL;
 		$xml=NULL;$found=false;$crypted='';
 		$data2=NULL;$res2=NULL;$res3=NULL;
@@ -349,8 +347,7 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	private function novel_cmp_by_name($e1, $e2)
-	{
+	private function novel_cmp_by_name($e1, $e2) {
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
 		$n1=$n2='';
 		if(property_exists($e1, 'bookName')) $n1=$e1->bookName;
@@ -370,15 +367,13 @@ class WebNovel extends SitePlugin
 		return $e1->novelType <=> $e2->novelType;
 	}
 	
-	private function novel_cmp_by_id($e1, $e2)
-	{
+	private function novel_cmp_by_id($e1, $e2) {
 		$res = $e1->bookId <=> $e2->bookId;
 		if($res!==0) return $res;
 		return $e1->novelType <=> $e2->novelType;
 	}
 	
-	public function watches()
-	{
+	public function watches() {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		$referer='https://www.webnovel.com/library';
 		/*{
@@ -519,8 +514,23 @@ class WebNovel extends SitePlugin
 		return $books2;
 	}
 	
-	public function read_update($watch, $chp)
-	{
+	public function get_watches() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_books.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function get_list() {
+		throw new Exception('Not available on WebNovel.');
+	}
+	
+	public function get_order() {
+		$res=json_decode(file_get_contents($this::FOLDER.'_order.json'), false, 512, JSON_THROW_ON_ERROR);
+		if(is_object($res)) $res=get_object_vars($res);
+		return $res;
+	}
+	
+	public function read_update($watch, $chp) {
 		$this->msg=array();
 		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
 		{
@@ -632,8 +642,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list($bookId)
-	{
+	public function get_chapter_list($bookId) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
 		{
@@ -660,8 +669,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list_cached($bookId)
-	{
+	public function get_chapter_list_cached($bookId) {
 		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
 			return $this->get_chapter_list($bookId);
 		}
@@ -684,8 +692,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list_comic($bookId)
-	{
+	public function get_chapter_list_comic($bookId) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
 		{
@@ -707,8 +714,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list_comic_cached($bookId)
-	{
+	public function get_chapter_list_comic_cached($bookId) {
 		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
 			return $this->get_chapter_list_comic($bookId);
 		}
@@ -731,13 +737,11 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_stats($bookId)
-	{
+	public function get_chapter_stats($bookId) {
 		throw new Exception("Not Yet Implemented.");
 	}
 	
-	public function search($name)
-	{
+	public function search($name) {
 		$ar=array(
 			'keywords'=>$name,
 		);
@@ -814,8 +818,7 @@ class WebNovel extends SitePlugin
 		return $extracts;
 	}
 	
-	public function search2($name)
-	{
+	public function search2($name) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/';
 		$ar=array(

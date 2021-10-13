@@ -7,13 +7,11 @@ require_once('wlnupdates.php');
 require_once('webnovel.php');
 require_once('royalroad.php');
 
-
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
-$direct= ( realpath($_SERVER['SCRIPT_FILENAME']) === realpath(__FILE__) );
 //if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) $sub=true;
-if($direct) include('header.php');
+if(direct()) include('header.php');
 
 class Position
 {
@@ -96,9 +94,13 @@ class Position
 				//id, page, per
 				$fn2=substr($fn, 0, -7);
 			}
-			else if(strpos($fn, '.mhtml.po')==strlen($fn)-9 || strpos($fn, '.txt.po')==strlen($fn)-7) {
+			else if(strpos($fn, '.mhtml.po')==strlen($fn)-9) {
 				//id, chap, vol, pos_in_chap, per
 				$fn2=substr($fn, 0, -9);
+			}
+			else if(strpos($fn, '.txt.po')==strlen($fn)-7) {
+				//id, chap, vol, pos_in_chap, per
+				$fn2=substr($fn, 0, -7);
 			}
 			else {
 				$fn2='test';
@@ -303,7 +305,7 @@ class Position
 	}
 };
 
-if($direct) {
+if(direct()) {
 	$t1=0; $t2=0;
 	$pos=new Position;
 
@@ -333,6 +335,8 @@ if($direct) {
 	var_dump(count($pos->old),count($pos->others),count($pos->dev_1),count($pos->dev_9));
 
 	var_dump(count($pos->old)+count($pos->others)+count($pos->dev_1)+count($pos->dev_9)===count($ar2));
+	
+	var_dump($pos->old);
 	
 	/*
 	//$orig=array_filter($pos->others, function($e) { return ($e[0]==MOONREADER_DID2);});
@@ -381,4 +385,4 @@ else {
 	$pos=json_decode(file_get_contents('pos.json'), true, 512, JSON_THROW_ON_ERROR);
 }
 
-if($direct) include('footer.php');
+if(direct()) include('footer.php');

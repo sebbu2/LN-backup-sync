@@ -14,7 +14,7 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '/', '  ');
 	//'+'
-	static $ar2=array(',', '\'', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.');
+	static $ar2=array(',', '\'', '*', '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.');
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
@@ -37,16 +37,14 @@ function name_simplify($name, $type=0) {
 	//$name=strtolower($name);
 	return $name;
 }
-function name_compare($name1, $name2, $type=0)
-{
+function name_compare($name1, $name2, $type=0) {
 	$name1=name_simplify($name1, $type);
 	$name2=name_simplify($name2, $type);
 	//var_dump($name1,$name2);
 	//if($name1=='lord of the mysteries') var_dump($name1, $name2, strcasecmp($name1, $name2));
 	return (strcasecmp($name1, $name2)==0);
 }
-function case_count($name)
-{
+function case_count($name) {
 	$name=trim($name);
 	$len=strlen($name);
 	$res=array( 'low'=>0, 'up'=>0, 'dig'=>0, 'symb'=>0, 'esp'=>0 );
@@ -74,10 +72,8 @@ function normalize($str) {
 	$str=transliterator_transliterate("[:^ASCII:] Any-Hex", $str);
 	return $str;
 }
-if ( !function_exists( 'is_iterable' ) )
-{
-	function is_iterable( $obj )
-	{
+if ( !function_exists( 'is_iterable' ) ) {
+	function is_iterable( $obj ) {
 		return is_array( $obj ) || ( is_object( $obj ) && ( $obj instanceof \Traversable ) );
 	}
 }
@@ -121,6 +117,31 @@ function &set($obj, $attr, $value) {
 	$var=&get($obj, $attr);
 	$var=$value;
 	return $var;
+}
+function exists($obj, $attr) {
+	if(is_array($obj)) {
+		return array_key_exists($attr, $obj);
+	}
+	else if(is_object($obj)) {
+		return property_exists($obj, $attr);
+	}
+	else throw new UnexpectedValueException();
+}
+function direct2() {
+	return direct();
+}
+function direct() {
+	$bt=debug_backtrace();
+	$bt=array_filter($bt, fn($e) => !in_array($e['function'], ['include', 'include_once', 'require', 'require_once']));
+	if(count($bt)>0) {
+		$idx=count($bt)-1;
+		$btf=$bt[$idx];
+	} else {
+		$btf=array('file'=>__FILE__);
+	}
+	$direct= ( realpath($_SERVER['SCRIPT_FILENAME']) === realpath($btf['file']) );
+	//var_dump($bt,$direct);
+	return $direct;
 }
 /**
  * Format a timestamp to display its age (5 days ago, in 3 days, etc.).

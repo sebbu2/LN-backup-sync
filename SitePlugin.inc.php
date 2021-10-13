@@ -20,8 +20,7 @@ class SitePlugin
 		
 	}
 	
-	protected function get_cookies_for($url)
-	{
+	protected function get_cookies_for($url) {
 		static $keys=array('domain','includeSubdomains','path','secureOnly','expires','name','value');
 		$url_ar=parse_url($url);//scheme, host, path
 		if(!array_key_exists('scheme', $url_ar)) { var_dump($url, $url_ar);var_dump(debug_backtrace());die(); }
@@ -95,8 +94,7 @@ class SitePlugin
 		file_put_contents(COOKIEFILE, implode('', $ar));
 	}
 	
-	public function get($url, $parameters=array(), $headers=array(), $cookies=array())
-	{
+	public function get($url, $parameters=array(), $headers=array(), $cookies=array()) {
 		$arr=array(
 			'http'=>array(
 				'ignore_errors'=>true,
@@ -149,15 +147,13 @@ class SitePlugin
 		return $data;
 	}
 	
-	private function print_headers($ch, $header)
-	{
+	private function print_headers($ch, $header) {
 		//if(strlen(trim($header))==0) return strlen($header);
 		$this->headersRecv[]=trim($header);
 		return strlen($header); // mandatory (from API documentation)
 	}
 	
-	public function send($url, $postdata=array(), $headers=array(), $cookies=array())
-	{
+	public function send($url, $postdata=array(), $headers=array(), $cookies=array()) {
 		$this->headersRecv=array();
 		$this->headersSent=array();
 		
@@ -218,8 +214,7 @@ class SitePlugin
 		return $res;
 	}
 	
-	public function jsonp_to_json($jsonp)
-	{
+	public function jsonp_to_json($jsonp) {
 		$jsonp=trim($jsonp);
 		//$res=preg_replace('#\w+\((.*)\)#iU','\1', $jsonp);
 		if(!in_array($jsonp[0], array('[','{'))) {
@@ -235,7 +230,7 @@ class SitePlugin
 		return $this->json_to_json($jsonp);
 	}
 	
-	function json_to_json($json) {
+	public function json_to_json($json) {
 		static $end_match=array('['=>']','{'=>'}');
 		if(! substr($json,-1)==$end_match[$json[0]]) throw new Exception('invalid JSON 1.<br/>'.var_export(substr($json,-1),true));
 		//$json=json_encode(json_decode($json, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
@@ -286,6 +281,18 @@ class SitePlugin
 		//$json=str_replace('    ',"\t",$json); // TAB are invalid in json
 		$json=str_replace('    ', '  ', $json);
 		return $json;
+	}
+	
+	public function get_watches() {
+		throw new Exception('Not yet implemented.');
+	}
+	
+	public function get_list() {
+		throw new Exception('Not yet implemented.');
+	}
+	
+	public function get_order() {
+		throw new Exception('Not yet implemented.');
 	}
 	
 	public function get_types() {
