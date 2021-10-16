@@ -66,6 +66,7 @@ foreach($wln_order as $id=>$list) {
 		$wln1=$wln_books[$entry];
 		$row=array();
 		$row['title']=$wln1[0]->name;
+		if(!is_null($wln1[3])) $row['title']=$wln1[3];
 		$row['title']=rawurldecode($row['title']);
 		$row['title']=html_entity_decode($row['title']);
 		$row['WLNUpdate cur']=$wln1[1]->chp;
@@ -79,6 +80,14 @@ foreach($wln_order as $id=>$list) {
 			if(!is_null($wln2['rr'])) {
 				$rr1=$rr_books[$wln2['rr']];
 				$rr2=$rr->get_chapter_list_cached($wln2['rr']);
+				if(exists($rr1, 'last-read-title')) {
+					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-read-title')) );
+					if(count($found)==0) $rr2=$rr->get_chapter_list($wln2['rr']);
+				}
+				if(exists($rr1, 'last-upd-title')) {
+					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-upd-title')) );
+					if(count($found)==0) $rr2=$rr->get_chapter_list($wln2['rr']);
+				}
 				if(count($rr2)>0) {
 					$rr2a=count($rr2)-1;
 					$rr2b=$rr2[$rr2a];
@@ -86,8 +95,8 @@ foreach($wln_order as $id=>$list) {
 					$rr2d=array_filter($rr2, fn($e) => exists($e, 'pos-title')&&strlen(get($e, 'pos-title'))>0);
 					if(count($rr2d)==1) $rr2c=array_keys($rr2d)[0];
 					else $rr2c=NULL;
-					$row['RoyalRoad cur']=$rr2c;
-					$row['RoyalRoad last']=$rr2a;
+					$row['RoyalRoad cur']=(is_numeric($rr2c)?$rr2c+1:$rr2c);
+					$row['RoyalRoad last']=(is_numeric($rr2a)?$rr2a+1:$rr2a);
 				}
 			}
 		}

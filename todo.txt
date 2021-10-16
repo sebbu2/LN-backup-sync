@@ -1,0 +1,32 @@
+news.php
+	add neg chp to last (&cur?)
+	improve filename check (all names)
+
+update_lists.php
+	recode to pos&cor
+
+dropbox.php
+	recode to pos&cor
+
+dropbox2.php
+	recode to pos&cor
+
+royalroad.php
+	add search
+	add add (to)
+	add favorite, read later, history
+	add update
+
+wlnupdates.php
+	checklogin?
+
+webnovel.php
+	add/check history & collection
+
+retr.php
+	add wn history&collection
+	add rr favorite, read later, history
+
+lists:
+	add everything to wln
+	add stuff from wln to others

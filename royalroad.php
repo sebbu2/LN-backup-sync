@@ -79,11 +79,13 @@ class RoyalRoad extends SitePlugin
 				$ar2['author-href']=(string)$node->div->div[0]->span->a['href'];
 				$ar2['next-chp']=(string)$node->div->div[1]->a['href'];
 				if(is_iterable($node->div->ul->li) && count($node->div->ul->li)>=2) {
-					$ar2['last-upd-text']=trim((string)$node->div->ul->li[0]);
-					$ar2['last-upd-href']=(string)$node->div->ul->li[0]->a['href'];
-					$ar2['last-upd-title']=(string)$node->div->ul->li[0]->a->span[0];
-					$ar2['last-upd-date']=(string)$node->div->ul->li[0]->a->span[1]->time['title'];
-					$ar2['last-upd-ago']=(string)$node->div->ul->li[0]->a->span[1]->time;
+					if((string)$node->div->ul->li[0]->strong!='The last update has been deleted') {
+						$ar2['last-upd-text']=trim((string)$node->div->ul->li[0]);
+						$ar2['last-upd-href']=(string)$node->div->ul->li[0]->a['href'];
+						$ar2['last-upd-title']=(string)$node->div->ul->li[0]->a->span[0];
+						$ar2['last-upd-date']=(string)$node->div->ul->li[0]->a->span[1]->time['title'];
+						$ar2['last-upd-ago']=(string)$node->div->ul->li[0]->a->span[1]->time;
+					}
 					$ar2['last-read-href']=(string)$node->div->ul->li[1]->a['href'];
 					$ar2['last-read-title']=(string)$node->div->ul->li[1]->a->span[0];
 					$ar2['last-read-date']=(string)$node->div->ul->li[1]->a->span[1]->time['title'];

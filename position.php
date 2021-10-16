@@ -51,11 +51,11 @@ class Position
 			$ar2[$v]=array_merge( $ar2[$v], $this->parseFilename($v), $this->parseFileContent($ar2[$v]['content']) );
 			if(in_array($ar2[$v]['ext'], $this::scroll)) {
 				if($ar2[$v][1]==0 && $ar2[$v][3]==0) $ar2[$v]['pos']=0;
-				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1] + ($ar2[$v][3]>0?1:0);
+				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1] - 1 + ($ar2[$v][3]>0?1:0);
 			}
 			else if(in_array($ar2[$v]['ext'], $this::page)) {
 				if($ar2[$v][1]==0) $ar2[$v]['pos']=0;
-				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1];
+				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1] -1;
 			}
 		}
 		chdir(CWD);

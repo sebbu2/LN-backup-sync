@@ -29,15 +29,15 @@ foreach($ar as $fn)
 	preg_match('#^(.*)_(-?\d+)-(\d+)(_FIN)?\.epub\.po$#i', $fn, $matches);
 	if(!empty($matches)) {
 		$fn2=$matches[1];
-		$min=$matches[2];
-		$max=$matches[3];
+		$min=(int)$matches[2];
+		$max=(int)$matches[3];
 	}
 	else {
 		preg_match('#^(-?\d+)-(\d+)_(.*)\.epub\.po$#i', $fn, $matches);
 		if(!empty($matches))
 		{
-			$min=$matches[1];
-			$max=$matches[2];
+			$min=(int)$matches[1];
+			$max=(int)$matches[2];
 			$fn2=$matches[3];
 		}
 	}
@@ -96,10 +96,17 @@ foreach($ar as $fn)
 				echo '<div class="block b b-blue">',$fn,'</div>',"\n";
 			}
 		}
-		if(array_key_exists($fn3, $fns_) && $fns_[$fn3]['chp']<$fns[$fn3]['chp']) {
-			unlink(DROPBOX.$fns[$fn3]['fn']);
-			unset($fns_[$fn3]);
-			echo '<div class="block b b-blue">',$fn,'</div>',"\n";
+		if(array_key_exists($fn3, $fns_)) {
+			if($fns_[$fn3]['chp']<=$fns[$fn3]['chp']) {
+				unlink(DROPBOX.$fns_[$fn3]['fn']);
+				echo '<div class="block b b-blue">',$fns_[$fn3]['fn'],'</div>',"\n";
+				unset($fns_[$fn3]);
+			}
+			else {
+				unlink(DROPBOX.$fn);
+				echo '<div class="block b b-blue">',$fn,'</div>',"\n";
+				unset($fns[$fn3]);
+			}
 		}
 	}
 	else if($content[0]===MOONREADER_DID2) {
