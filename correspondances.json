@@ -105,13 +105,6 @@
         "list": "QIDIAN"
     },
     {
-        "wln": 115059,
-        "wn": "16032613405710905",
-        "rr": null,
-        "name": "Master of the End Times",
-        "list": "QIDIAN"
-    },
-    {
         "wln": 117681,
         "wn": "17120104606669305",
         "rr": null,
@@ -144,13 +137,6 @@
         "wn": "8662546605001405",
         "rr": null,
         "name": "The Legendary Mechanic",
-        "list": "QIDIAN"
-    },
-    {
-        "wln": 60981,
-        "wn": "8335483105000205",
-        "rr": null,
-        "name": "Venerated Venomous Consort",
         "list": "QIDIAN"
     },
     {
@@ -256,6 +242,13 @@
         "wn": "16005365905643805",
         "rr": null,
         "name": "Mages Are Too OP",
+        "list": "QIDIAN completed"
+    },
+    {
+        "wln": 115059,
+        "wn": "16032613405710905",
+        "rr": null,
+        "name": "Master of the End Times",
         "list": "QIDIAN completed"
     },
     {
@@ -427,6 +420,13 @@
         "list": "QIDIAN on-hold"
     },
     {
+        "wln": 48694,
+        "wn": "8179195105005805",
+        "rr": null,
+        "name": "Village Girl as Family Head : picked up a general for farming",
+        "list": "QIDIAN on-hold"
+    },
+    {
         "wln": 68926,
         "wn": "11365254206340405",
         "rr": null,
@@ -452,6 +452,13 @@
         "wn": "14582952705846705",
         "rr": null,
         "name": "The Wielder of Death Magic",
+        "list": "QIDIAN on-hold"
+    },
+    {
+        "wln": 60981,
+        "wn": "8335483105000205",
+        "rr": null,
+        "name": "The Evil Consort Above An Evil King",
         "list": "QIDIAN on-hold"
     },
     {
@@ -1484,13 +1491,6 @@
         "list": "QIDIAN stalled"
     },
     {
-        "wln": 48694,
-        "wn": "8179195105005805",
-        "rr": null,
-        "name": "Village Girl as Family Head : picked up a general for farming",
-        "list": "QIDIAN stalled"
-    },
-    {
         "wln": 62143,
         "wn": "8092314906003205",
         "rr": null,
@@ -1921,7 +1921,7 @@
         "wln": 136729,
         "wn": null,
         "rr": 43036,
-        "name": "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)",
+        "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
     },
     {
@@ -2079,6 +2079,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 130259,
+        "wn": null,
+        "rr": 37438,
+        "name": "Salvos [A Monster Evolution LitRPG]",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 118775,
         "wn": null,
         "rr": 34473,
@@ -2180,7 +2187,7 @@
         "wln": 136375,
         "wn": null,
         "rr": 42728,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
         "list": "RoyalRoad"
     },
     {

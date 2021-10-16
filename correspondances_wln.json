@@ -249,7 +249,7 @@
         "wn": "8179195105005805",
         "rr": null,
         "name": "Village Girl as Family Head : picked up a general for farming",
-        "list": "QIDIAN stalled"
+        "list": "QIDIAN on-hold"
     },
     "49310": {
         "wn": "8567129806000505",
@@ -500,8 +500,8 @@
     "60981": {
         "wn": "8335483105000205",
         "rr": null,
-        "name": "Venerated Venomous Consort",
-        "list": "QIDIAN"
+        "name": "The Evil Consort Above An Evil King",
+        "list": "QIDIAN on-hold"
     },
     "61126": {
         "wn": "8456930206000105",
@@ -1245,7 +1245,7 @@
         "wn": "16032613405710905",
         "rr": null,
         "name": "Master of the End Times",
-        "list": "QIDIAN"
+        "list": "QIDIAN completed"
     },
     "115268": {
         "wn": "15298464306893805",
@@ -1823,6 +1823,12 @@
         "name": "Doomsday Online: Supreme Blessing",
         "list": "QIDIAN plan to read"
     },
+    "130259": {
+        "wn": null,
+        "rr": 37438,
+        "name": "Salvos [A Monster Evolution LitRPG]",
+        "list": "RoyalRoad"
+    },
     "130483": {
         "wn": "18132929806537305",
         "rr": null,
@@ -2138,7 +2144,7 @@
     "136375": {
         "wn": null,
         "rr": 42728,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
         "list": "RoyalRoad"
     },
     "136498": {
@@ -2174,7 +2180,7 @@
     "136729": {
         "wn": null,
         "rr": 43036,
-        "name": "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)",
+        "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
     },
     "137029": {
