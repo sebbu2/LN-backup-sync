@@ -115,7 +115,7 @@ wlnupdates.php class to support wlnupdates.com
 
 ## Third-party
 
-CJSON.php from yii framework v1.X, helper to lazy parse json (including badly formatted one, or js object instead of json). v2.X is strict.
+CJSON.php from yii framework v1.X, helper to lazy parse json (including badly formatted one, or js object instead of json). v2.X is strict and just a wrapper over native PHP json_decode.
 
 ## Endpoints
 
@@ -127,7 +127,7 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 
 **dropbox.inc.php** Gets all the positions from cloud source
 
-**news.php** kust biveks with new chapters (depends on retr, position and correspondances)
+**news.php** list novels with new chapters (depends on retr, position and correspondances)
 
 **position.php** List positions from the novels in the ebook reader
 

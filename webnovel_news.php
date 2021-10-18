@@ -125,8 +125,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				if(!file_exists('webnovel/GetChapterList_'.$book->bookId.'.json'))
 				{
 					$res=$wn->get_chapter_list($book->bookId);
-					$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
-					if($res->code!=0 || $res->data===0) {
+					$fn='webnovel/GetChapterList_'.$book->bookId.'.json';
+					if(file_exists($fn)) $timestamp=filemtime($fn);
+					else $timestamp=time();
+					if(is_object($res) && ($res->code!=0 || $res->data===0) ) {
 						var_dump('file', $book->bookId, $book->bookName, $entry['title'], $res);
 						unlink('webnovel/GetChapterList_'.$book->bookId.'.json');
 						die();
@@ -143,15 +145,17 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						die();
 					}
 				}
-				if( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
+				if( is_object($res) && ( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )) {
 					//no info
 					var_dump($book->bookId, $entry['title'], $entry['title'], $res);die();
 				}
-				if( count($res->data->volumeItems)==0 ) {
+				if( !is_object($res) || count($res->data->volumeItems)==0 ) {
 					//empty book
 					try {
 						$res=@$wn->get_chapter_list($book->bookId);
-						$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
+						$fn='webnovel/GetChapterList_'.$book->bookId.'.json';
+						if(file_exists($fn)) $timestamp=filemtime($fn);
+						else $timestamp=time();
 					} catch (Exception $e) {
 					}
 					continue;
@@ -167,14 +171,15 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				$last_upd='1970-01-01';
 				//$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 				assert($timestamp!=0) or die('filemtime timestamp error');
-				if(property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
-				else if(property_exists($res->data->volumeItems[0], 'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=$add=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
+				if(is_object($res) && property_exists($res->data->volumeItems[0], 'index') && $res->data->volumeItems[0]->index==0) $add_=$add=-$res->data->volumeItems[0]->chapterCount; // substract auxiliary volume chapters
+				else if(is_object($res) && property_exists($res->data->volumeItems[0], 'volumeId') && $res->data->volumeItems[0]->volumeId==0) $add_=$add=-count($res->data->volumeItems[0]->chapterItems); // substract auxiliary volume chapters
 				if(array_key_exists($entry['title'], $diff_old)) $add2=$diff_old[$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['cur'])) $add2=$diff_old['cur'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['upd'])) $add2=$diff_old['upd'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['chk'])) $add2=$diff_old['chk'][$entry['title']];
 				else if(array_key_exists($entry['title'], $diff_old['old'])) $add2=$diff_old['old'][$entry['title']];
 				//else {
+				if(is_object($res)) {
 					foreach($res->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chap) {
 							$index=-1;
@@ -202,8 +207,9 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					if($add2===NULL) $add2=0;
 					if($add2===0) $add2=$priv_only;
 				//}
+				}
 				//var_dump($last_upd, strtotime($last_upd, $timestamp),__LINE__);//die();
-				if($last_upd=='1970-01-01') {
+				if(is_object($res) && $last_upd=='1970-01-01') {
 					//var_dump($res->data->volumeItems);
 					var_dump($timestamp,date('Y-m-d H:i:s', $timestamp));
 					foreach($res->data->volumeItems as $vol) {

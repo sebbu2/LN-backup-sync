@@ -216,11 +216,14 @@ class SitePlugin
 	
 	public function jsonp_to_json($jsonp) {
 		$jsonp=trim($jsonp);
+		if(empty($jsonp)) throw new Exception('Invalid JSONP 0 : empty.<br/>');
 		//$res=preg_replace('#\w+\((.*)\)#iU','\1', $jsonp);
 		if(!in_array($jsonp[0], array('[','{'))) {
 			//var_dump($jsonp);
+			if(strpos($jsonp, '(')===false) throw new Exception('Invalid JSONP 0a: no (.<br/>');
 			//$jsonp=explode('(', $jsonp); array_shift($jsonp); $jsonp=implode('(',$jsonp); // remove before first (
 			$jsonp=substr($jsonp, strpos($jsonp, '(')+1);
+			if(strpos($jsonp, ')')===false) throw new Exception('Invalid JSONP 0b: no ).<br/>');
 			//$jsonp=explode(')',$jsonp); array_pop($jsonp); $jsonp=implode(')',$jsonp); // remove after last )
 			$jsonp=substr($jsonp, 0, strrpos($jsonp, ')'));
 			//var_dump($jsonp);
@@ -232,6 +235,7 @@ class SitePlugin
 	
 	public function json_to_json($json) {
 		static $end_match=array('['=>']','{'=>'}');
+		if(empty($json)) throw new Eception('Invalid JSON 0 : empty.<br/>');
 		if(! substr($json,-1)==$end_match[$json[0]]) throw new Exception('invalid JSON 1.<br/>'.var_export(substr($json,-1),true));
 		//$json=json_encode(json_decode($json, false, 512, JSON_UNESCAPED_SLASHES), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_NUMERIC_CHECK );
 		$json=str_replace('\/','/',$json);

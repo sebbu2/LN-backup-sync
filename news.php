@@ -51,8 +51,8 @@ $rr_books=$rr->get_watches();
 ob_start();
 
 $head=array('title',
- 'WLNUpdate cur',
- 'WebNovel cur', 'WebNovel last',
+ 'WLNUpdate cur', 'WLNUpdate last',
+ 'WebNovel cur', 'WebNovel last-free', 'WebNovel last-paid',
  'RoyalRoad cur', 'RoyalRoad last',
  'start', 'pos', 'last',
  'msg');
@@ -70,23 +70,108 @@ foreach($wln_order as $id=>$list) {
 		$row['title']=rawurldecode($row['title']);
 		$row['title']=html_entity_decode($row['title']);
 		$row['WLNUpdate cur']=$wln1[1]->chp;
+		$row['WLNUpdate last']=$wln1[2]->chp;
 		if(array_key_exists($entry, $cor_wln)) {
 			$wln2=$cor_wln[$entry];
 			if(!is_null($wln2['wn'])) {
 				$wn1=$wn_books[$wln2['wn']];
-				$row['WebNovel cur']=$wn1->readToChapterNum;
-				$row['WebNovel last']=$wn1->totalChapterNum;//readToChapterIndex or totalChapterNum or newChapterIndex
+				$neg_chp=0;
+				try {
+					$wn_chps=$wn->get_chapter_list_cached($wln2['wn']);
+				}
+				catch(Exception $e) {
+					if($e->getTrace()[0]['args'][0]=='Something went wrong. And we are reporting a custom error message.') {
+						if(!array_key_exists('msg', $row)) $row['msg']='';
+						$row['msg'].='empty wn: '.__LINE__.' + ';
+					}
+					$wn_chps=NULL;
+				}
+				if(is_null($wn_chps)) {
+					/*var_dump($wn1);
+					var_dump($wln2['wn']);//*/
+					try {
+						$wn_chps=$wn->get_chapter_list($wln2['wn']);
+					}
+					catch(Exception $e) {
+						if($e->getTrace()[0]['args'][0]=='Something went wrong. And we are reporting a custom error message.') {
+							if(!array_key_exists('msg', $row)) $row['msg']='';
+							$row['msg'].='empty wn: '.__LINE__.' + ';
+						}
+						$wn_chps=NULL;
+					}
+					if(!array_key_exists('msg', $row)) $row['msg']='';
+					$row['msg'].='updating wn: '.__LINE__.' + ';
+				}
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && !exists($wn_chps->data, 'volumeItems')) {
+					var_dump($wn1, $wn_chps);die();
+				}
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && count($wn_chps->data->volumeItems)>0) {
+					if(
+						(exists($wn_chps->data->volumeItems[0], 'volumeId') && $wn_chps->data->volumeItems[0]->volumeId==0) ||
+						(exists($wn_chps->data->volumeItems[0], 'index') && $wn_chps->data->volumeItems[0]->index==0)
+					) {
+						$neg_chp=count($wn_chps->data->volumeItems[0]->chapterItems);
+					}
+					if( !exists($wn_chps->data->volumeItems[0], 'volumeId') && !exists($wn_chps->data->volumeItems[0], 'index'))
+						throw new BadMethodCallException();
+				}
+				$last_free=0;
+				$found=false;
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && exists($wn_chps->data, 'volumeItems'))
+					foreach($wn_chps->data->volumeItems as $vol) {
+						foreach($vol->chapterItems as $chp) {
+							if($chp->chapterLevel==0) {
+								if(exists($chp, 'chapterIndex') && $chp->chapterIndex>$last_free) {
+									$last_free=$chp->chapterIndex;
+								}
+								else if(exists($chp, 'index') && $chp->index>$last_free) {
+									$last_free=$chp->index;
+								}
+								else if(!exists($chp, 'chapterIndex') && !exists($chp, 'index')) {
+									var_dump($chp);
+									throw new BadMethodCallException();
+								}
+							}
+							if(exists($chp, 'chapterId') && $chp->chapterId==$wn1->newChapterId) $found=true;
+							else if(exists($chp, 'id') && $chp->id==$wn1->newChapterId) $found=true;
+							else if(!exists($chp, 'chapterId') && !exists($chp, 'id')) {
+								var_dump($chp);
+								throw new BadMethodCallException();
+							}
+						}
+					}
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && !$found) {
+					//var_dump($wn1, $wn_chps->data->volumeItems[0]->chapterItems[0]);die();
+					$wn_chps=$wn->get_chapter_list($wln2['wn']);
+					if(!array_key_exists('msg', $row)) $row['msg']='';
+					$row['msg'].='updating wn: '.__LINE__.' + ';
+				}
+				// TODO : redo parse result
+				$row['WebNovel last-free']=$last_free;
+				if(exists($wn1, 'readToChapterIndex')) $row['WebNovel cur']=$wn1->readToChapterIndex;
+				else $row['WebNovel cur']=$wn1->readToChapterNum-$neg_chp;
+				//newChapterId/Index or readToChapterId/Index/Num or totalChapterNum
+				if(exists($wn1, 'totalChapterIndex')) $row['WebNovel last-paid']=$wn1->totalChapterIndex;
+				else $row['WebNovel last-paid']=$wn1->totalChapterNum-$neg_chp;
 			}
 			if(!is_null($wln2['rr'])) {
 				$rr1=$rr_books[$wln2['rr']];
 				$rr2=$rr->get_chapter_list_cached($wln2['rr']);
 				if(exists($rr1, 'last-read-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-read-title')) );
-					if(count($found)==0) $rr2=$rr->get_chapter_list($wln2['rr']);
+					if(count($found)==0) {
+						$rr2=$rr->get_chapter_list($wln2['rr']);
+						if(!array_key_exists('msg', $row)) $row['msg']='';
+						$row['msg'].='updating rr: '.__LINE__.' + ';
+					}
 				}
 				if(exists($rr1, 'last-upd-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-upd-title')) );
-					if(count($found)==0) $rr2=$rr->get_chapter_list($wln2['rr']);
+					if(count($found)==0) {
+						$rr2=$rr->get_chapter_list($wln2['rr']);
+						if(!array_key_exists('msg', $row)) $row['msg']='';
+						$row['msg'].='updating rr: '.__LINE__.' + ';
+					}
 				}
 				if(count($rr2)>0) {
 					$rr2a=count($rr2)-1;

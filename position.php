@@ -19,7 +19,7 @@ class Position
 	public const page = array('cbr', 'cbz', 'pdf');
 	private $ar=array();
 	private $ar2=array();
-	private $ar3=array();
+	public $ar3=array();
 	public $old=array();
 	public $others=array();
 	public $dev_1=array();
