@@ -851,6 +851,12 @@
         "name": "Mutagen",
         "list": "QIDIAN original"
     },
+    "90542": {
+        "wn": null,
+        "rr": 15935,
+        "name": "There is no Epic Loot, Only Puns",
+        "list": "duplicates"
+    },
     "90644": {
         "wn": "12414006605410205",
         "rr": null,
@@ -2172,7 +2178,7 @@
         "list": "RoyalRoad"
     },
     "136682": {
-        "wn": null,
+        "wn": "11492897005406105",
         "rr": 30321,
         "name": "Unbound (LitRPG Portal Fantasy)",
         "list": "RoyalRoad"
@@ -2506,5 +2512,11 @@
         "rr": null,
         "name": "Cultivation! My Augmented Statuses Have Unlimited Duration",
         "list": "QIDIAN plan to read"
+    },
+    "141706": {
+        "wn": null,
+        "rr": 46709,
+        "name": "Enduring Good : [The Rationalist's Guide to Cultivation and Cosmic Abominations from Beyond the Stars]",
+        "list": "RoyalRoad"
     }
 }

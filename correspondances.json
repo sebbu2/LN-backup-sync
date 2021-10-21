@@ -1736,6 +1736,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 141706,
+        "wn": null,
+        "rr": 46709,
+        "name": "Enduring Good : [The Rationalist's Guide to Cultivation and Cosmic Abominations from Beyond the Stars]",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 140134,
         "wn": null,
         "rr": 46047,
@@ -2416,7 +2423,7 @@
     },
     {
         "wln": 136682,
-        "wn": null,
+        "wn": "11492897005406105",
         "rr": 30321,
         "name": "Unbound (LitRPG Portal Fantasy)",
         "list": "RoyalRoad"
@@ -2692,6 +2699,13 @@
         "wn": null,
         "rr": 37438,
         "name": "Salvos [A Monster Evolution LitRPG]",
+        "list": "duplicates"
+    },
+    {
+        "wln": 90542,
+        "wn": null,
+        "rr": 15935,
+        "name": "There is no Epic Loot, Only Puns",
         "list": "duplicates"
     },
     {

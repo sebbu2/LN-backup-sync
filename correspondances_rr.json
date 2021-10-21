@@ -144,10 +144,10 @@
         "list": "RoyalRoad plan to read"
     },
     "15935": {
-        "wln": 62277,
+        "wln": 90542,
         "wn": null,
-        "name": "There is no Epic Loot here, Only Puns.",
-        "list": "RoyalRoad"
+        "name": "There is no Epic Loot, Only Puns",
+        "list": "duplicates"
     },
     "16946": {
         "wln": 63197,
@@ -319,7 +319,7 @@
     },
     "30321": {
         "wln": 136682,
-        "wn": null,
+        "wn": "11492897005406105",
         "name": "Unbound (LitRPG Portal Fantasy)",
         "list": "RoyalRoad"
     },
@@ -957,6 +957,12 @@
         "wln": 140724,
         "wn": null,
         "name": "Steamforged Sorcery [A Steampunk LitRPG]",
+        "list": "RoyalRoad"
+    },
+    "46709": {
+        "wln": 141706,
+        "wn": null,
+        "name": "Enduring Good : [The Rationalist's Guide to Cultivation and Cosmic Abominations from Beyond the Stars]",
         "list": "RoyalRoad"
     },
     "47017": {
