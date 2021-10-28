@@ -1,9 +1,11 @@
-news.php
-	add neg chp to last (&cur?)
-	improve filename check (all names)
+config.php
+	rename key/secret vars
+	remove DROPBOX constant, replace with direct()
+	add token support to $accounts
 
-update_lists.php
-	recode to pos&cor
+correspondances.php
+	change to class
+	add correspondances_pos.json
 
 dropbox.php
 	recode to pos&cor
@@ -11,21 +13,68 @@ dropbox.php
 dropbox2.php
 	recode to pos&cor
 
+dropbox.inc.php
+	add upload
+	add exists
+	add folder management
+
+news.php
+	check neg chp to last (&cur?)
+	improve filename check (all names) (correspondances_pos.json)
+	change to class
+	restyle from solution1 to solution2 (easy)
+	add color
+	add skipping lines options
+
+position.php
+	add save/load from files into the class
+
+retr.php
+	add wn history&collection
+	add rr favorite, read later, history
+
 royalroad.php
 	add search
 	add add (to)
 	add favorite, read later, history
 	add update
 
-wlnupdates.php
-	checklogin?
+SitePlugin.inc.php
+	improve error management of the json part
+	refactor get/set into separate class/file ?
+	separate get/set for access to options (and separate by file_get/put_contents vs curl)
+
+tables.inc.php
+	verify list of methods
+	make class?
+
+update_lists.php
+	recode to pos&cor
 
 webnovel.php
 	add/check history & collection
+	improve support of empty (no chapters) novels
 
-retr.php
-	add wn history&collection
-	add rr favorite, read later, history
+webnovel_news.php
+	improve support of chapters (or absence of it)
+
+wlnupdates.php
+	checklogin?
+
+@@@
+
+royalroad, webnovel, wlnupdates
+	add iterator or generators?
+	normalize methods
+	add methods for access to replaced attributes/keys
+	add class for individual novel?
+	add hotfixes (manual jsons, like empty novels, names)
+	add diff between sources (added/removed chapters)
+
+*
+	move settings to config.php
+
+@@@
 
 lists:
 	add everything to wln

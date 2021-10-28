@@ -128,7 +128,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$fn='webnovel/GetChapterList_'.$book->bookId.'.json';
 					if(file_exists($fn)) $timestamp=filemtime($fn);
 					else $timestamp=time();
-					if(is_object($res) && ($res->code!=0 || $res->data===0) ) {
+					if(is_object($res) && $res->code != 1006 && ($res->code!=0 || $res->data===0) ) {
 						var_dump('file', $book->bookId, $book->bookName, $entry['title'], $res);
 						unlink('webnovel/GetChapterList_'.$book->bookId.'.json');
 						die();
@@ -139,17 +139,17 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$res=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$book->bookId.'.json')),false,512,JSON_THROW_ON_ERROR);
 					$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 					//var_dump($res);die();
-					if(!is_object($res) || !property_exists($res, 'code') || $res->code!=0 || !property_exists($res, 'data') || $res->data===0 || !property_exists($res->data, 'bookInfo')) {
+					if(!is_object($res) || !property_exists($res, 'code') || ($res->code!=0 && $res->code != 1006) || !property_exists($res, 'data') || $res->data===0 || ($res->code!=1006 && (!is_object($res->data) || !property_exists($res->data, 'bookInfo'))) ) {
 						var_dump('request', $book->bookId, $book->bookName, $entry['title'], $res);
 						unlink('webnovel/GetChapterList_'.$book->bookId.'.json');
 						die();
 					}
 				}
-				if( is_object($res) && ( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )) {
+				/*if( is_object($res) && ( !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )) {
 					//no info
 					var_dump($book->bookId, $entry['title'], $entry['title'], $res);die();
-				}
-				if( !is_object($res) || count($res->data->volumeItems)==0 ) {
+				}//*/
+				if( !is_object($res) || !is_object($res->data) || count($res->data->volumeItems)==0 ) {
 					//empty book
 					try {
 						$res=@$wn->get_chapter_list($book->bookId);

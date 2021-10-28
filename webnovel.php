@@ -447,11 +447,11 @@ class WebNovel extends SitePlugin
 			$books2[$b->bookId]=$b;
 			if($b->novelType==0) {
 				$res=$this->get_chapter_list_cached($b->bookId);
-				if(is_object($res) && !property_exists($res, 'data')) {
+				if( (is_object($res) && !property_exists($res, 'data')) || (is_object($res) && property_exists($res, 'data') && !is_object($res->data)) ) {
 					$res=$this->get_chapter_list($b->bookId);
 				}
 				$subName='';
-				if(!is_object($res) || !property_exists($res->data->bookInfo, 'bookSubName') || strlen($res->data->bookInfo->bookSubName)==0) {
+				if(!is_object($res) || !property_exists($res, 'data') || !is_object($res->data) || !property_exists($res->data, 'bookInfo') || !property_exists($res->data->bookInfo, 'bookSubName') || strlen($res->data->bookInfo->bookSubName)==0) {
 					$res2=$this->get_info_html_cached($b->bookId);
 					if(is_object($res2)) {
 						$subName=$res2->bookInfo->bookSubName;
