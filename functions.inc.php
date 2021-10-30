@@ -14,7 +14,7 @@ function name_simplify($name, $type=0) {
 	//'-'
 	static $ar1=array('_', ':', ',', '/', '  ');
 	//'+'
-	static $ar2=array(',', '\'', '*', '—', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0");
+	static $ar2=array(',', '\'', '*', '—', '^', '=', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0");
 	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
@@ -35,6 +35,7 @@ function name_simplify($name, $type=0) {
 		$name=str_replace(array(' ', '_'), '*', $name);
 	}
 	//$name=strtolower($name);
+	$name=str_replace('  ', ' ', $name);
 	return $name;
 }
 function name_compare($name1, $name2, $type=0) {

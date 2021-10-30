@@ -325,8 +325,8 @@ if(direct()) {
 	$per_rr_cor0=number_format( (count($cor_rr)/$wln_rr*100), 2);
 	$per_rr_cor2=number_format( (count($cor_rr)/count($follows)*100), 2);
 	var_dump(array(
-	'wln: wln_wn/wn'=>$per_wn, 'wln: cor_wn/wlr_wn'=>$per_wn_cor0, 'wln: cor_wn/wn'=>$per_wn_cor2,
-	'wln: wln_rr/rr'=>$per_rr, 'wln: cor_rr/wlr_rr'=>$per_rr_cor0, 'wln: cor_rr/rr'=>$per_rr_cor2,
+	'wln: wln_wn/wn'=>$per_wn, 'wln: cor_wn/wln_wn'=>$per_wn_cor0, 'wln: cor_wn/wn'=>$per_wn_cor2,
+	'wln: wln_rr/rr'=>$per_rr, 'wln: cor_rr/wln_rr'=>$per_rr_cor0, 'wln: cor_rr/rr'=>$per_rr_cor2,
 	));
 
 	file_put_contents('correspondances.json',json_encode($cor, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));

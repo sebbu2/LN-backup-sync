@@ -102,10 +102,10 @@ foreach($wln_order as $id=>$list) {
 					if(!array_key_exists('msg', $row)) $row['msg']='';
 					$row['msg'].='updating wn: '.__LINE__.' + ';
 				}
-				if(!is_null($wn_chps) && exists($wn_chps, 'data') && !exists($wn_chps->data, 'volumeItems')) {
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && (is_object($wn_chps->data) && !exists($wn_chps->data, 'volumeItems'))) {
 					var_dump($wn1, $wn_chps);die();
 				}
-				if(!is_null($wn_chps) && exists($wn_chps, 'data') && count($wn_chps->data->volumeItems)>0) {
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && is_object($wn_chps->data) && count($wn_chps->data->volumeItems)>0) {
 					if(
 						(exists($wn_chps->data->volumeItems[0], 'volumeId') && $wn_chps->data->volumeItems[0]->volumeId==0) ||
 						(exists($wn_chps->data->volumeItems[0], 'index') && $wn_chps->data->volumeItems[0]->index==0)
@@ -117,7 +117,7 @@ foreach($wln_order as $id=>$list) {
 				}
 				$last_free=0;
 				$found=false;
-				if(!is_null($wn_chps) && exists($wn_chps, 'data') && exists($wn_chps->data, 'volumeItems'))
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && is_object($wn_chps->data) && exists($wn_chps->data, 'volumeItems'))
 					foreach($wn_chps->data->volumeItems as $vol) {
 						foreach($vol->chapterItems as $chp) {
 							if($chp->chapterLevel==0) {
