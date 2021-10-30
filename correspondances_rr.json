@@ -3,13 +3,25 @@
         "wln": 3166,
         "wn": null,
         "name": "Necromancer by Halosty",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "98": {
         "wln": 3168,
         "wn": null,
         "name": "Fantasia",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "403": {
+        "wln": 2406,
+        "wn": null,
+        "name": "Don't Fear the Reaper",
+        "list": "RoyalRoad plan to read"
+    },
+    "527": {
+        "wln": 142289,
+        "wn": null,
+        "name": "The Cleansing",
+        "list": "RoyalRoad plan to read"
     },
     "544": {
         "wln": 2410,
@@ -23,11 +35,23 @@
         "name": "The Rude Time Stopper",
         "list": "stalled"
     },
+    "807": {
+        "wln": 2408,
+        "wn": null,
+        "name": "Spectral Regalia",
+        "list": "RoyalRoad plan to read"
+    },
+    "1054": {
+        "wln": 2468,
+        "wn": null,
+        "name": "Tales of the Blood Princess (expired version)",
+        "list": "RoyalRoad plan to read"
+    },
     "1439": {
         "wln": 2405,
         "wn": null,
         "name": "Forgotten Conqueror",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "1618": {
         "wln": 2801,
@@ -35,11 +59,35 @@
         "name": "Summoned Hero",
         "list": "on-hold"
     },
+    "1729": {
+        "wln": 2423,
+        "wn": null,
+        "name": "Change: New World",
+        "list": "RoyalRoad plan to read"
+    },
     "1992": {
         "wln": 2487,
         "wn": null,
         "name": "The New Journey of an Old Soul",
         "list": "RoyalRoad on-hold"
+    },
+    "2300": {
+        "wln": 2522,
+        "wn": null,
+        "name": "The Parasite of knowledge",
+        "list": "RoyalRoad plan to read"
+    },
+    "2720": {
+        "wln": 142286,
+        "wn": null,
+        "name": "The Third Hero",
+        "list": "RoyalRoad plan to read"
+    },
+    "2850": {
+        "wln": 2860,
+        "wn": null,
+        "name": "Beyond?",
+        "list": "RoyalRoad plan to read"
     },
     "3666": {
         "wln": 32381,
@@ -53,10 +101,34 @@
         "name": "100 Luck and the Dragon Tamer Skill!",
         "list": "reading"
     },
-    "4242": {
-        "wln": 2844,
+    "3754": {
+        "wln": 32528,
         "wn": null,
-        "name": "World Seed (Viken)",
+        "name": "Andur's Oneshot collection",
+        "list": "RoyalRoad plan to read"
+    },
+    "4144": {
+        "wln": 33197,
+        "wn": null,
+        "name": "Slave Tyrant",
+        "list": "RoyalRoad plan to read"
+    },
+    "4242": {
+        "wln": 33459,
+        "wn": null,
+        "name": "World Seed",
+        "list": "RoyalRoad plan to read"
+    },
+    "4293": {
+        "wln": 35956,
+        "wn": null,
+        "name": "The Iron Teeth: A Goblin's Tale",
+        "list": "RoyalRoad plan to read"
+    },
+    "4676": {
+        "wln": 34389,
+        "wn": null,
+        "name": "How Do You QA Test a Tsundere Android!?",
         "list": "RoyalRoad plan to read"
     },
     "5029": {
@@ -65,17 +137,41 @@
         "name": "The Blue Mage Raised by Dragons",
         "list": "RoyalRoad"
     },
+    "5132": {
+        "wln": 35242,
+        "wn": null,
+        "name": "(On Hold) Regarding my time being a God, it was fun",
+        "list": "RoyalRoad plan to read"
+    },
+    "5696": {
+        "wln": 35818,
+        "wn": null,
+        "name": "God's Trials",
+        "list": "RoyalRoad plan to read"
+    },
+    "5701": {
+        "wln": 35819,
+        "wn": null,
+        "name": "Savage Divinity",
+        "list": "RoyalRoad on-hold"
+    },
     "6752": {
         "wln": 42756,
         "wn": null,
         "name": "Lament of the Fallen",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "7183": {
+        "wln": 43638,
+        "wn": null,
+        "name": "Crashed Into Fantasy",
+        "list": "RoyalRoad plan to read"
     },
     "7509": {
         "wln": 44152,
         "wn": null,
         "name": "World Keeper",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "7578": {
         "wln": 44214,
@@ -83,17 +179,35 @@
         "name": "Demon's Journey",
         "list": "RoyalRoad"
     },
+    "7599": {
+        "wln": 44250,
+        "wn": null,
+        "name": "How To Tame Your Princess",
+        "list": "RoyalRoad plan to read"
+    },
     "8220": {
         "wln": 78250,
         "wn": null,
         "name": "Mythran's Master Of All - Continued (Completed!)",
         "list": "RoyalRoad plan to read"
     },
+    "8463": {
+        "wln": 49612,
+        "wn": null,
+        "name": "The Arcane Emperor",
+        "list": "RoyalRoad plan to read"
+    },
+    "8894": {
+        "wln": 50921,
+        "wn": null,
+        "name": "Everybody Loves Large Chests",
+        "list": "RoyalRoad plan to read"
+    },
     "9500": {
         "wln": 53949,
         "wn": null,
         "name": "The Eagle's Flight",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "10381": {
         "wln": 56545,
@@ -105,19 +219,19 @@
         "wln": 57391,
         "wn": null,
         "name": "The Legend of Randidly Ghosthound",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "11397": {
         "wln": 57637,
         "wn": null,
         "name": "The Dao of Magic",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "11588": {
         "wln": 57840,
         "wn": null,
         "name": "The Void Wolf",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "11620": {
         "wln": 58106,
@@ -129,7 +243,25 @@
         "wln": 59496,
         "wn": null,
         "name": "Small Chests Are Fine Too",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "13187": {
+        "wln": 59649,
+        "wn": null,
+        "name": "Silver Death (Re)",
+        "list": "RoyalRoad stalled"
+    },
+    "14070": {
+        "wln": 60595,
+        "wn": null,
+        "name": "Master Of Everything (Completed?)",
+        "list": "RoyalRoad plan to read"
+    },
+    "14167": {
+        "wln": 60663,
+        "wn": null,
+        "name": "Metaworld Chronicles",
+        "list": "RoyalRoad plan to read"
     },
     "14396": {
         "wln": 60905,
@@ -138,7 +270,7 @@
         "list": "RoyalRoad plan to read"
     },
     "14558": {
-        "wln": 71124,
+        "wln": 61294,
         "wn": null,
         "name": "Crystal Shards Online - A LitRPG Series",
         "list": "RoyalRoad plan to read"
@@ -159,7 +291,7 @@
         "wln": 74196,
         "wn": null,
         "name": "Forge of Destiny",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "21220": {
         "wln": 34875,
@@ -177,13 +309,25 @@
         "wln": 74909,
         "wn": null,
         "name": "Skyclad",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "21450": {
+        "wln": 75379,
+        "wn": null,
+        "name": "The Power of Formations",
+        "list": "RoyalRoad plan to read"
     },
     "21581": {
         "wln": 75971,
         "wn": null,
         "name": "The Reborn Runesmith",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "21817": {
+        "wln": 83659,
+        "wn": null,
+        "name": "The Prince of Cats",
+        "list": "RoyalRoad plan to read"
     },
     "22518": {
         "wln": 2768,
@@ -203,17 +347,29 @@
         "name": "It's the Healer's Life for Me",
         "list": "RoyalRoad"
     },
+    "23240": {
+        "wln": 88690,
+        "wn": null,
+        "name": "Dark Wizard's Case. LitRPG series",
+        "list": "RoyalRoad plan to read"
+    },
     "24241": {
         "wln": 91203,
         "wn": null,
         "name": "Sundered Soul: A cultivation Wuxia\/Xianxia novel",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "24412": {
+        "wln": 93970,
+        "wn": null,
+        "name": "Dragon Knight Prophecy",
+        "list": "RoyalRoad plan to read"
     },
     "24709": {
         "wln": 94313,
         "wn": null,
         "name": "Defiance of the Fall",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "25082": {
         "wln": 97112,
@@ -225,13 +381,13 @@
         "wln": 98528,
         "wn": null,
         "name": "Delve",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "25275": {
         "wln": 131565,
         "wn": null,
         "name": "Forgotten",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "25299": {
         "wln": 98792,
@@ -239,17 +395,29 @@
         "name": "Misadventures of a Rampaging Demon",
         "list": "RoyalRoad stalled"
     },
+    "25562": {
+        "wln": 101588,
+        "wn": null,
+        "name": "Though the Heavens Should Fall",
+        "list": "RoyalRoad plan to read"
+    },
     "25568": {
         "wln": 97804,
         "wn": null,
         "name": "My Dungeon Life: Rise of the Slave Harem",
         "list": "RoyalRoad"
     },
+    "26127": {
+        "wln": 107247,
+        "wn": null,
+        "name": "A Beginner's Guide to Napping, Sunbathing, and Slaughtering Your Prey",
+        "list": "RoyalRoad plan to read"
+    },
     "26149": {
         "wln": 107979,
         "wn": null,
         "name": "Skybound",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "26294": {
         "wln": 107213,
@@ -275,17 +443,29 @@
         "name": "Ar'Kendrithyst",
         "list": "RoyalRoad"
     },
+    "27213": {
+        "wln": 113848,
+        "wn": null,
+        "name": "Against the Heaven's Will",
+        "list": "RoyalRoad plan to read"
+    },
     "27325": {
         "wln": 115382,
         "wn": null,
         "name": "Infinite Realm: Monsters \u0026 Legends",
         "list": "RoyalRoad plan to read"
     },
+    "27757": {
+        "wln": 113779,
+        "wn": null,
+        "name": "Shut Up: You Nymphomaniac Evil Sword",
+        "list": "RoyalRoad plan to read"
+    },
     "27872": {
         "wln": 108931,
         "wn": null,
         "name": "Confessions of the Magpie Wizard",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "28004": {
         "wln": 112909,
@@ -293,11 +473,29 @@
         "name": "Kalar's continent",
         "list": "QIDIAN stalled"
     },
+    "28307": {
+        "wln": 109221,
+        "wn": null,
+        "name": "The Zombie Knight Saga",
+        "list": "RoyalRoad plan to read"
+    },
     "28385": {
         "wln": 59514,
         "wn": "18923811406743005",
         "name": "Kairos",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "28656": {
+        "wln": 109754,
+        "wn": null,
+        "name": "Dawn Weaver - a tale of Dragon Riders",
+        "list": "duplicates"
+    },
+    "29540": {
+        "wln": 110575,
+        "wn": null,
+        "name": "Evil Overlord: The Makening",
+        "list": "RoyalRoad plan to read"
     },
     "29669": {
         "wln": 110649,
@@ -315,25 +513,31 @@
         "wln": 111209,
         "wn": null,
         "name": "Headpats",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "30321": {
         "wln": 136682,
         "wn": "11492897005406105",
         "name": "Unbound (LitRPG Portal Fantasy)",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "30605": {
         "wln": 81989,
         "wn": null,
         "name": "Magnus",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "30650": {
         "wln": 111540,
         "wn": "16044382105736405",
         "name": "Evil Goddess System",
         "list": "QIDIAN plan to read"
+    },
+    "30737": {
+        "wln": 111631,
+        "wn": null,
+        "name": "The Humble Life of a Skill Trainer",
+        "list": "RoyalRoad"
     },
     "31062": {
         "wln": 112288,
@@ -357,7 +561,13 @@
         "wln": 112555,
         "wn": null,
         "name": "The Menocht Loop",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "31643": {
+        "wln": 129203,
+        "wn": null,
+        "name": "The Cursed Witch (Book One)",
+        "list": "RoyalRoad plan to read"
     },
     "32067": {
         "wln": 115553,
@@ -369,13 +579,19 @@
         "wln": 119192,
         "wn": null,
         "name": "Oak: A Tree's Quest",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "32576": {
         "wln": 119029,
         "wn": null,
         "name": "Villager Three",
         "list": "RoyalRoad"
+    },
+    "32615": {
+        "wln": 116456,
+        "wn": null,
+        "name": "Rend",
+        "list": "RoyalRoad plan to read"
     },
     "32908": {
         "wln": 120338,
@@ -387,12 +603,24 @@
         "wln": 116777,
         "wn": null,
         "name": "My Cerberus Girlfriend",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "33013": {
         "wln": 119333,
         "wn": null,
         "name": "Letters From a Lost Bird",
+        "list": "RoyalRoad plan to read"
+    },
+    "33020": {
+        "wln": 116733,
+        "wn": null,
+        "name": "Blessed Time",
+        "list": "RoyalRoad plan to read"
+    },
+    "33283": {
+        "wln": 117392,
+        "wn": null,
+        "name": "Aoi",
         "list": "RoyalRoad plan to read"
     },
     "33363": {
@@ -405,19 +633,19 @@
         "wln": 118806,
         "wn": null,
         "name": "I Became a [Biologist] in a Fantasy World!",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "33386": {
         "wln": 120036,
         "wn": null,
         "name": "Soul Flames",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "33600": {
         "wln": 119007,
         "wn": null,
         "name": "Stray Cat Strut \\u2060\\u2014 A Young Lady's Journey to Becoming a Pop-Up Samurai",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "33801": {
         "wln": 118863,
@@ -435,43 +663,55 @@
         "wln": 119103,
         "wn": null,
         "name": "Artificial Jelly",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "34473": {
         "wln": 118775,
         "wn": null,
         "name": "Shade Touched",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "34644": {
         "wln": 108849,
         "wn": null,
         "name": "Guildmaster",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "34708": {
+        "wln": 119100,
+        "wn": null,
+        "name": "Romantically Apocalyptic",
+        "list": "RoyalRoad plan to read"
     },
     "34777": {
         "wln": 120139,
         "wn": null,
         "name": "Hilda Finds a Home",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "34798": {
         "wln": 111530,
         "wn": null,
         "name": "Melas",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "35212": {
         "wln": 119984,
         "wn": null,
         "name": "Return of the Tower Conqueror",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "35289": {
+        "wln": 119970,
+        "wn": "17791889705928505",
+        "name": "Ito Ai: A New Dawn",
+        "list": "QIDIAN original"
     },
     "35549": {
         "wln": 120505,
         "wn": "19429965505299405",
         "name": "Prophecy Approved Companion",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "35774": {
         "wln": 127577,
@@ -479,17 +719,23 @@
         "name": "The Girl With The Crimson Eyes",
         "list": "RoyalRoad plan to read"
     },
+    "35942": {
+        "wln": 127755,
+        "wn": null,
+        "name": "Weakest Demon Queen Reincarnation: I Became a Living Armor?!",
+        "list": "RoyalRoad plan to read"
+    },
     "35958": {
         "wln": 127831,
         "wn": null,
         "name": "Fluff",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "36051": {
         "wln": 127902,
         "wn": null,
         "name": "Memories of the Fall",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "36065": {
         "wln": 128026,
@@ -507,7 +753,7 @@
         "wln": 128792,
         "wn": null,
         "name": "New Life of a Summoned Demoness",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "36371": {
         "wln": 128403,
@@ -525,7 +771,7 @@
         "wln": 129103,
         "wn": null,
         "name": "The Perfect Run",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "37016": {
         "wln": 129517,
@@ -537,13 +783,19 @@
         "wln": 128991,
         "wn": null,
         "name": "A Lonely Dungeon",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "37251": {
         "wln": 129558,
         "wn": null,
         "name": "Dead Tired",
         "list": "RoyalRoad plan to read"
+    },
+    "37333": {
+        "wln": 129566,
+        "wn": null,
+        "name": "Dungeon Item Shop",
+        "list": "RoyalRoad"
     },
     "37438": {
         "wln": 137125,
@@ -556,6 +808,12 @@
         "wn": "18495993905903905",
         "name": "Summoned as a Ghost in another world",
         "list": "RoyalRoad"
+    },
+    "37951": {
+        "wln": 130399,
+        "wn": null,
+        "name": "RE: Monarch",
+        "list": "RoyalRoad plan to read"
     },
     "38240": {
         "wln": 129191,
@@ -581,6 +839,18 @@
         "name": "Beware Of Chicken",
         "list": "RoyalRoad"
     },
+    "39751": {
+        "wln": 132824,
+        "wn": null,
+        "name": "Fates Parallel (A Xianxia\/Wuxia Inspired Cultivation Story)",
+        "list": "RoyalRoad plan to read"
+    },
+    "39903": {
+        "wln": 132927,
+        "wn": "19558560305625305",
+        "name": "AK - The Alchemy Kingdom",
+        "list": "QIDIAN plan to read"
+    },
     "40062": {
         "wln": 134120,
         "wn": null,
@@ -597,19 +867,25 @@
         "wln": 134291,
         "wn": "17996954306015705",
         "name": "Poison God's Heritage",
-        "list": "QIDIAN original"
+        "list": "QIDIAN on-hold"
     },
     "40237": {
         "wln": 133372,
         "wn": null,
         "name": "The Agartha Loop",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "40265": {
         "wln": 133726,
         "wn": null,
         "name": "Dungeon I\/O (Crafting)",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "40285": {
+        "wln": 133698,
+        "wn": null,
+        "name": "Morcster Chef",
+        "list": "RoyalRoad plan to read"
     },
     "40295": {
         "wln": 131420,
@@ -627,7 +903,7 @@
         "wln": 134080,
         "wn": null,
         "name": "The Obsidian Core",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "40601": {
         "wln": 133901,
@@ -639,25 +915,31 @@
         "wln": 135424,
         "wn": null,
         "name": "The Great Core's Paradox",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "40920": {
         "wln": 134370,
         "wn": null,
         "name": "The Path of Ascension",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "40929": {
         "wln": 137261,
         "wn": null,
         "name": "Gemstone Goblins (LitRPG)",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "40966": {
+        "wln": 134386,
+        "wn": null,
+        "name": "Living Armor",
+        "list": "RoyalRoad plan to read"
     },
     "41033": {
         "wln": 134559,
         "wn": null,
         "name": "Kairos: A Greek Myth LitRPG",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "41112": {
         "wln": 134638,
@@ -669,13 +951,19 @@
         "wln": 135083,
         "wn": null,
         "name": "Of Monstergirls and Men",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "41423": {
         "wln": 135126,
         "wn": null,
         "name": "Lever Action",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
+    },
+    "41434": {
+        "wln": 135289,
+        "wn": null,
+        "name": "Immortality.Upload (LitRPG: Athanasia - Book 1)",
+        "list": "RoyalRoad plan to read"
     },
     "41450": {
         "wln": 135227,
@@ -695,11 +983,17 @@
         "name": "The Programmer's Dungeon",
         "list": "RoyalRoad plan to read"
     },
+    "41511": {
+        "wln": 76403,
+        "wn": null,
+        "name": "Lost In Translation",
+        "list": "RoyalRoad plan to read"
+    },
     "41599": {
         "wln": 136294,
         "wn": null,
         "name": "Tian (A LitRPG Cultivation Isekai)",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "41618": {
         "wln": 135600,
@@ -711,13 +1005,13 @@
         "wln": 135642,
         "wn": null,
         "name": "The Houndsman [Base-Building LitRPG]",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "41764": {
         "wln": 135527,
         "wn": null,
         "name": "A Demon's Journey",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "41780": {
         "wln": 135988,
@@ -729,7 +1023,7 @@
         "wln": 135653,
         "wn": null,
         "name": "Somebody Stop Her",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad on-hold"
     },
     "41836": {
         "wln": 136498,
@@ -741,7 +1035,7 @@
         "wln": 135704,
         "wn": null,
         "name": "Slime Cafe",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "41881": {
         "wln": 135813,
@@ -753,7 +1047,7 @@
         "wln": 140043,
         "wn": null,
         "name": "The Isekai Police aka Earths Advocates",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "42124": {
         "wln": 135895,
@@ -797,6 +1091,18 @@
         "name": "Reincarnated as a Nightwalker",
         "list": "RoyalRoad"
     },
+    "42833": {
+        "wln": 136144,
+        "wn": null,
+        "name": "Abyssal Knight in the Modern World",
+        "list": "RoyalRoad plan to read"
+    },
+    "43013": {
+        "wln": 136860,
+        "wn": null,
+        "name": "All These Tentacles",
+        "list": "RoyalRoad plan to read"
+    },
     "43029": {
         "wln": 141225,
         "wn": null,
@@ -839,6 +1145,12 @@
         "name": "Dragons Dilemma",
         "list": "duplicates"
     },
+    "43673": {
+        "wln": 137361,
+        "wn": null,
+        "name": "Morcster Chef: Reckoning",
+        "list": "RoyalRoad plan to read"
+    },
     "43887": {
         "wln": 138800,
         "wn": null,
@@ -867,13 +1179,13 @@
         "wln": 139878,
         "wn": null,
         "name": "The Great, Unstoppable, Irreplaceable Alexander",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "44330": {
         "wln": 137935,
         "wn": null,
         "name": "Sin-Eater",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "44463": {
         "wln": 138165,
@@ -885,13 +1197,31 @@
         "wln": 138160,
         "wn": null,
         "name": "Heart of Dorkness",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "44599": {
         "wln": 138523,
         "wn": null,
         "name": "Exiled Aristocrat",
         "list": "RoyalRoad"
+    },
+    "44716": {
+        "wln": 138664,
+        "wn": null,
+        "name": "Drinker of the Yew: A Necromancer's Tale",
+        "list": "RoyalRoad plan to read"
+    },
+    "44992": {
+        "wln": 141387,
+        "wn": null,
+        "name": "Grimlords - Reborn Monster Evolution",
+        "list": "RoyalRoad plan to read"
+    },
+    "45003": {
+        "wln": 141131,
+        "wn": null,
+        "name": "Warlock's Gate [DROPPED]",
+        "list": "RoyalRoad plan to read"
     },
     "45090": {
         "wln": 141567,
@@ -903,7 +1233,7 @@
         "wln": 139312,
         "wn": null,
         "name": "Hero's Song - A Novel in Verse",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "45136": {
         "wln": 139062,
@@ -917,11 +1247,29 @@
         "name": "Mana Harvest The Sword to Ploughshares Saga LiTRPG",
         "list": "RoyalRoad"
     },
+    "45250": {
+        "wln": 141491,
+        "wn": null,
+        "name": "The Last Battlemage",
+        "list": "RoyalRoad plan to read"
+    },
+    "45434": {
+        "wln": 139257,
+        "wn": null,
+        "name": "Echoes of the Tribulation: An Historical Apocalypse LitRPG Series.",
+        "list": "RoyalRoad plan to read"
+    },
+    "45475": {
+        "wln": 139527,
+        "wn": null,
+        "name": "The Glint Spear",
+        "list": "RoyalRoad plan to read"
+    },
     "45603": {
         "wln": 139388,
         "wn": null,
         "name": "Rise of the Firstborn",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "45898": {
         "wln": 139970,
@@ -934,6 +1282,12 @@
         "wn": null,
         "name": "Everyone's a Catgirl!",
         "list": "RoyalRoad"
+    },
+    "46201": {
+        "wln": 140399,
+        "wn": null,
+        "name": "Useless Strength In The Modern World",
+        "list": "RoyalRoad plan to read"
     },
     "46319": {
         "wln": 141041,
@@ -953,6 +1307,12 @@
         "name": "The Demon's Rapture",
         "list": "RoyalRoad"
     },
+    "46550": {
+        "wln": 140994,
+        "wn": null,
+        "name": "The 3rd Law of Cultivation: Qi = MC^2",
+        "list": "RoyalRoad"
+    },
     "46638": {
         "wln": 140724,
         "wn": null,
@@ -962,8 +1322,14 @@
     "46709": {
         "wln": 141706,
         "wn": null,
-        "name": "Enduring Good : [The Rationalist's Guide to Cultivation and Cosmic Abominations from Beyond the Stars]",
+        "name": "Enduring Good [The Pharmacist's Guide to Eldritch Gods and How I Learned to Love Cultivation]",
         "list": "RoyalRoad"
+    },
+    "46742": {
+        "wln": 140816,
+        "wn": null,
+        "name": "In Another World's Apocalypse - An Isekai Loop LitRPG",
+        "list": "RoyalRoad plan to read"
     },
     "47017": {
         "wln": 141289,
@@ -975,6 +1341,18 @@
         "wln": 141538,
         "wn": null,
         "name": "Saga of Cosmic Journey",
+        "list": "RoyalRoad plan to read"
+    },
+    "47118": {
+        "wln": 141547,
+        "wn": null,
+        "name": "Dungeon Core? Nah, I Think I'll Just Get Super-Wealthy Instead",
+        "list": "RoyalRoad plan to read"
+    },
+    "47557": {
+        "wln": 100731,
+        "wn": null,
+        "name": "Underland",
         "list": "RoyalRoad plan to read"
     }
 }
