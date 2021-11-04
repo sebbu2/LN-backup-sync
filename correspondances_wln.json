@@ -1,9 +1,27 @@
 {
+    "1053": {
+        "wn": "10270042106004105",
+        "rr": null,
+        "name": "The Nine Cauldrons",
+        "list": "QIDIAN plan to read"
+    },
+    "1061": {
+        "wn": "6838665602002805",
+        "rr": null,
+        "name": "Transcending the Nine Heavens",
+        "list": "QIDIAN on-hold"
+    },
     "1274": {
         "wn": "8094085105004705",
         "rr": null,
         "name": "Coiling Dragon",
         "list": "QIDIAN completed"
+    },
+    "1580": {
+        "wn": "8094058605004605",
+        "rr": null,
+        "name": "The Desolate Era",
+        "list": "QIDIAN plan to read"
     },
     "2276": {
         "wn": "7213811205000505",
@@ -101,6 +119,12 @@
         "name": "Fantasia",
         "list": "RoyalRoad plan to read"
     },
+    "3202": {
+        "wn": null,
+        "rr": 3041,
+        "name": "New Game Plus",
+        "list": "RoyalRoad plan to read"
+    },
     "3728": {
         "wn": "12605355406106405",
         "rr": null,
@@ -123,12 +147,18 @@
         "wn": "17672760706369405",
         "rr": null,
         "name": "Blue Phoenix",
-        "list": "reading"
+        "list": "QIDIAN on-hold"
     },
     "32528": {
         "wn": null,
         "rr": 3754,
         "name": "Andur's Oneshot collection",
+        "list": "RoyalRoad plan to read"
+    },
+    "32702": {
+        "wn": null,
+        "rr": 4023,
+        "name": "Of Monsters \u0026 Men",
         "list": "RoyalRoad plan to read"
     },
     "33197": {
@@ -141,7 +171,7 @@
         "wn": "8411219605000605",
         "rr": null,
         "name": "Lord Xue Ying",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "33459": {
         "wn": null,
@@ -154,6 +184,18 @@
         "rr": null,
         "name": "Warlock of the Magus World",
         "list": "QIDIAN completed"
+    },
+    "34065": {
+        "wn": "20342441505387405",
+        "rr": null,
+        "name": "My Disciple Died Yet Again",
+        "list": "completed"
+    },
+    "34068": {
+        "wn": "8094038005004505",
+        "rr": null,
+        "name": "Sovereign of the Three Realms",
+        "list": "QIDIAN on-hold"
     },
     "34070": {
         "wn": "6838665602002905",
@@ -171,13 +213,19 @@
         "wn": "8445263505000705",
         "rr": null,
         "name": "Night Ranger",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
+    },
+    "34444": {
+        "wn": "7979375206002305",
+        "rr": null,
+        "name": "Experimental Log of the Crazy Lich",
+        "list": "QIDIAN plan to read"
     },
     "34481": {
         "wn": "6831852902001105",
         "rr": null,
         "name": "The Magus Era",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "34567": {
         "wn": "8628176105001205",
@@ -221,6 +269,24 @@
         "name": "(On Hold) Regarding my time being a God, it was fun",
         "list": "RoyalRoad plan to read"
     },
+    "35291": {
+        "wn": "6838665602003005",
+        "rr": null,
+        "name": "The Portal of Wonderland",
+        "list": "QIDIAN on-hold"
+    },
+    "35481": {
+        "wn": "6831851602001005",
+        "rr": null,
+        "name": "Realms In The Firmament",
+        "list": "QIDIAN on-hold"
+    },
+    "35666": {
+        "wn": "7978909506002105",
+        "rr": null,
+        "name": "RUC",
+        "list": "duplicates"
+    },
     "35818": {
         "wn": null,
         "rr": 5696,
@@ -237,7 +303,7 @@
         "wn": "8058318405003505",
         "rr": null,
         "name": "Wu Dong Qian Kun",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "35956": {
         "wn": null,
@@ -251,6 +317,18 @@
         "name": "Dominating Sword Immortal",
         "list": "QIDIAN plan to read"
     },
+    "41998": {
+        "wn": "12447167005470205",
+        "rr": null,
+        "name": "The Good-for-Nothing Seventh Miss",
+        "list": "QIDIAN on-hold"
+    },
+    "42052": {
+        "wn": "6831837102000205",
+        "rr": null,
+        "name": "Galactic Dark Net",
+        "list": "QIDIAN completed"
+    },
     "42305": {
         "wn": "8093963805004105",
         "rr": null,
@@ -263,17 +341,29 @@
         "name": "Cultivation Chat Group",
         "list": "QIDIAN on-hold"
     },
+    "42470": {
+        "wn": "8142774106003505",
+        "rr": null,
+        "name": "Stealing The Heavens",
+        "list": "QIDIAN on-hold"
+    },
     "42756": {
         "wn": null,
         "rr": 6752,
         "name": "Lament of the Fallen",
         "list": "RoyalRoad plan to read"
     },
+    "42866": {
+        "wn": null,
+        "rr": 6694,
+        "name": "The path to ascension",
+        "list": "RoyalRoad plan to read"
+    },
     "43213": {
         "wn": "11022818606234705",
         "rr": null,
         "name": "Genius Doctor: Black Belly Miss",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "43524": {
         "wn": "7931338406001705",
@@ -339,7 +429,7 @@
         "wn": "7979503906002405",
         "rr": null,
         "name": "Evil Emperor's Wild Consort",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "48694": {
         "wn": "8179195105005805",
@@ -357,7 +447,7 @@
         "wn": "8567129806000505",
         "rr": null,
         "name": "Paradise of Demons and Gods",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "49528": {
         "wn": "10696209406138605",
@@ -375,13 +465,13 @@
         "wn": "6838665402001705",
         "rr": null,
         "name": "Forty Millenniums of Cultivation",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "50236": {
         "wn": "11315851005335705",
         "rr": null,
         "name": "Godly Model Creator",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "50246": {
         "wn": "11927742205619905",
@@ -393,7 +483,7 @@
         "wn": "8179206705005905",
         "rr": null,
         "name": "Ghost Emperor Wild Wife: Dandy Eldest Miss",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "50921": {
         "wn": null,
@@ -425,17 +515,35 @@
         "name": "Library of Heaven's Path",
         "list": "QIDIAN completed"
     },
+    "54492": {
+        "wn": "6838665602003305",
+        "rr": null,
+        "name": "9 Coffins of the Immortals",
+        "list": "QIDIAN on-hold"
+    },
+    "54742": {
+        "wn": "7817011005001205",
+        "rr": null,
+        "name": "Strange Life of a Cat",
+        "list": "QIDIAN on-hold"
+    },
     "54999": {
         "wn": "6831855002001305",
         "rr": null,
         "name": "Strongest Abandoned Son",
         "list": "QIDIAN plan to read"
     },
+    "55155": {
+        "wn": "16489482206236705",
+        "rr": null,
+        "name": "Xyrin Empire",
+        "list": "QIDIAN plan to read"
+    },
     "56109": {
         "wn": "11046198105246705",
         "rr": null,
         "name": "Insanely Pampered Wife: Divine Doctor Fifth Young Miss",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "56289": {
         "wn": "7996858406002505",
@@ -471,7 +579,7 @@
         "wn": "11046203006242805",
         "rr": null,
         "name": "Prodigiously Amazing Weaponsmith",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "57391": {
         "wn": null,
@@ -485,11 +593,23 @@
         "name": "Age of Cosmic Exploration",
         "list": "QIDIAN plan to read"
     },
+    "57633": {
+        "wn": "7141974606000205",
+        "rr": null,
+        "name": "MMORPG: Rebirth of the Legendary Guardian",
+        "list": "QIDIAN on-hold"
+    },
     "57637": {
         "wn": null,
         "rr": 11397,
         "name": "The Dao of Magic",
         "list": "RoyalRoad plan to read"
+    },
+    "57675": {
+        "wn": "6831845202000705",
+        "rr": null,
+        "name": "Time Smuggling Starting from the Year 2000",
+        "list": "QIDIAN on-hold"
     },
     "57678": {
         "wn": "6838665602002105",
@@ -513,7 +633,7 @@
         "wn": "11046193105246605",
         "rr": null,
         "name": "Mesmerizing Ghost Doctor",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "57840": {
         "wn": null,
@@ -525,7 +645,7 @@
         "wn": "11046205305246905",
         "rr": null,
         "name": "The Anarchic Consort",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "58106": {
         "wn": null,
@@ -543,13 +663,43 @@
         "wn": "7141993106000405",
         "rr": null,
         "name": "War Sovereign Soaring The Heavens",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
+    },
+    "58556": {
+        "wn": null,
+        "rr": 12024,
+        "name": "The new world",
+        "list": "RoyalRoad plan to read"
+    },
+    "58738": {
+        "wn": "7618111306000905",
+        "rr": null,
+        "name": "I Am Supreme",
+        "list": "QIDIAN on-hold"
     },
     "58887": {
         "wn": "7669823706001105",
         "rr": null,
         "name": "Fishing the Myriad Heavens",
         "list": "QIDIAN stalled"
+    },
+    "58922": {
+        "wn": "7624928106001005",
+        "rr": null,
+        "name": "Jun Jiuling",
+        "list": "QIDIAN on-hold"
+    },
+    "59292": {
+        "wn": "7911477905002105",
+        "rr": null,
+        "name": "Cthulhu Gonfalon",
+        "list": "QIDIAN on-hold"
+    },
+    "59397": {
+        "wn": "6838665602003205",
+        "rr": null,
+        "name": "Tempest of the Battlefield",
+        "list": "QIDIAN on-hold"
     },
     "59496": {
         "wn": null,
@@ -579,7 +729,7 @@
         "wn": "8335460805000105",
         "rr": null,
         "name": "Monster Paradise",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "59649": {
         "wn": null,
@@ -587,11 +737,23 @@
         "name": "Silver Death (Re)",
         "list": "RoyalRoad stalled"
     },
+    "59771": {
+        "wn": "8143258106003605",
+        "rr": null,
+        "name": "Legend of Ling Tian",
+        "list": "QIDIAN on-hold"
+    },
     "60014": {
         "wn": "8600631606000605",
         "rr": null,
         "name": "Perfect Secret Love: The Bad New Wife is a Little Sweet",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
+    },
+    "60165": {
+        "wn": "7944748206002005",
+        "rr": null,
+        "name": "When A Mage Revolts",
+        "list": "QIDIAN on-hold"
     },
     "60272": {
         "wn": "8022472105002805",
@@ -623,6 +785,12 @@
         "name": "Metaworld Chronicles",
         "list": "RoyalRoad plan to read"
     },
+    "60669": {
+        "wn": "8591840605001105",
+        "rr": null,
+        "name": "Seeking the Flying Sword Path",
+        "list": "QIDIAN plan to read"
+    },
     "60905": {
         "wn": null,
         "rr": 14396,
@@ -645,13 +813,13 @@
         "wn": "8456930206000105",
         "rr": null,
         "name": "Mr. CEO, Spoil me 100 Percent!",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "61162": {
         "wn": "11800322906528105",
         "rr": null,
         "name": "Phoenix Destiny",
-        "list": "plan to read"
+        "list": "QIDIAN plan to read"
     },
     "61294": {
         "wn": null,
@@ -663,13 +831,19 @@
         "wn": "8335353205000005",
         "rr": null,
         "name": "Mystical Journey",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "62143": {
         "wn": "8092314906003205",
         "rr": null,
         "name": "Shadow Hack",
         "list": "QIDIAN stalled"
+    },
+    "62240": {
+        "wn": "7979055106002205",
+        "rr": null,
+        "name": "The Immortal's Poison",
+        "list": "QIDIAN on-hold"
     },
     "62277": {
         "wn": null,
@@ -701,6 +875,12 @@
         "name": "Rise of The Undead Legion",
         "list": "QIDIAN completed"
     },
+    "62797": {
+        "wn": "8324027206000305",
+        "rr": null,
+        "name": "Tales of Herding Gods",
+        "list": "QIDIAN on-hold"
+    },
     "62924": {
         "wn": "11046195806242705",
         "rr": null,
@@ -712,6 +892,18 @@
         "rr": null,
         "name": "A Stay-at-home Dad's Restaurant In An Alternate World",
         "list": "QIDIAN plan to read"
+    },
+    "63090": {
+        "wn": "8324028306000405",
+        "rr": null,
+        "name": "The Spiritual Attainment of Minghe",
+        "list": "QIDIAN on-hold"
+    },
+    "63148": {
+        "wn": "7981742105002605",
+        "rr": null,
+        "name": "Treasure Hunt Tycoon",
+        "list": "QIDIAN on-hold"
     },
     "63150": {
         "wn": "8334291405006505",
@@ -743,6 +935,12 @@
         "name": "Diavazo Logs: Motivating a Bookworm Protagonist",
         "list": "QIDIAN stalled"
     },
+    "63826": {
+        "wn": "9381083006002105",
+        "rr": null,
+        "name": "Why Did You Summon Me\\uFF1F",
+        "list": "QIDIAN plan to read"
+    },
     "64197": {
         "wn": "9067107706001305",
         "rr": null,
@@ -754,6 +952,12 @@
         "rr": null,
         "name": "A Valiant Life",
         "list": "QIDIAN plan to read"
+    },
+    "64386": {
+        "wn": "9975701105003705",
+        "rr": null,
+        "name": "Maverick Chef",
+        "list": "QIDIAN stalled"
     },
     "64593": {
         "wn": "10636300105085505",
@@ -767,11 +971,23 @@
         "name": "Lord of Mysteries",
         "list": "QIDIAN completed"
     },
+    "65077": {
+        "wn": "8447431105000805",
+        "rr": null,
+        "name": "Crazy Detective",
+        "list": "QIDIAN on-hold"
+    },
     "65219": {
         "wn": "9120998805002205",
         "rr": null,
         "name": "Adorable Goddess",
         "list": "QIDIAN plan to read"
+    },
+    "65321": {
+        "wn": "9545213205003105",
+        "rr": null,
+        "name": "I Can Turn into a Fish",
+        "list": "QIDIAN on-hold"
     },
     "65894": {
         "wn": "9319358106001805",
@@ -785,17 +1001,29 @@
         "name": "My Master Disconnected Yet Again",
         "list": "QIDIAN completed"
     },
+    "66913": {
+        "wn": "11004698505235305",
+        "rr": null,
+        "name": "Number One Dungeon Supplier",
+        "list": "QIDIAN on-hold"
+    },
     "67117": {
         "wn": "9320715905002805",
         "rr": null,
         "name": "The Daily Life of the Immortal King",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "67182": {
         "wn": "11059218406245405",
         "rr": null,
         "name": "Divine Emperor of Death",
         "list": "QIDIAN plan to read"
+    },
+    "67765": {
+        "wn": "10028861305003905",
+        "rr": null,
+        "name": "Living With a Temperamental Adonis: 99 Proclamations of Love",
+        "list": "QIDIAN on-hold"
     },
     "67860": {
         "wn": "13361908006612405",
@@ -851,11 +1079,17 @@
         "name": "Crystal Shards Online - A LitRPG Series",
         "list": "RoyalRoad plan to read"
     },
+    "71320": {
+        "wn": "11660227405469705",
+        "rr": null,
+        "name": "The World Turned into a Game After I Woke up",
+        "list": "QIDIAN plan to read"
+    },
     "71456": {
         "wn": "9656687306002705",
         "rr": null,
         "name": "Soul of Searing Steel",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "71502": {
         "wn": "11492897005406105",
@@ -987,7 +1221,7 @@
         "wn": "13225367206183305",
         "rr": null,
         "name": "Spending My Retirement In A Game",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "84068": {
         "wn": "11275087605321405",
@@ -1035,7 +1269,7 @@
         "wn": "11418908406358805",
         "rr": null,
         "name": "Black Tech Internet Cafe System",
-        "list": "on-hold"
+        "list": "QIDIAN on-hold"
     },
     "90241": {
         "wn": "12468768505527305",
@@ -1113,7 +1347,7 @@
         "wn": "15974916205565405",
         "rr": null,
         "name": "The Genius System Without Equal",
-        "list": "plan to read"
+        "list": "QIDIAN plan to read"
     },
     "97804": {
         "wn": null,
@@ -1156,6 +1390,12 @@
         "rr": 25562,
         "name": "Though the Heavens Should Fall",
         "list": "RoyalRoad plan to read"
+    },
+    "103204": {
+        "wn": "14102432205347705",
+        "rr": null,
+        "name": "The Ultimate Host",
+        "list": "QIDIAN plan to read"
     },
     "103958": {
         "wn": "14187175405584205",
@@ -1282,6 +1522,12 @@
         "rr": null,
         "name": "The Man from Hell",
         "list": "QIDIAN stalled"
+    },
+    "109547": {
+        "wn": null,
+        "rr": 28656,
+        "name": "Dawn Weaver - a tale of Dragon Riders",
+        "list": "RoyalRoad plan to read"
     },
     "109593": {
         "wn": "14451962806476405",
@@ -1445,6 +1691,18 @@
         "name": "Pocket Hunting Dimension",
         "list": "QIDIAN plan to read"
     },
+    "112008": {
+        "wn": "15713117806838005",
+        "rr": null,
+        "name": "Transcendent Dawn",
+        "list": "QIDIAN plan to read"
+    },
+    "112011": {
+        "wn": "15705498105694305",
+        "rr": null,
+        "name": "Losing Money to Be a Tycoon",
+        "list": "QIDIAN plan to read"
+    },
     "112023": {
         "wn": "15713673106840205",
         "rr": null,
@@ -1479,6 +1737,12 @@
         "wn": null,
         "rr": 31514,
         "name": "The Menocht Loop",
+        "list": "RoyalRoad plan to read"
+    },
+    "112670": {
+        "wn": null,
+        "rr": 24762,
+        "name": "The First Born",
         "list": "RoyalRoad plan to read"
     },
     "112909": {
@@ -1516,6 +1780,12 @@
         "rr": null,
         "name": "Psychic Parasite",
         "list": "QIDIAN plan to read"
+    },
+    "114941": {
+        "wn": null,
+        "rr": 10515,
+        "name": "World Keeper AU [DEAD - AWAITING REWRITE]",
+        "list": "RoyalRoad plan to read"
     },
     "115059": {
         "wn": "16032613405710905",
@@ -1679,6 +1949,12 @@
         "name": "Only I Am a Necromancer",
         "list": "QIDIAN on-hold"
     },
+    "117732": {
+        "wn": "14591123005870105",
+        "rr": null,
+        "name": "The Hero Returns",
+        "list": "QIDIAN plan to read"
+    },
     "117750": {
         "wn": "17340518006576905",
         "rr": null,
@@ -1719,6 +1995,18 @@
         "wn": "17048424205270405",
         "rr": null,
         "name": "Digitize: Rebirth of the Silver Death God",
+        "list": "QIDIAN plan to read"
+    },
+    "118612": {
+        "wn": "16784211605225405",
+        "rr": null,
+        "name": "The Schoolgirl Secret Agent",
+        "list": "QIDIAN plan to read"
+    },
+    "118615": {
+        "wn": "16989846406186505",
+        "rr": null,
+        "name": "Absolute Great Teacher",
         "list": "QIDIAN plan to read"
     },
     "118775": {
@@ -1773,7 +2061,7 @@
         "wn": "15465781005526105",
         "rr": null,
         "name": "The Oracle Paths",
-        "list": "QIDIAN stalled"
+        "list": "QIDIAN original"
     },
     "119192": {
         "wn": null,
@@ -2033,6 +2321,12 @@
         "name": "THE SUMMONED MONSTER THAT IS SUMMONING ANOTHER MONSTER",
         "list": "QIDIAN plan to read"
     },
+    "128990": {
+        "wn": null,
+        "rr": 36650,
+        "name": "The Stained Tower",
+        "list": "RoyalRoad plan to read"
+    },
     "128991": {
         "wn": null,
         "rr": 37231,
@@ -2109,7 +2403,7 @@
         "wn": "18499797106079005",
         "rr": 37016,
         "name": "Earth's Alpha Prime",
-        "list": "RoyalRoad plan to read"
+        "list": "QIDIAN plan to read"
     },
     "129558": {
         "wn": null,
@@ -2146,6 +2440,12 @@
         "rr": 37626,
         "name": "Summoned as a Ghost in another world",
         "list": "RoyalRoad"
+    },
+    "130232": {
+        "wn": null,
+        "rr": 34409,
+        "name": "A Cat Is Fine Too",
+        "list": "RoyalRoad plan to read"
     },
     "130233": {
         "wn": "18251694005890705",
@@ -2255,17 +2555,29 @@
         "name": "Reborn! A Thief's Greed in a Fantasy World",
         "list": "RoyalRoad"
     },
+    "131967": {
+        "wn": null,
+        "rr": 39193,
+        "name": "Requiem of the Sea",
+        "list": "RoyalRoad plan to read"
+    },
     "132048": {
         "wn": "16732990506157805",
         "rr": null,
         "name": "Transdimensional Marketing",
-        "list": "plan to read"
+        "list": "QIDIAN plan to read"
     },
     "132273": {
         "wn": "19175158406680105",
         "rr": 39408,
         "name": "Beware Of Chicken",
         "list": "RoyalRoad"
+    },
+    "132403": {
+        "wn": null,
+        "rr": 39375,
+        "name": "New Game +",
+        "list": "RoyalRoad plan to read"
     },
     "132587": {
         "wn": null,
@@ -2387,6 +2699,12 @@
         "name": "Living Armor",
         "list": "RoyalRoad plan to read"
     },
+    "134554": {
+        "wn": null,
+        "rr": 40998,
+        "name": "A Friendly Voidling",
+        "list": "RoyalRoad plan to read"
+    },
     "134559": {
         "wn": null,
         "rr": 41033,
@@ -2417,10 +2735,22 @@
         "name": "Myrr: Reincarnated Timemage Assassin-Learning To Smile In Another World",
         "list": "RoyalRoad"
     },
+    "135258": {
+        "wn": null,
+        "rr": 39473,
+        "name": "Watchers",
+        "list": "RoyalRoad plan to read"
+    },
     "135289": {
         "wn": null,
         "rr": 41434,
         "name": "Immortality.Upload (LitRPG: Athanasia - Book 1)",
+        "list": "RoyalRoad plan to read"
+    },
+    "135411": {
+        "wn": null,
+        "rr": 41595,
+        "name": "Gremlin's Greed",
         "list": "RoyalRoad plan to read"
     },
     "135424": {
@@ -2428,6 +2758,12 @@
         "rr": 40888,
         "name": "The Great Core's Paradox",
         "list": "RoyalRoad plan to read"
+    },
+    "135467": {
+        "wn": null,
+        "rr": 10515,
+        "name": "World Keeper Au [Dead - Awaiting Rewrite]",
+        "list": "duplicates"
     },
     "135501": {
         "wn": "19066714505131105",
@@ -2470,6 +2806,12 @@
         "rr": 41862,
         "name": "Slime Cafe",
         "list": "RoyalRoad stalled"
+    },
+    "135731": {
+        "wn": null,
+        "rr": 40297,
+        "name": "Soul Forged",
+        "list": "RoyalRoad plan to read"
     },
     "135813": {
         "wn": null,
@@ -2541,13 +2883,19 @@
         "wn": "19855680406636005",
         "rr": 42673,
         "name": "The Bewitching Chaos Ghost System",
-        "list": "RoyalRoad plan to read"
+        "list": "QIDIAN plan to read"
     },
     "136609": {
         "wn": null,
         "rr": 41477,
         "name": "Truth Seeker: A LitRPG Timeloop",
         "list": "RoyalRoad"
+    },
+    "136659": {
+        "wn": null,
+        "rr": 42986,
+        "name": "I Have Infinite Skill Points in the Apocalypse",
+        "list": "RoyalRoad plan to read"
     },
     "136682": {
         "wn": "11492897005406105",
@@ -2560,6 +2908,12 @@
         "rr": 43036,
         "name": "Magical Girl Kari: Apocalypse System",
         "list": "RoyalRoad"
+    },
+    "136750": {
+        "wn": null,
+        "rr": 40277,
+        "name": "A Hero's Song",
+        "list": "RoyalRoad plan to read"
     },
     "136860": {
         "wn": null,
@@ -2619,6 +2973,12 @@
         "wn": null,
         "rr": 43673,
         "name": "Morcster Chef: Reckoning",
+        "list": "RoyalRoad plan to read"
+    },
+    "137446": {
+        "wn": null,
+        "rr": 40700,
+        "name": "Reincarnation Station: Death, Cake and Friendship",
         "list": "RoyalRoad plan to read"
     },
     "137556": {
@@ -2705,11 +3065,29 @@
         "name": "Long Fang - Cultivator vs. System",
         "list": "duplicates"
     },
+    "138801": {
+        "wn": null,
+        "rr": 41595,
+        "name": "Gremlin's Greed",
+        "list": "duplicates"
+    },
     "138802": {
         "wn": null,
         "rr": 43934,
         "name": "Realmshaker: Giant Progression LitRPG",
         "list": "RoyalRoad"
+    },
+    "138842": {
+        "wn": null,
+        "rr": 44982,
+        "name": "Animosity - An Isekai Story",
+        "list": "RoyalRoad plan to read"
+    },
+    "138913": {
+        "wn": null,
+        "rr": 45050,
+        "name": "Snow Flames",
+        "list": "RoyalRoad plan to read"
     },
     "138921": {
         "wn": "20244776805425205",
@@ -2727,6 +3105,12 @@
         "wn": null,
         "rr": 45136,
         "name": "The King's Soul: A LitRPG Wuxia Novel",
+        "list": "RoyalRoad plan to read"
+    },
+    "139189": {
+        "wn": null,
+        "rr": 45455,
+        "name": "Reborn as a Dragon Tamer",
         "list": "RoyalRoad plan to read"
     },
     "139257": {
@@ -2763,7 +3147,7 @@
         "wn": null,
         "rr": 45173,
         "name": "Mana Harvest The Sword to Ploughshares Saga LiTRPG",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "139878": {
         "wn": null,
@@ -2855,6 +3239,12 @@
         "name": "In Another World's Apocalypse - An Isekai Loop LitRPG",
         "list": "RoyalRoad plan to read"
     },
+    "140976": {
+        "wn": null,
+        "rr": 46709,
+        "name": "Enduring Good",
+        "list": "duplicates"
+    },
     "140994": {
         "wn": null,
         "rr": 46550,
@@ -2882,7 +3272,7 @@
     "141225": {
         "wn": null,
         "rr": 43029,
-        "name": "The Tragedy of House Lacerta [Book 1: Angel of the Red Sun]",
+        "name": "The Tragedy of House Lacerta",
         "list": "RoyalRoad"
     },
     "141289": {
@@ -2990,7 +3380,7 @@
     "141706": {
         "wn": null,
         "rr": 46709,
-        "name": "Enduring Good [The Pharmacist's Guide to Eldritch Gods and How I Learned to Love Cultivation]",
+        "name": "Enduring Good",
         "list": "RoyalRoad"
     },
     "141867": {
@@ -3201,6 +3591,78 @@
         "wn": "18270856006135605",
         "rr": null,
         "name": "Unparalleled After Ten Consecutive Draws",
+        "list": "QIDIAN plan to read"
+    },
+    "142383": {
+        "wn": null,
+        "rr": 48008,
+        "name": "Dreamer's Ten-Tea-Cle Caf\\u00E9",
+        "list": "RoyalRoad plan to read"
+    },
+    "142448": {
+        "wn": "20731140906412805",
+        "rr": null,
+        "name": "Mage Academy: I Have Infinite Skill Points",
+        "list": "QIDIAN plan to read"
+    },
+    "142451": {
+        "wn": "19832789006531305",
+        "rr": null,
+        "name": "Practicing Basic Sorcery for Billions of Times Made Me Invincible",
+        "list": "QIDIAN plan to read"
+    },
+    "142452": {
+        "wn": "20967311506622005",
+        "rr": null,
+        "name": "Witcher: I Can Extract Everything",
+        "list": "QIDIAN plan to read"
+    },
+    "142454": {
+        "wn": null,
+        "rr": 47903,
+        "name": "Under Wicked Sky",
+        "list": "RoyalRoad plan to read"
+    },
+    "142455": {
+        "wn": null,
+        "rr": 47997,
+        "name": "Overkill",
+        "list": "RoyalRoad plan to read"
+    },
+    "142456": {
+        "wn": null,
+        "rr": 47961,
+        "name": "Summoner Reincarnated: A LiTRPG Apocalypse Novel",
+        "list": "RoyalRoad plan to read"
+    },
+    "142501": {
+        "wn": "19852661006620705",
+        "rr": null,
+        "name": "Top Tier Providence, Secretly Cultivate for a Thousand Years",
+        "list": "QIDIAN plan to read"
+    },
+    "142505": {
+        "wn": "18909638806685305",
+        "rr": null,
+        "name": "Fantasy Simulator",
+        "list": "QIDIAN plan to read"
+    },
+    "142506": {
+        "wn": "14205835806705305",
+        "rr": null,
+        "name": "Married to the Devil's Son",
+        "list": "QIDIAN plan to read"
+    },
+    "142514": {
+        "wn": "17164777605709105",
+        "rr": null,
+        "name": "I Don't Want To Be A Healer",
+        "list": "QIDIAN plan to read"
+    },
+    "142517": {
+        "wn": "20178481605547205",
+        "rr": null,
+        "name": "I Have A Martial Arts Panel",
         "list": "QIDIAN plan to read"
     }
 }

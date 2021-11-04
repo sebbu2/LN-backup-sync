@@ -298,6 +298,17 @@
       "StatParams": ""
     },
     {
+      "BookId": 19523573005538505,
+      "BookType": 0,
+      "CoverId": 1632450315431,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Lord of Pets",
+      "Author": "Black Pepper Immortal",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
       "BookId": 19479420206572505,
       "BookType": 0,
       "CoverId": 1614857647876,
@@ -322,6 +333,138 @@
   ],
   "trial read": [
     {
+      "BookId": 20793147905823705,
+      "BookType": 0,
+      "CoverId": 1628043128683,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Everyone's a Land Ruler, Rolling Demon Soldier Types at the Start",
+      "Author": "Little Devil",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20912597906209605,
+      "BookType": 0,
+      "CoverId": 1629254453867,
+      "Catogery": "Magical Realism",
+      "CatogeryId": 70001,
+      "BookName": "Zombie Apocalypse: Infinite Fusion",
+      "Author": "Panda is a Cat",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21001926706873605,
+      "BookType": 0,
+      "CoverId": 1632992790646,
+      "Catogery": "Magical Realism",
+      "CatogeryId": 70001,
+      "BookName": "Military Lord of the White Coats",
+      "Author": "emerging blockhouse",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20618967605044705,
+      "BookType": 0,
+      "CoverId": 1634205685627,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Necromancer: Rise of the Undead Lord",
+      "Author": "Republish ",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21155880706590705,
+      "BookType": 0,
+      "CoverId": 1631676937549,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Online Game: I Have 48 Hours a Day",
+      "Author": "Two Days Awake",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21155881606591605,
+      "BookType": 0,
+      "CoverId": 1631680557915,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "I Have a Dragon in My Body",
+      "Author": "Huge Wave",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 19644990605825905,
+      "BookType": 0,
+      "CoverId": 1626145460142,
+      "Catogery": "Sci-fi",
+      "CatogeryId": 70006,
+      "BookName": "Global Descent: 100\u0026times;Reward",
+      "Author": "The Sky Wishes to Clear Up",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21087936905164305,
+      "BookType": 0,
+      "CoverId": 1631072612622,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Tavern in Another Dimension:Getting the Elf Queen Drunk at the Start",
+      "Author": "45 Degrees North-East",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20618967105044205,
+      "BookType": 0,
+      "CoverId": 1626233441675,
+      "Catogery": "Sci-fi",
+      "CatogeryId": 70006,
+      "BookName": "Apocalypse: My Technological City has Infinite Upgrades",
+      "Author": "Oranges are not Sour",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20670509006798605,
+      "BookType": 0,
+      "CoverId": 1626838640576,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Becoming the Master of a Mermaid Island From Today",
+      "Author": "Vegetarian Tiger",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21087936406400205,
+      "BookType": 0,
+      "CoverId": 1634106220621,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "My Five Masters Are Way Too Beautiful",
+      "Author": "Umuriki",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20967311205395505,
+      "BookType": 0,
+      "CoverId": 1629861352064,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "I Really Don't Want to Be the Ruler of the Abyss!",
+      "Author": "Oxygen Content Too High",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
       "BookId": 19697500805965905,
       "BookType": 0,
       "CoverId": 1617017266508,
@@ -340,17 +483,6 @@
       "CatogeryId": 70002,
       "BookName": "Practicing Basic Sorcery for Billions of Times Made Me Invincible",
       "Author": "Abundance Every Year",
-      "RecommendMsg": "",
-      "StatParams": ""
-    },
-    {
-      "BookId": 19886807705655205,
-      "BookType": 0,
-      "CoverId": 1618988580379,
-      "Catogery": "Fantasy",
-      "CatogeryId": 70002,
-      "BookName": "I Established A Magic School After I Failed the CEE!",
-      "Author": "Jian Lai Lang Ye",
       "RecommendMsg": "",
       "StatParams": ""
     },
@@ -830,6 +962,171 @@
   ],
   "voting pool": [
     {
+      "BookId": 20912597506209205,
+      "BookType": 0,
+      "CoverId": 1629253402705,
+      "Catogery": "Sci-fi",
+      "CatogeryId": 70006,
+      "BookName": "Age of Gods: Thousand Folds System",
+      "Author": "Follower of Four Gods",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20178481605547205,
+      "BookType": 0,
+      "CoverId": 1629444093736,
+      "Catogery": "Martial Arts",
+      "CatogeryId": 70012,
+      "BookName": "I Have A Martial Arts Panel",
+      "Author": "Vanguard Flaming Pig",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20967309606620905,
+      "BookType": 0,
+      "CoverId": 1629858136041,
+      "Catogery": "Eastern Fantasy",
+      "CatogeryId": 70009,
+      "BookName": "Global Cultivation: First-time Top-up for the Ultimate Destiny Treasure",
+      "Author": "Crustacean",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20967311506622005,
+      "BookType": 0,
+      "CoverId": 1629861595554,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Witcher: I Can Extract Everything",
+      "Author": "Lich King Number 13",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20793148006045805,
+      "BookType": 0,
+      "CoverId": 1628043303752,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "I Let You Manage the Beast Taming Arena, Now Everyone Became Divine Beasts?",
+      "Author": "Iced Cola",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21033531405871505,
+      "BookType": 0,
+      "CoverId": 1630463802954,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Evolving into a Great Dragon From a Koi Fish",
+      "Author": "Eternal Dream",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20967310105394905,
+      "BookType": 0,
+      "CoverId": 1629859072770,
+      "Catogery": "Eastern Fantasy",
+      "CatogeryId": 70009,
+      "BookName": "Global Transmigration: Receiving God-like Talents!",
+      "Author": "Sand Storm",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 21087935706399305,
+      "BookType": 0,
+      "CoverId": 1631071168687,
+      "Catogery": "Eastern Fantasy",
+      "CatogeryId": 70009,
+      "BookName": "Magic Land: I Make It Big as a Gourmet Food Supplier!",
+      "Author": "The Might Of Leaving Blank",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20731142405199505,
+      "BookType": 0,
+      "CoverId": 1627442206698,
+      "Catogery": "Magical Realism",
+      "CatogeryId": 70001,
+      "BookName": "Reincarnated as a Red Dragon, Discipline Makes Me Stronger!",
+      "Author": "Seventh Face of Magic",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20912598205976805,
+      "BookType": 0,
+      "CoverId": 1629254695640,
+      "Catogery": "Video Games",
+      "CatogeryId": 70008,
+      "BookName": "Maxed Out My Passive Skill Due to My Laziness",
+      "Author": "No Transmigration",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20552407605385205,
+      "BookType": 0,
+      "CoverId": 1625628944012,
+      "Catogery": "Sci-fi",
+      "CatogeryId": 70006,
+      "BookName": "My Passive Skills are Invincible!",
+      "Author": "Ultimate Guaiguaipi",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 19971573605132605,
+      "BookType": 0,
+      "CoverId": 1628751508071,
+      "Catogery": "Video Games",
+      "CatogeryId": 70008,
+      "BookName": "Starting in an Online Game With 3000 Death Soldiers",
+      "Author": "Zhang Cai Tian Xia",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20552407905385405,
+      "BookType": 0,
+      "CoverId": 1625627990654,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "My Maids Are All Antagonists!",
+      "Author": "Ultimate Guaiguaipi",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 19832789006531205,
+      "BookType": 0,
+      "CoverId": 1618377850605,
+      "Catogery": "Eastern Fantasy",
+      "CatogeryId": 70009,
+      "BookName": "Disciple, Don't Cause Trouble, Master Won't Leave the Mountain!",
+      "Author": "Abundance Every Year",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
+      "BookId": 20552407806606105,
+      "BookType": 0,
+      "CoverId": 1629443831238,
+      "Catogery": "Video Games",
+      "CatogeryId": 70008,
+      "BookName": "I Was Reborn With All Max-Leveled Classes of Mage, Warrior, Rogue, and Healer!",
+      "Author": "Flavored Lollipop",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
       "BookId": 19852661206620805,
       "BookType": 0,
       "CoverId": 1626944572661,
@@ -848,17 +1145,6 @@
       "CatogeryId": 70009,
       "BookName": "Starting From Fooling the Elderly into Registering for a Cultivation Training Class",
       "Author": "Evolution of Ten Updating Beasts",
-      "RecommendMsg": "",
-      "StatParams": ""
-    },
-    {
-      "BookId": 19886807705655205,
-      "BookType": 0,
-      "CoverId": 1618988580379,
-      "Catogery": "Fantasy",
-      "CatogeryId": 70002,
-      "BookName": "I Established A Magic School After I Failed the CEE!",
-      "Author": "Jian Lai Lang Ye",
       "RecommendMsg": "",
       "StatParams": ""
     },
@@ -1022,7 +1308,7 @@
       "CoverId": 1615528102536,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
-      "BookName": "I’m Cultivating Immortality While Everyone Else Practices Martial Arts",
+      "BookName": "I\u0026rsquo;m Cultivating Immortality While Everyone Else Practices Martial Arts",
       "Author": "Big Yeeeaaar",
       "RecommendMsg": "",
       "StatParams": ""
@@ -1214,7 +1500,7 @@
       "CoverId": 1572865485266,
       "Catogery": "Magical Realism",
       "CatogeryId": 70001,
-      "BookName": "来自地狱的男人",
+      "BookName": "\u0026#26469;\u0026#33258;\u0026#22320;\u0026#29425;\u0026#30340;\u0026#30007;\u0026#20154;",
       "Author": "Autumn Wind 123",
       "RecommendMsg": "",
       "StatParams": ""
@@ -1346,7 +1632,7 @@
       "CoverId": 1576014930568,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
-      "BookName": "Kalar´s Continent",
+      "BookName": "Kalar\u0026acute;s Continent",
       "Author": "Passwortknacker",
       "RecommendMsg": "",
       "StatParams": ""
@@ -1491,7 +1777,7 @@
       "CoverId": 1597200941762,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
-      "BookName": "Grasping Evil ",
+      "BookName": "Grasping Evil",
       "Author": "I'm Ink",
       "RecommendMsg": "",
       "StatParams": ""
@@ -1510,7 +1796,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1627329875126,
+      "CoverId": 1632363610443,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",
@@ -1732,7 +2018,7 @@
     {
       "BookId": 18131953005387705,
       "BookType": 0,
-      "CoverId": 1625857082262,
+      "CoverId": 1633066878297,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Earth's Greatest Magus",
@@ -1776,7 +2062,7 @@
     {
       "BookId": 17047823706408905,
       "BookType": 0,
-      "CoverId": 1627752403756,
+      "CoverId": 1635964343445,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Mage of Primordial Chaos",
@@ -1963,7 +2249,7 @@
     {
       "BookId": 17932851106749705,
       "BookType": 0,
-      "CoverId": 1622361652316,
+      "CoverId": 1633486930891,
       "Catogery": "Realistic Fiction",
       "CatogeryId": 70010,
       "BookName": "Never Judge",
@@ -2056,13 +2342,24 @@
       "CoverId": 1567071742277,
       "Catogery": "Science \u0026 Technology",
       "CatogeryId": 95012,
-      "BookName": "Hackers, Heroes of the Computer Revolution\nChapters 1 and 2",
+      "BookName": "Hackers, Heroes of the Computer RevolutionChapters 1 and 2",
       "Author": "Steven Levy",
       "RecommendMsg": "",
       "StatParams": ""
     }
   ],
   "comics": [
+    {
+      "BookId": 20662233706706801,
+      "BookType": 100,
+      "CoverId": 1626858723205,
+      "Catogery": "Transmigration",
+      "CatogeryId": 60012,
+      "BookName": "My Wife is the Demon Queen",
+      "Author": "Shibu Ciyuan",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
     {
       "BookId": 11610241506441101,
       "BookType": 100,
@@ -2708,7 +3005,7 @@
     {
       "BookId": 17789747605920005,
       "BookType": 0,
-      "CoverId": 1622448257098,
+      "CoverId": 1632899282393,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "I Know the Secret to Surpass Level 100",
@@ -2829,7 +3126,7 @@
     {
       "BookId": 17340518006576905,
       "BookType": 0,
-      "CoverId": 1624364794138,
+      "CoverId": 1631030542657,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Death... and me",
@@ -3093,7 +3390,7 @@
     {
       "BookId": 10636300105085505,
       "BookType": 0,
-      "CoverId": 1603037957326,
+      "CoverId": 1631819990476,
       "Catogery": "Sci-fi",
       "CatogeryId": 70006,
       "BookName": "The Mech Touch",
@@ -3107,7 +3404,7 @@
       "CoverId": 1598689940946,
       "Catogery": "Contemporary Romance",
       "CatogeryId": 70014,
-      "BookName": "The Devil’s love",
+      "BookName": "The Devil\u0026rsquo;s love",
       "Author": "Sofia05",
       "RecommendMsg": "",
       "StatParams": ""
@@ -3203,7 +3500,7 @@
     {
       "BookId": 18131953005387705,
       "BookType": 0,
-      "CoverId": 1625857082262,
+      "CoverId": 1633066878297,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Earth's Greatest Magus",
@@ -3261,7 +3558,7 @@
       "CoverId": 1605781300622,
       "Catogery": "Sci-fi",
       "CatogeryId": 70006,
-      "BookName": "A technomancer’s journey in an apocalyptic world",
+      "BookName": "A technomancer\u0026rsquo;s journey in an apocalyptic world",
       "Author": "SagelyDaoist",
       "RecommendMsg": "",
       "StatParams": ""
@@ -3460,7 +3757,7 @@
       "Catogery": "Magical Realism",
       "CatogeryId": 70001,
       "BookName": "Python Rebirth on Survival Island",
-      "Author": "Gaze Through the Winter Water",
+      "Author": "Gaze\u0026nbsp;Through the Winter Water",
       "RecommendMsg": "",
       "StatParams": ""
     },
@@ -4075,7 +4372,7 @@
       "CoverId": 1599627273821,
       "Catogery": "Fantasy Romance",
       "CatogeryId": 70016,
-      "BookName": "F*ck Yeah! I’m The Villain",
+      "BookName": "F*ck Yeah! I\u0026rsquo;m The Villain",
       "Author": "queenk091 ",
       "RecommendMsg": "",
       "StatParams": ""
@@ -4116,7 +4413,7 @@
     {
       "BookId": 16235831906391005,
       "BookType": 0,
-      "CoverId": 1627553970442,
+      "CoverId": 1631518713846,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Mysterious Black Magician",
@@ -4292,7 +4589,7 @@
     {
       "BookId": 16860537406663605,
       "BookType": 0,
-      "CoverId": 1612107348557,
+      "CoverId": 1634221636553,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "New Age Of Summoners",
@@ -4380,7 +4677,7 @@
     {
       "BookId": 11059218406245405,
       "BookType": 0,
-      "CoverId": 1615502908951,
+      "CoverId": 1631995185688,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "Divine Emperor of Death",
@@ -4471,7 +4768,7 @@
       "CoverId": 1590136397604,
       "Catogery": "Video Games",
       "CatogeryId": 70008,
-      "BookName": "There’s A Bug In Me",
+      "BookName": "There\u0026rsquo;s A Bug In Me",
       "Author": "Bushi Fuyun",
       "RecommendMsg": "",
       "StatParams": ""
@@ -4666,7 +4963,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1627329875126,
+      "CoverId": 1632363610443,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",
@@ -4834,7 +5131,7 @@
       "CoverId": 1557127774759,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
-      "BookName": "A Record of a Mortal’s Journey to Immortality",
+      "BookName": "A Record of a Mortal\u0026rsquo;s Journey to Immortality",
       "Author": "Wang Yu",
       "RecommendMsg": "",
       "StatParams": ""
@@ -4845,7 +5142,7 @@
       "CoverId": 1586499155599,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
-      "BookName": "A Record of a Mortal’s Journey to Immortality—Immortal World Arc",
+      "BookName": "A Record of a Mortal\u0026rsquo;s Journey to Immortality\u0026mdash;Immortal World Arc",
       "Author": "Wang Yu",
       "RecommendMsg": "",
       "StatParams": ""
@@ -4967,7 +5264,7 @@
       "Catogery": "Magical Realism",
       "CatogeryId": 70001,
       "BookName": "Descent of the Demon God",
-      "Author": "한중월야",
+      "Author": "\u0026#54620;\u0026#51473;\u0026#50900;\u0026#50556;",
       "RecommendMsg": "",
       "StatParams": ""
     },
