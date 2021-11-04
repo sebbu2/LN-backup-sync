@@ -12,7 +12,7 @@ if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
 include_once('position.php');
 include_once('correspondances.php');
 
-define('PERLINE', false);
+define('PERLINE', true);
 
 $wln=new WLNUpdates();
 $wn=new WebNovel;
@@ -207,6 +207,7 @@ foreach($wln_order as $id=>$list) {
 	}
 	if($lines>0) {
 		echo '</table>'."\r\n";
+		var_dump($lines);
 	}
 	//if(ob_get_level()>0) { ob_flush(); }
 	flush();
@@ -271,6 +272,7 @@ foreach($wn_books as $entry) {
 }
 if($lines>0) {
 	echo '</table>'."\r\n";
+	var_dump($lines);
 }
 //if(ob_get_level()>0) { ob_flush(); }
 flush();
@@ -328,6 +330,7 @@ foreach($rr_books as $rr_id=>$entry) {
 }
 if($lines>0) {
 	echo '</table>'."\r\n";
+	var_dump($lines);
 }
 //if(ob_get_level()>0) { ob_flush(); }
 flush();
@@ -368,6 +371,7 @@ foreach($pos as $item) {
 }
 if($lines>0) {
 	echo '</table>'."\r\n";
+	var_dump($lines);
 }
 //if(ob_get_level()>0) { ob_flush(); }
 flush();

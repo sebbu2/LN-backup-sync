@@ -57,6 +57,7 @@ foreach($ar as $fn)
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
 	//if( array_key_exists($fn3, $fns) ) var_dump($fn3, $max, $fns[$fn3]['max'], $min+($min<0?1:0), $content[1], ($content[3]>0?1:0), $fns[$fn3]['min']+($fns[$fn3]['min']<0?1:0), $fns[$fn3][1], ($fns[$fn3][3]>0?1:0) );
+	if($fn==='Unbound_1-7.epub.po') continue;
 /*
 1)a) if content[0] MOONREADER_DID
 	fns

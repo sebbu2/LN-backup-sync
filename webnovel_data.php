@@ -24,22 +24,26 @@ if($res->code!=0) {
 $files=array();
 
 $res=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
+if(is_object($res)) $res=get_object_vars($res);
 $files['_books.json']=count($res);
 $res=json_decode(file_get_contents($wn::FOLDER.'_books2.json'));
+if(is_object($res)) $res=get_object_vars($res);
 $files['_books2.json']=count($res);
 $res=json_decode(file_get_contents($wn::FOLDER.'_order.json'));
 $files['_order.json']=count($res);
 
-if(!file_exists($wn::FOLDER.'_history.json')) $res2=$wn->get_history();
+$fn=$wn::FOLDER.'_history.json';
+if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_history();
 
-$res=json_decode(file_get_contents($wn::FOLDER.'_history.json'));
+$res=json_decode(file_get_contents($fn));
 $files['_history.json']=count($res);
 $files['ReadingHistoryAjax']=count($res[0]);
 $files['get-history']=count($res[1]);
 
-if(!file_exists($wn::FOLDER.'_collection.json')) $res2=$wn->get_collections();
+$fn=$wn::FOLDER.'_collection.json';
+if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_collections();
 
-$res=json_decode(file_get_contents($wn::FOLDER.'_collection.json'), true, 512, JSON_OBJECT_AS_ARRAY);
+$res=json_decode(file_get_contents($fn), true, 512, JSON_OBJECT_AS_ARRAY);
 $res3=array_keys($res);
 $files['_collection.json']=count($res);
 

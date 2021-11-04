@@ -41,6 +41,8 @@ Features :
 
 * *Keep track of conflicting information from different sources* (website)
 
+* *Check correspondances and add them automatically on other sources* (website)
+
   * **Retrieve chapter from sources** (website)
 
   * **Gamification or social interactions (includes voting & rating) from sources** (website)
@@ -49,7 +51,15 @@ Supported cloud hosting :
 
 * Dropbox
 
+  * *Box*
+
   * *Google Drive*
+
+  * *iCloud*
+
+  * *OneDrive*
+
+  * *WebDAV* and other synchronisations (might include *nextcloud/owncloud/seafile/syncthing*)
 
 Supported websites :
 
@@ -62,6 +72,10 @@ Supported websites :
   * *GoodReads*
 
   * *NovelUpdates*
+
+  * *ScribbleHub*
+
+  * *WattPad*
 
 Supported softwares :
 
@@ -151,8 +165,6 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 
 [royalroad/\_order.json](royalroad/_order.json) library data from royalroad
 
-[royalroad.htm](royalroad.htm) raw table of royalroad data
-
 [webnovel/\_books.json](webnovel/_books.json) library data from webnovel (merged, reordered)
 
 [webnovel/\_books2.json](webnovel/_books2.json) library data from webnovel (merged, order kept)
@@ -174,6 +186,8 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 [wlnupdates/\_list.json](wlnupdates/\_list.json) library json data of the list the novel is from on wlnupdates
 
 ### Listings
+
+[royalroad.htm](royalroad.htm) raw table of royalroad data
 
 [wlnupdates.htm](wlnupdates.htm) raw table of wlnupdates data
 

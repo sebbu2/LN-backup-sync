@@ -27,7 +27,8 @@ class SitePlugin
 		$ar=file(COOKIEFILE);
 		$res=array();
 		foreach($ar as $line) {
-			if(substr($line, 0, 2)=='# '||strlen(trim($line))==0) continue;
+			$line=trim($line, "\r\n\0");
+			if(substr($line, 0, 2)=='# '|| $line==='#' || strlen($line)==0) continue;
 			$ar2=explode("\t", $line);
 			$ar2=array_combine($keys, $ar2);
 			$domain=$ar2['domain'];
@@ -60,8 +61,9 @@ class SitePlugin
 			$cookie['name']."\t".
 			$cookie['value']."\r\n";
 		foreach($ar as $i=>&$line) {
-			if(substr($line, 0, 2)=='# '||strlen(trim($line))==0) continue;
-			$ar2=explode("\t", $line);
+			$line3=trim($line, "\r\n\0");
+			if(substr($line3, 0, 2)=='# ' || $line3==='#' || strlen($line3)==0) continue;
+			$ar2=explode("\t", $line3);
 			$ar2=array_combine($keys, $ar2);
 			$domain=$ar2['domain'];
 			if(substr($domain,0,10)=='#HttpOnly_') {

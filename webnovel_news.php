@@ -289,8 +289,18 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$title2=strtolower($title);
 					$name=name_simplify($title, 4); // 2 regex, 4 glob
 					//var_dump($fns);die();
-					if(!array_key_exists($title2, $fns)) { var_dump($entry['title'], $book->bookName); var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1))); var_dump($title); var_dump(array_keys($fns)); die(); }
-					$ar2=$fns[$title2];
+					if(!array_key_exists($title2, $fns)) {
+						/*var_dump($entry['title'], $book->bookName);
+						var_dump(strtolower(name_simplify($entry['title'], 1)), strtolower(name_simplify($book->bookName, 1)));
+						var_dump($title);
+						var_dump(array_keys($fns));
+						die();//*/
+						$ar2=array('min'=>1, 0=>MOONREADER_DID2, 2=>0);
+						$ar2['fn2']=$title;
+					}
+					else {
+						$ar2=$fns[$title2];
+					}
 					
 					//$filename='*_*-'.($res->data->bookInfo->totalChapterNum+$add).'.epub.po';
 					$filename=$name.'_*-*.epub.po';
@@ -367,7 +377,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 						$fn=str_replace(' ', '_', $fn);
 						//var_dump($content[1],$entry['chp'],$ar2['min'],$min,$add,$min2);
 						//if(strpos($row['subName'],'CBTOIP')!==false) { var_dump($fn, $entry, $content, $ar2, $min2); die(); }
-						if( $cond && (!file_exists(DROPBOX.$fn) || (($content[1]+$min2)!=($entry['chp']>1?$entry['chp']:0)) ) ) {
+						if( $cond && (!file_exists(DROPBOX.$fn) || ((array_key_exists(1, $content) && $content[1]+$min2)!=($entry['chp']>1?$entry['chp']:0)) ) ) {
 							$chp_=(int)$entry['chp'];
 							$numerator=$chp_;
 							if($min<0) $numerator-=$min; // - - => +

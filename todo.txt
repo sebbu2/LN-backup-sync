@@ -6,6 +6,7 @@ config.php
 correspondances.php
 	change to class
 	add correspondances_pos.json
+	add wln duplicates support (PERSO)
 
 dropbox.php
 	recode to pos&cor
@@ -17,6 +18,8 @@ dropbox.inc.php
 	add upload
 	add exists
 	add folder management
+	sort files in zip
+	torrentzip (reproducible)
 
 news.php
 	check neg chp to last (&cur?)

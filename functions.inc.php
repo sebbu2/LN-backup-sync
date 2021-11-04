@@ -12,10 +12,11 @@ require_once('SitePlugin.inc.php');
 */
 function name_simplify($name, $type=0) {
 	//'-'
-	static $ar1=array('_', ':', ',', '/', '  ');
+	static $ar1=array('_', ':', ',', '/', '\u00a0', '\u00A0', "\u00a0", "\u00A0", "\xC2\xA0", '&#xA0;', '  ');
 	//'+'
 	static $ar2=array(',', '\'', '*', '—', '^', '=', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0");
-	$name1=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
+	$name=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
+	$name=str_replace(array('\uff1f', "\uff1F", '\uFF1F', "\uFF1sF", "\xEF\xBC\x9F", '&#65311;', '&#xFF1F;'), '?', $name);
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
 	$name=trim($name);
@@ -66,8 +67,11 @@ function endswith($haystack, $needle) {
 	return (strncasecmp(substr($haystack, -strlen($needle)), $needle, strlen($needle))==0);
 }
 function normalize($str) {
+	$str=trim($str);
 	$str=transliterator_transliterate("Hex-Any", $str);
 	$str=str_replace('\\u0026', '&', $str);
+	$str=str_replace('\\u00a0', ' ', $str);
+	$str=str_replace('\\uff1f', '?', $str);
 	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
 	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
 	$str=transliterator_transliterate("[:^ASCII:] Any-Hex", $str);

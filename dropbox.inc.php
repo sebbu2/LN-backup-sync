@@ -333,7 +333,7 @@ if(property_exists($data, 'error')) {
 			$data=$dpb->refresh_code();
 			if($data===false) {
 				$data=$dpb->errors;
-				var_dump($data);
+				var_dump(0,$data);
 				die();
 			}
 		}
@@ -362,7 +362,7 @@ foreach($files as $entry) {
 	$ar[]=[$entry->name, $entry->size, $entry->server_modified];
 }
 //usort($ar, fn($e1, $e2) => strcasecmp($e1[0], $e2[0]));//sort by fn
-usort($ar, fn($e1, $e2) => strtotime($e1[2])-strtotime($e2[2]));//sort by date
+//usort($ar, fn($e1, $e2) => strtotime($e1[2])-strtotime($e2[2]));//sort by date
 var_dump($ar);
 
 $res=$dpb->download();

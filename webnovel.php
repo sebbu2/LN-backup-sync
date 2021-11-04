@@ -419,13 +419,13 @@ class WebNovel extends SitePlugin
 				var_dump($res);
 				die();
 			}//*/
-			if($res->data!==NULL) {
+			if(is_object($res) && property_exists($res, 'data') && $res->data!==NULL) {
 				//$books=array_merge($books, $res->data->books);
 				$books=array_merge($books, $res->data->items);
 				++$i;
 			}
 		}
-		while( ( (is_object($res->data)&&$res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach 40*30 books soon (i'm at 21)
+		while( ( (is_object($res) && property_exists($res, 'data') && is_object($res->data) && $res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach 40*30 books soon (i'm at 21)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		if(is_null($books2)) { die('error'); }
@@ -1177,8 +1177,8 @@ class WebNovel extends SitePlugin
 			$data2=array_merge($data2, $res->data->historyItems);
 			if($pageIndex==1) if($res->data->isLast==0) $pageSize=$res->data->total;
 		}
-		while(!is_null($res->data) && ((property_exists($res->data,'isLast')&&$res->data->isLast==0) || ($res->data->total>0)) && $pageIndex<=50);
-		// i'm at 32 pages
+		while(!is_null($res->data) && ((property_exists($res->data,'isLast')&&$res->data->isLast==0) && ($res->data->total>0)) && $pageIndex<=50);
+		// i'm at 35 pages
 		
 		$data[]=$data2;
 		

@@ -56,6 +56,7 @@ foreach($ar as $fn)
 	unset($data);
 	$id=array_search(false, $content, true);
 	$content=array_slice($content, 0, $id);
+	if($fn==='Unbound_1-7.epub.po') continue;
 	if( !array_key_exists($fn3, $fns) )
 	{
 		$ar2=array('min'=>(int)$min, 'max'=>(int)$max, 'fn'=>$fn, 'fn2'=>$fn2);
