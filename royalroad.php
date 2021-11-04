@@ -73,7 +73,7 @@ class RoyalRoad extends SitePlugin
 					var_dump($node);die(); // TODO : remove
 				}
 				$ar2['cover']=(string)$node->figure->img['src'];
-				$ar2['title']=(string)$node->div->h2->a;
+				$ar2['title']=trim((string)$node->div->h2->a);
 				$ar2['href']=(string)$node->div->h2->a['href'];
 				$ar2['author']=(string)$node->div->div[0]->span->a;
 				$ar2['author-href']=(string)$node->div->div[0]->span->a['href'];
@@ -82,12 +82,13 @@ class RoyalRoad extends SitePlugin
 					if((string)$node->div->ul->li[0]->strong!='The last update has been deleted') {
 						$ar2['last-upd-text']=trim((string)$node->div->ul->li[0]);
 						$ar2['last-upd-href']=(string)$node->div->ul->li[0]->a['href'];
-						$ar2['last-upd-title']=(string)$node->div->ul->li[0]->a->span[0];
+						$ar2['last-upd-title']=trim((string)$node->div->ul->li[0]->a->span[0]);
 						$ar2['last-upd-date']=(string)$node->div->ul->li[0]->a->span[1]->time['title'];
 						$ar2['last-upd-ago']=(string)$node->div->ul->li[0]->a->span[1]->time;
 					}
+					$ar2['last-read-text']=trim((string)$node->div->ul->li[1]);
 					$ar2['last-read-href']=(string)$node->div->ul->li[1]->a['href'];
-					$ar2['last-read-title']=(string)$node->div->ul->li[1]->a->span[0];
+					$ar2['last-read-title']=trim((string)$node->div->ul->li[1]->a->span[0]);
 					$ar2['last-read-date']=(string)$node->div->ul->li[1]->a->span[1]->time['title'];
 					$ar2['last-read-ago']=(string)$node->div->ul->li[1]->a->span[1]->time;
 				}
@@ -100,7 +101,7 @@ class RoyalRoad extends SitePlugin
 								die();
 							}
 							$ar2['last-upd-href']=(string)$node->div->ul->li->a['href'];
-							$ar2['last-upd-title']=(string)$node->div->ul->li->a->span[0];
+							$ar2['last-upd-title']=trim((string)$node->div->ul->li->a->span[0]);
 							$ar2['last-upd-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
 							$ar2['last-upd-ago']=(string)$node->div->ul->li->a->span[1]->time;
 						}
@@ -111,11 +112,13 @@ class RoyalRoad extends SitePlugin
 					else {
 						$ar2['last-read-text']=trim((string)$node->div->ul->li);
 						if(!property_exists($node->div->ul->li->a, 'span')) { var_dump($node->div->ul->li); die(); }
-						$ar2['last-read-title']=(string)$node->div->ul->li->a->span[0];
+						$ar2['last-read-href']=(string)$node->div->ul->li->a['href'];
+						$ar2['last-read-title']=trim((string)$node->div->ul->li->a->span[0]);
 						$ar2['last-read-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
 						$ar2['last-read-ago']=(string)$node->div->ul->li->a->span[1]->time;
 					}
 				}
+				//if(in_array($ar2['title'], array('The Last Battlemage', 'The Humble Life of a Skill Trainer', 'A Hero\'s Song', 'Evil Overlord: The Makening'))) { var_dump(__LINE__, $ar2); }
 				$id=explode('/', $ar2['href'])[2];
 				$data[$id]=$ar2;
 				$order[]=$id;

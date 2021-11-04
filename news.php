@@ -140,7 +140,7 @@ foreach($wln_order as $id=>$list) {
 							}
 						}
 					}
-				if(!is_null($wn_chps) && exists($wn_chps, 'data') && !$found) {
+				if(!is_null($wn_chps) && exists($wn_chps, 'data') && (!property_exists($wn1, 'newChapterIndex') || abs($wn1->newChapterIndex-$wn1->totalChapterNum)<25) && ($wn1->totalChapterNum>0 && !$found)) {
 					//var_dump($wn1, $wn_chps->data->volumeItems[0]->chapterItems[0]);die();
 					$wn_chps=$wn->get_chapter_list($wln2['wn']);
 					if(!array_key_exists('msg', $row)) $row['msg']='';
@@ -164,6 +164,12 @@ foreach($wln_order as $id=>$list) {
 						if(!array_key_exists('msg', $row)) $row['msg']='';
 						$row['msg'].='updating rr: '.__LINE__.' + ';
 					}
+					$found=array_filter($rr2, fn($e) => exists($e, 'pos-title')&&strlen(get($e, 'pos-title'))>0);
+					if(count($found)==0) {
+						$rr2=$rr->get_chapter_list($wln2['rr']);
+						if(!array_key_exists('msg', $row)) $row['msg']='';
+						$row['msg'].='updating rr: '.__LINE__.' + ';
+					}
 				}
 				if(exists($rr1, 'last-upd-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-upd-title')) );
@@ -182,6 +188,7 @@ foreach($wln_order as $id=>$list) {
 					else $rr2c=NULL;
 					$row['RoyalRoad cur']=(is_numeric($rr2c)?$rr2c+1:$rr2c);
 					$row['RoyalRoad last']=(is_numeric($rr2a)?$rr2a+1:$rr2a);
+					//if(in_array($row['title'], array('The Last Battlemage', 'The Humble Life of a Skill Trainer', 'A Hero\'s Song', 'Evil Overlord: The Makening'))) { var_dump(__LINE__, $rr2a, $rr2b, $rr2c, $rr2d); }
 				}
 			}
 		}

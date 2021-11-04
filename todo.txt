@@ -56,6 +56,7 @@ update_lists.php
 
 webnovel.php
 	add/check history & collection
+	sort history & collection
 	improve support of empty (no chapters) novels
 
 webnovel_news.php
