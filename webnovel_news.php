@@ -106,7 +106,11 @@ flush();
 //foreach($watches as $id=>$list) { // WLN list
 foreach($watches['data'][0] as $id=>$list) { // WLN list
 	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
-	if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) ) {
+	$cond_ = (
+		strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ||strpos(strtolower($id), 'duplicates')!==false ||
+		strpos(strtolower($id), 'royalroad')!==false || strpos(strtolower($id), 'scribblehub')!==false || strpos(strtolower($id), 'wattpad')!==false
+	);
+	if(!$cond_) {
 		echo '<h1>'.$id.'</h1>',"\n";
 	}
 	$lines=0;
@@ -264,17 +268,18 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					}
 					//var_dump($last_upd, strtotime($last_upd, $timestamp));die();
 				}
-				if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) {
+				if( $cond_ ) {
 					if(!is_numeric($book->readToChapterIndex)) {
 						$data=$wn->read_update($book, $entry['chp']);
 						assert($data->code===0 && $data->msg==='Success') or die('update "'.$entry['title'].' failed.');
-						//var_dump($book, $entry['chp'], $chp_id);die();
+						//var_dump(__LINE__, $id, $entry, $book, $chp_id);die();
 						continue;
 					}
 					if(!is_object($res)||!property_exists($res, 'data')||!property_exists($res->data,'bookInfo')) var_dump($entry['title'], $book->bookName, $res);
 					if( !( ($book->readToChapterIndex-$add) == ($res->data->bookInfo->totalChapterNum+$add) ) ) {
 						$diff4[$entry['title']]=$priv_only;
 					}
+					//var_dump(__LINE__, $id, $entry, $book, $chp_id);die();
 					continue;
 				}
 				if($add2!=$priv_only) {

@@ -13,6 +13,7 @@ include_once('position.php');
 include_once('correspondances.php');
 
 define('PERLINE', true);
+$data='';
 
 $wln=new WLNUpdates();
 $wn=new WebNovel;
@@ -208,15 +209,17 @@ foreach($wln_order as $id=>$list) {
 			print_tbody($row, $head);
 		}
 		if(PERLINE) {
+			$data.=ob_get_contents();
 			if(ob_get_level()>0) { ob_flush(); }
-			//flush();
+			flush();
 		}
 	}
 	if($lines>0) {
 		echo '</table>'."\r\n";
 		var_dump($lines);
 	}
-	//if(ob_get_level()>0) { ob_flush(); }
+	$data.=ob_get_contents();
+	if(ob_get_level()>0) { ob_flush(); }
 	flush();
 }
 //if(ob_get_level()>0) { ob_flush(); }
@@ -273,7 +276,8 @@ foreach($wn_books as $entry) {
 		print_tbody($row, $head);
 	}
 	if(PERLINE) {
-		//if(ob_get_level()>0) { ob_flush(); }
+		$data.=ob_get_contents();
+		if(ob_get_level()>0) { ob_flush(); }
 		flush();
 	}
 }
@@ -281,7 +285,8 @@ if($lines>0) {
 	echo '</table>'."\r\n";
 	var_dump($lines);
 }
-//if(ob_get_level()>0) { ob_flush(); }
+$data.=ob_get_contents();
+if(ob_get_level()>0) { ob_flush(); }
 flush();
 //1 RR
 $head=array('title',
@@ -331,7 +336,8 @@ foreach($rr_books as $rr_id=>$entry) {
 		print_tbody($row, $head);
 	}
 	if(PERLINE) {
-		//if(ob_get_level()>0) { ob_flush(); }
+		$data.=ob_get_contents();
+		if(ob_get_level()>0) { ob_flush(); }
 		flush();
 	}
 }
@@ -339,7 +345,8 @@ if($lines>0) {
 	echo '</table>'."\r\n";
 	var_dump($lines);
 }
-//if(ob_get_level()>0) { ob_flush(); }
+$data.=ob_get_contents();
+if(ob_get_level()>0) { ob_flush(); }
 flush();
 //1 pos
 $head=array('title',
@@ -372,7 +379,8 @@ foreach($pos as $item) {
 		print_tbody($row, $head);
 	}
 	if(PERLINE) {
-		//if(ob_get_level()>0) { ob_flush(); }
+		$data.=ob_get_contents();
+		if(ob_get_level()>0) { ob_flush(); }
 		flush();
 	}
 }
@@ -380,11 +388,15 @@ if($lines>0) {
 	echo '</table>'."\r\n";
 	var_dump($lines);
 }
-//if(ob_get_level()>0) { ob_flush(); }
+$data.=ob_get_contents();
+if(ob_get_level()>0) { ob_flush(); }
 flush();
 
+$data.=ob_get_contents();
 //$data=ob_get_clean(); // return-only (no print)
-$data=ob_get_flush(); // return and print
+//$data=ob_get_flush(); // return and print
+ob_flush();
+flush();
 file_put_contents('news.htm', $data);
 unset($data);
 
