@@ -17,12 +17,6 @@
         "name": "Don't Fear the Reaper",
         "list": "RoyalRoad plan to read"
     },
-    "527": {
-        "wln": 142289,
-        "wn": null,
-        "name": "The Cleansing",
-        "list": "RoyalRoad plan to read"
-    },
     "544": {
         "wln": 2410,
         "wn": null,
@@ -316,6 +310,12 @@
         "wn": null,
         "name": "Azarinth Healer",
         "list": "RoyalRoad"
+    },
+    "18307": {
+        "wln": 63699,
+        "wn": "10330951406005605",
+        "name": "Chronicles of the Weakest Wind Mage",
+        "list": "QIDIAN plan to read"
     },
     "21188": {
         "wln": 74196,
@@ -1193,12 +1193,6 @@
         "name": "Abyssal Knight in the Modern World",
         "list": "RoyalRoad plan to read"
     },
-    "42986": {
-        "wln": 136659,
-        "wn": null,
-        "name": "I Have Infinite Skill Points in the Apocalypse",
-        "list": "RoyalRoad plan to read"
-    },
     "43013": {
         "wln": 136860,
         "wn": null,
@@ -1385,6 +1379,12 @@
         "name": "The Glint Spear",
         "list": "RoyalRoad plan to read"
     },
+    "45493": {
+        "wln": 139304,
+        "wn": null,
+        "name": "Liches Get Stitches",
+        "list": "RoyalRoad"
+    },
     "45603": {
         "wln": 139388,
         "wn": null,
@@ -1440,10 +1440,10 @@
         "list": "RoyalRoad"
     },
     "46709": {
-        "wln": 140976,
+        "wln": 141706,
         "wn": null,
         "name": "Enduring Good",
-        "list": "duplicates"
+        "list": "RoyalRoad"
     },
     "46742": {
         "wln": 140816,

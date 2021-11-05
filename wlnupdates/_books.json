@@ -115,8 +115,8 @@
       },
       "id": 668,
       "name": "Mushoku Tensei",
-      "rating": 7.224137931034483,
-      "rating_count": 58,
+      "rating": 7.11864406779661,
+      "rating_count": 59,
       "tl_type": "translated"
     },
     {
@@ -741,15 +741,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 857,
-      "chp": 857,
+      "agg": 861,
+      "chp": 861,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 859,
-      "chp": 859,
-      "date": 1635886487,
+      "agg": 861,
+      "chp": 861,
+      "date": 1636123178,
       "frag": 0,
       "vol": -1
     },
@@ -884,7 +884,7 @@
     {
       "agg": 83,
       "chp": 83,
-      "date": 1626606120,
+      "date": 1626606269,
       "frag": 0,
       "vol": -1
     },
@@ -1141,8 +1141,8 @@
       },
       "id": 32382,
       "name": "100 Luck and the Dragon Tamer Skill!",
-      "rating": 7.296875,
-      "rating_count": 64,
+      "rating": 7.230769230769231,
+      "rating_count": 65,
       "tl_type": "oel"
     },
     {
@@ -1775,7 +1775,7 @@
     {
       "agg": 10003,
       "chp": 3,
-      "date": 1577759558,
+      "date": 1466223067,
       "frag": 0,
       "vol": 1
     },
@@ -2396,7 +2396,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534416743,
+      "date": 1534927563,
       "frag": -1,
       "vol": 3
     },
@@ -2415,8 +2415,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 321,
+      "chp": 321,
       "frag": -1,
       "vol": -1
     },
@@ -2610,9 +2610,9 @@
       "vol": -1
     },
     {
-      "agg": 3999,
-      "chp": 3999,
-      "date": 1635913440,
+      "agg": 4003,
+      "chp": 4003,
+      "date": 1636084500,
       "frag": 0,
       "vol": -1
     },
@@ -2799,9 +2799,9 @@
       "vol": -1
     },
     {
-      "agg": 713,
-      "chp": 713,
-      "date": 1635889528,
+      "agg": 714,
+      "chp": 714,
+      "date": 1636064046,
       "frag": 0,
       "vol": -1
     },
@@ -3449,7 +3449,7 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488964242,
+      "date": 1488964196,
       "frag": 0,
       "vol": 3
     },
@@ -3771,9 +3771,9 @@
       "vol": -1
     },
     {
-      "agg": 161,
-      "chp": 161,
-      "date": 1635840237,
+      "agg": 162,
+      "chp": 162,
+      "date": 1636097976,
       "frag": 0,
       "vol": -1
     },
@@ -3927,8 +3927,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 13,
+      "chp": 13,
       "frag": -1,
       "vol": -1
     },
@@ -5021,6 +5021,33 @@
     },
     "The Evil Consort Above An Evil King"
   ],
+  "61124": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 61124,
+      "name": "Bringing the Nation's Husband Home",
+      "rating": 9,
+      "rating_count": 5,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 395,
+      "chp": 395,
+      "date": 1516303732,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "61126": [
     {
       "extra_metadata": {
@@ -5291,6 +5318,33 @@
     },
     null
   ],
+  "62700": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 62700,
+      "name": "Condemning the Heavens",
+      "rating": 6.363636363636363,
+      "rating_count": 11,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 295,
+      "chp": 295,
+      "date": 1561293336,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
   "62773": [
     {
       "extra_metadata": {
@@ -5493,15 +5547,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 764,
-      "chp": 764,
+      "agg": 768,
+      "chp": 768,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 762,
-      "chp": 762,
-      "date": 1635595260,
+      "agg": 764,
+      "chp": 764,
+      "date": 1635944461,
       "frag": 0,
       "vol": -1
     },
@@ -5520,8 +5574,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 274,
+      "chp": 274,
       "frag": -1,
       "vol": -1
     },
@@ -5561,6 +5615,33 @@
     },
     null
   ],
+  "63699": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 63699,
+      "name": "Chronicles of the Weakest Wind Mage",
+      "rating": 9,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 44,
+      "chp": 44,
+      "date": 1561426756.209329,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
   "63739": [
     {
       "extra_metadata": {
@@ -5585,6 +5666,33 @@
       "date": null,
       "frag": -1,
       "vol": -1
+    },
+    null
+  ],
+  "63825": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 63825,
+      "name": "Legend of the Perfect Emperor",
+      "rating": 6.333333333333333,
+      "rating_count": 9,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20063,
+      "chp": 63,
+      "date": 1528037359,
+      "frag": 0,
+      "vol": 2
     },
     null
   ],
@@ -5613,7 +5721,7 @@
       "frag": 0,
       "vol": -1
     },
-    "Why Did You Summon Me\uff1f"
+    "Why Did You Summon Me?"
   ],
   "64197": [
     {
@@ -6087,8 +6195,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1291,
-      "chp": 1291,
+      "agg": 1292,
+      "chp": 1292,
       "frag": -1,
       "vol": -1
     },
@@ -6325,8 +6433,8 @@
       },
       "id": 71793,
       "name": "Dual Cultivation",
-      "rating": 6.818181818181818,
-      "rating_count": 22,
+      "rating": 6.913043478260869,
+      "rating_count": 23,
       "tl_type": "oel"
     },
     {
@@ -6502,6 +6610,33 @@
       "chp": 13,
       "date": 1549574940,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "75979": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 75979,
+      "name": "My Dad Is the Galaxy's Prince Charming",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -6830,6 +6965,33 @@
     },
     null
   ],
+  "83365": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 83365,
+      "name": "Bringing the nation's husband home?!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 4,
+      "chp": 4,
+      "date": 1549469131,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "83659": [
     {
       "extra_metadata": {
@@ -7122,6 +7284,33 @@
       "agg": 131,
       "chp": 131,
       "date": 1563284868,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "90443": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 90443,
+      "name": "Bringing the Nations husband home",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "date": 1554618880.090236,
       "frag": -1,
       "vol": -1
     },
@@ -7445,7 +7634,7 @@
     {
       "agg": 30001,
       "chp": 1,
-      "date": 1616187660,
+      "date": 1616201793,
       "frag": 0,
       "vol": 3
     },
@@ -7491,8 +7680,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70591,
-      "chp": 591,
+      "agg": 70597,
+      "chp": 597,
       "frag": -1,
       "vol": 7
     },
@@ -7869,15 +8058,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 289,
-      "chp": 289,
+      "agg": 294,
+      "chp": 294,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 543,
-      "chp": 543,
-      "date": 1635976801,
+      "agg": 545,
+      "chp": 545,
+      "date": 1636149600,
       "frag": 0,
       "vol": -1
     },
@@ -7931,7 +8120,7 @@
     {
       "agg": 18,
       "chp": 18,
-      "date": 1621173600,
+      "date": 1621098540,
       "frag": 0,
       "vol": -1
     },
@@ -8058,8 +8247,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 137,
-      "chp": 137,
+      "agg": 138,
+      "chp": 138,
       "frag": -1,
       "vol": -1
     },
@@ -8147,7 +8336,7 @@
     {
       "agg": 30105,
       "chp": 105,
-      "date": 1629587269,
+      "date": 1629587160,
       "frag": 0,
       "vol": 3
     },
@@ -8544,8 +8733,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1278,
-      "chp": 1278,
+      "agg": 1281,
+      "chp": 1281,
       "frag": -1,
       "vol": -1
     },
@@ -8571,8 +8760,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1290,
-      "chp": 1290,
+      "agg": 1293,
+      "chp": 1293,
       "frag": -1,
       "vol": -1
     },
@@ -8841,8 +9030,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1307,
-      "chp": 1307,
+      "agg": 1310,
+      "chp": 1310,
       "frag": -1,
       "vol": -1
     },
@@ -9273,8 +9462,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 267,
-      "chp": 267,
+      "agg": 271,
+      "chp": 271,
       "frag": -1,
       "vol": -1
     },
@@ -9983,7 +10172,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1591334870,
+      "date": 1599120572,
       "frag": 0,
       "vol": -1
     },
@@ -10245,15 +10434,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 454,
-      "chp": 454,
+      "agg": 456,
+      "chp": 456,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 40,
       "chp": 40,
-      "date": 1598731427,
+      "date": 1598696551,
       "frag": 0,
       "vol": -1
     },
@@ -10494,9 +10683,9 @@
       "vol": -1
     },
     {
-      "agg": 261,
-      "chp": 261,
-      "date": 1635829929,
+      "agg": 263,
+      "chp": 263,
+      "date": 1636017127,
       "frag": 0,
       "vol": -1
     },
@@ -10601,7 +10790,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615172880,
+      "date": 1615191300,
       "frag": 0,
       "vol": -1
     },
@@ -10647,8 +10836,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 16,
-      "chp": 16,
+      "agg": 18,
+      "chp": 18,
       "frag": -1,
       "vol": -1
     },
@@ -10927,6 +11116,30 @@
       "chp": 3,
       "date": 1596531900,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "119508": [
+    {
+      "extra_metadata": null,
+      "id": 119508,
+      "name": "From Sidekick to Bigshot",
+      "rating": 6.666666666666667,
+      "rating_count": 3,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1597359257,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -11222,7 +11435,7 @@
     {
       "agg": 62,
       "chp": 62,
-      "date": 1627776000,
+      "date": 1628985600,
       "frag": 0,
       "vol": -1
     },
@@ -11328,9 +11541,9 @@
       "vol": -1
     },
     {
-      "agg": 67,
-      "chp": 67,
-      "date": 1635920184,
+      "agg": 69,
+      "chp": 69,
+      "date": 1636095903,
       "frag": 0,
       "vol": -1
     },
@@ -11403,8 +11616,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 155,
-      "chp": 155,
+      "agg": 157,
+      "chp": 157,
       "frag": -1,
       "vol": -1
     },
@@ -11430,15 +11643,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 258,
-      "chp": 258,
+      "agg": 261,
+      "chp": 261,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 226,
-      "chp": 226,
-      "date": 1635956651,
+      "agg": 227,
+      "chp": 227,
+      "date": 1636131711,
       "frag": 0,
       "vol": -1
     },
@@ -11894,7 +12107,7 @@
     {
       "agg": 300,
       "chp": 300,
-      "date": 1627320416,
+      "date": 1627319700,
       "frag": 0,
       "vol": -1
     },
@@ -12434,7 +12647,7 @@
     {
       "agg": 40,
       "chp": 40,
-      "date": 1609276184,
+      "date": 1609276140,
       "frag": 0,
       "vol": -1
     },
@@ -12459,9 +12672,9 @@
       "vol": -1
     },
     {
-      "agg": 247,
-      "chp": 247,
-      "date": 1636004446,
+      "agg": 248,
+      "chp": 248,
+      "date": 1636090498,
       "frag": 0,
       "vol": -1
     },
@@ -12693,8 +12906,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 266,
-      "chp": 266,
+      "agg": 271,
+      "chp": 271,
       "frag": -1,
       "vol": -1
     },
@@ -12804,9 +13017,9 @@
       "vol": -1
     },
     {
-      "agg": 100,
-      "chp": 100,
-      "date": 1635835379,
+      "agg": 101,
+      "chp": 101,
+      "date": 1636092771,
       "frag": 0,
       "vol": -1
     },
@@ -12906,15 +13119,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 212,
-      "chp": 212,
+      "agg": 216,
+      "chp": 216,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 213,
-      "chp": 213,
-      "date": 1635966001,
+      "agg": 215,
+      "chp": 215,
+      "date": 1636138800,
       "frag": 0,
       "vol": -1
     },
@@ -13176,8 +13389,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20157,
-      "chp": 157,
+      "agg": 20160,
+      "chp": 160,
       "frag": -1,
       "vol": 2
     },
@@ -13373,7 +13586,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1623256607,
+      "date": 1623256560,
       "frag": 0,
       "vol": -1
     },
@@ -13551,15 +13764,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 106,
-      "chp": 106,
+      "agg": 108,
+      "chp": 108,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 104,
-      "chp": 104,
-      "date": 1635535080,
+      "agg": 105,
+      "chp": 105,
+      "date": 1635962519,
       "frag": 0,
       "vol": -1
     },
@@ -13586,7 +13799,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1629115860,
+      "date": 1627911240,
       "frag": 0,
       "vol": -1
     },
@@ -13985,7 +14198,7 @@
     {
       "agg": 66,
       "chp": 66,
-      "date": 1631126940,
+      "date": 1631127053,
       "frag": 0,
       "vol": -1
     },
@@ -14028,8 +14241,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 80,
-      "chp": 80,
+      "agg": 81,
+      "chp": 81,
       "frag": -1,
       "vol": -1
     },
@@ -14499,8 +14712,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 682,
-      "chp": 682,
+      "agg": 683,
+      "chp": 683,
       "frag": -1,
       "vol": -1
     },
@@ -14531,7 +14744,7 @@
     {
       "agg": 12,
       "chp": 12,
-      "date": 1622925840,
+      "date": 1622925812,
       "frag": 0,
       "vol": -1
     },
@@ -14687,7 +14900,7 @@
     {
       "agg": 20062,
       "chp": 62,
-      "date": 1634776860,
+      "date": 1634776871,
       "frag": 0,
       "vol": 2
     },
@@ -14889,8 +15102,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 61,
-      "chp": 61,
+      "agg": 63,
+      "chp": 63,
       "frag": -1,
       "vol": -1
     },
@@ -15102,8 +15315,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 97,
-      "chp": 97,
+      "agg": 99,
+      "chp": 99,
       "frag": -1,
       "vol": -1
     },
@@ -15288,8 +15501,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 124,
-      "chp": 124,
+      "agg": 127,
+      "chp": 127,
       "frag": -1,
       "vol": -1
     },
@@ -15375,9 +15588,9 @@
       "vol": -1
     },
     {
-      "agg": 55,
-      "chp": 55,
-      "date": 1635924461,
+      "agg": 56,
+      "chp": 56,
+      "date": 1636132331,
       "frag": 0,
       "vol": -1
     },
@@ -15956,6 +16169,33 @@
     },
     null
   ],
+  "139304": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 139304,
+      "name": "Liches Get Stitches",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 34,
+      "chp": 34,
+      "date": 1634820120,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "139312": [
     {
       "extra_metadata": null,
@@ -16131,9 +16371,9 @@
       "vol": -1
     },
     {
-      "agg": 69,
-      "chp": 69,
-      "date": 1636005600,
+      "agg": 70,
+      "chp": 70,
+      "date": 1636092000,
       "frag": 0,
       "vol": -1
     },
@@ -16389,8 +16629,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 30,
-      "chp": 30,
+      "agg": 34,
+      "chp": 34,
       "frag": -1,
       "vol": -1
     },
@@ -16470,8 +16710,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 40,
-      "chp": 40,
+      "agg": 44,
+      "chp": 44,
       "frag": -1,
       "vol": -1
     },
@@ -16536,7 +16776,7 @@
       "frag": 0,
       "vol": -1
     },
-    null
+    "Enduring Good [The Pharmacist's Guide to Eldritch Gods and How I Learned to Love Cultivation]"
   ],
   "140994": [
     {
@@ -16575,8 +16815,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 62,
-      "chp": 62,
+      "agg": 65,
+      "chp": 65,
       "frag": -1,
       "vol": -1
     },
@@ -18177,9 +18417,9 @@
       "vol": -1
     },
     {
-      "agg": 3,
-      "chp": 3,
-      "date": 1635917290,
+      "agg": 5,
+      "chp": 5,
+      "date": 1636095325,
       "frag": 0,
       "vol": -1
     },
@@ -18430,6 +18670,654 @@
       "extra_metadata": null,
       "id": 142517,
       "name": "I Have A Martial Arts Panel",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142528": [
+    {
+      "extra_metadata": null,
+      "id": 142528,
+      "name": "Wizard World:Struggles of dimensions",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142529": [
+    {
+      "extra_metadata": null,
+      "id": 142529,
+      "name": "Back For My Daughter",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142530": [
+    {
+      "extra_metadata": null,
+      "id": 142530,
+      "name": "Barging into a Magic World after Returning from Xianxia",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142531": [
+    {
+      "extra_metadata": null,
+      "id": 142531,
+      "name": "Becoming the Master of a Mermaid Island From Today",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142532": [
+    {
+      "extra_metadata": null,
+      "id": 142532,
+      "name": "Binding to Geniuses To Become Stronger",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142533": [
+    {
+      "extra_metadata": null,
+      "id": 142533,
+      "name": "Blood Evolution System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142534": [
+    {
+      "extra_metadata": null,
+      "id": 142534,
+      "name": "Bloodlines of the Ancient Pantheons",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142535": [
+    {
+      "extra_metadata": null,
+      "id": 142535,
+      "name": "Blood Type: Dragon",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142536": [
+    {
+      "extra_metadata": null,
+      "id": 142536,
+      "name": "Blood Warlock: Succubus Partner in the Apocalypse",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142537": [
+    {
+      "extra_metadata": null,
+      "id": 142537,
+      "name": "Boss Monster Chat Group",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142538": [
+    {
+      "extra_metadata": null,
+      "id": 142538,
+      "name": "Breeding Dragons From Today",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142539": [
+    {
+      "extra_metadata": null,
+      "id": 142539,
+      "name": "Brockwing Vale",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142558": [
+    {
+      "extra_metadata": null,
+      "id": 142558,
+      "name": "Chaos' Heir",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142559": [
+    {
+      "extra_metadata": null,
+      "id": 142559,
+      "name": "Check-In System: I'm a Guard of the Castellan's Castle",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142560": [
+    {
+      "extra_metadata": null,
+      "id": 142560,
+      "name": "Child of Two Bloods",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142561": [
+    {
+      "extra_metadata": null,
+      "id": 142561,
+      "name": "Classless Ascension",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142562": [
+    {
+      "extra_metadata": null,
+      "id": 142562,
+      "name": "Contracts With the Void",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142563": [
+    {
+      "extra_metadata": null,
+      "id": 142563,
+      "name": "Interdimensional Heroic Support Chat",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142564": [
+    {
+      "extra_metadata": null,
+      "id": 142564,
+      "name": "MMORPG: I Have All the Elements",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142565": [
+    {
+      "extra_metadata": null,
+      "id": 142565,
+      "name": "MMORPG: I Raise Dragons In The Game",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142566": [
+    {
+      "extra_metadata": null,
+      "id": 142566,
+      "name": "My Animal Evolution System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142567": [
+    {
+      "extra_metadata": null,
+      "id": 142567,
+      "name": "Taboo Leveling",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142568": [
+    {
+      "extra_metadata": null,
+      "id": 142568,
+      "name": "The Great Flood: Attack of the Alien Race",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142569": [
+    {
+      "extra_metadata": null,
+      "id": 142569,
+      "name": "who said angels and devils cant love?!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142570": [
+    {
+      "extra_metadata": null,
+      "id": 142570,
+      "name": "Worldwide Livestreaming: I Open a Mystery Box Every Day",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142619": [
+    {
+      "extra_metadata": null,
+      "id": 142619,
+      "name": "Invincible Uncle-Grandmaster",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142633": [
+    {
+      "extra_metadata": null,
+      "id": 142633,
+      "name": "My Maids Are All Antagonists!",
       "rating": null,
       "rating_count": null,
       "tl_type": "translated"

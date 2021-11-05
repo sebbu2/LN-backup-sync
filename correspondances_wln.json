@@ -315,7 +315,7 @@
         "wn": "6831841802000505",
         "rr": null,
         "name": "Dominating Sword Immortal",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN on-hold"
     },
     "41998": {
         "wn": "12447167005470205",
@@ -809,6 +809,12 @@
         "name": "The Evil Consort Above An Evil King",
         "list": "QIDIAN on-hold"
     },
+    "61124": {
+        "wn": "8360425206000005",
+        "rr": null,
+        "name": "Bringing the Nation's Husband Home",
+        "list": "QIDIAN plan to read"
+    },
     "61126": {
         "wn": "8456930206000105",
         "rr": null,
@@ -869,6 +875,12 @@
         "name": "Alchemy Emperor of the Divine Dao",
         "list": "QIDIAN plan to read"
     },
+    "62700": {
+        "wn": "17684340505309305",
+        "rr": null,
+        "name": "Condemning the Heavens",
+        "list": "QIDIAN plan to read"
+    },
     "62773": {
         "wn": "10993431205232305",
         "rr": null,
@@ -921,7 +933,7 @@
         "wn": "9067131406001405",
         "rr": null,
         "name": "MMORPG: Martial Gamer",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN on-hold"
     },
     "63420": {
         "wn": "8825641305001605",
@@ -929,16 +941,28 @@
         "name": "Carefree Path of Dreams",
         "list": "QIDIAN completed"
     },
+    "63699": {
+        "wn": "10330951406005605",
+        "rr": 18307,
+        "name": "Chronicles of the Weakest Wind Mage",
+        "list": "QIDIAN plan to read"
+    },
     "63739": {
         "wn": "10346585806013105",
         "rr": null,
         "name": "Diavazo Logs: Motivating a Bookworm Protagonist",
         "list": "QIDIAN stalled"
     },
+    "63825": {
+        "wn": "10379247906023905",
+        "rr": null,
+        "name": "Legend of the Perfect Emperor",
+        "list": "QIDIAN plan to read"
+    },
     "63826": {
         "wn": "9381083006002105",
         "rr": null,
-        "name": "Why Did You Summon Me\\uFF1F",
+        "name": "Why Did You Summon Me?",
         "list": "QIDIAN plan to read"
     },
     "64197": {
@@ -1139,6 +1163,12 @@
         "name": "The Reborn Runesmith",
         "list": "RoyalRoad plan to read"
     },
+    "75979": {
+        "wn": "8896645106001105",
+        "rr": null,
+        "name": "My Dad Is the Galaxy's Prince Charming",
+        "list": "QIDIAN plan to read"
+    },
     "76403": {
         "wn": null,
         "rr": 41511,
@@ -1211,6 +1241,12 @@
         "name": "The God Virus",
         "list": "QIDIAN plan to read"
     },
+    "83365": {
+        "wn": "8360425206000005",
+        "rr": null,
+        "name": "Bringing the nation's husband home?!",
+        "list": "duplicates"
+    },
     "83659": {
         "wn": null,
         "rr": 21817,
@@ -1276,6 +1312,12 @@
         "rr": null,
         "name": "Mutagen",
         "list": "QIDIAN original"
+    },
+    "90443": {
+        "wn": "8360425206000005",
+        "rr": null,
+        "name": "Bringing the Nations husband home",
+        "list": "duplicates"
     },
     "90542": {
         "wn": null,
@@ -2087,6 +2129,12 @@
         "name": "Letters From a Lost Bird",
         "list": "RoyalRoad plan to read"
     },
+    "119508": {
+        "wn": "16733253206159405",
+        "rr": null,
+        "name": "From Sidekick to Bigshot",
+        "list": "QIDIAN plan to read"
+    },
     "119970": {
         "wn": "17791889705928505",
         "rr": 35289,
@@ -2891,12 +2939,6 @@
         "name": "Truth Seeker: A LitRPG Timeloop",
         "list": "RoyalRoad"
     },
-    "136659": {
-        "wn": null,
-        "rr": 42986,
-        "name": "I Have Infinite Skill Points in the Apocalypse",
-        "list": "RoyalRoad plan to read"
-    },
     "136682": {
         "wn": "11492897005406105",
         "rr": 30321,
@@ -3125,6 +3167,12 @@
         "name": "Inhuman Warlock",
         "list": "QIDIAN on-hold"
     },
+    "139304": {
+        "wn": null,
+        "rr": 45493,
+        "name": "Liches Get Stitches",
+        "list": "RoyalRoad"
+    },
     "139312": {
         "wn": null,
         "rr": 45124,
@@ -3238,12 +3286,6 @@
         "rr": 46742,
         "name": "In Another World's Apocalypse - An Isekai Loop LitRPG",
         "list": "RoyalRoad plan to read"
-    },
-    "140976": {
-        "wn": null,
-        "rr": 46709,
-        "name": "Enduring Good",
-        "list": "duplicates"
     },
     "140994": {
         "wn": null,
@@ -3393,12 +3435,6 @@
         "wn": null,
         "rr": 2720,
         "name": "The Third Hero",
-        "list": "RoyalRoad plan to read"
-    },
-    "142289": {
-        "wn": null,
-        "rr": 527,
-        "name": "The Cleansing",
         "list": "RoyalRoad plan to read"
     },
     "142321": {
@@ -3663,6 +3699,162 @@
         "wn": "20178481605547205",
         "rr": null,
         "name": "I Have A Martial Arts Panel",
+        "list": "QIDIAN plan to read"
+    },
+    "142528": {
+        "wn": "18523302305004305",
+        "rr": null,
+        "name": "Wizard World:Struggles of dimensions",
+        "list": "QIDIAN plan to read"
+    },
+    "142529": {
+        "wn": "20559228005448805",
+        "rr": null,
+        "name": "Back For My Daughter",
+        "list": "QIDIAN plan to read"
+    },
+    "142530": {
+        "wn": "19729093106218205",
+        "rr": null,
+        "name": "Barging into a Magic World after Returning from Xianxia",
+        "list": "QIDIAN plan to read"
+    },
+    "142531": {
+        "wn": "20670509006798605",
+        "rr": null,
+        "name": "Becoming the Master of a Mermaid Island From Today",
+        "list": "QIDIAN plan to read"
+    },
+    "142532": {
+        "wn": "19279942705880305",
+        "rr": null,
+        "name": "Binding to Geniuses To Become Stronger",
+        "list": "QIDIAN plan to read"
+    },
+    "142533": {
+        "wn": "19715562306157405",
+        "rr": null,
+        "name": "Blood Evolution System",
+        "list": "QIDIAN plan to read"
+    },
+    "142534": {
+        "wn": "15925461506549105",
+        "rr": null,
+        "name": "Bloodlines of the Ancient Pantheons",
+        "list": "QIDIAN plan to read"
+    },
+    "142535": {
+        "wn": "15065424106754005",
+        "rr": null,
+        "name": "Blood Type: Dragon",
+        "list": "QIDIAN plan to read"
+    },
+    "142536": {
+        "wn": "20134751006091605",
+        "rr": null,
+        "name": "Blood Warlock: Succubus Partner in the Apocalypse",
+        "list": "QIDIAN plan to read"
+    },
+    "142537": {
+        "wn": "18270790706135405",
+        "rr": null,
+        "name": "Boss Monster Chat Group",
+        "list": "QIDIAN plan to read"
+    },
+    "142538": {
+        "wn": "19582154305682205",
+        "rr": null,
+        "name": "Breeding Dragons From Today",
+        "list": "QIDIAN plan to read"
+    },
+    "142539": {
+        "wn": "18162952206671005",
+        "rr": null,
+        "name": "Brockwing Vale",
+        "list": "QIDIAN plan to read"
+    },
+    "142558": {
+        "wn": "20199782605918605",
+        "rr": null,
+        "name": "Chaos' Heir",
+        "list": "QIDIAN plan to read"
+    },
+    "142559": {
+        "wn": "18928175506762605",
+        "rr": null,
+        "name": "Check-In System: I'm a Guard of the Castellan's Castle",
+        "list": "QIDIAN plan to read"
+    },
+    "142560": {
+        "wn": "17465457506126705",
+        "rr": null,
+        "name": "Child of Two Bloods",
+        "list": "QIDIAN plan to read"
+    },
+    "142561": {
+        "wn": "20002981405337705",
+        "rr": null,
+        "name": "Classless Ascension",
+        "list": "QIDIAN plan to read"
+    },
+    "142562": {
+        "wn": "17618939406960505",
+        "rr": null,
+        "name": "Contracts With the Void",
+        "list": "QIDIAN plan to read"
+    },
+    "142563": {
+        "wn": "14270390005827805",
+        "rr": null,
+        "name": "Interdimensional Heroic Support Chat",
+        "list": "QIDIAN plan to read"
+    },
+    "142564": {
+        "wn": "18928166405605805",
+        "rr": null,
+        "name": "MMORPG: I Have All the Elements",
+        "list": "QIDIAN plan to read"
+    },
+    "142565": {
+        "wn": "18928194406763205",
+        "rr": null,
+        "name": "MMORPG: I Raise Dragons In The Game",
+        "list": "QIDIAN plan to read"
+    },
+    "142566": {
+        "wn": "18928153406762405",
+        "rr": null,
+        "name": "My Animal Evolution System",
+        "list": "QIDIAN plan to read"
+    },
+    "142567": {
+        "wn": "16522014806361405",
+        "rr": null,
+        "name": "Taboo Leveling",
+        "list": "QIDIAN plan to read"
+    },
+    "142568": {
+        "wn": "18928182405605905",
+        "rr": null,
+        "name": "The Great Flood: Attack of the Alien Race",
+        "list": "QIDIAN plan to read"
+    },
+    "142569": {
+        "wn": "16612222705562905",
+        "rr": null,
+        "name": "who said angels and devils cant love?!",
+        "list": "QIDIAN plan to read"
+    },
+    "142570": {
+        "wn": "18928188505606005",
+        "rr": null,
+        "name": "Worldwide Livestreaming: I Open a Mystery Box Every Day",
+        "list": "QIDIAN plan to read"
+    },
+    "142633": {
+        "wn": "20552407905385405",
+        "rr": null,
+        "name": "My Maids Are All Antagonists!",
         "list": "QIDIAN plan to read"
     }
 }
