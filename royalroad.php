@@ -44,6 +44,7 @@ class RoyalRoad extends SitePlugin
 	public function watches() {
 		$i=1;
 		$count=0;
+		$count2=0;
 		$pages=array();
 		$skip=array('&laquo; First', '&lsaquo; Previous', 'Next &rsaquo;', 'Last &raquo;');
 		$ar = array();
@@ -65,6 +66,7 @@ class RoyalRoad extends SitePlugin
 			//var_dump($xml);
 			// /html/body/div[3]/div/div/div/div/div/div[2]/div[2]/div[2]/div[2]/div[1]
 			$res2=$xml->xpath("//div[@class='fiction-list']/div");
+			$count2=0;
 			foreach($res2 as $node) {
 				//var_dump($node);die();
 				$ar2=array();
@@ -72,6 +74,7 @@ class RoyalRoad extends SitePlugin
 				if(!property_exists($node, 'figure')) {
 					var_dump($node);die(); // TODO : remove
 				}
+				$count2++;
 				$ar2['cover']=(string)$node->figure->img['src'];
 				$ar2['title']=trim((string)$node->div->h2->a);
 				$ar2['href']=(string)$node->div->h2->a['href'];
@@ -130,10 +133,11 @@ class RoyalRoad extends SitePlugin
 				if(array_key_exists( (string)$node['data-page'], $pages)) continue;
 				$pages[(string)$node['data-page']]=(string)$node['href'];
 			}
+			if($i>=5 && $count2==50) $pages[$i+1]='/my/follows?page='.($i+1); // TODO : temporary fix for bug #13041
 			//var_dump($i, strlen($res));
 			$i++;
 			$count++;
-		} while($i<=count($pages) && $count<20 ); // count set as 20, currently at 4
+		} while($i<=count($pages) && $count<20 ); // count set as 20, currently at 5
 		//var_dump($pages);
 		ksort($data);
 		$res=json_encode($data);

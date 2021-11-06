@@ -4,8 +4,12 @@ require_once('functions.inc.php');
 require_once('webnovel.php');
 require_once('wlnupdates.php');
 
-$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
+$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),false,512,JSON_THROW_ON_ERROR);
+if(is_object($watches)) $watches=get_object_vars($watches);
 $books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),false,512,JSON_THROW_ON_ERROR);
+if(is_object($books)) $books=get_object_vars($books);
+$subname_=json_decode(str_replace("\t",'',file_get_contents('webnovel/_subname.json')),false,512,JSON_THROW_ON_ERROR);
+if(is_object($subname_)) $subname_=get_object_vars($subname_);
 
 $wln=new WLNUpdates;
 $wn=new WebNovel;
@@ -39,9 +43,13 @@ foreach($books as $book) // qidian
 	{
 		foreach($list as $entry) // wln
 		{
-			$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
+			//var_dump($entry);die();
+			//$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
+			$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]->name;
+			//if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 			if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
-				$correspondances[]=array($book->bookId, $entry[0]['id'], $book->bookName, $id);
+				//$correspondances[]=array($book->bookId, $entry[0]['id'], $book->bookName, $id);
+				$correspondances[]=array($book->bookId, $entry[0]->id, $book->bookName, $id);
 			}
 		}
 	}
@@ -62,9 +70,12 @@ foreach($correspondances as $ar) {
 		}
 	}
 	$resb=$wn->get_chapter_list_cached($wn_id);
-	if(!is_object($resb) || !property_exists($resb, 'data')) {
+	$wn1=$books[$wn_id];
+	if( $wn1->totalChapterNum>0 && (!is_object($resb) || !property_exists($resb, 'data') || empty($resb->data)) ) {
 		var_dump($wn_id, $resb);
-		//die();
+		/*$resb=$wn->get_chapter_list($wn_id);
+		var_dump($resb);//*/
+		die();
 		break;
 	}
 	//var_dump($resb->data->bookInfo->bookSubName);
@@ -98,14 +109,19 @@ foreach($correspondances as $ar) {
 
 	//var_dump($res);
 	//$res2=$wln->get_info($wln_id);
-	$res2=$wln->get_info_cached($wln_id);
+	if(file_exists($wln::FOLDER.'get-series-id'.$wln_id.'.json') && (time()-filemtime($wln::FOLDER.'get-series-id'.$wln_id.'.json'))>604800) {
+		$res2=$wln->get_info($wln_id);
+	}
+	else {
+		$res2=$wln->get_info_cached($wln_id);
+	}
 	$res2->data->releases=NULL;
 	$res2->data->similar_series=NULL;
 	//var_dump($res2);
 	//gmdate('c')//iso, GMT/UTC
 
 	$json2=array();
-	if(strlen($res2->data->description)==0) {
+	if(strlen($res2->data->description)==0 && strlen(trim($res[0]->Data->Description))>0) {
 		$json2[]=array('key'=>'description-container','type'=>'singleitem','value'=>trim($res[0]->Data->Description));
 	}
 	//$tr=$res[3]->data->bookInfo->translateMode;
@@ -129,7 +145,8 @@ foreach($correspondances as $ar) {
 	
 	//$res_=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$wn_id.'.json')),false,512,JSON_THROW_ON_ERROR);
 	$subName='';
-	if(property_exists($resb->data->bookInfo, 'bookSubName')) $subName=$resb->data->bookInfo->bookSubName;
+	if(array_key_exists($wn_id, $subname_)) $subName=$subname_[$wn_id];
+	/*if(property_exists($resb->data->bookInfo, 'bookSubName')) $subName=$resb->data->bookInfo->bookSubName;
 	if(strlen($subName)==0) {
 		$resc=$wn->get_info_html_cached($wn_id);
 		//var_dump($resc);die();
@@ -147,7 +164,7 @@ foreach($correspondances as $ar) {
 			//$row['subName']=$subName;
 		}
 		//var_dump($subName);die();
-	}
+	}//*/
 	
 	//if(count($res2->data->alternatenames)<=1 || (strlen($resb->data->bookInfo->bookSubName)>0&&array_search($resb->data->bookInfo->bookSubName, $res2->data->alternatenames)==false) ) {
 	$names=array_filter(array_unique(array_merge(

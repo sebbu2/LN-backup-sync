@@ -102,22 +102,30 @@ class Dropbox {
 		return $data;
 	}
 
-	public function get_token() {
+	public function get_token($which=NULL) {
 		$data='';
-		if(file_exists($this::FOLDER.'token2.json')) {
-			$data=file_get_contents($this::FOLDER.'token2.json');
-			$data=json_decode($data);
-			if(property_exists($data, 'error')) {
-				assert(file_exists($this::FOLDER.'token1.json')) or die('You need to be auth.');
-				unlink($this::FOLDER.'token2.json');
-				$data=file_get_contents($this::FOLDER.'token1.json');
+		if( $which==NULL || $which=='2' || $which!='1' ) {
+			if( file_exists($this::FOLDER.'token2.json') ) {
+				$data=file_get_contents($this::FOLDER.'token2.json');
 				$data=json_decode($data);
+				if(property_exists($data, 'error')) {
+					assert(file_exists($this::FOLDER.'token1.json')) or die('You need to be auth.');
+					unlink($this::FOLDER.'token2.json');
+					$data=file_get_contents($this::FOLDER.'token1.json');
+					$data=json_decode($data);
+				}
+			}
+			else if( $which==NULL ) {
+				return $this->get_token('1');
 			}
 		}
-		else {
+		else if( is_null($which) || $which=='1' ) {
 			assert(file_exists($this::FOLDER.'token1.json')) or die('You need to be auth.');
 			$data=file_get_contents($this::FOLDER.'token1.json');
 			$data=json_decode($data);
+		}
+		else {
+			die('error');
 		}
 		if(property_exists($data, 'error')) { var_dump(file_exists($this::FOLDER.'token1.json'), file_exists($this::FOLDER.'token2.json'), $data, ); die(); }
 		$this->token=$data;
@@ -201,6 +209,7 @@ class Dropbox {
 		//refresh
 		$this->get_token();
 		if(property_exists($this->token, 'error')) { var_dump(file_exists($this::FOLDER.'token1.json'), file_exists($this::FOLDER.'token2.json'), $this->token, ); die(); }
+		if(!property_exists($this->token, 'refreh_token')) $this->get_token('1');
 		$url=$this->urls[1];
 		
 		$this->postdata=array();
@@ -313,7 +322,8 @@ class Dropbox {
 		//var_dump($finfo->buffer($data));
 		var_dump($finfo->file($this::FOLDER.'dropbox.zip'));
 		//var_dump(strlen($data));die();
-		var_dump(filesize($this::FOLDER.'dropbox.zip'));die();
+		var_dump(filesize($this::FOLDER.'dropbox.zip'));//die();
+		return 'dropbox.zip';
 	}
 }
 
