@@ -722,7 +722,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1466813189,
+      "date": 1464739740,
       "frag": 0,
       "vol": -1
     },
@@ -884,7 +884,7 @@
     {
       "agg": 83,
       "chp": 83,
-      "date": 1626606269,
+      "date": 1626606120,
       "frag": 0,
       "vol": -1
     },
@@ -1046,7 +1046,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463456823,
+      "date": 1463460423,
       "frag": 0,
       "vol": -1
     },
@@ -1505,7 +1505,7 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1513653467,
+      "date": 1512616350,
       "frag": 0,
       "vol": -1
     },
@@ -1521,7 +1521,7 @@
       "name": "My Disciple Died Yet Again",
       "rating": 8.166666666666666,
       "rating_count": 6,
-      "tl_type": "translated"
+      "tl_type": "oel"
     },
     {
       "agg": 393,
@@ -1775,7 +1775,7 @@
     {
       "agg": 10003,
       "chp": 3,
-      "date": 1466223067,
+      "date": 1577759558,
       "frag": 0,
       "vol": 1
     },
@@ -2396,7 +2396,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534927563,
+      "date": 1534416743,
       "frag": -1,
       "vol": 3
     },
@@ -2504,7 +2504,7 @@
     {
       "agg": 1314,
       "chp": 1314,
-      "date": 1555891980,
+      "date": 1555903950,
       "frag": 0,
       "vol": -1
     },
@@ -2610,9 +2610,9 @@
       "vol": -1
     },
     {
-      "agg": 4003,
-      "chp": 4003,
-      "date": 1636084500,
+      "agg": 4005,
+      "chp": 4005,
+      "date": 1636170840,
       "frag": 0,
       "vol": -1
     },
@@ -5328,7 +5328,7 @@
       "name": "Condemning the Heavens",
       "rating": 6.363636363636363,
       "rating_count": 11,
-      "tl_type": "translated"
+      "tl_type": "oel"
     },
     {
       "agg": 1,
@@ -5547,15 +5547,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 768,
-      "chp": 768,
+      "agg": 769,
+      "chp": 769,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 764,
-      "chp": 764,
-      "date": 1635944461,
+      "agg": 766,
+      "chp": 766,
+      "date": 1636203661,
       "frag": 0,
       "vol": -1
     },
@@ -6195,8 +6195,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1292,
-      "chp": 1292,
+      "agg": 1293,
+      "chp": 1293,
       "frag": -1,
       "vol": -1
     },
@@ -6276,8 +6276,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10611,
-      "chp": 611,
+      "agg": 10623,
+      "chp": 623,
       "frag": -1,
       "vol": 1
     },
@@ -6500,7 +6500,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567657258,
+      "date": 1567440673,
       "frag": -1,
       "vol": 2
     },
@@ -6803,6 +6803,33 @@
     },
     null
   ],
+  "79485": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 79485,
+      "name": "MMORPG: The Elementalist",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 65,
+      "chp": 65,
+      "date": 1549960579.940389,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
   "80555": [
     {
       "extra_metadata": {
@@ -6870,8 +6897,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1576,
-      "chp": 1576,
+      "agg": 1586,
+      "chp": 1586,
       "frag": -1,
       "vol": -1
     },
@@ -6975,7 +7002,7 @@
       "name": "Bringing the nation's husband home?!",
       "rating": null,
       "rating_count": null,
-      "tl_type": "oel"
+      "tl_type": "translated"
     },
     {
       "agg": 1,
@@ -7013,7 +7040,7 @@
     {
       "agg": 23,
       "chp": 23,
-      "date": 1570012134,
+      "date": 1569925920,
       "frag": 0,
       "vol": -1
     },
@@ -7275,8 +7302,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 793,
-      "chp": 793,
+      "agg": 794,
+      "chp": 794,
       "frag": -1,
       "vol": -1
     },
@@ -7299,7 +7326,7 @@
       "name": "Bringing the Nations husband home",
       "rating": null,
       "rating_count": null,
-      "tl_type": "oel"
+      "tl_type": "translated"
     },
     {
       "agg": 1,
@@ -7634,7 +7661,7 @@
     {
       "agg": 30001,
       "chp": 1,
-      "date": 1616201793,
+      "date": 1616187660,
       "frag": 0,
       "vol": 3
     },
@@ -7680,8 +7707,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70597,
-      "chp": 597,
+      "agg": 70598,
+      "chp": 598,
       "frag": -1,
       "vol": 7
     },
@@ -7815,8 +7842,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1175,
-      "chp": 1175,
+      "agg": 1178,
+      "chp": 1178,
       "frag": -1,
       "vol": -1
     },
@@ -7878,6 +7905,33 @@
       "agg": 39,
       "chp": 39,
       "date": 1562781048,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "103589": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 103589,
+      "name": "MMORPG: The Tales of Souls",
+      "rating": 8.25,
+      "rating_count": 4,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 54,
+      "chp": 54,
+      "date": 1563391375,
       "frag": -1,
       "vol": -1
     },
@@ -8733,8 +8787,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1281,
-      "chp": 1281,
+      "agg": 1282,
+      "chp": 1282,
       "frag": -1,
       "vol": -1
     },
@@ -8760,8 +8814,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1293,
-      "chp": 1293,
+      "agg": 1294,
+      "chp": 1294,
       "frag": -1,
       "vol": -1
     },
@@ -9030,8 +9084,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1310,
-      "chp": 1310,
+      "agg": 1311,
+      "chp": 1311,
       "frag": -1,
       "vol": -1
     },
@@ -9246,8 +9300,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 593,
-      "chp": 593,
+      "agg": 594,
+      "chp": 594,
       "frag": -1,
       "vol": -1
     },
@@ -9256,6 +9310,30 @@
       "chp": -1,
       "date": null,
       "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "111588": [
+    {
+      "extra_metadata": null,
+      "id": 111588,
+      "name": "48 Hours a Day",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 37,
+      "chp": 37,
+      "date": 1583730096,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -10720,7 +10798,10 @@
   ],
   "118612": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 118612,
       "name": "The Schoolgirl Secret Agent",
       "rating": null,
@@ -10790,7 +10871,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615191300,
+      "date": 1615172880,
       "frag": 0,
       "vol": -1
     },
@@ -10998,8 +11079,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 519,
-      "chp": 519,
+      "agg": 524,
+      "chp": 524,
       "frag": -1,
       "vol": -1
     },
@@ -11122,7 +11203,10 @@
   ],
   "119508": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 119508,
       "name": "From Sidekick to Bigshot",
       "rating": 6.666666666666667,
@@ -11279,6 +11363,30 @@
     },
     null
   ],
+  "120153": [
+    {
+      "extra_metadata": null,
+      "id": 120153,
+      "name": "Start With Contracting Sprites",
+      "rating": 6.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 39,
+      "chp": 39,
+      "date": 1598570476,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "120307": [
     {
       "extra_metadata": {
@@ -11292,8 +11400,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 368,
-      "chp": 368,
+      "agg": 370,
+      "chp": 370,
       "frag": -1,
       "vol": -1
     },
@@ -11616,15 +11724,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 157,
-      "chp": 157,
+      "agg": 158,
+      "chp": 158,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 133,
-      "chp": 133,
-      "date": 1635919420,
+      "agg": 134,
+      "chp": 134,
+      "date": 1636168277,
       "frag": 0,
       "vol": -1
     },
@@ -11740,7 +11848,10 @@
   ],
   "128317": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 128317,
       "name": "Ancestor Above",
       "rating": null,
@@ -11937,8 +12048,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 471,
-      "chp": 471,
+      "agg": 475,
+      "chp": 475,
       "frag": -1,
       "vol": -1
     },
@@ -12107,7 +12218,7 @@
     {
       "agg": 300,
       "chp": 300,
-      "date": 1627319700,
+      "date": 1627320416,
       "frag": 0,
       "vol": -1
     },
@@ -12672,9 +12783,9 @@
       "vol": -1
     },
     {
-      "agg": 248,
-      "chp": 248,
-      "date": 1636090498,
+      "agg": 249,
+      "chp": 249,
+      "date": 1636176918,
       "frag": 0,
       "vol": -1
     },
@@ -12871,7 +12982,10 @@
   ],
   "130235": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 130235,
       "name": "A Random System Every Day",
       "rating": 4,
@@ -13451,7 +13565,7 @@
     {
       "agg": 40169,
       "chp": 169,
-      "date": 1629378060,
+      "date": 1629400560,
       "frag": 0,
       "vol": 4
     },
@@ -13497,8 +13611,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 461,
-      "chp": 461,
+      "agg": 465,
+      "chp": 465,
       "frag": -1,
       "vol": -1
     },
@@ -13770,9 +13884,9 @@
       "vol": -1
     },
     {
-      "agg": 105,
-      "chp": 105,
-      "date": 1635962519,
+      "agg": 106,
+      "chp": 106,
+      "date": 1636135509,
       "frag": 0,
       "vol": -1
     },
@@ -14198,7 +14312,7 @@
     {
       "agg": 66,
       "chp": 66,
-      "date": 1631127053,
+      "date": 1631126940,
       "frag": 0,
       "vol": -1
     },
@@ -14241,8 +14355,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 81,
-      "chp": 81,
+      "agg": 82,
+      "chp": 82,
       "frag": -1,
       "vol": -1
     },
@@ -14744,7 +14858,7 @@
     {
       "agg": 12,
       "chp": 12,
-      "date": 1622925812,
+      "date": 1622925840,
       "frag": 0,
       "vol": -1
     },
@@ -15110,7 +15224,7 @@
     {
       "agg": 20048,
       "chp": 48,
-      "date": 1635689834,
+      "date": 1631657820,
       "frag": 0,
       "vol": 2
     },
@@ -15315,8 +15429,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 99,
-      "chp": 99,
+      "agg": 100,
+      "chp": 100,
       "frag": -1,
       "vol": -1
     },
@@ -15803,7 +15917,7 @@
     {
       "agg": 29,
       "chp": 29,
-      "date": 1634144400,
+      "date": 1634103893,
       "frag": 0,
       "vol": -1
     },
@@ -15970,7 +16084,10 @@
   ],
   "138921": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 138921,
       "name": "Dimensional Descent",
       "rating": null,
@@ -16397,7 +16514,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1635214391,
+      "date": 1633666020,
       "frag": -1,
       "vol": 2
     },
@@ -16629,15 +16746,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 34,
-      "chp": 34,
+      "agg": 35,
+      "chp": 35,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 31,
-      "chp": 31,
-      "date": 1635950311,
+      "agg": 33,
+      "chp": 33,
+      "date": 1636217598,
       "frag": 0,
       "vol": -1
     },
@@ -16815,8 +16932,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 65,
-      "chp": 65,
+      "agg": 66,
+      "chp": 66,
       "frag": -1,
       "vol": -1
     },
@@ -16977,8 +17094,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 4,
-      "chp": 4,
+      "agg": 5,
+      "chp": 5,
       "frag": -1,
       "vol": -1
     },
@@ -17491,12 +17608,15 @@
   ],
   "141867": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 141867,
       "name": "Age of Gods: Thousand Folds System",
       "rating": null,
       "rating_count": null,
-      "tl_type": "oel"
+      "tl_type": "translated"
     },
     {
       "agg": 1,
@@ -17635,7 +17755,10 @@
   ],
   "142321": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142321,
       "name": "Affinity:Chaos",
       "rating": null,
@@ -17659,7 +17782,10 @@
   ],
   "142322": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142322,
       "name": "After Transmigrating as a Demon, I've Been Adopted by Angels!",
       "rating": null,
@@ -17683,7 +17809,10 @@
   ],
   "142323": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142323,
       "name": "A Future World: I Can Absorb Energy",
       "rating": null,
@@ -17707,7 +17836,10 @@
   ],
   "142324": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142324,
       "name": "Against Heaven's Will",
       "rating": null,
@@ -17731,7 +17863,10 @@
   ],
   "142325": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142325,
       "name": "Age of Mecha: Divine-grade Genetic Extraction",
       "rating": null,
@@ -17755,7 +17890,10 @@
   ],
   "142326": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142326,
       "name": "A Guide to Kingdom Building ( Me Reincarnated 365 x)",
       "rating": null,
@@ -17779,7 +17917,10 @@
   ],
   "142327": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142327,
       "name": "Ah Chun: Ascending The Heavens",
       "rating": null,
@@ -17803,7 +17944,10 @@
   ],
   "142328": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": true
+      },
       "id": 142328,
       "name": "How To Get Cute Girls After Transmigrating",
       "rating": null,
@@ -17827,7 +17971,10 @@
   ],
   "142329": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142329,
       "name": "The Inner Monologue Of A Transmigrator With A System",
       "rating": null,
@@ -17851,7 +17998,10 @@
   ],
   "142330": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": true
+      },
       "id": 142330,
       "name": "Eternal Saga: The Beginning",
       "rating": null,
@@ -17875,7 +18025,10 @@
   ],
   "142331": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142331,
       "name": "The Trinity System",
       "rating": null,
@@ -17899,7 +18052,10 @@
   ],
   "142332": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142332,
       "name": "Magical Love: Learn To Love In Another World",
       "rating": null,
@@ -17923,7 +18079,10 @@
   ],
   "142333": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142333,
       "name": "The Soul Capture System",
       "rating": null,
@@ -17947,7 +18106,10 @@
   ],
   "142334": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142334,
       "name": "Yue Of The Moonlight",
       "rating": null,
@@ -17971,7 +18133,10 @@
   ],
   "142335": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": true
+      },
       "id": 142335,
       "name": "I Failed To Be Truck Kun'd And Was Forced Into A VRMMO As A Cat-Girl",
       "rating": null,
@@ -17995,7 +18160,10 @@
   ],
   "142336": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": true
+      },
       "id": 142336,
       "name": "Reborn As An A.I. With A System",
       "rating": null,
@@ -18019,7 +18187,10 @@
   ],
   "142337": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142337,
       "name": "Alien Evolution System",
       "rating": null,
@@ -18043,7 +18214,10 @@
   ],
   "142338": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142338,
       "name": "All My Beasts are Legendary",
       "rating": null,
@@ -18067,7 +18241,10 @@
   ],
   "142339": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142339,
       "name": "Apocalypse: I Can Level Up Everything",
       "rating": null,
@@ -18091,7 +18268,10 @@
   ],
   "142340": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142340,
       "name": "Apocalypse: I Choose To Stop Time",
       "rating": null,
@@ -18115,7 +18295,10 @@
   ],
   "142341": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142341,
       "name": "Apocalypse: My Technological City has Infinite Upgrades",
       "rating": null,
@@ -18139,7 +18322,10 @@
   ],
   "142342": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142342,
       "name": "Armipotent",
       "rating": null,
@@ -18163,7 +18349,10 @@
   ],
   "142343": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142343,
       "name": "Ascension of the Immortal Asura",
       "rating": null,
@@ -18187,7 +18376,10 @@
   ],
   "142344": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142344,
       "name": "Ascension of the Nephilim",
       "rating": null,
@@ -18211,7 +18403,10 @@
   ],
   "142345": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142345,
       "name": "A technomancer's journey in an apocalyptic world",
       "rating": null,
@@ -18235,7 +18430,10 @@
   ],
   "142346": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142346,
       "name": "Awakening of the Ancient: Rise of the Fallen",
       "rating": null,
@@ -18259,7 +18457,10 @@
   ],
   "142353": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142353,
       "name": "Adopted Soldier 2: Changing tides (Hiatus)",
       "rating": null,
@@ -18283,12 +18484,15 @@
   ],
   "142361": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142361,
       "name": "Avalon of the Elements.",
       "rating": null,
       "rating_count": null,
-      "tl_type": "oel"
+      "tl_type": "translated"
     },
     {
       "agg": 1,
@@ -18307,7 +18511,10 @@
   ],
   "142367": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142367,
       "name": "I am a Scarecrow and the Demon Lord of Terror!",
       "rating": null,
@@ -18331,7 +18538,10 @@
   ],
   "142368": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142368,
       "name": "I Turn Out to Be a Grand Master",
       "rating": null,
@@ -18355,7 +18565,10 @@
   ],
   "142369": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142369,
       "name": "No Way People Find Cultivation Difficult, Right?",
       "rating": null,
@@ -18379,7 +18592,10 @@
   ],
   "142372": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142372,
       "name": "Unparalleled After Ten Consecutive Draws",
       "rating": null,
@@ -18417,9 +18633,9 @@
       "vol": -1
     },
     {
-      "agg": 5,
-      "chp": 5,
-      "date": 1636095325,
+      "agg": 6,
+      "chp": 6,
+      "date": 1636192060,
       "frag": 0,
       "vol": -1
     },
@@ -18427,7 +18643,10 @@
   ],
   "142448": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142448,
       "name": "Mage Academy: I Have Infinite Skill Points",
       "rating": null,
@@ -18451,7 +18670,10 @@
   ],
   "142451": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142451,
       "name": "Practicing Basic Sorcery for Billions of Times Made Me Invincible",
       "rating": null,
@@ -18475,7 +18697,10 @@
   ],
   "142452": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142452,
       "name": "Witcher: I Can Extract Everything",
       "rating": null,
@@ -18571,7 +18796,10 @@
   ],
   "142501": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142501,
       "name": "Top Tier Providence, Secretly Cultivate for a Thousand Years",
       "rating": null,
@@ -18595,7 +18823,10 @@
   ],
   "142505": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142505,
       "name": "Fantasy Simulator",
       "rating": null,
@@ -18619,7 +18850,10 @@
   ],
   "142506": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142506,
       "name": "Married to the Devil's Son",
       "rating": null,
@@ -18667,7 +18901,10 @@
   ],
   "142517": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142517,
       "name": "I Have A Martial Arts Panel",
       "rating": null,
@@ -18691,7 +18928,10 @@
   ],
   "142528": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142528,
       "name": "Wizard World:Struggles of dimensions",
       "rating": null,
@@ -18715,7 +18955,10 @@
   ],
   "142529": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142529,
       "name": "Back For My Daughter",
       "rating": null,
@@ -18739,7 +18982,10 @@
   ],
   "142530": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142530,
       "name": "Barging into a Magic World after Returning from Xianxia",
       "rating": null,
@@ -18763,7 +19009,10 @@
   ],
   "142531": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142531,
       "name": "Becoming the Master of a Mermaid Island From Today",
       "rating": null,
@@ -18787,7 +19036,10 @@
   ],
   "142532": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142532,
       "name": "Binding to Geniuses To Become Stronger",
       "rating": null,
@@ -18811,7 +19063,10 @@
   ],
   "142533": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142533,
       "name": "Blood Evolution System",
       "rating": null,
@@ -18835,7 +19090,10 @@
   ],
   "142534": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142534,
       "name": "Bloodlines of the Ancient Pantheons",
       "rating": null,
@@ -18859,7 +19117,10 @@
   ],
   "142535": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142535,
       "name": "Blood Type: Dragon",
       "rating": null,
@@ -18883,7 +19144,10 @@
   ],
   "142536": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142536,
       "name": "Blood Warlock: Succubus Partner in the Apocalypse",
       "rating": null,
@@ -18907,7 +19171,10 @@
   ],
   "142537": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142537,
       "name": "Boss Monster Chat Group",
       "rating": null,
@@ -18931,7 +19198,10 @@
   ],
   "142538": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142538,
       "name": "Breeding Dragons From Today",
       "rating": null,
@@ -18955,7 +19225,10 @@
   ],
   "142539": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142539,
       "name": "Brockwing Vale",
       "rating": null,
@@ -18979,7 +19252,10 @@
   ],
   "142558": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142558,
       "name": "Chaos' Heir",
       "rating": null,
@@ -19003,7 +19279,10 @@
   ],
   "142559": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142559,
       "name": "Check-In System: I'm a Guard of the Castellan's Castle",
       "rating": null,
@@ -19027,7 +19306,10 @@
   ],
   "142560": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142560,
       "name": "Child of Two Bloods",
       "rating": null,
@@ -19051,7 +19333,10 @@
   ],
   "142561": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142561,
       "name": "Classless Ascension",
       "rating": null,
@@ -19075,7 +19360,10 @@
   ],
   "142562": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142562,
       "name": "Contracts With the Void",
       "rating": null,
@@ -19099,7 +19387,10 @@
   ],
   "142563": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142563,
       "name": "Interdimensional Heroic Support Chat",
       "rating": null,
@@ -19123,7 +19414,10 @@
   ],
   "142564": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142564,
       "name": "MMORPG: I Have All the Elements",
       "rating": null,
@@ -19147,7 +19441,10 @@
   ],
   "142565": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142565,
       "name": "MMORPG: I Raise Dragons In The Game",
       "rating": null,
@@ -19171,7 +19468,10 @@
   ],
   "142566": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142566,
       "name": "My Animal Evolution System",
       "rating": null,
@@ -19195,7 +19495,10 @@
   ],
   "142567": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142567,
       "name": "Taboo Leveling",
       "rating": null,
@@ -19219,7 +19522,10 @@
   ],
   "142568": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142568,
       "name": "The Great Flood: Attack of the Alien Race",
       "rating": null,
@@ -19243,7 +19549,10 @@
   ],
   "142569": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142569,
       "name": "who said angels and devils cant love?!",
       "rating": null,
@@ -19267,7 +19576,10 @@
   ],
   "142570": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142570,
       "name": "Worldwide Livestreaming: I Open a Mystery Box Every Day",
       "rating": null,
@@ -19315,9 +19627,108 @@
   ],
   "142633": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142633,
       "name": "My Maids Are All Antagonists!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142661": [
+    {
+      "extra_metadata": null,
+      "id": 142661,
+      "name": "Eternal Cultivation of Alchemy",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142662": [
+    {
+      "extra_metadata": null,
+      "id": 142662,
+      "name": "MMORPG : Rebirth Of The Strongest Guild Master",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142663": [
+    {
+      "extra_metadata": null,
+      "id": 142663,
+      "name": "Multi-Gene",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142668": [
+    {
+      "extra_metadata": null,
+      "id": 142668,
+      "name": "Online Game: I Have 48 Hours a Day",
       "rating": null,
       "rating_count": null,
       "tl_type": "translated"

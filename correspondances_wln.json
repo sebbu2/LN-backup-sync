@@ -1205,6 +1205,12 @@
         "name": "Against The Heaven's Way",
         "list": "QIDIAN plan to read"
     },
+    "79485": {
+        "wn": "11022735705240605",
+        "rr": null,
+        "name": "MMORPG: The Elementalist",
+        "list": "QIDIAN plan to read"
+    },
     "80555": {
         "wn": "12749523606078605",
         "rr": 22681,
@@ -1437,6 +1443,12 @@
         "wn": "14102432205347705",
         "rr": null,
         "name": "The Ultimate Host",
+        "list": "QIDIAN plan to read"
+    },
+    "103589": {
+        "wn": "10493515105046805",
+        "rr": null,
+        "name": "MMORPG: The Tales of Souls",
         "list": "QIDIAN plan to read"
     },
     "103958": {
@@ -1720,6 +1732,12 @@
         "rr": null,
         "name": "Demon's Virtue",
         "list": "QIDIAN original"
+    },
+    "111588": {
+        "wn": "15722400505743705",
+        "rr": null,
+        "name": "48 Hours a Day",
+        "list": "QIDIAN plan to read"
     },
     "111631": {
         "wn": null,
@@ -2164,6 +2182,12 @@
         "rr": null,
         "name": "Grandson of the Holy Emperor is a Necromancer",
         "list": "QIDIAN completed"
+    },
+    "120153": {
+        "wn": "17527701906424805",
+        "rr": null,
+        "name": "Start With Contracting Sprites",
+        "list": "QIDIAN plan to read"
     },
     "120307": {
         "wn": "16676440105786705",
@@ -2939,6 +2963,12 @@
         "name": "Truth Seeker: A LitRPG Timeloop",
         "list": "RoyalRoad"
     },
+    "136659": {
+        "wn": null,
+        "rr": 42986,
+        "name": "I Have Infinite Skill Points in the Apocalypse",
+        "list": "RoyalRoad plan to read"
+    },
     "136682": {
         "wn": "11492897005406105",
         "rr": 30321,
@@ -3437,6 +3467,12 @@
         "name": "The Third Hero",
         "list": "RoyalRoad plan to read"
     },
+    "142289": {
+        "wn": null,
+        "rr": 527,
+        "name": "The Cleansing",
+        "list": "RoyalRoad plan to read"
+    },
     "142321": {
         "wn": "18931815105623305",
         "rr": null,
@@ -3855,6 +3891,30 @@
         "wn": "20552407905385405",
         "rr": null,
         "name": "My Maids Are All Antagonists!",
+        "list": "QIDIAN plan to read"
+    },
+    "142661": {
+        "wn": "20215883106325105",
+        "rr": null,
+        "name": "Eternal Cultivation of Alchemy",
+        "list": "QIDIAN plan to read"
+    },
+    "142662": {
+        "wn": "20366446406794005",
+        "rr": null,
+        "name": "MMORPG : Rebirth Of The Strongest Guild Master",
+        "list": "QIDIAN plan to read"
+    },
+    "142663": {
+        "wn": "15912839205298105",
+        "rr": null,
+        "name": "Multi-Gene",
+        "list": "QIDIAN plan to read"
+    },
+    "142668": {
+        "wn": "21155880706590705",
+        "rr": null,
+        "name": "Online Game: I Have 48 Hours a Day",
         "list": "QIDIAN plan to read"
     }
 }
