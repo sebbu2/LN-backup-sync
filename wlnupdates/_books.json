@@ -722,7 +722,7 @@
     {
       "agg": 175,
       "chp": 175,
-      "date": 1464739740,
+      "date": 1466813189,
       "frag": 0,
       "vol": -1
     },
@@ -884,7 +884,7 @@
     {
       "agg": 83,
       "chp": 83,
-      "date": 1626606120,
+      "date": 1626606269,
       "frag": 0,
       "vol": -1
     },
@@ -1046,7 +1046,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463460423,
+      "date": 1463456823,
       "frag": 0,
       "vol": -1
     },
@@ -1505,7 +1505,7 @@
     {
       "agg": 1200,
       "chp": 1200,
-      "date": 1512616350,
+      "date": 1513653467,
       "frag": 0,
       "vol": -1
     },
@@ -2610,9 +2610,9 @@
       "vol": -1
     },
     {
-      "agg": 4005,
-      "chp": 4005,
-      "date": 1636170840,
+      "agg": 4007,
+      "chp": 4007,
+      "date": 1636262460,
       "frag": 0,
       "vol": -1
     },
@@ -2799,9 +2799,9 @@
       "vol": -1
     },
     {
-      "agg": 714,
-      "chp": 714,
-      "date": 1636064046,
+      "agg": 715,
+      "chp": 715,
+      "date": 1636237664,
       "frag": 0,
       "vol": -1
     },
@@ -6195,8 +6195,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1293,
-      "chp": 1293,
+      "agg": 1294,
+      "chp": 1294,
       "frag": -1,
       "vol": -1
     },
@@ -6276,8 +6276,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10623,
-      "chp": 623,
+      "agg": 10625,
+      "chp": 625,
       "frag": -1,
       "vol": 1
     },
@@ -6500,7 +6500,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567440673,
+      "date": 1567657258,
       "frag": -1,
       "vol": 2
     },
@@ -6892,13 +6892,13 @@
       },
       "id": 81839,
       "name": "Supreme Magus",
-      "rating": 7.5,
-      "rating_count": 12,
+      "rating": 7.6923076923076925,
+      "rating_count": 13,
       "tl_type": "oel"
     },
     {
-      "agg": 1586,
-      "chp": 1586,
+      "agg": 1590,
+      "chp": 1590,
       "frag": -1,
       "vol": -1
     },
@@ -7040,7 +7040,7 @@
     {
       "agg": 23,
       "chp": 23,
-      "date": 1569925920,
+      "date": 1570012134,
       "frag": 0,
       "vol": -1
     },
@@ -7302,8 +7302,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 794,
-      "chp": 794,
+      "agg": 795,
+      "chp": 795,
       "frag": -1,
       "vol": -1
     },
@@ -7661,7 +7661,7 @@
     {
       "agg": 30001,
       "chp": 1,
-      "date": 1616187660,
+      "date": 1616201793,
       "frag": 0,
       "vol": 3
     },
@@ -7702,13 +7702,13 @@
       },
       "id": 97804,
       "name": "My Dungeon Life: Rise of the Slave Harem",
-      "rating": 6.793103448275862,
-      "rating_count": 29,
+      "rating": 6.733333333333333,
+      "rating_count": 30,
       "tl_type": "oel"
     },
     {
-      "agg": 70598,
-      "chp": 598,
+      "agg": 70599,
+      "chp": 599,
       "frag": -1,
       "vol": 7
     },
@@ -7842,8 +7842,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1178,
-      "chp": 1178,
+      "agg": 1179,
+      "chp": 1179,
       "frag": -1,
       "vol": -1
     },
@@ -8814,8 +8814,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1294,
-      "chp": 1294,
+      "agg": 1297,
+      "chp": 1297,
       "frag": -1,
       "vol": -1
     },
@@ -9084,8 +9084,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1311,
-      "chp": 1311,
+      "agg": 1314,
+      "chp": 1314,
       "frag": -1,
       "vol": -1
     },
@@ -9316,7 +9316,10 @@
   ],
   "111588": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 111588,
       "name": "48 Hours a Day",
       "rating": null,
@@ -10250,7 +10253,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1599120572,
+      "date": 1591334870,
       "frag": 0,
       "vol": -1
     },
@@ -10334,6 +10337,33 @@
       "date": 1611360000,
       "frag": 0,
       "vol": 3
+    },
+    null
+  ],
+  "116896": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 116896,
+      "name": "The Bloodiest Mage. (Litrpg)",
+      "rating": 7.333333333333333,
+      "rating_count": 3,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 53,
+      "chp": 53,
+      "date": 1596910080,
+      "frag": 0,
+      "vol": -1
     },
     null
   ],
@@ -10512,15 +10542,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 456,
-      "chp": 456,
+      "agg": 459,
+      "chp": 459,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 40,
       "chp": 40,
-      "date": 1598696551,
+      "date": 1598731427,
       "frag": 0,
       "vol": -1
     },
@@ -10871,7 +10901,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615172880,
+      "date": 1615191300,
       "frag": 0,
       "vol": -1
     },
@@ -11079,8 +11109,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 524,
-      "chp": 524,
+      "agg": 526,
+      "chp": 526,
       "frag": -1,
       "vol": -1
     },
@@ -11365,7 +11395,10 @@
   ],
   "120153": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 120153,
       "name": "Start With Contracting Sprites",
       "rating": 6.5,
@@ -11400,8 +11433,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 370,
-      "chp": 370,
+      "agg": 371,
+      "chp": 371,
       "frag": -1,
       "vol": -1
     },
@@ -11597,7 +11630,7 @@
     {
       "agg": 9,
       "chp": 9,
-      "date": 1600214190,
+      "date": 1600214160,
       "frag": 0,
       "vol": -1
     },
@@ -12218,7 +12251,7 @@
     {
       "agg": 300,
       "chp": 300,
-      "date": 1627320416,
+      "date": 1627319700,
       "frag": 0,
       "vol": -1
     },
@@ -12783,9 +12816,9 @@
       "vol": -1
     },
     {
-      "agg": 249,
-      "chp": 249,
-      "date": 1636176918,
+      "agg": 250,
+      "chp": 250,
+      "date": 1636263245,
       "frag": 0,
       "vol": -1
     },
@@ -12912,15 +12945,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 43,
-      "chp": 43,
+      "agg": 44,
+      "chp": 44,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 43,
-      "chp": 43,
-      "date": 1635533662,
+      "agg": 44,
+      "chp": 44,
+      "date": 1636318080,
       "frag": 0,
       "vol": -1
     },
@@ -13028,7 +13061,7 @@
     {
       "agg": 40169,
       "chp": 169,
-      "date": 1629396989,
+      "date": 1629378060,
       "frag": 0,
       "vol": 4
     },
@@ -13611,8 +13644,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 465,
-      "chp": 465,
+      "agg": 466,
+      "chp": 466,
       "frag": -1,
       "vol": -1
     },
@@ -14312,7 +14345,7 @@
     {
       "agg": 66,
       "chp": 66,
-      "date": 1631126940,
+      "date": 1631127053,
       "frag": 0,
       "vol": -1
     },
@@ -14577,7 +14610,7 @@
       "frag": 0,
       "vol": -1
     },
-    null
+    "A Demon's Journey (Jmarcs.)"
   ],
   "135600": [
     {
@@ -15216,8 +15249,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 63,
-      "chp": 63,
+      "agg": 64,
+      "chp": 64,
       "frag": -1,
       "vol": -1
     },
@@ -16514,7 +16547,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1633666020,
+      "date": 1635214391,
       "frag": -1,
       "vol": 2
     },
@@ -16841,6 +16874,33 @@
     },
     null
   ],
+  "140761": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 140761,
+      "name": "Solo Player Rebirth!",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20,
+      "chp": 20,
+      "date": 1635624913,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "140816": [
     {
       "extra_metadata": {
@@ -16932,8 +16992,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 66,
-      "chp": 66,
+      "agg": 67,
+      "chp": 67,
       "frag": -1,
       "vol": -1
     },
@@ -18633,13 +18693,13 @@
       "vol": -1
     },
     {
-      "agg": 6,
-      "chp": 6,
-      "date": 1636192060,
+      "agg": 7,
+      "chp": 7,
+      "date": 1636295415,
       "frag": 0,
       "vol": -1
     },
-    null
+    "Dreamers Ten-Tea-Cle Cafe"
   ],
   "142448": [
     {
@@ -18793,6 +18853,33 @@
       "vol": -1
     },
     "Summoner Reincarnated: A LiTRPG Apocalypse Novel"
+  ],
+  "142464": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142464,
+      "name": "Solo Player Rebirth! (webnovel)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 22,
+      "chp": 22,
+      "date": 1636061632,
+      "frag": 0,
+      "vol": -1
+    },
+    null
   ],
   "142501": [
     {
@@ -19654,7 +19741,10 @@
   ],
   "142661": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142661,
       "name": "Eternal Cultivation of Alchemy",
       "rating": null,
@@ -19678,7 +19768,10 @@
   ],
   "142662": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142662,
       "name": "MMORPG : Rebirth Of The Strongest Guild Master",
       "rating": null,
@@ -19702,7 +19795,10 @@
   ],
   "142663": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142663,
       "name": "Multi-Gene",
       "rating": null,
@@ -19726,12 +19822,120 @@
   ],
   "142668": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142668,
       "name": "Online Game: I Have 48 Hours a Day",
       "rating": null,
       "rating_count": null,
       "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142672": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142672,
+      "name": "Beast Armorer: Infinite Evolution",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142718": [
+    {
+      "extra_metadata": null,
+      "id": 142718,
+      "name": "ADJ",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    "A Demon's Journey (Evil_Dragon)"
+  ],
+  "142719": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142719,
+      "name": "The Bloodline System",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "142720": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142720,
+      "name": "The Guardians' Throne - The First Magic Swordsman",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
     },
     {
       "agg": 1,

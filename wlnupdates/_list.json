@@ -382,6 +382,7 @@
   "116766": "QIDIAN plan to read",
   "116769": "QIDIAN plan to read",
   "116777": "RoyalRoad plan to read",
+  "116896": "ScribbleHub",
   "117074": "QIDIAN plan to read",
   "117392": "RoyalRoad plan to read",
   "117511": "QIDIAN plan to read",
@@ -626,6 +627,7 @@
   "140399": "RoyalRoad plan to read",
   "140488": "RoyalRoad",
   "140724": "RoyalRoad",
+  "140761": "duplicates",
   "140816": "RoyalRoad plan to read",
   "140976": "duplicates",
   "140994": "RoyalRoad",
@@ -700,6 +702,7 @@
   "142454": "RoyalRoad plan to read",
   "142455": "RoyalRoad plan to read",
   "142456": "RoyalRoad plan to read",
+  "142464": "QIDIAN plan to read",
   "142501": "QIDIAN plan to read",
   "142505": "QIDIAN plan to read",
   "142506": "QIDIAN plan to read",
@@ -735,5 +738,9 @@
   "142661": "QIDIAN plan to read",
   "142662": "QIDIAN plan to read",
   "142663": "QIDIAN plan to read",
-  "142668": "QIDIAN plan to read"
+  "142668": "QIDIAN plan to read",
+  "142672": "QIDIAN plan to read",
+  "142718": "QIDIAN plan to read",
+  "142719": "QIDIAN plan to read",
+  "142720": "QIDIAN plan to read"
 }

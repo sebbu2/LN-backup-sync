@@ -1197,6 +1197,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 142718,
+        "wn": "20173529706658205",
+        "rr": 41764,
+        "name": "A Demon's Journey (Evil_Dragon)",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 142353,
         "wn": "15426611806458705",
         "rr": null,
@@ -1418,6 +1425,13 @@
         "wn": "6838665602002205",
         "rr": null,
         "name": "Battle Frenzy",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 142672,
+        "wn": "20912597505976405",
+        "rr": null,
+        "name": "Beast Armorer: Infinite Evolution",
         "list": "QIDIAN plan to read"
     },
     {
@@ -2177,6 +2191,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292,
+        "name": "Solo Player Rebirth! (webnovel)",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 64197,
         "wn": "9067107706001305",
         "rr": null,
@@ -2261,6 +2282,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 142719,
+        "wn": "18957014405722605",
+        "rr": null,
+        "name": "The Bloodline System",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 141462,
         "wn": "19886806705654405",
         "rr": null,
@@ -2293,6 +2321,13 @@
         "wn": "18928182405605905",
         "rr": null,
         "name": "The Great Flood: Attack of the Alien Race",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 142720,
+        "wn": "20103431406680805",
+        "rr": null,
+        "name": "The Guardians' Throne - The First Magic Swordsman",
         "list": "QIDIAN plan to read"
     },
     {
@@ -3326,9 +3361,9 @@
     },
     {
         "wln": 135527,
-        "wn": null,
+        "wn": "20173529706658205",
         "rr": 41764,
-        "name": "A Demon's Journey",
+        "name": "A Demon's Journey (Jmarcs.)",
         "list": "RoyalRoad plan to read"
     },
     {
@@ -3510,7 +3545,7 @@
         "wln": 142383,
         "wn": null,
         "rr": 48008,
-        "name": "Dreamer's Ten-Tea-Cle Caf\\u00E9",
+        "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad plan to read"
     },
     {
@@ -4519,6 +4554,13 @@
         "wn": null,
         "rr": 37438,
         "name": "Salvos [A Monster Evolution LitRPG]",
+        "list": "duplicates"
+    },
+    {
+        "wln": 140761,
+        "wn": "21071481705119105",
+        "rr": 46292,
+        "name": "Solo Player Rebirth!",
         "list": "duplicates"
     },
     {

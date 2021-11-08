@@ -2850,9 +2850,9 @@
         "list": "RoyalRoad plan to read"
     },
     "135527": {
-        "wn": null,
+        "wn": "20173529706658205",
         "rr": 41764,
-        "name": "A Demon's Journey",
+        "name": "A Demon's Journey (Jmarcs.)",
         "list": "RoyalRoad plan to read"
     },
     "135600": {
@@ -3311,6 +3311,12 @@
         "name": "Steamforged Sorcery [A Steampunk LitRPG]",
         "list": "RoyalRoad"
     },
+    "140761": {
+        "wn": "21071481705119105",
+        "rr": 46292,
+        "name": "Solo Player Rebirth!",
+        "list": "duplicates"
+    },
     "140816": {
         "wn": null,
         "rr": 46742,
@@ -3668,7 +3674,7 @@
     "142383": {
         "wn": null,
         "rr": 48008,
-        "name": "Dreamer's Ten-Tea-Cle Caf\\u00E9",
+        "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad plan to read"
     },
     "142448": {
@@ -3706,6 +3712,12 @@
         "rr": 47961,
         "name": "Summoner Reincarnated: A LiTRPG Apocalypse Novel",
         "list": "RoyalRoad plan to read"
+    },
+    "142464": {
+        "wn": "21071481705119105",
+        "rr": 46292,
+        "name": "Solo Player Rebirth! (webnovel)",
+        "list": "QIDIAN plan to read"
     },
     "142501": {
         "wn": "19852661006620705",
@@ -3915,6 +3927,30 @@
         "wn": "21155880706590705",
         "rr": null,
         "name": "Online Game: I Have 48 Hours a Day",
+        "list": "QIDIAN plan to read"
+    },
+    "142672": {
+        "wn": "20912597505976405",
+        "rr": null,
+        "name": "Beast Armorer: Infinite Evolution",
+        "list": "QIDIAN plan to read"
+    },
+    "142718": {
+        "wn": "20173529706658205",
+        "rr": 41764,
+        "name": "A Demon's Journey (Evil_Dragon)",
+        "list": "QIDIAN plan to read"
+    },
+    "142719": {
+        "wn": "18957014405722605",
+        "rr": null,
+        "name": "The Bloodline System",
+        "list": "QIDIAN plan to read"
+    },
+    "142720": {
+        "wn": "20103431406680805",
+        "rr": null,
+        "name": "The Guardians' Throne - The First Magic Swordsman",
         "list": "QIDIAN plan to read"
     }
 }

@@ -1111,8 +1111,8 @@
     },
     "41764": {
         "wln": 135527,
-        "wn": null,
-        "name": "A Demon's Journey",
+        "wn": "20173529706658205",
+        "name": "A Demon's Journey (Jmarcs.)",
         "list": "RoyalRoad plan to read"
     },
     "41780": {
@@ -1421,6 +1421,12 @@
         "name": "Useless Strength In The Modern World",
         "list": "RoyalRoad plan to read"
     },
+    "46292": {
+        "wln": 140761,
+        "wn": "21071481705119105",
+        "name": "Solo Player Rebirth!",
+        "list": "duplicates"
+    },
     "46319": {
         "wln": 141041,
         "wn": null,
@@ -1508,7 +1514,7 @@
     "48008": {
         "wln": 142383,
         "wn": null,
-        "name": "Dreamer's Ten-Tea-Cle Caf\\u00E9",
+        "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad plan to read"
     }
 }
