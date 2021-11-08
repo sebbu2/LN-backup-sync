@@ -89,6 +89,16 @@
         "wn": "15722400505743705",
         "rr": null
     },
+    "48H": {
+        "wln": 111588,
+        "wn": "15722400505743705",
+        "rr": null
+    },
+    "48h": {
+        "wln": 111588,
+        "wn": "15722400505743705",
+        "rr": null
+    },
     "90,000 Years of Longevity": {
         "wln": 129682,
         "wn": "17753223406844105",
@@ -4509,6 +4519,16 @@
         "wn": null,
         "rr": 42441
     },
+    "ELEM": {
+        "wln": 79485,
+        "wn": "11022735705240605",
+        "rr": null
+    },
+    "elem": {
+        "wln": 79485,
+        "wn": "11022735705240605",
+        "rr": null
+    },
     "Elite Doting Marriage Crafty Husband Aloof Cute Wife": {
         "wln": null,
         "wn": "11257419905314505",
@@ -5883,6 +5903,46 @@
         "wln": 58134,
         "wn": "8052087705003205",
         "rr": null
+    },
+    "Give me my lillypad back": {
+        "wln": 140723,
+        "wn": null,
+        "rr": null
+    },
+    "give me my lillypad back": {
+        "wln": 140723,
+        "wn": null,
+        "rr": null
+    },
+    "Give me my lillypad back.": {
+        "wln": 140723,
+        "wn": null,
+        "rr": null
+    },
+    "give me my lillypad back.": {
+        "wln": 140723,
+        "wn": null,
+        "rr": null
+    },
+    "Give me my lily pad back": {
+        "wln": 141561,
+        "wn": null,
+        "rr": 46602
+    },
+    "give me my lily pad back": {
+        "wln": 141561,
+        "wn": null,
+        "rr": 46602
+    },
+    "Give me my lily pad back.": {
+        "wln": 141561,
+        "wn": null,
+        "rr": 46602
+    },
+    "give me my lily pad back.": {
+        "wln": 141561,
+        "wn": null,
+        "rr": 46602
     },
     "Global Beast Taming My Battle Pet is Double of Others": {
         "wln": null,
@@ -14984,6 +15044,16 @@
         "wn": "18909541905527205",
         "rr": null
     },
+    "SWCS": {
+        "wln": 120153,
+        "wn": "17527701906424805",
+        "rr": null
+    },
+    "swcs": {
+        "wln": 120153,
+        "wn": "17527701906424805",
+        "rr": null
+    },
     "Sword of Dawn": {
         "wln": 107499,
         "wn": "11022737906234605",
@@ -17534,6 +17604,16 @@
         "wn": "11562848305436705",
         "rr": null
     },
+    "The Sleeper": {
+        "wln": 111171,
+        "wn": null,
+        "rr": 29995
+    },
+    "the sleeper": {
+        "wln": 111171,
+        "wn": null,
+        "rr": 29995
+    },
     "The Snake Report": {
         "wln": 60905,
         "wn": null,
@@ -18667,6 +18747,16 @@
     "ttpscty": {
         "wln": 142501,
         "wn": "19852661006620705",
+        "rr": null
+    },
+    "TTS": {
+        "wln": 103589,
+        "wn": "10493515105046805",
+        "rr": null
+    },
+    "tts": {
+        "wln": 103589,
+        "wn": "10493515105046805",
         "rr": null
     },
     "Tu Ch\\u00E2n Li\\u00EAu Thi\\u00EAn Qu\\u1EA7n Tu Ch\\u00E2n N\\u00F3i Chuy\\u1EC7n Phi\\u1EBFm Qu\\u1EA7n": {

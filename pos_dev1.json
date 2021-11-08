@@ -624,20 +624,20 @@
         "pos": 0
     },
     "beneath the dragoneye moons": {
-        "content": "1454083831785*258@0#16412:100%",
-        "time": 1636133335,
+        "content": "1454083831785*259@0#13138:100%",
+        "time": 1636384790,
         "min": "3",
-        "max": "261",
-        "fn": "Beneath_the_Dragoneye_Moons_3-261.epub.po",
+        "max": "262",
+        "fn": "Beneath_the_Dragoneye_Moons_3-262.epub.po",
         "fn2": "Beneath_the_Dragoneye_Moons",
         "fn3": "beneath the dragoneye moons",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "258",
+        "1": "259",
         "2": "0",
-        "3": "16412",
+        "3": "13138",
         "4": "100",
-        "pos": 261
+        "pos": 262
     },
     "beware of chicken": {
         "content": "1454083831785*103@0#7781:100%",
@@ -688,11 +688,11 @@
         "pos": 0
     },
     "blood demons retirement": {
-        "content": "1454083831785*2@0#0:2.1%",
-        "time": 1635618732,
+        "content": "1454083831785*2@0#0:2.0%",
+        "time": 1636342912,
         "min": "1",
-        "max": "73",
-        "fn": "Blood_Demons_Retirement_1-73.epub.po",
+        "max": "79",
+        "fn": "Blood_Demons_Retirement_1-79.epub.po",
         "fn2": "Blood_Demons_Retirement",
         "fn3": "blood demons retirement",
         "ext": "epub",
@@ -700,7 +700,7 @@
         "1": "2",
         "2": "0",
         "3": "0",
-        "4": "2.1",
+        "4": "2.0",
         "pos": 2
     },
     "blue core": {
@@ -832,8 +832,8 @@
         "pos": 0
     },
     "chrysalis": {
-        "content": "1454083831785*861@0#0:99.9%",
-        "time": 1636156171,
+        "content": "1454083831785*861@0#3481:100%",
+        "time": 1636384988,
         "min": "1",
         "max": "862",
         "fn": "Chrysalis_1-862.epub.po",
@@ -843,9 +843,9 @@
         "0": "1454083831785",
         "1": "861",
         "2": "0",
-        "3": "0",
-        "4": "99.9",
-        "pos": 861
+        "3": "3481",
+        "4": "100",
+        "pos": 862
     },
     "cinnamon bun": {
         "content": "1454083831785*57@0#8910:100%",
@@ -880,20 +880,20 @@
         "pos": 0
     },
     "closed beta that only i played": {
-        "content": "1454083831785*458@0#5257:100%",
-        "time": 1636322013,
+        "content": "1454083831785*459@0#5402:100%",
+        "time": 1636385135,
         "min": "1",
-        "max": "459",
-        "fn": "Closed_Beta_That_Only_I_Played_1-459.epub.po",
+        "max": "460",
+        "fn": "Closed_Beta_That_Only_I_Played_1-460.epub.po",
         "fn2": "Closed_Beta_That_Only_I_Played",
         "fn3": "closed beta that only i played",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "458",
+        "1": "459",
         "2": "0",
-        "3": "5257",
+        "3": "5402",
         "4": "100",
-        "pos": 459
+        "pos": 460
     },
     "complete martial arts attributes": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -976,20 +976,20 @@
         "pos": 0
     },
     "cultivation online": {
-        "content": "1454083831785*624@0#3688:100%",
-        "time": 1636323693,
+        "content": "1454083831785*626@0#4039:100%",
+        "time": 1636385210,
         "min": "1",
-        "max": "625",
-        "fn": "Cultivation_Online_1-625.epub.po",
+        "max": "627",
+        "fn": "Cultivation_Online_1-627.epub.po",
         "fn2": "Cultivation_Online",
         "fn3": "cultivation online",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "624",
+        "1": "626",
         "2": "0",
-        "3": "3688",
+        "3": "4039",
         "4": "100",
-        "pos": 625
+        "pos": 627
     },
     "cultivation pet shop": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -1345,10 +1345,10 @@
     },
     "dreamers ten-tea-cle cafe": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1636323832,
+        "time": 1636385252,
         "min": "1",
-        "max": "8",
-        "fn": "Dreamers_Ten-Tea-Cle_Cafe_1-8.epub.po",
+        "max": "9",
+        "fn": "Dreamers_Ten-Tea-Cle_Cafe_1-9.epub.po",
         "fn2": "Dreamers_Ten-Tea-Cle_Cafe",
         "fn3": "dreamers ten-tea-cle cafe",
         "ext": "epub",
@@ -1393,10 +1393,10 @@
     },
     "dungeon core nah i think ill just get super-wealthy instead": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1635718232,
+        "time": 1636342785,
         "min": "1",
-        "max": "21",
-        "fn": "Dungeon_Core_Nah_I_Think_Ill_Just_Get_Super-Wealthy_Instead_1-21.epub.po",
+        "max": "25",
+        "fn": "Dungeon_Core_Nah_I_Think_Ill_Just_Get_Super-Wealthy_Instead_1-25.epub.po",
         "fn2": "Dungeon_Core_Nah_I_Think_Ill_Just_Get_Super-Wealthy_Instead",
         "fn3": "dungeon core nah i think ill just get super-wealthy instead",
         "ext": "epub",
@@ -1425,10 +1425,10 @@
     },
     "dungeon item shop": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1635625851,
+        "time": 1636342792,
         "min": "1",
-        "max": "241",
-        "fn": "Dungeon_Item_Shop_1-241.epub.po",
+        "max": "249",
+        "fn": "Dungeon_Item_Shop_1-249.epub.po",
         "fn2": "Dungeon_Item_Shop",
         "fn3": "dungeon item shop",
         "ext": "epub",
@@ -1600,20 +1600,20 @@
         "pos": 76
     },
     "end of the magic era": {
-        "content": "1454083831785*1293@0#12878:100%",
-        "time": 1636322740,
+        "content": "1454083831785*1294@0#13180:100%",
+        "time": 1636342629,
         "min": "1",
-        "max": "1294",
-        "fn": "End_of_the_Magic_Era_1-1294.epub.po",
+        "max": "1295",
+        "fn": "End_of_the_Magic_Era_1-1295.epub.po",
         "fn2": "End_of_the_Magic_Era",
         "fn3": "end of the magic era",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1293",
+        "1": "1294",
         "2": "0",
-        "3": "12878",
+        "3": "13180",
         "4": "100",
-        "pos": 1294
+        "pos": 1295
     },
     "enduring good rational cultivation you underestimate the darkness of my coffee steamforged sorcery": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -1680,20 +1680,20 @@
         "pos": 253
     },
     "eternal sacred king": {
-        "content": "1454083831785*1296@0#6442:100%",
-        "time": 1636324209,
+        "content": "1454083831785*1298@0#6823:100%",
+        "time": 1636385379,
         "min": "1",
-        "max": "1297",
-        "fn": "Eternal_Sacred_King_1-1297.epub.po",
+        "max": "1299",
+        "fn": "Eternal_Sacred_King_1-1299.epub.po",
         "fn2": "Eternal_Sacred_King",
         "fn3": "eternal sacred king",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1296",
+        "1": "1298",
         "2": "0",
-        "3": "6442",
+        "3": "6823",
         "4": "100",
-        "pos": 1297
+        "pos": 1299
     },
     "eternal saga the beginning": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -1712,20 +1712,20 @@
         "pos": 0
     },
     "everyones a catgirl": {
-        "content": "1454083831785*34@0#9744:100%",
-        "time": 1636213526,
+        "content": "1454083831785*35@0#13612:100%",
+        "time": 1636386269,
         "min": "1",
-        "max": "35",
-        "fn": "Everyones_a_Catgirl_1-35.epub.po",
+        "max": "36",
+        "fn": "Everyones_a_Catgirl_1-36.epub.po",
         "fn2": "Everyones_a_Catgirl",
         "fn3": "everyones a catgirl",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "34",
+        "1": "35",
         "2": "0",
-        "3": "9744",
+        "3": "13612",
         "4": "100",
-        "pos": 35
+        "pos": 36
     },
     "evil eye hexcaller": {
         "content": "1454083831785*75@0#7130:100%",
@@ -1937,10 +1937,10 @@
     },
     "fluff": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1634344580,
+        "time": 1636386518,
         "min": "1",
-        "max": "67",
-        "fn": "Fluff_1-67.epub.po",
+        "max": "73",
+        "fn": "Fluff_1-73.epub.po",
         "fn2": "Fluff",
         "fn3": "fluff",
         "ext": "epub",
@@ -2016,20 +2016,20 @@
         "pos": 0
     },
     "frameshift - magic math and not enough context": {
-        "content": "1454083831785*66@0#7109:100%",
-        "time": 1636324382,
+        "content": "1454083831785*67@0#6269:100%",
+        "time": 1636385632,
         "min": "1",
-        "max": "67",
-        "fn": "Frameshift_-_Magic_Math_and_Not_Enough_Context_1-67.epub.po",
+        "max": "68",
+        "fn": "Frameshift_-_Magic_Math_and_Not_Enough_Context_1-68.epub.po",
         "fn2": "Frameshift_-_Magic_Math_and_Not_Enough_Context",
         "fn3": "frameshift - magic math and not enough context",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "66",
+        "1": "67",
         "2": "0",
-        "3": "7109",
+        "3": "6269",
         "4": "100",
-        "pos": 67
+        "pos": 68
     },
     "from sidekick to bigshot": {
         "content": "1454083831785*0@0#0:0.0%",
@@ -2111,6 +2111,22 @@
         "4": "0.0",
         "pos": 0
     },
+    "give me my lily pad back": {
+        "content": "1454083831785*0@0#0:0.0%",
+        "time": 1636386282,
+        "min": "1",
+        "max": "54",
+        "fn": "Give_me_my_lily_pad_back_1-54.epub.po",
+        "fn2": "Give_me_my_lily_pad_back",
+        "fn3": "give me my lily pad back",
+        "ext": "epub",
+        "0": "1454083831785",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0.0",
+        "pos": 0
+    },
     "godly empress doctor": {
         "content": "1454083831785*0@0#0:0.0%",
         "time": 1598492405,
@@ -2177,10 +2193,10 @@
     },
     "heart of dorkness": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1636212218,
+        "time": 1636386527,
         "min": "1",
-        "max": "84",
-        "fn": "Heart_of_Dorkness_1-84.epub.po",
+        "max": "85",
+        "fn": "Heart_of_Dorkness_1-85.epub.po",
         "fn2": "Heart_of_Dorkness",
         "fn3": "heart of dorkness",
         "ext": "epub",
@@ -2798,27 +2814,27 @@
         "pos": 0
     },
     "let me game in peace": {
-        "content": "1454083831785*1313@0#4724:100%",
-        "time": 1636324869,
+        "content": "1454083831785*1315@0#5707:100%",
+        "time": 1636386419,
         "min": "1",
-        "max": "1314",
-        "fn": "Let_Me_Game_in_Peace_1-1314.epub.po",
+        "max": "1316",
+        "fn": "Let_Me_Game_in_Peace_1-1316.epub.po",
         "fn2": "Let_Me_Game_in_Peace",
         "fn3": "let me game in peace",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "1313",
+        "1": "1315",
         "2": "0",
-        "3": "4724",
+        "3": "5707",
         "4": "100",
-        "pos": 1314
+        "pos": 1316
     },
     "liches get stitches": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1636142869,
+        "time": 1636342946,
         "min": "1",
-        "max": "38",
-        "fn": "Liches_Get_Stitches_1-38.epub.po",
+        "max": "39",
+        "fn": "Liches_Get_Stitches_1-39.epub.po",
         "fn2": "Liches_Get_Stitches",
         "fn3": "liches get stitches",
         "ext": "epub",
@@ -5087,10 +5103,10 @@
     },
     "summoner reincarnated a litrpg apocalypse novel": {
         "content": "1454083831785*0@0#0:0.0%",
-        "time": 1636328355,
+        "time": 1636384319,
         "min": "1",
-        "max": "5",
-        "fn": "Summoner_Reincarnated_A_LiTRPG_Apocalypse_Novel_1-5.epub.po",
+        "max": "6",
+        "fn": "Summoner_Reincarnated_A_LiTRPG_Apocalypse_Novel_1-6.epub.po",
         "fn2": "Summoner_Reincarnated_A_LiTRPG_Apocalypse_Novel",
         "fn3": "summoner reincarnated a litrpg apocalypse novel",
         "ext": "epub",
@@ -5198,20 +5214,20 @@
         "pos": 226
     },
     "sylver seeker": {
-        "content": "1454083831785*157@0#18867:100%",
-        "time": 1636209446,
+        "content": "1454083831785*158@0#14510:100%",
+        "time": 1636383739,
         "min": "1",
-        "max": "158",
-        "fn": "Sylver_Seeker_1-158.epub.po",
+        "max": "159",
+        "fn": "Sylver_Seeker_1-159.epub.po",
         "fn2": "Sylver_Seeker",
         "fn3": "sylver seeker",
         "ext": "epub",
         "0": "1454083831785",
-        "1": "157",
+        "1": "158",
         "2": "0",
-        "3": "18867",
+        "3": "14510",
         "4": "100",
-        "pos": 158
+        "pos": 159
     },
     "tales of an unlikely wizard isekai litrpg": {
         "content": "1454083831785*61@0#17491:100%",
@@ -6302,11 +6318,11 @@
         "pos": 0
     },
     "the runesmith": {
-        "content": "1454083831785*2@0#0:0.7%",
-        "time": 1634783285,
+        "content": "1454083831785*2@0#0:0.6%",
+        "time": 1636384350,
         "min": "1",
-        "max": "158",
-        "fn": "The_Runesmith_1-158.epub.po",
+        "max": "165",
+        "fn": "The_Runesmith_1-165.epub.po",
         "fn2": "The_Runesmith",
         "fn3": "the runesmith",
         "ext": "epub",
@@ -6314,7 +6330,7 @@
         "1": "2",
         "2": "0",
         "3": "0",
-        "4": "0.7",
+        "4": "0.6",
         "pos": 2
     },
     "the schoolgirl secret agent": {
@@ -7020,11 +7036,11 @@
         "pos": 29
     },
     "what do you mean my cute disciples are yanderes": {
-        "content": "1454083831785*512@0#0:75.0%",
-        "time": 1636212157,
+        "content": "1454083831785*512@0#0:74.8%",
+        "time": 1636342149,
         "min": "-1",
-        "max": "691",
-        "fn": "What_do_you_mean_my_cute_disciples_are_Yanderes_-1-691.epub.po",
+        "max": "693",
+        "fn": "What_do_you_mean_my_cute_disciples_are_Yanderes_-1-693.epub.po",
         "fn2": "What_do_you_mean_my_cute_disciples_are_Yanderes",
         "fn3": "what do you mean my cute disciples are yanderes",
         "ext": "epub",
@@ -7032,7 +7048,7 @@
         "1": "512",
         "2": "0",
         "3": "0",
-        "4": "75.0",
+        "4": "74.8",
         "pos": 510
     },
     "who said a mosquito cant cultivate": {
