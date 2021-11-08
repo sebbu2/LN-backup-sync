@@ -315,7 +315,8 @@ class Dropbox {
 				$data2=json_decode($data2);
 			}
 		}
-		file_put_contents($this::FOLDER.'dropbox.zip', $data);
+		$res=file_put_contents($this::FOLDER.'dropbox.zip', $data);
+		if($res===false) die('error writing dropbox.zip');
 		//$data=json_decode($data);
 		var_dump($data2);
 		$finfo = new finfo(FILEINFO_MIME);

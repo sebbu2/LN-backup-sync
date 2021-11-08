@@ -133,7 +133,7 @@ class RoyalRoad extends SitePlugin
 				if(array_key_exists( (string)$node['data-page'], $pages)) continue;
 				$pages[(string)$node['data-page']]=(string)$node['href'];
 			}
-			if($i>=5 && $count2==50) $pages[$i+1]='/my/follows?page='.($i+1); // TODO : temporary fix for bug #13041
+			//if($i>=5 && $count2==50) $pages[$i+1]='/my/follows?page='.($i+1); // TODO : verify it's been fixed [temporary fix for bug #13041]
 			//var_dump($i, strlen($res));
 			$i++;
 			$count++;

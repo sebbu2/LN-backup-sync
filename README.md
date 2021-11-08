@@ -222,3 +222,7 @@ webnovel2.htm raw table of webnovel data (identical to website, sorted by last a
 [pos\_others.json](pos_others.json) data of the position from unrecognized novels
 
 [wn\_diff.json](wn_diff.json) data of number of privilege chapters for watched series (= the difference between webnovel reading position and wlnupdates reading position)
+
+## Others
+
+[todo.txt](todo.txt) small personnal TODO-list about this project

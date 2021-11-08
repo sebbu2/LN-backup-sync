@@ -21,13 +21,18 @@ dropbox.inc.php
 	sort files in zip
 	torrentzip (reproducible)
 
+functions.inc.php
+	improve unicode normalization
+	review name_simplify & name_compare
+
 news.php
 	check neg chp to last (&cur?)
 	improve filename check (all names) (correspondances_pos.json)
 	change to class
 	restyle from solution1 to solution2 (easy)
-	add color
-	add skipping lines options
+	add subname
+	add color (names, chapters, subname, pos)
+	add skipping lines & lists options
 
 position.php
 	add save/load from files into the class
@@ -72,7 +77,10 @@ royalroad, webnovel, wlnupdates
 	normalize methods
 	add methods for access to replaced attributes/keys
 	add class for individual novel?
-	add hotfixes (manual jsons, like empty novels, names)
+
+correspondances, dropbox, news, royalroad, webnovel, wlnupdates
+	add hotfixes (manual jsons, like empty novels, names, subname, conflicts in names, diff in chapters, etc...)
+	improve duplicates / conflicts support
 	add diff between sources (added/removed chapters)
 
 *
