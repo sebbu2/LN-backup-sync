@@ -157,17 +157,38 @@ foreach($wln_order as $id=>$list) {
 			}
 			if(!is_null($wln2['rr'])) {
 				$rr1=$rr_books[$wln2['rr']];
-				$rr2=$rr->get_chapter_list_cached($wln2['rr']);
+				$rr2_=$rr->get_chapter_list_cached($wln2['rr']);
+				if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+					$rr2=get($rr2_, 'chapters');
+				}
+				else {
+					$rr2=$rr2_;
+					unset($rr2_);
+				}
 				if(exists($rr1, 'last-read-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-read-title')) );
 					if(count($found)==0) {
-						$rr2=$rr->get_chapter_list($wln2['rr']);
+						$rr2_=$rr->get_chapter_list($wln2['rr']);
+						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+							$rr2=get($rr2_, 'chapters');
+						}
+						else {
+							$rr2=$rr2_;
+							unset($rr2_);
+						}
 						if(!array_key_exists('msg', $row)) $row['msg']='';
 						$row['msg'].='updating rr: '.__LINE__.' + ';
 					}
 					$found=array_filter($rr2, fn($e) => exists($e, 'pos-title')&&strlen(get($e, 'pos-title'))>0);
 					if(count($found)==0) {
 						$rr2=$rr->get_chapter_list($wln2['rr']);
+						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+							$rr2=get($rr2_, 'chapters');
+						}
+						else {
+							$rr2=$rr2_;
+							unset($rr2_);
+						}
 						if(!array_key_exists('msg', $row)) $row['msg']='';
 						$row['msg'].='updating rr: '.__LINE__.' + ';
 					}
@@ -175,7 +196,14 @@ foreach($wln_order as $id=>$list) {
 				if(exists($rr1, 'last-upd-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-upd-title')) );
 					if(count($found)==0) {
-						$rr2=$rr->get_chapter_list($wln2['rr']);
+						$rr2_=$rr->get_chapter_list($wln2['rr']);
+						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+							$rr2=get($rr2_, 'chapters');
+						}
+						else {
+							$rr2=$rr2_;
+							unset($rr2_);
+						}
 						if(!array_key_exists('msg', $row)) $row['msg']='';
 						$row['msg'].='updating rr: '.__LINE__.' + ';
 					}
@@ -247,7 +275,14 @@ foreach($wn_books as $entry) {
 		if(!is_null($wn1['wln'])) continue; // already in previous big loop
 		if(!is_null($wn1['rr'])) {
 			$wn2=$rr_books[$wn1['rr']];
-			$rr2=$rr->get_chapter_list_cached($wn1['rr']);
+			$rr2_=$rr->get_chapter_list_cached($wn1['rr']);
+			if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+				$rr2=get($rr2_, 'chapters');
+			}
+			else {
+				$rr2=$rr2_;
+				unset($rr2_);
+			}
 			if(count($rr2)>0) {
 				$rr2a=count($rr2)-1;
 				$rr2b=$rr2[$rr2a];
@@ -306,7 +341,14 @@ foreach($rr_books as $rr_id=>$entry) {
 		if(!is_null($rr1['wln'])) continue; // already in previous big loop
 		if(!is_null($rr1['wn'])) continue; // already in previous big loop
 	}
-	$rr2=$rr->get_chapter_list_cached($rr_id);
+	$rr2_=$rr->get_chapter_list_cached($rr_id);
+	if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
+		$rr2=get($rr2_, 'chapters');
+	}
+	else {
+		$rr2=$rr2_;
+		unset($rr2_);
+	}
 	if(count($rr2)>0) {
 		$rr2a=count($rr2)-1;
 		$rr2b=$rr2[$rr2a];

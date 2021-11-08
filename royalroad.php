@@ -170,13 +170,88 @@ class RoyalRoad extends SitePlugin
 	public function get_chapter_list($fictionId) {
 		$res = $this->get( 'https://www.royalroad.com/fiction/'.$fictionId );
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.htm', $res);
+		//$res=file_get_contents($this::FOLDER.'fiction_'.$fictionId.'.htm'); // NOTE : during DEBUG
 		$xml=simplexml_load_html($res);
+		
+		$ar=array();
+		
+		$res=$xml->xpath("//div[@class='row fic-header']");
+		assert(count($res)==1);
+		$res=$res[0];
+		$ar['info']=array();
+		$ar['info']['cover']=(string)$res->div[0]->img['src'];
+		$ar['info']['name']=trim((string)$res->div[1]->div->h1);
+		$ar['info']['author-name']=trim((string)$res->div[1]->div->h4->span[1]->a);
+		$ar['info']['author-href']=(string)$res->div[1]->div->h4->span[1]->a['href'];
+		
+		$res=$xml->xpath("//div[@class='fiction-info']");
+		assert(count($res)==1);
+		$res=$res[0];
+		
+		$ar['info']['tags']=array();
+		$res2=$res->div[0]->div[1]->div[0];
+		foreach($res2 as $node) {
+			if(!isset($node->a)) {
+				$ar['info']['tags'][]=(string)$node;
+			}
+			else {
+				foreach($node->a as $node2) {
+					$ar['info']['tags'][]=array('name'=>(string)$node2, 'href'=>(string)$node2['href']);
+				}
+			}
+		}
+		unset($res2);
+		
+		$div_desc=NULL;
+		$ar['info']['warnings']=array();
+		$res2=$res->div[0]->div[1];
+		//assert((string)$res2->strong=='Warning' || (string)$res2->span=='This fiction contains:');
+		if((string)$res2->strong=='Warning' || (string)$res2->span=='This fiction contains:') {
+			$res2=$res2->div[1]->ul->li;
+			foreach($res2 as $node) {
+				$ar['info']['warnings'][]=(string)$node;
+			}
+			$div_desc=2;
+		}
+		else {
+			$div_desc=1;
+		}
+		
+		$ar['info']['description']=(string)trim(strip_tags($res->div[0]->div[1]->div[$div_desc]->asXML()));
+		
+		$res2=$res->div[1]->div->div;
+		$ar['stats']=array();
+		foreach($res2->div[0]->meta as $node) {
+			$ar['stats'][(string)$node['property']]=(string)$node['content'];
+		}
+		$res3=$res2->div[0]->ul->li;
+		assert(count($res3)%2==0); // NOTE : 0-indexed, even is name, odd is value
+		for($i=0;$i<count($res3);$i+=2) {
+			$ar['stats'][(string)$res3[$i]]=(string)$res3[$i+1]->span['data-content'];
+		}
+		$res3=$res2->div[1]->ul->li;
+		assert(count($res3)%2==0); // NOTE : 0-indexed, even is name, odd is value
+		for($i=0;$i<count($res3);$i+=2) {
+			$ar['stats'][trim((string)$res3[$i])]=(string)$res3[$i+1];
+		}
+		unset($res3);
+		unset($res2);
+		
+		$res=$xml->xpath("//div[@class='volumes-carousel']/div");
+		$ar['volumes']=array();
+		foreach($res as $node) {
+			$id=(string)$node['data-volume-id'];
+			$name=trim((string)$node->div->h6);
+			$ar['volumes'][$id]=array('name'=>$name);
+		}
+		
 		$res=$xml->xpath("//table[@id='chapters']/tbody/tr");
 		$ar2=array();
 		$count=0;
 		foreach($res as $node) {
 			$ar3=array();
 			// <i class="fa fa-caret-right popovers" data-trigger="hover" data-container="body" data-placement="top" data-original-title="Reading Progress" data-content="This is the last chapter you've opened"></i>
+			if(array_key_exists('data-volume-id',(array)$node->attributes())) $ar3['data-volume-id']=(string)$node['data-volume-id'];
 			$ar3['href']=(string)$node->td[0]->a['href'];
 			$ar3['title']=trim((string)$node->td[0]->a);
 			$ar3['date']=(string)$node->td[1]->a->time['title'];
@@ -188,16 +263,28 @@ class RoyalRoad extends SitePlugin
 			$ar2[$count]=$ar3;
 			$count++;
 		}
-		$res=json_encode($ar2);
-		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.json', $res);
-		return $ar2;
+		$ar['chapters']=$ar2;
+		unset($ar2);
+		
+		foreach($ar['volumes'] as $id=>&$ar2) {
+			$ar2['count']=count(array_filter($ar['chapters'], fn($e) => array_key_exists('data-volume-id', $e) && $e['data-volume-id']==$id));
+		}
+		
+		//var_dump($ar);die();
+		
+		$res2=json_encode($ar);
+		$res2=$this->jsonp_to_json($res2);
+		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.json', $res2);
+		//return $ar['chapters']; // NOTE : compatibility for old format (direct chapter list)
+		return $ar;
 	}
 	
 	public function get_chapter_list_cached($fictionId, $duration=604800) {
 		$fn=$this::FOLDER.'fiction_'.$fictionId.'.json';
 		if(file_exists($fn) && time()-filemtime($fn)<$duration) {
-			return json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
+			$res=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
+			//return $res['chapters']; // NOTE : compatibility for old format (direct chapter list)
+			return $res;
 		}
 		else {
 			return $this->get_chapter_list($fictionId);
