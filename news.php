@@ -228,6 +228,19 @@ foreach($wln_order as $id=>$list) {
 			$row['pos']=$pos1['pos'];
 			$row['last']=$pos1['max'];
 		}
+		else {
+			$wln_info=$wln->get_info_cached($entry);
+			$n3=get(get($wln_info, 'data'), 'alternatenames');
+			$n3=array_map(fn($e)=>strtolower(normalize(name_simplify($e, 1))), $n3);
+			foreach($n3 as $n3_) {
+				if(array_key_exists($n3_, $pos)) {
+					$pos1=$pos[$n3_];
+					$row['start']=$pos1['min'];
+					$row['pos']=$pos1['pos'];
+					$row['last']=$pos1['max'];
+				}
+			}
+		}
 		if(count($row)>1) {
 			if($lines==0) {
 				echo '<table border="1">'."\r\n";

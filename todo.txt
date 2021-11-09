@@ -7,6 +7,7 @@ correspondances.php
 	change to class
 	add correspondances_pos.json
 	add wln duplicates support (PERSO)
+	add duplicates support between sources (2 novels with same name exists really, possibly on 2 different sources or on the same, not just in the wln database)
 
 dropbox.php
 	recode to pos&cor
@@ -58,6 +59,7 @@ tables.inc.php
 
 update_lists.php
 	recode to pos&cor
+	speed improvement
 
 webnovel.php
 	add/check history & collection

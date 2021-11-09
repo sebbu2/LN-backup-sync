@@ -10,6 +10,8 @@ require_once('royalroad.php');
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
+define('IGNORE_DUPLICATES', false);
+
 //if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) $sub=true;
 if(direct()) include('header.php');
 
@@ -118,6 +120,13 @@ if(direct()) {
 
 	//var_dump($watches['data'][1]);die();
 
+	$skip_wln_wn=array();
+	$skip_wln_rr=array();
+	$skip_wn_rr=array();
+
+	$timer1=microtime(true);
+	$timer2=$timer3=$timer4=NULL;
+	$counter1=$counter2=$counter3=$counter4=$counter5=0;
 	// 1 WLN
 	foreach($watches['data'][0] as $k1=>$v1) {
 		foreach($v1 as $k2=>$v2) {
@@ -171,16 +180,21 @@ if(direct()) {
 				if(is_array($n3)) $n3=array_map('normalize', $n3);
 			}
 			$n3=array_map('name_simplify', $n3);
+			$n3=array_merge($n3, array_map('normalize', $n3));
+			$n3=array_merge($n3, array_map('normalize2', $n3));
 			$n3=array_values(array_unique($n3));
 			//var_dump($wln_id, $n1, $n2, $n3);//die();
+			//if($wln_id==43524) { var_dump($n3);die(); }
 			
 			// 1 WLN 2 WN
 			$wn_id=NULL;
 			$k3=$v3=NULL;
 			$n=NULL;
+			$timer3=microtime(true);
 			foreach($books as $k3=>$v3) {
 				//var_dump($v3);//die();
 				if($v3['novelType']==100) continue;
+				if(IGNORE_DUPLICATES && isset($skip_wln_wn[$k3]) && $skip_wln_wn[$k3]) continue;
 				//$res=$wn->get_info_cached($v3['bookId'],3);
 				//var_dump($res);die();
 				//$n=name_simplify($v3['bookName']);
@@ -189,18 +203,23 @@ if(direct()) {
 					//if($n===$n_) {
 					if(strtolower($n)===strtolower($n_)) {
 						$wn_id=$v3['bookId'];
+						$skip_wln_wn[$k3]=true;
 						break(2);
 					}
 				}
 			}
+			$timer4=microtime(true);
+			$counter2+=($timer4-$timer3);
 			//var_dump($wn_id);//die();
 			
 			// 1 WLN 2 RR
 			$rr_id=NULL;
 			$k4=$v4=NULL;
 			$n=NULL;
+			$timer3=microtime(true);
 			foreach($follows as $k4=>$v4) {
 				//var_dump($k4, $v4);die();
+				if(IGNORE_DUPLICATES && isset($skip_wln_rr[$k4]) && $skip_wln_rr[$k4]) continue;
 				//$n=name_simplify($v4['title']);
 				$n=name_simplify(normalize($v4['title']));
 				//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
@@ -208,10 +227,13 @@ if(direct()) {
 					//if($n===$n_) {
 					if(strtolower($n)===strtolower($n_)) {
 						$rr_id=$k4;
+						$skip_wln_rr[$k4]=true;
 						break(2);
 					}
 				}
 			}
+			$timer4=microtime(true);
+			$counter3+=($timer4-$timer3);
 			//die();
 			//var_dump($rr_id);//die();
 			//var_dump($wln_id, $wn_id, $rr_id);die();
@@ -248,9 +270,12 @@ if(direct()) {
 			flush();
 		}
 	}
+	$timer2=microtime(true);
+	$counter1+=($timer2-$timer1);
 	var_dump(array('cor'=>count($cor),'wln'=>count($cor_wln),'wn'=>count($cor_wn),'rr'=>count($cor_rr),'names'=>count($names)));
 
 	// 1 WN
+	$timer3=microtime(true);
 	foreach($books as $k3=>$v3) {
 		if($v3['novelType']==100) continue;
 		$wn_id=$v3['bookId'];
@@ -266,11 +291,14 @@ if(direct()) {
 		$k4=$v4=NULL;
 		$n2=NULL;
 		foreach($follows as $k4=>$v4) {
+			if(IGNORE_DUPLICATES && isset($skip_wn_rr[$k4]) && $skip_wn_rr[$k4]) continue;
 			$n2=name_simplify($v4['title']);
 			$n2=normalize($n2);
 			//if($n===$n2) {
 			if(strtolower($n)===strtolower($n2)) {
 				$rr_id=$k4;
+				$skip_wn_rr[$k4];
+				break;
 			}
 		}
 		
@@ -293,12 +321,16 @@ if(direct()) {
 			$cor_rr[$rr_id]=$ar;
 		}
 	}
+	$timer4=microtime(true);
+	$counter4+=($timer4-$timer3);
 	var_dump(array('cor'=>count($cor),'wln'=>count($cor_wln),'wn'=>count($cor_wn),'rr'=>count($cor_rr),'names'=>count($names)));
 
 	// 1 RR
+	$timer3=microtime(true);
 	foreach($follows as $k4=>$v4) {
 		$rr_id=$k4;
 		if(array_key_exists($rr_id, $cor_rr)) continue;
+		//if(isset($cor_rr[$skip_wln_rr[$k4]])) continue;
 		$n2=name_simplify($v4['title']);
 		
 		assert(strlen($n2)>0) or die('empty name for '.$rr_id.'.');
@@ -311,6 +343,8 @@ if(direct()) {
 		if(!array_key_exists($n2, $names)) $names[$n2]=$id;
 		if(!array_key_exists(strtolower($n2), $names)) $names[strtolower($n2)]=$id;
 	}
+	$timer4=microtime(true);
+	$counter5+=($timer4-$timer3);
 	var_dump(array('cor'=>count($cor),'wln'=>count($cor_wln),'wn'=>count($cor_wn),'rr'=>count($cor_rr),'names'=>count($names)));
 
 	ksort($cor_wln, SORT_FLAG_CASE | SORT_NATURAL);
@@ -328,6 +362,8 @@ if(direct()) {
 	'wln: wln_wn/wn'=>$per_wn, 'wln: cor_wn/wln_wn'=>$per_wn_cor0, 'wln: cor_wn/wn'=>$per_wn_cor2,
 	'wln: wln_rr/rr'=>$per_rr, 'wln: cor_rr/wln_rr'=>$per_rr_cor0, 'wln: cor_rr/rr'=>$per_rr_cor2,
 	));
+
+	var_dump($counter1, $counter2, $counter3, $counter4, $counter5);
 
 	file_put_contents('correspondances.json',json_encode($cor, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 	file_put_contents('correspondances_wln.json',json_encode($cor_wln, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));

@@ -35,6 +35,17 @@ $updatedCount=array(
 	'wln'=>0,
 	'wn'=>0,
 );
+$count=0;
+$modifs=array(
+	'description'=>0,
+	'translateMode'=>0,
+	'authors'=>0,
+	'tags'=>0,
+	'genres'=>0,
+	'alternatenames'=>0,
+	'website'=>0,
+	'list'=>0,
+);
 
 $correspondances=array();
 foreach($books as $book) // qidian
@@ -123,24 +134,29 @@ foreach($correspondances as $ar) {
 	$json2=array();
 	if(strlen($res2->data->description)==0 && strlen(trim($res[0]->Data->Description))>0) {
 		$json2[]=array('key'=>'description-container','type'=>'singleitem','value'=>trim($res[0]->Data->Description));
+		$modifs['description']++;
 	}
 	//$tr=$res[3]->data->bookInfo->translateMode;
 	//if( ($res2->data->tl_type=='oel'&&$res[0]->Data->Type>=0) || ($res2->data->tl_type=='translated'&&$res[0]->Data->Type<0) ) { // wrong tl type
 	if( ($res2->data->tl_type=='oel'&&$res[3]->data->bookInfo->translateMode>=0) || ($res2->data->tl_type=='translated'&&$res[3]->data->bookInfo->translateMode<0) ) { // wrong tl type
 		$json2[]=array('key'=>'tl_type-container','type'=>'combobox','value'=>($res[3]->data->bookInfo->translateMode>=0?'translated':($res[3]->data->bookInfo->translateMode<0?'oel':'error')));
 		//if($wln_id==120307) { var_dump($wln_id, $wn_id, $json2, $res[3]->data->bookInfo->translateMode); die(); } // wln: ABL
+		$modifs['translateMode']++;
 	}
 	if(count($res2->data->authors)==0) {
 		$json2[]=array('key'=>'author-container','type'=>'multiitem','value'=>$res[0]->Data->AuthorInfo->AuthorName);
+		$modifs['authors']++;
 	}
 	if(count($res2->data->tags)==0) {
 		$ar=call_user_func(function(array $a){ natcasesort($a);return $a;}, array_map(function($x) { return strtolower($x->TagName); }, $res[1]->Data->TagInfos));
 		if(count($ar)>0) {
 			$json2[]=array('key'=>'tag-container','type'=>'multiitem','value'=>implode("\n",$ar));
+			$modifs['tags']++;
 		}
 	}
 	if(count($res2->data->genres)==0) {
 		$json2[]=array('key'=>'genre-container','type'=>'multiitem','value'=>$res[0]->Data->CategoryName);
+		$modifs['genres']++;
 	}
 	
 	//$res_=json_decode(str_replace("\t",'',file_get_contents('webnovel/GetChapterList_'.$wn_id.'.json')),false,512,JSON_THROW_ON_ERROR);
@@ -169,10 +185,18 @@ foreach($correspondances as $ar) {
 	//if(count($res2->data->alternatenames)<=1 || (strlen($resb->data->bookInfo->bookSubName)>0&&array_search($resb->data->bookInfo->bookSubName, $res2->data->alternatenames)==false) ) {
 	$names=array_filter(array_unique(array_merge(
 		array($res[0]->Data->BookName, $res[1]->Data->OriginalName, $subName),
-		$res2->data->alternatenames
+		$res2->data->alternatenames,
+		array_map('normalize', $res2->data->alternatenames),
+		//array_map('normalize2', $res2->data->alternatenames),
+		array_map('normalize2', array_map('normalize', $res2->data->alternatenames)),
+		array_map('normalize2', array_map('normalize', array_map(fn($e) => name_simplify($e, 1), $res2->data->alternatenames))),
+		array() // NOTE : keep
 	)));
+	$names=preg_grep('#\\\\u[[:xdigit:]]{4}#', $names, PREG_GREP_INVERT);
 	$names=array_map('trim', $names);
+	$names=array_values(array_unique($names));
 	natcasesort($names);
+	//if($wln_id==57678) { var_dump($names);die(); }
 	if(count(array_diff($names, $res2->data->alternatenames))>0) {
 		//var_dump($wln_id, $wn_id, $names,$res2->data->alternatenames);die();
 	}
@@ -194,9 +218,13 @@ foreach($correspondances as $ar) {
 		$ar2=array_map(function($v) use($ar) { return $ar[$v]; }, $ar2);
 		$ar2=array_values($ar2);
 		natcasesort($ar2);
-		if(count(array_diff(array_unique(array_merge($res2->data->alternatenames, $ar2)), $res2->data->alternatenames))>0) {
+		$diff=array_diff(array_unique(array_merge($res2->data->alternatenames, $ar2)), $res2->data->alternatenames);
+		if(count($diff)>0) {
 			//var_dump($res2->data->alternatenames, $ar2);die();
-			$json2[]=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar2),);
+			$json=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar2),);
+			//var_dump($diff, $json);die();
+			$json2[]=$json;
+			$modifs['alternatenames']++;
 		}
 	}
 	if(strlen($res2->data->website)==0) {
@@ -212,6 +240,7 @@ foreach($correspondances as $ar) {
 		if(strlen($res2->data->website)==0 || ($res2->data->website!=$url && strpos($res2->data->website, "\n")===false) ) {
 			//var_dump($res2->data->website, $url);die();
 			$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>$url);
+			$modifs['website']++;
 		}
 		if(strpos($res2->data->website, "\n")!==false) {
 			$found=false;
@@ -228,6 +257,7 @@ foreach($correspondances as $ar) {
 			if(!$found) {
 				$urls=array_merge(array($url), $urls);
 				$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>implode("\n",$urls));
+				$modifs['website']++;
 			}
 		}
 	}
@@ -235,10 +265,12 @@ foreach($correspondances as $ar) {
 	if($id=='QIDIAN' && $res2->data->tl_type=='oel') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN original');
 		var_dump($res3);
+		$modifs['list']++;
 	}
 	if($id=='QIDIAN original' && $res2->data->tl_type=='translated') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN');
 		var_dump($res3);
+		$modifs['list']++;
 	}
 	
 	if(count($json2)==0) continue;
@@ -265,7 +297,9 @@ foreach($correspondances as $ar) {
 	if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 	flush();
 	//if($res!==false) die();
+	$count;
 }
+var_dump($count,$modifs);
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {
 	define('DROPBOX_DONE', true);
 	include_once('retr.php');

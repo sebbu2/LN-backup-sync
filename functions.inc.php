@@ -66,15 +66,31 @@ function startswith($haystack, $needle) {
 function endswith($haystack, $needle) {
 	return (strncasecmp(substr($haystack, -strlen($needle)), $needle, strlen($needle))==0);
 }
+$translit1=Transliterator::create('Hex-Any');
+$translit2=Transliterator::create("[:^ASCII:] Any-Hex");
 function normalize($str) {
+	global $translit1, $translit2;
 	$str=trim($str);
-	$str=transliterator_transliterate("Hex-Any", $str);
+	$str=html_entity_decode($str, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$str=$translit1->transliterate($str);
 	$str=str_replace('\\u0026', '&', $str);
 	$str=str_replace('\\u00a0', ' ', $str);
 	$str=str_replace('\\uff1f', '?', $str);
-	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
-	$str=html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
-	$str=transliterator_transliterate("[:^ASCII:] Any-Hex", $str);
+	$str=str_replace('\\u0110', 'D', $str);
+	$str=str_replace('\\u0111', 'd', $str);
+	$str=html_entity_decode($str, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$str=$translit2->transliterate($str);
+	return $str;
+}
+//$translit4=Transliterator::create("NFD; [:Nonspacing Mark:] Remove; NFC");
+$translit4=Transliterator::create("NFKD; [:Nonspacing Mark:] Remove; NFKC");
+$translit5=Transliterator::create("Hex-Any; NFKD; [:Nonspacing Mark:] Remove; NFKC; Any-Latin; NFKD; [:Nonspacing Mark:] Remove; NFKC; Any-Latin; Latin-ASCII");
+$translit6=Transliterator::create("Latin-ASCII");
+function normalize2($str) {
+	global $translit4, $translit5, $translit6;
+	//$str=$translit4->transliterate($str);
+	$str=$translit5->transliterate($str);
+	//$str=$translit6->transliterate($str);
 	return $str;
 }
 if ( !function_exists( 'is_iterable' ) ) {

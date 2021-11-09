@@ -204,10 +204,10 @@ class RoyalRoad extends SitePlugin
 		
 		$div_desc=NULL;
 		$ar['info']['warnings']=array();
-		$res2=$res->div[0]->div[1];
+		$res2=$res->div[0]->div[1]->div[1];
 		//assert((string)$res2->strong=='Warning' || (string)$res2->span=='This fiction contains:');
 		if((string)$res2->strong=='Warning' || (string)$res2->span=='This fiction contains:') {
-			$res2=$res2->div[1]->ul->li;
+			$res2=$res2->ul->li;
 			foreach($res2 as $node) {
 				$ar['info']['warnings'][]=(string)$node;
 			}
