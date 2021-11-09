@@ -368,7 +368,7 @@
     "43524": {
         "wn": "7931338406001705",
         "rr": null,
-        "name": "Release that Witch",
+        "name": "Release That Witch",
         "list": "QIDIAN completed"
     },
     "43638": {
@@ -2609,6 +2609,12 @@
         "name": "Elite Mages' Academy",
         "list": "QIDIAN on-hold"
     },
+    "131709": {
+        "wn": "18921874805581005",
+        "rr": 38944,
+        "name": "Darius Supreme",
+        "list": "QIDIAN plan to read"
+    },
     "131749": {
         "wn": "15208905005415205",
         "rr": null,
@@ -2741,12 +2747,6 @@
         "name": "Dear Spellbook",
         "list": "RoyalRoad"
     },
-    "133976": {
-        "wn": null,
-        "rr": 40163,
-        "name": "The Lazy Hungry Giantess LitRPG",
-        "list": "RoyalRoad"
-    },
     "134080": {
         "wn": null,
         "rr": 40503,
@@ -2764,6 +2764,12 @@
         "rr": 40193,
         "name": "Poison God's Heritage",
         "list": "QIDIAN on-hold"
+    },
+    "134331": {
+        "wn": "19558560305625305",
+        "rr": 39903,
+        "name": "AK \\u2013 The Alchemy Kingdom",
+        "list": "duplicates"
     },
     "134370": {
         "wn": null,
@@ -2902,6 +2908,12 @@
         "rr": 42124,
         "name": "An Unwilling Monster",
         "list": "RoyalRoad plan to read"
+    },
+    "135959": {
+        "wn": null,
+        "rr": 42202,
+        "name": "The Way Ahead",
+        "list": "RoyalRoad"
     },
     "135988": {
         "wn": null,
@@ -3410,7 +3422,7 @@
     "141567": {
         "wn": null,
         "rr": 45090,
-        "name": "tentacles loot boxes and apocalypse \\u2013 its not death its surprise reincarnation",
+        "name": "Tentacles, loot boxes and apocalypse [monster evolution story]",
         "list": "RoyalRoad"
     },
     "141681": {

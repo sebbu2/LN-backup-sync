@@ -255,7 +255,7 @@
         "wln": 43524,
         "wn": "7931338406001705",
         "rr": null,
-        "name": "Release that Witch",
+        "name": "Release That Witch",
         "list": "QIDIAN completed"
     },
     {
@@ -1600,6 +1600,13 @@
         "wn": "9829507306003305",
         "rr": null,
         "name": "A Stay-at-home Dad's Restaurant In An Alternate World",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 131709,
+        "wn": "18921874805581005",
+        "rr": 38944,
+        "name": "Darius Supreme",
         "list": "QIDIAN plan to read"
     },
     {
@@ -3111,7 +3118,7 @@
         "wln": 141567,
         "wn": null,
         "rr": 45090,
-        "name": "tentacles loot boxes and apocalypse \\u2013 its not death its surprise reincarnation",
+        "name": "Tentacles, loot boxes and apocalypse [monster evolution story]",
         "list": "RoyalRoad"
     },
     {
@@ -3164,13 +3171,6 @@
         "list": "RoyalRoad"
     },
     {
-        "wln": 133976,
-        "wn": null,
-        "rr": 40163,
-        "name": "The Lazy Hungry Giantess LitRPG",
-        "list": "RoyalRoad"
-    },
-    {
         "wln": 137358,
         "wn": null,
         "rr": 42521,
@@ -3196,6 +3196,13 @@
         "wn": null,
         "rr": 43288,
         "name": "The Trickster's Tale 2: Gnomes Don't Rule!",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 135959,
+        "wn": null,
+        "rr": 42202,
+        "name": "The Way Ahead",
         "list": "RoyalRoad"
     },
     {
@@ -4499,6 +4506,13 @@
         "rr": null,
         "name": "My Disciple Died Yet Again",
         "list": "completed"
+    },
+    {
+        "wln": 134331,
+        "wn": "19558560305625305",
+        "rr": 39903,
+        "name": "AK \\u2013 The Alchemy Kingdom",
+        "list": "duplicates"
     },
     {
         "wln": 83365,

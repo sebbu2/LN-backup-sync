@@ -194,7 +194,7 @@
     "7931338406001705": {
         "wln": 43524,
         "rr": null,
-        "name": "Release that Witch",
+        "name": "Release That Witch",
         "list": "QIDIAN completed"
     },
     "7940017306001805": {
@@ -2057,6 +2057,12 @@
         "name": "I Am Loaded with Passive Skills",
         "list": "QIDIAN plan to read"
     },
+    "18921874805581005": {
+        "wln": 131709,
+        "rr": 38944,
+        "name": "Darius Supreme",
+        "list": "QIDIAN plan to read"
+    },
     "18923811406743005": {
         "wln": 59514,
         "rr": 28385,
@@ -2184,10 +2190,10 @@
         "list": "QIDIAN"
     },
     "19558560305625305": {
-        "wln": 132927,
+        "wln": 134331,
         "rr": 39903,
-        "name": "AK - The Alchemy Kingdom",
-        "list": "QIDIAN plan to read"
+        "name": "AK \\u2013 The Alchemy Kingdom",
+        "list": "duplicates"
     },
     "19582154305682205": {
         "wln": 142538,

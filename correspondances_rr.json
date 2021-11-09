@@ -887,6 +887,12 @@
         "name": "An Unbound Soul",
         "list": "RoyalRoad plan to read"
     },
+    "38944": {
+        "wln": 131709,
+        "wn": "18921874805581005",
+        "name": "Darius Supreme",
+        "list": "QIDIAN plan to read"
+    },
     "39090": {
         "wln": 131842,
         "wn": "17560808306611405",
@@ -924,22 +930,16 @@
         "list": "RoyalRoad plan to read"
     },
     "39903": {
-        "wln": 132927,
+        "wln": 134331,
         "wn": "19558560305625305",
-        "name": "AK - The Alchemy Kingdom",
-        "list": "QIDIAN plan to read"
+        "name": "AK \\u2013 The Alchemy Kingdom",
+        "list": "duplicates"
     },
     "40062": {
         "wln": 134120,
         "wn": null,
         "name": "Path of the Dragon Mage: Exiled",
         "list": "duplicates"
-    },
-    "40163": {
-        "wln": 133976,
-        "wn": null,
-        "name": "The Lazy Hungry Giantess LitRPG",
-        "list": "RoyalRoad"
     },
     "40193": {
         "wln": 134291,
@@ -1163,6 +1163,12 @@
         "name": "An Unwilling Monster",
         "list": "RoyalRoad plan to read"
     },
+    "42202": {
+        "wln": 135959,
+        "wn": null,
+        "name": "The Way Ahead",
+        "list": "RoyalRoad"
+    },
     "42441": {
         "wln": 136182,
         "wn": null,
@@ -1352,7 +1358,7 @@
     "45090": {
         "wln": 141567,
         "wn": null,
-        "name": "tentacles loot boxes and apocalypse \\u2013 its not death its surprise reincarnation",
+        "name": "Tentacles, loot boxes and apocalypse [monster evolution story]",
         "list": "RoyalRoad"
     },
     "45124": {
