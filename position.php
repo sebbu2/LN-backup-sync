@@ -2,6 +2,7 @@
 require_once('config.php');
 require_once('functions.inc.php');
 require_once('CJSON.php');
+require_once('vendor/autoload.php');
 
 require_once('wlnupdates.php');
 require_once('webnovel.php');
@@ -51,11 +52,12 @@ class Position
 			$ar2[$v]=array_merge( $ar2[$v], $this->parseFilename($v), $this->parseFileContent($ar2[$v]['content']) );
 			if(in_array($ar2[$v]['ext'], $this::scroll)) {
 				if($ar2[$v][1]==0 && $ar2[$v][3]==0) $ar2[$v]['pos']=0;
-				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1] - 1 + ($ar2[$v][3]>0?1:0);
+				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<=-1?1:0) + $ar2[$v][1] - 1 + ($ar2[$v][3]>0?1:0);
+				if($ar2[$v][4]=='100' && $ar2[$v][3]=='0') $ar2[$v]['pos']++;
 			}
 			else if(in_array($ar2[$v]['ext'], $this::page)) {
 				if($ar2[$v][1]==0) $ar2[$v]['pos']=0;
-				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<-1?1:0) + $ar2[$v][1] -1;
+				else $ar2[$v]['pos']=$ar2[$v]['min'] + ($ar2[$v]['min']<=-1?1:0) + $ar2[$v][1] -1;
 			}
 		}
 		chdir(CWD);
@@ -134,8 +136,10 @@ class Position
 	}
 	public function createFileContent($min, $pos, $max) {
 		if($min>$max) throw new Exception('chapter range must be an increasing range');
+		//var_dump($min, $pos, $max);
 		if(($pos<$min || $pos>$max) && ($pos!=0||$min!=1)) throw new Exception('position must be between min and max');
-		$chp=($pos<$max?$pos-$min+1:$pos-$min+($pos>1?1:0));
+		$chp=($min<0?$pos-$min:$pos-$min+($pos>1?1:0));
+		//var_dump($chp);
 		$per=null;
 		if($pos==$min && $min==1) $per='0.0';
 		else if($pos==$max) $per='100';
@@ -263,7 +267,7 @@ class Position
 					if( ($cpos>0?$cpos:0) > ($opos>0?$opos:0) ) {
 						$old[]=$ov['fn'];
 						$dev_9[$k]=$v;
-						$dev_9[$k]['fns']=array_merge( (array_key_exists('fns', $ov)?$ov['fns']:array($ov['fn'])), $array($v['fn']) );
+						$dev_9[$k]['fns']=array_merge( (array_key_exists('fns', $ov)?$ov['fns']:array($ov['fn'])), array($v['fn']) );
 					}
 					else if( ($opos>0?$opos:0) > ($cpos>0?$cpos:0) ) {
 						$old[]=$v['fn'];
@@ -378,11 +382,13 @@ if(direct()) {
 	file_put_contents('pos.json',json_encode($ar3, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 }
 else {
+	$pos_=new Position;
 	$pos_old=json_decode(file_get_contents('pos_old.json'), true, 512, JSON_THROW_ON_ERROR);
 	$pos_others=json_decode(file_get_contents('pos_others.json'), true, 512, JSON_THROW_ON_ERROR);
 	$pos_dev1=json_decode(file_get_contents('pos_dev1.json'), true, 512, JSON_THROW_ON_ERROR);
 	$pos_dev9=json_decode(file_get_contents('pos_dev9.json'), true, 512, JSON_THROW_ON_ERROR);
 	$pos=json_decode(file_get_contents('pos.json'), true, 512, JSON_THROW_ON_ERROR);
+	$pos_->ar3=$pos;
 }
 
 if(direct()) include('footer.php');

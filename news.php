@@ -14,8 +14,9 @@ include_once('correspondances.php');
 
 define('PERLINE', true);
 $data='';
+$data2='';
 
-$wln=new WLNUpdates();
+$wln=new WLNUpdates;
 $wn=new WebNovel;
 $rr=new RoyalRoad;
 
@@ -51,6 +52,112 @@ $rr_books=$rr->get_watches();
 
 ob_start();
 
+function evaluate_expr($row, $expr) {
+	assert(is_bool($expr) || (is_array($expr) && count($expr)==3));
+	static $ops=array('=','==', '!=','<>', '<','<=', '>','>=', 'or', 'and');
+	static $opd=array('=','==', '!=','<>', '<','<=', '>','>=');
+	static $opl=array('or', 'and');
+	static $opl2=array('or2', 'and2');
+	$cond2=NULL;
+	$op2=array_shift($expr);
+	$elem1_=$expr[0];
+	$elem2_=$expr[1];
+	//var_dump($op2, $elem1, $elem2);die();
+	if(is_array($elem1_)) {
+		$elem1=evaluate_expr($row, $elem1_);
+	}
+	else {
+		if(is_string($elem1_)) {
+			if(!array_key_exists($elem1_, $row)) return NULL;
+			$elem1=$row[$elem1_];
+		}
+		else $elem1=$elem1_;
+	}
+	if(is_array($elem2_)) {
+		$elem2=evaluate_expr($row, $elem2_);
+	}
+	else {
+		if(is_string($elem2_)) {
+			if(!array_key_exists($elem2_, $row)) return NULL;
+			$elem2=$row[$elem2_];
+		}
+		else $elem2=$elem2_;
+	}
+	if($elem1===NULL || $elem2===NULL) {
+		if(in_array($op2, $opl)) {
+			if($elem1===NULL&&$elem2!==NULL) return $elem2;
+			if($elem1!==NULL&&$elem2===NULL) return $elem1;
+			return NULL;
+		} elseif(in_array($op2, $opl2)) return false;
+		//if($expr[1]=='last' && $elem2===NULL) return false; // TEST
+		assert(false);
+	}
+	if($op2=='='||$op2=='==')
+		$cond2=($elem1==$elem2);
+	if($op2=='!='||$op2=='<>')
+		$cond2=($elem1!=$elem2);
+	if($op2=='<' )
+		$cond2=($elem1< $elem2);
+	if($op2=='<=')
+		$cond2=($elem1<=$elem2);
+	if($op2=='>' )
+		$cond2=($elem1> $elem2);
+	if($op2=='>=')
+		$cond2=($elem1>=$elem2);
+	if($op2=='or'||$op2=='or2')
+		$cond2=($elem1||$elem2);
+	if($op2=='and'||$op2=='and2')
+		$cond2=($elem1&&$elem2);
+	//var_dump($op2, $elem1_, $elem2_, $cond2);
+	assert($cond2!==NULL);
+	return $cond2;
+}
+
+function skip($row) {
+	global $filters;
+	assert(count($filters['conditions'])==1);
+	$op=array_keys($filters['conditions'])[0];
+	$ar=$filters['conditions'][$op];
+	$cond=NULL;
+	if($op=='or') $cond=false;
+	if($op=='and') $cond=true;
+	//var_dump($op, $cond);
+	assert($cond!==NULL);
+	foreach($ar as $ar2) {
+		$cond2=evaluate_expr($row, $ar2);
+		if($cond2===NULL) continue;
+		if($op=='or') $cond|=$cond2;
+		if($op=='and') $cond&=$cond2;
+		//var_dump($cond,$cond2);
+		assert($cond2!==NULL);
+	}
+	//var_dump($row['title'], $cond);die();
+	return $cond;
+}
+
+function colorize($row) {
+	global $filters, $colors;
+	foreach($filters['colors'] as $col=>$list) {
+		foreach($list as $color=>$expr) {
+			$cond=evaluate_expr($row, $expr);
+			if($cond) {
+				$row[$col]='<span style="color:'.$color.'">'.$row[$col].'</span>';
+				$colors[$col]=$color;
+				break;
+			}
+		}
+	}
+	return $row;
+}
+
+$filters=file_get_contents('filters.json');
+//$filters=json_decode($filters, true, 512, JSON_THROW_ON_ERROR);
+require('vendor/autoload.php');
+$filters=json5_decode($filters, true, 512, JSON_THROW_ON_ERROR);
+//var_dump($filters);die();
+
+$colors=array();
+
 $head=array('title',
  'WLNUpdate cur', 'WLNUpdate last',
  'WebNovel cur', 'WebNovel last-free', 'WebNovel last-paid',
@@ -59,6 +166,7 @@ $head=array('title',
  'msg');
 //1 WLN 2 WN 3 RR
 foreach($wln_order as $id=>$list) {
+	if(in_array($id, $filters['lists'])) continue;
 	//if( !( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false || strpos(strtolower($id), 'royalroad')!==false ) ) {
 		echo '<h1>'.$id.'</h1>',"\n";
 	//}
@@ -66,6 +174,9 @@ foreach($wln_order as $id=>$list) {
 	foreach($list as $entry) {
 		$wln1=$wln_books[$entry];
 		$row=array();
+		$pos1=$pos9=NULL;
+		$colors=array();
+		$neg_chp=0;
 		$row['title']=$wln1[0]->name;
 		if(!is_null($wln1[3])) $row['title']=$wln1[3];
 		$row['title']=rawurldecode($row['title']);
@@ -227,6 +338,12 @@ foreach($wln_order as $id=>$list) {
 			$row['start']=$pos1['min'];
 			$row['pos']=$pos1['pos'];
 			$row['last']=$pos1['max'];
+			if(array_key_exists($name, $pos_dev9)) {
+				$pos9=$pos_dev9[$name];
+				$row['start9']=$pos9['min'];
+				$row['pos9']=$pos9['pos'];
+				$row['last9']=$pos9['max'];
+			}
 		}
 		else {
 			$wln_info=$wln->get_info_cached($entry);
@@ -235,6 +352,12 @@ foreach($wln_order as $id=>$list) {
 			foreach($n3 as $n3_) {
 				if(array_key_exists($n3_, $pos)) {
 					$pos1=$pos[$n3_];
+					if(array_key_exists($n3_, $pos_dev9)) {
+						$pos9=$pos_dev9[$name];
+						$row['start9']=$pos9['min'];
+						$row['pos9']=$pos9['pos'];
+						$row['last9']=$pos9['max'];
+					}
 					$row['start']=$pos1['min'];
 					$row['pos']=$pos1['pos'];
 					$row['last']=$pos1['max'];
@@ -242,6 +365,41 @@ foreach($wln_order as $id=>$list) {
 			}
 		}
 		if(count($row)>1) {
+			if(skip($row)) continue;
+			$row=colorize($row);
+			//var_dump($colors, $id);die();
+			if( !array_key_exists('title', $colors) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
+				$col2=NULL;
+				if(startswith($id, 'QIDIAN'))
+					$col2='WebNovel last-paid';
+				if(startswith($id, 'RoyalRoad'))
+					$col2='RoyalRoad last';
+				assert($col2!=NULL);
+				//$neg_chp
+				if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
+					$pos2=$pos_->createFileContent($row['start'], ($row['pos']<$row['start']?$row['start']:$row['pos']), $row[$col2]);
+					$fn2=$pos_->createFileName($pos1['fn2'], $row['start'], $row[$col2]);
+					//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
+					file_put_contents(DROPBOX.$fn2, $pos2);
+					if(!array_key_exists('msg', $row)) $row['msg']='';
+					$row['msg'].='.po '.__LINE__.' + ';
+					$row['title']='<span style="color:red">'.$row['title'].'</span>';
+					//var_dump($fn2,$pos2);die();
+				}
+				else {
+					$pos2=$pos_->createFileContent(1, 1, $row[$col2]);
+					$pos1=array('fn2'=>name_simplify($row['title'], 3));
+					$fn2=$pos_->createFileName($pos1['fn2'], 1, $row[$col2]);
+					if($row['start']<1) {var_dump($fn2,$pos2);die();}
+					file_put_contents(DROPBOX.$fn2, $pos2);
+					if(!array_key_exists('msg', $row)) $row['msg']='';
+					$row['msg'].='.po '.__LINE__.' + ';
+					$row['title']='<span style="color:red">'.$row['title'].'</span>';
+					var_dump($fn2,$pos2);die();
+				}
+			}
+			unset($row['start9'], $row['pos9'], $row['last9']);
+			if(count($row)==0) continue;
 			if($lines==0) {
 				echo '<table border="1">'."\r\n";
 				print_thead_v($head);
@@ -249,7 +407,7 @@ foreach($wln_order as $id=>$list) {
 			++$lines;
 			print_tbody($row, $head);
 		}
-		if(PERLINE) {
+		if(count($row)>1 && PERLINE) {
 			$data.=ob_get_contents();
 			if(ob_get_level()>0) { ob_flush(); }
 			flush();

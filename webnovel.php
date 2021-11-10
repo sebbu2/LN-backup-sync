@@ -2,8 +2,6 @@
 require_once('config.php');
 require_once('SitePlugin.inc.php');
 
-require_once('CJSON.php');
-
 class WebNovel extends SitePlugin
 {
 	public const FOLDER='webnovel/';

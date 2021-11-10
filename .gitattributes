@@ -8,6 +8,10 @@ royalroad/_books.json linguist-generated=true
 royalroad/_order.json	linguist-generated=true
 webnovel/_books.json	linguist-generated=true
 webnovel/_order.json	linguist-generated=true
+webnovel/_history.json	linguist-generated=true
+webnovel/_collection.json	linguist-generated=true
+webnovel/_subname.json	linguist-generated=true
+webnovel/_subnames.json	linguist-generated=true
 wlnupdates/_books.json	linguist-generated=true
 wlnupdates/_list.json	linguist-generated=true
 wlnupdates/_order.json	linguist-generated=true
@@ -26,5 +30,7 @@ wn_diff.json	linguist-generated=true
 # dropbox data
 dropbox/dropbox.zip	linguist-generated=true -diff -merge -text
 # others
+composer.lock	linguist-generated=true
 Gemfile.lock	linguist-generated=true
+webnovel_data.htm	linguist-generated=true
 

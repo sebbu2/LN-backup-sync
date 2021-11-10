@@ -3,6 +3,7 @@ require_once('config.php');
 require_once('functions.inc.php');
 
 require_once('CJSON.php');
+require_once('vendor/autoload.php');
 
 class SitePlugin
 {

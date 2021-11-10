@@ -1,0 +1,131 @@
+{
+	'lists':[
+		// qidian / webnovel
+		'QIDIAN on-hold',
+		'QIDIAN plan to read',
+		'QIDIAN completed',
+		// royalroad
+		'RoyalRoad on-hold',
+		'RoyalRoad plan to read',
+		'RoyalRoad completed',
+		// scribblehub
+		'ScribbleHub on-hold',
+		'ScribbleHub plan to read',
+		'ScribbleHub completed',
+		// wattpad
+		'WattPad on-hold',
+		'WattPad plan to read',
+		'WattPad completed',
+		// others
+		'on-hold',
+		'plan to read',
+		'completed',
+		//
+		'duplicates',
+	],
+	'conditions':{
+		'and':[
+			[
+				'and',
+				[
+					'=',
+					'WebNovel cur',
+					'WebNovel last-free',
+				],
+				[
+					'=',
+					'WLNUpdate cur',
+					'WebNovel last-paid',
+				],
+			],
+			[
+				'=',
+				'WLNUpdate cur',
+				'RoyalRoad last'
+			],
+			[
+				'=',
+				'WLNUpdate cur',
+				'pos'
+			],
+		],
+	},
+	'colors':{
+		'title':{
+			'red':[
+				'or',
+				[
+					'=',
+					'WebNovel last-paid',
+					'last9',
+				],
+				[
+					'=',
+					'RoyalRoad last',
+					'last9',
+				],
+			],
+			'green':[
+				'or',
+				[
+					'and2',
+					[
+						'=',
+						'pos',
+						'WebNovel last-paid'
+					],
+					[
+						'=',
+						'WebNovel last-paid',
+						'last'
+					],
+				],
+				[
+					'and2',
+					[
+						'=',
+						'RoyalRoad last',
+						'last'
+					],
+					[
+						'=',
+						'RoyalRoad last',
+						'last'
+					],
+				],
+			],
+			'purple':[
+				'or',
+				[
+					'=',
+					'WebNovel last-paid',
+					'last',
+				],
+				[
+					'=',
+					'RoyalRoad last',
+					'last'
+				],
+			],
+			'blue':[
+				'and',
+				[
+					'=',
+					'WLNUpdate cur',
+					1,
+				],
+				[
+					'=',
+					'pos',
+					0,
+				],
+			],
+		},
+	},
+	'rr':[ // ids
+	],
+	'wln':[ // ids
+	],
+	'wn':[ // ids
+	],
+}

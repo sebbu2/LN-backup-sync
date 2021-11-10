@@ -225,4 +225,6 @@ webnovel2.htm raw table of webnovel data (identical to website, sorted by last a
 
 ## Others
 
+[filters.json](filters.json) filters to skip lines and colorize news.php output
+
 [todo.txt](todo.txt) small personnal TODO-list about this project

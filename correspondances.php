@@ -2,6 +2,7 @@
 require_once('config.php');
 require_once('functions.inc.php');
 require_once('CJSON.php');
+require_once('vendor/autoload.php');
 
 require_once('wlnupdates.php');
 require_once('webnovel.php');
@@ -126,7 +127,7 @@ if(direct()) {
 
 	$timer1=microtime(true);
 	$timer2=$timer3=$timer4=NULL;
-	$counter1=$counter2=$counter3=$counter4=$counter5=0;
+	$counter1=$counter2=$counter3=$counter4=$counter5=$counter6=0;
 	// 1 WLN
 	foreach($watches['data'][0] as $k1=>$v1) {
 		foreach($v1 as $k2=>$v2) {
@@ -347,10 +348,13 @@ if(direct()) {
 	$counter5+=($timer4-$timer3);
 	var_dump(array('cor'=>count($cor),'wln'=>count($cor_wln),'wn'=>count($cor_wn),'rr'=>count($cor_rr),'names'=>count($names)));
 
+	$timer3=microtime(true);
 	ksort($cor_wln, SORT_FLAG_CASE | SORT_NATURAL);
 	ksort($cor_wn, SORT_FLAG_CASE | SORT_NATURAL);
 	ksort($cor_rr, SORT_FLAG_CASE | SORT_NATURAL);
 	ksort($names, SORT_FLAG_CASE | SORT_NATURAL);
+	$timer4=microtime(true);
+	$counter6+=($timer4-$timer3);
 
 	$per_wn=number_format( ($wln_wn/count($books)*100), 2);
 	$per_rr=number_format( ($wln_rr/count($follows)*100), 2);
@@ -363,7 +367,7 @@ if(direct()) {
 	'wln: wln_rr/rr'=>$per_rr, 'wln: cor_rr/wln_rr'=>$per_rr_cor0, 'wln: cor_rr/rr'=>$per_rr_cor2,
 	));
 
-	var_dump($counter1, $counter2, $counter3, $counter4, $counter5);
+	var_dump($counter1, $counter2, $counter3, $counter4, $counter5, $counter6);
 
 	file_put_contents('correspondances.json',json_encode($cor, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));
 	file_put_contents('correspondances_wln.json',json_encode($cor_wln, JSON_PRETTY_PRINT|JSON_BIGINT_AS_STRING));

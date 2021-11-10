@@ -297,7 +297,7 @@ foreach($correspondances as $ar) {
 	if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 	flush();
 	//if($res!==false) die();
-	$count;
+	$count++;
 }
 var_dump($count,$modifs);
 if($updatedCount['wln']>0 || $updatedCount['wn']>0) {

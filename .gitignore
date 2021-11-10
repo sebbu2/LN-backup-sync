@@ -4,6 +4,7 @@
 *.ini
 *.js
 *.json
+!filters.json
 *.lnk
 *.py
 *.sh
