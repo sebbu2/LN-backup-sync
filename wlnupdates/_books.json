@@ -741,15 +741,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 862,
-      "chp": 862,
+      "agg": 863,
+      "chp": 863,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 861,
-      "chp": 861,
-      "date": 1636123178,
+      "agg": 864,
+      "chp": 864,
+      "date": 1636435337,
       "frag": 0,
       "vol": -1
     },
@@ -1046,7 +1046,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463460423,
+      "date": 1463456823,
       "frag": 0,
       "vol": -1
     },
@@ -1343,7 +1343,7 @@
     {
       "agg": 48,
       "chp": 48,
-      "date": 1461736004,
+      "date": 1461761204,
       "frag": 0,
       "vol": -1
     },
@@ -1775,7 +1775,7 @@
     {
       "agg": 10003,
       "chp": 3,
-      "date": 1466223067,
+      "date": 1577759558,
       "frag": 0,
       "vol": 1
     },
@@ -2396,7 +2396,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534927563,
+      "date": 1534416743,
       "frag": -1,
       "vol": 3
     },
@@ -2610,9 +2610,9 @@
       "vol": -1
     },
     {
-      "agg": 4007,
-      "chp": 4007,
-      "date": 1636262460,
+      "agg": 4013,
+      "chp": 4013,
+      "date": 1636520520,
       "frag": 0,
       "vol": -1
     },
@@ -2799,9 +2799,9 @@
       "vol": -1
     },
     {
-      "agg": 716,
-      "chp": 716,
-      "date": 1636411637,
+      "agg": 717,
+      "chp": 717,
+      "date": 1636589902,
       "frag": 0,
       "vol": -1
     },
@@ -3449,9 +3449,36 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488964242,
+      "date": 1488964196,
       "frag": 0,
       "vol": 3
+    },
+    null
+  ],
+  "53823": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 53823,
+      "name": "Gourmet Food Supplier",
+      "rating": 6,
+      "rating_count": 1,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 207,
+      "chp": 207,
+      "date": 1509750577,
+      "frag": 0,
+      "vol": -1
     },
     null
   ],
@@ -3474,9 +3501,9 @@
       "vol": -1
     },
     {
-      "agg": 209,
-      "chp": 209,
-      "date": 1635949588,
+      "agg": 210,
+      "chp": 210,
+      "date": 1636553102,
       "frag": 0,
       "vol": -1
     },
@@ -3611,7 +3638,7 @@
     {
       "agg": 15,
       "chp": 15,
-      "date": 1496957185,
+      "date": 1496969222,
       "frag": 0,
       "vol": -1
     },
@@ -3773,7 +3800,7 @@
     {
       "agg": 163,
       "chp": 163,
-      "date": 1636358780,
+      "date": 1636358777,
       "frag": 0,
       "vol": -1
     },
@@ -3906,11 +3933,11 @@
       "vol": -1
     },
     {
-      "agg": 1719,
-      "chp": 1719,
-      "date": 1634189340,
-      "frag": 0,
-      "vol": -1
+      "agg": 10000,
+      "chp": -1,
+      "date": 1636564379,
+      "frag": -1,
+      "vol": 1
     },
     null
   ],
@@ -3937,6 +3964,33 @@
       "chp": 191,
       "date": 1509987120,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "57611": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 57611,
+      "name": "Gourmet of Another World",
+      "rating": 5.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -4527,9 +4581,9 @@
       "vol": -1
     },
     {
-      "agg": 48,
-      "chp": 48,
-      "date": 1634561400,
+      "agg": 51,
+      "chp": 51,
+      "date": 1636134232,
       "frag": 0,
       "vol": -1
     },
@@ -5007,8 +5061,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 899,
-      "chp": 899,
+      "agg": 900,
+      "chp": 900,
       "frag": -1,
       "vol": -1
     },
@@ -5547,15 +5601,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 769,
-      "chp": 769,
+      "agg": 771,
+      "chp": 771,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 766,
-      "chp": 766,
-      "date": 1636203661,
+      "agg": 768,
+      "chp": 768,
+      "date": 1636549262,
       "frag": 0,
       "vol": -1
     },
@@ -6195,8 +6249,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1295,
-      "chp": 1295,
+      "agg": 1298,
+      "chp": 1298,
       "frag": -1,
       "vol": -1
     },
@@ -6276,8 +6330,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10627,
-      "chp": 627,
+      "agg": 10631,
+      "chp": 631,
       "frag": -1,
       "vol": 1
     },
@@ -6471,10 +6525,10 @@
       "vol": -1
     },
     {
-      "agg": 250,
-      "chp": 250,
-      "date": 1603377300,
-      "frag": -1,
+      "agg": 424,
+      "chp": 424,
+      "date": 1636415527,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -6500,7 +6554,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567440673,
+      "date": 1567657258,
       "frag": -1,
       "vol": 2
     },
@@ -6660,11 +6714,11 @@
       "vol": -1
     },
     {
-      "agg": 10000,
+      "agg": 20000,
       "chp": -1,
-      "date": 1630485420,
+      "date": 1635380037,
       "frag": -1,
-      "vol": 1
+      "vol": 2
     },
     null
   ],
@@ -6744,6 +6798,33 @@
       "agg": 106,
       "chp": 106,
       "date": 1548648311,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "78002": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 78002,
+      "name": "Invincible Kungfu Healer",
+      "rating": 2.5,
+      "rating_count": 2,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 196,
+      "chp": 196,
+      "date": 1556650923.789649,
       "frag": -1,
       "vol": -1
     },
@@ -6897,8 +6978,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1592,
-      "chp": 1592,
+      "agg": 1596,
+      "chp": 1596,
       "frag": -1,
       "vol": -1
     },
@@ -7227,9 +7308,9 @@
       "vol": -1
     },
     {
-      "agg": 26,
-      "chp": 26,
-      "date": 1631320320,
+      "agg": 28,
+      "chp": 28,
+      "date": 1635101785,
       "frag": 0,
       "vol": -1
     },
@@ -7505,6 +7586,33 @@
     },
     null
   ],
+  "91471": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 91471,
+      "name": "The Reincarnated Vampire Just Wants To Enjoy Her New Life",
+      "rating": 9.666666666666666,
+      "rating_count": 3,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 184,
+      "chp": 184,
+      "date": 1636161315,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "93970": [
     {
       "extra_metadata": {
@@ -7640,6 +7748,33 @@
     },
     null
   ],
+  "96618": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 96618,
+      "name": "NTR Crush : I Will Steal Every Girl",
+      "rating": 5.425531914893617,
+      "rating_count": 141,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 70027,
+      "chp": 27,
+      "date": 1612682736,
+      "frag": 0,
+      "vol": 7
+    },
+    null
+  ],
   "97112": [
     {
       "extra_metadata": {
@@ -7707,8 +7842,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70599,
-      "chp": 599,
+      "agg": 70602,
+      "chp": 602,
       "frag": -1,
       "vol": 7
     },
@@ -7740,9 +7875,9 @@
       "vol": -1
     },
     {
-      "agg": 167,
-      "chp": 167,
-      "date": 1634446860,
+      "agg": 170,
+      "chp": 170,
+      "date": 1636261261,
       "frag": 0,
       "vol": -1
     },
@@ -7821,9 +7956,9 @@
       "vol": -1
     },
     {
-      "agg": 5,
-      "chp": 5,
-      "date": 1634742000,
+      "agg": 10,
+      "chp": 10,
+      "date": 1636210905,
       "frag": 0,
       "vol": -1
     },
@@ -8112,15 +8247,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 295,
-      "chp": 295,
+      "agg": 297,
+      "chp": 297,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 546,
-      "chp": 546,
-      "date": 1636408800,
+      "agg": 548,
+      "chp": 548,
+      "date": 1636581600,
       "frag": 0,
       "vol": -1
     },
@@ -8174,7 +8309,7 @@
     {
       "agg": 18,
       "chp": 18,
-      "date": 1621173600,
+      "date": 1621098540,
       "frag": 0,
       "vol": -1
     },
@@ -8307,9 +8442,9 @@
       "vol": -1
     },
     {
-      "agg": 130,
-      "chp": 130,
-      "date": 1634293320,
+      "agg": 133,
+      "chp": 133,
+      "date": 1636111955,
       "frag": 0,
       "vol": -1
     },
@@ -8337,6 +8472,60 @@
       "agg": 22,
       "chp": 22,
       "date": 1630591260,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "108228": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 108228,
+      "name": "Ero Dungeon Online",
+      "rating": 7,
+      "rating_count": 1,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 30000.002,
+      "chp": -1,
+      "date": 1636158030,
+      "frag": 20,
+      "vol": 3
+    },
+    null
+  ],
+  "108642": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 108642,
+      "name": "Class Neutral: Stranger is Coming",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 60,
+      "chp": 60,
+      "date": 1579698997,
       "frag": 0,
       "vol": -1
     },
@@ -8814,8 +9003,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1299,
-      "chp": 1299,
+      "agg": 1304,
+      "chp": 1304,
       "frag": -1,
       "vol": -1
     },
@@ -8955,9 +9144,9 @@
       "vol": -1
     },
     {
-      "agg": 116,
-      "chp": 116,
-      "date": 1632651960,
+      "agg": 119,
+      "chp": 119,
+      "date": 1635595895,
       "frag": 0,
       "vol": -1
     },
@@ -9014,6 +9203,33 @@
       "date": 1601418700,
       "frag": 0,
       "vol": -1
+    },
+    null
+  ],
+  "110924": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110924,
+      "name": "Web of Worlds: Empire. GUARD. Book 1. litRPG series",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10053,
+      "chp": 53,
+      "date": 1579787027,
+      "frag": 0,
+      "vol": 1
     },
     null
   ],
@@ -9084,8 +9300,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1316,
-      "chp": 1316,
+      "agg": 1321,
+      "chp": 1321,
       "frag": -1,
       "vol": -1
     },
@@ -9117,9 +9333,9 @@
       "vol": -1
     },
     {
-      "agg": 32,
-      "chp": 32,
-      "date": 1630365540,
+      "agg": 33,
+      "chp": 33,
+      "date": 1635469624,
       "frag": 0,
       "vol": -1
     },
@@ -9570,15 +9786,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 271,
-      "chp": 271,
+      "agg": 272,
+      "chp": 272,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 256,
-      "chp": 256,
-      "date": 1634663760,
+      "agg": 264,
+      "chp": 264,
+      "date": 1636470414,
       "frag": 0,
       "vol": -1
     },
@@ -9630,9 +9846,9 @@
       "vol": -1
     },
     {
-      "agg": 207,
-      "chp": 207,
-      "date": 1634571000,
+      "agg": 212,
+      "chp": 212,
+      "date": 1636389000,
       "frag": 0,
       "vol": -1
     },
@@ -10069,6 +10285,33 @@
       "vol": -1
     },
     "It's Lonely To Be Invincible"
+  ],
+  "116138": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 116138,
+      "name": "Just a Bystander",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 150,
+      "chp": 150,
+      "date": 1636384127,
+      "frag": 0,
+      "vol": -1
+    },
+    null
   ],
   "116456": [
     {
@@ -10569,15 +10812,15 @@
       "tl_type": "translated"
     },
     {
-      "agg": 460,
-      "chp": 460,
+      "agg": 462,
+      "chp": 462,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 40,
       "chp": 40,
-      "date": 1598731427,
+      "date": 1598696551,
       "frag": 0,
       "vol": -1
     },
@@ -10818,9 +11061,9 @@
       "vol": -1
     },
     {
-      "agg": 263,
-      "chp": 263,
-      "date": 1636017127,
+      "agg": 264,
+      "chp": 264,
+      "date": 1636478116,
       "frag": 0,
       "vol": -1
     },
@@ -10974,15 +11217,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 18,
-      "chp": 18,
+      "agg": 19,
+      "chp": 19,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 142,
-      "chp": 142,
-      "date": 1634681100,
+      "agg": 148,
+      "chp": 148,
+      "date": 1636489060,
       "frag": 0,
       "vol": -1
     },
@@ -11034,9 +11277,9 @@
       "vol": -1
     },
     {
-      "agg": 209,
-      "chp": 209,
-      "date": 1634746800,
+      "agg": 219,
+      "chp": 219,
+      "date": 1636094576,
       "frag": 0,
       "vol": -1
     },
@@ -11061,9 +11304,9 @@
       "vol": -1
     },
     {
-      "agg": 38,
-      "chp": 38,
-      "date": 1632715260,
+      "agg": 39,
+      "chp": 39,
+      "date": 1635220800,
       "frag": 0,
       "vol": -1
     },
@@ -11109,10 +11352,10 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20058,
-      "chp": 58,
+      "agg": 30008,
+      "chp": 8,
       "frag": -1,
-      "vol": 2
+      "vol": 3
     },
     {
       "agg": 20000,
@@ -11136,8 +11379,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 527,
-      "chp": 527,
+      "agg": 529,
+      "chp": 529,
       "frag": -1,
       "vol": -1
     },
@@ -11331,9 +11574,9 @@
       "vol": -1
     },
     {
-      "agg": 249,
-      "chp": 249,
-      "date": 1634768460,
+      "agg": 255,
+      "chp": 255,
+      "date": 1636410099,
       "frag": 0,
       "vol": -1
     },
@@ -11385,9 +11628,9 @@
       "vol": -1
     },
     {
-      "agg": 20009,
-      "chp": 9,
-      "date": 1628565420,
+      "agg": 20011,
+      "chp": 11,
+      "date": 1636082637,
       "frag": 0,
       "vol": 2
     },
@@ -11460,8 +11703,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 371,
-      "chp": 371,
+      "agg": 372,
+      "chp": 372,
       "frag": -1,
       "vol": -1
     },
@@ -11603,7 +11846,7 @@
     {
       "agg": 62,
       "chp": 62,
-      "date": 1627776000,
+      "date": 1628985600,
       "frag": 0,
       "vol": -1
     },
@@ -11657,7 +11900,7 @@
     {
       "agg": 9,
       "chp": 9,
-      "date": 1600214160,
+      "date": 1600214190,
       "frag": 0,
       "vol": -1
     },
@@ -11709,9 +11952,9 @@
       "vol": -1
     },
     {
-      "agg": 70,
-      "chp": 70,
-      "date": 1636382970,
+      "agg": 72,
+      "chp": 72,
+      "date": 1636567943,
       "frag": 0,
       "vol": -1
     },
@@ -11765,7 +12008,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1610483460,
+      "date": 1610483461,
       "frag": -1,
       "vol": 3
     },
@@ -11784,15 +12027,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 159,
-      "chp": 159,
+      "agg": 160,
+      "chp": 160,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 135,
-      "chp": 135,
-      "date": 1636348357,
+      "agg": 136,
+      "chp": 136,
+      "date": 1636517211,
       "frag": 0,
       "vol": -1
     },
@@ -11811,15 +12054,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 262,
-      "chp": 262,
+      "agg": 263,
+      "chp": 263,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 228,
-      "chp": 228,
-      "date": 1636379715,
+      "agg": 229,
+      "chp": 229,
+      "date": 1636563554,
       "frag": 0,
       "vol": -1
     },
@@ -12108,8 +12351,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 475,
-      "chp": 475,
+      "agg": 476,
+      "chp": 476,
       "frag": -1,
       "vol": -1
     },
@@ -12438,9 +12681,9 @@
       "vol": -1
     },
     {
-      "agg": 20027,
-      "chp": 27,
-      "date": 1634240040,
+      "agg": 20030,
+      "chp": 30,
+      "date": 1636576261,
       "frag": 0,
       "vol": 2
     },
@@ -12789,9 +13032,9 @@
       "vol": -1
     },
     {
-      "agg": 112,
-      "chp": 112,
-      "date": 1634805060,
+      "agg": 117,
+      "chp": 117,
+      "date": 1636273295,
       "frag": 0,
       "vol": -1
     },
@@ -12818,7 +13061,7 @@
     {
       "agg": 40,
       "chp": 40,
-      "date": 1609276184,
+      "date": 1609276140,
       "frag": 0,
       "vol": -1
     },
@@ -12843,9 +13086,9 @@
       "vol": -1
     },
     {
-      "agg": 251,
-      "chp": 251,
-      "date": 1636355319,
+      "agg": 253,
+      "chp": 253,
+      "date": 1636527277,
       "frag": 0,
       "vol": -1
     },
@@ -12980,7 +13223,7 @@
     {
       "agg": 44,
       "chp": 44,
-      "date": 1636318080,
+      "date": 1636318034,
       "frag": 0,
       "vol": -1
     },
@@ -13080,8 +13323,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 272,
-      "chp": 272,
+      "agg": 273,
+      "chp": 273,
       "frag": -1,
       "vol": -1
     },
@@ -13191,9 +13434,9 @@
       "vol": -1
     },
     {
-      "agg": 101,
-      "chp": 101,
-      "date": 1636092771,
+      "agg": 102,
+      "chp": 102,
+      "date": 1636439225,
       "frag": 0,
       "vol": -1
     },
@@ -13293,15 +13536,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 217,
-      "chp": 217,
+      "agg": 218,
+      "chp": 218,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 216,
-      "chp": 216,
-      "date": 1636398000,
+      "agg": 217,
+      "chp": 217,
+      "date": 1636480803,
       "frag": 0,
       "vol": -1
     },
@@ -13409,7 +13652,7 @@
     {
       "agg": 70,
       "chp": 70,
-      "date": 1611500400,
+      "date": 1611504000,
       "frag": 0,
       "vol": -1
     },
@@ -13590,15 +13833,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20160,
-      "chp": 160,
+      "agg": 20161,
+      "chp": 161,
       "frag": -1,
       "vol": 2
     },
     {
-      "agg": 20072.2002,
-      "chp": 72.2,
-      "date": 1634605020,
+      "agg": 20076.2002,
+      "chp": 76.2,
+      "date": 1636150687,
       "frag": 2,
       "vol": 2
     },
@@ -13698,8 +13941,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 466,
-      "chp": 466,
+      "agg": 467,
+      "chp": 467,
       "frag": -1,
       "vol": -1
     },
@@ -13787,7 +14030,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1623256607,
+      "date": 1623256560,
       "frag": 0,
       "vol": -1
     },
@@ -13965,15 +14208,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 108,
-      "chp": 108,
+      "agg": 109,
+      "chp": 109,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 106,
-      "chp": 106,
-      "date": 1636135509,
+      "agg": 107,
+      "chp": 107,
+      "date": 1636565320,
       "frag": 0,
       "vol": -1
     },
@@ -14000,7 +14243,7 @@
     {
       "agg": 35,
       "chp": 35,
-      "date": 1627311720,
+      "date": 1627911240,
       "frag": 0,
       "vol": -1
     },
@@ -14154,9 +14397,9 @@
       "vol": -1
     },
     {
-      "agg": 76,
-      "chp": 76,
-      "date": 1634587200,
+      "agg": 82,
+      "chp": 82,
+      "date": 1636405265,
       "frag": 0,
       "vol": -1
     },
@@ -14448,9 +14691,9 @@
       "vol": -1
     },
     {
-      "agg": 75,
-      "chp": 75,
-      "date": 1634498400,
+      "agg": 81,
+      "chp": 81,
+      "date": 1636207246,
       "frag": 0,
       "vol": -1
     },
@@ -14610,7 +14853,7 @@
       "frag": -1,
       "vol": -1
     },
-    "The Goblins leveling system"
+    "The Goblins Leveling System"
   ],
   "135509": [
     {
@@ -14685,11 +14928,11 @@
       "vol": -1
     },
     {
-      "agg": 156,
-      "chp": 156,
-      "date": 1634765220,
+      "agg": 20163,
+      "chp": 163,
+      "date": 1635541375,
       "frag": 0,
-      "vol": -1
+      "vol": 2
     },
     null
   ],
@@ -14712,9 +14955,9 @@
       "vol": -1
     },
     {
-      "agg": 20042,
-      "chp": 42,
-      "date": 1631168520,
+      "agg": 20045,
+      "chp": 45,
+      "date": 1636542659,
       "frag": 0,
       "vol": 2
     },
@@ -14814,9 +15057,9 @@
       "vol": 2
     },
     {
-      "agg": 30019,
-      "chp": 19,
-      "date": 1634747400,
+      "agg": 30027,
+      "chp": 27,
+      "date": 1636565400,
       "frag": 0,
       "vol": 3
     },
@@ -14892,9 +15135,9 @@
       "vol": -1
     },
     {
-      "agg": 20002,
-      "chp": 2,
-      "date": 1634382900,
+      "agg": 20005,
+      "chp": 5,
+      "date": 1636200960,
       "frag": 0,
       "vol": 2
     },
@@ -14991,9 +15234,9 @@
       "vol": -1
     },
     {
-      "agg": 169,
-      "chp": 169,
-      "date": 1634756400,
+      "agg": 187,
+      "chp": 187,
+      "date": 1636574721,
       "frag": 0,
       "vol": -1
     },
@@ -15125,7 +15368,7 @@
     {
       "agg": 20062,
       "chp": 62,
-      "date": 1634776871,
+      "date": 1634776860,
       "frag": 0,
       "vol": 2
     },
@@ -15231,9 +15474,9 @@
       "vol": -1
     },
     {
-      "agg": 280,
-      "chp": 280,
-      "date": 1634731260,
+      "agg": 285,
+      "chp": 285,
+      "date": 1635508808,
       "frag": 0,
       "vol": -1
     },
@@ -15258,13 +15501,13 @@
       "vol": -1
     },
     {
-      "agg": 32,
-      "chp": 32,
-      "date": 1635989809,
+      "agg": 33,
+      "chp": 33,
+      "date": 1636594640,
       "frag": 0,
       "vol": -1
     },
-    "Magical Girl Kari: Apocalypse System"
+    "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)"
   ],
   "136750": [
     {
@@ -15327,15 +15570,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 64,
-      "chp": 64,
+      "agg": 65,
+      "chp": 65,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 20048,
       "chp": 48,
-      "date": 1635689834,
+      "date": 1631657820,
       "frag": 0,
       "vol": 2
     },
@@ -15384,10 +15627,10 @@
       "vol": -1
     },
     {
-      "agg": 27,
-      "chp": 27,
-      "date": 1634454000,
-      "frag": 0,
+      "agg": 30,
+      "chp": 30,
+      "date": 1636232211,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -15540,15 +15783,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 100,
-      "chp": 100,
+      "agg": 102,
+      "chp": 102,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 90,
-      "chp": 90,
-      "date": 1634569200,
+      "agg": 99,
+      "chp": 99,
+      "date": 1636423200,
       "frag": 0,
       "vol": -1
     },
@@ -15573,9 +15816,9 @@
       "vol": -1
     },
     {
-      "agg": 72,
-      "chp": 72,
-      "date": 1634518020,
+      "agg": 73,
+      "chp": 73,
+      "date": 1636090774,
       "frag": 0,
       "vol": -1
     },
@@ -15726,15 +15969,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 128,
-      "chp": 128,
+      "agg": 129,
+      "chp": 129,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 124,
-      "chp": 124,
-      "date": 1635791190,
+      "agg": 128,
+      "chp": 128,
+      "date": 1636390009,
       "frag": 0,
       "vol": -1
     },
@@ -15759,9 +16002,9 @@
       "vol": -1
     },
     {
-      "agg": 44,
-      "chp": 44,
-      "date": 1634292060,
+      "agg": 48,
+      "chp": 48,
+      "date": 1636112279,
       "frag": 0,
       "vol": -1
     },
@@ -15813,9 +16056,9 @@
       "vol": -1
     },
     {
-      "agg": 57,
-      "chp": 57,
-      "date": 1636382122,
+      "agg": 58,
+      "chp": 58,
+      "date": 1636533970,
       "frag": 0,
       "vol": -1
     },
@@ -15891,9 +16134,9 @@
       "vol": -1
     },
     {
-      "agg": 78,
-      "chp": 78,
-      "date": 1634316660,
+      "agg": 85,
+      "chp": 85,
+      "date": 1636383323,
       "frag": -1,
       "vol": -1
     },
@@ -15918,9 +16161,9 @@
       "vol": -1
     },
     {
-      "agg": 96,
-      "chp": 96,
-      "date": 1634825100,
+      "agg": 127,
+      "chp": 127,
+      "date": 1636581901,
       "frag": 0,
       "vol": -1
     },
@@ -16053,9 +16296,9 @@
       "vol": -1
     },
     {
-      "agg": 64,
-      "chp": 64,
-      "date": 1634720880,
+      "agg": 72,
+      "chp": 72,
+      "date": 1636360406,
       "frag": 0,
       "vol": -1
     },
@@ -16098,8 +16341,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 27,
-      "chp": 27,
+      "agg": 5,
+      "chp": 5,
       "frag": -1,
       "vol": -1
     },
@@ -16335,9 +16578,9 @@
       "vol": -1
     },
     {
-      "agg": 13,
-      "chp": 13,
-      "date": 1634301960,
+      "agg": 17,
+      "chp": 17,
+      "date": 1636432626,
       "frag": 0,
       "vol": -1
     },
@@ -16362,9 +16605,9 @@
       "vol": -1
     },
     {
-      "agg": 28,
-      "chp": 28,
-      "date": 1634774580,
+      "agg": 30,
+      "chp": 30,
+      "date": 1636452070,
       "frag": 0,
       "vol": -1
     },
@@ -16416,9 +16659,9 @@
       "vol": -1
     },
     {
-      "agg": 34,
-      "chp": 34,
-      "date": 1634820120,
+      "agg": 39,
+      "chp": 39,
+      "date": 1636542380,
       "frag": 0,
       "vol": -1
     },
@@ -16440,9 +16683,9 @@
       "vol": -1
     },
     {
-      "agg": 55,
-      "chp": 55,
-      "date": 1634798340,
+      "agg": 58,
+      "chp": 58,
+      "date": 1636287162,
       "frag": 0,
       "vol": -1
     },
@@ -16467,9 +16710,9 @@
       "vol": -1
     },
     {
-      "agg": 19,
-      "chp": 19,
-      "date": 1635166801,
+      "agg": 24,
+      "chp": 24,
+      "date": 1636120988,
       "frag": 0,
       "vol": -1
     },
@@ -16494,9 +16737,9 @@
       "vol": -1
     },
     {
-      "agg": 10025,
-      "chp": 25,
-      "date": 1634303160,
+      "agg": 10026,
+      "chp": 26,
+      "date": 1634905152,
       "frag": 0,
       "vol": 1
     },
@@ -16599,9 +16842,9 @@
       "vol": -1
     },
     {
-      "agg": 71,
-      "chp": 71,
-      "date": 1636351200,
+      "agg": 73,
+      "chp": 73,
+      "date": 1636524000,
       "frag": 0,
       "vol": -1
     },
@@ -16625,7 +16868,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1633666020,
+      "date": 1635214391,
       "frag": -1,
       "vol": 2
     },
@@ -16857,15 +17100,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 36,
-      "chp": 36,
+      "agg": 37,
+      "chp": 37,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 33,
-      "chp": 33,
-      "date": 1636217598,
+      "agg": 35,
+      "chp": 35,
+      "date": 1636556794,
       "frag": 0,
       "vol": -1
     },
@@ -16890,9 +17133,9 @@
       "vol": -1
     },
     {
-      "agg": 7,
-      "chp": 7,
-      "date": 1631382300,
+      "agg": 8,
+      "chp": 8,
+      "date": 1635227714,
       "frag": -1,
       "vol": -1
     },
@@ -16917,9 +17160,9 @@
       "vol": -1
     },
     {
-      "agg": 34,
-      "chp": 34,
-      "date": 1634785680,
+      "agg": 36,
+      "chp": 36,
+      "date": 1635220728,
       "frag": 0,
       "vol": -1
     },
@@ -16965,15 +17208,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 45,
-      "chp": 45,
+      "agg": 47,
+      "chp": 47,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 33,
-      "chp": 33,
-      "date": 1634743260,
+      "agg": 45,
+      "chp": 45,
+      "date": 1636389638,
       "frag": 0,
       "vol": -1
     },
@@ -16998,13 +17241,13 @@
       "vol": -1
     },
     {
-      "agg": 20,
-      "chp": 20,
-      "date": 1635624913,
+      "agg": 22,
+      "chp": 22,
+      "date": 1636061599,
       "frag": 0,
       "vol": -1
     },
-    null
+    "Solo Player Rebirth! (webnovel)"
   ],
   "140816": [
     {
@@ -17076,9 +17319,9 @@
       "vol": -1
     },
     {
-      "agg": 15,
-      "chp": 15,
-      "date": 1634571780,
+      "agg": 22,
+      "chp": 22,
+      "date": 1636387336,
       "frag": 0,
       "vol": -1
     },
@@ -17097,15 +17340,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 68,
-      "chp": 68,
+      "agg": 70,
+      "chp": 70,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 58,
-      "chp": 58,
-      "date": 1634734860,
+      "agg": 72,
+      "chp": 72,
+      "date": 1636466446,
       "frag": 0,
       "vol": -1
     },
@@ -17130,9 +17373,9 @@
       "vol": -1
     },
     {
-      "agg": 23,
-      "chp": 23,
-      "date": 1634789820,
+      "agg": 31,
+      "chp": 31,
+      "date": 1636387202,
       "frag": 0,
       "vol": -1
     },
@@ -17172,7 +17415,7 @@
         "is_yuri": false
       },
       "id": 141225,
-      "name": "The Tragedy of House Lacerta [Book 1: Angel of the Red Sun]",
+      "name": "The Tragedy of House Lacerta",
       "rating": null,
       "rating_count": null,
       "tl_type": "oel"
@@ -17184,10 +17427,10 @@
       "vol": -1
     },
     {
-      "agg": 10021.0001,
-      "chp": 21,
-      "date": 1634594880,
-      "frag": 1,
+      "agg": 10022,
+      "chp": 22,
+      "date": 1635178606,
+      "frag": 0,
       "vol": 1
     },
     "The Tragedy of House Lacerta"
@@ -17265,9 +17508,9 @@
       "vol": -1
     },
     {
-      "agg": 3,
-      "chp": 3,
-      "date": 1634824920,
+      "agg": 5,
+      "chp": 5,
+      "date": 1636203186,
       "frag": 0,
       "vol": -1
     },
@@ -17442,9 +17685,9 @@
       "vol": -1
     },
     {
-      "agg": 16,
-      "chp": 16,
-      "date": 1634609700,
+      "agg": 25,
+      "chp": 25,
+      "date": 1636256094,
       "frag": 0,
       "vol": -1
     },
@@ -17466,9 +17709,9 @@
       "vol": -1
     },
     {
-      "agg": 35,
-      "chp": 35,
-      "date": 1634719020,
+      "agg": 55,
+      "chp": 55,
+      "date": 1636457884,
       "frag": -1,
       "vol": -1
     },
@@ -17787,9 +18030,9 @@
       "vol": -1
     },
     {
-      "agg": 14,
-      "chp": 14,
-      "date": 1634615040,
+      "agg": 21,
+      "chp": 21,
+      "date": 1636572477,
       "frag": 0,
       "vol": -1
     },
@@ -18822,9 +19065,9 @@
       "vol": -1
     },
     {
-      "agg": 8,
-      "chp": 8,
-      "date": 1636379994,
+      "agg": 10,
+      "chp": 10,
+      "date": 1636568287,
       "frag": 0,
       "vol": -1
     },
@@ -18913,7 +19156,10 @@
   ],
   "142454": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142454,
       "name": "Under Wicked Sky",
       "rating": null,
@@ -18927,10 +19173,10 @@
       "vol": -1
     },
     {
-      "agg": 0,
-      "chp": -1,
-      "date": null,
-      "frag": -1,
+      "agg": 7,
+      "chp": 7,
+      "date": 1636520672,
+      "frag": 0,
       "vol": -1
     },
     null
@@ -18975,10 +19221,10 @@
       "vol": -1
     },
     {
-      "agg": 1,
-      "chp": 1,
-      "date": 1635999323.697733,
-      "frag": -1,
+      "agg": 6,
+      "chp": 6,
+      "date": 1636345982,
+      "frag": 0,
       "vol": -1
     },
     "Summoner Reincarnated: A LiTRPG Apocalypse Novel"
@@ -19008,7 +19254,7 @@
       "frag": 0,
       "vol": -1
     },
-    null
+    "[Dropped ver, read desc] Solo Player Rebirth!"
   ],
   "142501": [
     {
@@ -19819,7 +20065,10 @@
   ],
   "142619": [
     {
-      "extra_metadata": null,
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
       "id": 142619,
       "name": "Invincible Uncle-Grandmaster",
       "rating": null,
@@ -20080,5 +20329,56 @@
       "vol": -1
     },
     null
+  ],
+  "142811": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142811,
+      "name": "Saltworld: An Apocalypse LitRPG",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 20,
+      "chp": 20,
+      "date": 1636412433,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "142908": [
+    {
+      "extra_metadata": null,
+      "id": 142908,
+      "name": "[Rewritten ver.] Solo Player Rebirth! (L0rdGr1m)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    "[Rewritten ver.] Solo Player Rebirth!"
   ]
 }

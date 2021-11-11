@@ -829,7 +829,7 @@
         "wln": 135501,
         "wn": "19066714505131105",
         "rr": null,
-        "name": "The Goblins leveling system",
+        "name": "The Goblins Leveling System",
         "list": "QIDIAN on-hold"
     },
     {
@@ -1729,6 +1729,20 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 53823,
+        "wn": "6831827102000005",
+        "rr": null,
+        "name": "Gourmet Food Supplier",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null,
+        "name": "Gourmet of Another World",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 131751,
         "wn": "15841414105106005",
         "rr": null,
@@ -1810,6 +1824,20 @@
         "wn": "14270390005827805",
         "rr": null,
         "name": "Interdimensional Heroic Support Chat",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 78002,
+        "wn": "10459779906042805",
+        "rr": null,
+        "name": "Invincible Kungfu Healer",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 142619,
+        "wn": "20178481505547105",
+        "rr": null,
+        "name": "Invincible Uncle-Grandmaster",
         "list": "QIDIAN plan to read"
     },
     {
@@ -2195,13 +2223,6 @@
         "wn": "8591840605001105",
         "rr": null,
         "name": "Seeking the Flying Sword Path",
-        "list": "QIDIAN plan to read"
-    },
-    {
-        "wln": 142464,
-        "wn": "21071481705119105",
-        "rr": 46292,
-        "name": "Solo Player Rebirth! (webnovel)",
         "list": "QIDIAN plan to read"
     },
     {
@@ -2877,6 +2898,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 108642,
+        "wn": null,
+        "rr": 27426,
+        "name": "Class Neutral: Stranger is Coming",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 133901,
         "wn": null,
         "rr": 40601,
@@ -2975,6 +3003,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 116138,
+        "wn": null,
+        "rr": 32123,
+        "name": "Just a Bystander",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 139304,
         "wn": null,
         "rr": 45493,
@@ -2992,7 +3027,7 @@
         "wln": 136729,
         "wn": null,
         "rr": 43036,
-        "name": "Magical Girl Kari: Apocalypse System",
+        "name": "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)",
         "list": "RoyalRoad"
     },
     {
@@ -3038,10 +3073,10 @@
         "list": "RoyalRoad"
     },
     {
-        "wln": 138802,
+        "wln": 139189,
         "wn": null,
-        "rr": 43934,
-        "name": "Realmshaker: Giant Progression LitRPG",
+        "rr": 45455,
+        "name": "Reborn as a Dragon Tamer",
         "list": "RoyalRoad"
     },
     {
@@ -3070,6 +3105,13 @@
         "wn": null,
         "rr": 36371,
         "name": "Respawn Condition: Trash Mob",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 142811,
+        "wn": null,
+        "rr": 47621,
+        "name": "Saltworld: An Apocalypse LitRPG",
         "list": "RoyalRoad"
     },
     {
@@ -3269,6 +3311,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 110924,
+        "wn": null,
+        "rr": 25293,
+        "name": "Web of Worlds: Empire. GUARD. Book 1. litRPG series",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 135813,
         "wn": null,
         "rr": 41881,
@@ -3350,6 +3399,13 @@
         "wn": null,
         "rr": 5132,
         "name": "(On Hold) Regarding my time being a God, it was fun",
+        "list": "RoyalRoad plan to read"
+    },
+    {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397,
+        "name": "[Rewritten ver.] Solo Player Rebirth!",
         "list": "RoyalRoad plan to read"
     },
     {
@@ -3955,13 +4011,6 @@
         "list": "RoyalRoad plan to read"
     },
     {
-        "wln": 139189,
-        "wn": null,
-        "rr": 45455,
-        "name": "Reborn as a Dragon Tamer",
-        "list": "RoyalRoad plan to read"
-    },
-    {
         "wln": 137446,
         "wn": null,
         "rr": 40700,
@@ -4487,6 +4536,13 @@
         "list": "RoyalRoad stalled"
     },
     {
+        "wln": 138802,
+        "wn": null,
+        "rr": 43934,
+        "name": "Realmshaker: Giant Progression LitRPG",
+        "list": "RoyalRoad stalled"
+    },
+    {
         "wln": 59649,
         "wn": null,
         "rr": 13187,
@@ -4498,6 +4554,13 @@
         "wn": null,
         "rr": 41862,
         "name": "Slime Cafe",
+        "list": "RoyalRoad stalled"
+    },
+    {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292,
+        "name": "[Dropped ver, read desc] Solo Player Rebirth!",
         "list": "RoyalRoad stalled"
     },
     {
@@ -4587,8 +4650,8 @@
     {
         "wln": 140761,
         "wn": "21071481705119105",
-        "rr": 46292,
-        "name": "Solo Player Rebirth!",
+        "rr": null,
+        "name": "Solo Player Rebirth! (webnovel)",
         "list": "duplicates"
     },
     {

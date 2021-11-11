@@ -431,6 +431,12 @@
         "name": "Forgotten",
         "list": "RoyalRoad plan to read"
     },
+    "25293": {
+        "wln": 110924,
+        "wn": null,
+        "name": "Web of Worlds: Empire. GUARD. Book 1. litRPG series",
+        "list": "RoyalRoad"
+    },
     "25299": {
         "wln": 98792,
         "wn": null,
@@ -496,6 +502,12 @@
         "wn": null,
         "name": "Infinite Realm: Monsters \u0026 Legends",
         "list": "RoyalRoad plan to read"
+    },
+    "27426": {
+        "wln": 108642,
+        "wn": null,
+        "name": "Class Neutral: Stranger is Coming",
+        "list": "RoyalRoad"
     },
     "27757": {
         "wln": 113779,
@@ -621,6 +633,12 @@
         "wln": 115553,
         "wn": null,
         "name": "Never Die Twice",
+        "list": "RoyalRoad"
+    },
+    "32123": {
+        "wln": 116138,
+        "wn": null,
+        "name": "Just a Bystander",
         "list": "RoyalRoad"
     },
     "32551": {
@@ -1232,7 +1250,7 @@
     "43036": {
         "wln": 136729,
         "wn": null,
-        "name": "Magical Girl Kari: Apocalypse System",
+        "name": "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)",
         "list": "RoyalRoad"
     },
     "43180": {
@@ -1281,7 +1299,7 @@
         "wln": 138802,
         "wn": null,
         "name": "Realmshaker: Giant Progression LitRPG",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "44132": {
         "wln": 137834,
@@ -1395,7 +1413,7 @@
         "wln": 139189,
         "wn": null,
         "name": "Reborn as a Dragon Tamer",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "45475": {
         "wln": 139527,
@@ -1434,10 +1452,10 @@
         "list": "RoyalRoad plan to read"
     },
     "46292": {
-        "wln": 140761,
+        "wln": 142464,
         "wn": "21071481705119105",
-        "name": "Solo Player Rebirth!",
-        "list": "duplicates"
+        "name": "[Dropped ver, read desc] Solo Player Rebirth!",
+        "list": "RoyalRoad stalled"
     },
     "46319": {
         "wln": 141041,
@@ -1511,6 +1529,12 @@
         "name": "Underland",
         "list": "RoyalRoad plan to read"
     },
+    "47621": {
+        "wln": 142811,
+        "wn": null,
+        "name": "Saltworld: An Apocalypse LitRPG",
+        "list": "RoyalRoad"
+    },
     "47903": {
         "wln": 142454,
         "wn": null,
@@ -1533,6 +1557,12 @@
         "wln": 142383,
         "wn": null,
         "name": "Dreamers Ten-Tea-Cle Cafe",
+        "list": "RoyalRoad plan to read"
+    },
+    "48397": {
+        "wln": 142908,
+        "wn": null,
+        "name": "[Rewritten ver.] Solo Player Rebirth!",
         "list": "RoyalRoad plan to read"
     }
 }

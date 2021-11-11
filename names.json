@@ -2119,6 +2119,16 @@
         "wn": null,
         "rr": 36299
     },
+    "Berserk Stick System": {
+        "wln": null,
+        "wn": "20686236205743405",
+        "rr": null
+    },
+    "berserk stick system": {
+        "wln": null,
+        "wn": "20686236205743405",
+        "rr": null
+    },
     "Beware Of Chicken": {
         "wln": 132273,
         "wn": "19175158406680105",
@@ -3138,6 +3148,26 @@
         "wln": 142561,
         "wn": "20002981405337705",
         "rr": null
+    },
+    "Class Neutral: Stranger is Coming": {
+        "wln": 108642,
+        "wn": null,
+        "rr": 27426
+    },
+    "class neutral: stranger is coming": {
+        "wln": 108642,
+        "wn": null,
+        "rr": 27426
+    },
+    "Class Neutral Stranger is Coming": {
+        "wln": 108642,
+        "wn": null,
+        "rr": 27426
+    },
+    "class neutral stranger is coming": {
+        "wln": 108642,
+        "wn": null,
+        "rr": 27426
     },
     "Closed Beta That Only I Played": {
         "wln": 117680,
@@ -4544,6 +4574,16 @@
         "wn": null,
         "rr": 44716
     },
+    "Dropped ver read desc Solo Player Rebirth": {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292
+    },
+    "dropped ver read desc solo player rebirth": {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292
+    },
     "DS": {
         "wln": 131709,
         "wn": "18921874805581005",
@@ -5115,14 +5155,14 @@
         "rr": 46709
     },
     "Enduring Good A mild-mannered pharmacist vs eldritch space-gods a thousand years in the future": {
-        "wln": 141605,
+        "wln": 141706,
         "wn": null,
-        "rr": null
+        "rr": 46709
     },
     "enduring good a mild-mannered pharmacist vs eldritch space-gods a thousand years in the future": {
-        "wln": 141605,
+        "wln": 141706,
         "wn": null,
-        "rr": null
+        "rr": 46709
     },
     "Enduring Good Rational Cultivation You underestimate the darkness of my coffee Steamforged Sorcery": {
         "wln": 141956,
@@ -5297,6 +5337,16 @@
     "era of shamans": {
         "wln": 34481,
         "wn": "6831852902001105",
+        "rr": null
+    },
+    "Ero Dungeon Online": {
+        "wln": 108228,
+        "wn": null,
+        "rr": null
+    },
+    "ero dungeon online": {
+        "wln": 108228,
+        "wn": null,
         "rr": null
     },
     "ES": {
@@ -6229,6 +6279,16 @@
         "wn": "16948356006021805",
         "rr": null
     },
+    "GAW": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
+    "gaw": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
     "Gc": {
         "wln": 109811,
         "wn": "15125244205886905",
@@ -6357,6 +6417,16 @@
     "geww": {
         "wln": 50416,
         "wn": "8179206705005905",
+        "rr": null
+    },
+    "GFS": {
+        "wln": 53823,
+        "wn": "6831827102000005",
+        "rr": null
+    },
+    "gfs": {
+        "wln": 53823,
+        "wn": "6831827102000005",
         "rr": null
     },
     "Ghost Emperor Wild Wife": {
@@ -6624,6 +6694,11 @@
         "wn": "18912903106700005",
         "rr": null
     },
+    "gong fu sheng yi": {
+        "wln": 78002,
+        "wn": "10459779906042805",
+        "rr": null
+    },
     "Good-for-Nothing Overturns Common Sense Evil Emperors Wild Consort": {
         "wln": 48692,
         "wn": "7979503906002405",
@@ -6664,13 +6739,23 @@
         "wn": "8360425206000005",
         "rr": null
     },
+    "Gourmet Food Supplier": {
+        "wln": 53823,
+        "wn": "6831827102000005",
+        "rr": null
+    },
+    "gourmet food supplier": {
+        "wln": 53823,
+        "wn": "6831827102000005",
+        "rr": null
+    },
     "Gourmet of Another World": {
-        "wln": null,
+        "wln": 57611,
         "wn": "6838665602003405",
         "rr": null
     },
     "gourmet of another world": {
-        "wln": null,
+        "wln": 57611,
         "wn": "6838665602003405",
         "rr": null
     },
@@ -8004,6 +8089,16 @@
         "wn": "7978909506002105",
         "rr": null
     },
+    "IKH": {
+        "wln": 78002,
+        "wn": "10459779906042805",
+        "rr": null
+    },
+    "ikh": {
+        "wln": 78002,
+        "wn": "10459779906042805",
+        "rr": null
+    },
     "I Know the Secret to Surpass Level 100": {
         "wln": null,
         "wn": "17789747605920005",
@@ -8350,23 +8445,23 @@
         "rr": null
     },
     "Invincible Kungfu Healer": {
-        "wln": null,
+        "wln": 78002,
         "wn": "10459779906042805",
         "rr": null
     },
     "invincible kungfu healer": {
-        "wln": null,
+        "wln": 78002,
         "wn": "10459779906042805",
         "rr": null
     },
     "Invincible Uncle-Grandmaster": {
         "wln": 142619,
-        "wn": null,
+        "wn": "20178481505547105",
         "rr": null
     },
     "invincible uncle-grandmaster": {
         "wln": 142619,
-        "wn": null,
+        "wn": "20178481505547105",
         "rr": null
     },
     "IPAF": {
@@ -8636,12 +8731,12 @@
     },
     "IUG": {
         "wln": 142619,
-        "wn": null,
+        "wn": "20178481505547105",
         "rr": null
     },
     "iug": {
         "wln": 142619,
-        "wn": null,
+        "wn": "20178481505547105",
         "rr": null
     },
     "Ive Became Able to Do Anything with My Growth": {
@@ -8785,6 +8880,16 @@
         "rr": 37016
     },
     "jay orpheous": {
+        "wln": 129517,
+        "wn": "18499797106079005",
+        "rr": 37016
+    },
+    "JAY ORPHEUS": {
+        "wln": 129517,
+        "wn": "18499797106079005",
+        "rr": 37016
+    },
+    "jay orpheus": {
         "wln": 129517,
         "wn": "18499797106079005",
         "rr": 37016
@@ -9003,6 +9108,16 @@
         "wln": 58922,
         "wn": "7624928106001005",
         "rr": null
+    },
+    "Just a Bystander": {
+        "wln": 116138,
+        "wn": null,
+        "rr": 32123
+    },
+    "just a bystander": {
+        "wln": 116138,
+        "wn": null,
+        "rr": 32123
     },
     "Ju\\u00E9sh\\u00EC sh\\u00E9nt\\u014Du F\\u00E8i ch\\u00E1i q\\u012B xi\\u01CEoji\\u011B": {
         "wln": 41998,
@@ -9894,16 +10009,6 @@
         "wn": "14679199606345905",
         "rr": null
     },
-    "Magical Girl Kari: Apocalypse System": {
-        "wln": 136729,
-        "wn": null,
-        "rr": 43036
-    },
-    "magical girl kari: apocalypse system": {
-        "wln": 136729,
-        "wn": null,
-        "rr": 43036
-    },
     "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)": {
         "wln": 136729,
         "wn": null,
@@ -10447,6 +10552,11 @@
     "meimei shi konju da mowing ceng yong ming": {
         "wln": 47429,
         "wn": "11479586806389905",
+        "rr": null
+    },
+    "mei shi gong ying shang": {
+        "wln": 53823,
+        "wn": "6831827102000005",
         "rr": null
     },
     "Melas": {
@@ -11694,6 +11804,16 @@
         "wn": "18368723205400305",
         "rr": null
     },
+    "My Solo System": {
+        "wln": null,
+        "wn": "20488835005762505",
+        "rr": null
+    },
+    "my solo system": {
+        "wln": null,
+        "wn": "20488835005762505",
+        "rr": null
+    },
     "My Special Ability is Perfect Replication": {
         "wln": null,
         "wn": "18675236706709005",
@@ -12294,6 +12414,26 @@
         "wn": "14064812306272705",
         "rr": null
     },
+    "NTR Crush : I Will Steal Every Girl": {
+        "wln": 96618,
+        "wn": null,
+        "rr": null
+    },
+    "ntr crush : i will steal every girl": {
+        "wln": 96618,
+        "wn": null,
+        "rr": null
+    },
+    "NTR Crush I Will Steal Every Girl": {
+        "wln": 96618,
+        "wn": null,
+        "rr": null
+    },
+    "ntr crush i will steal every girl": {
+        "wln": 96618,
+        "wn": null,
+        "rr": null
+    },
     "nu di jia de xiao bai lian": {
         "wln": 65894,
         "wn": "9319358106001805",
@@ -12387,6 +12527,16 @@
     "obeolodeu": {
         "wln": 142,
         "wn": null,
+        "rr": null
+    },
+    "Ocean Master": {
+        "wln": null,
+        "wn": "21091772606416305",
+        "rr": null
+    },
+    "ocean master": {
+        "wln": null,
+        "wn": "21091772606416305",
         "rr": null
     },
     "OEM": {
@@ -14209,6 +14359,26 @@
         "wn": "7996858406002505",
         "rr": null
     },
+    "Rewritten ver Solo Player Rebirth": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "rewritten ver solo player rebirth": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "Rewritten ver Solo Player Rebirth L0rdGr1m": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "rewritten ver solo player rebirth l0rdgr1m": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
     "RFS": {
         "wln": 129448,
         "wn": "16704832506030305",
@@ -14558,6 +14728,26 @@
         "wln": 130167,
         "wn": "18495993905903905",
         "rr": 37626
+    },
+    "Saltworld: An Apocalypse LitRPG": {
+        "wln": 142811,
+        "wn": null,
+        "rr": 47621
+    },
+    "saltworld: an apocalypse litrpg": {
+        "wln": 142811,
+        "wn": null,
+        "rr": 47621
+    },
+    "Saltworld An Apocalypse LitRPG": {
+        "wln": 142811,
+        "wn": null,
+        "rr": 47621
+    },
+    "saltworld an apocalypse litrpg": {
+        "wln": 142811,
+        "wn": null,
+        "rr": 47621
     },
     "Salvos": {
         "wln": 130259,
@@ -15465,24 +15655,24 @@
         "rr": null
     },
     "Solo Player Rebirth": {
-        "wln": 142464,
-        "wn": "21071481705119105",
-        "rr": 46292
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
     },
     "solo player rebirth": {
-        "wln": 142464,
-        "wn": "21071481705119105",
-        "rr": 46292
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
     },
     "Solo Player Rebirth!": {
         "wln": 140761,
         "wn": "21071481705119105",
-        "rr": 46292
+        "rr": null
     },
     "solo player rebirth!": {
         "wln": 140761,
         "wn": "21071481705119105",
-        "rr": 46292
+        "rr": null
     },
     "Solo Player Rebirth! (webnovel)": {
         "wln": 142464,
@@ -15835,14 +16025,14 @@
         "rr": 46638
     },
     "Steamforged Sorcery A Steampunk LitRPG Your bean-water has no power here Enduring Good My tea is superior": {
-        "wln": 141957,
+        "wln": 140724,
         "wn": null,
-        "rr": null
+        "rr": 46638
     },
     "steamforged sorcery a steampunk litrpg your bean-water has no power here enduring good my tea is superior": {
-        "wln": 141957,
+        "wln": 140724,
         "wn": null,
-        "rr": null
+        "rr": 46638
     },
     "Steamforged Sorcery [A Steampunk LitRPG]": {
         "wln": 140724,
@@ -17734,6 +17924,16 @@
         "wn": "11046193105246605",
         "rr": null
     },
+    "The gioi khac my thuc gia": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
+    "the gioi khac my thuc gia": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
     "The Girl With The Crimson Eyes": {
         "wln": 127577,
         "wn": null,
@@ -17774,17 +17974,12 @@
         "wn": "19033332905002905",
         "rr": null
     },
-    "The Goblins leveling system": {
+    "The Goblins Leveling System": {
         "wln": 135501,
         "wn": "19066714505131105",
         "rr": null
     },
     "the goblins leveling system": {
-        "wln": 135501,
-        "wn": "19066714505131105",
-        "rr": null
-    },
-    "The Goblins Leveling System": {
         "wln": 135501,
         "wn": "19066714505131105",
         "rr": null
@@ -18784,6 +18979,16 @@
         "wn": "7978909506002105",
         "rr": null
     },
+    "The Reincarnated Vampire Just Wants To Enjoy Her New Life": {
+        "wln": 91471,
+        "wn": null,
+        "rr": null
+    },
+    "the reincarnated vampire just wants to enjoy her new life": {
+        "wln": 91471,
+        "wn": null,
+        "rr": null
+    },
     "The Reincarnation of Alysara Progression LitRPG": {
         "wln": 137358,
         "wn": null,
@@ -19180,16 +19385,6 @@
         "rr": 43029
     },
     "the tragedy of house lacerta book 1 angel of the red sun": {
-        "wln": 141225,
-        "wn": null,
-        "rr": 43029
-    },
-    "The Tragedy of House Lacerta [Book 1: Angel of the Red Sun]": {
-        "wln": 141225,
-        "wn": null,
-        "rr": 43029
-    },
-    "the tragedy of house lacerta [book 1: angel of the red sun]": {
         "wln": 141225,
         "wn": null,
         "rr": 43029
@@ -19667,6 +19862,16 @@
     "th\\u1ea7n \\u0110\\u1ea1o \\u0110an t\\u00f4n": {
         "wln": 62642,
         "wn": "7997491806002805",
+        "rr": null
+    },
+    "Th\\u1EBF gi\\u1EDBi kh\\u00E1c m\\u1EF9 th\\u1EF1c gia": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
+    "th\\u1ebf gi\\u1edbi kh\\u00e1c m\\u1ef9 th\\u1ef1c gia": {
+        "wln": 57611,
+        "wn": "6838665602003405",
         "rr": null
     },
     "Tian": {
@@ -21234,6 +21439,26 @@
         "wn": null,
         "rr": 35942
     },
+    "Web of Worlds: Empire. GUARD. Book 1. litRPG series": {
+        "wln": 110924,
+        "wn": null,
+        "rr": 25293
+    },
+    "web of worlds: empire. guard. book 1. litrpg series": {
+        "wln": 110924,
+        "wn": null,
+        "rr": 25293
+    },
+    "Web of Worlds Empire GUARD Book 1 litRPG series": {
+        "wln": 110924,
+        "wn": null,
+        "rr": 25293
+    },
+    "web of worlds empire guard book 1 litrpg series": {
+        "wln": 110924,
+        "wn": null,
+        "rr": 25293
+    },
     "wen yi yi sheng": {
         "wln": 115743,
         "wn": "16489432606236605",
@@ -22334,6 +22559,11 @@
         "wn": "12905327006948905",
         "rr": null
     },
+    "yi shi jie de mei shi jia": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
     "yi shi sheng huan: bao chong wan ku fei": {
         "wln": 58039,
         "wn": "11046205305246905",
@@ -22548,6 +22778,36 @@
         "wln": 54999,
         "wn": "6831855002001305",
         "rr": null
+    },
+    "[Dropped ver, read desc] Solo Player Rebirth!": {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292
+    },
+    "[dropped ver, read desc] solo player rebirth!": {
+        "wln": 142464,
+        "wn": "21071481705119105",
+        "rr": 46292
+    },
+    "[Rewritten ver.] Solo Player Rebirth!": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "[rewritten ver.] solo player rebirth!": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "[Rewritten ver.] Solo Player Rebirth! (L0rdGr1m)": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
+    },
+    "[rewritten ver.] solo player rebirth! (l0rdgr1m)": {
+        "wln": 142908,
+        "wn": null,
+        "rr": 48397
     },
     "\\u0E08\\u0E2D\\u0E21\\u0E19\\u0E32\\u0E07\\u0E08\\u0E32\\u0E23\\u0E0A\\u0E19 \\u0E2B\\u0E19\\u0E48\\u0E27\\u0E22 11": {
         "wln": 48696,
@@ -23089,6 +23349,16 @@
         "wn": "6838665602002905",
         "rr": null
     },
+    "\\u5F02\\u4E16\\u754C\\u7684\\u7F8E\\u98DF\\u5BB6": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
+    "\\u5f02\\u4e16\\u754c\\u7684\\u7f8e\\u98df\\u5bb6": {
+        "wln": 57611,
+        "wn": "6838665602003405",
+        "rr": null
+    },
     "\\u5F02\\u5E38\\u751F\\u7269\\u89C1\\u95FB\\u5F55": {
         "wln": 110447,
         "wn": "7978909506002105",
@@ -23427,6 +23697,16 @@
     "\\u7edd\\u8272\\u5996\\u5a06\\uff1a\\u9b3c\\u533b\\u81f3\\u5c0a": {
         "wln": 57756,
         "wn": "11046193105246605",
+        "rr": null
+    },
+    "\\u7F8E\\u98DF\\u4F9B\\u5E94\\u5546": {
+        "wln": 53823,
+        "wn": "6831827102000005",
+        "rr": null
+    },
+    "\\u7f8e\\u98df\\u4f9b\\u5e94\\u5546": {
+        "wln": 53823,
+        "wn": "6831827102000005",
         "rr": null
     },
     "\\u7F51\\u6E38\\u4E4B\\u795E\\u7EA7\\u70BC\\u5996\\u5E08": {
@@ -24097,6 +24377,16 @@
     "\\u523a\\u5ba2\\u9b54\\u4f20": {
         "wln": 59537,
         "wn": "7961090405002305",
+        "rr": null
+    },
+    "\\u529F\\u592B\\u5723\\u533B": {
+        "wln": 78002,
+        "wn": "10459779906042805",
+        "rr": null
+    },
+    "\\u529f\\u592b\\u5723\\u533b": {
+        "wln": 78002,
+        "wn": "10459779906042805",
         "rr": null
     },
     "\\u541B\\u4E5D\\u9F84": {

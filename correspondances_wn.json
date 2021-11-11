@@ -1,4 +1,10 @@
 {
+    "6831827102000005": {
+        "wln": 53823,
+        "rr": null,
+        "name": "Gourmet Food Supplier",
+        "list": "QIDIAN plan to read"
+    },
     "6831837102000205": {
         "wln": 42052,
         "rr": null,
@@ -130,6 +136,12 @@
         "rr": null,
         "name": "9 Coffins of the Immortals",
         "list": "QIDIAN on-hold"
+    },
+    "6838665602003405": {
+        "wln": 57611,
+        "rr": null,
+        "name": "Gourmet of Another World",
+        "list": "QIDIAN plan to read"
     },
     "7141974606000205": {
         "wln": 57633,
@@ -616,6 +628,12 @@
         "rr": null,
         "name": "The Great Worm Lich",
         "list": "QIDIAN stalled"
+    },
+    "10459779906042805": {
+        "wln": 78002,
+        "rr": null,
+        "name": "Invincible Kungfu Healer",
+        "list": "QIDIAN plan to read"
     },
     "10493515105046805": {
         "wln": 103589,
@@ -2138,7 +2156,7 @@
     "19066714505131105": {
         "wln": 135501,
         "rr": null,
-        "name": "The Goblins leveling system",
+        "name": "The Goblins Leveling System",
         "list": "QIDIAN on-hold"
     },
     "19175158406680105": {
@@ -2333,6 +2351,12 @@
         "name": "A Demon's Journey (Jmarcs.)",
         "list": "RoyalRoad plan to read"
     },
+    "20178481505547105": {
+        "wln": 142619,
+        "rr": null,
+        "name": "Invincible Uncle-Grandmaster",
+        "list": "QIDIAN plan to read"
+    },
     "20178481605547205": {
         "wln": 142517,
         "rr": null,
@@ -2461,8 +2485,8 @@
     },
     "21071481705119105": {
         "wln": 140761,
-        "rr": 46292,
-        "name": "Solo Player Rebirth!",
+        "rr": null,
+        "name": "Solo Player Rebirth! (webnovel)",
         "list": "duplicates"
     },
     "21155880706590705": {

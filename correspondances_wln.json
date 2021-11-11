@@ -503,6 +503,12 @@
         "name": "Castle of Black Iron",
         "list": "QIDIAN completed"
     },
+    "53823": {
+        "wn": "6831827102000005",
+        "rr": null,
+        "name": "Gourmet Food Supplier",
+        "list": "QIDIAN plan to read"
+    },
     "53949": {
         "wn": null,
         "rr": 9500,
@@ -591,6 +597,12 @@
         "wn": "6838665602002605",
         "rr": null,
         "name": "Age of Cosmic Exploration",
+        "list": "QIDIAN plan to read"
+    },
+    "57611": {
+        "wn": "6838665602003405",
+        "rr": null,
+        "name": "Gourmet of Another World",
         "list": "QIDIAN plan to read"
     },
     "57633": {
@@ -1193,6 +1205,12 @@
         "name": "Elixir Supplier",
         "list": "QIDIAN plan to read"
     },
+    "78002": {
+        "wn": "10459779906042805",
+        "rr": null,
+        "name": "Invincible Kungfu Healer",
+        "list": "QIDIAN plan to read"
+    },
     "78250": {
         "wn": null,
         "rr": 8220,
@@ -1541,6 +1559,12 @@
         "name": "Skybound",
         "list": "RoyalRoad plan to read"
     },
+    "108642": {
+        "wn": null,
+        "rr": 27426,
+        "name": "Class Neutral: Stranger is Coming",
+        "list": "RoyalRoad"
+    },
     "108849": {
         "wn": null,
         "rr": 34644,
@@ -1678,6 +1702,12 @@
         "rr": null,
         "name": "Mini World Of Endless Fun Awaits",
         "list": "QIDIAN stalled"
+    },
+    "110924": {
+        "wn": null,
+        "rr": 25293,
+        "name": "Web of Worlds: Empire. GUARD. Book 1. litRPG series",
+        "list": "RoyalRoad"
     },
     "111024": {
         "wn": "15948783505495305",
@@ -1900,6 +1930,12 @@
         "rr": null,
         "name": "It's Lonely To Be Invincible",
         "list": "QIDIAN"
+    },
+    "116138": {
+        "wn": null,
+        "rr": 32123,
+        "name": "Just a Bystander",
+        "list": "RoyalRoad"
     },
     "116456": {
         "wn": null,
@@ -2852,7 +2888,7 @@
     "135501": {
         "wn": "19066714505131105",
         "rr": null,
-        "name": "The Goblins leveling system",
+        "name": "The Goblins Leveling System",
         "list": "QIDIAN on-hold"
     },
     "135509": {
@@ -2996,7 +3032,7 @@
     "136729": {
         "wn": null,
         "rr": 43036,
-        "name": "Magical Girl Kari: Apocalypse System",
+        "name": "Magical Girl Kari: Apocalypse System (Mahou Shoujo LitRPG)",
         "list": "RoyalRoad"
     },
     "136750": {
@@ -3165,7 +3201,7 @@
         "wn": null,
         "rr": 43934,
         "name": "Realmshaker: Giant Progression LitRPG",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "138842": {
         "wn": null,
@@ -3201,7 +3237,7 @@
         "wn": null,
         "rr": 45455,
         "name": "Reborn as a Dragon Tamer",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "139257": {
         "wn": null,
@@ -3331,8 +3367,8 @@
     },
     "140761": {
         "wn": "21071481705119105",
-        "rr": 46292,
-        "name": "Solo Player Rebirth!",
+        "rr": null,
+        "name": "Solo Player Rebirth! (webnovel)",
         "list": "duplicates"
     },
     "140816": {
@@ -3740,8 +3776,8 @@
     "142464": {
         "wn": "21071481705119105",
         "rr": 46292,
-        "name": "Solo Player Rebirth! (webnovel)",
-        "list": "QIDIAN plan to read"
+        "name": "[Dropped ver, read desc] Solo Player Rebirth!",
+        "list": "RoyalRoad stalled"
     },
     "142501": {
         "wn": "19852661006620705",
@@ -3923,6 +3959,12 @@
         "name": "Worldwide Livestreaming: I Open a Mystery Box Every Day",
         "list": "QIDIAN plan to read"
     },
+    "142619": {
+        "wn": "20178481505547105",
+        "rr": null,
+        "name": "Invincible Uncle-Grandmaster",
+        "list": "QIDIAN plan to read"
+    },
     "142633": {
         "wn": "20552407905385405",
         "rr": null,
@@ -3976,5 +4018,17 @@
         "rr": null,
         "name": "The Guardians' Throne - The First Magic Swordsman",
         "list": "QIDIAN plan to read"
+    },
+    "142811": {
+        "wn": null,
+        "rr": 47621,
+        "name": "Saltworld: An Apocalypse LitRPG",
+        "list": "RoyalRoad"
+    },
+    "142908": {
+        "wn": null,
+        "rr": 48397,
+        "name": "[Rewritten ver.] Solo Player Rebirth!",
+        "list": "RoyalRoad plan to read"
     }
 }
