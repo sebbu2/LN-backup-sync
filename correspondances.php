@@ -348,7 +348,29 @@ if(direct()) {
 	$counter5+=($timer4-$timer3);
 	var_dump(array('cor'=>count($cor),'wln'=>count($cor_wln),'wn'=>count($cor_wn),'rr'=>count($cor_rr),'names'=>count($names)));
 
+function cmp_cor($e1, $e2) {
+	if(!is_null($e1['wln'])&&is_null($e2['wln'])) return -1;
+	if(is_null($e1['wln'])&&!is_null($e2['wln'])) return 1;
+	if(!is_null($e1['wln'])&&!is_null($e2['wln'])) {
+		if($e1['wln']<=$e2['wln']) return -2;
+		if($e1['wln']> $e2['wln']) return 2;
+	}
+	if(!is_null($e1['wn'])&&is_null($e2['wn'])) return -3;
+	if(is_null($e1['wn'])&&!is_null($e2['wn'])) return 3;
+	if(!is_null($e1['wn'])&&!is_null($e2['wn'])) {
+		if($e1['wn']<=$e2['wn']) return -4;
+		if($e1['wn']> $e2['wn']) return 4;
+	}
+	if(!is_null($e1['rr'])&&is_null($e2['rr'])) return -5;
+	if(is_null($e1['rr'])&&!is_null($e2['rr'])) return 5;
+	if(!is_null($e1['rr'])&&!is_null($e2['rr'])) {
+		if($e1['rr']<=$e2['rr']) return -6;
+		if($e1['rr']> $e2['rr']) return 6;
+	}
+	return 0;
+}
 	$timer3=microtime(true);
+	usort($cor, 'cmp_cor');
 	ksort($cor_wln, SORT_FLAG_CASE | SORT_NATURAL);
 	ksort($cor_wn, SORT_FLAG_CASE | SORT_NATURAL);
 	ksort($cor_rr, SORT_FLAG_CASE | SORT_NATURAL);

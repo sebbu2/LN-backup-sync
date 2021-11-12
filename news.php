@@ -353,7 +353,7 @@ foreach($wln_order as $id=>$list) {
 				if(array_key_exists($n3_, $pos)) {
 					$pos1=$pos[$n3_];
 					if(array_key_exists($n3_, $pos_dev9)) {
-						$pos9=$pos_dev9[$name];
+						$pos9=$pos_dev9[$n3_];
 						$row['start9']=$pos9['min'];
 						$row['pos9']=$pos9['pos'];
 						$row['last9']=$pos9['max'];
@@ -369,6 +369,7 @@ foreach($wln_order as $id=>$list) {
 			$row=colorize($row);
 			//var_dump($colors, $id);die();
 			if( !array_key_exists('title', $colors) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
+			//if( (!array_key_exists('title', $colors)||in_array($colors['title'],array('green','blue') )) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
 				$col2=NULL;
 				if(startswith($id, 'QIDIAN'))
 					$col2='WebNovel last-paid';
@@ -507,6 +508,7 @@ echo '<h1>RoyalRoad</h1>',"\n";
 foreach($rr_books as $rr_id=>$entry) {
 	$row=array();
 	$row['title']=$entry->title;
+	$rr1=NULL;
 	if(array_key_exists($rr_id, $cor_rr)) {
 		$rr1=$cor_rr[$rr_id];
 		if(!is_null($rr1['wln'])) continue; // already in previous big loop
@@ -531,7 +533,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['RoyalRoad last']=$rr2a;
 	}
 	else {
-		if($rr_id!=7015) { var_dump($rr_id, $rr2);die(); }
+		if($rr_id!=7015) { var_dump($rr_id, $rr1, $rr2);die(); }
 	}
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {

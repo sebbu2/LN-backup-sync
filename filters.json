@@ -33,13 +33,13 @@
 					'WebNovel last-free',
 				],
 				[
-					'=',
+					'>=',
 					'WLNUpdate cur',
 					'WebNovel last-paid',
 				],
 			],
 			[
-				'=',
+				'>=',
 				'WLNUpdate cur',
 				'RoyalRoad last'
 			],
