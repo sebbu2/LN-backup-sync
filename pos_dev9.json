@@ -1,4 +1,20 @@
 {
+    "a bored lich": {
+        "content": "9999999999999*372@0#0:99.7%",
+        "time": 1636701978,
+        "min": "1",
+        "max": "373",
+        "fn": "A_Bored_Lich_1-373.epub.po",
+        "fn2": "A_Bored_Lich",
+        "fn3": "a bored lich",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "372",
+        "2": "0",
+        "3": "0",
+        "4": "99.7",
+        "pos": 372
+    },
     "a cultivation tale the godly punisher": {
         "content": "9999999999999*0@0#0:0.0%",
         "time": 1636085853,
@@ -47,6 +63,22 @@
         "4": "-0.1",
         "pos": -1
     },
+    "cultivation online": {
+        "content": "9999999999999*631@0#0:99.4%",
+        "time": 1636701979,
+        "min": "1",
+        "max": "635",
+        "fn": "Cultivation_Online_1-635.epub.po",
+        "fn2": "Cultivation_Online",
+        "fn3": "cultivation online",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "631",
+        "2": "0",
+        "3": "0",
+        "4": "99.4",
+        "pos": 631
+    },
     "digitize rebirth of the silver death god": {
         "content": "9999999999999*0@0#0:0.0%",
         "time": 1624131846,
@@ -63,21 +95,37 @@
         "4": "0.0",
         "pos": 0
     },
-    "path of the dragon mage -5": {
-        "content": "9999999999999*1@0#0:16.7%",
-        "time": 1636580932,
-        "min": 0,
-        "max": null,
-        "fn": "Path_of_the_Dragon_Mage_-5.epub.po",
-        "fn2": "Path_of_the_Dragon_Mage_-5",
-        "fn3": "path of the dragon mage -5",
+    "magical academy rise of the supreme magic craftsman": {
+        "content": "9999999999999*468@0#0:99.99%",
+        "time": 1636646641,
+        "min": "-1",
+        "max": "468",
+        "fn": "Magical_Academy_Rise_of_the_Supreme_Magic_Craftsman_-1-468.epub.po",
+        "fn2": "Magical_Academy_Rise_of_the_Supreme_Magic_Craftsman",
+        "fn3": "magical academy rise of the supreme magic craftsman",
         "ext": "epub",
         "0": "9999999999999",
-        "1": "1",
+        "1": "468",
         "2": "0",
         "3": "0",
-        "4": "16.7",
-        "pos": 0
+        "4": "99.99",
+        "pos": 467
+    },
+    "nanomancer reborn - ive become a snow girl": {
+        "content": "9999999999999*1180@0#0:99.8%",
+        "time": 1636739467,
+        "min": "1",
+        "max": "1182",
+        "fn": "Nanomancer_Reborn_-_Ive_Become_A_Snow_Girl_1-1182.epub.po",
+        "fn2": "Nanomancer_Reborn_-_Ive_Become_A_Snow_Girl",
+        "fn3": "nanomancer reborn - ive become a snow girl",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "1180",
+        "2": "0",
+        "3": "0",
+        "4": "99.8",
+        "pos": 1180
     },
     "perfect secret love the bad new wife is a little sweet": {
         "content": "9999999999999*548@0#0:22.0%",
@@ -94,6 +142,54 @@
         "3": "0",
         "4": "22.0",
         "pos": 548
+    },
+    "supreme magus": {
+        "content": "9999999999999*1604@0#0:99.9%",
+        "time": 1636661305,
+        "min": "-8",
+        "max": "1598",
+        "fn": "Supreme_Magus_-8-1598.epub.po",
+        "fn2": "Supreme_Magus",
+        "fn3": "supreme magus",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "1604",
+        "2": "0",
+        "3": "0",
+        "4": "99.9",
+        "pos": 1596
+    },
+    "the evolution of a goblin to the peak": {
+        "content": "9999999999999*477@0#0:99.4%",
+        "time": 1636739467,
+        "min": "-1",
+        "max": "480",
+        "fn": "The_Evolution_of_a_Goblin_to_the_Peak_-1-480.epub.po",
+        "fn2": "The_Evolution_of_a_Goblin_to_the_Peak",
+        "fn3": "the evolution of a goblin to the peak",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "477",
+        "2": "0",
+        "3": "0",
+        "4": "99.4",
+        "pos": 476
+    },
+    "the oracle paths": {
+        "content": "9999999999999*531@0#0:99.8%",
+        "time": 1636735286,
+        "min": "-2",
+        "max": "531",
+        "fn": "The_Oracle_Paths_-2-531.epub.po",
+        "fn2": "The_Oracle_Paths",
+        "fn3": "the oracle paths",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "531",
+        "2": "0",
+        "3": "0",
+        "4": "99.8",
+        "pos": 529
     },
     "the wielder of death magic": {
         "content": "9999999999999*11@0#0:2.0%",
@@ -126,5 +222,21 @@
         "3": "0",
         "4": "0.0",
         "pos": 0
+    },
+    "what do you mean my cute disciples are yanderes": {
+        "content": "9999999999999*512@0#0:73.5%",
+        "time": 1636701980,
+        "min": "-1",
+        "max": "697",
+        "fn": "What_do_you_mean_my_cute_disciples_are_Yanderes_-1-697.epub.po",
+        "fn2": "What_do_you_mean_my_cute_disciples_are_Yanderes",
+        "fn3": "what do you mean my cute disciples are yanderes",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "512",
+        "2": "0",
+        "3": "0",
+        "4": "73.5",
+        "pos": 511
     }
 }

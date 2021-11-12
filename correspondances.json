@@ -385,6 +385,13 @@
         "list": "QIDIAN completed"
     },
     {
+        "wln": 42253,
+        "wn": "17914735705523805",
+        "rr": null,
+        "name": "Dark Blood Age",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 42305,
         "wn": "8093963805004105",
         "rr": null,
@@ -1421,6 +1428,13 @@
         "list": "RoyalRoad plan to read"
     },
     {
+        "wln": 78438,
+        "wn": "10700626806140405",
+        "rr": null,
+        "name": "Monster Pet Evolution",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 78588,
         "wn": "12571724705955005",
         "rr": null,
@@ -1860,6 +1874,13 @@
         "rr": 28307,
         "name": "The Zombie Knight Saga",
         "list": "RoyalRoad plan to read"
+    },
+    {
+        "wln": 109310,
+        "wn": "14503629306645605",
+        "rr": null,
+        "name": "Dead on Mars",
+        "list": "QIDIAN plan to read"
     },
     {
         "wln": 109439,
@@ -3031,6 +3052,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 130654,
+        "wn": "19477270406566505",
+        "rr": null,
+        "name": "Cultivating Disciples to Breakthrough",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 130768,
         "wn": null,
         "rr": 38292,
@@ -4176,7 +4204,7 @@
         "wn": "13694722005845705",
         "rr": null,
         "name": "Ah Chun: Ascending The Heavens",
-        "list": "QIDIAN original"
+        "list": "QIDIAN completed"
     },
     {
         "wln": 142328,
@@ -4702,5 +4730,47 @@
         "rr": 48397,
         "name": "[Rewritten ver.] Solo Player Rebirth!",
         "list": "RoyalRoad plan to read"
+    },
+    {
+        "wln": 143017,
+        "wn": "19852661206620805",
+        "rr": null,
+        "name": "My Post-Apocalyptic Shelter Levels Up Infinitely!",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143018,
+        "wn": "20368537805632305",
+        "rr": null,
+        "name": "Awakened: Evolving to Godhood",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143019,
+        "wn": "20686236205743405",
+        "rr": null,
+        "name": "Berserk Stick System",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143020,
+        "wn": "19643440906967205",
+        "rr": null,
+        "name": "Deity Hero: Me! Gaining Disciples Makes Me Stronger!",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143021,
+        "wn": "20310324406263005",
+        "rr": null,
+        "name": "Starting From Fooling the Elderly into Registering for a Cultivation Training Class",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143022,
+        "wn": "20731142405199505",
+        "rr": null,
+        "name": "Reincarnated as a Red Dragon, Discipline Makes Me Stronger!",
+        "list": "QIDIAN plan to read"
     }
 ]
