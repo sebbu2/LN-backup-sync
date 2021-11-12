@@ -137,11 +137,12 @@ class Position
 	public function createFileContent($min, $pos, $max) {
 		if($min>$max) throw new Exception('chapter range must be an increasing range');
 		//var_dump($min, $pos, $max);
-		if(($pos<$min || $pos>$max) && ($pos!=0||$min!=1)) throw new Exception('position must be between min and max');
+		if(($pos<$min || $pos>$max) && ($pos!=0)) throw new Exception('position must be between min and max');
 		$chp=($min<0?$pos-$min:$pos-$min+($pos>1?1:0));
+		if($pos==0) $chp=0;
 		//var_dump($chp);
 		$per=null;
-		if($pos==$min && $min==1) $per='0.0';
+		if($pos<=$min) $per='0.0';
 		else if($pos==$max) $per='100';
 		else {
 			$per=100*($pos-$min+1+($min<0?1:0))/($max-$min+1);

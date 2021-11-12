@@ -378,7 +378,7 @@ foreach($wln_order as $id=>$list) {
 				assert($col2!=NULL);
 				//$neg_chp
 				if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
-					$pos2=$pos_->createFileContent($row['start'], ($row['pos']<$row['start']?$row['start']:$row['pos']), $row[$col2]);
+					$pos2=$pos_->createFileContent($row['start'], ($row['pos']<=$row['start']?0:$row['pos']), $row[$col2]);
 					$fn2=$pos_->createFileName($pos1['fn2'], $row['start'], $row[$col2]);
 					//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
 					file_put_contents(DROPBOX.$fn2, $pos2);
@@ -388,7 +388,7 @@ foreach($wln_order as $id=>$list) {
 					//var_dump($fn2,$pos2);die();
 				}
 				else {
-					$pos2=$pos_->createFileContent(1, 1, $row[$col2]);
+					$pos2=$pos_->createFileContent(1, 0, $row[$col2]);
 					$pos1=array('fn2'=>name_simplify($row['title'], 3));
 					$fn2=$pos_->createFileName($pos1['fn2'], 1, $row[$col2]);
 					if($row['start']<1) {var_dump($fn2,$pos2);die();}

@@ -707,7 +707,8 @@ class WebNovel extends SitePlugin
 			$headers=array(
 				'Referer: '.$referer,
 			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/comic/GetChapterList', $ar, $headers);
+			//$res = $this->get( 'https://www.webnovel.com/apiajax/comic/GetChapterList', $ar, $headers);
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/comic/get-chapters', $ar, $headers);
 			file_put_contents('request.log', $res);
 			$res=$this->jsonp_to_json($res);
 			unlink('request.log');
