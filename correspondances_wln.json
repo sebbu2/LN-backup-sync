@@ -2673,7 +2673,7 @@
         "wn": "18921874805581005",
         "rr": 38944,
         "name": "Darius Supreme",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN original"
     },
     "131749": {
         "wn": "15208905005415205",
@@ -3761,6 +3761,12 @@
         "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad plan to read"
     },
+    "142434": {
+        "wn": null,
+        "rr": 47959,
+        "name": "Unliving",
+        "list": "RoyalRoad plan to read"
+    },
     "142448": {
         "wn": "20731140906412805",
         "rr": null,
@@ -3789,12 +3795,6 @@
         "wn": null,
         "rr": 47997,
         "name": "Overkill",
-        "list": "RoyalRoad plan to read"
-    },
-    "142456": {
-        "wn": null,
-        "rr": 47961,
-        "name": "Summoner Reincarnated: A LiTRPG Apocalypse Novel",
         "list": "RoyalRoad plan to read"
     },
     "142464": {
@@ -4090,5 +4090,11 @@
         "rr": null,
         "name": "Reincarnated as a Red Dragon, Discipline Makes Me Stronger!",
         "list": "QIDIAN plan to read"
+    },
+    "143122": {
+        "wn": null,
+        "rr": 45718,
+        "name": "This Damned City: Summoner Reincarnated",
+        "list": "RoyalRoad"
     }
 }
