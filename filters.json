@@ -68,29 +68,45 @@
 			'green':[
 				'or',
 				[
-					'and2',
+					'and',
 					[
-						'=',
-						'pos',
-						'WebNovel last-paid'
+						'and',
+						[
+							'=',
+							'pos',
+							'WebNovel last-paid'
+						],
+						[
+							'=',
+							'WebNovel last-paid',
+							'last'
+						],
 					],
 					[
 						'=',
-						'WebNovel last-paid',
-						'last'
+						'WebNovel cur',
+						'WebNovel last-free',
 					],
 				],
 				[
-					'and2',
+					'and',
 					[
-						'=',
-						'RoyalRoad last',
-						'last'
+						'and',
+						[
+							'=',
+							'RoyalRoad cur',
+							'pos'
+						],
+						[
+							'=',
+							'RoyalRoad last',
+							'last'
+						],
 					],
 					[
 						'=',
+						'RoyalRoad cur',
 						'RoyalRoad last',
-						'last'
 					],
 				],
 			],

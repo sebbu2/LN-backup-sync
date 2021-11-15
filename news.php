@@ -291,7 +291,9 @@ foreach($wln_order as $id=>$list) {
 						$row['msg'].='updating rr: '.__LINE__.' + ';
 					}
 					$found=array_filter($rr2, fn($e) => exists($e, 'pos-title')&&strlen(get($e, 'pos-title'))>0);
-					if(count($found)==0) {
+					if(count($found)>0) $chp_=array_keys($found)[0];
+					else $chp_=NULL;
+					if(count($found)==0 || $found[$chp_]->title!=get($rr1, 'last-read-title')) {
 						$rr2=$rr->get_chapter_list($wln2['rr']);
 						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 							$rr2=get($rr2_, 'chapters');
@@ -533,7 +535,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['RoyalRoad last']=$rr2a;
 	}
 	else {
-		if($rr_id!=7015) { var_dump($rr_id, $rr1, $rr2);die(); }
+		if(!in_array($rr_id,array(7015,45718))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
 	}
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {
@@ -542,7 +544,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['pos']=$pos1['pos'];
 		$row['last']=$pos1['max'];
 	}
-	if(count($row)>1) {
+	if(count($row)>1||count($rr2)==0) {
 		if($lines==0) {
 			echo '<table border="1">'."\r\n";
 			print_thead_v($head);

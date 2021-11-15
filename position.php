@@ -139,7 +139,7 @@ class Position
 		//var_dump($min, $pos, $max);
 		if(($pos<$min || $pos>$max) && ($pos!=0)) throw new Exception('position must be between min and max');
 		$chp=($min<0?$pos-$min:$pos-$min+($pos>1?1:0));
-		if($pos==0) $chp=0;
+		if($pos==0) $chp=($min>=0)?0:-$min;
 		//var_dump($chp);
 		$per=null;
 		if($pos<=$min) $per='0.0';
