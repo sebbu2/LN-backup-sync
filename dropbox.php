@@ -236,6 +236,7 @@ foreach($fns as $name=>$fn)
 	else if($fn['min']>1) $chp+=$fn['min']-1;
 	if($chp===0) $chp=1;
 	if((int)$fn[3]>0) ++$chp; // if the position isn't at the top of the chapter, assume the chapter is fully read
+	if($fn['min']==$fn['max']) $chp=$fn['min'];
 	//var_dump($name,$chp);
 	if($fn[4]=='100') {
 		if( !($chp == $fn['max'])) {

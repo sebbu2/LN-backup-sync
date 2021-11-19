@@ -137,6 +137,7 @@ class RoyalRoad extends SitePlugin
 			//var_dump($i, strlen($res));
 			$i++;
 			$count++;
+			sleep(1);
 		} while($i<=count($pages) && $count<20 ); // count set as 20, currently at 5
 		//var_dump($pages);
 		ksort($data);

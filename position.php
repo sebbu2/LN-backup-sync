@@ -128,7 +128,7 @@ class Position
 			$fn=$this->ar3['fn2'];
 		}
 		$fn.='_'.$min;
-		if($max>$min) {
+		if($max>=$min) {
 			$fn.='-'.$max;
 		}
 		$fn.='.epub.po';

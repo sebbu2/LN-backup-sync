@@ -267,6 +267,7 @@ foreach($wln_order as $id=>$list) {
 				else $row['WebNovel last-paid']=$wn1->totalChapterNum-$neg_chp;
 			}
 			if(!is_null($wln2['rr'])) {
+				if(!array_key_exists($wln2['rr'],$rr_books)) die('unknown RoyalRoad book ID.');
 				$rr1=$rr_books[$wln2['rr']];
 				$rr2_=$rr->get_chapter_list_cached($wln2['rr']);
 				if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
@@ -293,7 +294,7 @@ foreach($wln_order as $id=>$list) {
 					$found=array_filter($rr2, fn($e) => exists($e, 'pos-title')&&strlen(get($e, 'pos-title'))>0);
 					if(count($found)>0) $chp_=array_keys($found)[0];
 					else $chp_=NULL;
-					if(count($found)==0 || $found[$chp_]->title!=get($rr1, 'last-read-title')) {
+					if(count($found)==0 || get($found[$chp_], 'title')!=get($rr1, 'last-read-title')) {
 						$rr2=$rr->get_chapter_list($wln2['rr']);
 						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 							$rr2=get($rr2_, 'chapters');
@@ -370,8 +371,8 @@ foreach($wln_order as $id=>$list) {
 			if(skip($row)) continue;
 			$row=colorize($row);
 			//var_dump($colors, $id);die();
-			if( !array_key_exists('title', $colors) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
-			//if( (!array_key_exists('title', $colors)||in_array($colors['title'],array('green','blue') )) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
+			//if( !array_key_exists('title', $colors) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
+			if( (!array_key_exists('title', $colors)||in_array($colors['title'],array('blue') )) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
 				$col2=NULL;
 				if(startswith($id, 'QIDIAN'))
 					$col2='WebNovel last-paid';
@@ -379,26 +380,42 @@ foreach($wln_order as $id=>$list) {
 					$col2='RoyalRoad last';
 				assert($col2!=NULL);
 				//$neg_chp
-				if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
-					$pos2=$pos_->createFileContent($row['start'], ($row['pos']<=$row['start']?0:$row['pos']), $row[$col2]);
-					$fn2=$pos_->createFileName($pos1['fn2'], $row['start'], $row[$col2]);
-					//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
-					file_put_contents(DROPBOX.$fn2, $pos2);
-					if(!array_key_exists('msg', $row)) $row['msg']='';
-					$row['msg'].='.po '.__LINE__.' + ';
-					$row['title']='<span style="color:red">'.$row['title'].'</span>';
-					//var_dump($fn2,$pos2);die();
-				}
-				else {
-					$pos2=$pos_->createFileContent(1, 0, $row[$col2]);
-					$pos1=array('fn2'=>name_simplify($row['title'], 3));
-					$fn2=$pos_->createFileName($pos1['fn2'], 1, $row[$col2]);
-					if($row['start']<1) {var_dump($fn2,$pos2);die();}
-					file_put_contents(DROPBOX.$fn2, $pos2);
-					if(!array_key_exists('msg', $row)) $row['msg']='';
-					$row['msg'].='.po '.__LINE__.' + ';
-					$row['title']='<span style="color:red">'.$row['title'].'</span>';
-					var_dump($fn2,$pos2);die();
+				if( array_key_exists($col2, $row) ) {
+					if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
+						$min=$row['start'];
+						if($row['start']>$row[$col2]) {
+							if($row['WLNUpdate cur']>1) $min=$row['WLNUpdate cur'];
+							else $min=1;
+						}
+						$_pos=($row['pos']<=$min?0:$row['pos']);
+						$max=$row[$col2];
+						if($max<$_pos) $max=$_pos;
+						//var_dump($row['title']);
+						$fn2=$pos_->createFileName($pos1['fn2'], $min, $max);
+						if(!file_exists(DROPBOX.$fn2)) {
+							$pos2=$pos_->createFileContent($min, $_pos, $max);
+							//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
+							file_put_contents(DROPBOX.$fn2, $pos2);
+							if(!array_key_exists('msg', $row)) $row['msg']='';
+							$row['msg'].='.po '.__LINE__.' + ';
+							$row['title']='<span style="color:red">'.$row['title'].'</span>';
+							//var_dump($fn2,$pos2);die();
+						}
+					}
+					else {
+						$pos2=$pos_->createFileContent(1, 0, $row[$col2]);
+						if(is_null($pos1)) {
+							$pos1=array('fn2'=>name_simplify(strip_tags($row['title'], 3)),'start'=>1,'pos'=>$row['WLNUpdate cur']);
+							$row['start']=1;
+						}
+						$fn2=$pos_->createFileName($pos1['fn2'], 1, $row[$col2]);
+						if($row['start']<1) {var_dump($row,$fn2,$pos1,$pos2);die();}
+						file_put_contents(DROPBOX.$fn2, $pos2);
+						if(!array_key_exists('msg', $row)) $row['msg']='';
+						$row['msg'].='.po '.__LINE__.' + ';
+						$row['title']='<span style="color:red">'.$row['title'].'</span>';
+						//var_dump($fn2,$pos2);die();
+					}
 				}
 			}
 			unset($row['start9'], $row['pos9'], $row['last9']);

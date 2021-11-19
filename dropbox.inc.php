@@ -368,7 +368,8 @@ $ar=array();
 foreach($files as $entry) {
 	//var_dump($entry->name);die();
 	if(abs(strtotime($entry->server_modified)-strtotime($entry->client_modified))>=60) {
-		die(var_export($entry));
+		var_dump($entry);
+		die();
 	}
 	$ar[]=[$entry->name, $entry->size, $entry->server_modified];
 }

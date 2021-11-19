@@ -431,8 +431,6 @@ class WebNovel extends SitePlugin
 		
 		$books2=array();
 		$order=array();
-		$sub=array();
-		$subs=array();
 		
 		//usort($books, function($e1, $e2) { $res=strcasecmp($e1->bookName, $e2->bookName); if($res!=0) return $res; return $e1->novelType <=> $e2->novelType; });
 		//usort($books, array($this, 'novel_cmp'));
@@ -444,6 +442,37 @@ class WebNovel extends SitePlugin
 			if(array_key_exists($b->bookId, $books2)) die('duplicate ID.');
 			$books2[$b->bookId]=$b;
 			if($b->novelType==0) {
+				//$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
+				$order[]=$b->bookId;
+			}
+			elseif($b->novelType==100) {
+				//$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
+				$order[]=$b->bookId;
+			}
+		}
+		unset($books); //
+		ksort($books2);
+		$books=json_encode($books2); 
+		$books=$this->jsonp_to_json($books);
+		file_put_contents($this::FOLDER.'_books.json', $books );
+		
+		$order2=json_encode($order); unset($order);
+		$order2=$this->jsonp_to_json($order2);
+		file_put_contents($this::FOLDER.'_order.json', $order2 );
+		
+		$this->update_subnames();
+		
+		return $books2;
+	}
+	
+	public function update_subnames() {
+		/*$books=file_get_contents($this::FOLDER.'_books.json');
+		$books=json_decode($books, false, 512, JSON_THROW_ON_ERROR);//*/
+		$books=$this->get_watches();
+		$sub=array();
+		$subs=array();
+		foreach($books as $i=>$b) {
+			if($b->novelType==0) {
 				$res=$this->get_chapter_list_cached($b->bookId);
 				if( (is_object($res) && !property_exists($res, 'data')) || (is_object($res) && property_exists($res, 'data') && !is_object($res->data)) ) {
 					$res=$this->get_chapter_list($b->bookId);
@@ -452,15 +481,19 @@ class WebNovel extends SitePlugin
 				if(!is_object($res) || !property_exists($res, 'data') || !is_object($res->data) || !property_exists($res->data, 'bookInfo') || !property_exists($res->data->bookInfo, 'bookSubName') || strlen($res->data->bookInfo->bookSubName)==0) {
 					$res2=$this->get_info_html_cached($b->bookId);
 					if(is_object($res2)) {
-						$subName=$res2->bookInfo->bookSubName;
+						if(property_exists($res2, 'bookInfo') && property_exists($res2->bookInfo, 'bookSubName'))
+							$subName=$res2->bookInfo->bookSubName;
+						else $subName=NULL;
 					}
 					else if(is_array($res2)) {
-						$subName=$res2['bookInfo']['bookSubName'];
+						if(array_key_exists('bookInfo', $res2) && array_key_exists('bookSubName', $res2['bookInfo']))
+							$subName=$res2['bookInfo']['bookSubName'];
+						else $subName=NULL;
 					}
 				}
-				else $subName=$res->data->bookInfo->bookSubName;
-				//$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
-				$order[]=$b->bookId;
+				else if(is_object($res) && property_exists($res, 'data') && property_exists($res->data, 'bookInfo')) $subName=$res->data->bookInfo->bookSubName;
+				else $subName=NULL;
+				if($subName===NULL || $subName==='') continue;
 				$sub[$b->bookId]=$subName;
 				if(!array_key_exists($subName, $subs)) {
 					$subs[$subName]=$b->bookId;
@@ -476,7 +509,6 @@ class WebNovel extends SitePlugin
 					}
 					else die('error');
 				}
-				//$b->bookName, $subName
 			}
 			elseif($b->novelType==100) {
 				$res=$this->get_chapter_list_comic_cached($b->bookId);
@@ -484,21 +516,8 @@ class WebNovel extends SitePlugin
 					$res=$this->get_chapter_list_comic($b->bookId);
 				}
 				//var_dump($res->data->comicInfo);die();
-				//$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
-				$order[]=$b->bookId;
-				//$b->comicName, $res->data->comicInfo->comicName
 			}
 		}
-		unset($books); //
-		ksort($books2);
-		$books=json_encode($books2); 
-		$books=$this->jsonp_to_json($books);
-		file_put_contents($this::FOLDER.'_books.json', $books );
-		
-		$order2=json_encode($order); unset($order);
-		$order2=$this->jsonp_to_json($order2);
-		file_put_contents($this::FOLDER.'_order.json', $order2 );
-		
 		ksort($sub);
 		$sub2=json_encode($sub);
 		$sub2=$this->jsonp_to_json($sub2);
@@ -508,8 +527,6 @@ class WebNovel extends SitePlugin
 		$subs2=json_encode($subs);
 		$subs2=$this->jsonp_to_json($subs2);
 		file_put_contents($this::FOLDER.'_subnames.json', $subs2);
-		
-		return $books2;
 	}
 	
 	public function get_watches() {
@@ -962,9 +979,20 @@ class WebNovel extends SitePlugin
 		array_shift($matches);$matches=$matches[0];
 		//$matches=array_filter($matches, function($e) {return startswith($e, 'g_data');});
 		//var_dump($matches);//die();
-		$str='g_data.pageId="qi_p_bookdetail",g_data.book= ';
-		assert(startswith($matches[8], $str)) or die('error1');
-		$res1=substr($matches[8],strlen($str));
+		$str ='g_data.pageId="qi_p_bookdetail",g_data.book= ';
+		//$str2='g_data=g_data||{},g_data.login=';
+		$str2='g_data=g_data||{},g_data.login={},g_data.login.statusCode="-1",g_data.login.user= ';
+		$res1=NULL;
+		foreach($matches as $m) {
+			if(startswith($m, $str)) {
+				$res1=trim(substr($m,strlen($str)));
+			}
+			if(startswith($m, $str2)) {
+				$res1=trim(substr($m,strlen($str2)));
+			}
+		}
+		if($res1===NULL) var_dump($matches);
+		assert($res1!==NULL);
 		
 		/*$json=$res1;
 		$json=str_replace('\/','/',$json);
