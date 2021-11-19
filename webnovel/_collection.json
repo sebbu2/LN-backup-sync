@@ -333,6 +333,17 @@
   ],
   "trial read": [
     {
+      "BookId": 21344870405997505,
+      "BookType": 0,
+      "CoverId": 1633493344567,
+      "Catogery": "Eastern Fantasy",
+      "CatogeryId": 70009,
+      "BookName": "I Cultivate Passively",
+      "Author": "Bloodied White Shirt",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
       "BookId": 20793147905823705,
       "BookType": 0,
       "CoverId": 1628043128683,
@@ -1853,7 +1864,7 @@
     {
       "BookId": 18549008105094005,
       "BookType": 0,
-      "CoverId": 1626120006219,
+      "CoverId": 1636927397380,
       "Catogery": "Video Games",
       "CatogeryId": 70008,
       "BookName": "Cultivation Online",
@@ -2349,6 +2360,17 @@
     }
   ],
   "comics": [
+    {
+      "BookId": 21604870306028901,
+      "BookType": 100,
+      "CoverId": 1636515088208,
+      "Catogery": "Harem",
+      "CatogeryId": 60017,
+      "BookName": "My Disciples are all Devils",
+      "Author": "1819",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
     {
       "BookId": 20662233706706801,
       "BookType": 100,
@@ -3126,7 +3148,7 @@
     {
       "BookId": 17340518006576905,
       "BookType": 0,
-      "CoverId": 1631030542657,
+      "CoverId": 1636984850332,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Death... and me",
@@ -3280,7 +3302,7 @@
     {
       "BookId": 18253916006055005,
       "BookType": 0,
-      "CoverId": 1621344849996,
+      "CoverId": 1636965588492,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "I'm a Stingray?",
@@ -4325,7 +4347,7 @@
     {
       "BookId": 17642961805019505,
       "BookType": 0,
-      "CoverId": 1596507860958,
+      "CoverId": 1636965304563,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "Overthrowing Fate",
@@ -4336,7 +4358,7 @@
     {
       "BookId": 17672796306369705,
       "BookType": 0,
-      "CoverId": 1608024520982,
+      "CoverId": 1636954210721,
       "Catogery": "Fantasy Romance",
       "CatogeryId": 70016,
       "BookName": "Forsaken Immortals",
@@ -4347,7 +4369,7 @@
     {
       "BookId": 17684340505309305,
       "BookType": 0,
-      "CoverId": 1597509280313,
+      "CoverId": 1636954346579,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "Condemning the Heavens",
@@ -4358,7 +4380,7 @@
     {
       "BookId": 17672760706369405,
       "BookType": 0,
-      "CoverId": 1596769586332,
+      "CoverId": 1636965477672,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "Blue Phoenix",

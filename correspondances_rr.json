@@ -137,6 +137,12 @@
         "name": "The Iron Teeth: A Goblin's Tale",
         "list": "RoyalRoad plan to read"
     },
+    "4629": {
+        "wln": 34514,
+        "wn": null,
+        "name": "The Daily Diary of a Mushroom",
+        "list": "RoyalRoad plan to read"
+    },
     "4676": {
         "wln": 34389,
         "wn": null,
@@ -1391,18 +1397,6 @@
         "name": "The King's Soul: A LitRPG Wuxia Novel",
         "list": "RoyalRoad plan to read"
     },
-    "45173": {
-        "wln": 139703,
-        "wn": null,
-        "name": "Mana Harvest The Sword to Ploughshares Saga LiTRPG",
-        "list": "RoyalRoad stalled"
-    },
-    "45250": {
-        "wln": 141491,
-        "wn": null,
-        "name": "The Last Battlemage",
-        "list": "RoyalRoad plan to read"
-    },
     "45434": {
         "wln": 139257,
         "wn": null,
@@ -1565,10 +1559,28 @@
         "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad plan to read"
     },
+    "48017": {
+        "wln": 142804,
+        "wn": null,
+        "name": "TWIG - The System Can't Save Me, But It Can't Stop Me Either [a gamelit-portal-fantasy-poem by eric river]",
+        "list": "RoyalRoad"
+    },
     "48397": {
         "wln": 142908,
         "wn": null,
         "name": "[Rewritten ver.] Solo Player Rebirth!",
         "list": "RoyalRoad plan to read"
+    },
+    "48642": {
+        "wln": 143135,
+        "wn": null,
+        "name": "The New Headmaster At Magic School is a Retiree",
+        "list": "RoyalRoad"
+    },
+    "48643": {
+        "wln": 54737,
+        "wn": null,
+        "name": "Apocalypse Summoner (Minuet of Dusk)",
+        "list": "plan to read"
     }
 }

@@ -266,6 +266,13 @@
         "list": "QIDIAN on-hold"
     },
     {
+        "wln": 34514,
+        "wn": null,
+        "rr": 4629,
+        "name": "The Daily Diary of a Mushroom",
+        "list": "RoyalRoad plan to read"
+    },
+    {
         "wln": 34567,
         "wn": "8628176105001205",
         "rr": null,
@@ -621,6 +628,13 @@
         "rr": null,
         "name": "9 Coffins of the Immortals",
         "list": "QIDIAN on-hold"
+    },
+    {
+        "wln": 54737,
+        "wn": null,
+        "rr": 48643,
+        "name": "Apocalypse Summoner (Minuet of Dusk)",
+        "list": "plan to read"
     },
     {
         "wln": 54742,
@@ -3658,7 +3672,7 @@
         "wn": "14813616506778905",
         "rr": null,
         "name": "Phantasia: The Princess Knight",
-        "list": "QIDIAN original"
+        "list": "RoyalRoad completed"
     },
     {
         "wln": 137557,
@@ -3850,13 +3864,6 @@
         "list": "RoyalRoad plan to read"
     },
     {
-        "wln": 139703,
-        "wn": null,
-        "rr": 45173,
-        "name": "Mana Harvest The Sword to Ploughshares Saga LiTRPG",
-        "list": "RoyalRoad stalled"
-    },
-    {
         "wln": 139878,
         "wn": null,
         "rr": 44272,
@@ -4030,13 +4037,6 @@
         "rr": null,
         "name": "The Entire Mankind Is Acting As Me I Shall Secretly Build And Shock The World",
         "list": "QIDIAN plan to read"
-    },
-    {
-        "wln": 141491,
-        "wn": null,
-        "rr": 45250,
-        "name": "The Last Battlemage",
-        "list": "RoyalRoad plan to read"
     },
     {
         "wln": 141538,
@@ -4718,6 +4718,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 142804,
+        "wn": null,
+        "rr": 48017,
+        "name": "TWIG - The System Can't Save Me, But It Can't Stop Me Either [a gamelit-portal-fantasy-poem by eric river]",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 142811,
         "wn": null,
         "rr": 47621,
@@ -4778,6 +4785,27 @@
         "wn": null,
         "rr": 45718,
         "name": "This Damned City: Summoner Reincarnated",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 143135,
+        "wn": null,
+        "rr": 48642,
+        "name": "The New Headmaster At Magic School is a Retiree",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 143211,
+        "wn": "19720038005035905",
+        "rr": null,
+        "name": "Reincarnated With The Strongest System",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 143212,
+        "wn": null,
+        "rr": 48643,
+        "name": "Apocalypse Summoner",
         "list": "RoyalRoad"
     }
 ]

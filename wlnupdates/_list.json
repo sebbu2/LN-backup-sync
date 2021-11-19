@@ -67,6 +67,7 @@
   "34416": "plan to read",
   "34444": "QIDIAN plan to read",
   "34481": "QIDIAN on-hold",
+  "34514": "RoyalRoad plan to read",
   "34567": "QIDIAN",
   "34789": "QIDIAN completed",
   "34875": "RoyalRoad completed",
@@ -132,6 +133,7 @@
   "53949": "RoyalRoad plan to read",
   "54285": "QIDIAN completed",
   "54492": "QIDIAN on-hold",
+  "54737": "plan to read",
   "54742": "QIDIAN on-hold",
   "54999": "QIDIAN plan to read",
   "55155": "QIDIAN plan to read",
@@ -592,7 +594,7 @@
   "137358": "RoyalRoad",
   "137361": "RoyalRoad plan to read",
   "137446": "RoyalRoad plan to read",
-  "137556": "QIDIAN original",
+  "137556": "RoyalRoad completed",
   "137557": "QIDIAN original",
   "137558": "QIDIAN original",
   "137559": "QIDIAN original",
@@ -762,6 +764,7 @@
   "142718": "QIDIAN plan to read",
   "142719": "QIDIAN plan to read",
   "142720": "QIDIAN plan to read",
+  "142804": "RoyalRoad",
   "142811": "RoyalRoad",
   "142908": "RoyalRoad plan to read",
   "143017": "QIDIAN plan to read",
@@ -770,5 +773,8 @@
   "143020": "QIDIAN plan to read",
   "143021": "QIDIAN plan to read",
   "143022": "QIDIAN plan to read",
-  "143122": "RoyalRoad"
+  "143122": "RoyalRoad",
+  "143135": "RoyalRoad",
+  "143211": "QIDIAN plan to read",
+  "143212": "RoyalRoad"
 }
