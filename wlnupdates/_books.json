@@ -741,16 +741,16 @@
       "tl_type": "oel"
     },
     {
-      "agg": 868,
-      "chp": 868,
+      "agg": 870,
+      "chp": 870,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 868.001,
-      "chp": 868,
-      "date": 1637276905,
-      "frag": 10,
+      "agg": 870.0012,
+      "chp": 870,
+      "date": 1637609509,
+      "frag": 12,
       "vol": -1
     },
     null
@@ -1046,7 +1046,7 @@
     {
       "agg": 37,
       "chp": 37,
-      "date": 1463456823,
+      "date": 1463460423,
       "frag": 0,
       "vol": -1
     },
@@ -1343,7 +1343,7 @@
     {
       "agg": 48,
       "chp": 48,
-      "date": 1461736004,
+      "date": 1461761204,
       "frag": 0,
       "vol": -1
     },
@@ -2423,7 +2423,7 @@
     {
       "agg": 30000,
       "chp": -1,
-      "date": 1534927563,
+      "date": 1534416743,
       "frag": -1,
       "vol": 3
     },
@@ -2558,7 +2558,7 @@
     {
       "agg": 1314,
       "chp": 1314,
-      "date": 1555903950,
+      "date": 1555891980,
       "frag": 0,
       "vol": -1
     },
@@ -2664,9 +2664,9 @@
       "vol": -1
     },
     {
-      "agg": 4031,
-      "chp": 4031,
-      "date": 1637298120,
+      "agg": 4035,
+      "chp": 4035,
+      "date": 1637461440,
       "frag": 0,
       "vol": -1
     },
@@ -2853,9 +2853,9 @@
       "vol": -1
     },
     {
-      "agg": 721,
-      "chp": 721,
-      "date": 1637277806,
+      "agg": 722,
+      "chp": 722,
+      "date": 1637449680,
       "frag": 0,
       "vol": -1
     },
@@ -3503,7 +3503,7 @@
     {
       "agg": 30009,
       "chp": 9,
-      "date": 1488964196,
+      "date": 1488964242,
       "frag": 0,
       "vol": 3
     },
@@ -3879,9 +3879,9 @@
       "vol": -1
     },
     {
-      "agg": 166,
-      "chp": 166,
-      "date": 1637136253,
+      "agg": 167,
+      "chp": 167,
+      "date": 1637395721,
       "frag": 0,
       "vol": -1
     },
@@ -4003,8 +4003,8 @@
       },
       "id": 57391,
       "name": "The Legend of Randidly Ghosthound",
-      "rating": 8.206896551724139,
-      "rating_count": 29,
+      "rating": 8.033333333333333,
+      "rating_count": 30,
       "tl_type": "oel"
     },
     {
@@ -4695,7 +4695,7 @@
       "frag": -1,
       "vol": -1
     },
-    null
+    "Kairos: Gears Against Gods"
   ],
   "59537": [
     {
@@ -5453,6 +5453,33 @@
     },
     null
   ],
+  "62685": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 62685,
+      "name": "Curse of the Kat",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10000,
+      "chp": -1,
+      "date": 1532523822,
+      "frag": -1,
+      "vol": 1
+    },
+    "Curse of the Kat (Dropped)"
+  ],
   "62700": [
     {
       "extra_metadata": {
@@ -5682,15 +5709,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 776,
-      "chp": 776,
+      "agg": 777,
+      "chp": 777,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 771,
-      "chp": 771,
-      "date": 1637082006,
+      "agg": 774,
+      "chp": 774,
+      "date": 1637413264,
       "frag": 0,
       "vol": -1
     },
@@ -6330,8 +6357,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1306,
-      "chp": 1306,
+      "agg": 1309,
+      "chp": 1309,
       "frag": -1,
       "vol": -1
     },
@@ -6411,8 +6438,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 10649,
-      "chp": 649,
+      "agg": 10654,
+      "chp": 654,
       "frag": -1,
       "vol": 1
     },
@@ -6635,7 +6662,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1567657258,
+      "date": 1567440673,
       "frag": -1,
       "vol": 2
     },
@@ -7086,8 +7113,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1614,
-      "chp": 1614,
+      "agg": 1618,
+      "chp": 1618,
       "frag": -1,
       "vol": -1
     },
@@ -7478,6 +7505,33 @@
     },
     null
   ],
+  "89719": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 89719,
+      "name": "Age of Teras: Monster Evolution",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 76,
+      "chp": 76,
+      "date": 1562266902,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
   "90241": [
     {
       "extra_metadata": {
@@ -7491,8 +7545,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 799,
-      "chp": 799,
+      "agg": 800,
+      "chp": 800,
       "frag": -1,
       "vol": -1
     },
@@ -7864,8 +7918,8 @@
       },
       "id": 96618,
       "name": "NTR Crush : I Will Steal Every Girl",
-      "rating": 5.412162162162162,
-      "rating_count": 148,
+      "rating": 5.422818791946309,
+      "rating_count": 149,
       "tl_type": "oel"
     },
     {
@@ -7937,6 +7991,33 @@
     },
     "The Genius System Without Equal"
   ],
+  "97187": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 97187,
+      "name": "Rebirth to a Military Marriage: Good Morning Chief",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "translated"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40,
+      "chp": 40,
+      "date": 1561582074.470735,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
   "97804": [
     {
       "extra_metadata": {
@@ -7950,8 +8031,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 70611,
-      "chp": 611,
+      "agg": 70614,
+      "chp": 614,
       "frag": -1,
       "vol": 7
     },
@@ -8085,8 +8166,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1183,
-      "chp": 1183,
+      "agg": 1185,
+      "chp": 1185,
       "frag": -1,
       "vol": -1
     },
@@ -8355,15 +8436,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 303,
-      "chp": 303,
+      "agg": 304,
+      "chp": 304,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 554,
-      "chp": 554,
-      "date": 1637272800,
+      "agg": 555,
+      "chp": 555,
+      "date": 1637359200,
       "frag": 0,
       "vol": -1
     },
@@ -8604,10 +8685,10 @@
       "vol": -1
     },
     {
-      "agg": 30000.0021,
+      "agg": 30000.0022,
       "chp": -1,
-      "date": 1636780459,
-      "frag": 21,
+      "date": 1637502076,
+      "frag": 22,
       "vol": 3
     },
     null
@@ -8825,6 +8906,33 @@
       "date": 1616993100,
       "frag": 0,
       "vol": -1
+    },
+    null
+  ],
+  "109277": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 109277,
+      "name": "Nanocultivation Chronicles: Trials of Lilijoy",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 40004,
+      "chp": 4,
+      "date": 1616374260,
+      "frag": 0,
+      "vol": 4
     },
     null
   ],
@@ -9138,8 +9246,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1321,
-      "chp": 1321,
+      "agg": 1327,
+      "chp": 1327,
       "frag": -1,
       "vol": -1
     },
@@ -9174,6 +9282,33 @@
       "agg": 0,
       "chp": -1,
       "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "110493": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 110493,
+      "name": "Curse of Clwyd",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 23,
+      "chp": 23,
+      "date": 1579373040,
       "frag": -1,
       "vol": -1
     },
@@ -9435,8 +9570,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 1338,
-      "chp": 1338,
+      "agg": 1344,
+      "chp": 1344,
       "frag": -1,
       "vol": -1
     },
@@ -10172,7 +10307,7 @@
     {
       "agg": 40,
       "chp": 40,
-      "date": 1620155788,
+      "date": 1620155760,
       "frag": 0,
       "vol": -1
     },
@@ -10312,6 +10447,33 @@
       "vol": -1
     },
     null
+  ],
+  "115575": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 115575,
+      "name": "Grandpa Universe In Multiverse",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 81,
+      "chp": 81,
+      "date": 1588699272,
+      "frag": 0,
+      "vol": -1
+    },
+    "Grandpa Universe In Multiverse [COMPLETE]"
   ],
   "115743": [
     {
@@ -10947,8 +11109,8 @@
       "tl_type": "translated"
     },
     {
-      "agg": 476,
-      "chp": 476,
+      "agg": 479,
+      "chp": 479,
       "frag": -1,
       "vol": -1
     },
@@ -11306,7 +11468,7 @@
     {
       "agg": 78,
       "chp": 78,
-      "date": 1615172880,
+      "date": 1615191300,
       "frag": 0,
       "vol": -1
     },
@@ -11352,8 +11514,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 21,
-      "chp": 21,
+      "agg": 22,
+      "chp": 22,
       "frag": -1,
       "vol": -1
     },
@@ -11416,6 +11578,33 @@
       "chp": 221,
       "date": 1636659922,
       "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "119016": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 119016,
+      "name": "Mindshifter: The Mind War",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 33,
+      "chp": 33,
+      "date": 1598690580,
+      "frag": -1,
       "vol": -1
     },
     null
@@ -11514,8 +11703,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 538,
-      "chp": 538,
+      "agg": 541,
+      "chp": 541,
       "frag": -1,
       "vol": -1
     },
@@ -11838,8 +12027,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 375,
-      "chp": 375,
+      "agg": 376,
+      "chp": 376,
       "frag": -1,
       "vol": -1
     },
@@ -11981,7 +12170,7 @@
     {
       "agg": 62,
       "chp": 62,
-      "date": 1628985600,
+      "date": 1627776000,
       "frag": 0,
       "vol": -1
     },
@@ -12089,7 +12278,7 @@
     {
       "agg": 73,
       "chp": 73,
-      "date": 1636744822,
+      "date": 1636744514,
       "frag": 0,
       "vol": -1
     },
@@ -12162,15 +12351,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 164,
-      "chp": 164,
+      "agg": 165,
+      "chp": 165,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 140,
-      "chp": 140,
-      "date": 1637266120,
+      "agg": 141,
+      "chp": 141,
+      "date": 1637471739,
       "frag": 0,
       "vol": -1
     },
@@ -12189,15 +12378,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 267,
-      "chp": 267,
+      "agg": 268,
+      "chp": 268,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 233,
-      "chp": 233,
-      "date": 1637336928,
+      "agg": 234,
+      "chp": 234,
+      "date": 1637601975,
       "frag": 0,
       "vol": -1
     },
@@ -12486,8 +12675,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 488,
-      "chp": 488,
+      "agg": 491,
+      "chp": 491,
       "frag": -1,
       "vol": -1
     },
@@ -12656,7 +12845,7 @@
     {
       "agg": 300,
       "chp": 300,
-      "date": 1627319700,
+      "date": 1627320416,
       "frag": 0,
       "vol": -1
     },
@@ -12837,8 +13026,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 24,
+      "chp": 24,
       "frag": -1,
       "vol": -1
     },
@@ -13040,6 +13229,33 @@
     },
     null
   ],
+  "129392": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 129392,
+      "name": "Reroll",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 86,
+      "chp": 86,
+      "date": 1630908180,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "129444": [
     {
       "extra_metadata": {
@@ -13196,7 +13412,7 @@
     {
       "agg": 40,
       "chp": 40,
-      "date": 1609276184,
+      "date": 1609276140,
       "frag": 0,
       "vol": -1
     },
@@ -13215,15 +13431,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 186,
-      "chp": 186,
+      "agg": 204,
+      "chp": 204,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 262,
-      "chp": 262,
-      "date": 1637300817,
+      "agg": 265,
+      "chp": 265,
+      "date": 1637559383,
       "frag": 0,
       "vol": -1
     },
@@ -13458,8 +13674,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 280,
-      "chp": 280,
+      "agg": 281,
+      "chp": 281,
       "frag": -1,
       "vol": -1
     },
@@ -13590,8 +13806,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 58,
+      "chp": 58,
       "frag": -1,
       "vol": -1
     },
@@ -13698,15 +13914,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 220,
-      "chp": 220,
+      "agg": 221,
+      "chp": 221,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 218,
-      "chp": 218,
-      "date": 1636653601,
+      "agg": 219,
+      "chp": 219,
+      "date": 1637604002,
       "frag": 0,
       "vol": -1
     },
@@ -13733,7 +13949,7 @@
     {
       "agg": 50185,
       "chp": 185,
-      "date": 1634482745,
+      "date": 1634482740,
       "frag": 0,
       "vol": 5
     },
@@ -13806,8 +14022,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 530,
-      "chp": 530,
+      "agg": 536,
+      "chp": 536,
       "frag": -1,
       "vol": -1
     },
@@ -13995,8 +14211,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 20165,
-      "chp": 165,
+      "agg": 20166,
+      "chp": 166,
       "frag": -1,
       "vol": 2
     },
@@ -14057,7 +14273,7 @@
     {
       "agg": 40169,
       "chp": 169,
-      "date": 1629400560,
+      "date": 1629378060,
       "frag": 0,
       "vol": 4
     },
@@ -14103,8 +14319,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 472,
-      "chp": 472,
+      "agg": 475,
+      "chp": 475,
       "frag": -1,
       "vol": -1
     },
@@ -14139,6 +14355,33 @@
       "agg": 93,
       "chp": 93,
       "date": 1624709820,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "133304": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 133304,
+      "name": "Pith",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 74,
+      "chp": 74,
+      "date": 1621902780,
       "frag": 0,
       "vol": -1
     },
@@ -14370,15 +14613,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 111,
-      "chp": 111,
+      "agg": 112,
+      "chp": 112,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 109,
-      "chp": 109,
-      "date": 1637175198,
+      "agg": 110,
+      "chp": 110,
+      "date": 1637355792,
       "frag": 0,
       "vol": -1
     },
@@ -14804,7 +15047,7 @@
     {
       "agg": 66,
       "chp": 66,
-      "date": 1631126940,
+      "date": 1631127053,
       "frag": 0,
       "vol": -1
     },
@@ -14847,8 +15090,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 86,
-      "chp": 86,
+      "agg": 87,
+      "chp": 87,
       "frag": -1,
       "vol": -1
     },
@@ -15374,7 +15617,7 @@
     {
       "agg": 12,
       "chp": 12,
-      "date": 1622925812,
+      "date": 1622925840,
       "frag": 0,
       "vol": -1
     },
@@ -15522,15 +15765,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 65,
-      "chp": 65,
+      "agg": 66,
+      "chp": 66,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 20063,
-      "chp": 63,
-      "date": 1636904589,
+      "agg": 20064,
+      "chp": 64,
+      "date": 1637608546,
       "frag": 0,
       "vol": 2
     },
@@ -15611,7 +15854,7 @@
     {
       "agg": 13,
       "chp": 13,
-      "date": 1622826840,
+      "date": 1622826800,
       "frag": 0,
       "vol": -1
     },
@@ -15732,15 +15975,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 67,
-      "chp": 67,
+      "agg": 68,
+      "chp": 68,
       "frag": -1,
       "vol": -1
     },
     {
       "agg": 20048,
       "chp": 48,
-      "date": 1635689834,
+      "date": 1631657820,
       "frag": 0,
       "vol": 2
     },
@@ -15945,8 +16188,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 105,
-      "chp": 105,
+      "agg": 106,
+      "chp": 106,
       "frag": -1,
       "vol": -1
     },
@@ -16131,8 +16374,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 133,
-      "chp": 133,
+      "agg": 134,
+      "chp": 134,
       "frag": -1,
       "vol": -1
     },
@@ -16218,9 +16461,9 @@
       "vol": -1
     },
     {
-      "agg": 62,
-      "chp": 62,
-      "date": 1637303496,
+      "agg": 63,
+      "chp": 63,
+      "date": 1637559759,
       "frag": 0,
       "vol": -1
     },
@@ -16433,7 +16676,7 @@
     {
       "agg": 29,
       "chp": 29,
-      "date": 1634103893,
+      "date": 1634144400,
       "frag": 0,
       "vol": -1
     },
@@ -16834,8 +17077,8 @@
       "extra_metadata": null,
       "id": 139312,
       "name": "Hero's Song - A Novel in Verse",
-      "rating": null,
-      "rating_count": null,
+      "rating": 10,
+      "rating_count": 1,
       "tl_type": "oel"
     },
     {
@@ -17004,9 +17247,9 @@
       "vol": -1
     },
     {
-      "agg": 80,
-      "chp": 80,
-      "date": 1637301600,
+      "agg": 81,
+      "chp": 81,
+      "date": 1637560800,
       "frag": 0,
       "vol": -1
     },
@@ -17030,7 +17273,7 @@
     {
       "agg": 20000,
       "chp": -1,
-      "date": 1635214391,
+      "date": 1633666020,
       "frag": -1,
       "vol": 2
     },
@@ -17262,15 +17505,15 @@
       "tl_type": "oel"
     },
     {
-      "agg": 44,
-      "chp": 44,
+      "agg": 46,
+      "chp": 46,
       "frag": -1,
       "vol": -1
     },
     {
-      "agg": 41,
-      "chp": 41,
-      "date": 1637337213,
+      "agg": 43,
+      "chp": 43,
+      "date": 1637597718,
       "frag": 0,
       "vol": -1
     },
@@ -17370,8 +17613,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 54,
-      "chp": 54,
+      "agg": 55,
+      "chp": 55,
       "frag": -1,
       "vol": -1
     },
@@ -17475,8 +17718,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 27,
-      "chp": 27,
+      "agg": 28,
+      "chp": 28,
       "frag": -1,
       "vol": -1
     },
@@ -17502,8 +17745,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 79,
-      "chp": 79,
+      "agg": 82,
+      "chp": 82,
       "frag": -1,
       "vol": -1
     },
@@ -17514,7 +17757,7 @@
       "frag": 0,
       "vol": -1
     },
-    null
+    "Frameshift"
   ],
   "141041": [
     {
@@ -17529,8 +17772,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 36,
-      "chp": 36,
+      "agg": 37,
+      "chp": 37,
       "frag": -1,
       "vol": -1
     },
@@ -17841,8 +18084,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 26,
+      "chp": 26,
       "frag": -1,
       "vol": -1
     },
@@ -17865,8 +18108,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 1,
-      "chp": 1,
+      "agg": 30,
+      "chp": 30,
       "frag": -1,
       "vol": -1
     },
@@ -17905,6 +18148,33 @@
       "vol": -1
     },
     "Tentacles, loot boxes and apocalypse [monster evolution story]"
+  ],
+  "141602": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 141602,
+      "name": "Blue Eden: Iron Children",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 38,
+      "chp": 38,
+      "date": 1637454268,
+      "frag": 0,
+      "vol": -1
+    },
+    null
   ],
   "141605": [
     {
@@ -18270,6 +18540,33 @@
       "agg": 32,
       "chp": 32,
       "date": 1634656260,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
+  "142008": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142008,
+      "name": "Shattered Realms",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 6,
+      "chp": 6,
+      "date": 1634933223,
       "frag": 0,
       "vol": -1
     },
@@ -19103,6 +19400,33 @@
     },
     "Avalon of the Elements"
   ],
+  "142362": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142362,
+      "name": "The Journey of a God",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 7,
+      "chp": 7,
+      "date": 1635890194,
+      "frag": 0,
+      "vol": -1
+    },
+    null
+  ],
   "142367": [
     {
       "extra_metadata": {
@@ -19227,9 +19551,9 @@
       "vol": -1
     },
     {
-      "agg": 18,
-      "chp": 18,
-      "date": 1637275337,
+      "agg": 22,
+      "chp": 22,
+      "date": 1637585643,
       "frag": 0,
       "vol": -1
     },
@@ -20441,6 +20765,33 @@
     },
     null
   ],
+  "142685": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 142685,
+      "name": "The Journey of a God: Book 1",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 10017,
+      "chp": 17,
+      "date": 1636994608,
+      "frag": 0,
+      "vol": 1
+    },
+    null
+  ],
   "142718": [
     {
       "extra_metadata": null,
@@ -20524,8 +20875,8 @@
       "extra_metadata": null,
       "id": 142804,
       "name": "TWIG - The System Can't Save Me, But It Can't Stop Me Either [a gamelit-portal-fantasy-poem by eric river]",
-      "rating": 1,
-      "rating_count": 1,
+      "rating": 5.5,
+      "rating_count": 2,
       "tl_type": "oel"
     },
     {
@@ -20841,8 +21192,8 @@
       "tl_type": "oel"
     },
     {
-      "agg": 2,
-      "chp": 2,
+      "agg": 3,
+      "chp": 3,
       "frag": -1,
       "vol": -1
     },
@@ -20854,5 +21205,56 @@
       "vol": -1
     },
     "Apocalypse Summoner"
+  ],
+  "143290": [
+    {
+      "extra_metadata": {
+        "is_yaoi": false,
+        "is_yuri": false
+      },
+      "id": 143290,
+      "name": "Age of Heroes ( Age of Heroes Chronicles)",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
+  ],
+  "143341": [
+    {
+      "extra_metadata": null,
+      "id": 143341,
+      "name": "The Summoned Hero Is Actually A Dark Lord",
+      "rating": null,
+      "rating_count": null,
+      "tl_type": "oel"
+    },
+    {
+      "agg": 1,
+      "chp": 1,
+      "frag": -1,
+      "vol": -1
+    },
+    {
+      "agg": 0,
+      "chp": -1,
+      "date": null,
+      "frag": -1,
+      "vol": -1
+    },
+    null
   ]
 }

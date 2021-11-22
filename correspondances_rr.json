@@ -303,7 +303,7 @@
         "wln": 60905,
         "wn": null,
         "name": "The Snake Report",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "14558": {
         "wln": 61294,
@@ -316,6 +316,12 @@
         "wn": null,
         "name": "There is no Epic Loot, Only Puns",
         "list": "duplicates"
+    },
+    "16449": {
+        "wln": 62685,
+        "wn": null,
+        "name": "Curse of the Kat (Dropped)",
+        "list": "RoyalRoad plan to read"
     },
     "16946": {
         "wln": 63197,
@@ -394,6 +400,12 @@
         "wn": null,
         "name": "Dark Wizard's Case. LitRPG series",
         "list": "RoyalRoad plan to read"
+    },
+    "23978": {
+        "wln": 89719,
+        "wn": "13330400706510705",
+        "name": "Age of Teras: Monster Evolution",
+        "list": "QIDIAN plan to read"
     },
     "24241": {
         "wln": 91203,
@@ -533,16 +545,22 @@
         "name": "Kalar's continent",
         "list": "QIDIAN stalled"
     },
+    "28254": {
+        "wln": 109277,
+        "wn": null,
+        "name": "Nanocultivation Chronicles: Trials of Lilijoy",
+        "list": "RoyalRoad"
+    },
     "28307": {
         "wln": 109221,
         "wn": null,
         "name": "The Zombie Knight Saga",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "28385": {
         "wln": 59514,
         "wn": "18923811406743005",
-        "name": "Kairos",
+        "name": "Kairos: Gears Against Gods",
         "list": "RoyalRoad plan to read"
     },
     "28656": {
@@ -550,6 +568,12 @@
         "wn": null,
         "name": "Dawn Weaver - a tale of Dragon Riders",
         "list": "duplicates"
+    },
+    "29507": {
+        "wln": 110493,
+        "wn": null,
+        "name": "Curse of Clwyd",
+        "list": "RoyalRoad"
     },
     "29540": {
         "wln": 110575,
@@ -663,7 +687,7 @@
         "wln": 116456,
         "wn": null,
         "name": "Rend",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "32908": {
         "wln": 120338,
@@ -737,6 +761,12 @@
         "name": "Artificial Jelly",
         "list": "RoyalRoad stalled"
     },
+    "34388": {
+        "wln": 119016,
+        "wn": null,
+        "name": "Mindshifter: The Mind War",
+        "list": "RoyalRoad"
+    },
     "34409": {
         "wln": 130232,
         "wn": null,
@@ -807,7 +837,7 @@
         "wln": 127831,
         "wn": null,
         "name": "Fluff",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "36051": {
         "wln": 127902,
@@ -863,11 +893,17 @@
         "name": "Earth's Alpha Prime",
         "list": "QIDIAN plan to read"
     },
+    "37103": {
+        "wln": 129392,
+        "wn": null,
+        "name": "Reroll",
+        "list": "RoyalRoad plan to read"
+    },
     "37231": {
         "wln": 128991,
         "wn": null,
         "name": "A Lonely Dungeon",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad completed"
     },
     "37251": {
         "wln": 129558,
@@ -909,7 +945,7 @@
         "wln": 130768,
         "wn": null,
         "name": "An Unbound Soul",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "38944": {
         "wln": 131709,
@@ -964,6 +1000,12 @@
         "wn": null,
         "name": "Path of the Dragon Mage: Exiled",
         "list": "duplicates"
+    },
+    "40150": {
+        "wln": 133304,
+        "wn": null,
+        "name": "Pith",
+        "list": "RoyalRoad"
     },
     "40193": {
         "wln": 134291,
@@ -1035,7 +1077,7 @@
         "wln": 135424,
         "wn": null,
         "name": "The Great Core's Paradox",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "40920": {
         "wln": 134370,
@@ -1059,7 +1101,7 @@
         "wln": 134554,
         "wn": null,
         "name": "A Friendly Voidling",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "41033": {
         "wln": 134559,
@@ -1185,7 +1227,7 @@
         "wln": 135895,
         "wn": null,
         "name": "An Unwilling Monster",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "42202": {
         "wln": 135959,
@@ -1311,7 +1353,7 @@
         "wln": 137834,
         "wn": null,
         "name": "The Calamitous Bob",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "44229": {
         "wln": 137802,
@@ -1341,7 +1383,7 @@
         "wln": 138160,
         "wn": null,
         "name": "Heart of Dorkness",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "44599": {
         "wln": 138523,
@@ -1428,9 +1470,9 @@
         "list": "RoyalRoad plan to read"
     },
     "45718": {
-        "wln": 143122,
+        "wln": 143341,
         "wn": null,
-        "name": "This Damned City: Summoner Reincarnated",
+        "name": "The Summoned Hero Is Actually A Dark Lord",
         "list": "RoyalRoad"
     },
     "45898": {
@@ -1466,7 +1508,7 @@
     "46378": {
         "wln": 141013,
         "wn": null,
-        "name": "Frameshift - Magic, Math, and Not Enough Context",
+        "name": "Frameshift",
         "list": "RoyalRoad"
     },
     "46394": {
@@ -1485,7 +1527,7 @@
         "wln": 141561,
         "wn": null,
         "name": "Give me my lily pad back.",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "46638": {
         "wln": 140724,
@@ -1521,13 +1563,25 @@
         "wln": 141547,
         "wn": null,
         "name": "Dungeon Core? Nah, I Think I'll Just Get Super-Wealthy Instead",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
+    },
+    "47287": {
+        "wln": 141602,
+        "wn": null,
+        "name": "Blue Eden: Iron Children",
+        "list": "RoyalRoad"
     },
     "47557": {
         "wln": 100731,
         "wn": null,
         "name": "Underland",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
+    },
+    "47619": {
+        "wln": 142008,
+        "wn": null,
+        "name": "Shattered Realms",
+        "list": "RoyalRoad"
     },
     "47621": {
         "wln": 142811,
@@ -1541,35 +1595,41 @@
         "name": "Under Wicked Sky",
         "list": "RoyalRoad plan to read"
     },
+    "47914": {
+        "wln": 142685,
+        "wn": null,
+        "name": "The Journey of a God: Book 1",
+        "list": "RoyalRoad"
+    },
     "47959": {
         "wln": 142434,
         "wn": null,
         "name": "Unliving",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "47997": {
         "wln": 142455,
         "wn": null,
         "name": "Overkill",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "48008": {
         "wln": 142383,
         "wn": null,
         "name": "Dreamers Ten-Tea-Cle Cafe",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "48017": {
         "wln": 142804,
         "wn": null,
         "name": "TWIG - The System Can't Save Me, But It Can't Stop Me Either [a gamelit-portal-fantasy-poem by eric river]",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad plan to read"
     },
     "48397": {
-        "wln": 142908,
-        "wn": null,
-        "name": "[Rewritten ver.] Solo Player Rebirth!",
-        "list": "RoyalRoad plan to read"
+        "wln": 140761,
+        "wn": "21071481705119105",
+        "name": "Solo Player Rebirth! (webnovel)",
+        "list": "duplicates"
     },
     "48642": {
         "wln": 143135,
