@@ -119,8 +119,8 @@ function skip($row) {
 	$op=array_keys($filters['conditions'])[0];
 	$ar=$filters['conditions'][$op];
 	$cond=NULL;
-	if($op=='or') $cond=false;
-	if($op=='and') $cond=true;
+	if($op=='or'||$op=='or2') $cond=false;
+	if($op=='and'||$op=='and2') $cond=true;
 	//var_dump($op, $cond);
 	assert($cond!==NULL);
 	foreach($ar as $ar2) {
@@ -277,6 +277,11 @@ foreach($wln_order as $id=>$list) {
 					$rr2=$rr2_;
 					unset($rr2_);
 				}
+				if( exists($rr2_, 'volumes') && count((array)get($rr2_, 'volumes'))>0 && array_sum(array_map(fn($e) => get($e,'count'), (array)get($rr2_, 'volumes'))) != count(get($rr2_, 'chapters')) ) {
+					$rr2_=$rr->get_chapter_list($wln2['rr']);
+					if(!array_key_exists('msg', $row)) $row['msg']='';
+					$row['msg'].='updating rr: '.__LINE__.' + ';
+				}
 				if(exists($rr1, 'last-read-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-read-title')) );
 					if(count($found)==0) {
@@ -368,6 +373,7 @@ foreach($wln_order as $id=>$list) {
 			}
 		}
 		if(count($row)>1) {
+			if(array_key_exists('pos',$row)&&(!array_key_exists('last',$row)||$row['last']===NULL)) $row['last']=0;
 			if(skip($row)) continue;
 			$row=colorize($row);
 			//var_dump($colors, $id);die();
@@ -392,7 +398,7 @@ foreach($wln_order as $id=>$list) {
 						if($max<$_pos) $max=$_pos;
 						//var_dump($row['title']);
 						$fn2=$pos_->createFileName($pos1['fn2'], $min, $max);
-						if(!file_exists(DROPBOX.$fn2)) {
+						if( !file_exists(DROPBOX.$fn2) || (array_key_exists('pos9', $row) && $row['pos9']<$row['pos']) ) {
 							$pos2=$pos_->createFileContent($min, $_pos, $max);
 							//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
 							file_put_contents(DROPBOX.$fn2, $pos2);

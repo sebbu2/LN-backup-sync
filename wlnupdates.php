@@ -62,6 +62,7 @@ class WLNUpdates extends SitePlugin
 	}
 	
 	public function watches() {
+		global $accounts;
 		$res = $this->send( 'https://www.wlnupdates.com/api', '{"mode":"get-watches"}', array('Content-Type: application/json') );
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'watches.json', $res);
@@ -71,8 +72,13 @@ class WLNUpdates extends SitePlugin
 			$res=$this->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
 			$this->LOGIN_TRIED=true;
 			if($res===false) die('you need to log in.');
-			$res=json_decode($res);
-			if(is_object($res) && $res->error==true) die($res->message);
+			try {
+				$res=json_decode($res);
+				if(is_object($res) && $res->error==true) die($res->message);
+			}
+			catch(TypeError) {
+				assert($res=='Logged in successfully');
+			}
 			$res = $this->watches();
 		}
 		$res2=$res->data[0];

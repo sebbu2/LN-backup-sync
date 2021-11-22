@@ -39,14 +39,22 @@
 				],
 			],
 			[
-				'>=',
-				'WLNUpdate cur',
-				'RoyalRoad last'
+				'and',
+				[
+					'=',
+					'RoyalRoad cur',
+					'RoyalRoad last',
+				],
+				[
+					'>=',
+					'WLNUpdate cur',
+					'RoyalRoad last'
+				],
 			],
 			[
 				'=',
-				'WLNUpdate cur',
-				'pos'
+				'pos',
+				'last'
 			],
 		],
 	},

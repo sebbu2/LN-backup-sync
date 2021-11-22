@@ -252,7 +252,8 @@ class RoyalRoad extends SitePlugin
 		foreach($res as $node) {
 			$ar3=array();
 			// <i class="fa fa-caret-right popovers" data-trigger="hover" data-container="body" data-placement="top" data-original-title="Reading Progress" data-content="This is the last chapter you've opened"></i>
-			if(array_key_exists('data-volume-id',(array)$node->attributes())) $ar3['data-volume-id']=(string)$node['data-volume-id'];
+			$attrs=((array)($node->attributes()))['@attributes'];
+			if(array_key_exists('data-volume-id',$attrs)) $ar3['data-volume-id']=(string)$attrs['data-volume-id'];
 			$ar3['href']=(string)$node->td[0]->a['href'];
 			$ar3['title']=trim((string)$node->td[0]->a);
 			$ar3['date']=(string)$node->td[1]->a->time['title'];
