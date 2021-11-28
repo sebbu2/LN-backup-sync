@@ -95,22 +95,6 @@
         "4": "97.6",
         "pos": 80
     },
-    "mana harvest the sword to ploughshares saga litrpg": {
-        "content": "9999999999999*0@0#0:0.0%",
-        "time": 1637016432,
-        "min": "1",
-        "max": "1",
-        "fn": "Mana_Harvest_The_Sword_to_Ploughshares_Saga_LiTRPG_1-1.epub.po",
-        "fn2": "Mana_Harvest_The_Sword_to_Ploughshares_Saga_LiTRPG",
-        "fn3": "mana harvest the sword to ploughshares saga litrpg",
-        "ext": "epub",
-        "0": "9999999999999",
-        "1": "0",
-        "2": "0",
-        "3": "0",
-        "4": "0.0",
-        "pos": 0
-    },
     "perfect secret love the bad new wife is a little sweet": {
         "content": "9999999999999*548@0#0:22.0%",
         "time": 1636085848,
@@ -126,6 +110,22 @@
         "3": "0",
         "4": "22.0",
         "pos": 548
+    },
+    "rend": {
+        "content": "9999999999999*0@0#0:0.0%",
+        "time": 1637682467,
+        "min": "105",
+        "max": "133",
+        "fn": "REND_105-133.epub.po",
+        "fn2": "REND",
+        "fn3": "rend",
+        "ext": "epub",
+        "0": "9999999999999",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0.0",
+        "pos": 0
     },
     "the tragedy of house lacerta book 1 angel of the red sun": {
         "content": "9999999999999*0@0#0:0.0%",

@@ -113,6 +113,12 @@
         "name": "Andur's Oneshot collection",
         "list": "RoyalRoad plan to read"
     },
+    "3966": {
+        "wln": 32671,
+        "wn": "11591831906434205",
+        "name": "Lord Shadow",
+        "list": "QIDIAN plan to read"
+    },
     "4023": {
         "wln": 32702,
         "wn": null,
@@ -377,6 +383,12 @@
         "name": "The Prince of Cats",
         "list": "RoyalRoad plan to read"
     },
+    "22019": {
+        "wln": 77757,
+        "wn": null,
+        "name": "Undermind",
+        "list": "RoyalRoad"
+    },
     "22518": {
         "wln": 2768,
         "wn": "11236791006300205",
@@ -388,6 +400,12 @@
         "wn": "12749523606078605",
         "name": "Monster Integration",
         "list": "QIDIAN plan to read"
+    },
+    "22848": {
+        "wln": 86198,
+        "wn": null,
+        "name": "Post Human",
+        "list": "RoyalRoad"
     },
     "23055": {
         "wln": 87289,
@@ -484,6 +502,12 @@
         "wn": null,
         "name": "Skybound",
         "list": "RoyalRoad plan to read"
+    },
+    "26284": {
+        "wln": 143456,
+        "wn": null,
+        "name": "Seven (Riese)",
+        "list": "RoyalRoad"
     },
     "26294": {
         "wln": 107213,
@@ -611,6 +635,12 @@
         "name": "Unbound (LitRPG Portal Fantasy)",
         "list": "RoyalRoad plan to read"
     },
+    "30380": {
+        "wln": 112421,
+        "wn": null,
+        "name": "Jayke Cipher",
+        "list": "RoyalRoad"
+    },
     "30605": {
         "wln": 81989,
         "wn": null,
@@ -689,6 +719,12 @@
         "name": "Rend",
         "list": "RoyalRoad"
     },
+    "32747": {
+        "wln": 116393,
+        "wn": null,
+        "name": "The House Witch",
+        "list": "RoyalRoad"
+    },
     "32908": {
         "wln": 120338,
         "wn": null,
@@ -718,6 +754,12 @@
         "wn": null,
         "name": "Aoi",
         "list": "RoyalRoad plan to read"
+    },
+    "33295": {
+        "wln": 117274,
+        "wn": null,
+        "name": "Summon Imp!",
+        "list": "RoyalRoad"
     },
     "33363": {
         "wln": 117803,
@@ -790,6 +832,12 @@
         "wn": null,
         "name": "Romantically Apocalyptic",
         "list": "RoyalRoad plan to read"
+    },
+    "34753": {
+        "wln": 119358,
+        "wn": null,
+        "name": "The 13th Essence",
+        "list": "RoyalRoad"
     },
     "34777": {
         "wln": 120139,
@@ -873,7 +921,7 @@
         "wln": 128990,
         "wn": null,
         "name": "The Stained Tower",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "36726": {
         "wln": 128782,
@@ -1072,6 +1120,12 @@
         "wn": null,
         "name": "Reincarnation Station: Death, Cake and Friendship",
         "list": "RoyalRoad plan to read"
+    },
+    "40738": {
+        "wln": 134418,
+        "wn": null,
+        "name": "Tutorial (The Soul Survivor Series)",
+        "list": "RoyalRoad"
     },
     "40888": {
         "wln": 135424,
@@ -1319,10 +1373,22 @@
         "name": "The Trickster's Tale 2: Gnomes Don't Rule!",
         "list": "RoyalRoad"
     },
+    "43318": {
+        "wln": 137412,
+        "wn": null,
+        "name": "The Butcher of Gadobhra",
+        "list": "RoyalRoad"
+    },
     "43377": {
         "wln": 137112,
         "wn": null,
         "name": "The Way of Wrought Earth, or: My Tale of Rebirth as a Mostly Inanimate Rock",
+        "list": "RoyalRoad"
+    },
+    "43592": {
+        "wln": 137281,
+        "wn": null,
+        "name": "A Sense for magic",
         "list": "RoyalRoad"
     },
     "43638": {
@@ -1354,6 +1420,12 @@
         "wn": null,
         "name": "The Calamitous Bob",
         "list": "RoyalRoad"
+    },
+    "44205": {
+        "wln": 137915,
+        "wn": null,
+        "name": "I Was Summoned To Have Tea With The Demon Lord [Rewrite]",
+        "list": "RoyalRoad plan to read"
     },
     "44229": {
         "wln": 137802,
@@ -1439,6 +1511,12 @@
         "name": "The King's Soul: A LitRPG Wuxia Novel",
         "list": "RoyalRoad plan to read"
     },
+    "45229": {
+        "wln": 139193,
+        "wn": null,
+        "name": "Epic Blade - a LitRPG Adventure",
+        "list": "RoyalRoad"
+    },
     "45434": {
         "wln": 139257,
         "wn": null,
@@ -1469,10 +1547,16 @@
         "name": "Rise of the Firstborn",
         "list": "RoyalRoad plan to read"
     },
+    "45610": {
+        "wln": 139385,
+        "wn": null,
+        "name": "My Dream World Is A Gacha Nightmare",
+        "list": "RoyalRoad plan to read"
+    },
     "45718": {
         "wln": 143341,
         "wn": null,
-        "name": "The Summoned Hero Is Actually A Dark Lord",
+        "name": "Of Mana and Mages",
         "list": "RoyalRoad"
     },
     "45898": {
@@ -1565,10 +1649,28 @@
         "name": "Dungeon Core? Nah, I Think I'll Just Get Super-Wealthy Instead",
         "list": "RoyalRoad"
     },
+    "47175": {
+        "wln": 142867,
+        "wn": null,
+        "name": "Sage of Humanity",
+        "list": "RoyalRoad"
+    },
     "47287": {
         "wln": 141602,
         "wn": null,
         "name": "Blue Eden: Iron Children",
+        "list": "RoyalRoad"
+    },
+    "47434": {
+        "wln": 142237,
+        "wn": null,
+        "name": "Apocalypse Parenting",
+        "list": "RoyalRoad"
+    },
+    "47541": {
+        "wln": 141951,
+        "wn": null,
+        "name": "The Trials of Bethany",
         "list": "RoyalRoad"
     },
     "47557": {
@@ -1605,6 +1707,12 @@
         "wln": 142434,
         "wn": null,
         "name": "Unliving",
+        "list": "RoyalRoad"
+    },
+    "47995": {
+        "wln": 142601,
+        "wn": null,
+        "name": "Memoirs of Your Local Small-time Villainess",
         "list": "RoyalRoad"
     },
     "47997": {

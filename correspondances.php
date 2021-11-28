@@ -298,7 +298,7 @@ if(direct()) {
 			//if($n===$n2) {
 			if(strtolower($n)===strtolower($n2)) {
 				$rr_id=$k4;
-				$skip_wn_rr[$k4];
+				$skip_wn_rr[$k4]=true;
 				break;
 			}
 		}

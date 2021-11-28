@@ -494,6 +494,16 @@
         "wn": "20173529706658205",
         "rr": 41764
     },
+    "ADM": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "adm": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
     "ADMS": {
         "wln": 131750,
         "wn": "17923880906710705",
@@ -652,6 +662,16 @@
     "afg": {
         "wln": 65219,
         "wn": "9120998805002205",
+        "rr": null
+    },
+    "AFKFSIBIWKI": {
+        "wln": 143589,
+        "wn": "21344870805998005",
+        "rr": null
+    },
+    "afkfsibiwki": {
+        "wln": 143589,
+        "wn": "21344870805998005",
         "rr": null
     },
     "A Friendly Voidling": {
@@ -1094,6 +1114,16 @@
         "wn": "19824496705355005",
         "rr": null
     },
+    "All-Duties Mage": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "all-duties mage": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
     "All-Heaven Armageddon Online": {
         "wln": 107199,
         "wn": "15247584006719305",
@@ -1135,12 +1165,12 @@
         "rr": 43013
     },
     "All Time Marksman": {
-        "wln": null,
+        "wln": 143386,
         "wn": "19617941206903405",
         "rr": null
     },
     "all time marksman": {
-        "wln": null,
+        "wln": 143386,
         "wn": "19617941206903405",
         "rr": null
     },
@@ -1194,10 +1224,15 @@
         "wn": null,
         "rr": 37231
     },
-    "A lonely dungeon": {
-        "wln": 128991,
-        "wn": null,
-        "rr": 37231
+    "AMA": {
+        "wln": 79515,
+        "wn": "12734134605928505",
+        "rr": null
+    },
+    "ama": {
+        "wln": 79515,
+        "wn": "12734134605928505",
+        "rr": null
     },
     "AMBAL": {
         "wln": 142338,
@@ -1544,6 +1579,16 @@
         "wn": "20618967105044205",
         "rr": null
     },
+    "Apocalypse Parenting": {
+        "wln": 142237,
+        "wn": null,
+        "rr": 47434
+    },
+    "apocalypse parenting": {
+        "wln": 142237,
+        "wn": null,
+        "rr": 47434
+    },
     "Apocalypse Summoner": {
         "wln": 143212,
         "wn": null,
@@ -1794,6 +1839,16 @@
         "wn": "19722100105045105",
         "rr": null
     },
+    "A Sense for magic": {
+        "wln": 137281,
+        "wn": null,
+        "rr": 43592
+    },
+    "a sense for magic": {
+        "wln": 137281,
+        "wn": null,
+        "rr": 43592
+    },
     "ASJ": {
         "wln": 57678,
         "wn": "6838665602002105",
@@ -1932,6 +1987,16 @@
     "athw": {
         "wln": 78588,
         "wn": "12571724705955005",
+        "rr": null
+    },
+    "ATM": {
+        "wln": 143386,
+        "wn": "19617941206903405",
+        "rr": null
+    },
+    "atm": {
+        "wln": 143386,
+        "wn": "19617941206903405",
         "rr": null
     },
     "ATTE": {
@@ -2239,6 +2304,26 @@
         "wn": "20670509006798605",
         "rr": null
     },
+    "Before Night": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "before night": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "Beli Satu Anak Gratis Suami": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "beli satu anak gratis suami": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
     "Beneath the Dragoneye Moons": {
         "wln": 128229,
         "wn": null,
@@ -2257,6 +2342,16 @@
     "berserk stick system": {
         "wln": 143019,
         "wn": "20686236205743405",
+        "rr": null
+    },
+    "BES": {
+        "wln": 142533,
+        "wn": "19715562306157405",
+        "rr": null
+    },
+    "bes": {
+        "wln": 142533,
+        "wn": "19715562306157405",
         "rr": null
     },
     "Beware Of Chicken": {
@@ -2614,6 +2709,16 @@
         "wn": "9795126406003205",
         "rr": null
     },
+    "Boss Lan": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "boss lan": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
     "Boss Monster Chat Group": {
         "wln": 142537,
         "wn": "18270790706135405",
@@ -2837,6 +2942,26 @@
     "bu\\u00f4ng ra em ph\\u00f9 th\\u1ee7y kia": {
         "wln": 43524,
         "wn": "7931338406001705",
+        "rr": null
+    },
+    "By The Power of Cute, I Turned The Hero Into My Simp": {
+        "wln": 131234,
+        "wn": null,
+        "rr": null
+    },
+    "by the power of cute, i turned the hero into my simp": {
+        "wln": 131234,
+        "wn": null,
+        "rr": null
+    },
+    "By The Power of Cute I Turned The Hero Into My Simp": {
+        "wln": 131234,
+        "wn": null,
+        "rr": null
+    },
+    "by the power of cute i turned the hero into my simp": {
+        "wln": 131234,
+        "wn": null,
         "rr": null
     },
     "B\\u00E0n Long": {
@@ -3139,6 +3264,16 @@
         "wn": "17465457506126705",
         "rr": null
     },
+    "Choc Tuc Vo Yeu Mua 1 Tang 1": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "choc tuc vo yeu mua 1 tang 1": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
     "Chronicles of the Weakest Wind Mage": {
         "wln": 63699,
         "wn": "10330951406005605",
@@ -3158,6 +3293,11 @@
         "wln": 2768,
         "wn": "11236791006300205",
         "rr": 22518
+    },
+    "chuan yue wei lai zhi nan ren bu hao dang": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
     },
     "CHUA TE CHI VUONG": {
         "wln": 44136,
@@ -3242,6 +3382,16 @@
     "ch\\u1ea5p ma": {
         "wln": 46295,
         "wn": "17519095906382505",
+        "rr": null
+    },
+    "Ch\\u1ECDc T\\u1EE9c V\\u1EE3 Y\\u00EAu Mua 1 T\\u1EB7ng 1": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "ch\\u1ecdc t\\u1ee9c v\\u1ee3 y\\u00eau mua 1 t\\u1eb7ng 1": {
+        "wln": 52831,
+        "wn": "8060642606003005",
         "rr": null
     },
     "Ch\\u1EE7 t\\u1EC3 chi v\\u01B0\\u01A1ng": {
@@ -3562,6 +3712,16 @@
     "crazy lichs experimental diary": {
         "wln": 34444,
         "wn": "7979375206002305",
+        "rr": null
+    },
+    "Crossing to the Future its Not Easy to Be a Man": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "crossing to the future its not easy to be a man": {
+        "wln": 61011,
+        "wn": "8534263705001005",
         "rr": null
     },
     "CRS": {
@@ -3934,6 +4094,16 @@
         "wn": null,
         "rr": 23240
     },
+    "DATGS": {
+        "wln": 143391,
+        "wn": "16700033805886005",
+        "rr": null
+    },
+    "datgs": {
+        "wln": 143391,
+        "wn": "16700033805886005",
+        "rr": null
+    },
     "da wang rao ming": {
         "wln": 64197,
         "wn": "9067107706001305",
@@ -4002,6 +4172,16 @@
     "dba": {
         "wln": 42253,
         "wn": "17914735705523805",
+        "rr": null
+    },
+    "DBU": {
+        "wln": 143393,
+        "wn": "18675202106708905",
+        "rr": null
+    },
+    "dbu": {
+        "wln": 143393,
+        "wn": "18675202106708905",
         "rr": null
     },
     "DBY": {
@@ -4105,12 +4285,12 @@
         "rr": null
     },
     "Death is the only escape": {
-        "wln": null,
+        "wln": 130381,
         "wn": "18953668105704805",
         "rr": null
     },
     "death is the only escape": {
-        "wln": null,
+        "wln": 130381,
         "wn": "18953668105704805",
         "rr": null
     },
@@ -4164,6 +4344,16 @@
         "wn": null,
         "rr": 25225
     },
+    "Demon's Cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
+    "demon's cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
     "Demon's Journey": {
         "wln": 44214,
         "wn": null,
@@ -4184,13 +4374,23 @@
         "wn": "15238973305579305",
         "rr": null
     },
+    "Demon Lord's Reincarnation": {
+        "wln": 78341,
+        "wn": "10661090206092505",
+        "rr": null
+    },
+    "demon lord's reincarnation": {
+        "wln": 78341,
+        "wn": "10661090206092505",
+        "rr": null
+    },
     "Demon Lords Reincarnation": {
-        "wln": null,
+        "wln": 78341,
         "wn": "10661090206092505",
         "rr": null
     },
     "demon lords reincarnation": {
-        "wln": null,
+        "wln": 78341,
         "wn": "10661090206092505",
         "rr": null
     },
@@ -4232,6 +4432,16 @@
     "demons beside you": {
         "wln": 109803,
         "wn": "13925801605339805",
+        "rr": null
+    },
+    "Demons Cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
+    "demons cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
         "rr": null
     },
     "DEMONS Getting Summoned Weekly isnt so Bad": {
@@ -4299,14 +4509,34 @@
         "wn": "8094058605004605",
         "rr": null
     },
+    "Desolate World: Starting with [Selection Option]": {
+        "wln": 143387,
+        "wn": "19644990506970505",
+        "rr": null
+    },
+    "desolate world: starting with [selection option]": {
+        "wln": 143387,
+        "wn": "19644990506970505",
+        "rr": null
+    },
     "Desolate World Starting with Selection Option": {
-        "wln": null,
+        "wln": 143387,
         "wn": "19644990506970505",
         "rr": null
     },
     "desolate world starting with selection option": {
-        "wln": null,
+        "wln": 143387,
         "wn": "19644990506970505",
+        "rr": null
+    },
+    "Devils Cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
+    "devils cage": {
+        "wln": 43268,
+        "wn": "7736629105000905",
         "rr": null
     },
     "de yu nan ren": {
@@ -4364,13 +4594,23 @@
         "wn": null,
         "rr": null
     },
+    "Digging to Survive: I Can See Hints": {
+        "wln": 143388,
+        "wn": "19581889005681105",
+        "rr": null
+    },
+    "digging to survive: i can see hints": {
+        "wln": 143388,
+        "wn": "19581889005681105",
+        "rr": null
+    },
     "Digging to Survive I Can See Hints": {
-        "wln": null,
+        "wln": 143388,
         "wn": "19581889005681105",
         "rr": null
     },
     "digging to survive i can see hints": {
-        "wln": null,
+        "wln": 143388,
         "wn": "19581889005681105",
         "rr": null
     },
@@ -4415,23 +4655,43 @@
         "rr": null
     },
     "Dimension System": {
-        "wln": null,
+        "wln": 64172,
         "wn": "10503298005049905",
         "rr": null
     },
     "dimension system": {
-        "wln": null,
+        "wln": 64172,
         "wn": "10503298005049905",
         "rr": null
     },
+    "Disciple, Don't Cause Trouble, Master Won't Leave the Mountain!": {
+        "wln": 143385,
+        "wn": "19832789006531205",
+        "rr": null
+    },
+    "disciple, don't cause trouble, master won't leave the mountain!": {
+        "wln": 143385,
+        "wn": "19832789006531205",
+        "rr": null
+    },
     "Disciple Dont Cause Trouble Master Wont Leave the Mountain": {
-        "wln": null,
+        "wln": 143385,
         "wn": "19832789006531205",
         "rr": null
     },
     "disciple dont cause trouble master wont leave the mountain": {
-        "wln": null,
+        "wln": 143385,
         "wn": "19832789006531205",
+        "rr": null
+    },
+    "DiSys": {
+        "wln": 64172,
+        "wn": "10503298005049905",
+        "rr": null
+    },
+    "disys": {
+        "wln": 64172,
+        "wn": "10503298005049905",
         "rr": null
     },
     "Di The Ta Quan": {
@@ -4465,38 +4725,58 @@
         "rr": null
     },
     "Divine God Against The Heavens": {
-        "wln": null,
+        "wln": 143389,
         "wn": "17605463906866605",
         "rr": null
     },
     "divine god against the heavens": {
-        "wln": null,
+        "wln": 143389,
         "wn": "17605463906866605",
         "rr": null
     },
     "Divine Path System": {
-        "wln": null,
+        "wln": 143390,
         "wn": "20852303805452505",
         "rr": null
     },
     "divine path system": {
-        "wln": null,
+        "wln": 143390,
         "wn": "20852303805452505",
         "rr": null
     },
+    "Divinity: Against the Godly System": {
+        "wln": 143391,
+        "wn": "16700033805886005",
+        "rr": null
+    },
+    "divinity: against the godly system": {
+        "wln": 143391,
+        "wn": "16700033805886005",
+        "rr": null
+    },
     "Divinity Against the Godly System": {
-        "wln": null,
+        "wln": 143391,
         "wn": "16700033805886005",
         "rr": null
     },
     "divinity against the godly system": {
-        "wln": null,
+        "wln": 143391,
         "wn": "16700033805886005",
         "rr": null
     },
     "di yi xu lie": {
         "wln": 109194,
         "wn": "14219251705674005",
+        "rr": null
+    },
+    "DKS": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
+    "dks": {
+        "wln": 69400,
+        "wn": "10026092106003405",
         "rr": null
     },
     "DLIK": {
@@ -4507,6 +4787,16 @@
     "dlik": {
         "wln": 67117,
         "wn": "9320715905002805",
+        "rr": null
+    },
+    "DLR": {
+        "wln": 78341,
+        "wn": "10661090206092505",
+        "rr": null
+    },
+    "dlr": {
+        "wln": 78341,
+        "wn": "10661090206092505",
         "rr": null
     },
     "DME": {
@@ -4619,23 +4909,33 @@
         "wn": null,
         "rr": 403
     },
+    "Doomsday: I Obtained A Fallen Angel Pet At The Start Of The Game": {
+        "wln": 143392,
+        "wn": "19479420206572505",
+        "rr": null
+    },
+    "doomsday: i obtained a fallen angel pet at the start of the game": {
+        "wln": 143392,
+        "wn": "19479420206572505",
+        "rr": null
+    },
     "Doomsday Bunker Upgrade": {
-        "wln": null,
+        "wln": 143393,
         "wn": "18675202106708905",
         "rr": null
     },
     "doomsday bunker upgrade": {
-        "wln": null,
+        "wln": 143393,
         "wn": "18675202106708905",
         "rr": null
     },
     "Doomsday I Obtained A Fallen Angel Pet At The Start Of The Game": {
-        "wln": null,
+        "wln": 143392,
         "wn": "19479420206572505",
         "rr": null
     },
     "doomsday i obtained a fallen angel pet at the start of the game": {
-        "wln": null,
+        "wln": 143392,
         "wn": "19479420206572505",
         "rr": null
     },
@@ -4704,6 +5004,16 @@
         "wn": "12873203905758905",
         "rr": null
     },
+    "DPS": {
+        "wln": 143390,
+        "wn": "20852303805452505",
+        "rr": null
+    },
+    "dps": {
+        "wln": 143390,
+        "wn": "20852303805452505",
+        "rr": null
+    },
     "Dragon's Dilemma": {
         "wln": 138074,
         "wn": null,
@@ -4734,13 +5044,23 @@
         "wn": "19320316505991005",
         "rr": null
     },
+    "Dragon King's Son-In-Law": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
+    "dragon king's son-in-law": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
     "Dragon Kings Son-In-Law": {
-        "wln": null,
+        "wln": 69400,
         "wn": "10026092106003405",
         "rr": null
     },
     "dragon kings son-in-law": {
-        "wln": null,
+        "wln": 69400,
         "wn": "10026092106003405",
         "rr": null
     },
@@ -4775,13 +5095,43 @@
         "rr": null
     },
     "Dragon Tamer": {
-        "wln": null,
+        "wln": 88204,
         "wn": "17527808905320505",
         "rr": null
     },
     "dragon tamer": {
-        "wln": null,
+        "wln": 88204,
         "wn": "17527808905320505",
+        "rr": null
+    },
+    "Dragon Tamer (SupremeAuthor)": {
+        "wln": 143394,
+        "wn": null,
+        "rr": null
+    },
+    "dragon tamer (supremeauthor)": {
+        "wln": 143394,
+        "wn": null,
+        "rr": null
+    },
+    "Dragon Tamer Chaos": {
+        "wln": 88204,
+        "wn": "17527808905320505",
+        "rr": null
+    },
+    "dragon tamer chaos": {
+        "wln": 88204,
+        "wn": "17527808905320505",
+        "rr": null
+    },
+    "Dragon Tamer SupremeAuthor": {
+        "wln": 143394,
+        "wn": null,
+        "rr": null
+    },
+    "dragon tamer supremeauthor": {
+        "wln": 143394,
+        "wn": null,
         "rr": null
     },
     "Dreamer's Ten-Tea-Cle Caf\\u00E9": {
@@ -5019,13 +5369,43 @@
         "wn": "7141995206000505",
         "rr": null
     },
+    "DWSSO": {
+        "wln": 143387,
+        "wn": "19644990506970505",
+        "rr": null
+    },
+    "dwsso": {
+        "wln": 143387,
+        "wn": "19644990506970505",
+        "rr": null
+    },
+    "Dysfunctional": {
+        "wln": 143395,
+        "wn": "17028778405190805",
+        "rr": null
+    },
+    "dysfunctional": {
+        "wln": 143395,
+        "wn": "17028778405190805",
+        "rr": null
+    },
+    "Dysfunctional - An Assassin's Guide to Reincarnating in Another World": {
+        "wln": 143395,
+        "wn": "17028778405190805",
+        "rr": null
+    },
+    "dysfunctional - an assassin's guide to reincarnating in another world": {
+        "wln": 143395,
+        "wn": "17028778405190805",
+        "rr": null
+    },
     "Dysfunctional - An Assassins Guide to Reincarnating in Another World": {
-        "wln": null,
+        "wln": 143395,
         "wn": "17028778405190805",
         "rr": null
     },
     "dysfunctional - an assassins guide to reincarnating in another world": {
-        "wln": null,
+        "wln": 143395,
         "wn": "17028778405190805",
         "rr": null
     },
@@ -5179,6 +5559,16 @@
         "wn": "18133088805394105",
         "rr": null
     },
+    "EDM": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
+    "edm": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
     "EEWC": {
         "wln": 48692,
         "wn": "7979503906002405",
@@ -5259,13 +5649,23 @@
         "wn": "11022735705240605",
         "rr": null
     },
+    "Elite Doting Marriage: Crafty Husband, Aloof Cute Wife": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
+    "elite doting marriage: crafty husband, aloof cute wife": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
     "Elite Doting Marriage Crafty Husband Aloof Cute Wife": {
-        "wln": null,
+        "wln": 72306,
         "wn": "11257419905314505",
         "rr": null
     },
     "elite doting marriage crafty husband aloof cute wife": {
-        "wln": null,
+        "wln": 72306,
         "wn": "11257419905314505",
         "rr": null
     },
@@ -5334,6 +5734,11 @@
         "wn": "13925801605339805",
         "rr": null
     },
+    "e mo qiu long": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
     "Emperor's Domination": {
         "wln": 42758,
         "wn": null,
@@ -5342,6 +5747,16 @@
     "emperor's domination": {
         "wln": 42758,
         "wn": null,
+        "rr": null
+    },
+    "Emperor of Ancient Gods": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "emperor of ancient gods": {
+        "wln": 59641,
+        "wn": "8324025906000205",
         "rr": null
     },
     "Emperor of Soul Pets": {
@@ -5529,6 +5944,16 @@
         "wn": "15787990506065305",
         "rr": null
     },
+    "EoS": {
+        "wln": 143608,
+        "wn": "20282586805798805",
+        "rr": null
+    },
+    "eos": {
+        "wln": 143608,
+        "wn": "20282586805798805",
+        "rr": null
+    },
     "EoSP": {
         "wln": 117654,
         "wn": "18370194106549205",
@@ -5538,6 +5963,16 @@
         "wln": 117654,
         "wn": "18370194106549205",
         "rr": null
+    },
+    "Epic Blade - a LitRPG Adventure": {
+        "wln": 139193,
+        "wn": null,
+        "rr": 45229
+    },
+    "epic blade - a litrpg adventure": {
+        "wln": 139193,
+        "wn": null,
+        "rr": 45229
     },
     "Epic of Caterpillar": {
         "wln": 111199,
@@ -5549,33 +5984,63 @@
         "wn": "15787990506065305",
         "rr": null
     },
+    "Epic of Ice Dragon: Reborn As An Ice Dragon With A System": {
+        "wln": 143609,
+        "wn": "20194068905822805",
+        "rr": null
+    },
+    "epic of ice dragon: reborn as an ice dragon with a system": {
+        "wln": 143609,
+        "wn": "20194068905822805",
+        "rr": null
+    },
     "Epic of Ice Dragon Reborn As An Ice Dragon With A System": {
-        "wln": null,
+        "wln": 143609,
         "wn": "20194068905822805",
         "rr": null
     },
     "epic of ice dragon reborn as an ice dragon with a system": {
-        "wln": null,
+        "wln": 143609,
         "wn": "20194068905822805",
         "rr": null
     },
+    "Epic of Summoner: Supreme Summoner System in the Apocalypse": {
+        "wln": 143608,
+        "wn": "20282586805798805",
+        "rr": null
+    },
+    "epic of summoner: supreme summoner system in the apocalypse": {
+        "wln": 143608,
+        "wn": "20282586805798805",
+        "rr": null
+    },
     "Epic of Summoner Supreme Summoner System in the Apocalypse": {
-        "wln": null,
+        "wln": 143608,
         "wn": "20282586805798805",
         "rr": null
     },
     "epic of summoner supreme summoner system in the apocalypse": {
-        "wln": null,
+        "wln": 143608,
         "wn": "20282586805798805",
         "rr": null
     },
+    "Epic of Vampire Dragon: Reborn As A Vampire Dragon With a System": {
+        "wln": 143607,
+        "wn": "20568014505538405",
+        "rr": null
+    },
+    "epic of vampire dragon: reborn as a vampire dragon with a system": {
+        "wln": 143607,
+        "wn": "20568014505538405",
+        "rr": null
+    },
     "Epic of Vampire Dragon Reborn As A Vampire Dragon With a System": {
-        "wln": null,
+        "wln": 143607,
         "wn": "20568014505538405",
         "rr": null
     },
     "epic of vampire dragon reborn as a vampire dragon with a system": {
-        "wln": null,
+        "wln": 143607,
         "wn": "20568014505538405",
         "rr": null
     },
@@ -5657,6 +6122,16 @@
     "eternal cultivation of alchemy": {
         "wln": 142661,
         "wn": "20215883106325105",
+        "rr": null
+    },
+    "Eternal God Emperor": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "eternal god emperor": {
+        "wln": 59641,
+        "wn": "8324025906000205",
         "rr": null
     },
     "Eternal Sacred King": {
@@ -5749,6 +6224,26 @@
         "wn": "20280736406963205",
         "rr": null
     },
+    "Ever Night": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "ever night": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "Ever Night drama": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "ever night drama": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "Everybody is Kung Fu Fighting While I Started a Farm": {
         "wln": null,
         "wn": "17527789006425805",
@@ -5779,6 +6274,16 @@
         "wn": null,
         "rr": 46047
     },
+    "Everyone's a Land Ruler, Rolling Demon Soldier Types at the Start": {
+        "wln": 143604,
+        "wn": "20793147905823705",
+        "rr": null
+    },
+    "everyone's a land ruler, rolling demon soldier types at the start": {
+        "wln": 143604,
+        "wn": "20793147905823705",
+        "rr": null
+    },
     "Everyones a Catgirl": {
         "wln": 140134,
         "wn": null,
@@ -5790,12 +6295,12 @@
         "rr": 46047
     },
     "Everyones a Land Ruler Rolling Demon Soldier Types at the Start": {
-        "wln": null,
+        "wln": 143604,
         "wn": "20793147905823705",
         "rr": null
     },
     "everyones a land ruler rolling demon soldier types at the start": {
-        "wln": null,
+        "wln": 143604,
         "wn": "20793147905823705",
         "rr": null
     },
@@ -6249,6 +6754,16 @@
         "wn": "6838665402001705",
         "rr": null
     },
+    "FMHM": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "fmhm": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
     "FMOC": {
         "wln": 50175,
         "wn": "6838665402001705",
@@ -6369,16 +6884,6 @@
         "wn": null,
         "rr": 46378
     },
-    "Frameshift - Magic, Math, and Not Enough Context": {
-        "wln": 141013,
-        "wn": null,
-        "rr": 46378
-    },
-    "frameshift - magic, math, and not enough context": {
-        "wln": 141013,
-        "wn": null,
-        "rr": 46378
-    },
     "Frameshift - Magic Math and Not Enough Context": {
         "wln": 141013,
         "wn": null,
@@ -6439,6 +6944,26 @@
         "wn": "7669823706001105",
         "rr": null
     },
+    "Full-Time Expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "full-time expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "Full-Time Magister": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "full-time magister": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
     "Full Dive: Eternal Phantasy": {
         "wln": 137557,
         "wn": "15646926606621705",
@@ -6460,13 +6985,18 @@
         "rr": null
     },
     "Full Marks Hidden Marriage Pick Up a Son Get a Free Husband": {
-        "wln": null,
+        "wln": 52831,
         "wn": "8060642606003005",
         "rr": null
     },
     "full marks hidden marriage pick up a son get a free husband": {
-        "wln": null,
+        "wln": 52831,
         "wn": "8060642606003005",
+        "rr": null
+    },
+    "fu tian shi": {
+        "wln": 64541,
+        "wn": "9795116706003105",
         "rr": null
     },
     "FWH": {
@@ -6577,6 +7107,16 @@
     "gc": {
         "wln": 109811,
         "wn": "15125244205886905",
+        "rr": null
+    },
+    "GC FTUD": {
+        "wln": 143603,
+        "wn": "20967309606620905",
+        "rr": null
+    },
+    "gc ftud": {
+        "wln": 143603,
+        "wn": "20967309606620905",
         "rr": null
     },
     "GDBBM": {
@@ -6809,13 +7349,23 @@
         "wn": "19643440406966805",
         "rr": null
     },
+    "Global Cultivation: First-time Top-up for the Ultimate Destiny Treasure": {
+        "wln": 143603,
+        "wn": "20967309606620905",
+        "rr": null
+    },
+    "global cultivation: first-time top-up for the ultimate destiny treasure": {
+        "wln": 143603,
+        "wn": "20967309606620905",
+        "rr": null
+    },
     "Global Cultivation First-time Top-up for the Ultimate Destiny Treasure": {
-        "wln": null,
+        "wln": 143603,
         "wn": "20967309606620905",
         "rr": null
     },
     "global cultivation first-time top-up for the ultimate destiny treasure": {
-        "wln": null,
+        "wln": 143603,
         "wn": "20967309606620905",
         "rr": null
     },
@@ -6875,12 +7425,12 @@
         "rr": null
     },
     "God Emperor": {
-        "wln": null,
+        "wln": 59641,
         "wn": "8324025906000205",
         "rr": null
     },
     "god emperor": {
-        "wln": null,
+        "wln": 59641,
         "wn": "8324025906000205",
         "rr": null
     },
@@ -7509,6 +8059,26 @@
         "wn": null,
         "rr": 26294
     },
+    "HGWS": {
+        "wln": 76933,
+        "wn": "12333953306291305",
+        "rr": null
+    },
+    "hgws": {
+        "wln": 76933,
+        "wn": "12333953306291305",
+        "rr": null
+    },
+    "Hidden Marriage": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "hidden marriage": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
     "Hide in the Banished Palace and Level Up To A Big Boss": {
         "wln": null,
         "wn": "19402364205223705",
@@ -7530,22 +8100,62 @@
         "rr": 34777
     },
     "His Genius Wife is a Superstar": {
-        "wln": null,
+        "wln": 76933,
         "wn": "12333953306291305",
         "rr": null
     },
     "his genius wife is a superstar": {
-        "wln": null,
+        "wln": 76933,
         "wn": "12333953306291305",
         "rr": null
     },
+    "History's Number 1 Founder": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "history's number 1 founder": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
     "Historys Number 1 Founder": {
-        "wln": null,
+        "wln": 33496,
         "wn": "6838665602003605",
         "rr": null
     },
     "historys number 1 founder": {
-        "wln": null,
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "Historys Number One Founder": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "historys number one founder": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "HM": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "hm": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "HN1F": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "hn1f": {
+        "wln": 33496,
         "wn": "6838665602003605",
         "rr": null
     },
@@ -7734,6 +8344,16 @@
         "wn": "18253916006055005",
         "rr": null
     },
+    "I'm Cultivating Immortality While Everyone Else Practices Martial Arts": {
+        "wln": 143602,
+        "wn": "19524380806685505",
+        "rr": null
+    },
+    "i'm cultivating immortality while everyone else practices martial arts": {
+        "wln": 143602,
+        "wn": "19524380806685505",
+        "rr": null
+    },
     "I'm Not a Competitive Necromancer": {
         "wln": 137101,
         "wn": null,
@@ -7757,6 +8377,16 @@
     "I've Became Able to Do Anything With My Growth Cheat, but I Can't Seem to Get Out of Being Jobless": {
         "wln": 35826,
         "wn": null,
+        "rr": null
+    },
+    "I've Killed Thousands of People, and You Tell Me It's an Escape Show?": {
+        "wln": 143601,
+        "wn": "20189787406931305",
+        "rr": null
+    },
+    "i've killed thousands of people, and you tell me it's an escape show?": {
+        "wln": 143601,
+        "wn": "20189787406931305",
         "rr": null
     },
     "IAAND": {
@@ -8064,6 +8694,16 @@
         "wn": "9545213205003105",
         "rr": null
     },
+    "Ice Dragon": {
+        "wln": 143609,
+        "wn": "20194068905822805",
+        "rr": null
+    },
+    "ice dragon": {
+        "wln": 143609,
+        "wn": "20194068905822805",
+        "rr": null
+    },
     "ICTF": {
         "wln": 65321,
         "wn": "9545213205003105",
@@ -8165,12 +8805,12 @@
         "rr": null
     },
     "I Evolved Into a Super Tyrannosaurus Before Future Humans Arrived": {
-        "wln": null,
+        "wln": 143600,
         "wn": "19886806806813905",
         "rr": null
     },
     "i evolved into a super tyrannosaurus before future humans arrived": {
-        "wln": null,
+        "wln": 143600,
         "wn": "19886806806813905",
         "rr": null
     },
@@ -8215,12 +8855,12 @@
         "rr": null
     },
     "I Got An SSS-Grade Unique Skill Extreme Luck As My Starter Skill": {
-        "wln": null,
+        "wln": 138706,
         "wn": "19400623906365905",
         "rr": null
     },
     "i got an sss-grade unique skill extreme luck as my starter skill": {
-        "wln": null,
+        "wln": 138706,
         "wn": "19400623906365905",
         "rr": null
     },
@@ -8474,13 +9114,33 @@
         "wn": "17789747605920005",
         "rr": null
     },
+    "IKTPYTES": {
+        "wln": 143601,
+        "wn": "20189787406931305",
+        "rr": null
+    },
+    "iktpytes": {
+        "wln": 143601,
+        "wn": "20189787406931305",
+        "rr": null
+    },
+    "I Let You Manage the Beast Taming Arena, Now Everyone Became Divine Beasts?": {
+        "wln": 143599,
+        "wn": "20793148006045805",
+        "rr": null
+    },
+    "i let you manage the beast taming arena, now everyone became divine beasts?": {
+        "wln": 143599,
+        "wn": "20793148006045805",
+        "rr": null
+    },
     "I Let You Manage the Beast Taming Arena Now Everyone Became Divine Beasts": {
-        "wln": null,
+        "wln": 143599,
         "wn": "20793148006045805",
         "rr": null
     },
     "i let you manage the beast taming arena now everyone became divine beasts": {
-        "wln": null,
+        "wln": 143599,
         "wn": "20793148006045805",
         "rr": null
     },
@@ -8495,7 +9155,7 @@
         "rr": null
     },
     "illicit relationship": {
-        "wln": null,
+        "wln": 143612,
         "wn": "14608457405930205",
         "rr": null
     },
@@ -8560,12 +9220,12 @@
         "rr": null
     },
     "Im Cultivating Immortality While Everyone Else Practices Martial Arts": {
-        "wln": null,
+        "wln": 143602,
         "wn": "19524380806685505",
         "rr": null
     },
     "im cultivating immortality while everyone else practices martial arts": {
-        "wln": null,
+        "wln": 143602,
         "wn": "19524380806685505",
         "rr": null
     },
@@ -8640,12 +9300,12 @@
         "rr": 41434
     },
     "Immortal Path to Heaven": {
-        "wln": null,
+        "wln": 118293,
         "wn": "16335776606724705",
         "rr": null
     },
     "immortal path to heaven": {
-        "wln": null,
+        "wln": 118293,
         "wn": "16335776606724705",
         "rr": null
     },
@@ -8717,6 +9377,16 @@
     "inch of radiance": {
         "wln": 2037,
         "wn": null,
+        "rr": null
+    },
+    "INEBM": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "inebm": {
+        "wln": 61011,
+        "wn": "8534263705001005",
         "rr": null
     },
     "Infinite Mana in the Apocalypse": {
@@ -8839,6 +9509,16 @@
         "wn": "12414006605410205",
         "rr": null
     },
+    "IPH": {
+        "wln": 118293,
+        "wn": "16335776606724705",
+        "rr": null
+    },
+    "iph": {
+        "wln": 118293,
+        "wn": "16335776606724705",
+        "rr": null
+    },
     "IPW": {
         "wln": 56109,
         "wn": "11046198105246705",
@@ -8929,6 +9609,26 @@
         "wn": "19971574406292605",
         "rr": null
     },
+    "Isekai Konyoku Monogatari": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
+    },
+    "isekai konyoku monogatari": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
+    },
+    "ISHIBDLI": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
+    "ishibdli": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
     "Is That A Wisp": {
         "wln": 112523,
         "wn": "15298758705788905",
@@ -8962,6 +9662,16 @@
     "It's Lonely To Be Invincible": {
         "wln": 115991,
         "wn": "16005456605644405",
+        "rr": null
+    },
+    "It's Not Easy to Be a Man After Travelling to the Future": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "it's not easy to be a man after travelling to the future": {
+        "wln": 61011,
+        "wn": "8534263705001005",
         "rr": null
     },
     "It's the Healer's Life for Me": {
@@ -9065,12 +9775,12 @@
         "rr": null
     },
     "Its Not Easy to Be a Man After Travelling to the Future": {
-        "wln": null,
+        "wln": 61011,
         "wn": "8534263705001005",
         "rr": null
     },
     "its not easy to be a man after travelling to the future": {
-        "wln": null,
+        "wln": 61011,
         "wn": "8534263705001005",
         "rr": null
     },
@@ -9135,12 +9845,12 @@
         "rr": null
     },
     "Ive Killed Thousands of People and You Tell Me Its an Escape Show": {
-        "wln": null,
+        "wln": 143601,
         "wn": "20189787406931305",
         "rr": null
     },
     "ive killed thousands of people and you tell me its an escape show": {
-        "wln": null,
+        "wln": 143601,
         "wn": "20189787406931305",
         "rr": null
     },
@@ -9194,13 +9904,23 @@
         "wn": null,
         "rr": null
     },
+    "I Was Reborn With All Max-Leveled Classes of Mage, Warrior, Rogue, and Healer!": {
+        "wln": 143598,
+        "wn": "20552407806606105",
+        "rr": null
+    },
+    "i was reborn with all max-leveled classes of mage, warrior, rogue, and healer!": {
+        "wln": 143598,
+        "wn": "20552407806606105",
+        "rr": null
+    },
     "I Was Reborn With All Max-Leveled Classes of Mage Warrior Rogue and Healer": {
-        "wln": null,
+        "wln": 143598,
         "wn": "20552407806606105",
         "rr": null
     },
     "i was reborn with all max-leveled classes of mage warrior rogue and healer": {
-        "wln": null,
+        "wln": 143598,
         "wn": "20552407806606105",
         "rr": null
     },
@@ -9223,6 +9943,66 @@
         "wln": 32381,
         "wn": null,
         "rr": 3666
+    },
+    "I was Summoned as a Hero, but I Became the Demon Lord Instead": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
+    "i was summoned as a hero, but i became the demon lord instead": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
+    "I was Summoned as a Hero but I Became the Demon Lord Instead": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
+    "i was summoned as a hero but i became the demon lord instead": {
+        "wln": 96130,
+        "wn": "14229125506770405",
+        "rr": null
+    },
+    "I Was Summoned To Have Tea With The Demon Lord": {
+        "wln": 139597,
+        "wn": null,
+        "rr": null
+    },
+    "i was summoned to have tea with the demon lord": {
+        "wln": 139597,
+        "wn": null,
+        "rr": null
+    },
+    "I Was Summoned To Have Tea With The Demon Lord Rewrite": {
+        "wln": 137915,
+        "wn": null,
+        "rr": 44205
+    },
+    "i was summoned to have tea with the demon lord rewrite": {
+        "wln": 137915,
+        "wn": null,
+        "rr": 44205
+    },
+    "I Was Summoned To Have Tea With The Demon Lord [Rewrite]": {
+        "wln": 137915,
+        "wn": null,
+        "rr": 44205
+    },
+    "i was summoned to have tea with the demon lord [rewrite]": {
+        "wln": 137915,
+        "wn": null,
+        "rr": 44205
+    },
+    "IWRMLC": {
+        "wln": 143598,
+        "wn": "20552407806606105",
+        "rr": null
+    },
+    "iwrmlc": {
+        "wln": 143598,
+        "wn": "20552407806606105",
+        "rr": null
     },
     "Jade Sword official English title of drama and anime version": {
         "wln": 1580,
@@ -9249,6 +10029,16 @@
         "wn": "11660227405469705",
         "rr": null
     },
+    "Jayke Cipher": {
+        "wln": 112421,
+        "wn": null,
+        "rr": 30380
+    },
+    "jayke cipher": {
+        "wln": 112421,
+        "wn": null,
+        "rr": 30380
+    },
     "JAY ORPHEOUS": {
         "wln": 129517,
         "wn": "18499797106079005",
@@ -9268,6 +10058,16 @@
         "wln": 129517,
         "wn": "18499797106079005",
         "rr": 37016
+    },
+    "JBTG": {
+        "wln": 143396,
+        "wn": "15275006606812005",
+        "rr": null
+    },
+    "jbtg": {
+        "wln": 143396,
+        "wn": "15275006606812005",
+        "rr": null
     },
     "jian bao wang": {
         "wln": 63148,
@@ -9299,6 +10099,21 @@
         "wn": "12414006605410205",
         "rr": null
     },
+    "Jiang Ye": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "jiang ye": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "jiang ye xiao shuo": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "ji dao tian mo": {
         "wln": 59558,
         "wn": "7940017306001805",
@@ -9327,6 +10142,11 @@
     "jiuding ji": {
         "wln": 1053,
         "wn": "10270042106004105",
+        "rr": null
+    },
+    "jiu long shen ding": {
+        "wln": 69107,
+        "wn": "9449494306002405",
         "rr": null
     },
     "Ji\\u01D4 D\\u01D0ng J\\u00EC": {
@@ -9400,12 +10220,12 @@
         "rr": 26675
     },
     "Journey To Become A True God": {
-        "wln": null,
+        "wln": 143396,
         "wn": "15275006606812005",
         "rr": null
     },
     "journey to become a true god": {
-        "wln": null,
+        "wln": 143396,
         "wn": "15275006606812005",
         "rr": null
     },
@@ -9482,6 +10302,11 @@
     "jun jiu ling": {
         "wln": 58922,
         "wn": "7624928106001005",
+        "rr": null
+    },
+    "jun zi bao en": {
+        "wln": 52831,
+        "wn": "8060642606003005",
         "rr": null
     },
     "Just a Bystander": {
@@ -9629,6 +10454,16 @@
         "wn": null,
         "rr": null
     },
+    "Keikokumars": {
+        "wln": 32671,
+        "wn": "11591831906434205",
+        "rr": 3966
+    },
+    "keikokumars": {
+        "wln": 32671,
+        "wn": "11591831906434205",
+        "rr": 3966
+    },
     "Kiem Dao Doc Ton": {
         "wln": 36040,
         "wn": "6831841802000505",
@@ -9757,6 +10592,11 @@
     "lang thien truyen thuyet": {
         "wln": 59771,
         "wn": "8143258106003605",
+        "rr": null
+    },
+    "lao na yao hai su": {
+        "wln": 71849,
+        "wn": "8335500905000305",
         "rr": null
     },
     "Last Wish System": {
@@ -10019,6 +10859,21 @@
         "wn": "7141993106000405",
         "rr": null
     },
+    "ling zhu zhi bing fa tian xia": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
+    "Lingzhu Zhi Bing Fa Tiaxia": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
+    "lingzhu zhi bing fa tiaxia": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
     "LITOW": {
         "wln": 131608,
         "wn": "17535498906472605",
@@ -10184,6 +11039,11 @@
         "wn": null,
         "rr": null
     },
+    "long wang de nu xu": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
     "long zu bing wang": {
         "wln": 81724,
         "wn": "17847262606339805",
@@ -10220,14 +11080,14 @@
         "rr": null
     },
     "Lord Shadow": {
-        "wln": null,
+        "wln": 32671,
         "wn": "11591831906434205",
-        "rr": null
+        "rr": 3966
     },
     "lord shadow": {
-        "wln": null,
+        "wln": 32671,
         "wn": "11591831906434205",
-        "rr": null
+        "rr": 3966
     },
     "Lord Xue Ying": {
         "wln": 33427,
@@ -10829,6 +11689,16 @@
         "wn": "14175688006620305",
         "rr": null
     },
+    "masutaofusukiru Masutaobusukiru master of skill": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "masutaofusukiru masutaobusukiru master of skill": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
     "Ma Than Nhac Vien": {
         "wln": 49310,
         "wn": "8567129806000505",
@@ -10897,6 +11767,16 @@
     "mc": {
         "wln": 64386,
         "wn": "9975701105003705",
+        "rr": null
+    },
+    "MCS": {
+        "wln": 143597,
+        "wn": "19402476606372805",
+        "rr": null
+    },
+    "mcs": {
+        "wln": 143597,
+        "wn": "19402476606372805",
         "rr": null
     },
     "MCYDSS": {
@@ -11004,6 +11884,16 @@
         "wn": null,
         "rr": null
     },
+    "Memoirs of Your Local Small-time Villainess": {
+        "wln": 142601,
+        "wn": null,
+        "rr": 47995
+    },
+    "memoirs of your local small-time villainess": {
+        "wln": 142601,
+        "wn": null,
+        "rr": 47995
+    },
     "Memories of the Fall": {
         "wln": 127902,
         "wn": null,
@@ -11057,6 +11947,16 @@
     "mgd": {
         "wln": 57756,
         "wn": "11046193105246605",
+        "rr": null
+    },
+    "MGFTPRMHAMMS": {
+        "wln": 143588,
+        "wn": "20067685206244705",
+        "rr": null
+    },
+    "mgftprmhamms": {
+        "wln": 143588,
+        "wn": "20067685206244705",
         "rr": null
     },
     "MGIAZ": {
@@ -11153,6 +12053,26 @@
         "wln": 98792,
         "wn": null,
         "rr": 25299
+    },
+    "MIWRM": {
+        "wln": 143587,
+        "wn": "19971573706292005",
+        "rr": null
+    },
+    "miwrm": {
+        "wln": 143587,
+        "wn": "19971573706292005",
+        "rr": null
+    },
+    "Mixed Bathing in Another Dimension": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
+    },
+    "mixed bathing in another dimension": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
     },
     "mi zhi zhu": {
         "wln": 64956,
@@ -11804,6 +12724,16 @@
         "wn": "14107655206436205",
         "rr": null
     },
+    "MWRA": {
+        "wln": 71849,
+        "wn": "8335500905000305",
+        "rr": null
+    },
+    "mwra": {
+        "wln": 71849,
+        "wn": "8335500905000305",
+        "rr": null
+    },
     "My%20%28idiot%29%20Girlfriend%20Recommended%20Me%20a%20VR%20Game%20So%20I%20Tried%20Playing%20It.": {
         "wln": 129102,
         "wn": "16796782606407405",
@@ -11834,6 +12764,16 @@
         "wn": null,
         "rr": 44229
     },
+    "MYCEC": {
+        "wln": 61300,
+        "wn": "8177178805005705",
+        "rr": null
+    },
+    "mycec": {
+        "wln": 61300,
+        "wn": "8177178805005705",
+        "rr": null
+    },
     "My Cerberus Girlfriend": {
         "wln": 116777,
         "wn": null,
@@ -11845,12 +12785,12 @@
         "rr": 33003
     },
     "My Checkpoint System Turned Me Into The Godfather of Humanity": {
-        "wln": null,
+        "wln": 143597,
         "wn": "19402476606372805",
         "rr": null
     },
     "my checkpoint system turned me into the godfather of humanity": {
-        "wln": null,
+        "wln": 143597,
         "wn": "19402476606372805",
         "rr": null
     },
@@ -11864,13 +12804,23 @@
         "wn": "20257393606734405",
         "rr": null
     },
+    "My Cold and Beautiful Wife": {
+        "wln": 87672,
+        "wn": null,
+        "rr": null
+    },
+    "my cold and beautiful wife": {
+        "wln": 87672,
+        "wn": null,
+        "rr": null
+    },
     "My Cold and Elegant CEO Wife": {
-        "wln": null,
+        "wln": 61300,
         "wn": "8177178805005705",
         "rr": null
     },
     "my cold and elegant ceo wife": {
-        "wln": null,
+        "wln": 61300,
         "wn": "8177178805005705",
         "rr": null
     },
@@ -11943,6 +12893,16 @@
         "wln": null,
         "wn": "15653272806648205",
         "rr": null
+    },
+    "My Dream World Is A Gacha Nightmare": {
+        "wln": 139385,
+        "wn": null,
+        "rr": 45610
+    },
+    "my dream world is a gacha nightmare": {
+        "wln": 139385,
+        "wn": null,
+        "rr": 45610
     },
     "My Dungeon Life": {
         "wln": 97804,
@@ -12035,12 +12995,12 @@
         "rr": null
     },
     "My Girlfriend From Turquoise Pond Requests My Help After My Millennium Seclusion": {
-        "wln": null,
+        "wln": 143588,
         "wn": "20067685206244705",
         "rr": null
     },
     "my girlfriend from turquoise pond requests my help after my millennium seclusion": {
-        "wln": null,
+        "wln": 143588,
         "wn": "20067685206244705",
         "rr": null
     },
@@ -12064,13 +13024,23 @@
         "wn": "18612666306480405",
         "rr": null
     },
+    "My Identity As The World's Richest Man Was Exposed On a Money Borrowing Television Program": {
+        "wln": 143587,
+        "wn": "19971573706292005",
+        "rr": null
+    },
+    "my identity as the world's richest man was exposed on a money borrowing television program": {
+        "wln": 143587,
+        "wn": "19971573706292005",
+        "rr": null
+    },
     "My Identity As The Worlds Richest Man Was Exposed On a Money Borrowing Television Program": {
-        "wln": null,
+        "wln": 143587,
         "wn": "19971573706292005",
         "rr": null
     },
     "my identity as the worlds richest man was exposed on a money borrowing television program": {
-        "wln": null,
+        "wln": 143587,
         "wn": "19971573706292005",
         "rr": null
     },
@@ -12779,13 +13749,33 @@
         "wn": "8093963805004105",
         "rr": null
     },
+    "Night Coming": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "night coming": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "Nightfall": {
-        "wln": null,
+        "wln": 1192,
         "wn": "8324018606000005",
         "rr": null
     },
     "nightfall": {
-        "wln": null,
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "Night is Approaching": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "night is approaching": {
+        "wln": 1192,
         "wn": "8324018606000005",
         "rr": null
     },
@@ -13049,6 +14039,16 @@
         "wn": "21091772606416305",
         "rr": null
     },
+    "OCTT": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "octt": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
     "OEM": {
         "wln": 34070,
         "wn": "6838665602002905",
@@ -13058,6 +14058,16 @@
         "wln": 34070,
         "wn": "6838665602002905",
         "rr": null
+    },
+    "Of Mana and Mages": {
+        "wln": 143341,
+        "wn": null,
+        "rr": 45718
+    },
+    "of mana and mages": {
+        "wln": 143341,
+        "wn": null,
+        "rr": 45718
     },
     "Of Monstergirls and Men": {
         "wln": 135083,
@@ -13249,13 +14259,43 @@
         "wn": "10696209406138605",
         "rr": null
     },
+    "One Birth Two Treasures: The Billionaire's Sweet Love": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "one birth two treasures: the billionaire's sweet love": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
     "One Birth Two Treasures The Billionaires Sweet Love": {
-        "wln": null,
+        "wln": 51020,
         "wn": "11806186606531405",
         "rr": null
     },
     "one birth two treasures the billionaires sweet love": {
-        "wln": null,
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "One Child Two Treasures: The Billionaire Chief's Good Wife": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "one child two treasures: the billionaire chief's good wife": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "One Child Two Treasures The Billionaire Chiefs Good Wife": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "one child two treasures the billionaire chiefs good wife": {
+        "wln": 51020,
         "wn": "11806186606531405",
         "rr": null
     },
@@ -13939,6 +14979,16 @@
         "wn": "16856682305508105",
         "rr": null
     },
+    "Post Human": {
+        "wln": 86198,
+        "wn": null,
+        "rr": 22848
+    },
+    "post human": {
+        "wln": 86198,
+        "wn": null,
+        "rr": 22848
+    },
     "PoW": {
         "wln": 35291,
         "wn": "6838665602003005",
@@ -14227,6 +15277,56 @@
     "quan neng you xi she ji shi": {
         "wln": 107242,
         "wn": "15713974606841205",
+        "rr": null
+    },
+    "Quanzhi Fashi": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "quanzhi fashi": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "Quan Zhi Fa Shi": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "quan zhi fa shi": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "Quan Zhi Gao Shou": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "quan zhi gao shou": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "quan zhi gao shou Quanzhi Gaoshou": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "quan zhi gao shou quanzhi gaoshou": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "quan zhi gao shou Quanzhi Gaoshou Full-time Expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "quan zhi gao shou quanzhi gaoshou full-time expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
         "rr": null
     },
     "Queen of No.11 Agent 11": {
@@ -14774,13 +15874,18 @@
         "wn": "19720038005035905",
         "rr": null
     },
-    "Reincarnating Into A Fantasy World as an Autonomous Machine Arsenal": {
-        "wln": null,
+    "Reincarnating into a Fantasy world as an Autonomous Machine Arsenal": {
+        "wln": 79515,
         "wn": "12734134605928505",
         "rr": null
     },
     "reincarnating into a fantasy world as an autonomous machine arsenal": {
-        "wln": null,
+        "wln": 79515,
+        "wn": "12734134605928505",
+        "rr": null
+    },
+    "Reincarnating Into A Fantasy World as an Autonomous Machine Arsenal": {
+        "wln": 79515,
         "wn": "12734134605928505",
         "rr": null
     },
@@ -15039,13 +16144,18 @@
         "wn": "12212268105090805",
         "rr": null
     },
-    "Rise of the Demon God": {
-        "wln": null,
+    "Rise of the demon god": {
+        "wln": 42269,
         "wn": "14869533705896705",
         "rr": null
     },
     "rise of the demon god": {
-        "wln": null,
+        "wln": 42269,
+        "wn": "14869533705896705",
+        "rr": null
+    },
+    "Rise of the Demon God": {
+        "wln": 42269,
         "wn": "14869533705896705",
         "rr": null
     },
@@ -15194,6 +16304,16 @@
         "wn": null,
         "rr": 34708
     },
+    "ROTDG": {
+        "wln": 42269,
+        "wn": "14869533705896705",
+        "rr": null
+    },
+    "rotdg": {
+        "wln": 42269,
+        "wn": "14869533705896705",
+        "rr": null
+    },
     "ROTLG": {
         "wln": 57633,
         "wn": "7141974606000205",
@@ -15224,13 +16344,13 @@
         "wn": "10993431205232305",
         "rr": null
     },
-    "ROYAL DRAGON AND PHOENIX TRANSMIGRATE TO EARTH": {
-        "wln": null,
+    "Royal Dragon And Phoenix Transmigrate To Earth": {
+        "wln": 143596,
         "wn": "17104408806611005",
         "rr": null
     },
     "royal dragon and phoenix transmigrate to earth": {
-        "wln": null,
+        "wln": 143596,
         "wn": "17104408806611005",
         "rr": null
     },
@@ -15338,6 +16458,16 @@
         "wln": 130167,
         "wn": "18495993905903905",
         "rr": 37626
+    },
+    "Sage of Humanity": {
+        "wln": 142867,
+        "wn": null,
+        "rr": 47175
+    },
+    "sage of humanity": {
+        "wln": 142867,
+        "wn": null,
+        "rr": 47175
     },
     "Saltworld: An Apocalypse LitRPG": {
         "wln": 142811,
@@ -15534,6 +16664,16 @@
         "wn": "19697500905966105",
         "rr": null
     },
+    "SBTS": {
+        "wln": 70246,
+        "wn": "9795095706003005",
+        "rr": null
+    },
+    "sbts": {
+        "wln": 70246,
+        "wn": "9795095706003005",
+        "rr": null
+    },
     "SC": {
         "wln": 63150,
         "wn": "8334291405006505",
@@ -15575,12 +16715,12 @@
         "rr": null
     },
     "Scoring the Sacred Body of the Ancients from the Get-go": {
-        "wln": null,
+        "wln": 143595,
         "wn": "18398367905525105",
         "rr": null
     },
     "scoring the sacred body of the ancients from the get-go": {
-        "wln": null,
+        "wln": 143595,
         "wn": "18398367905525105",
         "rr": null
     },
@@ -15592,6 +16732,16 @@
     "sdm": {
         "wln": 128347,
         "wn": "16892747206786605",
+        "rr": null
+    },
+    "SDMW": {
+        "wln": 128833,
+        "wn": "17527855406426205",
+        "rr": null
+    },
+    "sdmw": {
+        "wln": 128833,
+        "wn": "17527855406426205",
         "rr": null
     },
     "Second Chance: a Wonderful New Life": {
@@ -15635,12 +16785,12 @@
         "rr": null
     },
     "Seeking the Dao in the Seemingly Mundane Mortal World": {
-        "wln": null,
+        "wln": 128833,
         "wn": "17527855406426205",
         "rr": null
     },
     "seeking the dao in the seemingly mundane mortal world": {
-        "wln": null,
+        "wln": 128833,
         "wn": "17527855406426205",
         "rr": null
     },
@@ -15705,14 +16855,64 @@
         "rr": null
     },
     "Seized by the System": {
-        "wln": null,
+        "wln": 70246,
         "wn": "9795095706003005",
         "rr": null
     },
     "seized by the system": {
-        "wln": null,
+        "wln": 70246,
         "wn": "9795095706003005",
         "rr": null
+    },
+    "Seven": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
+    },
+    "seven": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
+    },
+    "Seven (Riese)": {
+        "wln": 143456,
+        "wn": null,
+        "rr": 26284
+    },
+    "seven (riese)": {
+        "wln": 143456,
+        "wn": null,
+        "rr": 26284
+    },
+    "Seven (ThinkTwice)": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
+    },
+    "seven (thinktwice)": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
+    },
+    "Seven Riese": {
+        "wln": 143456,
+        "wn": null,
+        "rr": 26284
+    },
+    "seven riese": {
+        "wln": 143456,
+        "wn": null,
+        "rr": 26284
+    },
+    "Seven ThinkTwice": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
+    },
+    "seven thinktwice": {
+        "wln": 107301,
+        "wn": null,
+        "rr": 26284
     },
     "SFO": {
         "wln": 137558,
@@ -15802,6 +17002,16 @@
     "shadow hack": {
         "wln": 62143,
         "wn": "8092314906003205",
+        "rr": null
+    },
+    "shan hun jiao qi: lao gong, shen shen ai": {
+        "wln": 86540,
+        "wn": "11256254105313805",
+        "rr": null
+    },
+    "shan hun jiao qi lao gong shen shen ai": {
+        "wln": 86540,
+        "wn": "11256254105313805",
         "rr": null
     },
     "Sha Shen": {
@@ -15934,6 +17144,21 @@
         "wn": "6831845202000705",
         "rr": null
     },
+    "shi shang di yi zu shi ye": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "Shishang di yi zu shiye": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "shishang di yi zu shiye": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
     "shi ting wu bai nian": {
         "wln": 116765,
         "wn": "16731274906146805",
@@ -15957,6 +17182,11 @@
     "shock the spell is in english": {
         "wln": 136052,
         "wn": "19523559406682705",
+        "rr": null
+    },
+    "shooting stars": {
+        "wln": 143612,
+        "wn": "14608457405930205",
         "rr": null
     },
     "SHS": {
@@ -16019,23 +17249,53 @@
         "wn": "11315851005335705",
         "rr": null
     },
+    "SIFLLTMMF": {
+        "wln": 143593,
+        "wn": "20067686005068905",
+        "rr": null
+    },
+    "siflltmmf": {
+        "wln": 143593,
+        "wn": "20067686005068905",
+        "rr": null
+    },
+    "Sign In: Becoming A Great Spell Deity Starting From The Magic Academy": {
+        "wln": 143594,
+        "wn": "19479399306572205",
+        "rr": null
+    },
+    "sign in: becoming a great spell deity starting from the magic academy": {
+        "wln": 143594,
+        "wn": "19479399306572205",
+        "rr": null
+    },
     "Sign In Becoming A Great Spell Deity Starting From The Magic Academy": {
-        "wln": null,
+        "wln": 143594,
         "wn": "19479399306572205",
         "rr": null
     },
     "sign in becoming a great spell deity starting from the magic academy": {
-        "wln": null,
+        "wln": 143594,
         "wn": "19479399306572205",
         "rr": null
     },
+    "Signing In: From Lowliest Laborer to Mightiest Master?": {
+        "wln": 143593,
+        "wn": "20067686005068905",
+        "rr": null
+    },
+    "signing in: from lowliest laborer to mightiest master?": {
+        "wln": 143593,
+        "wn": "20067686005068905",
+        "rr": null
+    },
     "Signing In From Lowliest Laborer to Mightiest Master": {
-        "wln": null,
+        "wln": 143593,
         "wn": "20067686005068905",
         "rr": null
     },
     "signing in from lowliest laborer to mightiest master": {
-        "wln": null,
+        "wln": 143593,
         "wn": "20067686005068905",
         "rr": null
     },
@@ -16049,13 +17309,23 @@
         "wn": "19852661306620905",
         "rr": null
     },
+    "Sign In Ten Years, Then I Am Exposed By My Gorgeous Senior": {
+        "wln": 143592,
+        "wn": "21189171306782005",
+        "rr": null
+    },
+    "sign in ten years, then i am exposed by my gorgeous senior": {
+        "wln": 143592,
+        "wn": "21189171306782005",
+        "rr": null
+    },
     "Sign In Ten Years Then I Am Exposed By My Gorgeous Senior": {
-        "wln": null,
+        "wln": 143592,
         "wn": "21189171306782005",
         "rr": null
     },
     "sign in ten years then i am exposed by my gorgeous senior": {
-        "wln": null,
+        "wln": 143592,
         "wn": "21189171306782005",
         "rr": null
     },
@@ -16112,6 +17382,16 @@
     "si ren ding zhi da mo wang": {
         "wln": 116761,
         "wn": "16707905706045105",
+        "rr": null
+    },
+    "SITYEGS": {
+        "wln": 143592,
+        "wn": "21189171306782005",
+        "rr": null
+    },
+    "sityegs": {
+        "wln": 143592,
+        "wn": "21189171306782005",
         "rr": null
     },
     "Si\\u00EAu Th\\u1EA7n C\\u01A1 Gi\\u1EDBi S\\u01B0": {
@@ -16739,6 +18019,16 @@
         "wn": null,
         "rr": null
     },
+    "Stellar War Storm": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "stellar war storm": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
     "STH": {
         "wln": 42470,
         "wn": "8142774106003505",
@@ -16819,6 +18109,16 @@
         "wn": "11033650806238505",
         "rr": null
     },
+    "STSBOTAFTG": {
+        "wln": 143595,
+        "wn": "18398367905525105",
+        "rr": null
+    },
+    "stsbotaftg": {
+        "wln": 143595,
+        "wn": "18398367905525105",
+        "rr": null
+    },
     "STSIIE": {
         "wln": 136052,
         "wn": "19523559406682705",
@@ -16839,13 +18139,33 @@
         "wn": "16892747206786605",
         "rr": null
     },
+    "SUBBRIDE": {
+        "wln": 143591,
+        "wn": "12698101205669805",
+        "rr": null
+    },
+    "subbride": {
+        "wln": 143591,
+        "wn": "12698101205669805",
+        "rr": null
+    },
+    "Substitute Bride Phoenix, The Tyrant's Pampered Demon Empress": {
+        "wln": 143591,
+        "wn": "12698101205669805",
+        "rr": null
+    },
+    "substitute bride phoenix, the tyrant's pampered demon empress": {
+        "wln": 143591,
+        "wn": "12698101205669805",
+        "rr": null
+    },
     "Substitute Bride Phoenix The Tyrants Pampered Demon Empress": {
-        "wln": null,
+        "wln": 143591,
         "wn": "12698101205669805",
         "rr": null
     },
     "substitute bride phoenix the tyrants pampered demon empress": {
-        "wln": null,
+        "wln": 143591,
         "wn": "12698101205669805",
         "rr": null
     },
@@ -16953,6 +18273,26 @@
         "wln": 142456,
         "wn": null,
         "rr": null
+    },
+    "Summon Imp": {
+        "wln": 117274,
+        "wn": null,
+        "rr": 33295
+    },
+    "summon imp": {
+        "wln": 117274,
+        "wn": null,
+        "rr": 33295
+    },
+    "Summon Imp!": {
+        "wln": 117274,
+        "wn": null,
+        "rr": 33295
+    },
+    "summon imp!": {
+        "wln": 117274,
+        "wn": null,
+        "rr": 33295
     },
     "Summoning the Holy Sword": {
         "wln": 62448,
@@ -17144,6 +18484,16 @@
         "wn": null,
         "rr": null
     },
+    "Su Thuong De Nhat To Su Gia": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "su thuong de nhat to su gia": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
     "Swallowed Star": {
         "wln": 2276,
         "wn": "7213811205000505",
@@ -17224,6 +18574,11 @@
         "wn": "16990056705045105",
         "rr": null
     },
+    "syb faphchtpthph": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "Sylver Seeker": {
         "wln": 128026,
         "wn": null,
@@ -17242,6 +18597,16 @@
     "system": {
         "wln": 117074,
         "wn": "16934577105812005",
+        "rr": null
+    },
+    "S\\u1EED Th\\u01B0\\u1EE3ng \\u0110\\u1EC7 Nh\\u1EA5t T\\u1ED5 S\\u01B0 Gia": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "s\\u1eed th\\u01b0\\u1ee3ng \\u0110\\u1ec7 nh\\u1ea5t t\\u1ed5 s\\u01b0 gia": {
+        "wln": 33496,
+        "wn": "6838665602003605",
         "rr": null
     },
     "TA": {
@@ -17544,13 +18909,23 @@
         "wn": "7911477905002105",
         "rr": null
     },
+    "Tavern in Another Dimension:Getting the Elf Queen Drunk at the Start": {
+        "wln": 143590,
+        "wn": "21087936905164305",
+        "rr": null
+    },
+    "tavern in another dimension:getting the elf queen drunk at the start": {
+        "wln": 143590,
+        "wn": "21087936905164305",
+        "rr": null
+    },
     "Tavern in Another Dimension Getting the Elf Queen Drunk at the Start": {
-        "wln": null,
+        "wln": 143590,
         "wn": "21087936905164305",
         "rr": null
     },
     "tavern in another dimension getting the elf queen drunk at the start": {
-        "wln": null,
+        "wln": 143590,
         "wn": "21087936905164305",
         "rr": null
     },
@@ -17563,6 +18938,16 @@
         "wln": 136543,
         "wn": "19855680406636005",
         "rr": 42673
+    },
+    "TBWWM": {
+        "wln": 86540,
+        "wn": "11256254105313805",
+        "rr": null
+    },
+    "tbwwm": {
+        "wln": 86540,
+        "wn": "11256254105313805",
+        "rr": null
     },
     "TCD": {
         "wln": 142372,
@@ -17604,6 +18989,16 @@
         "wn": "15713117806838005",
         "rr": null
     },
+    "TDC": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
+    "tdc": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
     "TDMS": {
         "wln": 131750,
         "wn": "17923880906710705",
@@ -17612,6 +19007,16 @@
     "tdms": {
         "wln": 131750,
         "wn": "17923880906710705",
+        "rr": null
+    },
+    "TDNDC": {
+        "wln": 69107,
+        "wn": "9449494306002405",
+        "rr": null
+    },
+    "tdndc": {
+        "wln": 69107,
+        "wn": "9449494306002405",
         "rr": null
     },
     "Technological Wizard": {
@@ -17664,13 +19069,33 @@
         "wn": "6838665602003205",
         "rr": null
     },
+    "Tempest of the Stellar": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "tempest of the stellar": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
     "Tempest of the Stellar War": {
-        "wln": null,
+        "wln": 42132,
         "wn": "7922313105002205",
         "rr": null
     },
     "tempest of the stellar war": {
-        "wln": null,
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "Tempestual Stellar War": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "tempestual stellar war": {
+        "wln": 42132,
         "wn": "7922313105002205",
         "rr": null
     },
@@ -17869,6 +19294,16 @@
         "wn": null,
         "rr": 46550
     },
+    "The 13th Essence": {
+        "wln": 119358,
+        "wn": null,
+        "rr": 34753
+    },
+    "the 13th essence": {
+        "wln": 119358,
+        "wn": null,
+        "rr": 34753
+    },
     "The Achievement Junkie": {
         "wln": null,
         "wn": "11761722506510905",
@@ -17879,13 +19314,23 @@
         "wn": "11761722506510905",
         "rr": null
     },
+    "The AFK Farming Software: I Became Invincible Without Knowing It": {
+        "wln": 143589,
+        "wn": "21344870805998005",
+        "rr": null
+    },
+    "the afk farming software: i became invincible without knowing it": {
+        "wln": 143589,
+        "wn": "21344870805998005",
+        "rr": null
+    },
     "The AFK Farming Software I Became Invincible Without Knowing It": {
-        "wln": null,
+        "wln": 143589,
         "wn": "21344870805998005",
         "rr": null
     },
     "the afk farming software i became invincible without knowing it": {
-        "wln": null,
+        "wln": 143589,
         "wn": "21344870805998005",
         "rr": null
     },
@@ -17980,12 +19425,12 @@
         "rr": null
     },
     "The Beautiful Wife of the Whirlwind Marriage": {
-        "wln": null,
+        "wln": 86540,
         "wn": "11256254105313805",
         "rr": null
     },
     "the beautiful wife of the whirlwind marriage": {
-        "wln": null,
+        "wln": 86540,
         "wn": "11256254105313805",
         "rr": null
     },
@@ -18078,6 +19523,16 @@
         "wln": 35113,
         "wn": null,
         "rr": 5029
+    },
+    "The Butcher of Gadobhra": {
+        "wln": 137412,
+        "wn": null,
+        "rr": 43318
+    },
+    "the butcher of gadobhra": {
+        "wln": 137412,
+        "wn": null,
+        "rr": 43318
     },
     "The Calamitous Bob": {
         "wln": 137834,
@@ -18320,12 +19775,12 @@
         "rr": null
     },
     "The Devils Cage": {
-        "wln": null,
+        "wln": 43268,
         "wn": "7736629105000905",
         "rr": null
     },
     "the devils cage": {
-        "wln": null,
+        "wln": 43268,
         "wn": "7736629105000905",
         "rr": null
     },
@@ -18340,12 +19795,12 @@
         "rr": null
     },
     "The Divine Nine-Dragon Cauldron": {
-        "wln": null,
+        "wln": 69107,
         "wn": "9449494306002405",
         "rr": null
     },
     "the divine nine-dragon cauldron": {
-        "wln": null,
+        "wln": 69107,
         "wn": "9449494306002405",
         "rr": null
     },
@@ -18919,6 +20374,16 @@
         "wn": null,
         "rr": 41732
     },
+    "The House Witch": {
+        "wln": 116393,
+        "wn": null,
+        "rr": 32747
+    },
+    "the house witch": {
+        "wln": 116393,
+        "wn": null,
+        "rr": 32747
+    },
     "The Humble Life of a Skill Trainer": {
         "wln": 111631,
         "wn": null,
@@ -19059,6 +20524,26 @@
         "wn": null,
         "rr": 47914
     },
+    "The King's Avatar": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "the king's avatar": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "The King's Avatar - For The Glory": {
+        "wln": 143611,
+        "wn": "14771838206642905",
+        "rr": null
+    },
+    "the king's avatar - for the glory": {
+        "wln": 143611,
+        "wn": "14771838206642905",
+        "rr": null
+    },
     "The King's Mandate: Anomalous System": {
         "wln": 129102,
         "wn": "16796782606407405",
@@ -19080,13 +20565,23 @@
         "rr": 45136
     },
     "The Kings Avatar": {
-        "wln": null,
+        "wln": 33401,
         "wn": "7176992105000305",
         "rr": null
     },
     "the kings avatar": {
-        "wln": null,
+        "wln": 33401,
         "wn": "7176992105000305",
+        "rr": null
+    },
+    "The Kings Avatar - For The Glory": {
+        "wln": 143611,
+        "wn": "14771838206642905",
+        "rr": null
+    },
+    "the kings avatar - for the glory": {
+        "wln": 143611,
+        "wn": "14771838206642905",
         "rr": null
     },
     "The Kings Mandate Anomalous System": {
@@ -19200,12 +20695,12 @@
         "rr": null
     },
     "The Legend of Futian": {
-        "wln": null,
+        "wln": 64541,
         "wn": "9795116706003105",
         "rr": null
     },
     "the legend of futian": {
-        "wln": null,
+        "wln": 64541,
         "wn": "9795116706003105",
         "rr": null
     },
@@ -19279,13 +20774,23 @@
         "wn": null,
         "rr": null
     },
+    "The Lord's Empire": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
+    "the lord's empire": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
     "The Lords Empire": {
-        "wln": null,
+        "wln": 63526,
         "wn": "11263692606307605",
         "rr": null
     },
     "the lords empire": {
-        "wln": null,
+        "wln": 63526,
         "wn": "11263692606307605",
         "rr": null
     },
@@ -19397,6 +20902,16 @@
     "the mind god": {
         "wln": 128351,
         "wn": "16727674105007605",
+        "rr": null
+    },
+    "The Monk That Wanted To Renounce Asceticism": {
+        "wln": 71849,
+        "wn": "8335500905000305",
+        "rr": null
+    },
+    "the monk that wanted to renounce asceticism": {
+        "wln": 71849,
+        "wn": "8335500905000305",
         "rr": null
     },
     "The Most Satisfied Reincarnate": {
@@ -19603,6 +21118,11 @@
         "wln": 129103,
         "wn": null,
         "rr": 36735
+    },
+    "thephy thth seyn glory": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
     },
     "The Place Where Everything Begins": {
         "wln": null,
@@ -20134,6 +21654,16 @@
         "wn": null,
         "rr": 43029
     },
+    "The Trials of Bethany": {
+        "wln": 141951,
+        "wn": null,
+        "rr": 47541
+    },
+    "the trials of bethany": {
+        "wln": 141951,
+        "wn": null,
+        "rr": 47541
+    },
     "The Trickster's Tale 2: Gnomes Don't Rule!": {
         "wln": 137349,
         "wn": null,
@@ -20205,12 +21735,12 @@
         "rr": null
     },
     "The Ultimate Evolution": {
-        "wln": null,
+        "wln": 46307,
         "wn": "7211215605000405",
         "rr": null
     },
     "the ultimate evolution": {
-        "wln": null,
+        "wln": 46307,
         "wn": "7211215605000405",
         "rr": null
     },
@@ -20739,6 +22269,26 @@
         "wn": "17185875706926505",
         "rr": null
     },
+    "Tinh Chien Phong Bao": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "tinh chien phong bao": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "Tinh Chi\\u1EBFn Phong B\\u1EA1o": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "tinh chi\\u1ebfn phong b\\u1ea1o": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
     "Tinh Than Bien": {
         "wln": 1826,
         "wn": null,
@@ -20799,6 +22349,16 @@
         "wn": "17197835906969105",
         "rr": null
     },
+    "TKA": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "tka": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
     "TKM AS": {
         "wln": 129102,
         "wn": "16796782606407405",
@@ -20819,6 +22379,16 @@
         "wn": "16522014806361405",
         "rr": null
     },
+    "TLE": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
+    "tle": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
     "TLM": {
         "wln": 76626,
         "wn": "8662546605001405",
@@ -20827,6 +22397,16 @@
     "tlm": {
         "wln": 76626,
         "wn": "8662546605001405",
+        "rr": null
+    },
+    "TLoF": {
+        "wln": 64541,
+        "wn": "9795116706003105",
+        "rr": null
+    },
+    "tlof": {
+        "wln": 64541,
+        "wn": "9795116706003105",
         "rr": null
     },
     "TM": {
@@ -20929,6 +22509,36 @@
         "wn": "10270042106004105",
         "rr": null
     },
+    "Toan chuc cao thu": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "toan chuc cao thu": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "Toan Chuc Phap Su": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "toan chuc phap su": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "Toa\\u0300n ch\\u01B0\\u0301c cao thu\\u0309": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "toa\\u0300n ch\\u01b0\\u0301c cao thu\\u0309": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
     "ToB": {
         "wln": 59397,
         "wn": "6838665602003205",
@@ -20979,6 +22589,11 @@
         "wn": "8324021706000105",
         "rr": null
     },
+    "tong tian xian lu": {
+        "wln": 118293,
+        "wn": "16335776606724705",
+        "rr": null
+    },
     "TOP": {
         "wln": 119126,
         "wn": "15465781005526105",
@@ -21022,6 +22637,16 @@
     "tou tian": {
         "wln": 42470,
         "wn": "8142774106003505",
+        "rr": null
+    },
+    "To\\u00E0n Ch\\u1EE9c Ph\\u00E1p S\\u01B0": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "to\\u00e0n ch\\u1ee9c ph\\u00e1p s\\u01b0": {
+        "wln": 34910,
+        "wn": "7851773505001805",
         "rr": null
     },
     "TQOE": {
@@ -21184,6 +22809,16 @@
         "wn": "6831845202000705",
         "rr": null
     },
+    "TSW": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "tsw": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
     "TSWTS": {
         "wln": 57171,
         "wn": "6838664202001505",
@@ -21274,6 +22909,16 @@
         "wn": "8299599706003805",
         "rr": null
     },
+    "TUE": {
+        "wln": 46307,
+        "wn": "7211215605000405",
+        "rr": null
+    },
+    "tue": {
+        "wln": 46307,
+        "wn": "7211215605000405",
+        "rr": null
+    },
     "Tun Shi Xing Kong": {
         "wln": 2276,
         "wn": "7213811205000505",
@@ -21283,6 +22928,36 @@
         "wln": 2276,
         "wn": "7213811205000505",
         "rr": null
+    },
+    "Tuong Da": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "tuong da": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "Tutorial (The Soul Survivor Series)": {
+        "wln": 134418,
+        "wn": null,
+        "rr": 40738
+    },
+    "tutorial (the soul survivor series)": {
+        "wln": 134418,
+        "wn": null,
+        "rr": 40738
+    },
+    "Tutorial The Soul Survivor Series": {
+        "wln": 134418,
+        "wn": null,
+        "rr": 40738
+    },
+    "tutorial the soul survivor series": {
+        "wln": 134418,
+        "wn": null,
+        "rr": 40738
     },
     "Tuyet Sac Quyen Ru Quy Y Chi Ton": {
         "wln": 57756,
@@ -21424,6 +23099,16 @@
         "wn": "7911477905002105",
         "rr": null
     },
+    "T\\u01B0\\u1EDBng D\\u1EA1": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "t\\u01b0\\u1edbng d\\u1ea1": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "UB": {
         "wln": 71502,
         "wn": "11492897005406105",
@@ -21452,6 +23137,16 @@
     "ugs": {
         "wln": 70536,
         "wn": "11667436705473805",
+        "rr": null
+    },
+    "Ultimate Beast Evolution System": {
+        "wln": 136929,
+        "wn": null,
+        "rr": null
+    },
+    "ultimate beast evolution system": {
+        "wln": 136929,
+        "wn": null,
         "rr": null
     },
     "Ultimate Goddess System": {
@@ -21544,6 +23239,16 @@
         "wn": null,
         "rr": 47557
     },
+    "Undermind": {
+        "wln": 77757,
+        "wn": null,
+        "rr": 22019
+    },
+    "undermind": {
+        "wln": 77757,
+        "wn": null,
+        "rr": 22019
+    },
     "Under Wicked Sky": {
         "wln": 142454,
         "wn": null,
@@ -21574,23 +23279,43 @@
         "wn": "14283830905864805",
         "rr": null
     },
+    "Unlimited Power - The Arcane Path (COMPLETED)": {
+        "wln": 131494,
+        "wn": "17022804406317305",
+        "rr": null
+    },
+    "unlimited power - the arcane path (completed)": {
+        "wln": 131494,
+        "wn": "17022804406317305",
+        "rr": null
+    },
     "Unlimited Power - The Arcane Path COMPLETED": {
-        "wln": null,
+        "wln": 131494,
         "wn": "17022804406317305",
         "rr": null
     },
     "unlimited power - the arcane path completed": {
-        "wln": null,
+        "wln": 131494,
         "wn": "17022804406317305",
         "rr": null
     },
+    "Unlimited Power 02 - The Ranger's Domain": {
+        "wln": 131594,
+        "wn": "18869780605377605",
+        "rr": null
+    },
+    "unlimited power 02 - the ranger's domain": {
+        "wln": 131594,
+        "wn": "18869780605377605",
+        "rr": null
+    },
     "Unlimited Power 02 - The Rangers Domain": {
-        "wln": null,
+        "wln": 131594,
         "wn": "18869780605377605",
         "rr": null
     },
     "unlimited power 02 - the rangers domain": {
-        "wln": null,
+        "wln": 131594,
         "wn": "18869780605377605",
         "rr": null
     },
@@ -21644,6 +23369,26 @@
         "wn": "9240153405002605",
         "rr": null
     },
+    "UPTAP": {
+        "wln": 131494,
+        "wn": "17022804406317305",
+        "rr": null
+    },
+    "uptap": {
+        "wln": 131494,
+        "wn": "17022804406317305",
+        "rr": null
+    },
+    "UPTRD": {
+        "wln": 131594,
+        "wn": "18869780605377605",
+        "rr": null
+    },
+    "uptrd": {
+        "wln": 131594,
+        "wn": "18869780605377605",
+        "rr": null
+    },
     "Useless Strength In The Modern World": {
         "wln": 140399,
         "wn": null,
@@ -21682,6 +23427,16 @@
     "valerian empire": {
         "wln": null,
         "wn": "11972914206680405",
+        "rr": null
+    },
+    "Vampire Dragon": {
+        "wln": 143607,
+        "wn": "20568014505538405",
+        "rr": null
+    },
+    "vampire dragon": {
+        "wln": 143607,
+        "wn": "20568014505538405",
         "rr": null
     },
     "Vampire Overlord System in the Apocalypse": {
@@ -21725,12 +23480,12 @@
         "rr": null
     },
     "Versatile Mage": {
-        "wln": null,
+        "wln": 34910,
         "wn": "7851773505001805",
         "rr": null
     },
     "versatile mage": {
-        "wln": null,
+        "wln": 34910,
         "wn": "7851773505001805",
         "rr": null
     },
@@ -21802,6 +23557,16 @@
     "virus girlfriend": {
         "wln": 43314,
         "wn": null,
+        "rr": null
+    },
+    "VM": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "vm": {
+        "wln": 34910,
+        "wn": "7851773505001805",
         "rr": null
     },
     "VOG": {
@@ -21964,13 +23729,23 @@
         "wn": "12214197006102105",
         "rr": null
     },
+    "Waking Up As a Spaceship!? What's a Ship Girl Supposed To Do Now?!": {
+        "wln": 111273,
+        "wn": "16259932905362705",
+        "rr": null
+    },
+    "waking up as a spaceship!? what's a ship girl supposed to do now?!": {
+        "wln": 111273,
+        "wn": "16259932905362705",
+        "rr": null
+    },
     "Waking Up As a Spaceship Whats a Ship Girl Supposed To Do Now": {
-        "wln": null,
+        "wln": 111273,
         "wn": "16259932905362705",
         "rr": null
     },
     "waking up as a spaceship whats a ship girl supposed to do now": {
-        "wln": null,
+        "wln": 111273,
         "wn": "16259932905362705",
         "rr": null
     },
@@ -22002,6 +23777,21 @@
     "wandering spaceship in deep space": {
         "wln": null,
         "wn": "18270768406135205",
+        "rr": null
+    },
+    "wan gu shen di": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "wan gu shen di Old": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "wan gu shen di old": {
+        "wln": 59641,
+        "wn": "8324025906000205",
         "rr": null
     },
     "wang you zhi ju du": {
@@ -22192,6 +23982,16 @@
     "wdqk": {
         "wln": 35887,
         "wn": "8058318405003505",
+        "rr": null
+    },
+    "WDS": {
+        "wln": 143606,
+        "wn": "11413811606356705",
+        "rr": null
+    },
+    "wds": {
+        "wln": 143606,
+        "wn": "11413811606356705",
         "rr": null
     },
     "WDYMMCDAY": {
@@ -22499,6 +24299,11 @@
         "wn": "8058923005003605",
         "rr": null
     },
+    "wo bei xi tong tuo guan le": {
+        "wln": 70246,
+        "wn": "9795095706003005",
+        "rr": null
+    },
     "wo bu xiang ni tian a": {
         "wln": 109601,
         "wn": "14470032705456605",
@@ -22532,6 +24337,16 @@
     "wod": {
         "wln": 59558,
         "wn": "7940017306001805",
+        "rr": null
+    },
+    "wo de bing shan mei nu lao po": {
+        "wln": 87672,
+        "wn": null,
+        "rr": null
+    },
+    "wo de leng yan zong cai lao po": {
+        "wln": 61300,
+        "wn": "8177178805005705",
         "rr": null
     },
     "wo de mo shi ji de che": {
@@ -22590,12 +24405,22 @@
         "rr": null
     },
     "World Domination System": {
-        "wln": null,
+        "wln": 143606,
         "wn": "11413811606356705",
         "rr": null
     },
     "world domination system": {
-        "wln": null,
+        "wln": 143606,
+        "wn": "11413811606356705",
+        "rr": null
+    },
+    "World Domination System WDS": {
+        "wln": 143606,
+        "wn": "11413811606356705",
+        "rr": null
+    },
+    "world domination system wds": {
+        "wln": 143606,
         "wn": "11413811606356705",
         "rr": null
     },
@@ -22857,6 +24682,16 @@
     "wssth": {
         "wln": 58288,
         "wn": "7141993106000405",
+        "rr": null
+    },
+    "WUAAS": {
+        "wln": 111273,
+        "wn": "16259932905362705",
+        "rr": null
+    },
+    "wuaas": {
+        "wln": 111273,
+        "wn": "16259932905362705",
         "rr": null
     },
     "wu dao zong shi": {
@@ -23209,6 +25044,11 @@
         "wn": "8896645106001105",
         "rr": null
     },
+    "xing zhan feng bao": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
     "xi tong de hei ke ji wang ba": {
         "wln": 89241,
         "wn": "11418908406358805",
@@ -23277,6 +25117,11 @@
     "xu lie de zhan zheng the most high": {
         "wln": 64956,
         "wn": "11022733006234505",
+        "rr": null
+    },
+    "xu ni wan zhang guang mang hao": {
+        "wln": 52831,
+        "wn": "8060642606003005",
         "rr": null
     },
     "Xyrin Empire": {
@@ -23379,6 +25224,11 @@
         "wn": "11275087605321405",
         "rr": null
     },
+    "yin hun100fen: re huo jiao qi jia yi song yi": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
     "Yi Nian Yong Heng": {
         "wln": 42305,
         "wn": "8093963805004105",
@@ -23397,6 +25247,11 @@
     "yi shi jie de mei shi jia": {
         "wln": 57611,
         "wn": "6838665602003405",
+        "rr": null
+    },
+    "yi shi jie hun yu wu yu": {
+        "wln": 2236,
+        "wn": null,
         "rr": null
     },
     "yi shi sheng huan: bao chong wan ku fei": {
@@ -23432,6 +25287,16 @@
     "yi shi zhi zun": {
         "wln": 57171,
         "wn": "6838664202001505",
+        "rr": null
+    },
+    "yi tai er bao: yi wan shou xi ai qi ru gu": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "yi tai er bao yi wan shou xi ai qi ru gu": {
+        "wln": 51020,
+        "wn": "11806186606531405",
         "rr": null
     },
     "yong heng sheng wang": {
@@ -23614,6 +25479,16 @@
         "wn": "11003265405235005",
         "rr": null
     },
+    "zui qiang chong hun: fu hei lao gong ao jiao meng qi": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
+    "zui qiang chong hun fu hei lao gong ao jiao meng qi": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
     "zui qiang ji yin": {
         "wln": 58134,
         "wn": "8052087705003205",
@@ -23622,6 +25497,11 @@
     "zui qiang qi shao": {
         "wln": 54999,
         "wn": "6831855002001305",
+        "rr": null
+    },
+    "zui zhong jin hua": {
+        "wln": 46307,
+        "wn": "7211215605000405",
         "rr": null
     },
     "[Dropped ver, read desc] Solo Player Rebirth!": {
@@ -23684,6 +25564,16 @@
         "wn": null,
         "rr": null
     },
+    "\\u0E2A\\u0E22\\u0E1A\\u0E1F\\u0E49\\u0E32\\u0E1E\\u0E34\\u0E0A\\u0E34\\u0E15\\u0E1B\\u0E10\\u0E1E\\u0E35": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "\\u0e2a\\u0e22\\u0e1a\\u0e1f\\u0e49\\u0e32\\u0e1e\\u0e34\\u0e0a\\u0e34\\u0e15\\u0e1b\\u0e10\\u0e1e\\u0e35": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
     "\\u0E25\\u0E33\\u0E19\\u0E33\\u0E1A\\u0E38\\u0E1B\\u0E1C\\u0E32\\u0E1E\\u0E34\\u0E29": {
         "wln": 60981,
         "wn": "8335483105000205",
@@ -23702,6 +25592,16 @@
     "\\u0e40\\u0e01\\u0e34\\u0e14\\u0e0a\\u0e32\\u0e15\\u0e34\\u0e19\\u0e35\\u0e49\\u0e1e\\u0e35\\u0e48\\u0e15\\u0e49\\u0e2d\\u0e07\\u0e40\\u0e17\\u0e1e": {
         "wln": 668,
         "wn": null,
+        "rr": null
+    },
+    "\\u0E40\\u0E17\\u0E1E\\u0E22\\u0E38\\u0E17\\u0E18\\u0E4C \\u0E40\\u0E0B\\u0E35\\u0E22\\u0E19 glory": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u0e40\\u0e17\\u0e1e\\u0e22\\u0e38\\u0e17\\u0e18\\u0e4c \\u0e40\\u0e0b\\u0e35\\u0e22\\u0e19 glory": {
+        "wln": 33401,
+        "wn": "7176992105000305",
         "rr": null
     },
     "\\u00C1m D\\u1EA1 Du Hi\\u1EC7p": {
@@ -23834,6 +25734,26 @@
         "wn": "12905327006948905",
         "rr": null
     },
+    "\\u4E00\\u80CE\\u4E8C\\u5B9D\\uFF1A\\u4EBF\\u4E07\\u9996\\u5E2D\\u7231\\u59BB\\u5165\\u9AA8": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "\\u4e00\\u80ce\\u4e8c\\u5b9d\\uff1a\\u4ebf\\u4e07\\u9996\\u5e2d\\u7231\\u59bb\\u5165\\u9aa8": {
+        "wln": 51020,
+        "wn": "11806186606531405",
+        "rr": null
+    },
+    "\\u4E07\\u53E4\\u795E\\u5E1D": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "\\u4e07\\u53e4\\u795e\\u5e1d": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
     "\\u4E09\\u754C\\u72EC\\u5C0A": {
         "wln": 34068,
         "wn": "8094038005004505",
@@ -23872,6 +25792,16 @@
     "\\u4e5d\\u9f0e\\u8bb0": {
         "wln": 1053,
         "wn": "10270042106004105",
+        "rr": null
+    },
+    "\\u4E5D\\u9F99\\u795E\\u9F0E": {
+        "wln": 69107,
+        "wn": "9449494306002405",
+        "rr": null
+    },
+    "\\u4e5d\\u9f99\\u795e\\u9f0e": {
+        "wln": 69107,
+        "wn": "9449494306002405",
         "rr": null
     },
     "\\u4E8F\\u6210\\u9996\\u5BCC\\u4ECE\\u6E38\\u620F\\u5F00\\u59CB": {
@@ -23932,6 +25862,16 @@
     "\\u4ed9\\u836f\\u4f9b\\u5e94\\u5546": {
         "wln": 77345,
         "wn": "9120980905002105",
+        "rr": null
+    },
+    "\\u4F0F\\u5929\\u6C0F": {
+        "wln": 64541,
+        "wn": "9795116706003105",
+        "rr": null
+    },
+    "\\u4f0f\\u5929\\u6c0f": {
+        "wln": 64541,
+        "wn": "9795116706003105",
         "rr": null
     },
     "\\u4F60\\u4E3A\\u4F55\\u53EC\\u5524\\u6211": {
@@ -24012,6 +25952,26 @@
     "\\u5c0f\\u4ed9\\u6709\\u6bd2": {
         "wln": 62240,
         "wn": "7979055106002205",
+        "rr": null
+    },
+    "\\u5C06\\u591C": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "\\u5c06\\u591c": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "\\u5C06\\u591C\\u5C0F\\u8BF4": {
+        "wln": 1192,
+        "wn": "8324018606000005",
+        "rr": null
+    },
+    "\\u5c06\\u591c\\u5c0f\\u8bf4": {
+        "wln": 1192,
+        "wn": "8324018606000005",
         "rr": null
     },
     "\\u5C38\\u59D0\\u653B\\u7565": {
@@ -24444,6 +26404,26 @@
         "wn": "11022735705240605",
         "rr": null
     },
+    "\\u7A7F\\u8D8A\\u672A\\u4F86\\u4E4B\\u7537\\u4EBA\\u4E0D\\u597D\\u7576": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "\\u7a7f\\u8d8a\\u672a\\u4f86\\u4e4b\\u7537\\u4eba\\u4e0d\\u597d\\u7576": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "\\u7A7F\\u8D8A\\u672A\\u6765\\u4E4B\\u7537\\u4EBA\\u4E0D\\u597D\\u5F53": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
+    "\\u7a7f\\u8d8a\\u672a\\u6765\\u4e4b\\u7537\\u4eba\\u4e0d\\u597d\\u5f53": {
+        "wln": 61011,
+        "wn": "8534263705001005",
+        "rr": null
+    },
     "\\u7B2C\\u4E00\\u5E8F\\u5217": {
         "wln": 109194,
         "wn": "14219251705674005",
@@ -24592,6 +26572,16 @@
     "\\u7f51\\u6e38\\u4e4b\\u6218\\u5fa1\\u5929\\u4e0b": {
         "wln": 57633,
         "wn": "7141974606000205",
+        "rr": null
+    },
+    "\\u8BB8\\u4F60\\u4E07\\u4E08\\u5149\\u8292\\u597D": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "\\u8bb8\\u4f60\\u4e07\\u4e08\\u5149\\u8292\\u597d": {
+        "wln": 52831,
+        "wn": "8060642606003005",
         "rr": null
     },
     "\\u8BE1\\u79D8\\u4E4B\\u4E3B": {
@@ -24824,6 +26814,16 @@
         "wn": "17847262606339805",
         "rr": null
     },
+    "\\u9F99\\u738B\\u7684\\u5973\\u5A7F": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
+    "\\u9f99\\u738b\\u7684\\u5973\\u5a7f": {
+        "wln": 69400,
+        "wn": "10026092106003405",
+        "rr": null
+    },
     "\\u30AA\\u30FC\\u30D0\\u30FC\\u30ED\\u30FC\\u30C9": {
         "wln": 142,
         "wn": null,
@@ -24842,6 +26842,16 @@
     "\\u30aa\\u30fc\\u30d0\\u30fc\\u30ed\\u30fc\\u30c9 \\u014cb\\u0101r\\u014ddo": {
         "wln": 142,
         "wn": null,
+        "rr": null
+    },
+    "\\u30DE\\u30B9\\u30BF\\u30FC\\u30AA\\u30D6\\u30B9\\u30AD\\u30EB Masut\\u0101obusukiru master of skill": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u30de\\u30b9\\u30bf\\u30fc\\u30aa\\u30d6\\u30b9\\u30ad\\u30eb masut\\u0101obusukiru master of skill": {
+        "wln": 33401,
+        "wn": "7176992105000305",
         "rr": null
     },
     "\\u30E2\\u30F3\\u30B9\\u30BF\\u30FC\\u306E\\u3054\\u4E3B\\u4EBA\\u69D8": {
@@ -24922,6 +26932,16 @@
     "\\u53ec\\u5524\\u5723\\u5251": {
         "wln": 62448,
         "wn": "8034555905002905",
+        "rr": null
+    },
+    "\\u53F2\\u4E0A\\u7B2C\\u4E00\\u7956\\u5E08\\u7237": {
+        "wln": 33496,
+        "wn": "6838665602003605",
+        "rr": null
+    },
+    "\\u53f2\\u4e0a\\u7b2c\\u4e00\\u7956\\u5e08\\u7237": {
+        "wln": 33496,
+        "wn": "6838665602003605",
         "rr": null
     },
     "\\u56DE\\u5230\\u8FC7\\u53BB\\u53D8\\u6210\\u732B": {
@@ -25204,6 +27224,16 @@
         "wn": "11806202505539105",
         "rr": null
     },
+    "\\u95EA\\u5A5A\\u5A07\\u59BB\\uFF1A\\u8001\\u516C\\uFF0C\\u6DF1\\u6DF1\\u7231": {
+        "wln": 86540,
+        "wn": "11256254105313805",
+        "rr": null
+    },
+    "\\u95ea\\u5a5a\\u5a07\\u59bb\\uff1a\\u8001\\u516c\\uff0c\\u6df1\\u6df1\\u7231": {
+        "wln": 86540,
+        "wn": "11256254105313805",
+        "rr": null
+    },
     "\\u96EA\\u9E70\\u9886\\u4E3B": {
         "wln": 33427,
         "wn": "8411219605000605",
@@ -25262,6 +27292,16 @@
     "\\u541b\\u4e5d\\u9f84": {
         "wln": 58922,
         "wn": "7624928106001005",
+        "rr": null
+    },
+    "\\u541B\\u5B50\\u62A5\\u6069": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "\\u541b\\u5b50\\u62a5\\u6069": {
+        "wln": 52831,
+        "wn": "8060642606003005",
         "rr": null
     },
     "\\u541E\\u566C\\u661F\\u7A7A": {
@@ -25332,6 +27372,16 @@
     "\\u661f\\u8fb0\\u53d8": {
         "wln": 1826,
         "wn": null,
+        "rr": null
+    },
+    "\\u661F\\u6218\\u98CE\\u66B4": {
+        "wln": 42132,
+        "wn": "7922313105002205",
+        "rr": null
+    },
+    "\\u661f\\u6218\\u98ce\\u66b4": {
+        "wln": 42132,
+        "wn": "7922313105002205",
         "rr": null
     },
     "\\u661F\\u9645\\u7537\\u795E\\u662F\\u6211\\u7238": {
@@ -25484,6 +27534,26 @@
         "wn": "9120998805002205",
         "rr": null
     },
+    "\\u842C\\u53E4\\u795E\\u5E1D": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "\\u842c\\u53e4\\u795e\\u5e1d": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "\\u842C\\u53E4\\u795E\\u5E1D Old": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
+    "\\u842c\\u53e4\\u795e\\u5e1d old": {
+        "wln": 59641,
+        "wn": "8324025906000205",
+        "rr": null
+    },
     "\\u871C\\u7231100\\u5206\\uFF1A\\u4E0D\\u826F\\u9C9C\\u59BB\\u6709\\u70B9\\u751C": {
         "wln": 60014,
         "wn": "8600631606000605",
@@ -25502,6 +27572,16 @@
     "\\u900d\\u9065\\u68a6\\u8def": {
         "wln": 63420,
         "wn": "8825641305001605",
+        "rr": null
+    },
+    "\\u901A\\u5929\\u4ED9\\u8DEF": {
+        "wln": 118293,
+        "wn": "16335776606724705",
+        "rr": null
+    },
+    "\\u901a\\u5929\\u4ed9\\u8def": {
+        "wln": 118293,
+        "wn": "16335776606724705",
         "rr": null
     },
     "\\u901A\\u5929\\u5927\\u5723": {
@@ -25587,6 +27667,56 @@
     "\\u5168\\u80fd\\u6e38\\u620f\\u8bbe\\u8ba1\\u5e08": {
         "wln": 107242,
         "wn": "15713974606841205",
+        "rr": null
+    },
+    "\\u5168\\u804C\\u6CD5\\u5E08": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "\\u5168\\u804c\\u6cd5\\u5e08": {
+        "wln": 34910,
+        "wn": "7851773505001805",
+        "rr": null
+    },
+    "\\u5168\\u804C\\u9AD8\\u624B": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u804c\\u9ad8\\u624b": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9AD8\\u624B": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9ad8\\u624b": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9AD8\\u624B Qu\\u00E1nzh\\u00ED G\\u0101osh\\u01D2u": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9ad8\\u624b qu\\u00e1nzh\\u00ed g\\u0101osh\\u01d2u": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9AD8\\u624B Qu\\u00E1nzh\\u00ED G\\u0101osh\\u01D2u Full-time Expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
+        "rr": null
+    },
+    "\\u5168\\u8077\\u9ad8\\u624b qu\\u00e1nzh\\u00ed g\\u0101osh\\u01d2u full-time expert": {
+        "wln": 33401,
+        "wn": "7176992105000305",
         "rr": null
     },
     "\\u5251\\u9053\\u72EC\\u5C0A": {
@@ -25769,6 +27899,16 @@
         "wn": "13925801605339805",
         "rr": null
     },
+    "\\u6076\\u9B54\\u56DA\\u7B3C": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
+    "\\u6076\\u9b54\\u56da\\u7b3c": {
+        "wln": 43268,
+        "wn": "7736629105000905",
+        "rr": null
+    },
     "\\u6210\\u9577\\u30C1\\u30FC\\u30C8\\u3067\\u306A\\u3093\\u3067\\u3082\\u3067\\u304D\\u308B\\u3088\\u3046\\u306B\\u306A\\u3063\\u305F\\u304C\\u3001\\u7121\\u8077\\u3060\\u3051\\u306F\\u8F9E\\u3081\\u3089\\u308C\\u306A\\u3044\\u3088\\u3046\\u3067\\u3059": {
         "wln": 35826,
         "wn": null,
@@ -25837,6 +27977,16 @@
     "\\u6211\\u53ef\\u4ee5\\u53d8\\u6210\\u9c7c": {
         "wln": 65321,
         "wn": "9545213205003105",
+        "rr": null
+    },
+    "\\u6211\\u88AB\\u7CFB\\u7EDF\\u6258\\u7BA1\\u4E86": {
+        "wln": 70246,
+        "wn": "9795095706003005",
+        "rr": null
+    },
+    "\\u6211\\u88ab\\u7cfb\\u7edf\\u6258\\u7ba1\\u4e86": {
+        "wln": 70246,
+        "wn": "9795095706003005",
         "rr": null
     },
     "\\u6211\\u662F\\u4F20\\u5947BOSS": {
@@ -25929,6 +28079,26 @@
         "wn": "16984011906162405",
         "rr": null
     },
+    "\\u6211\\u7684\\u51B0\\u5C71\\u7F8E\\u5973\\u8001\\u5A46": {
+        "wln": 87672,
+        "wn": null,
+        "rr": null
+    },
+    "\\u6211\\u7684\\u51b0\\u5c71\\u7f8e\\u5973\\u8001\\u5a46": {
+        "wln": 87672,
+        "wn": null,
+        "rr": null
+    },
+    "\\u6211\\u7684\\u51B7\\u8273\\u603B\\u88C1\\u8001\\u5A46": {
+        "wln": 61300,
+        "wn": "8177178805005705",
+        "rr": null
+    },
+    "\\u6211\\u7684\\u51b7\\u8273\\u603b\\u88c1\\u8001\\u5a46": {
+        "wln": 61300,
+        "wn": "8177178805005705",
+        "rr": null
+    },
     "\\u6211\\u7684\\u672B\\u4E16\\u57FA\\u5730\\u8F66": {
         "wln": 60543,
         "wn": "8118328205005605",
@@ -26019,6 +28189,16 @@
         "wn": "14451962806476405",
         "rr": null
     },
+    "\\u6700\\u5F3A\\u5BA0\\u5A5A\\uFF1A\\u8179\\u9ED1\\u8001\\u516C\\u50B2\\u5A07\\u840C\\u59BB": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
+    "\\u6700\\u5f3a\\u5ba0\\u5a5a\\uff1a\\u8179\\u9ed1\\u8001\\u516c\\u50b2\\u5a07\\u840c\\u59bb": {
+        "wln": 72306,
+        "wn": "11257419905314505",
+        "rr": null
+    },
     "\\u6700\\u5F3A\\u5F03\\u5C11": {
         "wln": 54999,
         "wn": "6831855002001305",
@@ -26037,6 +28217,16 @@
     "\\u6700\\u5f3a\\u57fa\\u56e0": {
         "wln": 58134,
         "wn": "8052087705003205",
+        "rr": null
+    },
+    "\\u6700\\u7EC8\\u8FDB\\u5316": {
+        "wln": 46307,
+        "wn": "7211215605000405",
+        "rr": null
+    },
+    "\\u6700\\u7ec8\\u8fdb\\u5316": {
+        "wln": 46307,
+        "wn": "7211215605000405",
         "rr": null
     },
     "\\u6740\\u795E": {
@@ -26197,6 +28387,46 @@
     "\\u7425\\u73c0\\u4e4b\\u5251": {
         "wln": 34066,
         "wn": null,
+        "rr": null
+    },
+    "\\u7570\\u4E16\\u754C\\u6DF7\\u6D74\\u7269\\u8A9E": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
+    },
+    "\\u7570\\u4e16\\u754c\\u6df7\\u6d74\\u7269\\u8a9e": {
+        "wln": 2236,
+        "wn": null,
+        "rr": null
+    },
+    "\\u8001\\u8872\\u8981\\u8FD8\\u4FD7": {
+        "wln": 71849,
+        "wn": "8335500905000305",
+        "rr": null
+    },
+    "\\u8001\\u8872\\u8981\\u8fd8\\u4fd7": {
+        "wln": 71849,
+        "wn": "8335500905000305",
+        "rr": null
+    },
+    "\\u9690\\u5A5A100\\u5206\\uFF1A\\u60F9\\u706B\\u5A07\\u59BB\\u5AC1\\u4E00\\u9001\\u4E00": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "\\u9690\\u5a5a100\\u5206\\uff1a\\u60f9\\u706b\\u5a07\\u59bb\\u5ac1\\u4e00\\u9001\\u4e00": {
+        "wln": 52831,
+        "wn": "8060642606003005",
+        "rr": null
+    },
+    "\\u9886\\u4E3B\\u4E4B\\u5175\\u4F10\\u5929\\u4E0B": {
+        "wln": 63526,
+        "wn": "11263692606307605",
+        "rr": null
+    },
+    "\\u9886\\u4e3b\\u4e4b\\u5175\\u4f10\\u5929\\u4e0b": {
+        "wln": 63526,
+        "wn": "11263692606307605",
         "rr": null
     },
     "\\uB098\\uB178 \\uB9C8\\uC2E0": {
