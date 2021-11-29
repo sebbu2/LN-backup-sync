@@ -95,6 +95,18 @@
         "name": "New Game Plus",
         "list": "RoyalRoad plan to read"
     },
+    "3253": {
+        "wln": 8458,
+        "wn": null,
+        "name": "Hardcore OP-ness",
+        "list": "RoyalRoad on-hold"
+    },
+    "3619": {
+        "wln": 32444,
+        "wn": null,
+        "name": "Silver Death",
+        "list": "RoyalRoad stalled"
+    },
     "3666": {
         "wln": 32381,
         "wn": null,
@@ -133,7 +145,7 @@
     },
     "4242": {
         "wln": 33459,
-        "wn": null,
+        "wn": "15639304706576105",
         "name": "World Seed",
         "list": "RoyalRoad plan to read"
     },
@@ -178,6 +190,12 @@
         "wn": null,
         "name": "Savage Divinity",
         "list": "RoyalRoad on-hold"
+    },
+    "6639": {
+        "wln": 42897,
+        "wn": "12215694606105305",
+        "name": "Rise of the Fallen (Tyranny)",
+        "list": "RoyalRoad plan to read"
     },
     "6694": {
         "wln": 42866,
@@ -319,7 +337,7 @@
     },
     "15935": {
         "wln": 90542,
-        "wn": null,
+        "wn": "13190282505005305",
         "name": "There is no Epic Loot, Only Puns",
         "list": "duplicates"
     },
@@ -643,7 +661,7 @@
     },
     "30605": {
         "wln": 81989,
-        "wn": null,
+        "wn": "12801407706419705",
         "name": "Magnus",
         "list": "RoyalRoad on-hold"
     },
@@ -803,6 +821,12 @@
         "name": "Artificial Jelly",
         "list": "RoyalRoad stalled"
     },
+    "34372": {
+        "wln": 120120,
+        "wn": "13328802305445705",
+        "name": "The world of fantasy (naman khetarpal)",
+        "list": "RoyalRoad plan to read"
+    },
     "34388": {
         "wln": 119016,
         "wn": null,
@@ -916,6 +940,12 @@
         "wn": null,
         "name": "Respawn Condition: Trash Mob",
         "list": "RoyalRoad"
+    },
+    "36391": {
+        "wln": 128301,
+        "wn": null,
+        "name": "Master Necromancer",
+        "list": "RoyalRoad plan to read"
     },
     "36650": {
         "wln": 128990,
@@ -1072,6 +1102,12 @@
         "wn": null,
         "name": "Dungeon I\/O (Crafting)",
         "list": "RoyalRoad plan to read"
+    },
+    "40275": {
+        "wln": 70010,
+        "wn": "11579272406429005",
+        "name": "Life Hunter",
+        "list": "QIDIAN original"
     },
     "40277": {
         "wln": 136750,
@@ -1717,7 +1753,7 @@
     },
     "47997": {
         "wln": 142455,
-        "wn": null,
+        "wn": "12796110105355505",
         "name": "Overkill",
         "list": "RoyalRoad"
     },
