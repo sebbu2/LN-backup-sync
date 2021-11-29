@@ -460,7 +460,7 @@ $lines=0;
 usort($wn_books, fn($e1, $e2) => strnatcasecmp($e1->bookName, $e2->bookName));
 echo '<h1>WebNovel</h1>',"\n";
 foreach($wn_books as $entry) {
-	if($entry->novelType==100) continue;
+	if($entry->novelType==100 || $entry->novelType==200) continue;
 	$row=array();
 	$row['title']=$entry->bookName;
 	if(!property_exists($entry, 'readToChapterNum')) $row['WebNovel cur']=$entry->readToChapterIndex;

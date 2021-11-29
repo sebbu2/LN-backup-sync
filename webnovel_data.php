@@ -6,7 +6,7 @@ require_once('WebNovel.php');
 
 $loggued=false;
 
-if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
+if(direct()) include('header.php');
 
 $action=0;
 if(array_key_exists('action', $_REQUEST) && (is_int($_REQUEST['action'])||ctype_digit($_REQUEST['action']))) {
@@ -63,4 +63,4 @@ file_put_contents('webnovel_data.htm', $data);
 echo $data;
 unset($data);
 
-if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('footer.php');
+if(direct()) include('footer.php');

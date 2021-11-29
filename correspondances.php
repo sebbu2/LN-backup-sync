@@ -64,9 +64,10 @@ if(direct()) {
 
 	$wn_=array('novel'=>0, 'novel translated'=>0, 'novel original'=>0, 'novel others'=>0, 'comic'=>0, 'others'=>0);
 	$tr_=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
-	$tr_2=array(0=>array(), 100=>array());
+	$tr_2=array(0=>array(), 100=>array(), 200=>array());
 	$tr_2[0]=array('-1'=>array(),'0'=>array(),'1'=>array(),'2'=>array());
 	$tr_2[100]=array('-1'=>array(),'0'=>array(),'1'=>array(),'2'=>array());
+	$tr_2[200]=array('-1'=>array(),'0'=>array(),'1'=>array(),'2'=>array());
 	$tr_3=array();
 	$tr_3[0]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
 	$tr_3[100]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
@@ -87,6 +88,7 @@ if(direct()) {
 		}//*/
 		if(!array_key_exists($tr, $tr_)) $tr_[$tr]=1;
 		else $tr_[$tr]++;
+		if(!array_key_exists($v3['novelType'], $v3)) $tr_3[$v3['novelType']]=array();
 		if(!array_key_exists($tr, $tr_3[$v3['novelType']])) $tr_3[$v3['novelType']][$tr]=1;
 		else $tr_3[$v3['novelType']][$tr]++;
 		//if(!array_key_exists($tr, $tr_2)) $tr_2[$tr]=array();
@@ -194,7 +196,7 @@ if(direct()) {
 			$timer3=microtime(true);
 			foreach($books as $k3=>$v3) {
 				//var_dump($v3);//die();
-				if($v3['novelType']==100) continue;
+				if($v3['novelType']==100 || $v3['novelType']==200) continue;
 				if(IGNORE_DUPLICATES && isset($skip_wln_wn[$k3]) && $skip_wln_wn[$k3]) continue;
 				//$res=$wn->get_info_cached($v3['bookId'],3);
 				//var_dump($res);die();
@@ -278,7 +280,7 @@ if(direct()) {
 	// 1 WN
 	$timer3=microtime(true);
 	foreach($books as $k3=>$v3) {
-		if($v3['novelType']==100) continue;
+		if($v3['novelType']==100 || $v3['novelType']==200) continue;
 		$wn_id=$v3['bookId'];
 		if(array_key_exists($wn_id, $cor_wn)) continue;
 		$n=name_simplify($v3['bookName']);

@@ -8,7 +8,7 @@ require_once('royalroad.php');
 if(!defined('MOONREADER_DID')) define('MOONREADER_DID', '1454083831785');
 if(!defined('MOONREADER_DID2')) define('MOONREADER_DID2', '9999999999999');
 
-include('header.php');
+if(direct()) include('header.php');
 
 chdir(DROPBOX);
 $ar=glob('*.po');
@@ -442,4 +442,4 @@ if($updatedCount['wln']>0 || $updatedCount['wn']>0 || $updatedCount['rr']>0) {
 }//*/
 //echo '<br/><a href="retr.php">retr</a><br/>'."\r\n";
 
-include('footer.php');
+if(direct()) include('footer.php');

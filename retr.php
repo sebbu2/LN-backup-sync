@@ -7,7 +7,7 @@ require_once('royalroad.php');
 
 $loggued=false;
 
-if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('header.php');
+if(direct()) include('header.php');
 
 {
 	$wln_errors=array(
@@ -132,4 +132,4 @@ $loggued=false;
 }
 //if(!defined('DROPBOX_DONE')) echo '<br/><a href="dropbox.php">dropbox</a><br/>'."\r\n";
 
-if(!defined('DROPBOX_DONE')||!DROPBOX_DONE) include('footer.php');
+if(direct()) include('footer.php');

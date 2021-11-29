@@ -25,7 +25,7 @@ Features :
 
 * Retrieve list of books from library (website)
 
-* Retrieve list of books from other library : favorites, history, read later, collections, etc... (website)
+* Retrieve list of books from other library : collections, favorites, history, read later, etc... (website)
 
 * Search book (website)
 
@@ -140,6 +140,8 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 **dropbox2.php** List new novels and add them to wlnupdates and webnovel
 
 **dropbox.inc.php** Gets all the positions from cloud source
+
+**list_add_to_main.php** Add to the library the novels from other library (collections, favorites, history, read later, etc...)
 
 **news.php** list novels with new chapters (depends on retr, position and correspondances)
 

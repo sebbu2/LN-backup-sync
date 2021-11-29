@@ -1148,7 +1148,7 @@ class WebNovel extends SitePlugin
 	
 	public function add_watch($id, $novelType=0) {
 		// id
-		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		$referer='https://www.webnovel.com/library';
 
 		$data=array();
@@ -1164,7 +1164,7 @@ class WebNovel extends SitePlugin
 			'Referer: '.$referer,
 		);
 		
-		$res = $this->send( 'https://www.webnovel.com/apiajax/Library/AddLibraryItemsAjax', $ar, $headers);
+		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/addLibraryItemsAjax', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'AddLibraryItemsAjax.json', $res);
 		$res=json_decode($res);
