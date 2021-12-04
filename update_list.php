@@ -75,7 +75,7 @@ foreach($correspondances as $ar) {
 	$res=$wn->get_info_cached($wn_id);
 	for($i=0;$i<4;++$i) {
 		$j=0;
-		while(count(get_object_vars($res[$i]))==0 && $j++<5) {
+		while(count(get_object_vars($res[$i]))<3 && ++$j<=$wn::RETRY_LIMIT) {
 			$res[$i]=$wn->get_info($wn_id, $i);
 			//var_dump($res[$i]);
 		}
@@ -103,15 +103,21 @@ foreach($correspondances as $ar) {
 	//*/
 
 	//var_dump($wln->search('New Game+'));
-
-	$res[1]->Data->Gift->Users=NULL;
-	$res[1]->Data->BookFans->Users=NULL;
-	$res[1]->Data->TopReviewInfos=NULL;
-	$res[1]->Data->AlsoLikes=NULL;
-	$res[1]->Data->GenreBookItems=NULL;
-	//foreach($res[1]->Data->AlsoLikes as &$v) { $v->StatParams=json_decode($v->StatParams); }
-	if(property_exists($res[2], 'data') && property_exists($res[2]->data, 'bookReviewInfos')) {
-		$res[2]->data->bookReviewInfos=NULL;
+	
+	if(!property_exists($res[1], 'Data') || $res[1]->Data===NULL) { $res[1]=NULL; }
+	if($res[1]!==NULL) {
+		$res[1]->Data->Gift->Users=NULL;
+		$res[1]->Data->BookFans->Users=NULL;
+		$res[1]->Data->TopReviewInfos=NULL;
+		$res[1]->Data->AlsoLikes=NULL;
+		$res[1]->Data->GenreBookItems=NULL;
+		//foreach($res[1]->Data->AlsoLikes as &$v) { $v->StatParams=json_decode($v->StatParams); }
+	}
+	if(!property_exists($res[2], 'data') || $res[2]->data===NULL) { $res[2]=NULL; }
+	if($res[2]!==NULL) {
+		if(property_exists($res[2], 'data') && property_exists($res[2]->data, 'bookReviewInfos')) {
+			$res[2]->data->bookReviewInfos=NULL;
+		}
 	}
 	if(property_exists($res[3], 'data') && property_exists($res[3]->data, 'recommendListItems')) {
 		$res[3]->data->recommendListItems=NULL;
@@ -147,7 +153,7 @@ foreach($correspondances as $ar) {
 		$json2[]=array('key'=>'author-container','type'=>'multiitem','value'=>$res[0]->Data->AuthorInfo->AuthorName);
 		$modifs['authors']++;
 	}
-	if(count($res2->data->tags)==0) {
+	if(count($res2->data->tags)==0 && $res[1]!==NULL) {
 		$ar=call_user_func(function(array $a){ natcasesort($a);return $a;}, array_map(function($x) { return strtolower($x->TagName); }, $res[1]->Data->TagInfos));
 		if(count($ar)>0) {
 			$json2[]=array('key'=>'tag-container','type'=>'multiitem','value'=>implode("\n",$ar));
@@ -183,10 +189,14 @@ foreach($correspondances as $ar) {
 	}//*/
 	
 	//if(count($res2->data->alternatenames)<=1 || (strlen($resb->data->bookInfo->bookSubName)>0&&array_search($resb->data->bookInfo->bookSubName, $res2->data->alternatenames)==false) ) {
+	$names=array($res[0]->Data->BookName);
+	if($res[1]!==NULL) $names[]=$res[1]->Data->OriginalName;
+	$names[]=$subName;
 	$names=array_filter(array_unique(array_merge(
-		array($res[0]->Data->BookName, $res[1]->Data->OriginalName, $subName),
+		$names,
 		$res2->data->alternatenames,
 		array_map('normalize', $res2->data->alternatenames),
+		array_map(fn($e) => json_decode('"'.$e.'"'), array_map('normalize', $res2->data->alternatenames)),
 		//array_map('normalize2', $res2->data->alternatenames),
 		array_map('normalize2', array_map('normalize', $res2->data->alternatenames)),
 		array_map('normalize2', array_map('normalize', array_map(fn($e) => name_simplify($e, 1), $res2->data->alternatenames))),
@@ -232,7 +242,7 @@ foreach($correspondances as $ar) {
 		$url='https://www.webnovel.com/book/'.$wn_id;
 		$data=$wn->get($url, NULL, NULL, NULL);
 		foreach($wn->headersRecv as $hdr) {
-			if(substr($hdr, 0, 10)=='Location: ') {
+			if(substr($hdr, 0, 10)=='Location: ' || substr($hdr, 0, 10)=='location: ') {
 				$url='https://www.webnovel.com'.substr($hdr, 10);
 			}
 		}

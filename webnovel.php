@@ -7,7 +7,7 @@ class WebNovel extends SitePlugin
 	public const FOLDER='webnovel/';
 	
 	public const RETRY_LIMIT = 5; // we try each query up to 5 times in cases of errors (the API randomly fails)
-	public const LIBRARY_LIMIT = 40; // to prevent infinite loop in case of error when retrieving the library (i'm at ~ half of it)
+	public const LIBRARY_LIMIT = 50; // to prevent infinite loop in case of error when retrieving the library (i'm at ~ half of it)
 	
 	public function __construct() {
 		
@@ -423,7 +423,7 @@ class WebNovel extends SitePlugin
 				++$i;
 			}
 		}
-		while( ( (is_object($res) && property_exists($res, 'data') && is_object($res->data) && $res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach 40*30 books soon (i'm at 21)
+		while( ( (is_object($res) && property_exists($res, 'data') && is_object($res->data) && $res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach LIBRRY_LIMIT*30 books soon (i'm at 32)
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		if(is_null($books2)) { die('error'); }
@@ -447,6 +447,9 @@ class WebNovel extends SitePlugin
 			}
 			elseif($b->novelType==100) {
 				//$order[]=[$b->bookId, $b->comicName, $res->data->comicInfo->comicName, count($books2)-1-$ind];
+				$order[]=$b->bookId;
+			}
+			elseif($b->novelType==200) {
 				$order[]=$b->bookId;
 			}
 		}
@@ -1048,18 +1051,34 @@ class WebNovel extends SitePlugin
 		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
 		if(count($types)==0) { die('ERROR: empty types.'); }
 		
-		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
+		//$cookies=array('_csrfToken'=>$cookies['_csrfToken']);
+		//unset($cookies['e1'], $cookies['e2']);
+		//var_dump($cookies);die();
 		$referer='https://www.webnovel.com/';
 		$ar=array(
 			'bookId'=>$id,
 		);
 		$headers=array(
 			//'X-Requested-With: XMLHttpRequest',
+			//'authority: webnovel.com',
+			'cache-control: max-age=0',
+			'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+			'sec-ch-ua-mobile: ?0',
+			'sec-ch-ua-platform: "Windows"',
+			'upgrade-insecure-requests: 1',
+			'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36',
+			'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+			'sec-ch-ua-mobile: ?0',
+			'sec-ch-ua-platform: "Windows"',
+			'upgrade-insecure-requests: 1',
+			'accept-language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
 			//'Referer: '.$referer,
 		);
+		$headers=array();
 		
 		if(in_array(0, $types)) {
-			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers);
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'get-book'.$id.'.json', $res);
 		
@@ -1067,7 +1086,7 @@ class WebNovel extends SitePlugin
 		}
 		
 		if(in_array(1, $types)) {
-			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers);
+			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'get-book-extended'.$id.'.json', $res);
 			
@@ -1085,7 +1104,7 @@ class WebNovel extends SitePlugin
 			'_'=>millitime(),
 		);
 		if(in_array(2, $types)) {
-			$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar );
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'get-reviews'.$id.'.json', $res);
 			
@@ -1098,7 +1117,7 @@ class WebNovel extends SitePlugin
 			'type'=>2,
 		);
 		if(in_array(3, $types)) {
-			$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar );
+			$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
 			file_put_contents($this::FOLDER.'getRecommendList'.$id.'.json', $res);
 			
@@ -1138,8 +1157,8 @@ class WebNovel extends SitePlugin
 					$res2=$this->get_info($id, $i);
 				}
 				//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
-				while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<5) $res2=$this->get_info($id, $i);
-				while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<5) $res2=$this->get_info($id, $i);
+				while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->get_info($id, $i);
+				while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->get_info($id, $i);
 				$res[$i]=$res2;
 			}
 		}

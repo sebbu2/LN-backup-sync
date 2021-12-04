@@ -52,8 +52,17 @@ $rr_order=$rr->get_order();
 $rr_books=$rr->get_watches();
 
 $skip=array('19886807705655205', '19636465406948705', '19230521106872905', '19212887105657605', '7860061006001305');
+$skip=array_merge($skip,array('16447293106086205','14286329606946605'));
 $skip[]='hell_15666872205580405';//tmfh	
 $skip[]='20492878505809705';//twof
+$skip[]='11013622205237905';//wisp
+$skip[]='20101769906656005';//ambal
+$skip[]='11248412105311105';//armipotent (old)
+$skip[]='na_15514663106826405';//mml
+$skip[]='12610692305122305';//btnh
+$skip[]='20343529205397405';//unavailable
+$skip[]='12624232606210205';
+$skip[]='10961635803380503';
 
 $count=0;
 $count2=0;
@@ -69,25 +78,30 @@ else $res2=$wn->get_history();
 var_dump('history');
 //var_dump($res2[0][1],$res2[1][1]);//die();
 
+$skips=array();
 {
 	$res=$res2[0];
 	foreach($res as $it) {
 		if(in_array($it->bookId, $skip)) continue;
 		if(!array_key_exists($it->bookId, $wn_books)) {
+			if(in_array((string)$it->bookId, $skips)) continue;
 			$res_=$wn->add_watch($it->bookId, $it->novelType);
 			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
 			$count2++;
-			var_dump($count2, $it->bookId);//die();
+			var_dump($count2, $it->bookId, $it->bookName);//die();
+			$skips[]=(string)$it->bookId;
 		}
 	}
 	$res=$res2[1];
 	foreach($res as $it) {
 		if(in_array($it->BookId, $skip)) continue;
 		if(!array_key_exists($it->BookId, $wn_books)) {
+			if(in_array((string)$it->BookId, $skips)) continue;
 			$res_=$wn->add_watch($it->BookId, $it->ItemType);
 			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
 			$count2++;
-			var_dump($count2, $it->BookId);//die();
+			var_dump($count2, $it->BookId, $it->BookName);//die();
+			$skips[]=(string)$it->BookId;
 		}
 	}
 }
@@ -118,10 +132,12 @@ foreach($res2 as $list => $res_) {
 	foreach($res_ as $it) {
 		if(in_array($it->BookId, $skip)) continue;
 		if(!array_key_exists($it->BookId, $wn_books)) {
+			if(in_array((string)$it->BookId, $skips)) continue;
 			$res_=$wn->add_watch($it->BookId, $it->BookType);
 			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
 			$count2++;
-			var_dump($count2, $it->BookId);//die();
+			var_dump($count2, $it->BookId, $it->BookName);//die();
+			$skips[]=(string)$it->BookId;
 		}
 	}
 }

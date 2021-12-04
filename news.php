@@ -389,6 +389,7 @@ foreach($wln_order as $id=>$list) {
 				if( array_key_exists($col2, $row) ) {
 					if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
 						$min=$row['start'];
+						if(array_key_exists('start9',$row)&&$row['start9']>$min) $min=$row['start9'];
 						if($row['start']>$row[$col2]) {
 							if($row['WLNUpdate cur']>1) $min=$row['WLNUpdate cur'];
 							else $min=1;
@@ -452,6 +453,7 @@ flush();
 //1 WN 2 RR
 $head=array('title',
  //'WLNUpdate cur',
+ 'wn_id',
  'WebNovel cur', 'WebNovel last',
  'RoyalRoad cur', 'RoyalRoad last',
  'start', 'pos', 'last',
@@ -462,11 +464,22 @@ echo '<h1>WebNovel</h1>',"\n";
 foreach($wn_books as $entry) {
 	if($entry->novelType==100 || $entry->novelType==200) continue;
 	$row=array();
-	$row['title']=$entry->bookName;
+	$row['wn_id']=$entry->bookId;
+	$row['wn_id']='<a href="https://www.webnovel.com/book/'.$row['wn_id'].'/">'.$row['wn_id'].'</a>';
+	$row['title']=trim($entry->bookName);
+	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(!property_exists($entry, 'readToChapterNum')) $row['WebNovel cur']=$entry->readToChapterIndex;
 	else $row['WebNovel cur']=$entry->readToChapterNum;
 	if(!property_exists($entry, 'totalChapterNum')) $row['WebNovel last']=$entry->newChapterIndex;
 	else $row['WebNovel last']=$entry->totalChapterNum;//readToChapterIndex or totalChapterNum or newChapterIndex
+	/*if(strtolower(normalize($row['title']))===strtolower(normalize('万古最强宗'))) {// || $entry->bookId=='17527780306425705') {
+		var_dump($entry, $row['title'], $name, normalize($name), normalize2($name));
+		var_dump('万古最强宗', normalize('万古最强宗'), normalize2('万古最强宗'), normalize2(normalize('万古最强宗')));
+		var_dump(mb_convert_encoding(normalize($row['title']), 'UTF-8', 'HTML-ENTITIES'), mb_convert_encoding(normalize('万古最强宗'), 'UTF-8', 'HTML-ENTITIES'));
+		var_dump(json_decode('"'.normalize($row['title']).'"'), json_decode('"'.normalize('万古最强宗').'"'));
+		var_dump($translit1->transliterate($row['title']));
+		var_dump($translit1->transliterate('万古最强宗'));
+	}//*/
 	if(array_key_exists($entry->bookId, $cor_wn)) {
 		$wn1=$cor_wn[$entry->bookId];
 		if(!is_null($wn1['wln'])) continue; // already in previous big loop
@@ -492,7 +505,6 @@ foreach($wn_books as $entry) {
 			}
 		}
 	}
-	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {
 		$pos1=$pos[$name];
 		$row['start']=$pos1['min'];
@@ -524,6 +536,7 @@ flush();
 $head=array('title',
  //'WLNUpdate cur',
  //'WebNovel cur', 'WebNovel last',
+ 'rr_id',
  'RoyalRoad cur', 'RoyalRoad last',
  'start', 'pos', 'last',
  'msg');
@@ -532,6 +545,8 @@ uasort($rr_books, fn($e1, $e2) => strnatcasecmp($e1->title, $e2->title));
 echo '<h1>RoyalRoad</h1>',"\n";
 foreach($rr_books as $rr_id=>$entry) {
 	$row=array();
+	$row['rr_id']=$rr_id;
+	$row['rr_id']='<a href="https://www.royalroad.com/fiction/'.$row['rr_id'].'/">'.$row['rr_id'].'<a>';
 	$row['title']=$entry->title;
 	$rr1=NULL;
 	if(array_key_exists($rr_id, $cor_rr)) {
@@ -601,7 +616,7 @@ foreach($pos as $item) {
 	$row=array();
 	$row['title']=$item['fn3'];
 	$name=strtolower(normalize(name_simplify($row['title'])));
-	if(array_key_exists($name, $names)) {
+	if(array_key_exists($name, $names) || array_key_exists(normalize2($name), $names)) {
 		$names1=$names[$name];
 		if(!is_null($names1['wln'])) continue;
 		if(!is_null($names1['wn'])) continue;

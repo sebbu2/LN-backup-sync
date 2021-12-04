@@ -97,7 +97,7 @@ class SitePlugin
 		file_put_contents(COOKIEFILE, implode('', $ar));
 	}
 	
-	public function get($url, $parameters=array(), $headers=array(), $cookies=array()) {
+	public function get2($url, $parameters=array(), $headers=array(), $cookies=array()) {
 		$arr=array(
 			'http'=>array(
 				'ignore_errors'=>true,
@@ -156,7 +156,7 @@ class SitePlugin
 		return strlen($header); // mandatory (from API documentation)
 	}
 	
-	public function send($url, $postdata=array(), $headers=array(), $cookies=array()) {
+	private function request($url, $postdata=array(), $headers=array(), $cookies=array()) {
 		$this->headersRecv=array();
 		$this->headersSent=array();
 		
@@ -177,22 +177,52 @@ class SitePlugin
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		if(!is_null($postdata)&&!empty($postdata)) {
-			curl_setopt($ch, CURLOPT_POST, 1);
-			if(is_array($postdata)) $postdata=http_build_query($postdata, '', '&');
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-		}
-		$this->lastUrl=$url;
+		
 		if(!is_null($headers)&&!empty($headers))
 		{
 			if(!is_array($headers)) $headers=array($headers);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		}
-		if(DEBUG_URL || DEBUG_HTTP) var_dump($url);
 		
 		curl_setopt($ch, CURLINFO_HEADER_OUT, 1 ); // headersSent
 		curl_setopt($ch, CURLOPT_HEADERFUNCTION, array(&$this, 'print_headers')); // headersRecv
 		
+		return $ch;
+	}
+	
+	public function get($url, $parameters=array(), $headers=array(), $cookies=array()) {
+		$url2=$url;
+		$ch = $this->request($url, $parameters, $headers, $cookies);
+		if(is_array($parameters)&&count($parameters)>0) {
+			$parameters=http_build_query($parameters, '', '&', PHP_QUERY_RFC3986);
+			if(strpos($url, '?')===false) $url.='?'.$parameters;
+			else $url.='&'.$parameters;
+			curl_setopt($ch, CURLOPT_URL, $url);
+		}
+		
+		$this->lastUrl=$url;
+		if(DEBUG_URL || DEBUG_HTTP) var_dump($url);
+		return $this->request2($ch, $url2, $parameters);
+	}
+	
+	public function send($url, $postdata=array(), $headers=array(), $cookies=array()) {
+		return $this->post($url, $postdata, $headers, $cookies);
+	}
+	
+	public function post($url, $postdata=array(), $headers=array(), $cookies=array()) {
+		$ch = $this->request($url, $postdata, $headers, $cookies);
+		if(!is_null($postdata)&&!empty($postdata)) {
+			curl_setopt($ch, CURLOPT_POST, 1);
+			if(is_array($postdata)) $postdata=http_build_query($postdata, '', '&');
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+		}
+		
+		$this->lastUrl=$url;
+		if(DEBUG_URL || DEBUG_HTTP) var_dump($url);
+		return $this->request2($ch, $url, $postdata);
+	}
+	
+	private function request2($ch, $url, $postdata) {
 		$res = curl_exec($ch);
 		
 		$this->headersSent = curl_getinfo($ch, CURLINFO_HEADER_OUT ); // request headers
@@ -203,13 +233,17 @@ class SitePlugin
 				var_dump('>> '.trim($h));
 			}
 		}
-		if(DEBUG_POSTDATA) var_dump('postdata', $postdata);
+		if(DEBUG_POSTDATA) {
+			$output=array();
+			parse_str($postdata, $output);
+			var_dump('postdata', $output);
+		}
 		foreach($this->headersRecv as $h)
 		{
 			if(DEBUG_HTTP) {
 				var_dump('<< '.trim($h));
 			}
-			else if(startswith($h, 'Location:')) {
+			if( (DEBUG_HTTP || DEBUG_URL) && (startswith($h, 'Location:') || startswith($h, 'location')) ) {
 				var_dump('Redirecting from \"'.$url.'\" to \"'.substr($h, 10).'\"<br/>'."\r\n");
 			}
 		}
@@ -278,7 +312,7 @@ class SitePlugin
 			$json1 = preg_replace('/[[:cntrl:]]/', '', $json1);
 			$json1=str_replace('\:', '\\:', $json1);
 			$json1=str_replace('\0', '\\0', $json1);
-			file_put_contents('test2.json', $json1);
+			//file_put_contents('test2.json', $json1);
 			//$json2=json_decode($json1, false, 512, JSON_INVALID_UTF8_IGNORE | JSON_THROW_ON_ERROR);
 			$json2=(new CJSON())->decode($json1);
 		}

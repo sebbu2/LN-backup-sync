@@ -52,6 +52,7 @@ $cols=array();
 for($i=0;$i<count($res);$i++) {
 	$cols[$i.' : '.$res3[$i]]=count($res[$res3[$i]]);
 }
+$files['_collection.json data']=array_sum($cols);
 
 ob_start();
 print_table(array($files));

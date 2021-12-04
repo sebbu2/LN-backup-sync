@@ -47,16 +47,20 @@ if(direct()) {
 	$wln_sum=0;
 	$wln_wn=0;
 	$wln_rr=0;
+	$wln_sh=0;
+	$wln_wp=0;
 	$wln_others=0;
 	foreach( $watches['data'][0] as $k=>$v) {
 		//var_dump($k, count($v));
 		if(substr($k.' ', 0, 7)==='QIDIAN ') $wln_wn+=count($v);
 		else if(substr($k.' ', 0, 10)==='RoyalRoad ') $wln_rr+=count($v);
+		else if(substr($k.' ', 0, 12)==='ScribbleHub ') $wln_sh+=count($v);
+		else if(substr($k.' ', 0, 8)==='WattPad ') $wln_wp+=count($v);
 		else $wln_others+=count($v);
 		$wln_sum+=count($v);
 	}
 	var_dump($watches['data'][1]);//*/
-	$wlns=array('sum'=>$wln_sum, 'wn'=>$wln_wn, 'rr'=>$wln_rr, 'others'=>$wln_others);
+	$wlns=array('sum'=>$wln_sum, 'wn'=>$wln_wn, 'rr'=>$wln_rr, 'sh'=>$wln_sh, 'wp'=>$wln_wp, 'others'=>$wln_others);
 	var_dump($wlns);
 
 	//var_dump(array('wln'=>array_reduce($watches['data'][0], 'sum_count'), 'wn'=>count($books), 'rr'=>count($follows)));
@@ -71,6 +75,7 @@ if(direct()) {
 	$tr_3=array();
 	$tr_3[0]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
 	$tr_3[100]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
+	$tr_3[200]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
 	foreach($books as $k3=>$v3) {
 		if($v3['novelType']==0) $wn_['novel']++;
 		else if($v3['novelType']==100) $wn_['comic']++;
@@ -88,7 +93,7 @@ if(direct()) {
 		}//*/
 		if(!array_key_exists($tr, $tr_)) $tr_[$tr]=1;
 		else $tr_[$tr]++;
-		if(!array_key_exists($v3['novelType'], $v3)) $tr_3[$v3['novelType']]=array();
+		if(!array_key_exists($v3['novelType'], $tr_3)) $tr_3[$v3['novelType']]=array();
 		if(!array_key_exists($tr, $tr_3[$v3['novelType']])) $tr_3[$v3['novelType']][$tr]=1;
 		else $tr_3[$v3['novelType']][$tr]++;
 		//if(!array_key_exists($tr, $tr_2)) $tr_2[$tr]=array();
@@ -185,9 +190,10 @@ if(direct()) {
 			$n3=array_map('name_simplify', $n3);
 			$n3=array_merge($n3, array_map('normalize', $n3));
 			$n3=array_merge($n3, array_map('normalize2', $n3));
+			$n3=array_merge($n3, array_map(fn($e) => json_decode('"'.$e.'"'), $n3));
 			$n3=array_values(array_unique($n3));
 			//var_dump($wln_id, $n1, $n2, $n3);//die();
-			//if($wln_id==43524) { var_dump($n3);die(); }
+			//if($wln_id==110069) { var_dump($n3); }
 			
 			// 1 WLN 2 WN
 			$wn_id=NULL;
@@ -201,10 +207,22 @@ if(direct()) {
 				//$res=$wn->get_info_cached($v3['bookId'],3);
 				//var_dump($res);die();
 				//$n=name_simplify($v3['bookName']);
-				$n=name_simplify(normalize($v3['bookName']));
+				$n=$v3['bookName'];
+				$n=name_simplify($n);
+				$n=normalize($n);
 				foreach($n3 as $n_) {
 					//if($n===$n_) {
-					if(strtolower($n)===strtolower($n_)) {
+					$n_=name_simplify($n_);
+					$n_=normalize($n_);
+					if(
+						strtolower($n)===strtolower($n_)
+						|| strtolower(normalize($n))===strtolower(normalize($n_))
+						//|| strtolower(normalize2($n))===strtolower(normalize2($n_))
+						|| strtolower(normalize(normalize($n)))===strtolower(normalize(normalize2($n_)))
+						|| strtolower(json_decode('"'.$n.'"'))===strtolower(json_decode('"'.$n_.'"'))
+						|| strtolower(json_decode('"'.normalize($n).'"'))===strtolower(json_decode('"'.normalize($n_).'"'))
+					) {
+						//if($wln_id==110069) { var_dump($n); }
 						$wn_id=$v3['bookId'];
 						$skip_wln_wn[$k3]=true;
 						break(2);
@@ -213,6 +231,7 @@ if(direct()) {
 			}
 			$timer4=microtime(true);
 			$counter2+=($timer4-$timer3);
+			//if($wln_id==110069) die();
 			//var_dump($wn_id);//die();
 			
 			// 1 WLN 2 RR
@@ -224,11 +243,12 @@ if(direct()) {
 				//var_dump($k4, $v4);die();
 				if(IGNORE_DUPLICATES && isset($skip_wln_rr[$k4]) && $skip_wln_rr[$k4]) continue;
 				//$n=name_simplify($v4['title']);
-				$n=name_simplify(normalize($v4['title']));
+				$n=normalize($v4['title']);
+				$n=name_simplify($n);
 				//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
 				foreach($n3 as $n_) {
 					//if($n===$n_) {
-					if(strtolower($n)===strtolower($n_)) {
+					if(strtolower($n)===strtolower($n_) || strtolower(normalize2($n))===strtolower($n_)) {
 						$rr_id=$k4;
 						$skip_wln_rr[$k4]=true;
 						break(2);
@@ -246,11 +266,16 @@ if(direct()) {
 			
 			if(!empty($n1) && !array_key_exists($n1, $names)) $names[$n1]=$id;
 			if(!empty($n1) && !array_key_exists(strtolower($n1), $names)) $names[strtolower($n1)]=$id;
+			if(!empty($n1) && !array_key_exists(strtolower(normalize2($n1)), $names)) $names[strtolower(normalize2($n1))]=$id;
 			if(!empty($n2) && !array_key_exists($n2, $names)) $names[$n2]=$id;
 			if(!empty($n2) && !array_key_exists(strtolower($n2), $names)) $names[strtolower($n2)]=$id;
+			if(!empty($n2) && !array_key_exists(strtolower(normalize2($n2)), $names)) $names[strtolower(normalize2($n2))]=$id;
 			foreach($n3 as $n_) {
 				if(!array_key_exists($n_, $names)) $names[$n_]=$id;
+				if(!array_key_exists(json_decode('"'.$n_.'"'), $names)) $names[json_decode('"'.$n_.'"')]=$id;
+				if(!array_key_exists(normalize2($n_), $names)) $names[normalize2($n_)]=$id;
 				if(!array_key_exists(strtolower($n_), $names)) $names[strtolower($n_)]=$id;
+				if(!array_key_exists(strtolower(normalize2($n_)), $names)) $names[strtolower(normalize2($n_))]=$id;
 			}
 			
 			//if( $wln_id==109439 || $wn_id==14107231705361905 ) var_dump($n1, $n2, $n3, $ar);
@@ -298,7 +323,7 @@ if(direct()) {
 			$n2=name_simplify($v4['title']);
 			$n2=normalize($n2);
 			//if($n===$n2) {
-			if(strtolower($n)===strtolower($n2)) {
+			if(strtolower($n)===strtolower($n2)||strtolower(normalize2($n))===strtolower(normalize2($n2))) {
 				$rr_id=$k4;
 				$skip_wn_rr[$k4]=true;
 				break;
@@ -311,7 +336,9 @@ if(direct()) {
 		$id=array('wln'=>$wln_id, 'wn'=>$wn_id, 'rr'=>$rr_id);
 		
 		if(!array_key_exists($n, $names)) $names[$n]=$id;
+		if(!array_key_exists(normalize2($n), $names)) $names[normalize2($n)]=$id;
 		if(!array_key_exists(strtolower($n), $names)) $names[strtolower($n)]=$id;
+		if(!array_key_exists(strtolower(normalize2($n)), $names)) $names[strtolower(normalize2($n))]=$id;
 		
 		//if( $wln_id==109439 || $wn_id==14107231705361905 ) var_dump($n, $n2, $ar);
 		
@@ -335,6 +362,7 @@ if(direct()) {
 		if(array_key_exists($rr_id, $cor_rr)) continue;
 		//if(isset($cor_rr[$skip_wln_rr[$k4]])) continue;
 		$n2=name_simplify($v4['title']);
+		$n2=normalize($n2);
 		
 		assert(strlen($n2)>0) or die('empty name for '.$rr_id.'.');
 		$wln_id=NULL;//none
@@ -344,7 +372,9 @@ if(direct()) {
 		$id=array('wln'=>$wln_id, 'wn'=>$wn_id, 'rr'=>$rr_id);
 		
 		if(!array_key_exists($n2, $names)) $names[$n2]=$id;
+		if(!array_key_exists(normalize2($n2), $names)) $names[normalize2($n2)]=$id;
 		if(!array_key_exists(strtolower($n2), $names)) $names[strtolower($n2)]=$id;
+		if(!array_key_exists(strtolower(normalize2($n2)), $names)) $names[strtolower(normalize2($n2))]=$id;
 	}
 	$timer4=microtime(true);
 	$counter5+=($timer4-$timer3);

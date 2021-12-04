@@ -4,10 +4,13 @@
 *.ini
 *.js
 *.json
+!composer.json
 !filters.json
 *.lnk
 *.py
 *.sh
+!db.sh
+!ga-*.sh
 *.txt
 royalroad/*
 !royalroad/_*.json

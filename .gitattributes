@@ -33,4 +33,5 @@ dropbox/dropbox.zip	linguist-generated=true -diff -merge -text
 composer.lock	linguist-generated=true
 Gemfile.lock	linguist-generated=true
 webnovel_data.htm	linguist-generated=true
+vendor/	linguist-generated=true
 
