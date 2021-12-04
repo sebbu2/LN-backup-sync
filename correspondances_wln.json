@@ -137,6 +137,12 @@
         "name": "New Game Plus",
         "list": "RoyalRoad plan to read"
     },
+    "3277": {
+        "wn": "15745580006939105",
+        "rr": null,
+        "name": "Arachnomancer",
+        "list": "QIDIAN plan to read"
+    },
     "3728": {
         "wn": "12605355406106405",
         "rr": null,
@@ -230,8 +236,8 @@
     "34065": {
         "wn": "12031652806790505",
         "rr": null,
-        "name": "My Disciple Died Yet Again",
-        "list": "completed"
+        "name": "My Disciple Died Yet Again!",
+        "list": "QIDIAN completed"
     },
     "34068": {
         "wn": "8094038005004505",
@@ -281,6 +287,12 @@
         "name": "Badge in Azure",
         "list": "QIDIAN"
     },
+    "34616": {
+        "wn": "8099388005005405",
+        "rr": null,
+        "name": "A Record of a Mortal's Journey to Immortality",
+        "list": "QIDIAN plan to read"
+    },
     "34789": {
         "wn": "6838665602002005",
         "rr": null,
@@ -328,6 +340,12 @@
         "rr": null,
         "name": "The Portal of Wonderland",
         "list": "QIDIAN on-hold"
+    },
+    "35418": {
+        "wn": null,
+        "rr": 5288,
+        "name": "How to Avoid Death on a Daily Basis",
+        "list": "RoyalRoad plan to read"
     },
     "35481": {
         "wn": "6831851602001005",
@@ -425,6 +443,12 @@
         "name": "Stealing The Heavens",
         "list": "QIDIAN on-hold"
     },
+    "42700": {
+        "wn": null,
+        "rr": 6773,
+        "name": "The Vespidian",
+        "list": "RoyalRoad plan to read"
+    },
     "42756": {
         "wn": null,
         "rr": 6752,
@@ -441,6 +465,12 @@
         "wn": "12215694606105305",
         "rr": 6639,
         "name": "Rise of the Fallen (Tyranny)",
+        "list": "RoyalRoad plan to read"
+    },
+    "43114": {
+        "wn": null,
+        "rr": 18567,
+        "name": "Pandemonium",
         "list": "RoyalRoad plan to read"
     },
     "43213": {
@@ -466,6 +496,12 @@
         "rr": 7183,
         "name": "Crashed Into Fantasy",
         "list": "RoyalRoad plan to read"
+    },
+    "43996": {
+        "wn": "16303045006615805",
+        "rr": null,
+        "name": "Bringing The Super Market To the Apocalypse",
+        "list": "QIDIAN plan to read"
     },
     "44136": {
         "wn": "9017100806001205",
@@ -676,6 +712,12 @@
         "rr": 10381,
         "name": "Maou Shoujo Magical Chaos",
         "list": "RoyalRoad"
+    },
+    "56879": {
+        "wn": null,
+        "rr": 10703,
+        "name": "The Godking's Legacy",
+        "list": "RoyalRoad plan to read"
     },
     "57046": {
         "wn": "18230148206939905",
@@ -893,6 +935,12 @@
         "name": "Super Gene",
         "list": "QIDIAN on-hold"
     },
+    "60335": {
+        "wn": null,
+        "rr": 32375,
+        "name": "The Void King.",
+        "list": "RoyalRoad plan to read"
+    },
     "60390": {
         "wn": "8527113906000305",
         "rr": null,
@@ -910,6 +958,12 @@
         "rr": 14070,
         "name": "Master Of Everything (Completed?)",
         "list": "RoyalRoad plan to read"
+    },
+    "60640": {
+        "wn": "14679963706350305",
+        "rr": 14023,
+        "name": "Blood Creed",
+        "list": "QIDIAN plan to read"
     },
     "60663": {
         "wn": null,
@@ -982,6 +1036,12 @@
         "rr": null,
         "name": "Mystical Journey",
         "list": "QIDIAN on-hold"
+    },
+    "61818": {
+        "wn": null,
+        "rr": 15459,
+        "name": "The Daily Diary of a VRMMO-playing Dragon",
+        "list": "RoyalRoad plan to read"
     },
     "62143": {
         "wn": "8092314906003205",
@@ -1511,6 +1571,12 @@
         "name": "Magnus",
         "list": "RoyalRoad on-hold"
     },
+    "82004": {
+        "wn": null,
+        "rr": 35087,
+        "name": "Invincible Canadian Hermaphrodite Goddess Cultivator",
+        "list": "ScribbleHub plan to read"
+    },
     "82866": {
         "wn": "11254520405313205",
         "rr": null,
@@ -1610,7 +1676,7 @@
     "88204": {
         "wn": "13094765905667605",
         "rr": null,
-        "name": "Dragon Tamer",
+        "name": "Dragon Tamer (Chaos)",
         "list": "QIDIAN plan to read"
     },
     "88690": {
@@ -1629,6 +1695,12 @@
         "wn": "13330400706510705",
         "rr": 23978,
         "name": "Age of Teras: Monster Evolution",
+        "list": "QIDIAN plan to read"
+    },
+    "90179": {
+        "wn": "12835018706612505",
+        "rr": null,
+        "name": "Magnus II",
         "list": "QIDIAN plan to read"
     },
     "90241": {
@@ -1665,6 +1737,12 @@
         "wn": "12437498606455105",
         "rr": null,
         "name": "Abuse of Magic",
+        "list": "QIDIAN plan to read"
+    },
+    "90966": {
+        "wn": "13483163306013005",
+        "rr": null,
+        "name": "Adopted Soldier Version 2",
         "list": "QIDIAN plan to read"
     },
     "91203": {
@@ -1708,6 +1786,12 @@
         "rr": null,
         "name": "Legend of the Mythological Genes",
         "list": "QIDIAN completed"
+    },
+    "96334": {
+        "wn": null,
+        "rr": 24360,
+        "name": "Oracle's Path",
+        "list": "RoyalRoad plan to read"
     },
     "96536": {
         "wn": "13830908305514605",
@@ -1768,6 +1852,12 @@
         "rr": null,
         "name": "Nanomancer Reborn - I've Become A Snow Girl?",
         "list": "QIDIAN original"
+    },
+    "101099": {
+        "wn": null,
+        "rr": 24853,
+        "name": "Adventures of the Goldthirst Company",
+        "list": "RoyalRoad"
     },
     "101235": {
         "wn": "13184998306043105",
@@ -1883,6 +1973,12 @@
         "name": "A Journey of Black and Red",
         "list": "RoyalRoad"
     },
+    "107926": {
+        "wn": "13219997806168505",
+        "rr": null,
+        "name": "Exalted Warlock",
+        "list": "QIDIAN plan to read"
+    },
     "107979": {
         "wn": null,
         "rr": 26149,
@@ -1940,7 +2036,7 @@
     "109439": {
         "wn": "14107231705361905",
         "rr": null,
-        "name": "The Man from Hell",
+        "name": "The Man From Hell",
         "list": "QIDIAN stalled"
     },
     "109547": {
@@ -1977,6 +2073,12 @@
         "wn": "15125244205886905",
         "rr": null,
         "name": "Geomancy Couple",
+        "list": "QIDIAN plan to read"
+    },
+    "110069": {
+        "wn": "15919741005350205",
+        "rr": null,
+        "name": "Eternal Strongest Sect",
         "list": "QIDIAN plan to read"
     },
     "110110": {
@@ -2147,6 +2249,18 @@
         "name": "Pocket Hunting Dimension",
         "list": "QIDIAN plan to read"
     },
+    "112004": {
+        "wn": "16066334705795905",
+        "rr": null,
+        "name": "Dawn of a New Era",
+        "list": "QIDIAN plan to read"
+    },
+    "112005": {
+        "wn": "15722362705743405",
+        "rr": null,
+        "name": "Supreme Celestial Devil",
+        "list": "QIDIAN plan to read"
+    },
     "112008": {
         "wn": "15713117806838005",
         "rr": null,
@@ -2157,6 +2271,12 @@
         "wn": "15705498105694305",
         "rr": null,
         "name": "Losing Money to Be a Tycoon",
+        "list": "QIDIAN plan to read"
+    },
+    "112012": {
+        "wn": "15974901705565205",
+        "rr": null,
+        "name": "Rebirth: City Besieged By Zombies",
         "list": "QIDIAN plan to read"
     },
     "112014": {
@@ -2188,6 +2308,12 @@
         "rr": 31429,
         "name": "Cinnamon Bun",
         "list": "RoyalRoad"
+    },
+    "112342": {
+        "wn": null,
+        "rr": 28995,
+        "name": "Warfare's Ultimate Frontier",
+        "list": "RoyalRoad plan to read"
     },
     "112421": {
         "wn": null,
@@ -2231,6 +2357,12 @@
         "name": "Paragon of Sin",
         "list": "QIDIAN plan to read"
     },
+    "113408": {
+        "wn": null,
+        "rr": 30932,
+        "name": "The Hero Raised by a Monster",
+        "list": "RoyalRoad plan to read"
+    },
     "113779": {
         "wn": null,
         "rr": 27757,
@@ -2241,6 +2373,12 @@
         "wn": null,
         "rr": 27213,
         "name": "Against the Heaven's Will",
+        "list": "RoyalRoad plan to read"
+    },
+    "114382": {
+        "wn": null,
+        "rr": 22533,
+        "name": "A Rational Zombie",
         "list": "RoyalRoad plan to read"
     },
     "114918": {
@@ -2260,6 +2398,12 @@
         "rr": null,
         "name": "Master of the End Times",
         "list": "QIDIAN completed"
+    },
+    "115149": {
+        "wn": "16223640705229605",
+        "rr": null,
+        "name": "The Mightiest Little Peasant",
+        "list": "QIDIAN plan to read"
     },
     "115268": {
         "wn": "15298464306893805",
@@ -2447,6 +2591,12 @@
         "name": "Astral Pet Store",
         "list": "QIDIAN plan to read"
     },
+    "117517": {
+        "wn": "16707915406045205",
+        "rr": null,
+        "name": "OmniClass Boss",
+        "list": "QIDIAN plan to read"
+    },
     "117654": {
         "wn": "18370194106549205",
         "rr": null,
@@ -2627,6 +2777,12 @@
         "name": "From Sidekick to Bigshot",
         "list": "QIDIAN plan to read"
     },
+    "119842": {
+        "wn": "16989813405043605",
+        "rr": null,
+        "name": "Omnipotent Data",
+        "list": "QIDIAN plan to read"
+    },
     "119970": {
         "wn": "17791889705928505",
         "rr": 35289,
@@ -2638,6 +2794,12 @@
         "rr": 35212,
         "name": "Return of the Tower Conqueror",
         "list": "RoyalRoad plan to read"
+    },
+    "119994": {
+        "wn": "16991675105052905",
+        "rr": null,
+        "name": "Crazy Girls: Crossover Yandere Harem",
+        "list": "QIDIAN plan to read"
     },
     "120036": {
         "wn": null,
@@ -2717,6 +2879,12 @@
         "name": "Fluff",
         "list": "RoyalRoad"
     },
+    "127855": {
+        "wn": "17527789006425805",
+        "rr": null,
+        "name": "Everybody is Kung Fu Fighting, While I Started a Farm",
+        "list": "QIDIAN plan to read"
+    },
     "127861": {
         "wn": "16989975205044905",
         "rr": null,
@@ -2734,6 +2902,12 @@
         "rr": 36065,
         "name": "Sylver Seeker",
         "list": "RoyalRoad"
+    },
+    "128065": {
+        "wn": "16507956305193805",
+        "rr": null,
+        "name": "League of the Unkillable Demon King",
+        "list": "QIDIAN plan to read"
     },
     "128229": {
         "wn": null,
@@ -2769,6 +2943,12 @@
         "wn": "17527863705321205",
         "rr": null,
         "name": "Ancestor Above",
+        "list": "QIDIAN plan to read"
+    },
+    "128318": {
+        "wn": "17527826606426105",
+        "rr": null,
+        "name": "Nurturing Humanity",
         "list": "QIDIAN plan to read"
     },
     "128319": {
@@ -2909,6 +3089,12 @@
         "name": "A Lonely Dungeon",
         "list": "RoyalRoad completed"
     },
+    "129065": {
+        "wn": null,
+        "rr": 44111,
+        "name": "Flight of a Villainess",
+        "list": "RoyalRoad plan to read"
+    },
     "129098": {
         "wn": "17461141705996505",
         "rr": null,
@@ -2963,10 +3149,22 @@
         "name": "Reroll",
         "list": "RoyalRoad plan to read"
     },
+    "129411": {
+        "wn": "18001057806028405",
+        "rr": null,
+        "name": "Python Rebirth on Survival Island",
+        "list": "QIDIAN plan to read"
+    },
     "129412": {
         "wn": "17527889906426505",
         "rr": null,
         "name": "Supreme Pharmacist System",
+        "list": "QIDIAN plan to read"
+    },
+    "129414": {
+        "wn": "17778132105852905",
+        "rr": null,
+        "name": "Fearsome Farmer",
         "list": "QIDIAN plan to read"
     },
     "129444": {
@@ -3029,17 +3227,41 @@
         "name": "What Do You Do When You Suddenly Become An Immortal?",
         "list": "QIDIAN plan to read"
     },
+    "129728": {
+        "wn": "17778116406992405",
+        "rr": null,
+        "name": "I Became a Progenitor Vampire",
+        "list": "QIDIAN plan to read"
+    },
     "129729": {
         "wn": "18133088805394105",
         "rr": null,
         "name": "Extraordinary David",
         "list": "QIDIAN stalled"
     },
+    "130003": {
+        "wn": "18133212506538705",
+        "rr": null,
+        "name": "From A Stronghold NPC To The Final BOSS",
+        "list": "QIDIAN plan to read"
+    },
+    "130004": {
+        "wn": "18133070706538105",
+        "rr": null,
+        "name": "My Summons Can Learn Skills",
+        "list": "QIDIAN plan to read"
+    },
     "130124": {
         "wn": "18550164105099305",
         "rr": null,
         "name": "Who Said A Mosquito Can't Cultivate",
         "list": "QIDIAN original"
+    },
+    "130141": {
+        "wn": null,
+        "rr": 37719,
+        "name": "Emmy And Me",
+        "list": "RoyalRoad plan to read"
     },
     "130167": {
         "wn": "18495993905903905",
@@ -3059,10 +3281,22 @@
         "name": "Doomsday Online: Supreme Blessing",
         "list": "QIDIAN plan to read"
     },
+    "130234": {
+        "wn": "18251689205890505",
+        "rr": null,
+        "name": "MMORPG: Blessed God Of War",
+        "list": "QIDIAN plan to read"
+    },
     "130235": {
         "wn": "18001038005886505",
         "rr": null,
         "name": "A Random System Every Day",
+        "list": "QIDIAN plan to read"
+    },
+    "130237": {
+        "wn": "18001066106028505",
+        "rr": null,
+        "name": "Heavenly Lord Asura",
         "list": "QIDIAN plan to read"
     },
     "130259": {
@@ -3221,11 +3455,23 @@
         "name": "New Game +",
         "list": "RoyalRoad plan to read"
     },
+    "132487": {
+        "wn": "19235772305743205",
+        "rr": null,
+        "name": "Black Core Summoner",
+        "list": "QIDIAN plan to read"
+    },
     "132587": {
         "wn": null,
         "rr": 37438,
         "name": "Salvos [A Monster Evolution LitRPG]",
         "list": "duplicates"
+    },
+    "132819": {
+        "wn": null,
+        "rr": 35087,
+        "name": "Invincible Canadian Hermaphrodite Goddess Cultivator.",
+        "list": "RoyalRoad plan to read"
     },
     "132824": {
         "wn": null,
@@ -3353,11 +3599,17 @@
         "name": "Tutorial (The Soul Survivor Series)",
         "list": "RoyalRoad"
     },
+    "134449": {
+        "wn": null,
+        "rr": 40967,
+        "name": "I'm Overpowered but I'll Let the Hero Do His Thing While I Save the Last Boss",
+        "list": "RoyalRoad plan to read"
+    },
     "134554": {
         "wn": null,
         "rr": 40998,
         "name": "A Friendly Voidling",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad completed"
     },
     "134559": {
         "wn": null,
@@ -3497,6 +3749,12 @@
         "name": "Shock! The Spell Is In English!",
         "list": "QIDIAN"
     },
+    "136068": {
+        "wn": null,
+        "rr": 42270,
+        "name": "Master of the System",
+        "list": "RoyalRoad plan to read"
+    },
     "136144": {
         "wn": null,
         "rr": 42833,
@@ -3507,6 +3765,12 @@
         "wn": null,
         "rr": 42441,
         "name": "Elder Cultivator",
+        "list": "RoyalRoad"
+    },
+    "136198": {
+        "wn": null,
+        "rr": 42492,
+        "name": "De-Monster",
         "list": "RoyalRoad"
     },
     "136294": {
@@ -3677,6 +3941,12 @@
         "name": "Reborn As A Dragon Girl With A System",
         "list": "QIDIAN original"
     },
+    "137617": {
+        "wn": null,
+        "rr": 43875,
+        "name": "Memories Of The Void [A Monster Evolution LitRPG]",
+        "list": "RoyalRoad plan to read"
+    },
     "137802": {
         "wn": null,
         "rr": 44229,
@@ -3728,7 +3998,7 @@
     "138523": {
         "wn": null,
         "rr": 44599,
-        "name": "Exiled Aristocrat",
+        "name": "Exiled Aristocrat: [A Dark Progression Fantasy]",
         "list": "RoyalRoad plan to read"
     },
     "138664": {
@@ -3858,7 +4128,7 @@
         "list": "RoyalRoad"
     },
     "140043": {
-        "wn": null,
+        "wn": "11758162905515005",
         "rr": 42012,
         "name": "The Isekai Police aka Earths Advocates",
         "list": "RoyalRoad plan to read"
@@ -3931,7 +4201,7 @@
     },
     "140761": {
         "wn": "21071481705119105",
-        "rr": 48397,
+        "rr": null,
         "name": "Solo Player Rebirth! (webnovel)",
         "list": "duplicates"
     },
@@ -3963,6 +4233,12 @@
         "wn": null,
         "rr": 45003,
         "name": "Warlock's Gate [DROPPED]",
+        "list": "RoyalRoad plan to read"
+    },
+    "141208": {
+        "wn": null,
+        "rr": 46901,
+        "name": "The Last Orellen",
         "list": "RoyalRoad plan to read"
     },
     "141225": {
@@ -4010,7 +4286,7 @@
     "141561": {
         "wn": null,
         "rr": 46602,
-        "name": "Give me my lily pad back.",
+        "name": "Give my lily pad back.",
         "list": "RoyalRoad"
     },
     "141567": {
@@ -4325,6 +4601,12 @@
         "name": "Dreamers Ten-Tea-Cle Cafe",
         "list": "RoyalRoad"
     },
+    "142421": {
+        "wn": null,
+        "rr": 41772,
+        "name": "The Isekai Will be Livestreamed",
+        "list": "RoyalRoad plan to read"
+    },
     "142434": {
         "wn": null,
         "rr": 47959,
@@ -4383,12 +4665,6 @@
         "wn": "14205835806705305",
         "rr": null,
         "name": "Married to the Devil's Son",
-        "list": "QIDIAN plan to read"
-    },
-    "142514": {
-        "wn": "17164777605709105",
-        "rr": null,
-        "name": "I Don't Want To Be A Healer",
         "list": "QIDIAN plan to read"
     },
     "142517": {
@@ -4619,6 +4895,12 @@
         "name": "The Guardians' Throne - The First Magic Swordsman",
         "list": "QIDIAN plan to read"
     },
+    "142743": {
+        "wn": null,
+        "rr": 48346,
+        "name": "A Girl and Her Food",
+        "list": "RoyalRoad"
+    },
     "142804": {
         "wn": null,
         "rr": 48017,
@@ -4640,7 +4922,7 @@
     "142908": {
         "wn": null,
         "rr": 48397,
-        "name": "[Rewritten ver.] Solo Player Rebirth!",
+        "name": "Solo Player Rebirth! [A LitRPG Fantasy series]",
         "list": "RoyalRoad plan to read"
     },
     "143017": {
@@ -5090,7 +5372,7 @@
     "143654": {
         "wn": "13328802305445705",
         "rr": 34372,
-        "name": "The world of fantasy",
+        "name": "The World of Fantasy",
         "list": "QIDIAN plan to read"
     },
     "143655": {
@@ -5217,6 +5499,468 @@
         "wn": "18540492206221505",
         "rr": null,
         "name": "One Year Tyrant",
+        "list": "QIDIAN plan to read"
+    },
+    "143703": {
+        "wn": "21374904306315005",
+        "rr": null,
+        "name": "Psychic Parasite: Final Serenity",
+        "list": "QIDIAN plan to read"
+    },
+    "143704": {
+        "wn": "18909548805527305",
+        "rr": null,
+        "name": "Outdoor Webcast",
+        "list": "QIDIAN plan to read"
+    },
+    "143705": {
+        "wn": "19633935206941805",
+        "rr": null,
+        "name": "Online Game: I Can Evolve Everything",
+        "list": "QIDIAN plan to read"
+    },
+    "143706": {
+        "wn": "20618967605044705",
+        "rr": null,
+        "name": "Necromancer: Rise of the Undead Lord",
+        "list": "QIDIAN plan to read"
+    },
+    "143707": {
+        "wn": "18909684805528705",
+        "rr": null,
+        "name": "My Pet Beast is Super Awesome",
+        "list": "QIDIAN plan to read"
+    },
+    "143708": {
+        "wn": "18132988705393005",
+        "rr": null,
+        "name": "My New Life As A Plant In A Cultivation World",
+        "list": "QIDIAN plan to read"
+    },
+    "143709": {
+        "wn": "19729092906218005",
+        "rr": null,
+        "name": "My Magic Cultivates Itself!",
+        "list": "QIDIAN plan to read"
+    },
+    "143710": {
+        "wn": "19500893306628105",
+        "rr": null,
+        "name": "My Hero Academia: Throne of Heroes",
+        "list": "QIDIAN plan to read"
+    },
+    "143711": {
+        "wn": "21087936406400205",
+        "rr": null,
+        "name": "My Five Masters Are Way Too Beautiful",
+        "list": "QIDIAN plan to read"
+    },
+    "143712": {
+        "wn": "19582159605682305",
+        "rr": null,
+        "name": "Advance Login: Era of Magic",
+        "list": "QIDIAN plan to read"
+    },
+    "143713": {
+        "wn": "19633999605797505",
+        "rr": null,
+        "name": "A Fierce Evolution Starting from a River",
+        "list": "QIDIAN plan to read"
+    },
+    "143714": {
+        "wn": "20733231106440005",
+        "rr": null,
+        "name": "Anamnesis: Queen of the Apocalypse",
+        "list": "QIDIAN plan to read"
+    },
+    "143715": {
+        "wn": "19634009406942105",
+        "rr": null,
+        "name": "My Evolution Starting from a Giant Tree",
+        "list": "QIDIAN plan to read"
+    },
+    "143716": {
+        "wn": "18909678605528605",
+        "rr": null,
+        "name": "My Debauched Devotion",
+        "list": "QIDIAN plan to read"
+    },
+    "143717": {
+        "wn": "18909660306685405",
+        "rr": null,
+        "name": "My Apocalypse Domain",
+        "list": "QIDIAN plan to read"
+    },
+    "143718": {
+        "wn": "21001926706873605",
+        "rr": null,
+        "name": "Military Lord of the White Coats",
+        "list": "QIDIAN plan to read"
+    },
+    "143719": {
+        "wn": "13321837306486205",
+        "rr": null,
+        "name": "Mech: Shattering of the Galaxy",
+        "list": "QIDIAN plan to read"
+    },
+    "143720": {
+        "wn": "20912598205976805",
+        "rr": null,
+        "name": "Maxed Out My Passive Skill Due to My Laziness",
+        "list": "QIDIAN plan to read"
+    },
+    "143721": {
+        "wn": "20670508205576105",
+        "rr": null,
+        "name": "Max-Level Great Swordsman in the Women's World",
+        "list": "QIDIAN plan to read"
+    },
+    "143722": {
+        "wn": "12801407706419705",
+        "rr": 30605,
+        "name": "Magnus (socon39)",
+        "list": "QIDIAN plan to read"
+    },
+    "143723": {
+        "wn": "19772874205198905",
+        "rr": null,
+        "name": "Magic School: My Students Are Too Arrogant!",
+        "list": "QIDIAN plan to read"
+    },
+    "143724": {
+        "wn": "21087935706399305",
+        "rr": null,
+        "name": "Magic Land: I Make It Big as a Gourmet Food Supplier!",
+        "list": "QIDIAN plan to read"
+    },
+    "143742": {
+        "wn": "14408661606334805",
+        "rr": null,
+        "name": "A Time Traveller's Guide to Feudal Japan",
+        "list": "QIDIAN plan to read"
+    },
+    "143746": {
+        "wn": "21344870305997305",
+        "rr": null,
+        "name": "Starting With One Million Luck Points",
+        "list": "QIDIAN plan to read"
+    },
+    "143747": {
+        "wn": "19523573005538505",
+        "rr": null,
+        "name": "Lord of Pets",
+        "list": "QIDIAN plan to read"
+    },
+    "143748": {
+        "wn": "17076331305372205",
+        "rr": null,
+        "name": "Life In Another World",
+        "list": "QIDIAN plan to read"
+    },
+    "143749": {
+        "wn": "19643440205821805",
+        "rr": null,
+        "name": "Killer: I can shapeshift infinitely",
+        "list": "QIDIAN plan to read"
+    },
+    "143750": {
+        "wn": "21420428205211705",
+        "rr": null,
+        "name": "I transmigrated into a harem world.",
+        "list": "QIDIAN plan to read"
+    },
+    "143751": {
+        "wn": "18565385305151205",
+        "rr": null,
+        "name": "It's Fine To Reincarnate To A Flame",
+        "list": "QIDIAN plan to read"
+    },
+    "143752": {
+        "wn": "21206846005593005",
+        "rr": null,
+        "name": "Isekai Tensei! Yuri!",
+        "list": "QIDIAN plan to read"
+    },
+    "143753": {
+        "wn": "19133134705375205",
+        "rr": null,
+        "name": "I reincarnated as a stone",
+        "list": "QIDIAN plan to read"
+    },
+    "143754": {
+        "wn": "20967311205395505",
+        "rr": null,
+        "name": "I Really Don't Want to Be the Ruler of the Abyss!",
+        "list": "QIDIAN plan to read"
+    },
+    "143755": {
+        "wn": "19971574306292505",
+        "rr": null,
+        "name": "Interstellar War: My Star Fleet is Invincible",
+        "list": "QIDIAN plan to read"
+    },
+    "143756": {
+        "wn": "18001031905886405",
+        "rr": null,
+        "name": "Immortal Realm's Smuggling Kingpin",
+        "list": "QIDIAN plan to read"
+    },
+    "143757": {
+        "wn": "19582049905681805",
+        "rr": null,
+        "name": "Immortal Hero: I Can Replicate Talents",
+        "list": "QIDIAN plan to read"
+    },
+    "143758": {
+        "wn": "18909613806685105",
+        "rr": null,
+        "name": "I Just Won't Play by the Book",
+        "list": "QIDIAN plan to read"
+    },
+    "143759": {
+        "wn": "18398342406668305",
+        "rr": null,
+        "name": "I Have An Impenetrable Fortress",
+        "list": "QIDIAN plan to read"
+    },
+    "143760": {
+        "wn": "19697500905966005",
+        "rr": null,
+        "name": "I Have A Monster Rearing System",
+        "list": "QIDIAN plan to read"
+    },
+    "143761": {
+        "wn": "21155881606591605",
+        "rr": null,
+        "name": "I Have a Dragon in My Body",
+        "list": "QIDIAN plan to read"
+    },
+    "143762": {
+        "wn": "16989901905044105",
+        "rr": null,
+        "name": "I Have A Computer in my Brain",
+        "list": "QIDIAN plan to read"
+    },
+    "143763": {
+        "wn": "18427238805628605",
+        "rr": null,
+        "name": "I Have 100M Summoning Scrolls",
+        "list": "QIDIAN plan to read"
+    },
+    "143764": {
+        "wn": "19971573506291805",
+        "rr": null,
+        "name": "I Gained the Power to Shapeshift On Earth",
+        "list": "QIDIAN plan to read"
+    },
+    "143765": {
+        "wn": "21344870405997505",
+        "rr": null,
+        "name": "I Cultivate Passively",
+        "list": "QIDIAN plan to read"
+    },
+    "143766": {
+        "wn": "18909646005528105",
+        "rr": null,
+        "name": "I Can Transform Into a Zombie",
+        "list": "QIDIAN plan to read"
+    },
+    "143767": {
+        "wn": "19729093705069705",
+        "rr": null,
+        "name": "I Can See The World's Desires",
+        "list": "QIDIAN plan to read"
+    },
+    "143768": {
+        "wn": "18694973406787105",
+        "rr": null,
+        "name": "I Can See the Lines of Fortune",
+        "list": "QIDIAN plan to read"
+    },
+    "143769": {
+        "wn": "18270869306135905",
+        "rr": null,
+        "name": "I Became the Ultimate Boss",
+        "list": "QIDIAN plan to read"
+    },
+    "143770": {
+        "wn": "15597087706144505",
+        "rr": null,
+        "name": "I Became a God?",
+        "list": "QIDIAN plan to read"
+    },
+    "143771": {
+        "wn": "19643440605822205",
+        "rr": null,
+        "name": "I am Picking Up Shards of All Attributes in Apocalypse",
+        "list": "QIDIAN plan to read"
+    },
+    "143772": {
+        "wn": "19634054506942505",
+        "rr": null,
+        "name": "I, the Creator of Demon!",
+        "list": "QIDIAN plan to read"
+    },
+    "143773": {
+        "wn": "18909517006684505",
+        "rr": null,
+        "name": "I'm Really Not Targeting the Mages",
+        "list": "QIDIAN plan to read"
+    },
+    "143774": {
+        "wn": "19697501206110605",
+        "rr": null,
+        "name": "I'm Not an Evil God!",
+        "list": "QIDIAN plan to read"
+    },
+    "143775": {
+        "wn": "16731295406147005",
+        "rr": null,
+        "name": "I'm An Interdimensional Login Interface",
+        "list": "QIDIAN plan to read"
+    },
+    "143776": {
+        "wn": "18545304605081005",
+        "rr": null,
+        "name": "I'm a God in an Online Game",
+        "list": "QIDIAN plan to read"
+    },
+    "143777": {
+        "wn": "20623462406306705",
+        "rr": null,
+        "name": "Hero's Carnage",
+        "list": "QIDIAN plan to read"
+    },
+    "143778": {
+        "wn": "18909577605527605",
+        "rr": null,
+        "name": "Heavenly Dao Formula",
+        "list": "QIDIAN plan to read"
+    },
+    "143779": {
+        "wn": "20967310105394905",
+        "rr": null,
+        "name": "Global Transmigration: Receiving God-like Talents!",
+        "list": "QIDIAN plan to read"
+    },
+    "143780": {
+        "wn": "19644990605825905",
+        "rr": null,
+        "name": "Global Descent: 100\\u00D7Reward",
+        "list": "QIDIAN plan to read"
+    },
+    "143781": {
+        "wn": "19643440406966805",
+        "rr": null,
+        "name": "Global Beast Taming: My Battle Pet is Double of Others",
+        "list": "QIDIAN plan to read"
+    },
+    "143782": {
+        "wn": "20067686105069005",
+        "rr": null,
+        "name": "Game Starts With The Scarecrow",
+        "list": "QIDIAN plan to read"
+    },
+    "143783": {
+        "wn": "18545614205082705",
+        "rr": null,
+        "name": "Galactic Almighty Evolution",
+        "list": "QIDIAN plan to read"
+    },
+    "143784": {
+        "wn": "19582074006818105",
+        "rr": null,
+        "name": "From Ant to Demon God of the Abyss",
+        "list": "QIDIAN plan to read"
+    },
+    "143785": {
+        "wn": "19823785205351905",
+        "rr": null,
+        "name": "Forever Bound",
+        "list": "QIDIAN plan to read"
+    },
+    "143786": {
+        "wn": "19310578605967605",
+        "rr": null,
+        "name": "Dominic Harrison One Shots",
+        "list": "QIDIAN plan to read"
+    },
+    "143787": {
+        "wn": "18909607106685005",
+        "rr": null,
+        "name": "Demon Pets' Black Tech Nest",
+        "list": "QIDIAN plan to read"
+    },
+    "143788": {
+        "wn": "18909583306684705",
+        "rr": null,
+        "name": "Dafeng's Night Squad",
+        "list": "QIDIAN plan to read"
+    },
+    "143789": {
+        "wn": "17471286906158705",
+        "rr": null,
+        "name": "Cultivating Anthro CEO RPG Hero Harem Reincarnation in Another World",
+        "list": "QIDIAN plan to read"
+    },
+    "143790": {
+        "wn": "18545570306238905",
+        "rr": null,
+        "name": "Conquer a Mountain And Become The Great King",
+        "list": "QIDIAN plan to read"
+    },
+    "143791": {
+        "wn": "14849959005825005",
+        "rr": null,
+        "name": "Bloodlight Goddess Ru",
+        "list": "QIDIAN plan to read"
+    },
+    "143792": {
+        "wn": "18702777906816105",
+        "rr": null,
+        "name": "Blacksmith: The Tempering Begins With One's Flesh",
+        "list": "QIDIAN plan to read"
+    },
+    "143793": {
+        "wn": "13981560605780405",
+        "rr": null,
+        "name": "Being a Cat in a Dungeon, It's not easy",
+        "list": "QIDIAN plan to read"
+    },
+    "143809": {
+        "wn": "15071779505679105",
+        "rr": null,
+        "name": "I'm the King Of Technology",
+        "list": "QIDIAN plan to read"
+    },
+    "143810": {
+        "wn": "18558026206286305",
+        "rr": null,
+        "name": "Black Market Merchant",
+        "list": "QIDIAN plan to read"
+    },
+    "143815": {
+        "wn": null,
+        "rr": 49032,
+        "name": "Trace: A LitRPG Apocalypse",
+        "list": "RoyalRoad"
+    },
+    "143816": {
+        "wn": null,
+        "rr": 49033,
+        "name": "Mother of Learning: The AU Chapters",
+        "list": "RoyalRoad"
+    },
+    "143833": {
+        "wn": null,
+        "rr": 48951,
+        "name": "A (Not So) Simple Fetch Quest",
+        "list": "RoyalRoad plan to read"
+    },
+    "143857": {
+        "wn": "20552408006606305",
+        "rr": null,
+        "name": "Online Game: I Possess a Monster Merging Simulator!",
         "list": "QIDIAN plan to read"
     }
 }
