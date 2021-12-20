@@ -395,6 +395,12 @@
         "name": "Pandemonium",
         "list": "RoyalRoad plan to read"
     },
+    "20177": {
+        "wln": 69758,
+        "wn": null,
+        "name": "The Misplaced Dungeon",
+        "list": "RoyalRoad"
+    },
     "21188": {
         "wln": 74196,
         "wn": null,
@@ -441,6 +447,12 @@
         "wln": 77757,
         "wn": null,
         "name": "Undermind",
+        "list": "RoyalRoad"
+    },
+    "22115": {
+        "wln": 78190,
+        "wn": null,
+        "name": "I don't want to be the Hive Queen",
         "list": "RoyalRoad"
     },
     "22518": {
@@ -614,7 +626,7 @@
     "27325": {
         "wln": 115382,
         "wn": null,
-        "name": "Infinite Realm: Monsters \u0026 Legends",
+        "name": "Infinite Realm Monsters Legends",
         "list": "RoyalRoad plan to read"
     },
     "27426": {
@@ -711,12 +723,18 @@
         "wln": 136682,
         "wn": "11492897005406105",
         "name": "Unbound (LitRPG Portal Fantasy)",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "30380": {
         "wln": 112421,
         "wn": null,
         "name": "Jayke Cipher",
+        "list": "RoyalRoad"
+    },
+    "30396": {
+        "wln": 112210,
+        "wn": null,
+        "name": "Ideascape: An Adventure LitRPG",
         "list": "RoyalRoad"
     },
     "30605": {
@@ -873,7 +891,7 @@
         "wln": 119007,
         "wn": null,
         "name": "Stray Cat Strut \\u2060\\u2014 A Young Lady's Journey to Becoming a Pop-Up Samurai",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "33801": {
         "wln": 118863,
@@ -1043,6 +1061,12 @@
         "name": "The Perfect Run",
         "list": "RoyalRoad plan to read"
     },
+    "36983": {
+        "wln": 129507,
+        "wn": null,
+        "name": "Tower of Somnus",
+        "list": "RoyalRoad"
+    },
     "37016": {
         "wln": 129517,
         "wn": "18499797106079005",
@@ -1071,6 +1095,12 @@
         "wln": 129566,
         "wn": null,
         "name": "Dungeon Item Shop",
+        "list": "RoyalRoad"
+    },
+    "37346": {
+        "wln": 129630,
+        "wn": null,
+        "name": "Dungeon of Seasons",
         "list": "RoyalRoad"
     },
     "37438": {
@@ -1283,6 +1313,12 @@
         "name": "A Friendly Voidling",
         "list": "RoyalRoad completed"
     },
+    "41012": {
+        "wln": 96995,
+        "wn": null,
+        "name": "New Earth",
+        "list": "RoyalRoad"
+    },
     "41033": {
         "wln": 134559,
         "wn": null,
@@ -1300,6 +1336,12 @@
         "wn": null,
         "name": "Of Monstergirls and Men",
         "list": "RoyalRoad plan to read"
+    },
+    "41198": {
+        "wln": 134818,
+        "wn": null,
+        "name": "Jack of All",
+        "list": "RoyalRoad"
     },
     "41423": {
         "wln": 135126,
@@ -1353,12 +1395,6 @@
         "wln": 135600,
         "wn": null,
         "name": "Mark of the Fool: A Progression Fantasy",
-        "list": "RoyalRoad plan to read"
-    },
-    "41732": {
-        "wln": 135642,
-        "wn": null,
-        "name": "The Houndsman [Base-Building LitRPG]",
         "list": "RoyalRoad plan to read"
     },
     "41764": {
@@ -1460,7 +1496,7 @@
     "42728": {
         "wln": 136375,
         "wn": null,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)",
+        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
         "list": "RoyalRoad"
     },
     "42788": {
@@ -1565,6 +1601,12 @@
         "name": "Realmshaker: Giant Progression LitRPG",
         "list": "RoyalRoad stalled"
     },
+    "43958": {
+        "wln": 137716,
+        "wn": null,
+        "name": "Breaker of Horizons",
+        "list": "RoyalRoad"
+    },
     "44111": {
         "wln": 129065,
         "wn": null,
@@ -1616,8 +1658,8 @@
     "44599": {
         "wln": 138523,
         "wn": null,
-        "name": "Exiled Aristocrat: [A Dark Progression Fantasy]",
-        "list": "RoyalRoad plan to read"
+        "name": "Exiled Aristocrat: [A Progression Fantasy]",
+        "list": "RoyalRoad"
     },
     "44716": {
         "wln": 138664,
@@ -1631,12 +1673,6 @@
         "name": "Animosity - An Isekai Story",
         "list": "RoyalRoad plan to read"
     },
-    "44992": {
-        "wln": 141387,
-        "wn": null,
-        "name": "Grimlords - Reborn Monster Evolution",
-        "list": "RoyalRoad plan to read"
-    },
     "45003": {
         "wln": 141131,
         "wn": null,
@@ -1647,6 +1683,12 @@
         "wln": 138913,
         "wn": null,
         "name": "Snow Flames",
+        "list": "RoyalRoad plan to read"
+    },
+    "45061": {
+        "wln": 143539,
+        "wn": null,
+        "name": "The Retired S Ranked Adventure: Volume IV",
         "list": "RoyalRoad plan to read"
     },
     "45090": {
@@ -1666,6 +1708,12 @@
         "wn": null,
         "name": "The King's Soul: A LitRPG Wuxia Novel",
         "list": "RoyalRoad plan to read"
+    },
+    "45173": {
+        "wln": 139703,
+        "wn": null,
+        "name": "**Mana Harvest** Volume 2",
+        "list": "RoyalRoad stalled"
     },
     "45229": {
         "wln": 139193,
@@ -1713,6 +1761,12 @@
         "wln": 143341,
         "wn": null,
         "name": "Of Mana and Mages",
+        "list": "RoyalRoad"
+    },
+    "45725": {
+        "wln": 139620,
+        "wn": null,
+        "name": "Her Golemancer Girlfriend",
         "list": "RoyalRoad"
     },
     "45898": {
@@ -1791,7 +1845,7 @@
         "wln": 141208,
         "wn": null,
         "name": "The Last Orellen",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "47017": {
         "wln": 141289,
@@ -1853,6 +1907,12 @@
         "name": "Saltworld: An Apocalypse LitRPG",
         "list": "RoyalRoad"
     },
+    "47826": {
+        "wln": 142466,
+        "wn": null,
+        "name": "Millennial Mage",
+        "list": "RoyalRoad"
+    },
     "47903": {
         "wln": 142454,
         "wn": null,
@@ -1869,6 +1929,12 @@
         "wln": 142434,
         "wn": null,
         "name": "Unliving",
+        "list": "RoyalRoad"
+    },
+    "47982": {
+        "wln": 143540,
+        "wn": null,
+        "name": "Tunnel Rat",
         "list": "RoyalRoad"
     },
     "47995": {
@@ -1895,6 +1961,12 @@
         "name": "TWIG - The System Can't Save Me, But It Can't Stop Me Either [a gamelit-portal-fantasy-poem by eric river]",
         "list": "RoyalRoad plan to read"
     },
+    "48056": {
+        "wln": 142688,
+        "wn": null,
+        "name": "I Am Not Chaotic Evil",
+        "list": "RoyalRoad"
+    },
     "48346": {
         "wln": 142743,
         "wn": null,
@@ -1905,19 +1977,19 @@
         "wln": 142908,
         "wn": null,
         "name": "Solo Player Rebirth! [A LitRPG Fantasy series]",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
+    },
+    "48558": {
+        "wln": 143108,
+        "wn": null,
+        "name": "Pocket Healer",
+        "list": "RoyalRoad"
     },
     "48642": {
         "wln": 143135,
         "wn": null,
-        "name": "The New Headmaster At Magic School is a Retiree",
+        "name": "Summoner in the Apocalypse",
         "list": "RoyalRoad"
-    },
-    "48643": {
-        "wln": 54737,
-        "wn": null,
-        "name": "Apocalypse Summoner (Minuet of Dusk)",
-        "list": "plan to read"
     },
     "48951": {
         "wln": 143833,
@@ -1935,6 +2007,12 @@
         "wln": 143816,
         "wn": null,
         "name": "Mother of Learning: The AU Chapters",
+        "list": "RoyalRoad"
+    },
+    "49300": {
+        "wln": 144207,
+        "wn": null,
+        "name": "Descent of the Arcane",
         "list": "RoyalRoad"
     }
 }
