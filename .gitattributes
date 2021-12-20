@@ -28,7 +28,7 @@ pos_old.json  linguist-generated=true
 pos_others.json  linguist-generated=true
 wn_diff.json	linguist-generated=true
 # dropbox data
-dropbox/dropbox.zip	linguist-generated=true -diff -merge -text
+dropbox/dropbox.zip	linguist-generated=true binary diff=zip
 # others
 composer.lock	linguist-generated=true
 Gemfile.lock	linguist-generated=true

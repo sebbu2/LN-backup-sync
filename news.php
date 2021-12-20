@@ -267,7 +267,7 @@ foreach($wln_order as $id=>$list) {
 				else $row['WebNovel last-paid']=$wn1->totalChapterNum-$neg_chp;
 			}
 			if(!is_null($wln2['rr'])) {
-				if(!array_key_exists($wln2['rr'],$rr_books)) die('unknown RoyalRoad book ID.');
+				if(!array_key_exists($wln2['rr'],$rr_books)) die('unknown RoyalRoad book ID : '.$wln2['rr'].'.');
 				$rr1=$rr_books[$wln2['rr']];
 				$rr2_=$rr->get_chapter_list_cached($wln2['rr']);
 				if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
@@ -573,7 +573,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['RoyalRoad last']=$rr2a;
 	}
 	else {
-		if(!in_array($rr_id,array(7015,45718))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
+		if(!in_array($rr_id,array(7015,45718,45173))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
 	}
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {
