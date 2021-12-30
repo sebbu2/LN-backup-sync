@@ -1572,7 +1572,7 @@
         "wn": "10636300105085505",
         "rr": null,
         "name": "The Mech Touch",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN original"
     },
     {
         "wln": 64956,
@@ -2884,6 +2884,13 @@
         "list": "QIDIAN stalled"
     },
     {
+        "wln": 110709,
+        "wn": null,
+        "rr": 27263,
+        "name": "The Infinite Labyrinth",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 110712,
         "wn": null,
         "rr": 21323,
@@ -3430,11 +3437,25 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 116880,
+        "wn": null,
+        "rr": 33054,
+        "name": "Soulforged Dungeoneer",
+        "list": "RoyalRoad plan to read"
+    },
+    {
         "wln": 117074,
         "wn": "16934577105812005",
         "rr": null,
         "name": "Races: Online ( VR Smartphone App)",
         "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 117088,
+        "wn": null,
+        "rr": 33277,
+        "name": "Soul Forging",
+        "list": "RoyalRoad plan to read"
     },
     {
         "wln": 117091,
@@ -4480,6 +4501,20 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 130853,
+        "wn": null,
+        "rr": 38306,
+        "name": "Chronicles of the Exalted Sun Child",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 131054,
+        "wn": null,
+        "rr": 37042,
+        "name": "PERCEPTION (Time is Relative)",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 131125,
         "wn": "13051972806542205",
         "rr": null,
@@ -5222,6 +5257,13 @@
         "list": "QIDIAN original"
     },
     {
+        "wln": 137560,
+        "wn": "18912903106700005",
+        "rr": null,
+        "name": "God\\u00B4s Eyes",
+        "list": "QIDIAN plan to read"
+    },
+    {
         "wln": 137617,
         "wn": null,
         "rr": 43875,
@@ -5421,7 +5463,7 @@
         "wln": 139388,
         "wn": null,
         "rr": 45603,
-        "name": "Rise of the Firstborn",
+        "name": "Book One: Rise of the Firstborn || A Magical Epic Fantasy",
         "list": "RoyalRoad plan to read"
     },
     {
@@ -5442,7 +5484,7 @@
         "wln": 139703,
         "wn": null,
         "rr": 45173,
-        "name": "**Mana Harvest** Volume 2",
+        "name": "Mana Harvest Volume 2",
         "list": "RoyalRoad stalled"
     },
     {
@@ -5569,6 +5611,13 @@
         "wn": null,
         "rr": 46378,
         "name": "Frameshift",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 141039,
+        "wn": null,
+        "rr": 48641,
+        "name": "Former Undead Transmigrated to become Villainess's Butler",
         "list": "RoyalRoad"
     },
     {
@@ -6181,6 +6230,13 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 142552,
+        "wn": null,
+        "rr": 48101,
+        "name": "Crafting a Golem",
+        "list": "RoyalRoad plan to read"
+    },
+    {
         "wln": 142558,
         "wn": "20199782605918605",
         "rr": null,
@@ -6384,6 +6440,13 @@
         "list": "RoyalRoad"
     },
     {
+        "wln": 142820,
+        "wn": null,
+        "rr": 48176,
+        "name": "RE: SYSTEM \/\/ SUMMONER - A Litrpg Apocalypse Redo",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 142867,
         "wn": null,
         "rr": 47175,
@@ -6450,8 +6513,15 @@
         "wln": 143135,
         "wn": null,
         "rr": 48642,
-        "name": "Summoner in the Apocalypse",
+        "name": "Summoner After Apocalypse",
         "list": "RoyalRoad"
+    },
+    {
+        "wln": 143143,
+        "wn": null,
+        "rr": 47951,
+        "name": "Salamangka: origins of the organization that returned magic to this world",
+        "list": "RoyalRoad plan to read"
     },
     {
         "wln": 143211,
@@ -6559,18 +6629,18 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 143408,
+        "wn": null,
+        "rr": 48754,
+        "name": "Tokens and Towers (A LitRPG\/GameLit Adventure)",
+        "list": "RoyalRoad"
+    },
+    {
         "wln": 143456,
         "wn": null,
         "rr": 26284,
         "name": "Seven (Riese)",
         "list": "RoyalRoad"
-    },
-    {
-        "wln": 143539,
-        "wn": null,
-        "rr": 45061,
-        "name": "The Retired S Ranked Adventure: Volume IV",
-        "list": "RoyalRoad plan to read"
     },
     {
         "wln": 143540,
@@ -7630,10 +7700,24 @@
         "list": "QIDIAN plan to read"
     },
     {
+        "wln": 144173,
+        "wn": null,
+        "rr": 49390,
+        "name": "First Line of Defense, Book 1: Welcome to the Universe.",
+        "list": "duplicates"
+    },
+    {
         "wln": 144207,
         "wn": null,
         "rr": 49300,
         "name": "Descent of the Arcane",
+        "list": "RoyalRoad"
+    },
+    {
+        "wln": 144211,
+        "wn": null,
+        "rr": 49390,
+        "name": "First Line of Defense, Book 1: Welcome to the Universe",
         "list": "RoyalRoad"
     },
     {
@@ -8256,7 +8340,7 @@
         "wln": 144520,
         "wn": "14928475705148405",
         "rr": null,
-        "name": "The Devil's love",
+        "name": "The Devil\\u2019s love",
         "list": "QIDIAN plan to read"
     },
     {
@@ -8405,5 +8489,26 @@
         "rr": null,
         "name": "The Villainess with a Heroine Harem",
         "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 144644,
+        "wn": "19721205806187605",
+        "rr": null,
+        "name": "Not Your Typical Villianess",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 144717,
+        "wn": "19828349906517205",
+        "rr": null,
+        "name": "Code Collector",
+        "list": "QIDIAN plan to read"
+    },
+    {
+        "wln": 144725,
+        "wn": null,
+        "rr": 45061,
+        "name": "Exile",
+        "list": "RoyalRoad"
     }
 ]

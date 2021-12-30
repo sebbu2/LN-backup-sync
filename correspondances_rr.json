@@ -623,6 +623,12 @@
         "name": "Against the Heaven's Will",
         "list": "RoyalRoad plan to read"
     },
+    "27263": {
+        "wln": 110709,
+        "wn": null,
+        "name": "The Infinite Labyrinth",
+        "list": "RoyalRoad"
+    },
     "27325": {
         "wln": 115382,
         "wn": null,
@@ -857,6 +863,18 @@
         "name": "Blessed Time",
         "list": "RoyalRoad plan to read"
     },
+    "33054": {
+        "wln": 116880,
+        "wn": null,
+        "name": "Soulforged Dungeoneer",
+        "list": "RoyalRoad plan to read"
+    },
+    "33277": {
+        "wln": 117088,
+        "wn": null,
+        "name": "Soul Forging",
+        "list": "RoyalRoad plan to read"
+    },
     "33283": {
         "wln": 117392,
         "wn": null,
@@ -1073,6 +1091,12 @@
         "name": "Earth's Alpha Prime",
         "list": "QIDIAN plan to read"
     },
+    "37042": {
+        "wln": 131054,
+        "wn": null,
+        "name": "PERCEPTION (Time is Relative)",
+        "list": "RoyalRoad"
+    },
     "37103": {
         "wln": 129392,
         "wn": null,
@@ -1137,6 +1161,12 @@
         "wln": 130768,
         "wn": null,
         "name": "An Unbound Soul",
+        "list": "RoyalRoad"
+    },
+    "38306": {
+        "wln": 130853,
+        "wn": null,
+        "name": "Chronicles of the Exalted Sun Child",
         "list": "RoyalRoad"
     },
     "38944": {
@@ -1686,10 +1716,10 @@
         "list": "RoyalRoad plan to read"
     },
     "45061": {
-        "wln": 143539,
+        "wln": 144725,
         "wn": null,
-        "name": "The Retired S Ranked Adventure: Volume IV",
-        "list": "RoyalRoad plan to read"
+        "name": "Exile",
+        "list": "RoyalRoad"
     },
     "45090": {
         "wln": 141567,
@@ -1712,7 +1742,7 @@
     "45173": {
         "wln": 139703,
         "wn": null,
-        "name": "**Mana Harvest** Volume 2",
+        "name": "Mana Harvest Volume 2",
         "list": "RoyalRoad stalled"
     },
     "45229": {
@@ -1748,7 +1778,7 @@
     "45603": {
         "wln": 139388,
         "wn": null,
-        "name": "Rise of the Firstborn",
+        "name": "Book One: Rise of the Firstborn || A Magical Epic Fantasy",
         "list": "RoyalRoad plan to read"
     },
     "45610": {
@@ -1925,6 +1955,12 @@
         "name": "The Journey of a God: Book 1",
         "list": "RoyalRoad"
     },
+    "47951": {
+        "wln": 143143,
+        "wn": null,
+        "name": "Salamangka: origins of the organization that returned magic to this world",
+        "list": "RoyalRoad plan to read"
+    },
     "47959": {
         "wln": 142434,
         "wn": null,
@@ -1967,6 +2003,18 @@
         "name": "I Am Not Chaotic Evil",
         "list": "RoyalRoad"
     },
+    "48101": {
+        "wln": 142552,
+        "wn": null,
+        "name": "Crafting a Golem",
+        "list": "RoyalRoad plan to read"
+    },
+    "48176": {
+        "wln": 142820,
+        "wn": null,
+        "name": "RE: SYSTEM \/\/ SUMMONER - A Litrpg Apocalypse Redo",
+        "list": "RoyalRoad"
+    },
     "48346": {
         "wln": 142743,
         "wn": null,
@@ -1985,10 +2033,22 @@
         "name": "Pocket Healer",
         "list": "RoyalRoad"
     },
+    "48641": {
+        "wln": 141039,
+        "wn": null,
+        "name": "Former Undead Transmigrated to become Villainess's Butler",
+        "list": "RoyalRoad"
+    },
     "48642": {
         "wln": 143135,
         "wn": null,
-        "name": "Summoner in the Apocalypse",
+        "name": "Summoner After Apocalypse",
+        "list": "RoyalRoad"
+    },
+    "48754": {
+        "wln": 143408,
+        "wn": null,
+        "name": "Tokens and Towers (A LitRPG\/GameLit Adventure)",
         "list": "RoyalRoad"
     },
     "48951": {
@@ -2014,5 +2074,11 @@
         "wn": null,
         "name": "Descent of the Arcane",
         "list": "RoyalRoad"
+    },
+    "49390": {
+        "wln": 144173,
+        "wn": null,
+        "name": "First Line of Defense, Book 1: Welcome to the Universe.",
+        "list": "duplicates"
     }
 }

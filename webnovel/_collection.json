@@ -298,6 +298,17 @@
       "StatParams": ""
     },
     {
+      "BookId": 19530653305554605,
+      "BookType": 0,
+      "CoverId": 1640143669924,
+      "Catogery": "Fantasy",
+      "CatogeryId": 70002,
+      "BookName": "Your Majesty, Please Don't Do This",
+      "Author": "Divine Power Of Dargan",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
+    {
       "BookId": 19523573005538505,
       "BookType": 0,
       "CoverId": 1632450315431,
@@ -3412,7 +3423,7 @@
     {
       "BookId": 10636300105085505,
       "BookType": 0,
-      "CoverId": 1631819990476,
+      "CoverId": 1639587949212,
       "Catogery": "Sci-fi",
       "CatogeryId": 70006,
       "BookName": "The Mech Touch",
