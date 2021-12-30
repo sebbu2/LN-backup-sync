@@ -355,7 +355,13 @@ foreach($wln_order as $id=>$list) {
 		}
 		else {
 			$wln_info=$wln->get_info_cached($entry);
-			$n3=get(get($wln_info, 'data'), 'alternatenames');
+			try {
+				$n3=get(get($wln_info, 'data'), 'alternatenames');
+			}
+			catch(OutOfBoundsException) {
+				$wln_info=$wln->get_info($entry);
+				$n3=get(get($wln_info, 'data'), 'alternatenames');
+			}
 			$n3=array_map(fn($e)=>strtolower(normalize(name_simplify($e, 1))), $n3);
 			foreach($n3 as $n3_) {
 				if(array_key_exists($n3_, $pos)) {
@@ -459,18 +465,36 @@ $head=array('title',
  'start', 'pos', 'last',
  'msg');
 $lines=0;
-usort($wn_books, fn($e1, $e2) => strnatcasecmp($e1->bookName, $e2->bookName));
+function wn_sort($e1, $e2) {
+	if(!exists($e1, 'bookName')) {
+		return -1;
+		var_dump($e1);die();
+	}
+	if(!exists($e2, 'bookName')) {
+		return -1;
+		var_dump($e2);die();
+	}
+	return strnatcasecmp(get($e1, 'bookName'), get($e2, 'bookName'));
+}
+//usort($wn_books, fn($e1, $e2) => strnatcasecmp($e1->bookName, $e2->bookName));
+usort($wn_books, 'wn_sort');
 echo '<h1>WebNovel</h1>',"\n";
 foreach($wn_books as $entry) {
 	if($entry->novelType==100 || $entry->novelType==200) continue;
 	$row=array();
 	$row['wn_id']=$entry->bookId;
 	$row['wn_id']='<a href="https://www.webnovel.com/book/'.$row['wn_id'].'/">'.$row['wn_id'].'</a>';
-	$row['title']=trim($entry->bookName);
+	if(exists($entry, 'bookName'))
+		$row['title']=trim($entry->bookName);
+	else
+		$row['title']=$row['wn_id'];
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(!property_exists($entry, 'readToChapterNum')) $row['WebNovel cur']=$entry->readToChapterIndex;
 	else $row['WebNovel cur']=$entry->readToChapterNum;
-	if(!property_exists($entry, 'totalChapterNum')) $row['WebNovel last']=$entry->newChapterIndex;
+	if(!property_exists($entry, 'totalChapterNum')) {
+		if(property_exists($entry, 'newChapterIndex')) $row['WebNovel last']=$entry->newChapterIndex;
+		else $row['WebNovel last']=0;
+	}
 	else $row['WebNovel last']=$entry->totalChapterNum;//readToChapterIndex or totalChapterNum or newChapterIndex
 	/*if(strtolower(normalize($row['title']))===strtolower(normalize('万古最强宗'))) {// || $entry->bookId=='17527780306425705') {
 		var_dump($entry, $row['title'], $name, normalize($name), normalize2($name));

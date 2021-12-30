@@ -982,16 +982,17 @@ class WebNovel extends SitePlugin
 		array_shift($matches);$matches=$matches[0];
 		//$matches=array_filter($matches, function($e) {return startswith($e, 'g_data');});
 		//var_dump($matches);//die();
-		$str ='g_data.pageId="qi_p_bookdetail",g_data.book= ';
-		//$str2='g_data=g_data||{},g_data.login=';
-		$str2='g_data=g_data||{},g_data.login={},g_data.login.statusCode="-1",g_data.login.user= ';
+		$str=array();
+		$str[]='g_data.pageId="qi_p_bookdetail",g_data.book= ';
+		//$str[]='g_data=g_data||{},g_data.login=';
+		$str[]='g_data=g_data||{},g_data.login={},g_data.login.statusCode="-1",g_data.login.user= ';
+		$str[]='g_data=g_data||{},g_data.login={},g_data.login.statusCode="0",g_data.login.user= ';
 		$res1=NULL;
 		foreach($matches as $m) {
-			if(startswith($m, $str)) {
-				$res1=trim(substr($m,strlen($str)));
-			}
-			if(startswith($m, $str2)) {
-				$res1=trim(substr($m,strlen($str2)));
+			foreach($str as $str1) {
+				if(startswith($m, $str1)) {
+					$res1=trim(substr($m,strlen($str1)));
+				}
 			}
 		}
 		if($res1===NULL) var_dump($matches);

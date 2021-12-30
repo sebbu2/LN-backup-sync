@@ -107,7 +107,7 @@ if(direct()) {
 	var_dump($wn_);var_dump($tr_);var_dump($tr_3);
 	foreach($tr_2 as $k=>$v) {
 		foreach($v as $k1=>$v1) {
-			$v1=array_map(fn($e) => $e['bookName'], $v1);
+			$v1=array_map(fn($e) => (exists($e, 'bookName')?$e['bookName']:''), $v1);
 			sort($v1);
 			$tr_2[$k][$k1]=$v1;
 		}
@@ -140,8 +140,8 @@ if(direct()) {
 		foreach($v1 as $k2=>$v2) {
 			//var_dump($v2);die();
 			$wln_id=$v2[0]['id'];
-			$n1=$v2[0]['name'];
-			$n2=$v2[3];
+			$n1=trim($v2[0]['name']);
+			$n2=trim($v2[3]);
 			$n1=normalize($n1);
 			$n2=normalize($n2);
 			$n2b=($n2!=false)?$n2:$n1;
@@ -169,7 +169,7 @@ if(direct()) {
 			try {
 				$n3=get(get($wln_info, 'data'), 'alternatenames');
 				if(is_string($n3)) $n3=trim($n3);
-				else if(is_array($n3)) $n3=array_filter($n3);
+				else if(is_array($n3)) $n3=array_filter(array_map('trim', $n3));
 				//var_dump($n3);die();
 				if(is_array($n3)) $n3=array_map('normalize', $n3);
 			}
@@ -183,7 +183,7 @@ if(direct()) {
 				$wln_info=$wln->get_info($wln_id);
 				$n3=get(get($wln_info, 'data'), 'alternatenames');
 				if(is_string($n3)) $n3=trim($n3);
-				else if(is_array($n3)) $n3=array_filter($n3);
+				else if(is_array($n3)) $n3=array_filter(array_map('trim', $n3));
 				//var_dump($n3);die();
 				if(is_array($n3)) $n3=array_map('normalize', $n3);
 			}
@@ -207,11 +207,13 @@ if(direct()) {
 				//$res=$wn->get_info_cached($v3['bookId'],3);
 				//var_dump($res);die();
 				//$n=name_simplify($v3['bookName']);
-				$n=$v3['bookName'];
+				if(!exists($v3, 'bookName')) continue;
+				$n=trim($v3['bookName']);
 				$n=name_simplify($n);
 				$n=normalize($n);
 				foreach($n3 as $n_) {
 					//if($n===$n_) {
+					$n_=trim($n_);
 					$n_=name_simplify($n_);
 					$n_=normalize($n_);
 					if(
@@ -243,7 +245,7 @@ if(direct()) {
 				//var_dump($k4, $v4);die();
 				if(IGNORE_DUPLICATES && isset($skip_wln_rr[$k4]) && $skip_wln_rr[$k4]) continue;
 				//$n=name_simplify($v4['title']);
-				$n=normalize($v4['title']);
+				$n=normalize(trim($v4['title']));
 				$n=name_simplify($n);
 				//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
 				foreach($n3 as $n_) {
@@ -308,7 +310,8 @@ if(direct()) {
 		if($v3['novelType']==100 || $v3['novelType']==200) continue;
 		$wn_id=$v3['bookId'];
 		if(array_key_exists($wn_id, $cor_wn)) continue;
-		$n=name_simplify($v3['bookName']);
+		if(!exists($v3, 'bookName')) continue;
+		$n=name_simplify(trim($v3['bookName']));
 		$n=normalize($n);
 		$res=$wn->get_info_cached($v3['bookId'], 3);
 		
@@ -320,7 +323,7 @@ if(direct()) {
 		$n2=NULL;
 		foreach($follows as $k4=>$v4) {
 			if(IGNORE_DUPLICATES && isset($skip_wn_rr[$k4]) && $skip_wn_rr[$k4]) continue;
-			$n2=name_simplify($v4['title']);
+			$n2=name_simplify(trim($v4['title']));
 			$n2=normalize($n2);
 			//if($n===$n2) {
 			if(strtolower($n)===strtolower($n2)||strtolower(normalize2($n))===strtolower(normalize2($n2))) {
@@ -361,7 +364,7 @@ if(direct()) {
 		$rr_id=$k4;
 		if(array_key_exists($rr_id, $cor_rr)) continue;
 		//if(isset($cor_rr[$skip_wln_rr[$k4]])) continue;
-		$n2=name_simplify($v4['title']);
+		$n2=name_simplify(trim($v4['title']));
 		$n2=normalize($n2);
 		
 		assert(strlen($n2)>0) or die('empty name for '.$rr_id.'.');

@@ -50,6 +50,7 @@ $modifs=array(
 $correspondances=array();
 foreach($books as $book) // qidian
 {
+	if(!exists($book, 'bookName')) continue;
 	foreach($watches['data'][0] as $id=>$list) //wln list
 	{
 		foreach($list as $entry) // wln
