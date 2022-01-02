@@ -54,6 +54,23 @@ $rr_books=$rr->get_watches();
 /*$wn_id='19530653305554605';
 $nt=0;
 $wn->del_watch($wn_id,$nt);die();//*/
+$count=0;
+foreach($wn_books as $book) {
+	//var_dump($book);die();
+	$id=$book->bookId;
+	if($book->novelType==100 || $book->novelType==200) continue;
+	$res=$wn->get_info_html_cached($id);
+	if(!exists($res, 'bookInfo')) {
+		$res=$wn->get_info_html($id, $book->novelType);
+		if(!exists($res, 'bookInfo')) {
+			var_dump($book,$id,$res);//die();
+		}
+		else {
+			$count++;
+		}
+	}
+}
+if($count>0) $wn->update_subnames();
 
 $skip=array('19886807705655205', '19636465406948705', '19230521106872905', '19212887105657605', '7860061006001305');
 $skip=array_merge($skip,array('16447293106086205','14286329606946605'));

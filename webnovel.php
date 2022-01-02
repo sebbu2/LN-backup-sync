@@ -975,15 +975,23 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info_html($id) {
+	public function get_info_html($id, $novelType=0) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
-		$res = $this->get( 'https://www.webnovel.com/book/'.$id );
+		$url='';
+		if($novelType==0) {
+			$res = $this->get( 'https://www.webnovel.com/book/'.$id );
+		}
+		else if($novelType==100) {
+			$res = $this->get( 'https://www.webnovel.com/comic/'.$id );
+		}
+		else die('invalid novelType');
 		preg_match_all('#<script(?: (?:nonce|data-nonce|type|id|async|src)="[^"]+")*>(.*?)</script>#is', $res, $matches);
 		array_shift($matches);$matches=$matches[0];
 		//$matches=array_filter($matches, function($e) {return startswith($e, 'g_data');});
 		//var_dump($matches);//die();
 		$str=array();
 		$str[]='g_data.pageId="qi_p_bookdetail",g_data.book= ';
+		$str[]='g_data.pageId="qi_p_cbookdetail",g_data.book= ';
 		//$str[]='g_data=g_data||{},g_data.login=';
 		$str[]='g_data=g_data||{},g_data.login={},g_data.login.statusCode="-1",g_data.login.user= ';
 		$str[]='g_data=g_data||{},g_data.login={},g_data.login.statusCode="0",g_data.login.user= ';
@@ -992,6 +1000,7 @@ class WebNovel extends SitePlugin
 			foreach($str as $str1) {
 				if(startswith($m, $str1)) {
 					$res1=trim(substr($m,strlen($str1)));
+					break(2);
 				}
 			}
 		}
