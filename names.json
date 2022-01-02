@@ -5464,6 +5464,36 @@
         "wn": null,
         "rr": 40601
     },
+    "Dear Spellbook (rewrite)": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
+    "dear spellbook (rewrite)": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
+    "Dear Spellbook A Fantasy Time Loop Rewrite": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
+    "dear spellbook a fantasy time loop rewrite": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
+    "Dear Spellbook rewrite": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
+    "dear spellbook rewrite": {
+        "wln": 136050,
+        "wn": null,
+        "rr": 49881
+    },
     "Death": {
         "wln": 133543,
         "wn": "14582952705846705",
@@ -19639,6 +19669,16 @@
         "wn": "16856682305508105",
         "rr": null
     },
+    "Paranoid Mage": {
+        "wln": 144906,
+        "wn": null,
+        "rr": 49879
+    },
+    "paranoid mage": {
+        "wln": 144906,
+        "wn": null,
+        "rr": 49879
+    },
     "Parasyte System": {
         "wln": 144490,
         "wn": "18224846306913805",
@@ -25049,21 +25089,6 @@
         "wn": null,
         "rr": 42728
     },
-    "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F": {
-        "wln": 136375,
-        "wn": null,
-        "rr": 42728
-    },
-    "tales of an unlikely wizard (isekai litrpg)\\ud83c\\udf1f": {
-        "wln": 136375,
-        "wn": null,
-        "rr": 42728
-    },
-    "tales of an unlikely wizard (isekai litrpg)\ud83c\udf1f": {
-        "wln": 136375,
-        "wn": null,
-        "rr": 42728
-    },
     "Tales of an Unlikely Wizard Isekai LitRPG": {
         "wln": 136375,
         "wn": null,
@@ -26149,12 +26174,17 @@
         "wn": null,
         "rr": null
     },
-    "The Bloodiest Mage Litrpg": {
+    "The Bloodiest Mage LitRPG": {
         "wln": 116896,
         "wn": null,
         "rr": null
     },
     "the bloodiest mage litrpg": {
+        "wln": 116896,
+        "wn": null,
+        "rr": null
+    },
+    "The Bloodiest Mage Litrpg": {
         "wln": 116896,
         "wn": null,
         "rr": null

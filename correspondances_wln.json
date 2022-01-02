@@ -4295,6 +4295,12 @@
         "name": "Thick as Thieves",
         "list": "RoyalRoad"
     },
+    "136050": {
+        "wn": null,
+        "rr": 49881,
+        "name": "Dear Spellbook A Fantasy Time Loop Rewrite",
+        "list": "RoyalRoad"
+    },
     "136052": {
         "wn": "19523559406682705",
         "rr": null,
@@ -4346,7 +4352,7 @@
     "136375": {
         "wn": null,
         "rr": 42728,
-        "name": "Tales of an Unlikely Wizard (Isekai LitRPG)\\uD83C\\uDF1F",
+        "name": "Tales of an Unlikely Wizard Isekai LitRPG",
         "list": "RoyalRoad"
     },
     "136498": {
@@ -7293,6 +7299,12 @@
         "wn": null,
         "rr": 45061,
         "name": "Exile",
+        "list": "RoyalRoad"
+    },
+    "144906": {
+        "wn": null,
+        "rr": 49879,
+        "name": "Paranoid Mage",
         "list": "RoyalRoad"
     }
 }
