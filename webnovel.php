@@ -1192,6 +1192,39 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
+	public function del_watch($id, $novelType=0) {
+		// id
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
+		$referer='https://www.webnovel.com/library';
+
+		$data=array();
+		
+		$referer='https://www.webnovel.com/';
+		$ar2=array(
+			'bookId'=>strval($id),
+			'novelType'=>$novelType,
+		);
+		$ar2=array($ar2);
+		$ar2=urlencode(json_encode($ar2));
+		//var_dump($ar2);die();
+		$ar=array(
+			'_csrfToken'=>$cookies['_csrfToken'],
+			//'bookItems'=>'%5B%7B%22bookId%22%3A%22'.strval($id).'%22%2C%22novelType%22%3A'.$novelType.'%7D%5D',
+			'bookItems'=>$ar2,
+		);
+		$headers=array(
+			'X-Requested-With: XMLHttpRequest',
+			'Referer: '.$referer,
+		);
+		
+		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/deleteLibraryItemsAjax', $ar, $headers);
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'deleteLibraryItemsAjax.json', $res);
+		$res=json_decode($res);
+		
+		return $res;
+	}
+	
 	public function get_history() {
 		// id
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
