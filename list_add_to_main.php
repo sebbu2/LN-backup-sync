@@ -63,7 +63,21 @@ foreach($wn_books as $book) {
 	if(!exists($res, 'bookInfo')) {
 		$res=$wn->get_info_html($id, $book->novelType);
 		if(!exists($res, 'bookInfo')) {
-			var_dump($book,$id,$res);//die();
+			if($book->updateStatus==1) {
+				$res2=$wn->get_chapter_list_cached($id);
+				//var_dump($res2);die();
+				$res3=$res2->data->volumeItems[0]->chapterItems[0];
+				//var_dump($res3);die();
+				assert($res3->chapterIndex==1) or die('neg chp');
+				$cid=$res3->chapterId;
+				//$res2=$wn->read_update($book, 1);
+				$res2=$wn->read_update2($id, $cid);
+				var_dump($book,$res2);
+				$count++;
+			}
+			else {
+				var_dump($id,$book->bookName);//die();
+			}
 		}
 		else {
 			$count++;

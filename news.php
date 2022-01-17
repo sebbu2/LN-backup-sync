@@ -92,6 +92,8 @@ function evaluate_expr($row, $expr) {
 		//if($expr[1]=='last' && $elem2===NULL) return false; // TEST
 		assert(false);
 	}
+	$elem1=strip_tags($elem1);
+	$elem2=strip_tags($elem2);
 	if($op2=='='||$op2=='==')
 		$cond2=($elem1==$elem2);
 	if($op2=='!='||$op2=='<>')
@@ -267,15 +269,21 @@ foreach($wln_order as $id=>$list) {
 				else $row['WebNovel last-paid']=$wn1->totalChapterNum-$neg_chp;
 			}
 			if(!is_null($wln2['rr'])) {
-				if(!array_key_exists($wln2['rr'],$rr_books)) die('unknown RoyalRoad book ID : '.$wln2['rr'].'.');
-				$rr1=$rr_books[$wln2['rr']];
-				$rr2_=$rr->get_chapter_list_cached($wln2['rr']);
+				if(array_key_exists($wln2['rr'],$rr_books)) {
+					$rr1=$rr_books[$wln2['rr']];
+					$rr2_=$rr->get_chapter_list_cached($wln2['rr']);
+				}
+				else {
+					//die('unknown RoyalRoad book ID : '.$wln2['rr'].'.');
+					$rr1=array();
+					$rr2_=array();
+				}
 				if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 					$rr2=get($rr2_, 'chapters');
 				}
 				else {
 					$rr2=$rr2_;
-					unset($rr2_);
+					//unset($rr2_);
 				}
 				if( exists($rr2_, 'volumes') && count((array)get($rr2_, 'volumes'))>0 && array_sum(array_map(fn($e) => get($e,'count'), (array)get($rr2_, 'volumes'))) != count(get($rr2_, 'chapters')) ) {
 					$rr2_=$rr->get_chapter_list($wln2['rr']);
@@ -376,6 +384,14 @@ foreach($wln_order as $id=>$list) {
 					$row['pos']=$pos1['pos'];
 					$row['last']=$pos1['max'];
 				}
+			}
+		}
+		if(array_key_exists('title',$row)) {
+			if(startswith($id, 'QIDIAN') && !is_null($wln2['wn'])) {
+				$row['title']='<a href="https://www.webnovel.com/book/'.$wln2['wn'].'">'.$row['title'].'</a>';
+			}
+			if(startswith($id, 'RoyalRoad') && !is_null($wln2['rr'])) {
+				$row['title']='<a href="https://www.royalroad.com/fiction/'.$wln2['rr'].'/">'.$row['title'].'</a>';
 			}
 		}
 		if(count($row)>1) {

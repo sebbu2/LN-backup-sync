@@ -41,6 +41,9 @@ echo basename($btf['file']);
 .blue {
 	color: blue;
 }
+A, A:link, A:visited, A:hover, A:active {
+	color: inherit;
+}
 </style>
 </head>
 <body>

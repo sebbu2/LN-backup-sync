@@ -439,7 +439,7 @@ class WebNovel extends SitePlugin
 		foreach($books as $i=>$b) {
 			//$ind=-1;
 			//foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
-			if(array_key_exists($b->bookId, $books2)) die('duplicate ID.');
+			if(array_key_exists($b->bookId, $books2)) die('duplicate ID : '.$b->bookID.'.');
 			$books2[$b->bookId]=$b;
 			if($b->novelType==0) {
 				//$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
@@ -548,7 +548,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function read_update($watch, $chp) {
+	public function read_update(array|object $watch, int $chp) {
 		$this->msg=array();
 		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
 		{
@@ -582,20 +582,6 @@ class WebNovel extends SitePlugin
 		}
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
-		/*{
-			$ar=array(
-				'_csrfToken'=>$cookies['_csrfToken'],
-				'bookId'=>strval($watch->bookId),
-				'_'=>millitime(),
-			);
-			$headers=array(
-				'Referer: '.$referer,
-			);
-			$res = $this->get( 'https://www.webnovel.com/apiajax/chapter/GetChapterList', $ar, $headers);
-			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json', $res);
-			$res=json_decode($res);
-		}//*/
 		
 		$cid=0;
 		$cid_max=0;
@@ -641,22 +627,31 @@ class WebNovel extends SitePlugin
 		
 		if ($update) {
 			if($watch->readToChapterIndex==$chp) return false;
-			$ar=array(
-				'_csrfToken'=>$cookies['_csrfToken'],
-				'bookId'=>strval($watch->bookId),
-				'chapterId'=>($cid>0?$cid:$cid_max),
-			);
-			//var_dump($ar);
-			//$res = $this->send( 'https://www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
-			$res = $this->send( 'https://www.webnovel.com/go/pcm/library/setReadingProgressAjax', $ar );
-			
-			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'SetReadingProgressAjax.json', $res);
-			$res=json_decode($res);
+			$id=strval($watch->bookId);
+			$cid2=($cid>0?$cid:$cid_max);
+			$res=$this->read_update2( $id,  $cid2);
 		}
 		else {
 			$res=false;
 		}
+		return $res;
+	}
+	
+	public function read_update2(string $bookid, string $chpid) {
+		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
+		$referer='https://www.webnovel.com/library';
+		$ar=array(
+			'_csrfToken'=>$cookies['_csrfToken'],
+			'bookId'=>$bookid,
+			'chapterId'=>$chpid,
+		);
+		//var_dump($ar);
+		//$res = $this->send( 'https://www.webnovel.com/apiajax/Library/SetReadingProgressAjax', $ar );
+		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/setReadingProgressAjax', $ar );
+		
+		$res=$this->jsonp_to_json($res);
+		file_put_contents($this::FOLDER.'SetReadingProgressAjax.json', $res);
+		$res=json_decode($res);
 		return $res;
 	}
 	
