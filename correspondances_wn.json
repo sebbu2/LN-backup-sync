@@ -245,6 +245,12 @@
         "name": "Versatile Mage",
         "list": "QIDIAN plan to read"
     },
+    "7853880705001905": {
+        "wln": 59602,
+        "rr": null,
+        "name": "Pursuit of the Truth",
+        "list": "QIDIAN plan to read"
+    },
     "7888748705002005": {
         "wln": 57618,
         "rr": null,
@@ -351,7 +357,7 @@
         "wln": 60272,
         "rr": null,
         "name": "Super Gene",
-        "list": "QIDIAN on-hold"
+        "list": "QIDIAN"
     },
     "8034555905002905": {
         "wln": 62448,
@@ -370,6 +376,12 @@
         "rr": null,
         "name": "The Strongest Gene",
         "list": "QIDIAN completed"
+    },
+    "8058316805003405": {
+        "wln": 2336,
+        "rr": null,
+        "name": "I Shall Seal the Heavens",
+        "list": "QIDIAN plan to read"
     },
     "8058318405003505": {
         "wln": 35887,
@@ -418,6 +430,12 @@
         "rr": null,
         "name": "Coiling Dragon",
         "list": "QIDIAN completed"
+    },
+    "8094127105005005": {
+        "wln": 427,
+        "rr": null,
+        "name": "Renegade Immortal",
+        "list": "QIDIAN plan to read"
     },
     "8099388005005405": {
         "wln": 34616,
@@ -659,6 +677,12 @@
         "name": "Card Disciple",
         "list": "QIDIAN plan to read"
     },
+    "9087079805001905": {
+        "wln": 77637,
+        "rr": null,
+        "name": "Legend of Swordsman",
+        "list": "QIDIAN plan to read"
+    },
     "9112051305002005": {
         "wln": 53175,
         "rr": null,
@@ -879,6 +903,12 @@
         "wln": 78438,
         "rr": null,
         "name": "Monster Pet Evolution",
+        "list": "QIDIAN plan to read"
+    },
+    "10961533705222305": {
+        "wln": 93244,
+        "rr": null,
+        "name": "A World Worth Protecting",
         "list": "QIDIAN plan to read"
     },
     "10993431205232305": {
@@ -1257,13 +1287,19 @@
         "wln": 75505,
         "rr": null,
         "name": "Rise of Myriad Magic Emperor",
-        "list": "QIDIAN stalled"
+        "list": "QIDIAN original"
     },
     "12214197006102105": {
         "wln": 98914,
         "rr": null,
         "name": "Warlock Apprentice",
         "list": "QIDIAN stalled"
+    },
+    "12214255005093705": {
+        "wln": 103094,
+        "rr": null,
+        "name": "I Might Be A Fake Cultivator",
+        "list": "QIDIAN plan to read"
     },
     "12215694606105305": {
         "wln": 42897,
@@ -1413,7 +1449,7 @@
         "wln": 142455,
         "rr": 47997,
         "name": "Overkill",
-        "list": "RoyalRoad"
+        "list": "duplicates"
     },
     "12801407706419705": {
         "wln": 81989,
@@ -1898,7 +1934,7 @@
     "14928475705148405": {
         "wln": 144520,
         "rr": null,
-        "name": "The Devil\\u2019s love",
+        "name": "The Devil's love",
         "list": "QIDIAN plan to read"
     },
     "14972966005314705": {
@@ -2181,7 +2217,7 @@
         "wln": 142663,
         "rr": null,
         "name": "Multi-Gene",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN original"
     },
     "15915745706419505": {
         "wln": 115575,
@@ -2205,7 +2241,7 @@
         "wln": 111024,
         "rr": null,
         "name": "The Ancient Genes",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN original"
     },
     "15962914506655105": {
         "wln": 115398,
@@ -2511,7 +2547,7 @@
         "wln": 128351,
         "rr": null,
         "name": "The Mind God",
-        "list": "QIDIAN stalled"
+        "list": "QIDIAN original"
     },
     "16731274906146805": {
         "wln": 116765,
@@ -2655,7 +2691,7 @@
         "wln": 128349,
         "rr": null,
         "name": "The Gene Gamer",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN original"
     },
     "16941503805840105": {
         "wln": 65812,
@@ -2709,7 +2745,7 @@
         "wln": 127861,
         "rr": null,
         "name": "Super Gene Optimization Fluid",
-        "list": "QIDIAN plan to read"
+        "list": "QIDIAN"
     },
     "16990056705045105": {
         "wln": 128320,
@@ -2884,6 +2920,18 @@
         "rr": null,
         "name": "Death... and me",
         "list": "QIDIAN on-hold"
+    },
+    "17343140605461505": {
+        "wln": 145370,
+        "rr": null,
+        "name": "Bloodline Evolution System: Reign of the Dragon Snake",
+        "list": "QIDIAN plan to read"
+    },
+    "17359722505529005": {
+        "wln": 134718,
+        "rr": null,
+        "name": "Records of Rebirth",
+        "list": "QIDIAN plan to read"
     },
     "17372791306713605": {
         "wln": 144540,
@@ -3908,7 +3956,7 @@
     "18909613806685105": {
         "wln": 143758,
         "rr": null,
-        "name": "I Just Won't Play by the Book",
+        "name": "I Just Won't Play By The Book",
         "list": "QIDIAN plan to read"
     },
     "18909621005527805": {
@@ -4413,6 +4461,12 @@
         "wln": 143780,
         "rr": null,
         "name": "Global Descent: 100\\u00D7Reward",
+        "list": "QIDIAN plan to read"
+    },
+    "19662892706018005": {
+        "wln": 144966,
+        "rr": null,
+        "name": "Top-notch Master Masquerading As Cannon Fodder Female Companion",
         "list": "QIDIAN plan to read"
     },
     "19668452406033805": {

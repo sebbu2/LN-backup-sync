@@ -167,6 +167,12 @@
         "name": "How Do You QA Test a Tsundere Android!?",
         "list": "RoyalRoad plan to read"
     },
+    "4697": {
+        "wln": 34881,
+        "wn": null,
+        "name": "Sole Survivor",
+        "list": "RoyalRoad"
+    },
     "5029": {
         "wln": 35113,
         "wn": null,
@@ -225,6 +231,12 @@
         "wln": 43638,
         "wn": null,
         "name": "Crashed Into Fantasy",
+        "list": "RoyalRoad plan to read"
+    },
+    "7297": {
+        "wln": 44054,
+        "wn": null,
+        "name": "Apathy (Jathias)",
         "list": "RoyalRoad plan to read"
     },
     "7509": {
@@ -286,6 +298,12 @@
         "wn": null,
         "name": "The Godking's Legacy",
         "list": "RoyalRoad plan to read"
+    },
+    "10748": {
+        "wln": 57027,
+        "wn": null,
+        "name": "Junkyard Magician",
+        "list": "RoyalRoad"
     },
     "11209": {
         "wln": 57391,
@@ -377,6 +395,12 @@
         "name": "Curse of the Kat (Dropped)",
         "list": "RoyalRoad plan to read"
     },
+    "16913": {
+        "wln": 63190,
+        "wn": null,
+        "name": "Mind Reading Isn't Cheating",
+        "list": "RoyalRoad"
+    },
     "16946": {
         "wln": 63197,
         "wn": null,
@@ -399,6 +423,12 @@
         "wln": 69758,
         "wn": null,
         "name": "The Misplaced Dungeon",
+        "list": "RoyalRoad"
+    },
+    "20243": {
+        "wln": 70419,
+        "wn": null,
+        "name": "The Demon Lord's Lover",
         "list": "RoyalRoad"
     },
     "21188": {
@@ -520,6 +550,12 @@
         "wn": null,
         "name": "Defiance of the Fall",
         "list": "RoyalRoad plan to read"
+    },
+    "24734": {
+        "wln": 81573,
+        "wn": null,
+        "name": "Our Goddess",
+        "list": "RoyalRoad"
     },
     "24762": {
         "wln": 112670,
@@ -711,7 +747,7 @@
         "wln": 110760,
         "wn": null,
         "name": "Princess",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad completed"
     },
     "29995": {
         "wln": 111171,
@@ -723,7 +759,7 @@
         "wln": 111209,
         "wn": null,
         "name": "Headpats",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "30321": {
         "wln": 136682,
@@ -809,6 +845,12 @@
         "name": "Just a Bystander",
         "list": "RoyalRoad"
     },
+    "32139": {
+        "wln": 117962,
+        "wn": null,
+        "name": "Interdimensional Garbage Merchant",
+        "list": "RoyalRoad"
+    },
     "32375": {
         "wln": 60335,
         "wn": null,
@@ -819,7 +861,7 @@
         "wln": 119192,
         "wn": null,
         "name": "Oak: A Tree's Quest",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "32576": {
         "wln": 119029,
@@ -855,7 +897,7 @@
         "wln": 119333,
         "wn": null,
         "name": "Letters From a Lost Bird",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "33020": {
         "wln": 116733,
@@ -981,7 +1023,7 @@
         "wln": 111530,
         "wn": null,
         "name": "Melas",
-        "list": "RoyalRoad on-hold"
+        "list": "RoyalRoad stalled"
     },
     "35087": {
         "wln": 82004,
@@ -1023,7 +1065,7 @@
         "wln": 127831,
         "wn": null,
         "name": "Fluff",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad completed"
     },
     "36051": {
         "wln": 127902,
@@ -1128,10 +1170,10 @@
         "list": "RoyalRoad"
     },
     "37438": {
-        "wln": 137125,
+        "wln": 130259,
         "wn": null,
-        "name": "Salvos [A Monster Evolution LitRPG]",
-        "list": "duplicates"
+        "name": "Salvos",
+        "list": "RoyalRoad"
     },
     "37626": {
         "wln": 130167,
@@ -1223,12 +1265,6 @@
         "name": "Path of the Dragon Mage: Exiled",
         "list": "duplicates"
     },
-    "40150": {
-        "wln": 133304,
-        "wn": null,
-        "name": "Pith",
-        "list": "RoyalRoad"
-    },
     "40193": {
         "wln": 134291,
         "wn": "17996954306015705",
@@ -1239,7 +1275,7 @@
         "wln": 133372,
         "wn": null,
         "name": "The Agartha Loop",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "40265": {
         "wln": 133726,
@@ -1292,8 +1328,8 @@
     "40601": {
         "wln": 133901,
         "wn": null,
-        "name": "Dear Spellbook",
-        "list": "RoyalRoad"
+        "name": "Dear Spellbook (Link to rewrite in blurb)",
+        "list": "RoyalRoad stalled"
     },
     "40700": {
         "wln": 137446,
@@ -1377,7 +1413,7 @@
         "wln": 135126,
         "wn": null,
         "name": "Lever Action",
-        "list": "RoyalRoad plan to read"
+        "list": "RoyalRoad"
     },
     "41434": {
         "wln": 135289,
@@ -1409,6 +1445,24 @@
         "name": "Lost In Translation",
         "list": "RoyalRoad plan to read"
     },
+    "41521": {
+        "wln": 135346,
+        "wn": null,
+        "name": "A Budding Scientist in a Fantasy World",
+        "list": "RoyalRoad"
+    },
+    "41522": {
+        "wln": 135292,
+        "wn": null,
+        "name": "Ogre Tyrant",
+        "list": "RoyalRoad"
+    },
+    "41591": {
+        "wln": 135715,
+        "wn": null,
+        "name": "A Journey in Darkness",
+        "list": "RoyalRoad"
+    },
     "41595": {
         "wln": 138801,
         "wn": null,
@@ -1436,8 +1490,8 @@
     "41772": {
         "wln": 142421,
         "wn": null,
-        "name": "The Isekai Will be Livestreamed",
-        "list": "RoyalRoad plan to read"
+        "name": "The Isekai will be Livestreamed",
+        "list": "RoyalRoad"
     },
     "41780": {
         "wln": 135988,
@@ -1493,6 +1547,18 @@
         "name": "Master of the System",
         "list": "RoyalRoad plan to read"
     },
+    "42385": {
+        "wln": 136131,
+        "wn": null,
+        "name": "An Outcast In Another World",
+        "list": "RoyalRoad"
+    },
+    "42433": {
+        "wln": 136569,
+        "wn": null,
+        "name": "Peculiar Soul",
+        "list": "RoyalRoad"
+    },
     "42441": {
         "wln": 136182,
         "wn": null,
@@ -1509,6 +1575,12 @@
         "wln": 137358,
         "wn": null,
         "name": "The Reincarnation of Alysara [Progression LitRPG]",
+        "list": "RoyalRoad"
+    },
+    "42579": {
+        "wln": 3374,
+        "wn": null,
+        "name": "Phantasm",
         "list": "RoyalRoad"
     },
     "42630": {
@@ -1613,6 +1685,12 @@
         "name": "Morcster Chef: Reckoning",
         "list": "RoyalRoad plan to read"
     },
+    "43714": {
+        "wln": 137523,
+        "wn": null,
+        "name": "Mana Soul",
+        "list": "RoyalRoad"
+    },
     "43875": {
         "wln": 137617,
         "wn": null,
@@ -1620,10 +1698,10 @@
         "list": "RoyalRoad plan to read"
     },
     "43887": {
-        "wln": 138800,
+        "wln": 138206,
         "wn": null,
-        "name": "Long Fang - Cultivator vs. System",
-        "list": "duplicates"
+        "name": "Long Fang",
+        "list": "RoyalRoad plan to read"
     },
     "43934": {
         "wln": 138802,
@@ -1635,6 +1713,12 @@
         "wln": 137716,
         "wn": null,
         "name": "Breaker of Horizons",
+        "list": "RoyalRoad"
+    },
+    "43974": {
+        "wln": 137704,
+        "wn": null,
+        "name": "Melody of Mana",
         "list": "RoyalRoad"
     },
     "44111": {
@@ -1697,6 +1781,12 @@
         "name": "Drinker of the Yew: A Necromancer's Tale",
         "list": "RoyalRoad plan to read"
     },
+    "44887": {
+        "wln": 138810,
+        "wn": null,
+        "name": "Blood Shaper",
+        "list": "RoyalRoad"
+    },
     "44982": {
         "wln": 138842,
         "wn": null,
@@ -1709,17 +1799,17 @@
         "name": "Warlock's Gate [DROPPED]",
         "list": "RoyalRoad plan to read"
     },
+    "45048": {
+        "wln": 138698,
+        "wn": null,
+        "name": "Hive Minds Give Good Hugs",
+        "list": "RoyalRoad"
+    },
     "45050": {
         "wln": 138913,
         "wn": null,
         "name": "Snow Flames",
         "list": "RoyalRoad plan to read"
-    },
-    "45061": {
-        "wln": 144725,
-        "wn": null,
-        "name": "Exile",
-        "list": "RoyalRoad"
     },
     "45090": {
         "wln": 141567,
@@ -1743,7 +1833,7 @@
         "wln": 139703,
         "wn": null,
         "name": "Mana Harvest Volume 2",
-        "list": "RoyalRoad stalled"
+        "list": "RoyalRoad"
     },
     "45229": {
         "wln": 139193,
@@ -1865,16 +1955,16 @@
         "name": "Enduring Good",
         "list": "RoyalRoad"
     },
-    "46742": {
-        "wln": 140816,
-        "wn": null,
-        "name": "In Another World's Apocalypse - An Isekai Loop LitRPG",
-        "list": "RoyalRoad plan to read"
-    },
     "46901": {
         "wln": 141208,
         "wn": null,
         "name": "The Last Orellen",
+        "list": "RoyalRoad"
+    },
+    "46942": {
+        "wln": 141569,
+        "wn": null,
+        "name": "The New Horizon [GL LitRPG]",
         "list": "RoyalRoad"
     },
     "47017": {
@@ -1888,6 +1978,12 @@
         "wn": null,
         "name": "Saga of Cosmic Journey",
         "list": "RoyalRoad plan to read"
+    },
+    "47030": {
+        "wln": 141541,
+        "wn": null,
+        "name": "Tori Transmigrated",
+        "list": "RoyalRoad"
     },
     "47118": {
         "wln": 141547,
@@ -1929,7 +2025,7 @@
         "wln": 142008,
         "wn": null,
         "name": "Shattered Realms",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "47621": {
         "wln": 142811,
@@ -1983,7 +2079,7 @@
         "wln": 142455,
         "wn": "12796110105355505",
         "name": "Overkill",
-        "list": "RoyalRoad"
+        "list": "duplicates"
     },
     "48008": {
         "wln": 142383,
@@ -2090,7 +2186,19 @@
     "49881": {
         "wln": 136050,
         "wn": null,
-        "name": "Dear Spellbook A Fantasy Time Loop Rewrite",
+        "name": "Dear Spellbook: A D\u0026D Inspired Time Loop (Rewrite)",
+        "list": "RoyalRoad"
+    },
+    "50034": {
+        "wln": 145012,
+        "wn": null,
+        "name": "Planetary Orbital Weapon - An orbital-particle-cannon based LitRPG",
+        "list": "RoyalRoad"
+    },
+    "50138": {
+        "wln": 145151,
+        "wn": null,
+        "name": "Damien Nightshade The Villainous Vampire Professor: GameLit Fantasy Progression",
         "list": "RoyalRoad"
     }
 }

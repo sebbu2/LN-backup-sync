@@ -500,7 +500,7 @@
     {
       "BookId": 19402476606372805,
       "BookType": 0,
-      "CoverId": 1622774538663,
+      "CoverId": 1641543768925,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "My Checkpoint System Turned Me Into The Godfather of Humanity",
@@ -940,10 +940,10 @@
     {
       "BookId": 18909613806685105,
       "BookType": 0,
-      "CoverId": 1613703824706,
+      "CoverId": 1641543691238,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
-      "BookName": "I Just Won't Play by the Book",
+      "BookName": "I Just Won't Play By The Book",
       "Author": "7 Percent",
       "RecommendMsg": "",
       "StatParams": ""
@@ -1807,7 +1807,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1637381987313,
+      "CoverId": 1641926213627,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",
@@ -2051,7 +2051,7 @@
     {
       "BookId": 13282409505305605,
       "BookType": 0,
-      "CoverId": 1577043238583,
+      "CoverId": 1642363411049,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Profane Prince of Domination",
@@ -4985,7 +4985,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1637381987313,
+      "CoverId": 1641926213627,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",
