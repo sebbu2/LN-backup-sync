@@ -135,6 +135,7 @@ foreach($correspondances as $ar) {
 	}
 	$res2->data->releases=NULL;
 	$res2->data->similar_series=NULL;
+	$res2->data->alternatenames=array_map('trim2', $res2->data->alternatenames);
 	//var_dump($res2);
 	//gmdate('c')//iso, GMT/UTC
 
@@ -204,7 +205,7 @@ foreach($correspondances as $ar) {
 		array() // NOTE : keep
 	)));
 	$names=preg_grep('#\\\\u[[:xdigit:]]{4}#', $names, PREG_GREP_INVERT);
-	$names=array_map('trim', $names);
+	$names=array_map('trim2', $names);
 	$names=array_values(array_unique($names));
 	natcasesort($names);
 	//if($wln_id==57678) { var_dump($names);die(); }
@@ -212,7 +213,9 @@ foreach($correspondances as $ar) {
 		//var_dump($wln_id, $wn_id, $names,$res2->data->alternatenames);die();
 	}
 	//if(count($res2->data->alternatenames)<=1 || (strlen($subName)>0&&array_search($subName, $res2->data->alternatenames)==false) ) {
-	if(count(array_diff($names, $res2->data->alternatenames))>0) {
+	$diff=array_diff($names, $res2->data->alternatenames);
+	if(count($diff)>0) {
+		//var_dump($diff);die();
 		$ar=$names;
 		$ar2=array();
 		foreach($ar as $k=>$v) {
@@ -227,10 +230,13 @@ foreach($correspondances as $ar) {
 			}
 		}
 		$ar2=array_map(function($v) use($ar) { return $ar[$v]; }, $ar2);
-		$ar2=array_values($ar2);
+		$ar2=array_values(array_unique(array_filter($ar2)));
 		natcasesort($ar2);
 		$diff=array_diff(array_unique(array_merge($res2->data->alternatenames, $ar2)), $res2->data->alternatenames);
 		if(count($diff)>0) {
+			$diff=array_map('trim',$diff);
+			//$diff=array_map('htmlentities',$diff);
+			var_dump($diff);die();
 			//var_dump($res2->data->alternatenames, $ar2);die();
 			$json=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar2),);
 			//var_dump($diff, $json);die();

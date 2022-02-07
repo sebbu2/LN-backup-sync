@@ -279,6 +279,11 @@ foreach($fns as $name=>$fn)
 	$id=-1;
 	$found3=false;
 	foreach($royalroad as $key=>$book) {
+		/*if(startswith($name, 'dreamer')) {
+			var_dump($name, $book['title']);
+			var_dump(name_simplify($name, 1));
+			var_dump(name_simplify($book['title'], 1));
+		}//*/
 		if(name_compare($name, $book['title'], 1)) {
 			$id=$key;
 			$found3=true;

@@ -99,6 +99,7 @@ $skip[]='20343529205397405';//unavailable
 $skip[]='12624232606210205';//canadian
 $skip[]='10961635803380503';//ess
 $skip[]='13841793305602405';//tgfn7ym / tgfn7yl / tgfn7m
+$skip[]='12076944605885605';//issth tr
 
 $count=0;
 $count2=0;

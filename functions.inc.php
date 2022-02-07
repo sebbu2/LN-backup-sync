@@ -12,13 +12,19 @@ require_once('SitePlugin.inc.php');
 */
 function name_simplify($name, $type=0) {
 	//'-'
-	static $ar1=array('_', ':', ',', '/', '\u00a0', '\u00A0', "\u00a0", "\u00A0", "\xC2\xA0", '&#xA0;', '  ');
+	static $ar1=array('_', ':', ',', '/', '\u00a0', '\u00A0', "\u00a0", "\u00A0", "\xC2\xA0", '&#xA0;', '  ', '&nbsp;', ' ', '&zwsp;', '&zwnj;');
 	//'+'
 	static $ar2=array(',', '\'', '*', '—', '^', '=', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0");
 	$name=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
+	$name=html_entity_decode($name);
 	$name=str_replace(array('\uff1f', "\uff1F", '\uFF1F', "\uFF1sF", "\xEF\xBC\x9F", '&#65311;', '&#xFF1F;'), '?', $name);
 	$name=str_replace($ar2, '', $name);
 	$name=str_replace($ar1, ' ', $name);
+	//$name=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
+	//$name=html_entity_decode($name);
+	//$name=str_replace('& ', ' ', $name);
+	$name=str_replace('&', '', $name);
+	$name=str_replace(array('é', '\u00e9'), 'e', $name);
 	$name=trim($name);
 	if($type==1) {
 		$name=str_replace(array('+'), '', $name);
@@ -72,14 +78,22 @@ function normalize($str) {
 	global $translit1, $translit2;
 	$str=trim($str);
 	$str=html_entity_decode($str, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$str=htmlspecialchars_decode($str, ENT_COMPAT);
+	$str=trim($str);
 	$str=$translit1->transliterate($str);
 	$str=str_replace('\\u0026', '&', $str);
-	$str=str_replace('\\u00a0', ' ', $str);
+	$str=str_replace(array('\\u00a0', ' '), ' ', $str);
 	$str=str_replace('\\uff1f', '?', $str);
 	$str=str_replace('\\u0110', 'D', $str);
 	$str=str_replace('\\u0111', 'd', $str);
 	$str=html_entity_decode($str, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 	$str=$translit2->transliterate($str);
+	return $str;
+}
+function trim2($str) {
+	$str=trim($str);
+	$str=str_replace(array(' ', '&nbsp;', '&zwsp;', '&zwnj;'), ' ', $str);
+	$str=trim($str);
 	return $str;
 }
 //$translit4=Transliterator::create("NFD; [:Nonspacing Mark:] Remove; NFC");
