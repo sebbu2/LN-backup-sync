@@ -1017,7 +1017,7 @@
         "wln": 2768,
         "rr": 22518,
         "name": "Chrysalis",
-        "list": "QIDIAN original"
+        "list": "RoyalRoad"
     },
     "11254520405313205": {
         "wln": 82866,
@@ -1182,10 +1182,10 @@
         "list": "QIDIAN plan to read"
     },
     "11758162905515005": {
-        "wln": 140043,
-        "rr": 42012,
-        "name": "The Isekai Police aka Earths Advocates",
-        "list": "RoyalRoad plan to read"
+        "wln": 136536,
+        "rr": null,
+        "name": "That time I got summoned to another world as cursed armor",
+        "list": "ScribbleHub stalled"
     },
     "11758492406509005": {
         "wln": 143677,
@@ -1448,7 +1448,7 @@
     "12796110105355505": {
         "wln": 142455,
         "rr": 47997,
-        "name": "Overkill",
+        "name": "Overkill (RavensDagger)",
         "list": "duplicates"
     },
     "12801407706419705": {
@@ -2021,6 +2021,12 @@
         "name": "Worlds' Apocalypse Online",
         "list": "QIDIAN plan to read"
     },
+    "15247596405612805": {
+        "wln": 116623,
+        "rr": null,
+        "name": "A Record of a Mortal\\u2019s Journey to Immortality\\u2014Immortal World Arc",
+        "list": "QIDIAN plan to read"
+    },
     "15247667505613005": {
         "wln": 111586,
         "rr": null,
@@ -2056,6 +2062,12 @@
         "rr": null,
         "name": "Is That A Wisp?",
         "list": "QIDIAN on-hold"
+    },
+    "15299644105792205": {
+        "wln": 111251,
+        "rr": null,
+        "name": "I Reincarnated as A Little Girl?!",
+        "list": "ScribbleHub"
     },
     "15310182705835005": {
         "wln": 142330,
@@ -2197,7 +2209,7 @@
     },
     "15787990506065305": {
         "wln": 111199,
-        "rr": null,
+        "rr": 30289,
         "name": "Epic of Caterpillar",
         "list": "QIDIAN on-hold"
     },
@@ -2843,6 +2855,18 @@
         "name": "Level Infinity Weakest King",
         "list": "QIDIAN plan to read"
     },
+    "17164725305708805": {
+        "wln": 117669,
+        "rr": null,
+        "name": "Doomsday:My Beasts Army",
+        "list": "QIDIAN plan to read"
+    },
+    "17164777605709105": {
+        "wln": 142514,
+        "rr": null,
+        "name": "I Don't Want To Be A Healer",
+        "list": "QIDIAN plan to read"
+    },
     "17165719005712005": {
         "wln": 144458,
         "rr": null,
@@ -3075,7 +3099,7 @@
         "wln": 131842,
         "rr": 39090,
         "name": "Reborn! A Thief's Greed in a Fantasy World",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "17581164006714805": {
         "wln": 144509,
@@ -3178,6 +3202,12 @@
         "rr": null,
         "name": "My Pick Up Artist System",
         "list": "QIDIAN plan to read"
+    },
+    "17764846005775505": {
+        "wln": 118166,
+        "rr": null,
+        "name": "I Own a Brothel in Another World",
+        "list": "ScribbleHub"
     },
     "17766698905784705": {
         "wln": 127769,
@@ -4947,7 +4977,7 @@
         "wln": 136511,
         "rr": 42788,
         "name": "Reincarnated as a Nightwalker",
-        "list": "RoyalRoad"
+        "list": "RoyalRoad stalled"
     },
     "20433994506434305": {
         "wln": 144438,
@@ -5279,6 +5309,18 @@
         "name": "Terror Love",
         "list": "QIDIAN plan to read"
     },
+    "21221629505634605": {
+        "wln": 146083,
+        "rr": null,
+        "name": "Vile Evil Hides Under The Veil",
+        "list": "QIDIAN plan to read"
+    },
+    "21271680706018205": {
+        "wln": 146442,
+        "rr": null,
+        "name": "Reincarnated With A Summoning System",
+        "list": "QIDIAN plan to read"
+    },
     "21325141705949905": {
         "wln": 142336,
         "rr": null,
@@ -5320,5 +5362,29 @@
         "rr": null,
         "name": "Why Are The Demon Lord And Hero Friends!?",
         "list": "QIDIAN plan to read"
+    },
+    "21729455106428005": {
+        "wln": 91471,
+        "rr": null,
+        "name": "The Reincarnated Vampire Just Want To Enjoy Her Life!",
+        "list": "ScribbleHub"
+    },
+    "21902113806445505": {
+        "wln": 144046,
+        "rr": null,
+        "name": "Magical Giants: The Life of Zmeya",
+        "list": "ScribbleHub"
+    },
+    "22133459805464905": {
+        "wln": 145273,
+        "rr": null,
+        "name": "Grand Magus: Reincarnated with the Engineer Element",
+        "list": "ScribbleHub"
+    },
+    "22166306406912505": {
+        "wln": 145151,
+        "rr": 50138,
+        "name": "Damien Nightshade The Villainous Vampire",
+        "list": "RoyalRoad"
     }
 }
