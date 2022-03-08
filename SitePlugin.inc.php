@@ -336,6 +336,10 @@ class SitePlugin
 		throw new Exception('Not yet implemented.');
 	}
 	
+	public function get_names($id) {
+		throw new Exception('Not yet implemented.');
+	}
+	
 	public function get_types() {
 		$ar=array(
 			'anime',

@@ -300,6 +300,24 @@ class WLNUpdates extends SitePlugin
 		return json_decode(file_get_contents($this::FOLDER.'get-series-id'.$id.'.json'),false, 512, JSON_THROW_ON_ERROR);
 	}
 	
+	public function get_names($id) {
+		$res2=$this->get_info_cached($id);
+		$names=array_filter(array_unique(array_merge(
+			$res2->data->alternatenames,
+			array_map('normalize', $res2->data->alternatenames),
+			array_map(fn($e) => json_decode('"'.$e.'"'), array_map('normalize', $res2->data->alternatenames)),
+			//array_map('normalize2', $res2->data->alternatenames),
+			array_map('normalize2', array_map('normalize', $res2->data->alternatenames)),
+			array_map('normalize2', array_map('normalize', array_map(fn($e) => name_simplify($e, 1), $res2->data->alternatenames))),
+			array() // NOTE : keep
+		)));
+		$names=preg_grep('#\\\\u[[:xdigit:]]{4}#', $names, PREG_GREP_INVERT);//*/
+		$names=array_map('trim2', $names);
+		$names=array_values(array_unique(array_filter($names)));
+		natcasesort($names);
+		return $names;
+	}
+	
 	public function add_novel($id, $list='QIDIAN') {
 		$ar=array(
 			'mode'=>'set-watch',

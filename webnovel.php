@@ -30,7 +30,11 @@ class WebNovel extends SitePlugin
 		);
 		$res=$this->get( 'https://ptlogin.webnovel.com/login/checkstatus', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'checkstatus.json', $res);
+		
+		$fn=$this::FOLDER.'checkstatus.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
+		
 		$res=json_decode($res);
 		return $res;
 	}
@@ -400,7 +404,9 @@ class WebNovel extends SitePlugin
 				//$res = $this->get( 'https://www.webnovel.com/apiajax/Library/LibraryAjax', $ar);
 				$res = $this->get( 'https://www.webnovel.com/go/pcm/library/library', $ar);
 				$res=$this->jsonp_to_json($res);
-				file_put_contents($this::FOLDER.'LibraryAjax'.strval($i).'.json', $res);
+				$fn=$this::FOLDER.'LibraryAjax'.strval($i).'.json';
+				file_put_contents($fn, $res);
+				clearstatcache(false, $fn);
 				$res=json_decode($res);
 				//var_dump($i, $res);
 			}
@@ -427,7 +433,9 @@ class WebNovel extends SitePlugin
 		$books2=json_encode($books);
 		$books2=$this->jsonp_to_json($books2);
 		if(is_null($books2)) { die('error'); }
-		file_put_contents($this::FOLDER.'_books2.json', $books2 );//TEMP
+		$fn=$this::FOLDER.'_books2.json';
+		file_put_contents($fn, $books2 );//TEMP
+		clearstatcache(false, $fn);
 		
 		$books2=array();
 		$order=array();
@@ -439,7 +447,7 @@ class WebNovel extends SitePlugin
 		foreach($books as $i=>$b) {
 			//$ind=-1;
 			//foreach($books2 as $i2=>$b2) { if($b2==$b) { $ind=$i2; break; } }
-			if(array_key_exists($b->bookId, $books2)) die('duplicate ID : '.$b->bookID.'.');
+			if(array_key_exists($b->bookId, $books2)) die('duplicate ID : '.$b->bookId.'.');
 			$books2[$b->bookId]=$b;
 			if($b->novelType==0) {
 				//$order[]=[$b->bookId, $b->bookName, $subName, count($books2)-1-$ind];
@@ -457,13 +465,17 @@ class WebNovel extends SitePlugin
 		ksort($books2);
 		$books=json_encode($books2); 
 		$books=$this->jsonp_to_json($books);
-		file_put_contents($this::FOLDER.'_books.json', $books );
+		$fn=$this::FOLDER.'_books.json';
+		file_put_contents($fn, $books );
+		clearstatcache(false, $fn);
 		
 		$order2=json_encode($order); unset($order);
 		$order2=$this->jsonp_to_json($order2);
-		file_put_contents($this::FOLDER.'_order.json', $order2 );
+		$fn=$this::FOLDER.'_order.json';
+		file_put_contents($fn, $order2 );
+		clearstatcache(false, $fn);
 		
-		$this->update_subnames();
+		//$this->update_subnames();
 		
 		return $books2;
 	}
@@ -524,12 +536,16 @@ class WebNovel extends SitePlugin
 		ksort($sub);
 		$sub2=json_encode($sub);
 		$sub2=$this->jsonp_to_json($sub2);
-		file_put_contents($this::FOLDER.'_subname.json', $sub2);
+		$fn=$this::FOLDER.'_subname.json';
+		file_put_contents($fn, $sub2);
+		clearstatcache(false, $fn);
 		
 		ksort($subs);
 		$subs2=json_encode($subs);
 		$subs2=$this->jsonp_to_json($subs2);
-		file_put_contents($this::FOLDER.'_subnames.json', $subs2);
+		$fn=$this::FOLDER.'_subnames.json';
+		file_put_contents($fn, $subs2);
+		clearstatcache(false, $fn);
 	}
 	
 	public function get_watches() {
@@ -650,7 +666,9 @@ class WebNovel extends SitePlugin
 		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/setReadingProgressAjax', $ar );
 		
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'SetReadingProgressAjax.json', $res);
+		$fn=$this::FOLDER.'SetReadingProgressAjax.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
 		$res=json_decode($res);
 		return $res;
 	}
@@ -724,10 +742,12 @@ class WebNovel extends SitePlugin
 			);
 			//$res = $this->get( 'https://www.webnovel.com/apiajax/comic/GetChapterList', $ar, $headers);
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/comic/get-chapters', $ar, $headers);
-			file_put_contents('request.log', $res);
+			//file_put_contents('request.log', $res);
 			$res=$this->jsonp_to_json($res);
-			unlink('request.log');
-			file_put_contents($this::FOLDER.'GetChapterList_'.strval($bookId).'.json', $res);
+			//unlink('request.log');
+			$fn=$this::FOLDER.'GetChapterList_'.strval($bookId).'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
 			$res=json_decode($res);
 		}
 		return $res;
@@ -767,7 +787,9 @@ class WebNovel extends SitePlugin
 		$data = $this->get( 'https://www.webnovel.com/search', $ar);
 		$data=trim($data);
 		
-		file_put_contents($this::FOLDER.'search.html', $data);
+		$fn=$this::FOLDER.'search.html';
+		file_put_contents($fn, $data);
+		clearstatcache(false, $fn);
 		
 		$xml=simplexml_load_html($data);
 		
@@ -833,7 +855,9 @@ class WebNovel extends SitePlugin
 			$extracts[]=$extract;
 		}
 		
-		file_put_contents($this::FOLDER.'_search.json', json_encode($extracts));
+		$fn=$this::FOLDER.'_search.json';
+		file_put_contents($fn, json_encode($extracts));
+		clearstatcache(false, $fn);
 		return $extracts;
 	}
 	
@@ -852,7 +876,9 @@ class WebNovel extends SitePlugin
 		//$res = $this->send( 'https://www.webnovel.com/apiajax/search/AutoCompleteAjax', $ar, $headers);
 		$res = $this->send( 'https://www.webnovel.com/go/pcm/search/autoComplete', $ar, $headers, false); // no cookies (un-authentified)
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'search2.json', $res);
+		$fn=$this::FOLDER.'search2.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
 		
 		$data=json_decode($res);
 		if($data->code!=0)
@@ -1029,7 +1055,9 @@ class WebNovel extends SitePlugin
 			var_dump(strlen($res2));
 			die();
 		}
-		file_put_contents($this::FOLDER.'book_'.$id.'.json', $res2);
+		$fn=$this::FOLDER.'book_'.$id.'.json';
+		file_put_contents($fn, $res2);
+		clearstatcache(false, $fn);
 		return $res3;
 	}
 	
@@ -1085,7 +1113,9 @@ class WebNovel extends SitePlugin
 		if(in_array(0, $types)) {
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'get-book'.$id.'.json', $res);
+			$fn=$this::FOLDER.'get-book'.$id.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
 		
 			$data[]=json_decode($res);
 		}
@@ -1093,7 +1123,9 @@ class WebNovel extends SitePlugin
 		if(in_array(1, $types)) {
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'get-book-extended'.$id.'.json', $res);
+			$fn=$this::FOLDER.'get-book-extended'.$id.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
 			
 			$data[]=json_decode($res);
 		}
@@ -1111,7 +1143,9 @@ class WebNovel extends SitePlugin
 		if(in_array(2, $types)) {
 			$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'get-reviews'.$id.'.json', $res);
+			$fn=$this::FOLDER.'get-reviews'.$id.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
 			
 			$data[]=json_decode($res);
 		}
@@ -1124,7 +1158,9 @@ class WebNovel extends SitePlugin
 		if(in_array(3, $types)) {
 			$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'getRecommendList'.$id.'.json', $res);
+			$fn=$this::FOLDER.'getRecommendList'.$id.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
 			
 			$data[]=json_decode($res);
 		}
@@ -1144,15 +1180,16 @@ class WebNovel extends SitePlugin
 		);
 		
 		//types
-		if($types===NULL) $types=array(0,1,2,3);
-		if(is_string($types)) $types=explode(',', $types);
-		if(is_int($types)) $types=array($types);
-		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
-		if(count($types)==0) { die('ERROR: empty types.'); }
+		$types_=NULL;
+		if($types===NULL) $types_=array(0,1,2,3);
+		if(is_string($types)) $types_=explode(',', $types);
+		if(is_int($types)) $types_=array($types);
+		if(count(array_filter($types_, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
+		if(count($types_)==0) { die('ERROR: empty types.'); }
 		
 		$res=array();
 		foreach($filenames as $i=>$fn) {
-			if($types==NULL || in_array($i, $types)) {
+			if($types_==NULL || in_array($i, $types_)) {
 				$j=0;
 				$res2=NULL;
 				if(file_exists($fn) && (time()-filemtime($fn))<=$duration ) {
@@ -1167,7 +1204,37 @@ class WebNovel extends SitePlugin
 				$res[$i]=$res2;
 			}
 		}
+		if(is_int($types)) $res=(array_values($res))[0];
 		return $res;
+	}
+	
+	public function get_names($id) {
+		$subname_=json_decode(str_replace("\t",'',file_get_contents('webnovel/_subname.json')),false,512,JSON_THROW_ON_ERROR);
+		if(is_object($subname_)) $subname_=get_object_vars($subname_);
+		
+		$res_0=$this->get_info_cached($id, 0);
+		$res_1=$this->get_info_cached($id, 1);
+		$subName='';
+		if(array_key_exists($id, $subname_)) $subName=$subname_[$id];
+		
+		$names=array($res_0->Data->BookName);
+		if($res_1!==NULL) $names[]=$res_1->Data->OriginalName;
+		$names[]=$subName;
+		/*$names=array_filter(array_unique(array_merge(
+			$names,
+			$res2->data->alternatenames,
+			array_map('normalize', $res2->data->alternatenames),
+			array_map(fn($e) => json_decode('"'.$e.'"'), array_map('normalize', $res2->data->alternatenames)),
+			//array_map('normalize2', $res2->data->alternatenames),
+			array_map('normalize2', array_map('normalize', $res2->data->alternatenames)),
+			array_map('normalize2', array_map('normalize', array_map(fn($e) => name_simplify($e, 1), $res2->data->alternatenames))),
+			array() // NOTE : keep
+		)));
+		$names=preg_grep('#\\\\u[[:xdigit:]]{4}#', $names, PREG_GREP_INVERT);//*/
+		$names=array_map('trim2', $names);
+		$names=array_values(array_unique(array_filter($names)));
+		natcasesort($names);
+		return $names;
 	}
 	
 	public function add_watch($id, $novelType=0) {
@@ -1190,7 +1257,10 @@ class WebNovel extends SitePlugin
 		
 		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/addLibraryItemsAjax', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'AddLibraryItemsAjax.json', $res);
+		
+		$fn=$this::FOLDER.'AddLibraryItemsAjax.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
 		$res=json_decode($res);
 		
 		return $res;
@@ -1223,7 +1293,9 @@ class WebNovel extends SitePlugin
 		
 		$res = $this->send( 'https://www.webnovel.com/go/pcm/library/deleteLibraryItemsAjax', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'deleteLibraryItemsAjax.json', $res);
+		$fn=$this::FOLDER.'deleteLibraryItemsAjax.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
 		$res=json_decode($res);
 		
 		return $res;
@@ -1256,12 +1328,16 @@ class WebNovel extends SitePlugin
 			//$res = $this->get( 'https://www.webnovel.com/apiajax/ReadingHistory/ReadingHistoryAjax', $ar, $headers );
 			$res = $this->get( 'https://www.webnovel.com/go/pcm/readingHistory/readingHistoryAjax', $ar, $headers );
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'ReadingHistoryAjax'.$pageIndex.'.json', $res);
+			
+			$fn=$this::FOLDER.'ReadingHistoryAjax'.$pageIndex.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
+			
 			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 			$data2=array_merge($data2, $res->data->historyItems);
 			if($pageIndex==1) if($res->data->isLast==0) $pageSize=$res->data->total;
 		}
-		while(!is_null($res->data) && ((property_exists($res->data,'isLast')&&$res->data->isLast==0) && ($res->data->total>0)) && $pageIndex<=50);
+		while(!is_null($res->data) && ((property_exists($res->data,'isLast')&&$res->data->isLast==0) && ($res->data->total>0)) && $pageIndex<=$this::LIBRARY_LIMIT);
 		// i'm at 35 pages
 		
 		$data[]=$data2;
@@ -1277,7 +1353,11 @@ class WebNovel extends SitePlugin
 			
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/reading/get-history', $ar, $headers);
 			$res=$this->jsonp_to_json($res);
-			file_put_contents($this::FOLDER.'get-history'.$i.'.json', $res);
+			
+			$fn=$this::FOLDER.'get-history'.$i.'.json';
+			file_put_contents($fn, $res);
+			clearstatcache(false, $fn);
+			
 			$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 			
 			if($i==1 && $pageIndex>1) assert($pageSize==count($res->Data)) or die('error in ReadingHistoryAjax vs get-history.');
@@ -1291,7 +1371,10 @@ class WebNovel extends SitePlugin
 		
 		$history=json_encode($data); unset($data2); //
 		$history=$this->jsonp_to_json($history);
-		file_put_contents($this::FOLDER.'_history.json', $history );
+		
+		$fn=$this::FOLDER.'_history.json';
+		file_put_contents($fn, $history );
+		clearstatcache(false, $fn);
 		
 		return $data;
 	}
@@ -1313,7 +1396,11 @@ class WebNovel extends SitePlugin
 		
 		$res = $this->get( 'https://idruid.webnovel.com/app/api/book-collection/list', $ar, $headers);
 		$res=$this->jsonp_to_json($res);
-		file_put_contents($this::FOLDER.'book-collection-list.json', $res);
+		
+		$fn=$this::FOLDER.'book-collection-list.json';
+		file_put_contents($fn, $res);
+		clearstatcache(false, $fn);
+		
 		$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 		
 		$data[]=$res;
@@ -1336,7 +1423,11 @@ class WebNovel extends SitePlugin
 				$ar['pageIndex']=$pageIndex;
 				$res = $this->get( 'https://idruid.webnovel.com/app/api/book-collection/detail', $ar, $headers);
 				$res=$this->jsonp_to_json($res);
-				file_put_contents($this::FOLDER.'book-collection'.$cid.'-'.$pageIndex.'.json', $res);
+				
+				$fn=$this::FOLDER.'book-collection'.$cid.'-'.$pageIndex.'.json';
+				file_put_contents($fn, $res);
+				clearstatcache(false, $fn);
+				
 				$res=json_decode($res, false, 512, JSON_THROW_ON_ERROR);
 				//$data3[]=$res;
 				$data3=array_merge($data3, $res->Data->BookItems);
@@ -1344,14 +1435,21 @@ class WebNovel extends SitePlugin
 			while($res->Data->IsLast==0);
 			$collection=json_encode($data3);
 			$collection=$this->jsonp_to_json($collection);
-			file_put_contents($this::FOLDER.'book-collection'.$cid.'.json', $collection);
+			
+			$fn=$this::FOLDER.'book-collection'.$cid.'.json';
+			file_put_contents($fn, $collection);
+			clearstatcache(false, $fn);
+			
 			$data2[$name]=$data3;
 		}
 		$data[]=$data2;
 		
 		$collection=json_encode($data2);
 		$collection=$this->jsonp_to_json($collection);
-		file_put_contents($this::FOLDER.'_collection.json', $collection);
+		
+		$fn=$this::FOLDER.'_collection.json';
+		file_put_contents($fn, $collection);
+		clearstatcache(false, $fn);
 		
 		return $data;
 	}

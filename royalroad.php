@@ -13,7 +13,11 @@ class RoyalRoad extends SitePlugin
 	public function checkLogin() {
 		$loggued = -1;
 		$res = $this->send( 'https://www.royalroad.com/home' );
-		file_put_contents($this::FOLDER.'rr.htm', $res);//*/
+		
+		$fn=$this::FOLDER.'rr.htm';
+		file_put_contents($fn, $res);//*/
+		clearstatcache(false, $fn);
+		
 		//$res = file_get_contents($this::FOLDER.'rr.htm');
 		$xml = simplexml_load_html($res);
 		$res = $xml->xpath("//*[contains(concat(' ', normalize-space(@class), ' '), ' fa-sign-in ')]");
@@ -168,7 +172,7 @@ class RoyalRoad extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list($fictionId) {
+	public function get_info($fictionId) {
 		$res = $this->get( 'https://www.royalroad.com/fiction/'.$fictionId );
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.htm', $res);
 		//$res=file_get_contents($this::FOLDER.'fiction_'.$fictionId.'.htm'); // NOTE : during DEBUG
@@ -281,7 +285,7 @@ class RoyalRoad extends SitePlugin
 		return $ar;
 	}
 	
-	public function get_chapter_list_cached($fictionId, $duration=604800) {
+	public function get_info_cached($fictionId, $duration=604800) {
 		$fn=$this::FOLDER.'fiction_'.$fictionId.'.json';
 		if(file_exists($fn) && time()-filemtime($fn)<$duration) {
 			$res=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
@@ -289,8 +293,34 @@ class RoyalRoad extends SitePlugin
 			return $res;
 		}
 		else {
+			return $this->get_info($fictionId);
+		}
+	}
+	
+	public function get_chapter_list($fictionId) {
+		$ar=$this->get_info($fictionId);
+		return array_intersect_key($ar, array('chapters'=>array(), 'volumes'=>array()));
+	}
+	
+	public function get_chapter_list_cached($fictionId, $duration=604800) {
+		$fn=$this::FOLDER.'fiction_'.$fictionId.'.json';
+		if(file_exists($fn) && time()-filemtime($fn)<$duration) {
+			$res=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
+			//return $res['chapters']; // NOTE : compatibility for old format (direct chapter list)
+			$res=get_object_vars($res);
+			return array_intersect_key($res, array('chapters'=>array(), 'volumes'=>array()));
+		}
+		else {
 			return $this->get_chapter_list($fictionId);
 		}
+	}
+	
+	public function get_names($id) {
+		$res3=$this->get_info_cached($id);
+		$names=array(
+			$res3->info->name
+		);
+		return $names;
 	}
 };
 ?>

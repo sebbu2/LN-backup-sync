@@ -81,7 +81,7 @@ if(direct()) {
 		else if($v3['novelType']==100) $wn_['comic']++;
 		else $wn_['others']++;
 		$res=$wn->get_info_cached($v3['bookId'], 3);
-		$tr=$res[3]->data->bookInfo->translateMode;
+		$tr=$res->data->bookInfo->translateMode;
 		//var_dump($v3,$tr,$res);die();
 		if($tr==0 || $tr==1 || $tr==2) {
 			$wn_['novel translated']++;

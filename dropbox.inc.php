@@ -367,10 +367,10 @@ die();//*/
 $ar=array();
 foreach($files as $entry) {
 	//var_dump($entry->name);die();
-	if(abs(strtotime($entry->server_modified)-strtotime($entry->client_modified))>=60) {
+	/*if(abs(strtotime($entry->server_modified)-strtotime($entry->client_modified))>=60) {
 		var_dump($entry);
 		die();
-	}
+	}//*/
 	$ar[]=[$entry->name, $entry->size, $entry->server_modified];
 }
 //usort($ar, fn($e1, $e2) => strcasecmp($e1[0], $e2[0]));//sort by fn

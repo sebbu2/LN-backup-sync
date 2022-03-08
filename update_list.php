@@ -236,7 +236,7 @@ foreach($correspondances as $ar) {
 		if(count($diff)>0) {
 			$diff=array_map('trim',$diff);
 			//$diff=array_map('htmlentities',$diff);
-			var_dump($diff);die();
+			//var_dump($diff);die();
 			//var_dump($res2->data->alternatenames, $ar2);die();
 			$json=array('key'=>'altnames-container','type'=>'multiitem','value'=>implode("\n",$ar2),);
 			//var_dump($diff, $json);die();
@@ -286,6 +286,16 @@ foreach($correspondances as $ar) {
 	}
 	if($id=='QIDIAN original' && $res2->data->tl_type=='translated') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN');
+		var_dump($res3);
+		$modifs['list']++;
+	}
+	if($id=='QIDIAN plan to read' && $res2->data->tl_type=='oel') {
+		$res3=$wln->add_novel($wln_id, 'QIDIAN plan to read original');
+		var_dump($res3);
+		$modifs['list']++;
+	}
+	if($id=='QIDIAN plan to read original' && $res2->data->tl_type=='translated') {
+		$res3=$wln->add_novel($wln_id, 'QIDIAN plan to read');
 		var_dump($res3);
 		$modifs['list']++;
 	}

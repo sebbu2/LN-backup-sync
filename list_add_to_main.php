@@ -51,9 +51,16 @@ finally {
 $rr_order=$rr->get_order();
 $rr_books=$rr->get_watches();
 
-/*$wn_id='19530653305554605';
-$nt=0;
-$wn->del_watch($wn_id,$nt);die();//*/
+/*$wn_id='14469985405456205';//atw
+$names=$wn->get_names($wn_id);
+var_dump($names);
+$wln_id='110418';//atw
+$names=$wln->get_names($wln_id);
+var_dump($names);
+$rr_id='22518';//crs
+$names=$rr->get_names($rr_id);
+var_dump($names);
+die();//*/
 $count=0;
 foreach($wn_books as $book) {
 	//var_dump($book);die();
@@ -100,7 +107,7 @@ $skip[]='12624232606210205';//canadian
 $skip[]='10961635803380503';//ess
 $skip[]='13841793305602405';//tgfn7ym / tgfn7yl / tgfn7m
 $skip[]='12076944605885605';//issth tr
-
+$skip[]='22133459805464905';//okok
 $count=0;
 $count2=0;
 
