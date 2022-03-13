@@ -270,7 +270,7 @@ class WLNUpdates extends SitePlugin
 		return $res;
 	}
 	
-	public function get_info($id) {
+	public function info($id) {
 		$ar=array(
 			'id'=>$id,
 			'mode'=>'get-series-id',
@@ -295,7 +295,7 @@ class WLNUpdates extends SitePlugin
 	public function get_info_cached($id, $duration=604800) {
 		$fn=$this::FOLDER.'get-series-id'.$id.'.json';
 		if(!file_exists($fn) || (time()-filemtime($fn))>$duration ) {
-			return $this->get_info($id);
+			return $this->info($id);
 		}
 		return json_decode(file_get_contents($this::FOLDER.'get-series-id'.$id.'.json'),false, 512, JSON_THROW_ON_ERROR);
 	}

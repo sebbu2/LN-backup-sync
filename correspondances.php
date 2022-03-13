@@ -38,9 +38,35 @@ if(direct()) {
 		die();
 	}
 
-	$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),true,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
-	$books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),true,512,JSON_THROW_ON_ERROR);
-	$follows=json_decode(str_replace("\t",'',file_get_contents('royalroad/_books.json')),true,512,JSON_THROW_ON_ERROR);
+	$wln_list=$wln->get_list();
+	$wln_order=$wln->get_order();
+	$wln_books=$wln->get_watches();
+
+	try {
+		$ex=false;
+		$wn_list=$wn->get_list();
+	}
+	catch(Exception) {
+		$ex=true;
+	}
+	finally {
+		assert($ex);
+	}
+	$wn_order=$wn->get_order();
+	$wn_books=$wn->get_watches();
+
+	try {
+		$ex=false;
+		$rr_list=$rr->get_list();
+	}
+	catch(Exception) {
+		$ex=true;
+	}
+	finally {
+		assert($ex);
+	}
+	$rr_order=$rr->get_order();
+	$rr_books=$rr->get_watches();
 
 	function sum_count($carry, $item) { $carry+=count($item); return $carry; }
 
@@ -50,8 +76,9 @@ if(direct()) {
 	$wln_sh=0;
 	$wln_wp=0;
 	$wln_others=0;
-	foreach( $watches['data'][0] as $k=>$v) {
+	foreach( $wln_order as $k=>$v) {
 		//var_dump($k, count($v));
+		//$v2=$wln_books[$v];
 		if(substr($k.' ', 0, 7)==='QIDIAN ') $wln_wn+=count($v);
 		else if(substr($k.' ', 0, 10)==='RoyalRoad ') $wln_rr+=count($v);
 		else if(substr($k.' ', 0, 12)==='ScribbleHub ') $wln_sh+=count($v);
@@ -59,12 +86,12 @@ if(direct()) {
 		else $wln_others+=count($v);
 		$wln_sum+=count($v);
 	}
-	var_dump($watches['data'][1]);//*/
+	var_dump(array_keys($wln_order));//*/
 	$wlns=array('sum'=>$wln_sum, 'wn'=>$wln_wn, 'rr'=>$wln_rr, 'sh'=>$wln_sh, 'wp'=>$wln_wp, 'others'=>$wln_others);
 	var_dump($wlns);
 
-	//var_dump(array('wln'=>array_reduce($watches['data'][0], 'sum_count'), 'wn'=>count($books), 'rr'=>count($follows)));
-	var_dump(array('wln'=>$wln_sum, 'wn'=>count($books), 'rr'=>count($follows)));
+	//var_dump(array('wln'=>array_reduce($wln_books['data'][0], 'sum_count'), 'wn'=>count($wn_books), 'rr'=>count($rr_books)));
+	var_dump(array('wln'=>$wln_sum, 'wn'=>count($wn_books), 'rr'=>count($rr_books)));
 
 	$wn_=array('novel'=>0, 'novel translated'=>0, 'novel original'=>0, 'novel others'=>0, 'comic'=>0, 'others'=>0);
 	$tr_=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
@@ -76,11 +103,11 @@ if(direct()) {
 	$tr_3[0]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
 	$tr_3[100]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
 	$tr_3[200]=array('-1'=>0,'0'=>0,'1'=>0,'2'=>0);
-	foreach($books as $k3=>$v3) {
-		if($v3['novelType']==0) $wn_['novel']++;
-		else if($v3['novelType']==100) $wn_['comic']++;
+	foreach($wn_books as $k3=>$v3) {
+		if($v3->novelType==0) $wn_['novel']++;
+		else if($v3->novelType==100) $wn_['comic']++;
 		else $wn_['others']++;
-		$res=$wn->get_info_cached($v3['bookId'], 3);
+		$res=$wn->get_info_cached($v3->bookId, 3);
 		$tr=$res->data->bookInfo->translateMode;
 		//var_dump($v3,$tr,$res);die();
 		if($tr==0 || $tr==1 || $tr==2) {
@@ -93,11 +120,11 @@ if(direct()) {
 		}//*/
 		if(!array_key_exists($tr, $tr_)) $tr_[$tr]=1;
 		else $tr_[$tr]++;
-		if(!array_key_exists($v3['novelType'], $tr_3)) $tr_3[$v3['novelType']]=array();
-		if(!array_key_exists($tr, $tr_3[$v3['novelType']])) $tr_3[$v3['novelType']][$tr]=1;
-		else $tr_3[$v3['novelType']][$tr]++;
+		if(!array_key_exists($v3->novelType, $tr_3)) $tr_3[$v3->novelType]=array();
+		if(!array_key_exists($tr, $tr_3[$v3->novelType])) $tr_3[$v3->novelType][$tr]=1;
+		else $tr_3[$v3->novelType][$tr]++;
 		//if(!array_key_exists($tr, $tr_2)) $tr_2[$tr]=array();
-		$tr_2[$v3['novelType']][$tr][]=$v3;
+		$tr_2[$v3->novelType][$tr][]=$v3;
 	}
 	//var_dump($tr_2[0][0][0]);
 	//var_dump($tr_2[100][0][0]);
@@ -107,7 +134,7 @@ if(direct()) {
 	var_dump($wn_);var_dump($tr_);var_dump($tr_3);
 	foreach($tr_2 as $k=>$v) {
 		foreach($v as $k1=>$v1) {
-			$v1=array_map(fn($e) => (exists($e, 'bookName')?$e['bookName']:''), $v1);
+			$v1=array_map(fn($e) => (exists($e, 'bookName')?get($e,'bookName'):''), $v1);
 			sort($v1);
 			$tr_2[$k][$k1]=$v1;
 		}
@@ -126,7 +153,7 @@ if(direct()) {
 	$nocor_wln=array();
 	$names=array();
 
-	//var_dump($watches['data'][1]);die();
+	//var_dump($wln_books['data'][1]);die();
 
 	$skip_wln_wn=array();
 	$skip_wln_rr=array();
@@ -136,11 +163,12 @@ if(direct()) {
 	$timer2=$timer3=$timer4=NULL;
 	$counter1=$counter2=$counter3=$counter4=$counter5=$counter6=0;
 	// 1 WLN
-	foreach($watches['data'][0] as $k1=>$v1) {
-		foreach($v1 as $k2=>$v2) {
+	foreach($wln_order as $k1=>$v1) {
+		foreach($v1 as $k2) {
+			$v2=$wln_books[$k2];
 			//var_dump($v2);die();
-			$wln_id=$v2[0]['id'];
-			$n1=trim($v2[0]['name']);
+			$wln_id=$v2[0]->id;
+			$n1=trim($v2[0]->name);
 			$n2=trim($v2[3]);
 			$n1=normalize($n1);
 			$n2=normalize($n2);
@@ -180,7 +208,7 @@ if(direct()) {
 				die();
 			}
 			if($n2!=false && !in_array($n2, $n3)) {
-				$wln_info=$wln->get_info($wln_id);
+				$wln_info=$wln->info($wln_id);
 				$n3=get(get($wln_info, 'data'), 'alternatenames');
 				if(is_string($n3)) $n3=trim($n3);
 				else if(is_array($n3)) $n3=array_filter(array_map('trim', $n3));
@@ -200,15 +228,15 @@ if(direct()) {
 			$k3=$v3=NULL;
 			$n=NULL;
 			$timer3=microtime(true);
-			foreach($books as $k3=>$v3) {
+			foreach($wn_books as $k3=>$v3) {
 				//var_dump($v3);//die();
-				if($v3['novelType']==100 || $v3['novelType']==200) continue;
+				if($v3->novelType==100 || $v3->novelType==200) continue;
 				if(IGNORE_DUPLICATES && isset($skip_wln_wn[$k3]) && $skip_wln_wn[$k3]) continue;
-				//$res=$wn->get_info_cached($v3['bookId'],3);
+				//$res=$wn->get_info_cached($v3->bookId,3);
 				//var_dump($res);die();
-				//$n=name_simplify($v3['bookName']);
+				//$n=name_simplify($v3->bookName);
 				if(!exists($v3, 'bookName')) continue;
-				$n=trim($v3['bookName']);
+				$n=trim($v3->bookName);
 				$n=name_simplify($n);
 				$n=normalize($n);
 				foreach($n3 as $n_) {
@@ -225,7 +253,7 @@ if(direct()) {
 						|| strtolower(json_decode('"'.normalize($n).'"'))===strtolower(json_decode('"'.normalize($n_).'"'))
 					) {
 						//if($wln_id==110069) { var_dump($n); }
-						$wn_id=$v3['bookId'];
+						$wn_id=$v3->bookId;
 						$skip_wln_wn[$k3]=true;
 						break(2);
 					}
@@ -241,11 +269,11 @@ if(direct()) {
 			$k4=$v4=NULL;
 			$n=NULL;
 			$timer3=microtime(true);
-			foreach($follows as $k4=>$v4) {
+			foreach($rr_books as $k4=>$v4) {
 				//var_dump($k4, $v4);die();
 				if(IGNORE_DUPLICATES && isset($skip_wln_rr[$k4]) && $skip_wln_rr[$k4]) continue;
 				//$n=name_simplify($v4['title']);
-				$n=normalize(trim($v4['title']));
+				$n=normalize(trim($v4->title));
 				$n=name_simplify($n);
 				//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
 				foreach($n3 as $n_) {
@@ -306,14 +334,14 @@ if(direct()) {
 
 	// 1 WN
 	$timer3=microtime(true);
-	foreach($books as $k3=>$v3) {
-		if($v3['novelType']==100 || $v3['novelType']==200) continue;
-		$wn_id=$v3['bookId'];
+	foreach($wn_books as $k3=>$v3) {
+		if($v3->novelType==100 || $v3->novelType==200) continue;
+		$wn_id=$v3->bookId;
 		if(array_key_exists($wn_id, $cor_wn)) continue;
 		if(!exists($v3, 'bookName')) continue;
-		$n=name_simplify(trim($v3['bookName']));
+		$n=name_simplify(trim($v3->bookName));
 		$n=normalize($n);
-		$res=$wn->get_info_cached($v3['bookId'], 3);
+		$res=$wn->get_info_cached($v3->bookId, 3);
 		
 		assert(strlen($n)>0) or die('empty name for '.$wn_id.'.');
 		$n2=NULL;
@@ -321,9 +349,9 @@ if(direct()) {
 		$rr_id=NULL;
 		$k4=$v4=NULL;
 		$n2=NULL;
-		foreach($follows as $k4=>$v4) {
+		foreach($rr_books as $k4=>$v4) {
 			if(IGNORE_DUPLICATES && isset($skip_wn_rr[$k4]) && $skip_wn_rr[$k4]) continue;
-			$n2=name_simplify(trim($v4['title']));
+			$n2=name_simplify(trim($v4->title));
 			$n2=normalize($n2);
 			//if($n===$n2) {
 			if(strtolower($n)===strtolower($n2)||strtolower(normalize2($n))===strtolower(normalize2($n2))) {
@@ -348,7 +376,7 @@ if(direct()) {
 		if(is_null($rr_id)) continue;
 		
 		if(!array_key_exists($wn_id, $cor_wn)) {
-			$ar=array('wln'=>null, 'wn'=>$wn_id, 'rr'=>$rr_id, 'name'=>$v3['bookName']);
+			$ar=array('wln'=>null, 'wn'=>$wn_id, 'rr'=>$rr_id, 'name'=>$v3->bookName);
 			$cor[]=$ar;
 			$cor_wn[$wn_id]=$ar;
 			$cor_rr[$rr_id]=$ar;
@@ -360,11 +388,11 @@ if(direct()) {
 
 	// 1 RR
 	$timer3=microtime(true);
-	foreach($follows as $k4=>$v4) {
+	foreach($rr_books as $k4=>$v4) {
 		$rr_id=$k4;
 		if(array_key_exists($rr_id, $cor_rr)) continue;
 		//if(isset($cor_rr[$skip_wln_rr[$k4]])) continue;
-		$n2=name_simplify(trim($v4['title']));
+		$n2=name_simplify(trim($v4->title));
 		$n2=normalize($n2);
 		
 		assert(strlen($n2)>0) or die('empty name for '.$rr_id.'.');
@@ -413,12 +441,12 @@ function cmp_cor($e1, $e2) {
 	$timer4=microtime(true);
 	$counter6+=($timer4-$timer3);
 
-	$per_wn=number_format( ($wln_wn/count($books)*100), 2);
-	$per_rr=number_format( ($wln_rr/count($follows)*100), 2);
+	$per_wn=number_format( ($wln_wn/count($wn_books)*100), 2);
+	$per_rr=number_format( ($wln_rr/count($rr_books)*100), 2);
 	$per_wn_cor0=number_format( (count($cor_wn)/$wln_wn*100), 2);
-	$per_wn_cor2=number_format( (count($cor_wn)/count($books)*100), 2);
+	$per_wn_cor2=number_format( (count($cor_wn)/count($wn_books)*100), 2);
 	$per_rr_cor0=number_format( (count($cor_rr)/$wln_rr*100), 2);
-	$per_rr_cor2=number_format( (count($cor_rr)/count($follows)*100), 2);
+	$per_rr_cor2=number_format( (count($cor_rr)/count($rr_books)*100), 2);
 	var_dump(array(
 	'wln: wln_wn/wn'=>$per_wn, 'wln: cor_wn/wln_wn'=>$per_wn_cor0, 'wln: cor_wn/wn'=>$per_wn_cor2,
 	'wln: wln_rr/rr'=>$per_rr, 'wln: cor_rr/wln_rr'=>$per_rr_cor0, 'wln: cor_rr/rr'=>$per_rr_cor2,

@@ -20,6 +20,8 @@ $updatedCount=array(
 	'wn'=>0,
 );
 
+// TODO : file outdated
+
 $fns=array();
 foreach($ar as $fn)
 {
@@ -201,7 +203,7 @@ foreach($fns as $name=>$fn)
 				var_dump($name. ' added to WLNUpdates.');
 				$updatedCount['wln']++;
 				continue; // TODO : fix following code (get_info)
-				$res=$wln->get_info($sid);
+				$res=$wln->info($sid);
 				//$res=json_decode($res);
 				var_dump($res);
 				$fns[$name]['watches']=$res;
@@ -365,7 +367,7 @@ foreach($fns as $name=>$fn)
 			else {
 				$res=$wn->add_watch($id, 0);
 				var_dump($res);
-				/*$res=$wn->get_info($res->data->books[0]->id);
+				/*$res=$wn->info($res->data->books[0]->id);
 				//var_dump($res);
 				var_dump('wn get_info',$res[0]->Result, $res[0]->Message, $res[1]->Result, $res[1]->Message);//*/
 			}

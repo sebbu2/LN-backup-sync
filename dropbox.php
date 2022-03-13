@@ -159,20 +159,44 @@ if($res!==1) {
 	var_dump($res);
 	die();
 }
-$watches=json_decode(file_get_contents($wln::FOLDER.'_books.json'));
-$watches=get_object_vars($watches);
-//var_dump(count($watches));//die();
-$books=json_decode(file_get_contents($wn::FOLDER.'_books.json'));
-$books=get_object_vars($books);
-//var_dump(count($books));//die();
-$royalroad=json_decode(file_get_contents($rr::FOLDER.'_books.json'), true, 512, JSON_THROW_ON_ERROR);
+
+$wln_list=$wln->get_list();
+$wln_order=$wln->get_order();
+$wln_books=$wln->get_watches();
+
+try {
+	$ex=false;
+	$wn_list=$wn->get_list();
+}
+catch(Exception) {
+	$ex=true;
+}
+finally {
+	assert($ex);
+}
+$wn_order=$wn->get_order();
+$wn_books=$wn->get_watches();
+
+try {
+	$ex=false;
+	$rr_list=$rr->get_list();
+}
+catch(Exception) {
+	$ex=true;
+}
+finally {
+	assert($ex);
+}
+$rr_order=$rr->get_order();
+$rr_books=$rr->get_watches();
+
 
 echo '<h2>Counts</h2>',"\n";
 print_table(array(array(
 	'files'=>count(array_merge($fns_,$fns)),
-	'WLNUpdates'=>count($watches),
-	'WebNovel'=>count($books),
-	'RoyalRoad'=>count($royalroad)
+	'WLNUpdates'=>count($wln_books),
+	'WebNovel'=>count($wn_books),
+	'RoyalRoad'=>count($rr_books)
 )));
 echo '<br/>'."\r\n";
 if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
@@ -197,7 +221,7 @@ foreach($fns as $name=>$fn)
 	$id=-1;
 	$found1=false;
 	{
-		foreach($watches as $_key=>$book)
+		foreach($wln_books as $_key=>$book)
 		{
 			if($book[3]!==NULL && name_compare($name, $book[3], 1))
 			{
@@ -208,7 +232,7 @@ foreach($fns as $name=>$fn)
 			}
 		}
 		if(!$found1) {
-			foreach($watches as $_key=>$book)
+			foreach($wln_books as $_key=>$book)
 			{
 				if(name_compare($name, $book[0]->name, 1))
 				{
@@ -223,7 +247,7 @@ foreach($fns as $name=>$fn)
 			// TODO : check alternatenames
 		}
 		if($found1) {
-			$fns[$name]['watches']=$watches[$key];
+			$fns[$name]['watches']=$wln_books[$key];
 		}
 		else {
 			// DO NOTHING ! the other file does the add for missing novels
@@ -249,11 +273,11 @@ foreach($fns as $name=>$fn)
 	if( ($fn[1]=='0' && $fn[3]=='0') || $chp==1) continue;
 	
 	if($found1) {
-		if($chp>(int)$watches[$key][1]->chp) {
+		if($chp>(int)$wln_books[$key][1]->chp) {
 			//var_dump($name, $chp, $watches[$key][1]->chp);
-			$row['WLNUpdates old chp']=$watches[$key][1]->chp;
+			$row['WLNUpdates old chp']=$wln_books[$key][1]->chp;
 			$row['WLNUpdates new chp']=$chp;
-			$data=$wln->read_update($watches[$key], $chp);
+			$data=$wln->read_update($wln_books[$key], $chp);
 			if( $data->error==true && $wln_error_count<1 ) {
 				$res=$wln->login( $accounts['WLNUpdates']['user'], $accounts['WLNUpdates']['pass'] );
 				if($res===false) die('you need to log in.');
@@ -278,13 +302,13 @@ foreach($fns as $name=>$fn)
 	$key='';
 	$id=-1;
 	$found3=false;
-	foreach($royalroad as $key=>$book) {
+	foreach($rr_books as $key=>$book) {
 		/*if(startswith($name, 'dreamer')) {
 			var_dump($name, $book['title']);
 			var_dump(name_simplify($name, 1));
 			var_dump(name_simplify($book['title'], 1));
 		}//*/
-		if(name_compare($name, $book['title'], 1)) {
+		if(name_compare($name, $book->title, 1)) {
 			$id=$key;
 			$found3=true;
 			break;
@@ -299,7 +323,7 @@ foreach($fns as $name=>$fn)
 	$id=-1;
 	$found2=false;
 	{
-		foreach($books as $key=>$book) {
+		foreach($wn_books as $key=>$book) {
 			if(!is_object($book)) {
 				var_dump($key,$book);die();
 			}
@@ -308,7 +332,7 @@ foreach($fns as $name=>$fn)
 			else {
 				$res=$wn->get_info_cached($book->bookId);
 				$retr=false;
-				if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
+				if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->info($book->bookId);
 				if(!is_array($res)) { var_dump($book, res); die(); }
 				if(!is_object($res[0])) { var_dump($book, $res); die(); }
 				if(!property_exists($res[0], 'Data')) { var_dump($book, $res); die(); }
@@ -338,13 +362,13 @@ foreach($fns as $name=>$fn)
 	if($found2) {
 		$res=NULL;
 		if(!file_exists($wn::FOLDER.'GetChapterList_'.$id.'.json')) {
-			$res=$wn->get_chapter_list($id);
+			$res=$wn->chapter_list($id);
 		}
 		else {
 			$res=json_decode(file_get_contents($wn::FOLDER.'GetChapterList_'.$id.'.json'), false, 512, JSON_THROW_ON_ERROR);
 			if(!property_exists($res,'data')) {
 				unlink($wn::FOLDER.'GetChapterList_'.$id.'.json');
-				$res=$wn->get_chapter_list($id);
+				$res=$wn->chapter_list($id);
 			}
 		}
 		if(!property_exists($res,'data') || !property_exists($res->data, 'volumeItems')) { var_dump($res); die(); }
@@ -370,16 +394,16 @@ foreach($fns as $name=>$fn)
 		}
 		//var_dump($priv_only, $max_pub, $count);die();
 		if(
-			($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
-			|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
-			|| ($chp2==(int)$books[$key]->readToChapterIndex && $books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
+			($chp2 > ((int)$wn_books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
+			|| ($chp2 > (int)$wn_books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
+			|| ($chp2==(int)$wn_books[$key]->readToChapterIndex && $wn_books[$key]->updateStatus=='1') // chapter == last chapter read && new chapter released
 		) {
 			if( (
-				($chp2 > ((int)$books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
-				|| ($chp2 > (int)$books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
-				) && $books[$key]->updateStatus==1
+				($chp2 > ((int)$wn_books[$key]->readToChapterIndex+$priv_only)) // chapter > last chapter read + number of chapter privilege only
+				|| ($chp2 > (int)$wn_books[$key]->readToChapterIndex && $chp2<=$max_pub) // chapter > last chapter read && chapter is public
+				) && $wn_books[$key]->updateStatus==1
 			) {
-				$res=$wn->get_chapter_list($id);
+				$res=$wn->chapter_list($id);
 				$priv_only=0;
 				$max_pub=0;
 				$count=0;
@@ -398,9 +422,9 @@ foreach($fns as $name=>$fn)
 				}
 			}
 			//var_dump($name, $chp);
-			$data=$wn->read_update($books[$key], $chp2);
+			$data=$wn->read_update($wn_books[$key], $chp2);
 			if(!is_bool($data)) {
-				$row['WebNovel old chp']=(int)$books[$key]->readToChapterIndex;
+				$row['WebNovel old chp']=(int)$wn_books[$key]->readToChapterIndex;
 				$row['WebNovel new chp']=($chp2<=$max_pub)?$chp2:$max_pub;
 				//var_dump($data);
 				//var_dump($wn->msg);
@@ -410,9 +434,9 @@ foreach($fns as $name=>$fn)
 				$updatedCount['wn']++;
 			}
 		}
-		else if ($chp2<(int)$books[$key]->readToChapterIndex) {
-			//var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $books[$key]->readToChapterIndex, $fns[$name]);
-			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('found in WebNovel at '.$books[$key]->readToChapterIndex.' instead of '.$chp2));
+		else if ($chp2<(int)$wn_books[$key]->readToChapterIndex) {
+			//var_dump($name.' found in WebNovel but at higher chapter.', $chp2, $wn_books[$key]->readToChapterIndex, $fns[$name]);
+			$row['msg']=array_merge((array_key_exists('msg',$row)?$row['msg']:array()),array('found in WebNovel at '.$wn_books[$key]->readToChapterIndex.' instead of '.$chp2));
 		}
 	}
 	if(array_key_exists('msg',$row)) {

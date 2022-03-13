@@ -490,7 +490,7 @@ class WebNovel extends SitePlugin
 			if($b->novelType==0) {
 				$res=$this->get_chapter_list_cached($b->bookId);
 				if( (is_object($res) && !property_exists($res, 'data')) || (is_object($res) && property_exists($res, 'data') && !is_object($res->data)) ) {
-					$res=$this->get_chapter_list($b->bookId);
+					$res=$this->chapter_list($b->bookId);
 				}
 				$subName='';
 				if(!is_object($res) || !property_exists($res, 'data') || !is_object($res->data) || !property_exists($res->data, 'bookInfo') || !property_exists($res->data->bookInfo, 'bookSubName') || strlen($res->data->bookInfo->bookSubName)==0) {
@@ -528,7 +528,7 @@ class WebNovel extends SitePlugin
 			elseif($b->novelType==100) {
 				$res=$this->get_chapter_list_comic_cached($b->bookId);
 				if(!property_exists($res, 'data')) {
-					$res=$this->get_chapter_list_comic($b->bookId);
+					$res=$this->chapter_list_comic($b->bookId);
 				}
 				//var_dump($res->data->comicInfo);die();
 			}
@@ -564,6 +564,10 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
+	/*public function get_history() {
+		
+	}//*/
+	
 	public function read_update(array|object $watch, int $chp) {
 		$this->msg=array();
 		if(file_exists($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'))
@@ -571,13 +575,13 @@ class WebNovel extends SitePlugin
 			$res=json_decode(file_get_contents($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json'), false, 512, JSON_THROW_ON_ERROR );
 		}
 		else {
-			$res=$this->get_chapter_list($watch->bookId);
+			$res=$this->chapter_list($watch->bookId);
 		}
 		if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) ) {
 			unlink($this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
 			//var_dump('deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json');
 			$this->msg[]='deleting '.$this::FOLDER.'GetChapterList_'.strval($watch->bookId).'.json';
-			$res=$this->get_chapter_list($watch->bookId);
+			$res=$this->chapter_list($watch->bookId);
 			if( !is_object($res) || !isset($res->data) || !isset($res->data->bookInfo) || !isset($res->data->volumeItems) )
 			{
 				var_dump($res);die();
@@ -591,7 +595,7 @@ class WebNovel extends SitePlugin
 		if( ($watch->newChapterIndex > $res->data->bookInfo->totalChapterNum+$add) && $watch->readToChapterIndex<$chp) {
 			//var_dump('Updating',$res->data->bookInfo->bookName);
 			$this->msg[]='Updating';
-			$res=$this->get_chapter_list($watch->bookId);
+			$res=$this->chapter_list($watch->bookId);
 		}
 		if(!is_object($res)||!property_exists($res, 'data')||!property_exists($res->data, 'volumeItems')) {
 			var_dump($res);die();
@@ -673,7 +677,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_chapter_list($bookId) {
+	public function chapter_list($bookId) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
 		{
@@ -707,7 +711,7 @@ class WebNovel extends SitePlugin
 	
 	public function get_chapter_list_cached($bookId) {
 		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
-			return $this->get_chapter_list($bookId);
+			return $this->chapter_list($bookId);
 		}
 		$res='';
 		//var_dump($bookId);
@@ -723,12 +727,12 @@ class WebNovel extends SitePlugin
 		if(!is_object($res)) {
 			var_dump($res);
 			unlink($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
-			return $this->get_chapter_list($bookId);
+			return $this->chapter_list($bookId);
 		}
 		return $res;
 	}
 	
-	public function get_chapter_list_comic($bookId) {
+	public function chapter_list_comic($bookId) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
 		{
@@ -755,7 +759,7 @@ class WebNovel extends SitePlugin
 	
 	public function get_chapter_list_comic_cached($bookId) {
 		if(!file_exists($this::FOLDER.'GetChapterList_'.strval($bookId).'.json')) {
-			return $this->get_chapter_list_comic($bookId);
+			return $this->chapter_list_comic($bookId);
 		}
 		$res='';
 		//var_dump($bookId);
@@ -771,7 +775,7 @@ class WebNovel extends SitePlugin
 		if(!is_object($res)) {
 			var_dump($res);
 			unlink($this::FOLDER.'GetChapterList_'.strval($bookId).'.json');
-			return $this->get_chapter_list_comic($bookId);
+			return $this->chapter_list_comic($bookId);
 		}
 		return $res;
 	}
@@ -996,7 +1000,7 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_info_html($id, $novelType=0) {
+	public function info_html($id, $novelType=0) {
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		$url='';
 		if($novelType==0) {
@@ -1068,12 +1072,12 @@ class WebNovel extends SitePlugin
 			$res=(new CJSON())->decode(file_get_contents($fn));
 		}
 		else {
-			$res=$this->get_info_html($id);
+			$res=$this->info_html($id);
 		}
 		return $res;
 	}
 	
-	public function get_info($id, $types=NULL) {
+	public function info($id, $types=NULL) {
 		// id
 		$data=array();
 		
@@ -1196,11 +1200,11 @@ class WebNovel extends SitePlugin
 					$res2=json_decode(file_get_contents($fn),false, 512, JSON_THROW_ON_ERROR);
 				}
 				else {
-					$res2=$this->get_info($id, $i);
+					$res2=$this->info($id, $i);
 				}
-				//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->get_info($book->bookId);
-				while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->get_info($id, $i);
-				while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->get_info($id, $i);
+				//if($res[0]->Result!==0 || $res[1]->Result!==0 || $res[2]->code!==0 || $res[3]->code!==0) $res=$wn->info($book->bookId);
+				while(property_exists($res2, 'Result') && $res2->Result!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->info($id, $i);
+				while(property_exists($res2, 'code') && $res2->code!==0 && ++$j<$this::RETRY_LIMIT) $res2=$this->info($id, $i);
 				$res[$i]=$res2;
 			}
 		}
@@ -1301,7 +1305,7 @@ class WebNovel extends SitePlugin
 		return $res;
 	}
 	
-	public function get_history() {
+	public function history() {
 		// id
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';
@@ -1379,7 +1383,7 @@ class WebNovel extends SitePlugin
 		return $data;
 	}
 	
-	public function get_collections() {
+	public function collections() {
 		// id
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/apiajax/');
 		$referer='https://www.webnovel.com/library';

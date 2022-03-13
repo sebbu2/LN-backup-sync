@@ -68,7 +68,7 @@ foreach($wn_books as $book) {
 	if($book->novelType==100 || $book->novelType==200) continue;
 	$res=$wn->get_info_html_cached($id);
 	if(!exists($res, 'bookInfo')) {
-		$res=$wn->get_info_html($id, $book->novelType);
+		$res=$wn->info_html($id, $book->novelType);
 		if(!exists($res, 'bookInfo')) {
 			if($book->updateStatus==1) {
 				$res2=$wn->get_chapter_list_cached($id);

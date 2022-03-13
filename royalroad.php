@@ -172,7 +172,7 @@ class RoyalRoad extends SitePlugin
 		return $res;
 	}
 	
-	public function get_info($fictionId) {
+	public function info($fictionId) {
 		$res = $this->get( 'https://www.royalroad.com/fiction/'.$fictionId );
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.htm', $res);
 		//$res=file_get_contents($this::FOLDER.'fiction_'.$fictionId.'.htm'); // NOTE : during DEBUG
@@ -293,12 +293,12 @@ class RoyalRoad extends SitePlugin
 			return $res;
 		}
 		else {
-			return $this->get_info($fictionId);
+			return $this->info($fictionId);
 		}
 	}
 	
-	public function get_chapter_list($fictionId) {
-		$ar=$this->get_info($fictionId);
+	public function chapter_list($fictionId) {
+		$ar=$this->info($fictionId);
 		return array_intersect_key($ar, array('chapters'=>array(), 'volumes'=>array()));
 	}
 	
@@ -311,7 +311,7 @@ class RoyalRoad extends SitePlugin
 			return array_intersect_key($res, array('chapters'=>array(), 'volumes'=>array()));
 		}
 		else {
-			return $this->get_chapter_list($fictionId);
+			return $this->chapter_list($fictionId);
 		}
 	}
 	

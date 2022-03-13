@@ -1,24 +1,54 @@
 <?php
 require_once('config.php');
 require_once('functions.inc.php');
+require_once('royalroad.php');
 require_once('webnovel.php');
 require_once('wlnupdates.php');
 
-$watches=json_decode(str_replace("\t",'',file_get_contents('wlnupdates/watches.json')),false,512,JSON_THROW_ON_ERROR);
-if(is_object($watches)) $watches=get_object_vars($watches);
-$books=json_decode(str_replace("\t",'',file_get_contents('webnovel/_books.json')),false,512,JSON_THROW_ON_ERROR);
-if(is_object($books)) $books=get_object_vars($books);
 $subname_=json_decode(str_replace("\t",'',file_get_contents('webnovel/_subname.json')),false,512,JSON_THROW_ON_ERROR);
-if(is_object($subname_)) $subname_=get_object_vars($subname_);
+if(is_object($subname_)) $subname_=get_object_vars($subname_);//*/
 
 $wln=new WLNUpdates;
 $wn=new WebNovel;
+$rr=new RoyalRoad;
+
+$wln_list=$wln->get_list();
+$wln_order=$wln->get_order();
+$wln_books=$wln->get_watches();
+
+try {
+	$ex=false;
+	$wn_list=$wn->get_list();
+}
+catch(Exception) {
+	$ex=true;
+}
+finally {
+	assert($ex);
+}
+$wn_order=$wn->get_order();
+$wn_books=$wn->get_watches();
+
+try {
+	$ex=false;
+	$rr_list=$rr->get_list();
+}
+catch(Exception) {
+	$ex=true;
+}
+finally {
+	assert($ex);
+}
+$rr_order=$rr->get_order();
+$rr_books=$rr->get_watches();
+
+
 
 require('header.php');
 
 //$filter=$wn->get_filter_for('translated');
 //$filter=(new ReflectionMethod('SitePlugin', 'get_filter_for'))->invoke($wln, 'comic');// cheat!
-/*foreach($books as $book) {
+/*foreach($wn_books as $book) {
 	if($filter($book)) {
 		var_dump($book);
 		die();
@@ -48,13 +78,14 @@ $modifs=array(
 );
 
 $correspondances=array();
-foreach($books as $book) // qidian
+foreach($wn_books as $book) // qidian
 {
 	if(!exists($book, 'bookName')) continue;
-	foreach($watches['data'][0] as $id=>$list) //wln list
+	foreach($wln_order as $id=>$list) //wln list
 	{
-		foreach($list as $entry) // wln
+		foreach($list as $entry_id) // wln
 		{
+			$entry=$wln_books[$entry_id];
 			//var_dump($entry);die();
 			//$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
 			$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]->name;
@@ -77,15 +108,15 @@ foreach($correspondances as $ar) {
 	for($i=0;$i<4;++$i) {
 		$j=0;
 		while(count(get_object_vars($res[$i]))<3 && ++$j<=$wn::RETRY_LIMIT) {
-			$res[$i]=$wn->get_info($wn_id, $i);
+			$res[$i]=$wn->info($wn_id, $i);
 			//var_dump($res[$i]);
 		}
 	}
 	$resb=$wn->get_chapter_list_cached($wn_id);
-	$wn1=$books[$wn_id];
+	$wn1=$wn_books[$wn_id];
 	if( $wn1->totalChapterNum>0 && (!is_object($resb) || !property_exists($resb, 'data') || empty($resb->data)) ) {
 		var_dump($wn_id, $resb);
-		/*$resb=$wn->get_chapter_list($wn_id);
+		/*$resb=$wn->chapter_list($wn_id);
 		var_dump($resb);//*/
 		die();
 		break;
@@ -126,9 +157,9 @@ foreach($correspondances as $ar) {
 	}
 
 	//var_dump($res);
-	//$res2=$wln->get_info($wln_id);
+	//$res2=$wln->info($wln_id);
 	if(file_exists($wln::FOLDER.'get-series-id'.$wln_id.'.json') && (time()-filemtime($wln::FOLDER.'get-series-id'.$wln_id.'.json'))>604800) {
-		$res2=$wln->get_info($wln_id);
+		$res2=$wln->info($wln_id);
 	}
 	else {
 		$res2=$wln->get_info_cached($wln_id);
@@ -301,7 +332,7 @@ foreach($correspondances as $ar) {
 	}
 	
 	if(count($json2)==0) continue;
-	//var_dump($json2);
+	//var_dump($json2);//die();
 	/*foreach($json2 as $i=>$e) {
 		$json2[$i]=(Object)$e;
 	}//*/
@@ -312,7 +343,7 @@ foreach($correspondances as $ar) {
 	//var_dump(json_encode($json2, JSON_UNESCAPED_SLASHES));
 	$res=$wln->edit($json);
 	var_dump($res);
-	if($res!==false) $res2=$wln->get_info($wln_id);
+	if($res!==false) $res2=$wln->info($wln_id);
 	$updatedCount['wln']++;
 	/*
 	"entries": [{

@@ -204,7 +204,7 @@ foreach($wln_order as $id=>$list) {
 					/*var_dump($wn1);
 					var_dump($wln2['wn']);//*/
 					try {
-						$wn_chps=$wn->get_chapter_list($wln2['wn']);
+						$wn_chps=$wn->chapter_list($wln2['wn']);
 					}
 					catch(Exception $e) {
 						if($e->getTrace()[0]['args'][0]=='Something went wrong. And we are reporting a custom error message.') {
@@ -256,7 +256,7 @@ foreach($wln_order as $id=>$list) {
 					}
 				if(!is_null($wn_chps) && exists($wn_chps, 'data') && (!property_exists($wn1, 'newChapterIndex') || abs($wn1->newChapterIndex-$wn1->totalChapterNum)<25) && ($wn1->totalChapterNum>0 && !$found)) {
 					//var_dump($wn1, $wn_chps->data->volumeItems[0]->chapterItems[0]);die();
-					$wn_chps=$wn->get_chapter_list($wln2['wn']);
+					$wn_chps=$wn->chapter_list($wln2['wn']);
 					if(!array_key_exists('msg', $row)) $row['msg']='';
 					$row['msg'].='updating wn: '.__LINE__.' + ';
 				}
@@ -286,14 +286,14 @@ foreach($wln_order as $id=>$list) {
 					//unset($rr2_);
 				}
 				if( exists($rr2_, 'volumes') && count((array)get($rr2_, 'volumes'))>0 && array_sum(array_map(fn($e) => get($e,'count'), (array)get($rr2_, 'volumes'))) != count(get($rr2_, 'chapters')) ) {
-					$rr2_=$rr->get_chapter_list($wln2['rr']);
+					$rr2_=$rr->chapter_list($wln2['rr']);
 					if(!array_key_exists('msg', $row)) $row['msg']='';
 					$row['msg'].='updating rr: '.__LINE__.' + ';
 				}
 				if(exists($rr1, 'last-read-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-read-title')) );
 					if(count($found)==0) {
-						$rr2_=$rr->get_chapter_list($wln2['rr']);
+						$rr2_=$rr->chapter_list($wln2['rr']);
 						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 							$rr2=get($rr2_, 'chapters');
 						}
@@ -308,7 +308,7 @@ foreach($wln_order as $id=>$list) {
 					if(count($found)>0) $chp_=array_keys($found)[0];
 					else $chp_=NULL;
 					if(count($found)==0 || get($found[$chp_], 'title')!=get($rr1, 'last-read-title')) {
-						$rr2=$rr->get_chapter_list($wln2['rr']);
+						$rr2=$rr->chapter_list($wln2['rr']);
 						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 							$rr2=get($rr2_, 'chapters');
 						}
@@ -323,7 +323,7 @@ foreach($wln_order as $id=>$list) {
 				if(exists($rr1, 'last-upd-title')) {
 					$found=array_filter($rr2, fn($e) => (get($e, 'title')==get($rr1, 'last-upd-title')) );
 					if(count($found)==0) {
-						$rr2_=$rr->get_chapter_list($wln2['rr']);
+						$rr2_=$rr->chapter_list($wln2['rr']);
 						if(!exists($rr2_, 0) && ( (is_array($rr2_) && count($rr2_)>0) || (is_object($rr2_) && count(get_object_vars($rr2_))>0) ) ) {
 							$rr2=get($rr2_, 'chapters');
 						}
@@ -367,7 +367,7 @@ foreach($wln_order as $id=>$list) {
 				$n3=get(get($wln_info, 'data'), 'alternatenames');
 			}
 			catch(OutOfBoundsException) {
-				$wln_info=$wln->get_info($entry);
+				$wln_info=$wln->info($entry);
 				$n3=get(get($wln_info, 'data'), 'alternatenames');
 			}
 			$n3=array_map(fn($e)=>strtolower(normalize(name_simplify($e, 1))), $n3);
