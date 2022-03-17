@@ -1082,11 +1082,14 @@ class WebNovel extends SitePlugin
 		$data=array();
 		
 		//types
-		if($types===NULL) $types=array(0,1,2,3);
-		if(is_string($types)) $types=explode(',', $types);
-		if(is_int($types)) $types=array($types);
-		if(count(array_filter($types, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
-		if(count($types)==0) { die('ERROR: empty types.'); }
+		$types_=NULL;
+		if($types===NULL) $types_=array('0','1','2','3');
+		if(is_string($types)) $types_=explode(',', $types);
+		if(is_int($types)) $types_=array($types);
+		$tmp=array_filter($types_, fn($e)=>is_numeric($e)&&$e==(int)$e );
+		//var_dump($types_,$tmp);die();
+		if(count($tmp)!=count($types_)) { die('ERROR: bad types.'); }
+		if(count($types_)==0) { die('ERROR: empty types.'); }
 		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		//$cookies=array('_csrfToken'=>$cookies['_csrfToken']);
@@ -1114,7 +1117,7 @@ class WebNovel extends SitePlugin
 		);
 		$headers=array();
 		
-		if(in_array(0, $types)) {
+		if(in_array(0, $types_)) {
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
 			$fn=$this::FOLDER.'get-book'.$id.'.json';
@@ -1124,7 +1127,7 @@ class WebNovel extends SitePlugin
 			$data[]=json_decode($res);
 		}
 		
-		if(in_array(1, $types)) {
+		if(in_array(1, $types_)) {
 			$res = $this->get( 'https://idruid.webnovel.com/app/api/book/get-book-extended', $ar, $headers, $cookies);
 			$res=$this->jsonp_to_json($res);
 			$fn=$this::FOLDER.'get-book-extended'.$id.'.json';
@@ -1144,7 +1147,7 @@ class WebNovel extends SitePlugin
 			'needSummary'=>1,
 			'_'=>millitime(),
 		);
-		if(in_array(2, $types)) {
+		if(in_array(2, $types_)) {
 			$res = $this->get( 'https://www.webnovel.com/go/pcm/bookReview/get-reviews', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
 			$fn=$this::FOLDER.'get-reviews'.$id.'.json';
@@ -1159,7 +1162,7 @@ class WebNovel extends SitePlugin
 			'bookId'=>$id,
 			'type'=>2,
 		);
-		if(in_array(3, $types)) {
+		if(in_array(3, $types_)) {
 			$res = $this->get( 'https://www.webnovel.com/go/pcm/recommend/getRecommendList', $ar, $headers, $cookies );
 			$res=$this->jsonp_to_json($res);
 			$fn=$this::FOLDER.'getRecommendList'.$id.'.json';
@@ -1169,9 +1172,9 @@ class WebNovel extends SitePlugin
 			$data[]=json_decode($res);
 		}
 		
-		if(count($types)==1) $data=$data[0];
+		if(is_int($types)) $data=$data[0];
 		
-		var_dump('get_info: '.$id.' types '.implode(',', $types));
+		var_dump('get_info: '.$id.' types '.implode(',', $types_));
 		return $data;
 	}
 	
@@ -1185,10 +1188,12 @@ class WebNovel extends SitePlugin
 		
 		//types
 		$types_=NULL;
-		if($types===NULL) $types_=array(0,1,2,3);
+		if($types===NULL) $types_=array('0','1','2','3');
 		if(is_string($types)) $types_=explode(',', $types);
 		if(is_int($types)) $types_=array($types);
-		if(count(array_filter($types_, fn($e)=>ctype_digit($e) ))>0) { die('ERROR: bad types.'); }
+		$tmp=array_filter($types_, fn($e)=>is_numeric($e)&&$e==(int)$e );
+		//var_dump($types_,$tmp);die();
+		if(count($tmp)!=count($types_)) { die('ERROR: bad types.'); }
 		if(count($types_)==0) { die('ERROR: empty types.'); }
 		
 		$res=array();

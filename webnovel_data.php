@@ -33,7 +33,7 @@ $res=json_decode(file_get_contents($wn::FOLDER.'_order.json'));
 $files['_order.json']=count($res);
 
 $fn=$wn::FOLDER.'_history.json';
-if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_history();
+if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->history();
 
 $res=json_decode(file_get_contents($fn));
 $files['_history.json']=count($res);
@@ -41,7 +41,7 @@ $files['ReadingHistoryAjax']=count($res[0]);
 $files['get-history']=count($res[1]);
 
 $fn=$wn::FOLDER.'_collection.json';
-if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_collections();
+if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->collections();
 
 $res=json_decode(file_get_contents($fn), true, 512, JSON_OBJECT_AS_ARRAY);
 $res3=array_keys($res);

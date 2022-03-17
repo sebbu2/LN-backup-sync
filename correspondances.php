@@ -169,7 +169,7 @@ if(direct()) {
 			//var_dump($v2);die();
 			$wln_id=$v2[0]->id;
 			$n1=trim($v2[0]->name);
-			$n2=trim($v2[3]);
+			$n2=!empty($v2[3])?trim($v2[3]):'';
 			$n1=normalize($n1);
 			$n2=normalize($n2);
 			$n2b=($n2!=false)?$n2:$n1;
@@ -237,10 +237,12 @@ if(direct()) {
 				//$n=name_simplify($v3->bookName);
 				if(!exists($v3, 'bookName')) continue;
 				$n=trim($v3->bookName);
+				if(empty($n)) continue;
 				$n=name_simplify($n);
 				$n=normalize($n);
 				foreach($n3 as $n_) {
 					//if($n===$n_) {
+					if(empty($n_)) continue;
 					$n_=trim($n_);
 					$n_=name_simplify($n_);
 					$n_=normalize($n_);
@@ -249,8 +251,9 @@ if(direct()) {
 						|| strtolower(normalize($n))===strtolower(normalize($n_))
 						//|| strtolower(normalize2($n))===strtolower(normalize2($n_))
 						|| strtolower(normalize(normalize($n)))===strtolower(normalize(normalize2($n_)))
-						|| strtolower(json_decode('"'.$n.'"'))===strtolower(json_decode('"'.$n_.'"'))
-						|| strtolower(json_decode('"'.normalize($n).'"'))===strtolower(json_decode('"'.normalize($n_).'"'))
+						// TODO : fix this uglyness
+						|| @strtolower(json_decode('"'.$n.'"'))===@strtolower(json_decode('"'.$n_.'"'))
+						|| @strtolower(json_decode('"'.normalize($n).'"'))===@strtolower(json_decode('"'.normalize($n_).'"'))
 					) {
 						//if($wln_id==110069) { var_dump($n); }
 						$wn_id=$v3->bookId;
@@ -274,10 +277,12 @@ if(direct()) {
 				if(IGNORE_DUPLICATES && isset($skip_wln_rr[$k4]) && $skip_wln_rr[$k4]) continue;
 				//$n=name_simplify($v4['title']);
 				$n=normalize(trim($v4->title));
+				if(empty($n)) continue;
 				$n=name_simplify($n);
 				//if($wln_id==128991||$rr_id==37231) { var_dump($v4['title'], $n, $n3); }
 				foreach($n3 as $n_) {
 					//if($n===$n_) {
+					if(empty($n_)) continue;
 					if(strtolower($n)===strtolower($n_) || strtolower(normalize2($n))===strtolower($n_)) {
 						$rr_id=$k4;
 						$skip_wln_rr[$k4]=true;
@@ -301,6 +306,7 @@ if(direct()) {
 			if(!empty($n2) && !array_key_exists(strtolower($n2), $names)) $names[strtolower($n2)]=$id;
 			if(!empty($n2) && !array_key_exists(strtolower(normalize2($n2)), $names)) $names[strtolower(normalize2($n2))]=$id;
 			foreach($n3 as $n_) {
+				if(empty($n_)) continue;
 				if(!array_key_exists($n_, $names)) $names[$n_]=$id;
 				if(!array_key_exists(json_decode('"'.$n_.'"'), $names)) $names[json_decode('"'.$n_.'"')]=$id;
 				if(!array_key_exists(normalize2($n_), $names)) $names[normalize2($n_)]=$id;
@@ -340,6 +346,7 @@ if(direct()) {
 		if(array_key_exists($wn_id, $cor_wn)) continue;
 		if(!exists($v3, 'bookName')) continue;
 		$n=name_simplify(trim($v3->bookName));
+		if(empty($n)) continue;
 		$n=normalize($n);
 		$res=$wn->get_info_cached($v3->bookId, 3);
 		
@@ -352,6 +359,7 @@ if(direct()) {
 		foreach($rr_books as $k4=>$v4) {
 			if(IGNORE_DUPLICATES && isset($skip_wn_rr[$k4]) && $skip_wn_rr[$k4]) continue;
 			$n2=name_simplify(trim($v4->title));
+			if(empty($n2)) continue;
 			$n2=normalize($n2);
 			//if($n===$n2) {
 			if(strtolower($n)===strtolower($n2)||strtolower(normalize2($n))===strtolower(normalize2($n2))) {
@@ -393,6 +401,7 @@ if(direct()) {
 		if(array_key_exists($rr_id, $cor_rr)) continue;
 		//if(isset($cor_rr[$skip_wln_rr[$k4]])) continue;
 		$n2=name_simplify(trim($v4->title));
+		if(empty($n2)) continue;
 		$n2=normalize($n2);
 		
 		assert(strlen($n2)>0) or die('empty name for '.$rr_id.'.');

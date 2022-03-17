@@ -114,10 +114,10 @@ $count2=0;
 $fn=$wn::FOLDER.'_history.json';
 $res2=NULL;
 if(!$force) {
-	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_history();
+	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->history();
 	else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
 }
-else $res2=$wn->get_history();
+else $res2=$wn->history();
 
 var_dump('history');
 //var_dump($res2[0][1],$res2[1][1]);//die();
@@ -159,10 +159,10 @@ $count2=0;
 $fn=$wn::FOLDER.'_collection.json';
 $res2=NULL;
 if(!$force) {
-	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->get_collections();
+	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->collections();
 	else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
 }
-else $res2=$wn->get_collections();
+else $res2=$wn->collections();
 
 if(is_object($res2)) $res2=get_object_vars($res2);
 if(array_key_exists(0, $res2) && is_object($res2[0])) {

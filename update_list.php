@@ -88,7 +88,7 @@ foreach($wn_books as $book) // qidian
 			$entry=$wln_books[$entry_id];
 			//var_dump($entry);die();
 			//$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
-			$entry['title']=(array_key_exists(3,$entry)&&strlen($entry[3])>0)?$entry[3]:$entry[0]->name;
+			$entry['title']=(array_key_exists(3,$entry)&&!empty($entry[3]))?$entry[3]:$entry[0]->name;
 			//if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 			if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 				//$correspondances[]=array($book->bookId, $entry[0]['id'], $book->bookName, $id);
@@ -164,6 +164,7 @@ foreach($correspondances as $ar) {
 	else {
 		$res2=$wln->get_info_cached($wln_id);
 	}
+	if($res2===NULL || !exists($res2, 'data')) { var_dump($wln_id);die(); }
 	$res2->data->releases=NULL;
 	$res2->data->similar_series=NULL;
 	$res2->data->alternatenames=array_map('trim2', $res2->data->alternatenames);
@@ -171,7 +172,7 @@ foreach($correspondances as $ar) {
 	//gmdate('c')//iso, GMT/UTC
 
 	$json2=array();
-	if(strlen($res2->data->description)==0 && strlen(trim($res[0]->Data->Description))>0) {
+	if(empty($res2->data->description) && strlen(trim($res[0]->Data->Description))>0) {
 		$json2[]=array('key'=>'description-container','type'=>'singleitem','value'=>trim($res[0]->Data->Description));
 		$modifs['description']++;
 	}

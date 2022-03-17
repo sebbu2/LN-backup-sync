@@ -284,7 +284,7 @@ class WLNUpdates extends SitePlugin
 		);
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), $headers, false); // no cookies
 		//$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar), $headers );
-		sleep(1);
+		sleep(2);
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
