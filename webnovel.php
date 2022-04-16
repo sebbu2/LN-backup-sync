@@ -1091,6 +1091,8 @@ class WebNovel extends SitePlugin
 		if(count($tmp)!=count($types_)) { die('ERROR: bad types.'); }
 		if(count($types_)==0) { die('ERROR: empty types.'); }
 		
+		$name='';
+		
 		$cookies=$this->get_cookies_for('https://www.webnovel.com/');
 		//$cookies=array('_csrfToken'=>$cookies['_csrfToken']);
 		//unset($cookies['e1'], $cookies['e2']);
@@ -1124,7 +1126,8 @@ class WebNovel extends SitePlugin
 			file_put_contents($fn, $res);
 			clearstatcache(false, $fn);
 		
-			$data[]=json_decode($res);
+			$data[]=$res2=json_decode($res);
+			$name=get2(get2($res2,'Data'),'BookName');
 		}
 		
 		if(in_array(1, $types_)) {
@@ -1134,7 +1137,8 @@ class WebNovel extends SitePlugin
 			file_put_contents($fn, $res);
 			clearstatcache(false, $fn);
 			
-			$data[]=json_decode($res);
+			$data[]=$res2=json_decode($res);
+			$name=get2(get2($res2,'Data'),'OriginalName');
 		}
 		
 		$ar = array(
@@ -1154,7 +1158,8 @@ class WebNovel extends SitePlugin
 			file_put_contents($fn, $res);
 			clearstatcache(false, $fn);
 			
-			$data[]=json_decode($res);
+			$data[]=$res2=json_decode($res);
+			$name=get2(get2(get2($res2,'data'),'bookStatisticsInfo'),'bookName');
 		}
 		
 		$ar=array(
@@ -1169,12 +1174,13 @@ class WebNovel extends SitePlugin
 			file_put_contents($fn, $res);
 			clearstatcache(false, $fn);
 			
-			$data[]=json_decode($res);
+			$data[]=$res2=json_decode($res);
+			$name=get2(get2(get2($res2,'data'),'bookInfo'),'bookName');
 		}
 		
 		if(is_int($types)) $data=$data[0];
 		
-		var_dump('get_info: '.$id.' types '.implode(',', $types_));
+		var_dump('get_info: '.$id.' types '.implode(',', $types_).' : '.$name);
 		return $data;
 	}
 	

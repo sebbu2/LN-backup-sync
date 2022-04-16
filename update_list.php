@@ -164,7 +164,7 @@ foreach($correspondances as $ar) {
 	else {
 		$res2=$wln->get_info_cached($wln_id);
 	}
-	if($res2===NULL || !exists($res2, 'data')) { var_dump($wln_id);die(); }
+	if($res2===NULL || !exists($res2, 'data')) { var_dump('invalid info : wln '.$wln_id);die(); }
 	$res2->data->releases=NULL;
 	$res2->data->similar_series=NULL;
 	$res2->data->alternatenames=array_map('trim2', $res2->data->alternatenames);
@@ -276,7 +276,7 @@ foreach($correspondances as $ar) {
 			$modifs['alternatenames']++;
 		}
 	}
-	if(strlen($res2->data->website)==0) {
+	if(empty($res2->data->website)) {
 	//if(true) {
 		$url='https://www.webnovel.com/book/'.$wn_id;
 		$data=$wn->get($url, NULL, NULL, NULL);
@@ -286,12 +286,12 @@ foreach($correspondances as $ar) {
 			}
 		}
 		//var_dump($url);
-		if(strlen($res2->data->website)==0 || ($res2->data->website!=$url && strpos($res2->data->website, "\n")===false) ) {
+		if(empty($res2->data->website) || ($res2->data->website!=$url && strpos($res2->data->website, "\n")===false) ) {
 			//var_dump($res2->data->website, $url);die();
 			$json2[]=array('key'=>'website-container','type'=>'singleitem','value'=>$url);
 			$modifs['website']++;
 		}
-		if(strpos($res2->data->website, "\n")!==false) {
+		if(!empty($res2->data->website) && strpos($res2->data->website, "\n")!==false) {
 			$found=false;
 			$urls=array();
 			$ar=explode("\n", $res2->data->website);

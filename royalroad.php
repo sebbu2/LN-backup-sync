@@ -197,7 +197,7 @@ class RoyalRoad extends SitePlugin
 		$res2=$res->div[0]->div[1]->div[0];
 		foreach($res2 as $node) {
 			if(!isset($node->a)) {
-				$ar['info']['tags'][]=(string)$node;
+				$ar['info']['tags'][]=trim((string)$node);
 			}
 			else {
 				foreach($node->a as $node2) {
@@ -281,6 +281,9 @@ class RoyalRoad extends SitePlugin
 		$res2=json_encode($ar);
 		$res2=$this->jsonp_to_json($res2);
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.json', $res2);
+		
+		var_dump('get_info : '.$fictionId.' : '.$ar['info']['name']);
+		
 		//return $ar['chapters']; // NOTE : compatibility for old format (direct chapter list)
 		return $ar;
 	}

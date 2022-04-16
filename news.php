@@ -181,6 +181,7 @@ foreach($wln_order as $id=>$list) {
 		$neg_chp=0;
 		$row['title']=$wln1[0]->name;
 		if(!is_null($wln1[3])) $row['title']=$wln1[3];
+		$row['title']=trim($row['title']);
 		$row['title']=rawurldecode($row['title']);
 		$row['title']=html_entity_decode($row['title']);
 		$row['WLNUpdate cur']=$wln1[1]->chp;
@@ -387,10 +388,10 @@ foreach($wln_order as $id=>$list) {
 			}
 		}
 		if(array_key_exists('title',$row)) {
-			if(startswith($id, 'QIDIAN') && !is_null($wln2['wn'])) {
+			if(startswith($id, 'QIDIAN') && !is_null($wln2['wn']) && array_key_exists('WebNovel last-paid', $row) && !is_null($row['WebNovel last-paid'])) {
 				$row['title']='<a href="https://www.webnovel.com/book/'.$wln2['wn'].'">'.$row['title'].'</a>';
 			}
-			if(startswith($id, 'RoyalRoad') && !is_null($wln2['rr'])) {
+			if(startswith($id, 'RoyalRoad') && !is_null($wln2['rr']) && array_key_exists('RoyalRoad last', $row) && !is_null($row['RoyalRoad last'])) {
 				$row['title']='<a href="https://www.royalroad.com/fiction/'.$wln2['rr'].'/">'.$row['title'].'</a>';
 			}
 		}
@@ -403,41 +404,56 @@ foreach($wln_order as $id=>$list) {
 			if( (!array_key_exists('title', $colors)||in_array($colors['title'],array('blue') )) && (startswith($id, 'QIDIAN')||startswith($id, 'RoyalRoad')||startswith($id, 'ScribbleHub'||startswith($id, 'WattPad'))) ) {
 				$col2=NULL;
 				if(startswith($id, 'QIDIAN'))
-					$col2='WebNovel last-paid';
+					$col2=array('WebNovel last-paid','WebNovel last-free');
 				if(startswith($id, 'RoyalRoad'))
 					$col2='RoyalRoad last';
 				assert($col2!=NULL);
 				//$neg_chp
-				if( array_key_exists($col2, $row) ) {
-					if( (is_null($pos9)||$pos9['max']!=$row[$col2]) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
+				if( (is_string($col2)&&array_key_exists($col2, $row)) || (is_array($col2)&&array_key_exists($col2[0], $row)&&array_key_exists($col2[1], $row)) ) {
+					if( (is_null($pos9)||
+					(is_string($col2)&&$pos9['max']!=$row[$col2])
+					||
+					(is_array($col2)&&$pos9['max']!=max($row[$col2[0]],$row[$col2[1]]))
+					) && (array_key_exists('start',$row)||array_key_exists('pos',$row)) ) {
 						$min=$row['start'];
 						if(array_key_exists('start9',$row)&&$row['start9']>$min) $min=$row['start9'];
-						if($row['start']>$row[$col2]) {
+						if( (is_string($col2)&&$row['start']>$row[$col2]) || (is_array($col2)&&$row['start']>$row[$col2[0]]&&$row['start']>$row[$col2[1]]) ) {
 							if($row['WLNUpdate cur']>1) $min=$row['WLNUpdate cur'];
 							else $min=1;
 						}
 						$_pos=($row['pos']<=$min?0:$row['pos']);
-						$max=$row[$col2];
+						if(is_string($col2)) $max=$row[$col2];
+						else if(is_array($col2)) {
+							$ar=array_map(fn($e) => $row[$e], $col2);
+							$max=max($ar);//var_dump($max);die();
+						}
 						if($max<$_pos) $max=$_pos;
 						//var_dump($row['title']);
-						$fn2=$pos_->createFileName($pos1['fn2'], $min, $max);
-						if( !file_exists(DROPBOX.$fn2) || (array_key_exists('pos9', $row) && $row['pos9']<$row['pos']) ) {
-							$pos2=$pos_->createFileContent($min, $_pos, $max);
-							//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
-							file_put_contents(DROPBOX.$fn2, $pos2);
-							if(!array_key_exists('msg', $row)) $row['msg']='';
-							$row['msg'].='.po '.__LINE__.' + ';
-							$row['title']='<span style="color:red">'.$row['title'].'</span>';
-							//var_dump($fn2,$pos2);die();
+						if($max>$min) {
+							$fn2=$pos_->createFileName($pos1['fn2'], $min, $max);
+							if( !file_exists(DROPBOX.$fn2) || (array_key_exists('pos9', $row) && $row['pos9']<$row['pos']) ) {
+								$pos2=$pos_->createFileContent($min, $_pos, $max);
+								//if($row['start']<1) {var_dump($fn2,$pos1,$pos9,$pos2);die();}
+								file_put_contents(DROPBOX.$fn2, $pos2);
+								if(!array_key_exists('msg', $row)) $row['msg']='';
+								$row['msg'].='.po '.__LINE__.' + ';
+								$row['title']='<span style="color:red">'.$row['title'].'</span>';
+								//var_dump($fn2,$pos2);die();
+							}
 						}
 					}
 					else {
-						$pos2=$pos_->createFileContent(1, 0, $row[$col2]);
+						if(is_string($col2)) $max=$row[$col2];
+						else if(is_array($col2)) {
+							$ar=array_map(fn($e) => $row[$e], $col2);
+							$max=max($ar);//var_dump($max);die();
+						}
+						$pos2=$pos_->createFileContent(1, 0, $max);
 						if(is_null($pos1)) {
 							$pos1=array('fn2'=>name_simplify(strip_tags($row['title'], 3)),'start'=>1,'pos'=>$row['WLNUpdate cur']);
 							$row['start']=1;
 						}
-						$fn2=$pos_->createFileName($pos1['fn2'], 1, $row[$col2]);
+						$fn2=$pos_->createFileName($pos1['fn2'], 1, $max);
 						if($row['start']<1) {var_dump($row,$fn2,$pos1,$pos2);die();}
 						file_put_contents(DROPBOX.$fn2, $pos2);
 						if(!array_key_exists('msg', $row)) $row['msg']='';
@@ -587,7 +603,7 @@ foreach($rr_books as $rr_id=>$entry) {
 	$row=array();
 	$row['rr_id']=$rr_id;
 	$row['rr_id']='<a href="https://www.royalroad.com/fiction/'.$row['rr_id'].'/">'.$row['rr_id'].'<a>';
-	$row['title']=$entry->title;
+	$row['title']=trim($entry->title);
 	$rr1=NULL;
 	if(array_key_exists($rr_id, $cor_rr)) {
 		$rr1=$cor_rr[$rr_id];
@@ -613,7 +629,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['RoyalRoad last']=$rr2a;
 	}
 	else {
-		if(!in_array($rr_id,array(7015,45718,45173))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
+		if(!in_array($rr_id,array(7015,45718,45173,47619,37103,43381))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
 	}
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {

@@ -288,7 +288,7 @@ class WLNUpdates extends SitePlugin
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
-		var_dump('get_info: '.$id);
+		var_dump('get_info: '.$id.' : '.$res->data->title);
 		return $res;
 	}
 	

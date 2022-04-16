@@ -107,8 +107,14 @@ if(direct()) {
 		if($v3->novelType==0) $wn_['novel']++;
 		else if($v3->novelType==100) $wn_['comic']++;
 		else $wn_['others']++;
-		$res=$wn->get_info_cached($v3->bookId, 3);
-		$tr=$res->data->bookInfo->translateMode;
+		if($v3->novelType==0) {
+			$res=$wn->get_info_cached($v3->bookId, 3);
+			$tr=$res->data->bookInfo->translateMode;
+		}
+		elseif($v3->novelType==100 || $v3->novelType==200) {
+			$res=NULL;
+			$tr=0;
+		}
 		//var_dump($v3,$tr,$res);die();
 		if($tr==0 || $tr==1 || $tr==2) {
 			$wn_['novel translated']++;
@@ -218,7 +224,7 @@ if(direct()) {
 			$n3=array_map('name_simplify', $n3);
 			$n3=array_merge($n3, array_map('normalize', $n3));
 			$n3=array_merge($n3, array_map('normalize2', $n3));
-			$n3=array_merge($n3, array_map(fn($e) => json_decode('"'.$e.'"'), $n3));
+			$n3=array_merge($n3, array_map(fn($e) => json_decode('"'.addslashes($e).'"'), $n3));
 			$n3=array_values(array_unique($n3));
 			//var_dump($wln_id, $n1, $n2, $n3);//die();
 			//if($wln_id==110069) { var_dump($n3); }
@@ -252,8 +258,8 @@ if(direct()) {
 						//|| strtolower(normalize2($n))===strtolower(normalize2($n_))
 						|| strtolower(normalize(normalize($n)))===strtolower(normalize(normalize2($n_)))
 						// TODO : fix this uglyness
-						|| @strtolower(json_decode('"'.$n.'"'))===@strtolower(json_decode('"'.$n_.'"'))
-						|| @strtolower(json_decode('"'.normalize($n).'"'))===@strtolower(json_decode('"'.normalize($n_).'"'))
+						|| @strtolower(json_decode('"'.addslashes($n).'"'))===@strtolower(json_decode('"'.addslashes($n_).'"'))
+						|| @strtolower(json_decode('"'.addslashes(normalize($n)).'"'))===@strtolower(json_decode('"'.addslashes(normalize($n_)).'"'))
 					) {
 						//if($wln_id==110069) { var_dump($n); }
 						$wn_id=$v3->bookId;
@@ -308,7 +314,7 @@ if(direct()) {
 			foreach($n3 as $n_) {
 				if(empty($n_)) continue;
 				if(!array_key_exists($n_, $names)) $names[$n_]=$id;
-				if(!array_key_exists(json_decode('"'.$n_.'"'), $names)) $names[json_decode('"'.$n_.'"')]=$id;
+				if(!array_key_exists(json_decode('"'.addslashes($n_).'"'), $names)) $names[json_decode('"'.addslashes($n_).'"')]=$id;
 				if(!array_key_exists(normalize2($n_), $names)) $names[normalize2($n_)]=$id;
 				if(!array_key_exists(strtolower($n_), $names)) $names[strtolower($n_)]=$id;
 				if(!array_key_exists(strtolower(normalize2($n_)), $names)) $names[strtolower(normalize2($n_))]=$id;

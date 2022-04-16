@@ -12,9 +12,9 @@ require_once('SitePlugin.inc.php');
 */
 function name_simplify($name, $type=0) {
 	//'-'
-	static $ar1=array('_', ':', ',', '/', '\u00a0', '\u00A0', "\u00a0", "\u00A0", "\xC2\xA0", '&#xA0;', '  ', '&nbsp;', ' ', '&zwsp;', '&zwnj;');
+	static $ar1=array('_', ':', ',', '/', '\u00a0', '\u00A0', "\u00a0", "\u00A0", "\xC2\xA0", '&#xA0;', '  ', '&nbsp;', ' ', '&zwsp;', '&zwnj;'); // space
 	//'+'
-	static $ar2=array(',', '\'', '*', '—', '^', '=', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0");
+	static $ar2=array(',', '\'', '*', '—', '^', '=', '\u2014', "\u2014", "\xE2\x80\x93", '&#39;', '\u2019', "\u2019", '’', '´', "\xE2\x80\x99", '&rsquo;', '&lsquo;', '?', '!', '(', ')', '[', ']', 'Retranslated Version', 'Retranslated_Version', 'retranslated version', '.', '&NoBreak;', '&nobreak;', '\u2060', "\u2060", "\xE2\x81\xA0"); // del
 	$name=mb_convert_encoding($name, 'HTML-ENTITIES',  'UTF-8');
 	$name=html_entity_decode($name);
 	$name=str_replace(array('\uff1f', "\uff1F", '\uFF1F', "\uFF1sF", "\xEF\xBC\x9F", '&#65311;', '&#xFF1F;'), '?', $name);
@@ -160,6 +160,34 @@ function exists($obj, $attr) {
 	else if(is_object($obj)) {
 		return property_exists($obj, $attr);
 	}
+	else throw new UnexpectedValueException();
+}
+function &get2($obj, $attr) {
+	$res=NULL;
+	if(is_array($obj)) {
+		if(array_key_exists($attr, $obj)) {
+			return ($obj[$attr]);
+		}
+		else return $res;
+	}
+	else if(is_object($obj)) {
+		if(property_exists($obj, $attr)) {
+			return ($obj->{$attr});
+		}
+		else return $res;
+	}
+	else if(is_null($obj)) return $res;
+	else throw new UnexpectedValueException();
+}
+function exists2($obj, $attr) {
+	$res=NULL;
+	if(is_array($obj)) {
+		return array_key_exists($attr, $obj);
+	}
+	else if(is_object($obj)) {
+		return property_exists($obj, $attr);
+	}
+	else if(is_null($obj)) return $res;
 	else throw new UnexpectedValueException();
 }
 function direct2() {
