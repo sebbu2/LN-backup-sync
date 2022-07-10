@@ -19,6 +19,10 @@ $accounts=array(
 		'user'=>'',
 		'pass'=>'',
 	),
+	'ScribbleHub'=>array(
+		'user'=>'',
+		'pass'=>'',
+	),
 	'NovelUpdates'=>array(
 		'user'=>'',
 		'pass'=>'',
@@ -39,6 +43,9 @@ $accounts=array(
 		'user'=>'',
 		'pass'=>'',
 	),
+);
+$disabled=array(
+	'WebNovel',
 );
 if(!isset($key)) $key='';
 if(!isset($secret)) $secret='';
