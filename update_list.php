@@ -313,22 +313,22 @@ foreach($correspondances as $ar) {
 	
 	if($id=='QIDIAN' && $res2->data->tl_type=='oel') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN original');
-		var_dump($res3);
+		var_dump($name,$res3);
 		$modifs['list']++;
 	}
 	if($id=='QIDIAN original' && $res2->data->tl_type=='translated') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN');
-		var_dump($res3);
+		var_dump($name,$res3);
 		$modifs['list']++;
 	}
 	if($id=='QIDIAN plan to read' && $res2->data->tl_type=='oel') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN plan to read original');
-		var_dump($res3);
+		var_dump($name,$res3);
 		$modifs['list']++;
 	}
 	if($id=='QIDIAN plan to read original' && $res2->data->tl_type=='translated') {
 		$res3=$wln->add_novel($wln_id, 'QIDIAN plan to read');
-		var_dump($res3);
+		var_dump($name,$res3);
 		$modifs['list']++;
 	}
 	
@@ -340,7 +340,7 @@ foreach($correspondances as $ar) {
 	//var_dump($json2);//die();
 	$json=array('mode'=>'series-update', 'item-id'=>$wln_id, 'entries'=>$json2);
 	var_dump($wn_id, $wln_id, $name, $id);
-	var_dump($json);//continue;
+	var_dump($json);continue;
 	//var_dump(json_encode($json2, JSON_UNESCAPED_SLASHES));
 	$res=$wln->edit($json);
 	var_dump($res);

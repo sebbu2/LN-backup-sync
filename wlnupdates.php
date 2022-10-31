@@ -34,7 +34,9 @@ class WLNUpdates extends SitePlugin
 			preg_match('#<div class="alert alert-info">(.*)</div>#isU', $res, $matches2);
 			$res2=trim(preg_replace("(<([a-z]+)([^>]*)>.*?</\\1>)is","",$matches2[1]));
 			if($res2=='You are already logged in.') return true;
-			var_dump($matches, $matches2);die();
+			
+			$this->dump($matches, $matches2);
+			var_dump($this->msg);die();
 		}
 		$id=array_search('/login', $matches['action']);
 		if($id===false) $id=array_search('', $matches['action']);
@@ -225,7 +227,7 @@ class WLNUpdates extends SitePlugin
 			else if($name2=='type') $postdata[$name2]=$tl;
 			else if(!empty($name2)) $postdata[$name2]=$matches2['value'][$id2];
 		}
-		var_dump($postdata);
+		$this->dump($postdata);
 		/*$cookies=$this->get_cookies_for('https://www.wlnupdates.com/');
 		$ar=array(
 			'name'=>$name,
@@ -248,8 +250,8 @@ class WLNUpdates extends SitePlugin
 			return $matches[1][0];
 		}
 		else {
-			var_dump($res);
-			die('error');
+			$this->dump($res);
+			var_dump($this->msg);die('error');
 		}
 		return $res;
 	}
@@ -260,8 +262,8 @@ class WLNUpdates extends SitePlugin
 		$res = $this->send( 'https://www.wlnupdates.com/api', json_encode($ar, JSON_UNESCAPED_SLASHES), array('Content-Type: application/json')); // no cookies
 		$res2=explode(' ',$this->headersRecv[0]);
 		if($res2[1]!=200) {
-			var_dump($this->headersRecv[0]);
-			//die();
+			$this->dump($this->headersRecv[0]);
+			//var_dump($this->msg);die();
 			return false;
 		}
 		$res=$this->jsonp_to_json($res);
@@ -288,7 +290,7 @@ class WLNUpdates extends SitePlugin
 		$res=$this->jsonp_to_json($res);
 		file_put_contents($this::FOLDER.'get-series-id'.$id.'.json', $res);
 		$res=json_decode($res);
-		var_dump('get_info: '.$id.' : '.$res->data->title);
+		$this->dump('get_info: '.$id.' : '.$res->data->title);
 		return $res;
 	}
 	

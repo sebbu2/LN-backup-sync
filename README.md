@@ -133,6 +133,8 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 
 ## Endpoints
 
+**clean_files.php** removes unneeded positions from the novels in the ebook reader (was/still is part of dropbox\*.php)
+
 **correspondances.php** List correspondances between royalroad, webnovel and wlnupdates
 
 **dropbox.php** List new position sync and update wlnupdates and webnovel
@@ -143,7 +145,7 @@ CJSON.php from yii framework v1.X, helper to lazy parse json (including badly fo
 
 **list_add_to_main.php** Add to the library the novels from other library (collections, favorites, history, read later, etc...)
 
-**news.php** list novels with new chapters (depends on retr, position and correspondances)
+**news.php** and **news2.php** list novels with new chapters (depends on retr, position and correspondances)
 
 **position.php** List positions from the novels in the ebook reader
 
@@ -230,3 +232,4 @@ webnovel2.htm raw table of webnovel data (identical to website, sorted by last a
 [filters.json](filters.json) filters to skip lines and colorize news.php output
 
 [todo.txt](todo.txt) small personnal TODO-list about this project
+

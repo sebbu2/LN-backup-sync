@@ -324,6 +324,16 @@ class SitePlugin
 		return $json;
 	}
 	
+	public function dump($var) {
+		//var_dump($var);
+		$this->log(var_export($var, true));
+	}
+	
+	public function log($line) {
+		$this->msg[]=$line;
+		return true;
+	}
+	
 	public function get_watches() {
 		throw new Exception('Not yet implemented.');
 	}

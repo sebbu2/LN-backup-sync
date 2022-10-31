@@ -107,6 +107,57 @@ function normalize2($str) {
 	//$str=$translit6->transliterate($str);
 	return $str;
 }
+$assoc=array(
+	'RoyalRoad'=>array(
+		'royalroad',
+		'rr',
+	),
+	'WebNovel'=>array(
+		'qi',
+		'qidian',
+		'webnovel',
+		'wn',
+	),
+	'WLNUpdate'=>array(
+		'wln',
+		'wlnupdate',
+	),
+);
+function enabled($site) {
+	global $assoc,$disabled;
+	$res=true;
+	foreach($disabled as $s) {
+		foreach($assoc as $k=>$a) {
+			if(in_array(strtolower($site),$a)||strtolower($site)==strtolower($k)) {
+				if(in_array(strtolower($s),$a)||strtolower($s)==strtolower($k)) {
+					//var_dump($s,$a,strtolower($site));
+					$res=false;
+					break(2);
+				}
+			}
+		}
+	}
+	//var_dump(__FUNCTION__,$site,$res);
+	return $res;
+}
+function disabled($site) {
+	global $assoc,$disabled;
+	$res=false;
+	foreach($disabled as $s) {
+		foreach($assoc as $k=>$a) {
+			if(in_array(strtolower($site),$a)||strtolower($site)==strtolower($k)) {
+				if(in_array(strtolower($s),$a)||strtolower($s)==strtolower($k)) {
+					//var_dump($s,$a,strtolower($site));
+					$res=true;
+					break(2);
+				}
+			}
+		}
+	}
+	//var_dump(__FUNCTION__,$site,$res);
+	var_dump(__FUNCTION__,$site,$res);
+	return $res;
+}
 if ( !function_exists( 'is_iterable' ) ) {
 	function is_iterable( $obj ) {
 		return is_array( $obj ) || ( is_object( $obj ) && ( $obj instanceof \Traversable ) );

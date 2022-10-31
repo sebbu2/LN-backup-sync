@@ -21,12 +21,12 @@ class RoyalRoad extends SitePlugin
 		//$res = file_get_contents($this::FOLDER.'rr.htm');
 		$xml = simplexml_load_html($res);
 		$res = $xml->xpath("//*[contains(concat(' ', normalize-space(@class), ' '), ' fa-sign-in ')]");
-		//var_dump($res);
+		//$this->dump($res);
 		if(count($res)>0) $loggued=0;
 		$res = $xml->xpath("//*[contains(concat(' ', normalize-space(@class), ' '), ' fa-sign-out ')]");
-		//var_dump($res);
+		//$this->dump($res);
 		if(count($res)>0) $loggued=1;
-		//var_dump($loggued);
+		//$this->dump($loggued);
 		//die();
 		return $loggued;
 	}
@@ -41,7 +41,7 @@ class RoyalRoad extends SitePlugin
 		$res = $this->send( 'https://www.royalroad.com/account/login?returnurl=%2Fwelcome', $ar);
 		file_put_contents($this::FOLDER.'login.htm', $res);
 		if(strpos($res, '<title>Successfully logged in. | Royal Road</title>')!==0) return true;
-		var_dump($res);
+		$this->dump($res);
 		return false;
 	}
 	
@@ -55,7 +55,7 @@ class RoyalRoad extends SitePlugin
 		$cookies = $this->get_cookies_for( 'https://www.royalroad.com/' );
 		$data=array();
 		$order=array();
-		//var_dump($cookies);die();
+		//$this->dump($cookies);die();
 		do
 		{
 			if($i!=0) {
@@ -64,19 +64,20 @@ class RoyalRoad extends SitePlugin
 				);
 			}
 			$res = $this->get( 'https://www.royalroad.com/my/follows', $ar, array(), $cookies );
-			//var_dump($res);
+			//$this->dump($res);
 			file_put_contents($this::FOLDER.'follows'.$i.'.htm', $res);
 			$xml = simplexml_load_html($res);
-			//var_dump($xml);
+			//$this->dump($xml);
 			// /html/body/div[3]/div/div/div/div/div/div[2]/div[2]/div[2]/div[2]/div[1]
 			$res2=$xml->xpath("//div[@class='fiction-list']/div");
 			$count2=0;
 			foreach($res2 as $node) {
-				//var_dump($node);die();
+				//$this->dump($node);die();
 				$ar2=array();
 				if(property_exists($node, 'h6') && (string)$node->h6=='Advertisement') continue;
 				if(!property_exists($node, 'figure')) {
-					var_dump($node);die(); // TODO : remove
+					$this->dump($node);
+					var_dump($this->msg);die(); // TODO : remove
 				}
 				$count2++;
 				$ar2['cover']=(string)$node->figure->img['src'];
@@ -104,8 +105,8 @@ class RoyalRoad extends SitePlugin
 						if((string)$node->div->ul->li->strong!='The last update has been deleted') {
 							$ar2['last-upd-text']=trim((string)$node->div->ul->li);
 							if(!is_iterable($node->div->ul->li->a->span)) {
-								var_dump($node->div->ul->li);
-								die();
+								$this->dump($node->div->ul->li);
+								var_dump($this->msg);die();
 							}
 							$ar2['last-upd-href']=(string)$node->div->ul->li->a['href'];
 							$ar2['last-upd-title']=trim((string)$node->div->ul->li->a->span[0]);
@@ -113,23 +114,26 @@ class RoyalRoad extends SitePlugin
 							$ar2['last-upd-ago']=(string)$node->div->ul->li->a->span[1]->time;
 						}
 						else {
-							//var_dump($node->div->ul->li);die();
+							//$this->dump($node->div->ul->li);die();
 						}
 					}
 					else {
 						$ar2['last-read-text']=trim((string)$node->div->ul->li);
-						if(!property_exists($node->div->ul->li->a, 'span')) { var_dump($node->div->ul->li); die(); }
+						if(!property_exists($node->div->ul->li->a, 'span')) {
+							$this->dump($node->div->ul->li);
+							var_dump($this->msg);die();
+						}
 						$ar2['last-read-href']=(string)$node->div->ul->li->a['href'];
 						$ar2['last-read-title']=trim((string)$node->div->ul->li->a->span[0]);
 						$ar2['last-read-date']=(string)$node->div->ul->li->a->span[1]->time['title'];
 						$ar2['last-read-ago']=(string)$node->div->ul->li->a->span[1]->time;
 					}
 				}
-				//if(in_array($ar2['title'], array('The Last Battlemage', 'The Humble Life of a Skill Trainer', 'A Hero\'s Song', 'Evil Overlord: The Makening'))) { var_dump(__LINE__, $ar2); }
+				//if(in_array($ar2['title'], array('The Last Battlemage', 'The Humble Life of a Skill Trainer', 'A Hero\'s Song', 'Evil Overlord: The Makening'))) { $this->dump(__LINE__, $ar2); }
 				$id=explode('/', $ar2['href'])[2];
 				$data[$id]=$ar2;
 				$order[]=$id;
-				//var_dump($ar2);die();
+				//$this->dump($ar2);die();
 			}
 			$res2=$xml->xpath("//a[@data-page]");
 			foreach($res2 as $node) {
@@ -137,13 +141,13 @@ class RoyalRoad extends SitePlugin
 				if(array_key_exists( (string)$node['data-page'], $pages)) continue;
 				$pages[(string)$node['data-page']]=(string)$node['href'];
 			}
-			//if($i>=5 && $count2==50) $pages[$i+1]='/my/follows?page='.($i+1); // TODO : verify it's been fixed [temporary fix for bug #13041]
-			//var_dump($i, strlen($res));
+			if($i>=5 && $count2==50) $pages[$i+1]='/my/follows?page='.($i+1); // TODO : verify it's been fixed [temporary fix for bug #13041]
+			//$this->dump($i, strlen($res));
 			$i++;
 			$count++;
 			sleep(1);
 		} while($i<=count($pages) && $count<20 ); // count set as 20, currently at 5
-		//var_dump($pages);
+		//$this->dump($pages);
 		ksort($data);
 		$res=json_encode($data);
 		$res=$this->jsonp_to_json($res);
@@ -276,13 +280,13 @@ class RoyalRoad extends SitePlugin
 			$ar2['count']=count(array_filter($ar['chapters'], fn($e) => array_key_exists('data-volume-id', $e) && $e['data-volume-id']==$id));
 		}
 		
-		//var_dump($ar);die();
+		//$this->dump($ar);die();
 		
 		$res2=json_encode($ar);
 		$res2=$this->jsonp_to_json($res2);
 		file_put_contents($this::FOLDER.'fiction_'.$fictionId.'.json', $res2);
 		
-		var_dump('get_info : '.$fictionId.' : '.$ar['info']['name']);
+		$this->dump('get_info : '.$fictionId.' : '.$ar['info']['name']);
 		
 		//return $ar['chapters']; // NOTE : compatibility for old format (direct chapter list)
 		return $ar;

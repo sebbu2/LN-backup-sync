@@ -25,18 +25,21 @@ $wln_list=$wln->get_list();
 $wln_order=$wln->get_order();
 $wln_books=$wln->get_watches();
 
-try {
-	$ex=false;
-	$wn_list=$wn->get_list();
+if(enabled('wn')) {
+	try {
+		$ex=false;
+		$wn_list=$wn->get_list();
+	}
+	catch(Exception) {
+		$ex=true;
+	}
+	finally {
+		assert($ex);
+	}
+	$wn_order=$wn->get_order();
+	$wn_books=$wn->get_watches();
 }
-catch(Exception) {
-	$ex=true;
-}
-finally {
-	assert($ex);
-}
-$wn_order=$wn->get_order();
-$wn_books=$wn->get_watches();
+else $wn_list=$wn_order=$wn_books=array();
 
 try {
 	$ex=false;
@@ -62,36 +65,38 @@ $names=$rr->get_names($rr_id);
 var_dump($names);
 die();//*/
 $count=0;
-foreach($wn_books as $book) {
-	//var_dump($book);die();
-	$id=$book->bookId;
-	if($book->novelType==100 || $book->novelType==200) continue;
-	$res=$wn->get_info_html_cached($id);
-	if(!exists($res, 'bookInfo')) {
-		$res=$wn->info_html($id, $book->novelType);
+if(enabled('wn')) {
+	foreach($wn_books as $book) {
+		//var_dump($book);die();
+		$id=$book->bookId;
+		if($book->novelType==100 || $book->novelType==200) continue;
+		$res=$wn->get_info_html_cached($id);
 		if(!exists($res, 'bookInfo')) {
-			if($book->updateStatus==1) {
-				$res2=$wn->get_chapter_list_cached($id);
-				//var_dump($res2);die();
-				$res3=$res2->data->volumeItems[0]->chapterItems[0];
-				//var_dump($res3);die();
-				assert($res3->chapterIndex==1) or die('neg chp');
-				$cid=$res3->chapterId;
-				//$res2=$wn->read_update($book, 1);
-				$res2=$wn->read_update2($id, $cid);
-				var_dump($book,$res2);
-				$count++;
+			$res=$wn->info_html($id, $book->novelType);
+			if(!exists($res, 'bookInfo')) {
+				if($book->updateStatus==1) {
+					$res2=$wn->get_chapter_list_cached($id);
+					//var_dump($res2);die();
+					$res3=$res2->data->volumeItems[0]->chapterItems[0];
+					//var_dump($res3);die();
+					assert($res3->chapterIndex==1) or die('neg chp');
+					$cid=$res3->chapterId;
+					//$res2=$wn->read_update($book, 1);
+					$res2=$wn->read_update2($id, $cid);
+					var_dump($book,$res2);
+					$count++;
+				}
+				else {
+					var_dump($id,$book->bookName);//die();
+				}
 			}
 			else {
-				var_dump($id,$book->bookName);//die();
+				$count++;
 			}
 		}
-		else {
-			$count++;
-		}
 	}
+	if($count>0) $wn->update_subnames();
 }
-if($count>0) $wn->update_subnames();
 
 $skip=array('19886807705655205', '19636465406948705', '19230521106872905', '19212887105657605', '7860061006001305');
 $skip=array_merge($skip,array('16447293106086205','14286329606946605'));
@@ -112,84 +117,89 @@ $skip[]='21202880306822905';//truck-kun
 $count=0;
 $count2=0;
 
-$fn=$wn::FOLDER.'_history.json';
-$res2=NULL;
-if(!$force) {
-	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->history();
-	else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
-}
-else $res2=$wn->history();
+if(enabled('wn')) {
+	$fn=$wn::FOLDER.'_history.json';
+	$res2=NULL;
+	if(!$force) {
+		if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->history();
+		else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
+	}
+	else $res2=$wn->history();
 
-var_dump('history');
-//var_dump($res2[0][1],$res2[1][1]);//die();
+	var_dump('history');
+	//var_dump($res2[0][1],$res2[1][1]);//die();
 
-$skips=array();
-{
-	$res=$res2[0];
-	foreach($res as $it) {
-		if(in_array($it->bookId, $skip)) continue;
-		if(!array_key_exists($it->bookId, $wn_books)) {
-			if(in_array((string)$it->bookId, $skips)) continue;
-			$res_=$wn->add_watch($it->bookId, $it->novelType);
-			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
-			$count2++;
-			var_dump($count2, $it->bookId, $it->bookName);//die();
-			$skips[]=(string)$it->bookId;
+	$skips=array();
+	{
+		$res=$res2[0];
+		foreach($res as $it) {
+			if(in_array($it->bookId, $skip)) continue;
+			if(!array_key_exists($it->bookId, $wn_books)) {
+				if(in_array((string)$it->bookId, $skips)) continue;
+				$res_=$wn->add_watch($it->bookId, $it->novelType);
+				if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
+				$count2++;
+				var_dump($count2, $it->bookId, $it->bookName);//die();
+				$skips[]=(string)$it->bookId;
+			}
+		}
+		$res=$res2[1];
+		foreach($res as $it) {
+			if(in_array($it->BookId, $skip)) continue;
+			if(!array_key_exists($it->BookId, $wn_books)) {
+				if(in_array((string)$it->BookId, $skips)) continue;
+				$res_=$wn->add_watch($it->BookId, $it->ItemType);
+				if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
+				$count2++;
+				var_dump($count2, $it->BookId, $it->BookName);//die();
+				$skips[]=(string)$it->BookId;
+			}
 		}
 	}
-	$res=$res2[1];
-	foreach($res as $it) {
-		if(in_array($it->BookId, $skip)) continue;
-		if(!array_key_exists($it->BookId, $wn_books)) {
-			if(in_array((string)$it->BookId, $skips)) continue;
-			$res_=$wn->add_watch($it->BookId, $it->ItemType);
-			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
-			$count2++;
-			var_dump($count2, $it->BookId, $it->BookName);//die();
-			$skips[]=(string)$it->BookId;
-		}
-	}
+
+	if($count2>0) $res2=$wn->get_history();
+	$count+=$count2;
+	$count2=0;
 }
-
-if($count2>0) $res2=$wn->get_history();
-$count+=$count2;
-$count2=0;
-
 //die();
 
-$fn=$wn::FOLDER.'_collection.json';
-$res2=NULL;
-if(!$force) {
-	if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->collections();
-	else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
-}
-else $res2=$wn->collections();
+if(enabled('wn')) {
+	$fn=$wn::FOLDER.'_collection.json';
+	$res2=NULL;
+	if(!$force) {
+		if(!file_exists($fn) || (time()-filemtime($fn))>604800) $res2=$wn->collections();
+		else $res2=json_decode(file_get_contents($fn), false, 512, JSON_THROW_ON_ERROR);
+	}
+	else $res2=$wn->collections();
 
-if(is_object($res2)) $res2=get_object_vars($res2);
-if(array_key_exists(0, $res2) && is_object($res2[0])) {
-	$res2=$res2[1];
+	if(is_object($res2)) $res2=get_object_vars($res2);
+	if(array_key_exists(0, $res2) && is_object($res2[0])) {
+		$res2=$res2[1];
+	}
 }
 
 var_dump('collections');
 //var_dump($res2['pilot read'][0]);//die();
 
-foreach($res2 as $list => $res_) {
-	foreach($res_ as $it) {
-		if(in_array($it->BookId, $skip)) continue;
-		if(!array_key_exists($it->BookId, $wn_books)) {
-			if(in_array((string)$it->BookId, $skips)) continue;
-			$res_=$wn->add_watch($it->BookId, $it->BookType);
-			if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
-			$count2++;
-			var_dump($count2, $it->BookId, $it->BookName);//die();
-			$skips[]=(string)$it->BookId;
+if(enabled('wn')) {
+	foreach($res2 as $list => $res_) {
+		foreach($res_ as $it) {
+			if(in_array($it->BookId, $skip)) continue;
+			if(!array_key_exists($it->BookId, $wn_books)) {
+				if(in_array((string)$it->BookId, $skips)) continue;
+				$res_=$wn->add_watch($it->BookId, $it->BookType);
+				if($res_->code!==0 || $res_->data!==null || $res_->msg!=='Success') { var_dump($it, $res_);die(); }
+				$count2++;
+				var_dump($count2, $it->BookId, $it->BookName);//die();
+				$skips[]=(string)$it->BookId;
+			}
 		}
 	}
-}
 
-if($count2>0) $res2=$wn->get_collections();
-$count+=$count2;
-$count2=0;
+	if($count2>0) $res2=$wn->get_collections();
+	$count+=$count2;
+	$count2=0;
+}
 
 var_dump('end');
 

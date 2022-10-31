@@ -629,7 +629,7 @@ foreach($rr_books as $rr_id=>$entry) {
 		$row['RoyalRoad last']=$rr2a;
 	}
 	else {
-		if(!in_array($rr_id,array(7015,45718,45173,47619,37103,43381))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
+		if(!in_array($rr_id,array(7015,45718,45173,47619,37103,43381,42986))) { var_dump($rr_id, $row['title'], $rr1, $rr2);die(); }
 	}
 	$name=strtolower(normalize(name_simplify($row['title'], 1)));
 	if(array_key_exists($name, $pos)) {

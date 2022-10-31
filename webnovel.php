@@ -398,6 +398,7 @@ class WebNovel extends SitePlugin
 				'_csrfToken'=>$cookies['_csrfToken'],
 				'pageIndex'=>$i,
 				'orderBy'=>'2',
+				'encryptType'=>1,
 			);
 			$j=0;
 			do {
@@ -423,11 +424,12 @@ class WebNovel extends SitePlugin
 				var_dump($res);
 				die();
 			}//*/
-			if(is_object($res) && property_exists($res, 'data') && $res->data!==NULL) {
+			if(is_object($res) && property_exists($res, 'data') && property_exists($res->data, 'items') && $res->data!==NULL) {
 				//$books=array_merge($books, $res->data->books);
 				$books=array_merge($books, $res->data->items);
 				++$i;
 			}
+			if(!property_exists($res->data, 'isLast')) { var_dump($res); die(); }
 		}
 		while( ( (is_object($res) && property_exists($res, 'data') && is_object($res->data) && $res->data->isLast==0) ) && $i<=$this::LIBRARY_LIMIT);//$i should not reach LIBRRY_LIMIT*30 books soon (i'm at 32)
 		$books2=json_encode($books);

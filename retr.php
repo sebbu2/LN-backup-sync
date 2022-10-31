@@ -9,7 +9,7 @@ $loggued=false;
 
 if(direct()) include('header.php');
 
-{
+if(enabled('wln')) {
 	$wln_errors=array(
 		'{"error":true,"message":"Not yet implemented","reload":true}'."\n",
 		'{"error":true,"message":"Not yet implemented","reload":true}',
@@ -79,7 +79,7 @@ if(direct()) include('header.php');
 
 $loggued=false;
 
-{
+if(enabled('wn')) {
 	$wn=new WebNovel;
 	$res=$wn->checkLogin();
 	if($res->code!=0) {
@@ -114,7 +114,7 @@ $loggued=false;
 	unset($data);
 }
 
-{
+if(enabled('rr')) {
 	$rr = new RoyalRoad;
 	$res=$rr->checkLogin();
 	if($res!==1) {
