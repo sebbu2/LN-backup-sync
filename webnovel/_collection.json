@@ -940,7 +940,7 @@
     {
       "BookId": 18909613806685105,
       "BookType": 0,
-      "CoverId": 1641543691238,
+      "CoverId": 1646965165299,
       "Catogery": "Eastern Fantasy",
       "CatogeryId": 70009,
       "BookName": "I Just Won't Play By The Book",
@@ -972,6 +972,17 @@
     }
   ],
   "voting pool": [
+    {
+      "BookId": 21698793006314505,
+      "BookType": 0,
+      "CoverId": 1637116532036,
+      "Catogery": "Magical Realism",
+      "CatogeryId": 70001,
+      "BookName": "Are You Telling An Eight-Year-Old To Survive In The Wilderness?",
+      "Author": "Remove the Head and Eat",
+      "RecommendMsg": "",
+      "StatParams": ""
+    },
     {
       "BookId": 20912597506209205,
       "BookType": 0,
@@ -1807,7 +1818,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1641926213627,
+      "CoverId": 1647927738711,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",
@@ -2029,7 +2040,7 @@
     {
       "BookId": 18131953005387705,
       "BookType": 0,
-      "CoverId": 1640964013657,
+      "CoverId": 1647861520902,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Earth's Greatest Magus",
@@ -2051,7 +2062,7 @@
     {
       "BookId": 13282409505305605,
       "BookType": 0,
-      "CoverId": 1642363411049,
+      "CoverId": 1647728398751,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Profane Prince of Domination",
@@ -2073,7 +2084,7 @@
     {
       "BookId": 17047823706408905,
       "BookType": 0,
-      "CoverId": 1639185279701,
+      "CoverId": 1647879751838,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Mage of Primordial Chaos",
@@ -2249,7 +2260,7 @@
     {
       "BookId": 17624404406997305,
       "BookType": 0,
-      "CoverId": 1621895646519,
+      "CoverId": 1648588334019,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Level Up Legacy",
@@ -2260,7 +2271,7 @@
     {
       "BookId": 17932851106749705,
       "BookType": 0,
-      "CoverId": 1643297891985,
+      "CoverId": 1647248369872,
       "Catogery": "Realistic Fiction",
       "CatogeryId": 70010,
       "BookName": "Never Judge",
@@ -3247,7 +3258,7 @@
     {
       "BookId": 17669339406351905,
       "BookType": 0,
-      "CoverId": 1642611957475,
+      "CoverId": 1646584625026,
       "Catogery": "Sci-fi",
       "CatogeryId": 70006,
       "BookName": "Supremacy Games",
@@ -3379,7 +3390,7 @@
     {
       "BookId": 17684858505314205,
       "BookType": 0,
-      "CoverId": 1640831062331,
+      "CoverId": 1645547096243,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Legendary F Rank",
@@ -3500,7 +3511,7 @@
     {
       "BookId": 17022804406317305,
       "BookType": 0,
-      "CoverId": 1618941506624,
+      "CoverId": 1648453924887,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Unlimited Power - The Arcane Path (COMPLETED)",
@@ -3522,7 +3533,7 @@
     {
       "BookId": 18131953005387705,
       "BookType": 0,
-      "CoverId": 1640964013657,
+      "CoverId": 1647861520902,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Earth's Greatest Magus",
@@ -3929,7 +3940,7 @@
     {
       "BookId": 17372791306713605,
       "BookType": 0,
-      "CoverId": 1618652168515,
+      "CoverId": 1646323615604,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Ultimate Support Character",
@@ -4435,7 +4446,7 @@
     {
       "BookId": 16235831906391005,
       "BookType": 0,
-      "CoverId": 1631518713846,
+      "CoverId": 1644166349899,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "The Mysterious Black Magician",
@@ -4798,7 +4809,7 @@
     {
       "BookId": 16709186806051905,
       "BookType": 0,
-      "CoverId": 1625239388277,
+      "CoverId": 1648348447732,
       "Catogery": "Video Games",
       "CatogeryId": 70008,
       "BookName": "Infinite Mana in the Apocalypse",
@@ -4985,7 +4996,7 @@
     {
       "BookId": 15787990506065305,
       "BookType": 0,
-      "CoverId": 1641926213627,
+      "CoverId": 1647927738711,
       "Catogery": "Fantasy",
       "CatogeryId": 70002,
       "BookName": "Epic of Caterpillar",

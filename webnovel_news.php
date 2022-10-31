@@ -15,9 +15,12 @@ include('header.php');
 $wln=new WLNUpdates;
 $wn=new WebNovel;
 
-//include_once('watches.inc.php');
-$watches=json_decode(str_replace("\t",'',file_get_contents($wln::FOLDER.'watches.json')),TRUE,512,JSON_THROW_ON_ERROR);// important : true as 2nd parameter
-$books=json_decode(str_replace("\t",'',file_get_contents($wn::FOLDER.'_books.json')),false,512,JSON_THROW_ON_ERROR);
+$wln_list=$wln->get_list();
+$wln_order=$wln->get_order();
+$wln_books=$wln->get_watches();
+
+$wn_order=$wn->get_order();
+$wn_books=$wn->get_watches();
 
 chdir(DROPBOX);
 $ar=glob('*.po');
@@ -103,8 +106,7 @@ $head=array('title', 'WLNUpdate', 'WebNovel', 'new chp', 'subName', 'start',
  'msg');
 if(ob_get_level()>0) { ob_end_flush(); ob_flush(); }
 flush();
-//foreach($watches as $id=>$list) { // WLN list
-foreach($watches['data'][0] as $id=>$list) { // WLN list
+foreach($wln_order as $id=>$list) { // WLN list
 	//if( strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ) continue;
 	$cond_ = (
 		strpos(strtolower($id), 'on-hold')!==false || strpos(strtolower($id), 'plan to read')!==false || strpos(strtolower($id), 'completed')!==false ||strpos(strtolower($id), 'duplicates')!==false ||
@@ -114,11 +116,12 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 		echo '<h1>'.$id.'</h1>',"\n";
 	}
 	$lines=0;
-	foreach($list as $entry) { // WLN book
+	foreach($list as $id_entry) { // WLN book
+		$entry=$wln_books[$id_entry];
 		//TODO : fix the next 2 lines
-		$entry['title']=(strlen($entry[3])>0)?$entry[3]:$entry[0]['name'];
-		$entry['chp']=$entry[1]['chp'];
-		foreach($books as $book) { // WN book
+		$entry['title']=(!empty($entry[3]))?$entry[3]:$entry[0]->name;
+		$entry['chp']=$entry[1]->chp;
+		foreach($wn_books as $book) { // WN book
 			if(!property_exists($book, 'bookName')) { var_dump($book); die(); }
 			if( $book->novelType==0 && name_compare($entry['title'], $book->bookName) ) {
 				
@@ -128,7 +131,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				//retrieving list of chapters
 				if(!file_exists('webnovel/GetChapterList_'.$book->bookId.'.json'))
 				{
-					$res=$wn->get_chapter_list($book->bookId);
+					$res=$wn->chapter_list($book->bookId);
 					$fn='webnovel/GetChapterList_'.$book->bookId.'.json';
 					if(file_exists($fn)) $timestamp=filemtime($fn);
 					else $timestamp=time();
@@ -156,7 +159,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 				if( !is_object($res) || !is_object($res->data) || count($res->data->volumeItems)==0 ) {
 					//empty book
 					try {
-						$res=@$wn->get_chapter_list($book->bookId);
+						$res=@$wn->chapter_list($book->bookId);
 						$fn='webnovel/GetChapterList_'.$book->bookId.'.json';
 						if(file_exists($fn)) $timestamp=filemtime($fn);
 						else $timestamp=time();
@@ -231,7 +234,7 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					$count=0;
 					do {
 						try {
-							$res=@$wn->get_chapter_list($book->bookId);
+							$res=@$wn->chapter_list($book->bookId);
 							$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 							//var_dump($res);die();
 						} catch (Exception $e) {
@@ -423,10 +426,10 @@ foreach($watches['data'][0] as $id=>$list) { // WLN list
 					if( !( ($book->readToChapterIndex+$add2) == ($res->data->bookInfo->totalChapterNum+$add) ) )
 					{
 //						var_dump($book,$book->readToChapterIndex,$add,$add2,$priv_only,$max_pub,$res->data->bookInfo);
-						$res=$wn->get_chapter_list($book->bookId);
+						$res=$wn->chapter_list($book->bookId);
 						$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 						if( (!is_object($res) || !property_exists($res, 'data') || (is_int($res->data)&&$res->data==0) || !property_exists($res->data, 'bookInfo')) ) {
-							$res=$wn->get_chapter_list($book->bookId);
+							$res=$wn->chapter_list($book->bookId);
 							$timestamp=filemtime('webnovel/GetChapterList_'.$book->bookId.'.json');
 						}
 						$priv_only=0;
